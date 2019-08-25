@@ -8,6 +8,8 @@ SITENAME = 'Farrel Franqois Blog'
 SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = 'Sekedar blog pribadi saya'
 SITEURL = 'http://localhost:8000'
+STATIC_PATHS = ['../CNAME']
+EXTRA_PATH_METADATA = {'../CNAME': {'path': 'CNAME'}}
 
 PATH = 'content'
 ARTICLE_PATHS = ['artikel']
