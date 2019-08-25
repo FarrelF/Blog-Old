@@ -13,9 +13,9 @@ Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan meng
     :::text
     https://creativecommons.org/licenses/by-sa/4.0/
 
-Sedangkan, untuk kode sumber blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [COPYING](https://github.com/FarrelF/FarrelF-Blog/COPYING) di dalam Kode Sumber nya. Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
+Sedangkan, untuk kode sumber blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [COPYING](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/master/COPYING) di dalam Kode Sumber nya. Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
 
     :::text
-    https://gnu.org
+    https://www.gnu.org/licenses/agpl-3.0.html
 
-Terakhir, untuk kode sumber tema yang gunakan dan saya modifikasi, itu saya lisensi kan dengan Lisensi MIT. Untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE]() di dalam Kode Sumber nya.
+Terakhir, untuk kode sumber tema yang gunakan dan saya modifikasi, itu saya lisensi kan dengan Lisensi MIT. Untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://cdn.statically.io/gh/FarrelF/Modified-Flex/master/LICENSE) di dalam Kode Sumber nya.
