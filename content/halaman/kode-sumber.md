@@ -1,0 +1,49 @@
+Title: Kode Sumber
+Slug: kode-sumber
+Authors: Farrel Franqois
+
+Karena blog ini merupakan Perangkat Lunak Bebas ("Free Software"), maka Anda bisa peroleh Kode Sumber nya secara bebas. Bukan cuma itu, Anda juga bebas menggunakan, mempelajari, memodifikasi, menyalin, meng-komersilkan dan mendistribusikan ulang kepada Keluarga, Tetangga, Teman atau Rekan kamu sesuai dengan [filosofi Perangkat Lunak Bebas](https://gnu.org).
+
+Kode Sumber nya ini di bagi menjadi dua, yakni Kode Sumber untuk Blog nya, dan yang satu nya adalah Kode Sumber untuk Tema yang di gunakan nya (yang telah saya modifikasi dari Asli nya). Silahkan Anda peroleh dengan cara berikut:
+
+## I. Kode Sumber Blog
+Kode Sumber untuk Blog ini telah saya simpan di dalam GitHub, untuk melihat/memperoleh nya, silahkan kunjungi Alamat URL untuk *Repository* Git nya di bawah ini:
+
+    :::text
+    https://github.com/FarrelF/FarrelF-Blog
+
+Atau, kalau kamu lebih suka meng-*clone* nya secara langsung, maka kamu dapat meng-*clone* nya dengan perintah berikut:
+
+    :::shell
+    $ git clone https://github.com/FarrelF/FarrelF-Blog.git
+
+Kode Sumber Blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), yang merupakan lisensi *Copyleft*. Jadi, pastikan Anda mendistribusikan nya dengan menggunakan Lisensi yang sama dengan Lisensi dari Kode Sumber Asli nya dan juga mencantumkan Hak Cipta nya juga, yah :-)
+
+Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](/lisensi).
+
+
+## II. Kode Sumber Tema
+Kode Sumber untuk Tema Blog ini telah saya simpan di dalam GitHub. Sebenarnya, kode sumber di bawah ini merupakan *fork* dari yang asli nya, sehingga Tema yang saya gunakan dengan kode sumber di bawah ini merupakan hasil modifikasi dari Asli nya.
+
+Untuk melihat/memperoleh nya, silahkan kunjungi Alamat URL untuk *Repository* Git nya di bawah ini:
+
+    :::text
+    https://github.com/FarrelF/Modified-Flex
+
+Atau, kalau kamu lebih suka meng-*clone* nya secara langsung, maka kamu dapat meng-*clone* nya dengan perintah berikut:
+
+    :::shell
+    $ git clone https://github.com/FarrelF/Modified-Flex.git
+
+Kode Sumber Tema ini saya lisensi kan dengan Lisensi MIT, sesuai dengan Tema Asli nya, yang merupakan lisensi *Permissive*. Jadi, pastikan Anda mencantumkan Hak Cipta nya juga, yah :-)
+
+Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](/lisensi).
+
+
+## Pertanyaan dan Jawaban
+### Apakah kedua Kode Sumber di atas merupakan 100% Bebas?
+Tidak bisa di bilang bahwa kedua Kode Sumber di atas itu Bebas Seluruh nya (100% Bebas), terutama untuk Blog nya, karena di dalam blog ini telah terpasang *Google Analytics* dan juga *Google AdSense*, yang merupakan Perangkat Lunak Berpemilik (*Proprietary Software*).
+
+Selain itu, di mesin pencarian juga saya masih menggantung kan nya pada *Google CSE* ("Custom Search Engine") yang bukan merupakan Perangkat Lunak Bebas.
+
+Tapi, Anda juga bisa bebas menghapus semua itu dengan memodifikasi nya, sehingga Anda bisa membuat Tema yang sepenuhnya bebas oleh Anda sendiri. Itu terserah Anda, apakah Anda ingin mengutamakan "kebebasan" pada Blog Anda atau mengutamakan fitur pada Blog Anda? Saya rasa, itu juga bukan urusan saya, sih.
