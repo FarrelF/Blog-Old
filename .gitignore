@@ -1,0 +1,14 @@
+*~
+._*
+*.lock
+*.DS_Store
+*.swp
+.sw*
+.*.sw*
+*.out
+*.py[cod]
+/pelican.pid
+/srv.pid
+/output/
+/output-publish/
+__pycache__/
