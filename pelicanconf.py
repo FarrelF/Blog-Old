@@ -10,6 +10,7 @@ SITESUBTITLE = 'Sekedar blog pribadi saya'
 SITEURL = 'http://localhost:8000'
 STATIC_PATHS = ['../CNAME']
 EXTRA_PATH_METADATA = {'../CNAME': {'path': 'CNAME'}}
+IGNORE_FILES = ['.#*', '*draf*']
 
 PATH = 'content'
 ARTICLE_PATHS = ['artikel']

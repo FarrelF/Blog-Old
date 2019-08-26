@@ -7,8 +7,11 @@
 .*.sw*
 *.out
 *.py[cod]
+*.md~~
+*.md~
 /pelican.pid
 /srv.pid
 /output/
 /output-publish/
 __pycache__/
+draf/
