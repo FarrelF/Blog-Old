@@ -2,7 +2,7 @@ Title: Kode Sumber
 Slug: kode-sumber
 Authors: Farrel Franqois
 
-Karena blog ini merupakan Perangkat Lunak Bebas ("Free Software"), maka Anda bisa peroleh Kode Sumber nya secara bebas. Bukan cuma itu, Anda juga bebas menggunakan, mempelajari, memodifikasi, menyalin, meng-komersilkan dan mendistribusikan ulang kepada Keluarga, Tetangga, Teman atau Rekan kamu sesuai dengan [filosofi Perangkat Lunak Bebas](https://gnu.org).
+Karena blog ini merupakan Perangkat Lunak Bebas ("Free Software"), maka Anda bisa peroleh Kode Sumber nya secara bebas. Bukan cuma itu, Anda juga bebas menggunakan, mempelajari, memodifikasi, menyalin, meng-komersilkan dan mendistribusikan ulang kepada Keluarga, Tetangga, Teman atau Rekan kamu sesuai dengan [filosofi Perangkat Lunak Bebas](https://www.gnu.org/philosophy/free-sw.html.en).
 
 Kode Sumber nya ini di bagi menjadi dua, yakni Kode Sumber untuk Blog nya, dan yang satu nya adalah Kode Sumber untuk Tema yang di gunakan nya (yang telah saya modifikasi dari Asli nya). Silahkan Anda peroleh dengan cara berikut:
 
