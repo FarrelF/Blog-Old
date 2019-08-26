@@ -12,7 +12,7 @@ from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://farrel.franqois.id'
-CDN_THEME_REPO_BRANCH = '195a08e'
+CDN_THEME_REPO_BRANCH = '6d9371b'
 CDN_STATIC_THEME_URL = f'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{CDN_THEME_REPO_BRANCH}/static'
 RELATIVE_URLS = False
 
