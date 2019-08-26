@@ -8,7 +8,7 @@ Halo Dunia! (Lagi. "Eh, emang pernah, yah?"), ini adalah artikel pertama yang bu
 
 Sudah lama sekali saya tidak pernah menulis artikel di dalam blog saya. Tapi, mulai sekarang ini, saya akan lebih fokus dalam penggunaan *Static Site Generator* bila di bandingkan dengan menggunakan WordPress untuk mengelola Blog saya ini.
 
-Seperti yang Anda tahu, bahwa Blog ini merupakan sebuah berkas HTML Statis, yang di hasilkan melalui [https://blog.getpelican.org](Pelican) yang bertindak sebagai *Static Site Generator*.
+Seperti yang Anda tahu, bahwa Blog ini merupakan sebuah berkas HTML Statis, yang di hasilkan melalui [Pelican](https://blog.getpelican.org) yang bertindak sebagai *Static Site Generator*.
 
 Jadi, blog ini di tenagai oleh 'Pelican'. Ehh, tapi bukan oleh burung Pelican, yah, hehe :-D
 
@@ -36,4 +36,4 @@ Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan"
 
 Jadi, sudah dulu yah, saya juga mau fokus merombak blog ini terlebih dahulu, dibandingkan dengan menulis artikel. Seperti yang Anda tahu, blog ini sangat 'jauh' sekali dari kata "lengkap", seperti ada halaman yang dalam masih di buat/di draf, dan lain sebagai nya.
 
-Terima kasih atas perhatian nya \^\_\^
+Terima kasih atas perhatian nya ^\_\^
