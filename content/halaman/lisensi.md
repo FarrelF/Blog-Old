@@ -36,6 +36,6 @@ Jadi, setuju/tidak setuju, baca/tidak baca, maka Anda harus siap untuk menyetuju
 Jika Anda tidak menyetujui nya, silahkan jangan buat turunan dari/menggunakan Blog ini, dan kalau bisa, lebih baik juga untuk tidak mengunjungi Blog ini.
 
 ## Penutup
-Sekian untuk Halaman Lisensi ini, semoga Anda memahami dan memaklumi adanya Perjanjian seperti ini. 
+Sekian untuk Halaman Lisensi ini, semoga Anda memahami dan memaklumi adanya Perjanjian seperti ini.
 
-Terima kasih atas perhatian nya dari Anda semua \^\_\^
+Terima kasih atas perhatian nya dari Anda semua ^\_^
