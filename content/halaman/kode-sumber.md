@@ -2,7 +2,7 @@ Title: Kode Sumber
 Slug: kode-sumber
 Authors: Farrel Franqois
 
-Karena blog ini merupakan Perangkat Lunak Bebas ("Free Software"), maka Anda bisa peroleh Kode Sumber nya secara bebas. Bukan cuma itu, Anda juga bebas menggunakan, mempelajari, memodifikasi, menyalin, meng-komersilkan dan mendistribusikan ulang kepada Keluarga, Tetangga, Teman atau Rekan kamu sesuai dengan [filosofi Perangkat Lunak Bebas](https://www.gnu.org/philosophy/free-sw.html.en).
+Karena saya memberikan kebebasan pada blog ini kepada Anda. Sehingga, bukan hanya Kode Sumber saja yang bisa Anda dapatkan, Anda juga bebas menggunakan, mempelajari, memodifikasi, menyalin dan mendistribusikan ulang kepada Keluarga, Tetangga, Teman atau Rekan kamu untuk keperluan apapun termasuk keperluan komersial sekalipun sesuai dengan [filosofi Perangkat Lunak Bebas](https://www.gnu.org/philosophy/free-sw.html.en).
 
 Kode Sumber nya ini di bagi menjadi dua, yakni Kode Sumber untuk Blog nya, dan yang satu nya adalah Kode Sumber untuk Tema yang di gunakan nya (yang telah saya modifikasi dari Asli nya). Silahkan Anda peroleh dengan cara berikut:
 
@@ -44,6 +44,6 @@ Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](/lisensi).
 ### Apakah kedua Kode Sumber di atas merupakan 100% Bebas?
 Tidak bisa di bilang bahwa kedua Kode Sumber di atas itu Bebas Seluruh nya (100% Bebas), terutama untuk Blog nya, karena di dalam blog ini telah terpasang *Google Analytics* dan juga *Google AdSense*, yang merupakan Perangkat Lunak Berpemilik (*Proprietary Software*).
 
-Selain itu, di mesin pencarian juga saya masih menggantung kan nya pada *Google CSE* ("Custom Search Engine") yang bukan merupakan Perangkat Lunak Bebas.
+Selain itu, di mesin pencarian juga saya masih menggantung kan nya pada *Google CSE* ("Custom Search Engine", itupun kalo ada) yang bukan merupakan Perangkat Lunak Bebas.
 
 Tapi, Anda juga bisa bebas menghapus semua itu dengan memodifikasi nya, sehingga Anda bisa membuat Tema yang sepenuhnya bebas oleh Anda sendiri. Itu terserah Anda, apakah Anda ingin mengutamakan "kebebasan" pada Blog Anda atau mengutamakan fitur pada Blog Anda? Saya rasa, itu juga bukan urusan saya, sih.
