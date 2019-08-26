@@ -12,6 +12,8 @@ STATIC_PATHS = ['../CNAME']
 EXTRA_PATH_METADATA = {'../CNAME': {'path': 'CNAME'}}
 IGNORE_FILES = ['.#*', '*draf*']
 
+USE_CDN = False
+
 PATH = 'content'
 ARTICLE_PATHS = ['artikel']
 ARTICLE_SAVE_AS = '{slug}.html'
