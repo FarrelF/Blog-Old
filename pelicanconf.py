@@ -47,7 +47,7 @@ CC_LICENSE = {
 
 
 DISABLE_URL_HASH = True
-CC_LICENSE['local_icons'] = True
+CC_LICENSE['distribution_icons'] = 'cdn'
 
 COPYRIGHT_YEAR = f'2016 - {datetime.now().year}'
 COPYRIGHT_NAME = 'Farrel Franqois'
