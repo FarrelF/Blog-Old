@@ -7,7 +7,6 @@ from __future__ import unicode_literals
 
 import os
 import sys
-import hashlib
 sys.path.append(os.curdir)
 from pelicanconf import *
 
@@ -20,7 +19,7 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 # Activating Cache
 CACHE_PATH = 'cache'
-CHECK_MODIFIED_METHOD = 'hashlib'
+CHECK_MODIFIED_METHOD = 'mtime'
 CACHE_CONTENT = True
 GZIP_CACHE = True
 LOAD_CONTENT_CACHE = True
