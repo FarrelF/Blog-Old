@@ -1,10 +1,11 @@
 Title: Tes Artikel
-Date: 2019-08-25 01:49
+Date: 2019-08-25 17:49
+Modified: 2019-08-26 12:57
 Category: Lainnya
 Tags: Tes
 Slug: tes-artikel
 Authors: Farrel Franqois
-Summary: Ini adalah artikel uji coba
+Summary: Ini adalah artikel uji coba pertama
 
 Ini adalah isi dari Artikel ini, dan ini adalah huruf **tebal**, sedangkan *ini* adalah huruf miring.
 
@@ -15,26 +16,26 @@ Sedangkan di bawah ini merupakan barisan kode:
     nilai_2 = int(input("Masukkan Nilai Kedua: "))
     nilai_3 = int(input("Masukkan Nilai Ketiga: "))
     nilai_4 = int(input("Masukkan Nilai Keempat: "))
-    nilai_rata2 (nilai_1 + nilai_2 + nilai_3 + nilai_4) / 4
+    nilai_akhir = (nilai_1 + nilai_2 + nilai_3 + nilai_4) / 4
 
-    if nilai_rata2 >= 85 && nilai_rata2 <= 100:
+    if nilai_akhir >= 85:
         peringkat = "A"
         cetak = "Selamat, kamu lulus dengan nilai yang sangat baik!"
-    elif nilai_rata2 >= 75 && nilai_rata2 <= 84:
+    elif nilai_akhir >= 75:
         peringkat = "B"
         cetak = "Selamat, kamu lulus dengan nilai yang baik!"
-    elif nilai_rata2 >= 60 && nilai_rata2 <= 74:
+    elif nilai_akhir >= 60:
         peringkat = "C"
         cetak = "Kamu lulus dengan nilai yang cukup, perbaiki nilai mu nanti!"
-    elif nilai_rata2 >= 40 && nilai_rata2 <= 59:
+    elif nilai_akhir >= 40:
         peringkat = "D"
         cetak = "Sayang sekali, kamu tidak lulus ujian dengan nilai yang buruk, perbaiki lagi!"
-    elif nilai_rata2 >= 0 && nilai_rata2 <= 39:
+    elif nilai_akhir >= 0:
         peringkat = "E"
-        cetak = "Sayang sekali, kamu tidak lulus ujian dengan nilai yang sangat buruk, harap perbaiki lagi kedepan nya!"
+        cetak = "Sayang sekali, kamu tidak lulus ujian dengan nilai yang sangat buruk, perbaiki lagi!"
 
     print(f'Peringkat: {peringkat}')
-    print(f'Nilai Rata-rata: {nilai_rata2}')
+    print(f'Nilai Akhir: {nilai_akhir}')
     print(cetak)
 
 # Ini adalah Header 1
