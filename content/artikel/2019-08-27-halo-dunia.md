@@ -36,4 +36,4 @@ Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan"
 
 Jadi, sudah dulu yah, saya juga mau fokus merombak blog ini terlebih dahulu, dibandingkan dengan menulis artikel. Seperti yang Anda tahu, blog ini sangat 'jauh' sekali dari kata "lengkap", seperti ada halaman yang dalam masih di buat/di draf, dan lain sebagai nya.
 
-Terima kasih atas perhatian nya ^\_\^
+Terima kasih atas perhatian nya ^\_^
