@@ -17,6 +17,13 @@ RELATIVE_URLS = False
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
+# Activating Cache
+CACHE_PATH = 'cache'
+CHECK_MODIFIED_METHOD = 'hashlib'
+CACHE_CONTENT = True
+GZIP_CACHE = True
+LOAD_CONTENT_CACHE = True
+
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
