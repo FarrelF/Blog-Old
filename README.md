@@ -1,5 +1,6 @@
 # Farrel Franqois Blog
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/zen-edison-77bc37/deploys)
+
 *Repository* GitHub ini merupakan Kode Sumber dari Blog saya. Blog ini saya buat menggunakan Pelican, yang berbasis Python.
 
 ## Cara Kerja
