@@ -6,6 +6,8 @@
   X-Content-Type-Options: nosniff
   X-UA-Compatible: IE=edge
   Content-Security-Policy: img-src 'self' https://cdn.statically.io https://*.disquscdn.com https://*.disqus.com; font-src 'none' data: https://cdn.statically.io https://fonts.gstatic.com; connect-src 'self'; frame-src 'self' https://disqus.com https://*.disqus.com; object-src 'self'; frame-ancestors 'self'; upgrade-insecure-requests; block-all-mixed-content
+  Referrer-Policy: strict-origin-when-cross-origin; no-referrer-when-downgrade
+  Feature-Policy: vibrate 'self'; camera 'self' https://*.disqus.com; autoplay 'none'; usb 'none'; unsized-media 'none'
 
 /theme/*
   Cache-Control: public, max-age=31556926, s-maxage=31556926
