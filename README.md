@@ -65,9 +65,9 @@ Kalau Anda serius untuk merubah Kode Sumber yang ada di dalam Repo ini, setelah 
 
 Setelah itu, nanti akan saya pertimbangkan apa saja yang Anda ubah dan apa akibatnya bagi Blog ini nantinya, serta menerima hasil ubahan kamu atau tidaknya.
 
-Namun, ada satu hal lagi yang ingin saya kasih tau sebelum Anda merubah Kode Sumbernya, yaitu Tema 'Flex' yang saya gunakan itu berada di dalam folder 'Flex' dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).
+Namun, ada satu hal lagi yang ingin saya kasih tahu sebelum Anda merubah Kode Sumbernya, yaitu Tema 'Flex' yang saya gunakan itu berada di dalam folder [`Flex`](https://github.com/FarrelF/FarrelF-Blog/tree/master/Flex) dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).
 
-Jadi, jika Anda ingin merubah Kode Sumber dari Tema nya, silahkan ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa mengubah nya dari situ.
+Jadi, jika Anda ingin merubah Kode Sumber Tema nya, silahkan ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa mengubah nya dari situ.
 
 Sedangkan, jika Anda langsung mengubah kode sumber tema nya langsung melalui Repo ini (dan *fork* nya), silahkan tanggung sendiri resiko nya dan kalo Anda mengirimkan *Pull Request* dengan perubahan seperti ini, maka saya akan pertimbangkan untuk menolak nya secara mentah-mentah atau meng-hapus perubahan tersebut. Jadi, jangan kaget, yah ^\_^
 
