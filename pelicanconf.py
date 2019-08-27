@@ -62,7 +62,7 @@ EXTRA_PATH_METADATA = {
     'extras/robots.txt': {'path': 'robots.txt'}
 }
 
-THEME = 'Flex' # Nama Tema yang di gunakan
+THEME = 'themes/Flex' # Nama Tema yang di gunakan
 TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
 MAIN_MENU = True
 
