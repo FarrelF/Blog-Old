@@ -45,13 +45,12 @@ CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
     'version': '4.0',
     'slug': 'by-sa'
+    'distribution-type': 'local'
 }
 
-
 DISABLE_URL_HASH = True
-CC_LICENSE['distribution_icons'] = 'local'
 
-COPYRIGHT_YEAR = f'2016 - {datetime.now().year}'
+COPYRIGHT_YEAR = f'{datetime.now().year}'
 COPYRIGHT_NAME = 'Farrel Franqois'
 
 DEFAULT_LANG = 'id'
