@@ -8,9 +8,14 @@ SITENAME = 'Farrel Franqois Blog'
 SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = 'Sekedar blog pribadi saya'
 SITEURL = 'http://localhost:8000'
-STATIC_PATHS = ['../CNAME']
-EXTRA_PATH_METADATA = {'../CNAME': {'path': 'CNAME'}}
+STATIC_PATHS = ['img', 'extras/CNAME']
+EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'}}
 IGNORE_FILES = ['.#*', '*draf*']
+
+DEFAULT_METADATA = {
+    'status': 'draft',
+    'author': 'Farrel Franqois'
+}
 
 USE_CDN = False
 
