@@ -16,7 +16,7 @@ USE_CDN = True
 CDN_THEME_REPO_BRANCH = '87c9ad7'
 CDN_STATIC_THEME_URL = f'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{CDN_THEME_REPO_BRANCH}/static'
 RELATIVE_URLS = False
-
+CC_LICENSE['distribution_icons'] = 'cdn'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
