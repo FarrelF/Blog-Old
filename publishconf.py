@@ -41,5 +41,9 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
+# Disqus
 DISQUS_SITENAME = "FarrelF-Blog"
+DISQUS_IN_PAGES = True # Mengaktifkan Disqus di dalam Laman
+
+# Google
 #GOOGLE_ANALYTICS = ""
