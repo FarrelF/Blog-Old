@@ -2,7 +2,7 @@ Title: Lisensi
 Slug: lisensi
 Authors: Farrel Franqois
 
-Hak Cipta &copy; Farrel Franqois 2019 &lt;farrel(at)franqois(dot)id&gt;.
+Hak Cipta &copy; 2019 Farrel Franqois &lt;farrel(at)franqois(dot)id&gt;.
 
 ## Pembukaan
 Sebagai pembukaan, maka saya akan menjelaskan istilah yang paling dasar dan yang akan saya gunakan di dalam halaman ini, yaitu:
