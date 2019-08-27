@@ -2,6 +2,7 @@ Title: Halo Dunia! (Lagi)
 Date: 2019-08-27 00:38
 Category: Lainnya
 Slug: halo-dunia
+Status: published
 Authors: Farrel Franqois
 
 Halo Dunia! (Lagi. "Eh, emang pernah, yah?"), ini adalah artikel pertama yang bukan merupakan artikel uji coba.

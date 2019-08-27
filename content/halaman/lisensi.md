@@ -1,5 +1,6 @@
 Title: Lisensi
 Slug: lisensi
+Status: published
 Authors: Farrel Franqois
 
 Hak Cipta &copy; 2019 Farrel Franqois &lt;farrel(at)franqois(dot)id&gt;
