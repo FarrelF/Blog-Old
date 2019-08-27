@@ -1,81 +1,87 @@
-# Farrel Franqois Blog
-[![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/zen-edison-77bc37/deploys)
+# Flex [![Build Status](https://travis-ci.org/alexandrevicenzi/Flex.svg?branch=master)](https://travis-ci.org/alexandrevicenzi/Flex) [![Dependency Status](https://david-dm.org/alexandrevicenzi/Flex.svg)](https://david-dm.org/alexandrevicenzi/Flex) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexandre-vicenzi/flex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-*Repository* GitHub ini merupakan Kode Sumber dari Blog saya. Blog ini saya buat menggunakan Pelican, yang berbasis Python.
+The minimalist [Pelican](http://blog.getpelican.com/) theme.
 
-## Cara Kerja
-Kode Sumber ini hanya berguna untuk menghasilkan berkas HTML statis saja, dan ini tidak bisa di eksekusi secara langsung, seperti hal nya Blog yang di buat dengan WordPress. (Karena sesuai dengan peruntukan nya, yakni: *Static Site Generator*)
+## Notes
 
-Untuk menghasilkan konten yang kemudian di sebar melalui Internet, saya men-*deploy* kode sumber ini ke Netlify, lalu mereka lah yang menghasilkan berkas HTML statis di dalam nya, yang kemudian di sebar ke Internet.
+- **DO NOT** send any questions to my personal email, they are **IGNORED**. If you have questions open an issue.
+- This theme is not under development anymore, it's stable and has a lot of features. This means that new requests (not bug fixes) will be discussed and have lower priorities.
+- If you want a version of this theme to Jekyll or Hugo open an issue and let's discuss it.
 
-## Cara Memperoleh nya
-Untuk memperoleh nya, Anda bisa Unduh Kode Sumber nya dengan meng-klik pada *Button* 'Clone & Download', lalu kamu klik 'Download ZIP' untuk mengunduh nya sebagai ZIP.
+## Features
 
-Namun, jika Anda lebih suka meng-*clone* atau meng-kloning nya dengan Git, Anda bisa eksekusi perintah berikut untuk meng-klon nya:
+- Mobile First
+- Responsive
+- Semantic
+- SEO Best Practices
+- Open Graph
+- Rich Snippets (JSON-LD)
+- Related Posts (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts) or AddThis)
+- Minute read (via [plugin](https://github.com/getpelican/pelican-plugins/tree/master/post_stats)) (new in 2.0)
+- [Multiple Code Highlight Styles](https://github.com/alexandrevicenzi/Flex/wiki/Code-Highlight)
+- [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations) (new in 2.0)
 
-```bash
-$ git clone https://github.com/FarrelF/FarrelF-Blog.git
-```
+## Integrations
 
-Setelah Anda meng-klon nya, terutama dengan perintah di atas, kode sumber akan secara otomatis tersimpan di dalam Folder yang bernama `FarrelF-Blog`.
+- [AddThis](http://www.addthis.com/) Share Buttons and Related Posts
+- [Disqus](https://disqus.com/)
+- [Gauges Analytics](http://get.gaug.es/)
+- [Google AdSense](https://www.google.com.br/adsense/start/) (new in 2.1.0)
+- [Google Analytics](https://www.google.com/analytics/web/)
+- [Google Tag Manager](https://www.google.com/tagmanager/)
+- [Matomo Analytics (formerly Piwik)](https://matomo.org/)
+- [StatusCake](https://www.statuscake.com/)
 
-## Cara Install
-Untuk meng-installnya, buatlah sebuah 'Lingkungan Virtual' (atau bahasa Inggris nya adalah: *Virtual Environment*) dengan `virtualenv`, lalu aktifkan "Lingkungan" tersebut.
+## Plugins Support
 
-Saya sarankan Anda gunakan Python 3.6, Python 3.7 atau yang lebih baru sebelum/saat membuat sebuah Lingkungan Virtual.
+- [Github Corners](https://github.com/tholman/github-corners) (new in 2.2.0)
+- [I18N Sub-sites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites) (new in 2.0)
+- [Minute read](https://github.com/getpelican/pelican-plugins/tree/master/post_stats) (new in 2.0)
+- [Related Posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
+- [Representative image](https://github.com/getpelican/pelican-plugins/tree/master/representative_image) (new in 2.2.0)
+- [Neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) (new in 2.2.0)
 
-Setelah di aktifkan, Install semua ketergantungan yang ada di dalam berkas `requirements.txt` dengan `pip`.
+## Install
 
-Lalu, kamu bisa coba untuk menghasilkan sebuah berkas HTML Statis ini dengan Pelican, yang kemudian bisa kamu akses dengan Web Browser kamu.
+The best way to install is over [pelican-themes](https://github.com/getpelican/pelican-themes).
 
-Di dalam GNU/Linux atau macOS (Atau, Sistem Operasi berbasis Unix-like/Unix lain nya), kamu dapat eksekusi perintah berikut agar Pelican dapat menghasilkan Berkas HTML Statis dan juga mengaktifkan fitur Web Server pada Python:
+The alternative way is to clone this repository. The `master` branch is stable and is safe to checkout, but I would recommend you to checkout a tag branch.
 
-**Catatan**: Tapi sebelum itu, pastikan kalau kamu sudah berada di dalam Folder Kode Sumber nya, yah :-)
+## Donate
 
-```bash
-$ pelican --autoreload --listen
-```
+Are you using this theme? Support bug fixes and new features.
 
-Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu turuti, yaitu:
-1. Hasilkan Berkas HTML terlebih dahulu dengan Pelican, menggunakan Perintah berikut:
-```powershell
-> pelican --autoreload
-```
-2. Kemudian, kamu buka lagi CMD/PowerShell di Jendela yang baru atau buka Tab Baru jika kamu menggunakan [Windows Terminal](https://github.com/microsoft/terminal), lalu aktifkan "Lingkungan Virtual" nya.
+[Click here](https://www.alexandrevicenzi.com/donate) to donate.
 
-3. Setelah itu, Aktifkan fitur Web Server pada Python dengan perintah berikut:
-```powershell
-> pelican --listen
-```
+## Documentation
 
-Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:8000` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :-)
+The documentation covers most of the settings available and how to use this theme.
+If something is missing or broken you can open a PR or fix the documentation by yourself.
 
-Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman [Dokumentasi nya](https://docs.getpelican.org).
+[Flex Wiki](https://github.com/alexandrevicenzi/Flex/wiki)
 
-## Cara Kontribusi
-Kontribusi bisa di lakukan dengan banyak cara, seperti memberikan Kritik dan Saran, Memberikan Komentar/Pertanyaan yang bermanfaat, Donasi, sampai turut membantu untuk memodifikasi/merubah Kode Sumber atau Artikel yang ada di Blog ini.
+## Live example
 
-Jika "Kontribusi" yang Anda maksud adalah ingin memodifikasi Kode Sumber atau ingin merubah Artikel nya, itu sangat di perbolehkan.
+You can see how this theme looks like at [http://flex.alxd.me/blog/](http://flex.alxd.me/blog/).
 
-Cara nya mudah, buatlah sebuah *fork* dari Repo ini dan pastikan selalu fokus pada Repo *fork* yang telah Anda buat, lalu klon kan Repo *fork* yang telah Anda buat tadi (Lihat: Cara Memperoleh nya), setelah itu tinggal Anda Install saja (Lihat: Cara Install).
+The code is available in this project under `docs` folder.
 
-Nah, setelah Anda meng-install nya, Anda bisa merubah Kode Sumber/Berkas yang ada, dan Anda bisa merubah dan memasukkan Kode Sumber yang telah Anda rubah tadi kedalam Repo sesuka Anda, tapi selama itu masih di dalam Repo *fork* yang Anda buat, yah.
+## Contributing
 
-Kalau Anda serius untuk merubah Kode Sumber yang ada di dalam Repo ini, setelah Anda merubah kode sumber yang berada di dalam Repo *fork* Anda, buatlah sebuah *Pull Request* di dalam GitHub nya, dan deskripsi kan (kalo bisa) dengan jelas apa saja yang telah Anda lakukan terhadap Kode Sumber nya.
+**ALWAYS** open an issue before sending a PR.
+Discuss the problem/feature that you want to code.
+After discussing, send a PR with your changes.
 
-Setelah itu, nanti akan saya pertimbangkan apa saja yang Anda ubah dan apa akibatnya bagi Blog ini nantinya, serta menerima hasil ubahan kamu atau tidaknya.
+As always, if you want something that only makes sense to you, fork Flex and create a new theme.
 
-Namun, ada satu hal lagi yang ingin saya kasih tahu sebelum Anda merubah Kode Sumbernya, yaitu Tema 'Flex' yang saya gunakan itu berada di dalam folder [`Flex`](https://github.com/FarrelF/FarrelF-Blog/tree/master/Flex) dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).
+## Translations
 
-Jadi, jika Anda ingin merubah Kode Sumber Tema nya, silahkan ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa mengubah nya dari situ.
+Translate this theme to new languages at [Transifex](https://www.transifex.com/alexandrevicenzi/flex-pelican/).
 
-Sedangkan, jika Anda langsung mengubah kode sumber tema nya langsung melalui Repo ini (dan *fork* nya), silahkan tanggung sendiri resiko nya dan kalo Anda mengirimkan *Pull Request* dengan perubahan seperti ini, maka saya akan pertimbangkan untuk menolak nya secara mentah-mentah atau meng-hapus perubahan tersebut. Jadi, jangan kaget, yah ^\_^
+![Translations](https://github.com/alexandrevicenzi/Flex/blob/master/translations/translation_chart.png)
 
-Nah, itulah cara kontribusi nya, jika Anda mempunyai pertanyaan atau masalah terhadap kode sumber atau blog ini, silahkan tanyakan itu melalui Bagian "Issue" atau Berkomentar di dalam Blog, yah :-)
+Read more about [Translation Support](https://github.com/alexandrevicenzi/Flex/wiki/Translations) in the Wiki.
 
-## Lisensi
-Kode Sumber ini saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
+## License
 
-Sedangkan konten yang ada di dalam blog ini, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/catatan-hukum)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
-
-Untuk lebih lengkap nya, silahkan kunjungi Laman [Lisensi](https://farrel.franqois.id/lisensi) di dalam Blog Saya :-)
+MIT
