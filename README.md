@@ -1,5 +1,6 @@
 # Farrel Franqois Blog
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/zen-edison-77bc37/deploys)
+![GitHub](https://img.shields.io/github/license/FarrelF/FarrelF-Blog?label=Lisensi&style=flat-square)
 
 *Repository* GitHub ini merupakan Kode Sumber dari Blog saya. Blog ini saya buat menggunakan Pelican, yang berbasis Python.
 
@@ -65,13 +66,13 @@ Kalau Anda serius untuk merubah Kode Sumber yang ada di dalam Repo ini, setelah 
 
 Setelah itu, nanti akan saya pertimbangkan apa saja yang Anda ubah dan apa akibatnya bagi Blog ini nantinya, serta menerima hasil ubahan kamu atau tidaknya.
 
-Namun, ada satu hal lagi yang ingin saya kasih tahu sebelum Anda merubah Kode Sumbernya, yaitu Tema 'Flex' yang saya gunakan itu berada di dalam folder [`Flex`](https://github.com/FarrelF/FarrelF-Blog/tree/master/Flex) dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).
+Namun, ada satu hal lagi yang ingin saya kasih tahu sebelum Anda merubah Kode Sumbernya, yaitu Tema 'Flex' yang saya gunakan itu berada di dalam folder [`themes/Flex`](https://github.com/FarrelF/FarrelF-Blog/tree/master/themes/Flex) dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).
 
 Jadi, jika Anda ingin merubah Kode Sumber Tema nya, silahkan ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa mengubah nya dari situ.
 
 Sedangkan, jika Anda langsung mengubah kode sumber tema nya langsung melalui Repo ini (dan *fork* nya), silahkan tanggung sendiri resiko nya dan kalo Anda mengirimkan *Pull Request* dengan perubahan seperti ini, maka saya akan pertimbangkan untuk menolak nya secara mentah-mentah atau meng-hapus perubahan tersebut. Jadi, jangan kaget, yah ^\_^
 
-Nah, itulah cara kontribusi nya, jika Anda mempunyai pertanyaan atau masalah terhadap kode sumber atau blog ini, silahkan tanyakan itu melalui Bagian "Issue" atau Berkomentar di dalam Blog, yah :-)
+Nah, itulah cara kontribusi nya, jika Anda mempunyai pertanyaan atau masalah yang berhubungan dengan Kode Sumber atau konten yang ada di dalam Blog ini, silahkan tanyakan itu melalui Bagian "Issue" atau Berkomentar di dalam Blog, yah :-)
 
 ## Lisensi
 Kode Sumber ini saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
