@@ -44,7 +44,7 @@ MAIN_MENU = True
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
     'version': '4.0',
-    'slug': 'by-sa'
+    'slug': 'by-sa',
     'distribution-type': 'local'
 }
 
