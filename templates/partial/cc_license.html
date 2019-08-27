@@ -1,5 +1,5 @@
 <p>
-  Hak Cipta &copy; {{ COPYRIGHT_NAME }} {{ COPYRIGHT_YEAR }}: Semua konten di dalam blog ini dan juga terjemahan nya (kecuali jika di nyatakan <a href="/catatan-hukum">sebaliknya</a>), di lisensi kan dengan <a rel="license" href="https://creativecommons.org/licenses/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/">{{ CC_LICENSE['name'] }} {{ CC_LICENSE['version'] }}</a>
+  Hak Cipta &copy; {{ COPYRIGHT_YEAR }} {{ COPYRIGHT_NAME }} - Semua konten di dalam blog ini dan juga terjemahan nya (kecuali jika di nyatakan <a href="/catatan-hukum">sebaliknya</a>), di lisensi kan dengan <a rel="license" href="https://creativecommons.org/licenses/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/">{{ CC_LICENSE['name'] }} {{ CC_LICENSE['version'] }}</a>
 </p>
 <p>
   Kode Sumber untuk blog ini telah tersedia <a href="https://github.com/FarrelF/FarrelF-Blog">disini</a>, dan di lisensi kan dengan <a href="https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/master/COPYING">GNU Affero General Public License v3 (AGPLv3)</a>. Selengkap nya, lihat/baca laman <a href="/lisensi">Lisensi</a> dan juga laman <a href="/kode-sumber">Kode Sumber</a>.
@@ -12,9 +12,9 @@
     <img alt="Creative Commons License"
          title="Creative Commons License"
          style="border-width:0"
-         {% if CC_LICENSE['distribution_icons'] == 'local' %}
+         {% if CC_LICENSE['distribution-type'] == 'local' %}
            src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/cc/{{ CC_LICENSE['slug'] }}.png"
-         {% elif CC_LICENSE['distribution_icons'] == 'cdn' %}
+         {% elif CC_LICENSE['distribution-type'] == 'cdn' %}
            src="{{ CDN_STATIC_THEME_URL }}/img/cc/{{ CC_LICENSE['slug'] }}.png"
          {% else %}
            src="https://i.creativecommons.org/l/{{ CC_LICENSE['slug'] }}/{{ CC_LICENSE['version'] }}/80x15.png"
