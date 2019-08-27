@@ -12,7 +12,11 @@
   <div>
     {% block before_content %}{% endblock %}
     {% block page_content %}{{ page.content }}{% endblock %}
-    {% block after_content %}{% endblock %}
+    {% block after_content %}
+      {% if DISQUS_IN_PAGES %}
+        {% include "partial/disqus.html" %}
+      {% endif %}
+    {% endblock %}
   </div>
 </article>
 {% endblock %}
