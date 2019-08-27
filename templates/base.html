@@ -23,13 +23,17 @@
 
   {% if USE_LESS %}
     {% if USE_CDN == True %}
-      <link rel="stylesheet/less" type="text/css" href="{{ CDN_STATIC_THEME_URL }}/stylesheet/style.less">
+    <link rel="stylesheet/less" type="text/css" href="{{ CDN_STATIC_THEME_URL }}/stylesheet/style.less">
     {% elif USE_CDN == False %}
-      <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.less">
+    <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.less">
     {% endif %}
     <script src="//cdn.statically.io/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
   {% else %}
+    {% if USE_CDN == True %}
     <link rel="stylesheet" type="text/css" href="{{ CDN_STATIC_THEME_URL }}/stylesheet/style.min.css">
+    {% elif USE_CDN == False %}
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.min.css">
+    {% endif %}
   {% endif %}
 
   {% if USE_CDN %}
