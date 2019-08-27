@@ -7,9 +7,15 @@ Hak Cipta &copy; Farrel Franqois 2019 &lt;farrel(at)franqois(dot)id&gt;.
 ## Pembukaan
 Sebagai pembukaan, maka saya akan menjelaskan istilah yang paling dasar dan yang akan saya gunakan di dalam halaman ini, yaitu:
 
+- "Digital" dalam Teknologi merupakan sebuah teknologi elektronik yang menghasilkan, menyimpan, dan memproses data dalam dua kondisi, yakni: Positif dan Non-positif. Paling sering, teknologi digital ini di gunakan oleh media komunikasi atau media jaringan untuk berkomunikasi, seperti Fiber Optic dan Satelit. Selain media komunikasi, teknologi digital juga telah di gunakan dan di manfaatkan oleh seluruh perangkat yang ada sekarang ini, seperti Laptop/Komputer, Telepon Genggam/Pintar, Televisi, dll.
+
+- "Karya Digital" adalah sebuah Karya yang di buat oleh Penulis/Pembuat yang di sebarkan secara digital atau melalui teknologi digital/perangkat digital, seperti melalui Internet adalah salah satu contohnya. Blog ini merupakan salah satu contoh dari "Karya Digital".
+
+- "Penulis" atau "Pembuat" adalah seorang atau kelompok atau golongan yang membuat atau menuliskan suatu "Karya Digital". Saya adalah salah satu "Penulis" atau "Pembuat" Karya Digital. Karya Digital yang saya buat adalah Blog ini.
+
 - "Perjanjian Lisensi" (atau bisa di sebut "Lisensi" saja) dalam "Karya Digital" adalah sebuah Perjanjian yang bersifat 'Tertulis' dari Penulis/Pembuat untuk mengatur izin dari penyalinan, modifikasi, komersial dan mendistribusikan suatu karya digital ataupun kode sumber nya yang nantinya akan di lakukan oleh Pengguna/Konsumen.
 
-- "Anda" adalah "Pengguna" atau "Konsumen" yang mengunjungi, ingin menggunakan atau/dan ingin membuat turunan dari Blog ini. Serta, "Anda" disini adalah seorang yang berhak untuk melakukan hal itu, namun di samping itu, Anda harus menuruti segala kewajiban yang ada disini sebagai ganti nya, untuk menyeimbangkan Hak dan Kewajiban.
+- "Anda" adalah seorang "Pengguna" atau "Konsumen" yang mengunjungi, ingin menggunakan atau/dan ingin membuat turunan dari suatu Karya Digital. Serta, "Anda" disini adalah seorang yang berhak untuk melakukan hal itu, namun di samping itu, Anda harus menuruti segala kewajiban yang ada disini sebagai ganti nya, untuk menyeimbangkan Hak dan Kewajiban.
 
 Jadi, jika Anda ingin menurunkan, menggunakan, membagikan, memodifikasi, mempelajari dan menyalinkan nya dari salah satu/seluruh konten ataupun kode sumber yang ada di dalam blog ini, untuk keperluan apapun, termasuk keperluan komersial sekalipun, maka Anda harus tunduk kepada persyaratan/kewajiban yang berlaku disini untuk menghindari Tuntutan Pelanggaran Hak Cipta.
 
@@ -36,6 +42,6 @@ Jadi, setuju/tidak setuju, baca/tidak baca, maka Anda harus siap untuk menyetuju
 Jika Anda tidak menyetujui nya, silahkan jangan buat turunan dari/menggunakan Blog ini, dan kalau bisa, lebih baik juga untuk tidak mengunjungi Blog ini.
 
 ## Penutup
-Sekian untuk Halaman Lisensi ini, semoga Anda memahami dan memaklumi adanya Perjanjian seperti ini.
+Baiklah, sekian untuk Halaman Lisensi ini, semoga Anda memahami dan memaklumi adanya Perjanjian seperti ini. Dan, semoga Anda bisa mentaati nya untuk kebaikan bersama dan Anda juga.
 
-Terima kasih atas perhatian nya dari Anda semua ^\_^
+Terima kasih atas perhatian nya dari Anda ^\_^
