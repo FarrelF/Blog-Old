@@ -77,7 +77,7 @@ DISABLE_URL_HASH = True # Menonaktifkan Tanda Pagar pada Link URL setiap ke arti
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['sitemap']
+PLUGINS = ['sitemap', 'representative_image']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
