@@ -94,7 +94,7 @@ EXTENDED_SITEMAP_PLUGIN = {
 }
 
 # Pengaturan Markdown
-MD_EXTENSIONS = (['toc'])
+MARKDOWN = (['toc'])
 
 # Hak Cipta
 COPYRIGHT_YEAR = f'{datetime.now().year}'
