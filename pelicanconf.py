@@ -77,7 +77,7 @@ DISABLE_URL_HASH = True # Menonaktifkan Tanda Pagar pada Link URL setiap ke arti
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extended_sitemap', 'representative_image']
+PLUGINS = ['extended_sitemap', 'representative_image', 'extract_toc']
 EXTENDED_SITEMAP_PLUGIN = {
     'priorities': {
         'index': 1.0,
@@ -92,6 +92,9 @@ EXTENDED_SITEMAP_PLUGIN = {
         'others': 'monthly',
     }
 }
+
+# Pengaturan Markdown
+MD_EXTENSIONS = (['toc'])
 
 # Hak Cipta
 COPYRIGHT_YEAR = f'{datetime.now().year}'
