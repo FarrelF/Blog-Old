@@ -11,4 +11,6 @@
 <meta property="og:url" content="{{ SITEURL }}"/>
 {% if SITELOGO %}
 <meta property="og:image" content="{{ SITELOGO }}">
+{% elif article.featured_image %}
+<meta property="og:image" content="{{ article.featured_image }}">
 {% endif %}
