@@ -4,6 +4,9 @@ Category: Lainnya
 Slug: halo-dunia
 Status: published
 Authors: Farrel Franqois
+Summary: Ini adalah Artikel bukan uji-coba yang paling pertama di dalam blog ini. Jadi, yah, kalo mau baca silahkan, kalo gak ya silahkan. Tapi, di dalam artikel ini saya menjelaskan fokus saya kedepan nya untuk blog ini dan juga blog lama saya, jadi saya sarankan untuk di baca, kalo gak ya gak apa-apa, hehe :-D
+
+[TOC]
 
 Halo Dunia! (Lagi. "Eh, emang pernah, yah?"), ini adalah artikel pertama yang bukan merupakan artikel uji coba.
 
@@ -13,6 +16,7 @@ Seperti yang Anda tahu, bahwa Blog ini merupakan sebuah berkas HTML Statis, yang
 
 Jadi, blog ini di tenagai oleh 'Pelican'. Ehh, tapi bukan oleh burung Pelican, yah, hehe :-D
 
+## Hosting yang saya gunakan
 Untuk hosting nya, saya gunakan Netlify sebagai pengganti dari Web Hosting, agar saya bisa menghemat biaya yang cukup banyak, karena tidak perlu lagi bayar perbulan nya (Saya harap ini bertahan sampai seterusnya). Palingan, saya cuma perlu bayar domain saya saja.
 
 Selain menghemat biaya, dengan memanfaatkan *Static Site Generator* ini, saya hanya perlu menggunakan Editor Teks/Kode untuk menulis Artikel, yang sebelumnya pada WordPress saya harus membuka Web Browser terlebih dahulu.
@@ -23,6 +27,7 @@ Dan, itupun dalam menulis (terutama untuk menyimpan Artikel sebagai konsep/draf)
 
 Jadi, itulah kenapa saya lebih memilih untuk menggunakan *Static Site Generator* seperti Pelican ini bila di bandingkan dengan WordPress.
 
+## Bagaimana dengan Blog lama nya?
 Memang saya memiliki blog yang lama, dan saya tidak berniat untuk menyalinkan semua artikel yang berada di blog lama saya ke dalam blog ini.
 
 Alias, saya tidak pernah berniat untuk bermigrasi, karena migrasi dari *Platform* lama itu membuang pikiran, tenaga dan waktu saya. Jadi, saya tidak berpikir untuk melakukan nya, lebih baik seperti ini saja.
@@ -35,6 +40,7 @@ Nah, "kebebasan" yang saya maksud/beri disini adalah "kebebasan" untuk menggunak
 
 Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan" yang ada di blog ini pada turunan yang Anda buat. Untuk lebih lengkapnya, silahkan baca Laman [Lisensi](/lisensi). Kamu juga bisa memperoleh kode sumber nya, caranya bisa kamu kunjungi laman [Kode Sumber](/kode-sumber)
 
+## Penutup dan Fokus kedepan nya
 Jadi, sudah dulu yah, saya juga mau fokus merombak blog ini terlebih dahulu, dibandingkan dengan menulis artikel. Seperti yang Anda tahu, blog ini sangat 'jauh' sekali dari kata "lengkap", seperti ada halaman yang dalam masih di buat/di draf, dan lain sebagai nya.
 
 Terima kasih atas perhatian nya ^\_^
