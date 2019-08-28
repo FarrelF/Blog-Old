@@ -42,6 +42,11 @@
   {% endif %}
 
   <div>
+    {% if article.toc %}
+    <nav class="toc">
+      {{ article.toc }}
+    </nav>
+    {% endif %}
     {{ article.content }}
   </div>
   <div class="tag-cloud">
