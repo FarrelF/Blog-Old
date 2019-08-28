@@ -94,7 +94,15 @@ EXTENDED_SITEMAP_PLUGIN = {
 }
 
 # Pengaturan Markdown
-MARKDOWN = (['toc'])
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+    'extensions' : ['toc']
+}
 
 # Hak Cipta
 COPYRIGHT_YEAR = f'{datetime.now().year}'
