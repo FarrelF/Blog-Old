@@ -97,7 +97,7 @@ EXTENDED_SITEMAP_PLUGIN = {
 MARKDOWN = {
   'extension_configs': {
     'markdown.extensions.toc': {
-      'title': '<h2 align=\"left\">Daftar Isi:</h2>'
+      'title': 'Daftar Isi:'
     },
     'markdown.extensions.codehilite': {'css_class': 'highlight'},
     'markdown.extensions.extra': {},
