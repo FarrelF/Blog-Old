@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from pymdownx import emoji, twemoji_db, highlight
+from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra
 from datetime import datetime
 
 AUTHOR = 'Farrel Franqois'
@@ -92,13 +92,16 @@ EXTENDED_SITEMAP_PLUGIN = {
 }
 
 # Pengaturan Markdown
+PYGMENTS_STYLE = 'friendly' # Tampilan Pygments yang merupakan Syntax Highlighter
 MARKDOWN = {
   'extension_configs': {
-    'markdown.extensions.toc': {
-      'title': 'Daftar Isi:'
-    },
+    'markdown.extensions.toc': {},
     'markdown.extensions.meta': {},
-    'pymdownx.highlight': {'css_class': 'highlight'},
+    'pymdownx.highlight': {
+        'css_class': 'highlight',
+        'pygments_style': PYGMENTS_STYLE,
+        'guess_lang': True,
+    },
     'pymdownx.extra': {},
     'pymdownx.emoji': {
       'emoji_index': emoji.twemoji,
@@ -140,8 +143,6 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
-PYGMENTS_STYLE = 'friendly' # Tampilan Pygments yang merupakan Syntax Highlighter
 
 # Blogroll
 LINKS = ()
