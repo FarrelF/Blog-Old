@@ -30,6 +30,8 @@
   </header>
   {% if article.featured_image %}
     <img src="{{ article.featured_image }}">
+  {% elif article.cover %}
+    <img src="{{ article.cover }}" alt="">
   {% endif %}
   {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.article_top %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
