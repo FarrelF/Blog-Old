@@ -4,7 +4,7 @@ Category: Lainnya
 Slug: halo-dunia
 Status: published
 Authors: Farrel Franqois
-Summary: Ini adalah Artikel bukan uji-coba yang paling pertama di dalam blog ini. Jadi, yah, kalo mau baca silahkan, kalo gak ya silahkan. Tapi, di dalam artikel ini saya menjelaskan fokus saya kedepan nya untuk blog ini dan juga blog lama saya, jadi saya sarankan untuk di baca, kalo gak ya gak apa-apa, hehe :-D
+Summary: Ini adalah Artikel bukan uji-coba yang paling pertama di dalam blog ini. Jadi, yah, kalo mau baca silahkan, kalo gak ya silahkan. Tapi, di dalam artikel ini saya menjelaskan fokus saya kedepan nya untuk blog ini dan juga blog lama saya, jadi saya sarankan untuk di baca, kalo gak ya gak apa-apa, hehe :grinning:
 
 [TOC]
 
@@ -14,7 +14,7 @@ Sudah lama sekali saya tidak pernah menulis artikel di dalam blog saya. Tapi, mu
 
 Seperti yang Anda tahu, bahwa Blog ini merupakan sebuah berkas HTML Statis, yang di hasilkan melalui [Pelican](https://blog.getpelican.org) yang bertindak sebagai *Static Site Generator*.
 
-Jadi, blog ini di tenagai oleh 'Pelican'. Ehh, tapi bukan oleh burung Pelican, yah, hehe :-D
+Jadi, blog ini di tenagai oleh 'Pelican'. Ehh, tapi bukan oleh burung Pelican, yah, hehe :grinning:
 
 ## Hosting yang saya gunakan
 Untuk hosting nya, saya gunakan Netlify sebagai pengganti dari Web Hosting, agar saya bisa menghemat biaya yang cukup banyak, karena tidak perlu lagi bayar perbulan nya (Saya harap ini bertahan sampai seterusnya). Palingan, saya cuma perlu bayar domain saya saja.
