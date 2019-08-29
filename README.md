@@ -31,7 +31,7 @@ Lalu, kamu bisa coba untuk menghasilkan sebuah berkas HTML Statis ini dengan Pel
 
 Di dalam GNU/Linux atau macOS (Atau, Sistem Operasi berbasis Unix-like/Unix lain nya), kamu dapat eksekusi perintah berikut agar Pelican dapat menghasilkan Berkas HTML Statis dan juga mengaktifkan fitur Web Server pada Python:
 
-**Catatan**: Tapi sebelum itu, pastikan kalau kamu sudah berada di dalam Folder Kode Sumber nya, yah :simple_smile:
+**Catatan**: Tapi sebelum itu, pastikan kalau kamu sudah berada di dalam Folder Kode Sumber nya, yah :slightly_smiling_face:
 
 ```bash
 $ pelican --autoreload --listen
@@ -52,7 +52,7 @@ Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu
 > pelican --listen
 ```
 
-Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:8000` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :simple_smile:
+Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:8000` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :slightly_smiling_face:
 
 Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman [Dokumentasi nya](https://docs.getpelican.org).
 
@@ -75,11 +75,11 @@ Jadi, jika Anda ingin merubah Kode Sumber Tema nya, silahkan ubah itu melalui Re
 
 Sedangkan, jika Anda langsung mengubah kode sumber tema nya langsung melalui Repo ini (dan *fork* nya), silahkan tanggung sendiri resiko nya dan kalo Anda mengirimkan *Pull Request* dengan perubahan seperti ini, maka saya akan pertimbangkan untuk menolak nya secara mentah-mentah atau meng-hapus perubahan tersebut. Jadi, jangan kaget, yah :blush:
 
-Nah, itulah cara kontribusi nya, jika Anda mempunyai pertanyaan atau masalah yang berhubungan dengan Kode Sumber atau konten yang ada di dalam Blog ini, silahkan tanyakan itu melalui Bagian "Issue" atau Berkomentar di dalam Blog, yah :simple_smile:
+Nah, itulah cara kontribusi nya, jika Anda mempunyai pertanyaan atau masalah yang berhubungan dengan Kode Sumber atau konten yang ada di dalam Blog ini, silahkan tanyakan itu melalui Bagian "Issue" atau Berkomentar di dalam Blog, yah :slightly_smiling_face:
 
 ## Lisensi
 Kode Sumber ini saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
 
 Sedangkan konten yang ada di dalam blog ini, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/catatan-hukum)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
 
-Untuk lebih lengkap nya, silahkan kunjungi Laman [Lisensi](https://farrel.franqois.id/lisensi) di dalam Blog Saya :simple_smile:
+Untuk lebih lengkap nya, silahkan kunjungi Laman [Lisensi](https://farrel.franqois.id/lisensi) di dalam Blog Saya :slightly_smiling_face:
