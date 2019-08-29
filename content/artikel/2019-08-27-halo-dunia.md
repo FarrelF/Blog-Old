@@ -20,7 +20,7 @@ Seperti yang Anda tahu, bahwa Blog ini merupakan sebuah berkas HTML Statis, yang
 Jadi, blog ini di tenagai oleh 'Pelican'. Ehh, tapi bukan oleh [Burung 'Pelican'](https://www.google.com/search?q=burung+pelikan&tbm=isch), yah, hehe :grinning:
 
 ## Hosting yang saya gunakan
-Untuk hosting nya, saya gunakan Netlify sebagai pengganti dari Web Hosting, agar saya bisa menghemat biaya yang cukup banyak, karena tidak perlu lagi bayar perbulan nya (Saya harap ini bertahan sampai seterusnya). Palingan, saya cuma perlu bayar domain saya saja.
+Untuk hosting nya, saya gunakan [Netlify](https://www.netlify.com/) sebagai pengganti dari Web Hosting, agar saya bisa menghemat biaya yang cukup banyak, karena tidak perlu lagi bayar perbulan nya (Saya harap ini bertahan sampai seterusnya). Palingan, saya cuma perlu bayar domain saya saja.
 
 Selain menghemat biaya, dengan memanfaatkan *Static Site Generator* ini, saya hanya perlu menggunakan Editor Teks/Kode untuk menulis Artikel, yang sebelumnya pada WordPress saya harus membuka Web Browser terlebih dahulu.
 
