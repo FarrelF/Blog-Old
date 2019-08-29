@@ -10,14 +10,14 @@ Kode Sumber nya ini di bagi menjadi dua, yakni Kode Sumber untuk Blog nya, dan y
 ## I. Kode Sumber Blog
 Kode Sumber untuk Blog ini telah saya simpan di dalam GitHub, untuk melihat/memperoleh nya, silahkan kunjungi Alamat URL untuk *Repository* Git nya di bawah ini:
 
-    :::text
-    https://github.com/FarrelF/FarrelF-Blog
-
+```text
+https://github.com/FarrelF/FarrelF-Blog
+```
 Atau, kalau kamu lebih suka meng-*clone* nya secara langsung, maka kamu dapat meng-*clone* nya dengan perintah berikut:
 
-    :::shell
-    $ git clone https://github.com/FarrelF/FarrelF-Blog.git
-
+```bash
+$ git clone https://github.com/FarrelF/FarrelF-Blog.git
+```
 Kode Sumber Blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), yang merupakan lisensi *Copyleft*. Jadi, pastikan Anda mendistribusikan nya dengan menggunakan Lisensi yang sama dengan Lisensi dari Kode Sumber Asli nya dan juga mencantumkan Hak Cipta nya juga, yah :-)
 
 Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](/lisensi).
@@ -28,14 +28,14 @@ Kode Sumber untuk Tema Blog ini telah saya simpan di dalam GitHub. Sebenarnya, k
 
 Untuk melihat/memperoleh nya, silahkan kunjungi Alamat URL untuk *Repository* Git nya di bawah ini:
 
-    :::text
-    https://github.com/FarrelF/Modified-Flex
-
+```text
+https://github.com/FarrelF/Modified-Flex
+```
 Atau, kalau kamu lebih suka meng-*clone* nya secara langsung, maka kamu dapat meng-*clone* nya dengan perintah berikut:
 
-    :::shell
-    $ git clone https://github.com/FarrelF/Modified-Flex.git
-
+```bash
+$ git clone https://github.com/FarrelF/Modified-Flex.git
+```
 Kode Sumber Tema ini saya lisensi kan dengan Lisensi MIT, sesuai dengan Tema Asli nya, yang merupakan lisensi *Permissive*. Jadi, pastikan Anda mencantumkan Hak Cipta nya juga, yah :-)
 
 Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](/lisensi).
