@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import pymdownx.emoji as emojis
 from datetime import datetime
 
 AUTHOR = 'Farrel Franqois'
@@ -62,22 +63,19 @@ EXTRA_PATH_METADATA = {
     'extras/robots.txt': {'path': 'robots.txt'}
 }
 
-THEME = 'themes/Flex' # Nama Tema yang di gunakan
-TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
+THEME = 'Flex' # Nama Tema yang di gunakan
 MAIN_MENU = True
 
-CC_LICENSE = {
-    'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
-    'version': '4.0',
-    'slug': 'by-sa',
-    'distribution-type': 'local'
-} # Implementasi Lisensi dari Creative Commons
+# Pengaturan Waktu
+TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
+DEFAULT_DATE = 'fs'
 
 DISABLE_URL_HASH = True # Menonaktifkan Tanda Pagar pada Link URL setiap ke artikel/halaman
+CHECK_MODIFIED_METHOD = 'sha256'
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extended_sitemap', 'representative_image', 'extract_toc']
+PLUGINS = ['extended_sitemap']
 EXTENDED_SITEMAP_PLUGIN = {
     'priorities': {
         'index': 1.0,
@@ -100,8 +98,20 @@ MARKDOWN = {
       'title': 'Daftar Isi:'
     },
     'markdown.extensions.codehilite': {'css_class': 'highlight'},
-    'markdown.extensions.extra': {},
     'markdown.extensions.meta': {},
+    'pymdownx.emoji': {
+      'emoji_index': emojis.twemoji,
+      'emoji_generator': emojis.to_svg,
+      'alt': 'short',
+      'options': {
+        "attributes": {
+            "height": "20px",
+            "width": "20px"
+        },
+        'classes': 'twemoji_emojis',
+        "image_path": "https://cdn.statically.io/libs/twemoji/12.0.4/2/svg/",
+      },
+    },
   },
   'output_format': 'html5',
 }
@@ -109,8 +119,14 @@ MARKDOWN = {
 # Hak Cipta
 COPYRIGHT_YEAR = f'{datetime.now().year}'
 COPYRIGHT_NAME = 'Farrel Franqois'
+CC_LICENSE = {
+    'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
+    'version': '4.0',
+    'slug': 'by-sa',
+    'distribution-type': 'local'
+} # Implementasi Lisensi dari Creative Commons
 
-# Pengaturan Bahasa
+# Pengaturan Bahasa dan Lokalisasi
 DEFAULT_LANG = 'id'
 OG_LOCALE = 'id_ID'
 LOCALE = 'id_ID'

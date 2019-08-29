@@ -30,9 +30,11 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 STATIC_PATHS.append('extras/_headers')
 EXTRA_PATH_METADATA['extras/_headers'] = {'path': '_headers'}
 
+# Tema
+THEME = 'themes/Flex' # Nama Tema yang di gunakan
+
 # Activating Cache
 CACHE_PATH = 'cache'
-CHECK_MODIFIED_METHOD = 'mtime'
 CACHE_CONTENT = True
 GZIP_CACHE = True
 LOAD_CONTENT_CACHE = True
