@@ -28,7 +28,7 @@ Sebagai pembukaan, maka saya akan menjelaskan istilah yang paling dasar dan yang
 Jadi, jika Anda ingin menurunkan, menggunakan, membagikan, memodifikasi, mempelajari dan menyalinkan nya dari salah satu/seluruh konten ataupun kode sumber yang ada di dalam blog ini, untuk keperluan apapun, termasuk keperluan komersial sekalipun, maka Anda harus tunduk kepada persyaratan/kewajiban yang berlaku disini untuk menghindari Tuntutan Pelanggaran Hak Cipta.
 
 ## Perjanjian Lisensi
-Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya](/catatan-hukum)) di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa (Atau, bahasa Inggris nya: *Attribution-ShareAlike*) Internasional 4.0 (disingkat: CC BY-SA 4.0)
+Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/catatan-hukum)) di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa (Atau, bahasa Inggris nya: *Attribution-ShareAlike*) Internasional 4.0 (disingkat: CC BY-SA 4.0)
 
 Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan mengakses Alamat URL Berikut ini:
 
@@ -53,4 +53,4 @@ Jika Anda tidak menyetujui nya, silahkan jangan buat turunan dari/menggunakan Bl
 ## Penutup
 Baiklah, sekian untuk Halaman Lisensi ini, semoga Anda memahami dan memaklumi adanya Perjanjian seperti ini. Dan, semoga Anda bisa mentaati nya untuk kebaikan bersama dan Anda juga.
 
-Terima kasih atas perhatian nya dari Anda ^\_^
+Terima kasih atas perhatian nya dari Anda :blush:
