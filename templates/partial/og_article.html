@@ -16,10 +16,10 @@
 {% for tag in article.tags %}
 <meta property="article:tag" content="{{ tag.name|escape }}"/>
 {% endfor %}
-{% if 'cover' in article.metadata %}
-<meta property="og:image" content="{{ SITEURL }}/{{ article.metadata['cover'] }}">
-{% elif article.featured_image %}
+{% if article.featured_image %}
 <meta property="og:image" content="{{ article.featured_image }}">
+{% elif article.cover %}
+<meta property="og:image" content="{{ article.cover }}">
 {% else %}
 <meta property="og:image" content="{{ SITELOGO }}">
 {% endif %}
