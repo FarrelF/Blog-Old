@@ -31,7 +31,7 @@ STATIC_PATHS.append('extras/_headers')
 EXTRA_PATH_METADATA['extras/_headers'] = {'path': '_headers'}
 
 # Tema
-THEME = 'themes/Flex' # Nama Tema yang di gunakan
+THEME = 'themes/Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 
 # Activating Cache
 CACHE_PATH = 'cache'

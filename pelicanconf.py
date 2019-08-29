@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-import pymdownx.emoji as emojis
+from pymdownx import emoji, twemoji_db, highlight
 from datetime import datetime
 
 AUTHOR = 'Farrel Franqois'
@@ -63,7 +63,7 @@ EXTRA_PATH_METADATA = {
     'extras/robots.txt': {'path': 'robots.txt'}
 }
 
-THEME = 'Flex' # Nama Tema yang di gunakan
+THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
 # Pengaturan Waktu
@@ -97,11 +97,12 @@ MARKDOWN = {
     'markdown.extensions.toc': {
       'title': 'Daftar Isi:'
     },
-    'markdown.extensions.codehilite': {'css_class': 'highlight'},
     'markdown.extensions.meta': {},
+    'pymdownx.highlight': {'css_class': 'highlight'},
+    'pymdownx.extra': {},
     'pymdownx.emoji': {
-      'emoji_index': emojis.twemoji,
-      'emoji_generator': emojis.to_svg,
+      'emoji_index': emoji.twemoji,
+      'emoji_generator': emoji.to_svg,
       'alt': 'short',
       'options': {
         "attributes": {
@@ -112,6 +113,8 @@ MARKDOWN = {
         "image_path": "https://cdn.statically.io/libs/twemoji/12.0.4/2/svg/",
       },
     },
+    'pymdownx.superfences': {},
+    'pymdownx.inlinehilite': {},
   },
   'output_format': 'html5',
 }
