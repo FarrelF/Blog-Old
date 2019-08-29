@@ -44,7 +44,7 @@ Saya mempunyai Akun BunnyCDN, cuma saya gak implementasikan disini, mengingat mu
 ## Apa Fokus kedepan nya?
 Karena saya lebih suka penggunaan *Static Site Generator* bila dibandingkan dengan menggunakan WordPress untuk keperluan Blogging, seperti yang saya bilang tadi.
 
-Jadi, bisa kamu tebak dong jawaban nya seperti apa? Yap! Saya akan lebih fokus untuk menulis disini, daripada di [blog lama](https://farrelf.wpinter.com) saya yang berbasis WordPress.
+Jadi, bisa kamu tebak dong jawaban nya seperti apa? Yap! Saya akan lebih fokus untuk menulis disini, daripada di [blog lama](https://farrelf.wpinter.com) saya yang berbasis WordPress. Jadi, blog lama saya berhentikan, alias udah gak saya urus lagi.
 
 Sudah saya bahas alasan nya di bagian "[Hosting yang saya gunakan](#hosting-yang-saya-gunakan)", jadi saya kira alasan nya sudah jelas :slightly_smiling_face:
 
