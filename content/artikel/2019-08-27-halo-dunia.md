@@ -1,6 +1,6 @@
 Title: Halo Dunia! (Lagi)
 Date: 2019-08-27 00:38
-Modified: 2019-08-29 15:51
+Modified: 2019-08-30 03:55:40
 Category: Lainnya
 Slug: halo-dunia
 Status: published
@@ -30,8 +30,28 @@ Dan, itupun dalam menulis (terutama untuk menyimpan Artikel sebagai konsep/draf)
 
 Jadi, itulah kenapa saya lebih memilih untuk menggunakan *Static Site Generator* seperti Pelican ini bila di bandingkan dengan WordPress.
 
-## Bagaimana dengan Blog lama nya?
-Memang saya memiliki blog yang lama, dan saya tidak berniat untuk menyalinkan semua artikel yang berada di blog lama saya ke dalam blog ini.
+## Bagaimana dengan CDN nya?
+Untuk CDN nya, seperti biasa, saya selalu gunakan CDN dari [Statically](https://statically.io), baik untuk memuat berkas Gambar, Emoji, JS dan CSS di dalam Blog saya ini.
+
+Kenapa pake CDN ini? Agar bisa menghemat *Bandwidth* yang cukup besar, mengingat disini ada Font yang sebesar 2 MB. Meskipun di Netlify memiliki CDN (Artinya, ketika Anda mengakses blog ini, maka sebenarnya Anda mengakses blog ini dari Server Netlify terdekat), namun *Bandwidth* yang di sediakan cukup terbatas, yakni sebesar 100 GB/bulan.
+
+Gede sih batasan nya untuk blog seperti ini, cuma ya kalo bisa di hemat, kenapa tidak? Nah, karena CDN Statically ini gratis dan juga *Bandwidth* nya 'tidak terbatas', maka saya manfaatkan CDN ini untuk memuat berkas yang ada di dalam Repo GitHub saya, terutama berkas statik yang berada di dalam Repo Tema yang sudah saya [Modifikasi](https://github.com/FarrelF/Modified-Flex).
+
+Dengan ini, (harusnya) *Bandwidth* Netlify tidak terpakai sama sekali/tidak terakumulasi, karena saya menggantungkan Asset Blog ini kepada Statically yang mana menghantarkan sebuah berkas dari dalam Repo GitHub, dan itupun dimuat secara eksternal (diluar blog ini). Jadi, lalu lintas bisa sedikit di perhemat :slightly_smiling_face:
+
+Saya mempunyai Akun BunnyCDN, cuma saya gak implementasikan disini, mengingat mungkin kedepan nya saya akan terus menggunakan CDN Statically daripada BunnyCDN, karena disitu fiturnya lebih lengkap, meski gak ada Custom Domain :slightly_smiling_face:
+
+## Apa Fokus kedepan nya?
+Karena saya lebih suka penggunaan *Static Site Generator* bila dibandingkan dengan menggunakan WordPress untuk keperluan Blogging, seperti yang saya bilang tadi.
+
+Jadi, bisa kamu tebak dong jawaban nya seperti apa? Yap! Saya akan lebih fokus untuk menulis disini, daripada di [blog lama](https://farrelf.wpinter.com) saya yang berbasis WordPress.
+
+Sudah saya bahas alasan nya di bagian "[Hosting yang saya gunakan](#hosting-yang-saya-gunakan)", jadi saya kira alasan nya sudah jelas :slightly_smiling_face:
+
+Tapi, sebelum saya menulis artikel lagi, mungkin saya akan fokus untuk merombak blog sedikit terlebih dahulu, mengingat ini jauh sekali dari kata 'lengkap', seperti ada Laman yang kosong, Mesin Pencarian juga tidak ada, begitu pula dengan Analitik nya, dan fitur-fitur lain nya.
+
+## Lalu, bagaimana dengan Blog lama nya? Apakah ada niatan untuk menyalinkan artikel lama kesini?
+Memang saya memiliki beberapa artikel di dalam blog yang lama. Tapi, sayangnya, saya tidak berniat untuk menyalinkan semua artikel yang berada di blog lama saya ke dalam blog ini.
 
 Alias, saya tidak pernah berniat untuk bermigrasi, karena migrasi dari *Platform* lama itu membuang pikiran, tenaga dan waktu saya. Jadi, saya tidak berpikir untuk melakukan nya, lebih baik seperti ini saja.
 
@@ -43,7 +63,7 @@ Nah, "kebebasan" yang saya maksud/beri disini adalah "kebebasan" untuk menggunak
 
 Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan" yang ada di blog ini pada turunan yang Anda buat. Untuk lebih lengkapnya, silahkan baca Laman [Lisensi](/lisensi). Kamu juga bisa memperoleh kode sumber nya, caranya bisa kamu kunjungi laman [Kode Sumber](/kode-sumber)
 
-## Penutup dan Fokus kedepan nya
+## Penutup
 Jadi, sudah dulu yah, saya juga mau fokus merombak blog ini terlebih dahulu, dibandingkan dengan menulis artikel. Seperti yang Anda tahu, blog ini sangat 'jauh' sekali dari kata "lengkap", seperti ada halaman yang dalam masih di buat/di draf, dan lain sebagai nya.
 
-Terima kasih atas perhatian nya ^\_^
+Terima kasih atas perhatian nya :blush:
