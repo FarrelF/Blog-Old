@@ -3,6 +3,9 @@ Slug: lisensi
 Status: published
 Authors: Farrel Franqois
 
+## Daftar Isi
+[TOC]
+
 Hak Cipta &copy; 2019 Farrel Franqois &lt;farrel(at)franqois(dot)id&gt;
 
 ## Pembukaan
@@ -10,13 +13,17 @@ Sebagai pembukaan, maka saya akan menjelaskan istilah yang paling dasar dan yang
 
 - "Digital" dalam Teknologi merupakan sebuah teknologi elektronik yang menghasilkan, menyimpan, dan memproses data dalam dua kondisi, yakni: Positif dan Non-positif. Paling sering, teknologi digital ini di gunakan oleh media komunikasi atau media jaringan untuk berkomunikasi, seperti Fiber Optic dan Satelit. Selain media komunikasi, teknologi digital juga telah di gunakan dan di manfaatkan oleh seluruh perangkat yang ada sekarang ini, seperti Laptop/Komputer, Telepon Genggam/Pintar, Televisi, dll.
 
-- "Karya Digital" adalah sebuah Karya yang di buat oleh Penulis/Pembuat yang di sebarkan secara digital atau melalui teknologi digital/perangkat digital, seperti melalui Internet adalah salah satu contohnya. Blog ini merupakan salah satu contoh dari "Karya Digital".
+- "Karya" adalah sebuah hasil dari pekerjaan, perbuatan atau hasil ciptaan dari seseorang yang membuat nya, yang di sebut dengan "Penulis", "Pembuat" dan "Pekerja". Secara Ciptaan, "Karya" sendiri terdiri dari: "Karya Seni", "Karya Sastra", "Karya Rekam", dan "Karya Cetak". "Karya Digital" termasuk dalam sebuah "Karya", namun itu di bagian 'Teknologi' dalam sebuah Karya.
 
-- "Penulis" atau "Pembuat" adalah seorang atau kelompok atau golongan yang membuat atau menuliskan suatu "Karya Digital". Saya adalah salah satu "Penulis" atau "Pembuat" Karya Digital. Karya Digital yang saya buat adalah Blog ini.
+- "Karya Digital" (Bahasa Inggris nya: *Digital Works*) adalah sebuah Karya yang di buat oleh Penulis/Pembuat yang di sebarkan secara digital atau melalui teknologi digital/perangkat digital, seperti melalui Internet adalah salah satu contohnya. Blog ini merupakan salah satu contoh dari "Karya Digital".
 
-- "Perjanjian Lisensi" (atau bisa di sebut "Lisensi" saja) dalam "Karya Digital" adalah sebuah Perjanjian yang bersifat 'Tertulis' dari Penulis/Pembuat untuk mengatur izin dari penyalinan, modifikasi, komersial dan mendistribusikan suatu karya digital ataupun kode sumber nya yang nantinya akan di lakukan oleh Pengguna/Konsumen.
+- "Penulis" atau "Pembuat" adalah seorang atau kelompok atau golongan yang membuat atau menuliskan suatu/sebuah "Karya". Saya adalah salah satu "Penulis" atau "Pembuat" Karya. Karya yang saya buat adalah Blog ini, yang juga termasuk "Karya Digital".
 
-- "Anda" adalah seorang "Pengguna" atau "Konsumen" yang mengunjungi, ingin menggunakan atau/dan ingin membuat turunan dari suatu Karya Digital. Serta, "Anda" disini adalah seorang yang berhak untuk melakukan hal itu, namun di samping itu, Anda harus menuruti segala kewajiban yang ada disini sebagai ganti nya, untuk menyeimbangkan Hak dan Kewajiban.
+- "Perjanjian Lisensi" (atau bisa di sebut "Lisensi" saja, bahasa Inggris nya: *License* atau *License Agreement*) dalam "Karya Digital" adalah sebuah Perjanjian atau Pemberian Izin yang bersifat 'Tertulis' dari Penulis/Pembuat untuk mengatur izin dari penggunaan, penyalinan, modifikasi, komersial dan mendistribusikan suatu karya digital ataupun kode sumber nya yang nantinya akan di lakukan oleh Pengguna/Konsumen, yang akan menjadi "Penerima Lisensi".
+
+- "Penerima Lisensi" (Bahasa Inggris nya: *Licensee*) adalah seorang atau kelompok atau golongan yang menerima, menyetujui dan mematuhi "Perjanjian Lisensi". "Pengguna" atau "Konsumen" bisa menjadi "Penerima Lisensi", karena di haruskan untuk menerima, menyetujui dan mematuhi "Perjanjian Lisensi" sebelum akhirnya menggunakan suatu Karya Digital untuk keperluan apapun.
+
+- "Anda" termasuk seorang "Pengguna" atau "Konsumen" yang mengunjungi, ingin menggunakan atau/dan ingin membuat turunan dari suatu Karya Digital. Serta, "Anda" disini adalah seorang yang berhak untuk melakukan hal itu, namun di samping itu, Anda harus menuruti segala kewajiban yang ada disini sebagai ganti nya, untuk menyeimbangkan Hak dan Kewajiban. Jika Anda setuju dan mematuhi nya, maka secara otomatis Anda adalah "Penerima Lisensi".
 
 Jadi, jika Anda ingin menurunkan, menggunakan, membagikan, memodifikasi, mempelajari dan menyalinkan nya dari salah satu/seluruh konten ataupun kode sumber yang ada di dalam blog ini, untuk keperluan apapun, termasuk keperluan komersial sekalipun, maka Anda harus tunduk kepada persyaratan/kewajiban yang berlaku disini untuk menghindari Tuntutan Pelanggaran Hak Cipta.
 
