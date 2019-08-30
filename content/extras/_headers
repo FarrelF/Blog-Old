@@ -12,3 +12,10 @@
 
 /theme/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000
+  access-control-allow-origin: *
+  timing-allow-origin: *
+  
+/img/*
+  Cache-Control: public, max-age=31536000, s-maxage=31536000
+  access-control-allow-origin: *
+  timing-allow-origin: *
