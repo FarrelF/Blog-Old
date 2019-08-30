@@ -12,8 +12,6 @@ Summary:
 ## I. Pembuka
 Halo, semua. Seperti yang Anda ketahui, menonton video dari Internet (atau biasa di sebut “Video Streaming”) juga merupakan salah satu keseharian bagi pengguna Internet yang hampir tidak terhindarkan, contoh terdekatnya adalah menonton video di salah satu Layanan Video Streaming yang ada di Internet, yakni [YouTube](https://www.youtube.com).
 
-Tentu saja, tanpa jaminan dan tanggung jawab dari pembuat nya.
-
 YouTube adalah salah satu layanan Video Streaming yang paling sering di gunakan setiap hari nya oleh pengguna Internet di seluruh Indonesia.
 Namun, masalah nya adalah tidak semua orang mempunyai kuota Internet atau memiliki akses yang cepat, baik untuk menonton pertama kali ataupun ingin menonton video nya lagi.
 
@@ -41,6 +39,8 @@ Lalu, apa itu youtube-dl? Bagaimana cara meng-installnya sekaligus menggunakan n
 Karena itu, harusnya program ini bekerja dengan baik di hampir semua Platform yang ada, seperti di dalam Sistem Operasi berbasis UNIX (seperti: macOS, Keluarga/Varian BSD, dll), UNIX-like (seperti: GNU/Linux, dll), dan Windows.
 
 Program tersebut di rilis sebagai Public Domain dan di bawah Lisensi “Unlicense”. Jadi, Anda bisa bebas menggunakan, menyalin, memodifikasi dan mendistribusikan ulang Program tersebut berserta dengan Kode Sumber nya, untuk keperluan apapun, termasuk keperluan komersial sekalipun. 
+
+Tentu saja, tanpa jaminan dan tanggung jawab dari pembuat nya.
 
 ### Mengapa youtube-dl? Apa Kelebihan dan Kekurangan nya?
 #### (+) Kelebihan
