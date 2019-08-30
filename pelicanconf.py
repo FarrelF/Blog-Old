@@ -109,8 +109,8 @@ MARKDOWN = {
       'alt': 'short',
       'options': {
         "attributes": {
-            "height": "20px",
-            "width": "20px"
+            "height": "17px",
+            "width": "17px"
         },
         'classes': 'twemoji_emojis',
         "image_path": "https://cdn.statically.io/libs/twemoji/12.0.4/2/svg/",
