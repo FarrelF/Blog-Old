@@ -15,7 +15,7 @@ SITEURL = 'https://farrel.franqois.id'
 
 # Penggunaan CDN
 USE_CDN = True
-CDN_THEME_REPO_BRANCH = '87c9ad7'
+CDN_THEME_REPO_BRANCH = 'bcf738b8'
 CDN_STATIC_THEME_URL = f'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{CDN_THEME_REPO_BRANCH}/static'
 CC_LICENSE['distribution-type'] = 'cdn'
 
