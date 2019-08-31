@@ -16,8 +16,11 @@ Semua konten yang disediakan/di buat oleh saya (Sebagai Pemilik/Penulis di dalam
 Jadi, saya tidak memberikan jaminan, baik itu tersurat atau tersirat, termasuk tetapi tidak terbatas pada jaminan kesesuaian tersirat untuk tujuan tertentu.
 
 Blog ini dan konten nya saya rilis di bawah lisensi berikut:
+
 - Semua konten teks, Gambar/Illustrasi/Grafis yang telah saya buat, dan terjemahan nya (jika ada), menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda memberikan kredit kepada saya dan mendistribusikan kembali konten di bawah lisensi yang sama atau lisensi yang serupa. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](https://farrel.franqois.id/lisensi)
+  
 - Kode Sumber untuk Tema yang saya gunakan, di Lisensikan dengan [Lisensi MIT]() dan ada beberapa aset statik lain nya yang di lisensikan di bawah lisensi yang berbeda.
+
 - Mungkin, untuk Gambar/Illustrasi/Grafis atau/dan referensi lain nya yang telah saya dapatkan dari Situs Web/Blog lain akan menggunakan Lisensi yang berbeda. Oleh karena itu, sebagai kredit, saya akan berikan atribusi berupa pencantuman Judul/Nama dari Gambar/Illustrasi/Grafis, Pembuat nya, Sumber Gambar dan juga Lisensi yang di gunakan nya di akhir artikel/laman.
 
 
