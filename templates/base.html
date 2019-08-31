@@ -18,7 +18,27 @@
   {% endif %}
 
   {% if USE_GOOGLE_FONTS != False %}
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    {% if USE_GOOGLE_CDN_FOR_FONTS %}
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    {% elif USE_GOOGLE_CDN_FOR_FONTS == False %}
+      {% if USE_CDN %}
+        {% if USE_MINIFIED_FONT_CSS %}
+        <link href="{{ CDN_STATIC_THEME_URL }}/stylesheet/source-code-pro.min.css" rel="stylesheet">
+        <link href="{{ CDN_STATIC_THEME_URL }}/stylesheet/source-sans-pro.min.css" rel="stylesheet">
+        {% else %}
+        <link href="{{ CDN_STATIC_THEME_URL }}/stylesheet/source-code-pro.css" rel="stylesheet">
+        <link href="{{ CDN_STATIC_THEME_URL }}/stylesheet/source-sans-pro.css" rel="stylesheet">
+        {% endif %}
+      {% else %}
+        {% if USE_MINIFIED_FONT_CSS %}
+        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/source-code-pro.min.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/source-sans-pro.min.css" rel="stylesheet">
+        {% else %}
+        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/source-code-pro.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/source-sans-pro.css" rel="stylesheet">
+        {% endif %}
+      {% endif %}
+    {% endif %}
   {% endif %}
 
   {% if USE_LESS %}

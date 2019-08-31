@@ -57,3 +57,6 @@ venv
 
 # NPM
 node_modules
+
+# Dev Stuff
+.vscode/
