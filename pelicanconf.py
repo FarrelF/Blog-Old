@@ -12,7 +12,7 @@ SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = '(Bukan) Sekedar blog pribadi saya'
 SITEURL = 'http://localhost:8000' # Saya isikan dengan 'localhost:8000' agar blog bisa di akses secara Offline
 
-IGNORE_FILES = ['.#*', '*draf*'] # Mengabaikan Berkas
+IGNORE_FILES = ['.#*'] # Mengabaikan Berkas
 
 DEFAULT_METADATA = {
     'status': 'draft',

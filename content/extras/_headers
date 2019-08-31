@@ -19,3 +19,6 @@
   Cache-Control: public, max-age=31536000, s-maxage=31536000
   access-control-allow-origin: *
   timing-allow-origin: *
+
+/favicon.ico
+  Cache-Control: public, max-age=2628000
