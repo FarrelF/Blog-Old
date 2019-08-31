@@ -13,13 +13,14 @@ Summary:
 Halo, semua. Seperti yang Anda ketahui, menonton video dari Internet (atau biasa di sebut “Video Streaming”) juga merupakan salah satu keseharian bagi pengguna Internet yang hampir tidak terhindarkan, contoh terdekatnya adalah menonton video di salah satu Layanan Video Streaming yang ada di Internet, yakni [YouTube](https://www.youtube.com).
 
 YouTube adalah salah satu layanan Video Streaming yang paling sering di gunakan setiap hari nya oleh pengguna Internet di seluruh Indonesia.
+
 Namun, masalah nya adalah tidak semua orang mempunyai kuota Internet atau memiliki akses yang cepat, baik untuk menonton pertama kali ataupun ingin menonton video nya lagi.
 
 Untuk mengatasi masalah tersebut, biasanya pengguna Internet mengunduh Video nya secara langsung. (Bisa di mana saja, lagian gak harus menggunakan koneksi Internet dari dia nya juga, kan? Hehe :grinning:)
 
 Banyak sekali metode pengunduhan Video YouTube yang bisa Anda coba, salah satunya memanfaatkan Situs Web seperti [Savefrom](https://savefrom.net), atau YouTube Wrapper seperti [Invidious](https://invidio.us). Selain itu, Anda juga bisa memanfaatkan Download Manager Eksternal seperti: [XDM (Xtreme Download Manager)](http://xdman.sourceforge.net), [IDM (Internet Download Manager)](https://www.internetdownloadmanager.com), dll.
 
-Namun, masalahnya adalah Situs Web seperti Savefrom dan lain nya terkadang tidak menyediakan Video beresolusi Full HD (1080p) atau di atas nya, dan YouTube Wrapper seperti Invidious menyedia kan nya, hanya saja memisahkan Video dan Audio nya, sehingga hal itu akan sangat merepotkan.
+Namun, masalahnya adalah Situs Web seperti 'Savefrom' dan lain nya terkadang tidak menyediakan Video beresolusi Full HD (1080p) atau di atas nya, dan YouTube Wrapper seperti 'Invidious' menyedia kan nya, hanya saja memisahkan Video dan Audio nya, sehingga hal itu akan sangat merepotkan.
 
 Masalah tersebut memang bisa diselesaikan dengan menggunakan Download Manager Eksternal seperti XDMan dan IDM. Tapi, itu kurang ‘asyik’ lah kalau menurut saya, hehe :grinning:
 
