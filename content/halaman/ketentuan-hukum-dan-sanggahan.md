@@ -42,7 +42,7 @@ Jadi, segala resiko yang telah Anda timbulkan setelah mengakses, menjelajah, dan
 ### Kerahasiaan informasi yang dikirim oleh Anda
 Tentu saja, saya tidak ingin menerima Informasi Rahasia dari Anda melalui Blog ini. Setiap Informasi atau Materi yang di kirim ke Blog ini akan dianggap tidak bersifat Rahasia atau bukan suatu Informasi yang di rahasia kan dan itu bisa di publikasikan oleh saya.
 
-Ini Artinya, Anda mengakui bahwa Anda bertanggung jawab penuh atas konten (Khususnya legalitas, keandalan, kepantasan, orisinalitas paten, data pribadi dan atribusi hak cipta) yang Anda kirimkan kepada saya.
+Ini Artinya, Anda mengakui bahwa Anda bertanggung jawab penuh atas konten (Khususnya legalitas, keandalan, kepantasan, orisinalitas paten, dan atribusi hak cipta) yang Anda kirimkan kepada saya.
 
 
 ### Akses konten dan perubahan konten
