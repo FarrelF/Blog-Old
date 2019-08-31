@@ -1,4 +1,4 @@
-Title: Ketentuan Hukum dan Sanggahan (Peyangkalan)
+Title: Ketentuan Hukum dan Sanggahan
 Slug: ketentuan-hukum-dan-sanggahan
 Status: published
 Authors: Farrel Franqois
