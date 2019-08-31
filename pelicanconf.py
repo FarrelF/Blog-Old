@@ -19,6 +19,10 @@ DEFAULT_METADATA = {
     'author': 'Farrel Franqois'
 }
 
+# Pengaturan Font
+USE_GOOGLE_CDN_FOR_FONTS = False
+USE_MINIFIED_FONT_CSS = False
+
 USE_CDN = False
 
 PATH = 'content'
