@@ -117,7 +117,7 @@ MARKDOWN = {
             "width": "17px"
         },
         'classes': 'twemoji_emojis',
-        "image_path": "https://cdn.statically.io/libs/twemoji/12.0.4/2/svg/",
+        "image_path": "https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/",
       },
     },
     'pymdownx.superfences': {},
