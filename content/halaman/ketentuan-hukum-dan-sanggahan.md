@@ -1,5 +1,7 @@
 Title: Ketentuan Hukum dan Sanggahan
 Slug: ketentuan-hukum-dan-sanggahan
+Date: 2019-08-30 00:01
+Modified: 2019-09-01 21:25
 Status: published
 Authors: Farrel Franqois
 
@@ -11,48 +13,50 @@ Dengan mengakses, menjelajah dan menggunakan Blog ini, yaitu "Farrel Franqois Bl
 
 ## Ketentuan Hukum
 ### Konten/Isi
-Semua konten yang disediakan/di buat oleh saya (Sebagai Pemilik/Penulis di dalam blog ini) hanya berdasarkan "apa adanya" (*"as-is" basis*). Saya percaya bahwa konten di dalam blog ini benar dan akurat, karena saya telah melakukan 'riset' terlebih dahulu sebelum artikel di terbitkan, saya menyediakan nya dengan itikad baik, namun mungkin akan mengandung ketidakakuratan teknis atau kesalahan ketik.
+Semua konten yang disediakan/di buat oleh saya (Sebagai Pemilik/Penulis di dalam blog ini) hanya berdasarkan "apa adanya" (*"as-is" basis*). Saya percaya bahwa konten di dalam blog ini benar dan akurat, karena saya telah melakukan 'riset' terlebih dahulu sebelum artikel di terbitkan, saya telah menyediakan nya dengan itikad yang baik, namun mungkin akan mengandung ketidakakuratan teknis atau kesalahan ketik.
 
-Jadi, saya tidak memberikan jaminan, baik itu tersurat atau tersirat, termasuk tetapi tidak terbatas pada jaminan kesesuaian tersirat untuk tujuan tertentu.
+Jadi, saya tidak bisa memberikan jaminan, baik itu secara tersurat atau tersirat, termasuk tetapi tidak terbatas pada jaminan kesesuaian tersirat untuk tujuan tertentu.
 
 Blog ini dan konten nya saya rilis di bawah lisensi berikut:
 
-- Semua konten teks, Gambar/Illustrasi/Grafis yang telah saya buat, dan terjemahan nya (jika ada), menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda memberikan kredit kepada saya dan mendistribusikan kembali konten di bawah lisensi yang sama atau lisensi yang serupa. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](https://farrel.franqois.id/lisensi)
+- Semua konten teks, Gambar, Illustrasi atau/dan Grafis yang telah saya buat, dan terjemahan nya (jika ada), menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda memberikan kredit kepada saya dan mendistribusikan kembali konten di bawah lisensi yang sama atau lisensi yang serupa. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](https://farrel.franqois.id/lisensi)
   
 - Kode Sumber untuk Tema yang saya gunakan, di Lisensikan dengan [Lisensi MIT](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) dan ada beberapa aset statik lain nya yang di lisensikan di bawah lisensi yang berbeda.
 
-- Mungkin, untuk Gambar/Illustrasi/Grafis atau/dan referensi lain nya yang telah saya dapatkan dari Situs Web/Blog lain akan menggunakan Lisensi yang berbeda. Oleh karena itu, sebagai kredit, saya akan berikan atribusi berupa pencantuman Judul/Nama dari Gambar/Illustrasi/Grafis, Pembuat nya, Sumber Gambar dan juga Lisensi yang di gunakan nya di akhir artikel/laman.
+- Mungkin, untuk Gambar, Illustrasi, Grafis atau/dan referensi lain nya yang telah saya dapatkan dari Situs Web/Blog lain akan menggunakan Lisensi yang berbeda. Oleh karena itu, sebagai kredit (jika di izinkan), saya akan berikan atribusi berupa pencantuman Judul/Nama dari Gambar/Illustrasi/Grafis, Pembuat nya, Sumber Gambar dan juga Lisensi yang di gunakan nya di akhir artikel/laman.
 
 
 ### Merek Dagang Netlify, Cloudflare dan lain nya
 Netlify&reg;, Logo, Produk dan Layanan lain nya merupakan Merek Dagang Terdaftar atau/dan Pakaian Dagang dari Netlify, Inc. (Sebelumnya: MakerLoop, Inc.).
 
-Cloudflare&reg;, Cloudflare logo&reg;, 1.1.1.1&trade;, Cloudflare Registrar&trade;, dan [produk dan layanan dari Cloudflare lain nya](https://www.cloudflare.com/trademark/) merupakan Merek Dagang, Merek Dagang Terdaftar, atau/dan Pakaian Dagang dari Cloudflare, Inc. atau afiliasi nya yang berada di Negara Amerika Serikat atau/dan Negara lain nya.
+Cloudflare&reg;, Cloudflare logo&reg;, 1.1.1.1&trade;, Cloudflare Registrar&trade;, serta [produk dan layanan dari Cloudflare lain nya](https://www.cloudflare.com/trademark/) merupakan Merek Dagang, Merek Dagang Terdaftar, atau/dan Pakaian Dagang dari Cloudflare, Inc. atau/dan afiliasi nya yang berada di Negara Amerika Serikat atau/dan di Negara lain nya.
 
 Semua merek dagang lain yang bukan milik Netlify, Cloudflare atau/dan afiliasi nya yang mungkin muncul di blog ini adalah milik dari pemilik nya masing-masing, baik yang mungkin atau mungkin tidak berafiliasi dengan, terhubung dengan, atau disponsori oleh Netlify, Cloudflare atau/dan afiliasinya.
 
 
-## Peyangkalan
+## Sanggahan (Peyangkalan)
 ### Tanggung Jawab
-Dalam keadaan apapun, saya tidak bertanggung jawab kepada Anda atau individu atau entitas lain untuk setiap kerugian langsung, tidak langsung, insidental, hukuman, khusus atau konsenkuensial yang terkait dengan penggunaan Blog ini, konten nya atau Situs Web/Blog lain nya, termasuk tetapi tidak terbatas untuk kerusakan pada Perangkat Keras, Kehilangan Barang, Kehilangan/Kerusakan Program/Perangkat Lunak atau Data lain nya.
+Dalam keadaan apapun, saya tidak bertanggung jawab kepada Anda atau individu atau entitas lain untuk setiap kerugian secara langsung, atau secara tidak langsung, insidental, hukuman, khusus atau konsenkuensial yang terkait dengan penggunaan Blog ini, konten nya atau Situs Web/Blog lain nya, termasuk tetapi tidak terbatas untuk Kerusakan/Kehilangan pada Perangkat Keras, Barang, Program/Perangkat Lunak (*Software*) atau Data lain nya.
 
-Jadi, segala resiko yang telah Anda timbulkan setelah mengakses, menjelajah, dan menggunakan Blog ini dan konten nya, silahkan tanggung sendiri.
+Jadi, segala resiko yang telah Anda timbulkan setelah mengakses, menjelajah, dan menggunakan Blog ini dan konten nya, silahkan Anda tanggung sendiri.
 
 
 ### Kerahasiaan informasi yang dikirim oleh Anda
-Tentu saja, saya tidak ingin menerima Informasi Rahasia dari Anda melalui Blog ini. Setiap Informasi atau Materi yang di kirim ke Blog ini akan dianggap tidak bersifat Rahasia atau bukan suatu Informasi yang di rahasia kan dan itu bisa di publikasikan oleh saya.
+Tentu saja, saya tidak ingin menerima Informasi Rahasia dari Anda melalui Blog ini. Setiap Informasi atau Materi yang di kirim ke Blog ini akan dianggap tidak bersifat Rahasia atau bukan suatu Informasi yang di rahasia kan dan itu bisa di publikasikan oleh saya dan juga pengunjung lain nya.
 
-Ini Artinya, Anda mengakui bahwa Anda bertanggung jawab penuh atas konten (Khususnya legalitas, keandalan, kepantasan, orisinalitas paten, dan atribusi hak cipta) yang Anda kirimkan kepada saya.
+Ini Artinya, Anda mengakui bahwa Anda yang bertanggung jawab penuh atas semua konten atau/dan informasi yang Anda kirimkan kepada saya.
 
 
-### Akses konten dan perubahan konten
-Mengunduh atau mendapatkan konten dari Blog ini di lakukan atas risiko Anda sendiri. Saya tidak memberikan jaminan bahwa masalah dengan, atau bug dalam konten akan di selesaikan.
+### Akses, perubahan dan ketersediaan konten
+Mengunduh atau mendapatkan konten dari Blog ini di lakukan atas risiko Anda sendiri. Saya tidak memberikan jaminan bahwa semua konten yang telah saya sediakan itu tanpa masalah sama sekali. Jikapun ada masalah, saya tidak bisa memberikan jaminan bahwa masalah dengan, atau bug dalam konten akan dapat di selesaikan.
 
-Ini berarti, Anda harus mengakui bahwa saya dapat mengubah, memperbarui atau menghapus konten kapan saja dengan alasan apapun, tanpa pemberitahuan terlebih dahulu.
+Selain itu, saya tidak bisa memberikan jaminan bahwa konten yang telah Anda akses itu tidak akan ada perubahan dengan konten-konten nya, saya berhak untuk mengubah, memperbarui atau menghapus konten kapan saja, tanpa pemberitahuan terlebih dahulu, dengan alasan apapun.
+
+Ini berarti, Anda harus mengakui bahwa selain saya tidak memberikan jaminan atas konten yang Anda akses atau/dan gunakan, saya dapat mengubah, memperbarui atau menghapus konten kapan saja dengan alasan apapun, tanpa pemberitahuan terlebih dahulu.
 
 
 ### Tautan ke Situs Web/Blog Eksternal
-Ketika Anda mengakses Situs Web/Blog lain, bahkan Situs Web/Blog yang mungkin memuat nama atau tanda Blog saya, Anda harus mengakui bahwa menautkan tidak berarti bahwa saya memiliki kendali atas, atau mendukung atau menerima tanggung jawab apapun atas, konten pada, atau penggunaan, yang tertuju pada Situs Web/Blog lain.
+Ketika Anda mengakses Situs Web/Blog lain, bahkan Situs Web/Blog yang mungkin memuat nama atau tanda pada Blog saya, Anda harus mengakui bahwa menautkan tidak berarti bahwa saya memiliki kendali atas, atau mendukung atau menerima tanggung jawab apapun atas konten atau penggunaan, yang tertuju pada Situs Web/Blog lain.
 
 
 ### Pelanggaran Hak Cipta dan Syarat Penggunaan
