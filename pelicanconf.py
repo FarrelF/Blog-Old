@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra
+from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink
 from datetime import datetime
 
 AUTHOR = 'Farrel Franqois'
@@ -122,6 +122,7 @@ MARKDOWN = {
     },
     'pymdownx.superfences': {},
     'pymdownx.inlinehilite': {},
+    'pymdownx.magiclink': {},
   },
   'output_format': 'html5',
 }
