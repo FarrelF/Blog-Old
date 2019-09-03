@@ -34,6 +34,10 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 STATIC_PATHS.append('extras/_headers')
 EXTRA_PATH_METADATA['extras/_headers'] = {'path': '_headers'}
 
+# Menambah Fitur Pengalihan saat di terbitkan nanti
+STATIC_PATHS.append('extras/_redirects')
+EXTRA_PATH_METADATA['extras/_redirects'] = {'path': '_redirects'}
+
 # Tema
 THEME = 'themes/Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 
