@@ -155,6 +155,8 @@ LINKS = ()
 SOCIAL = (
           ('facebook', 'https://www.facebook.com/FarrelFranqois'),
           ('twitter', 'https://twitter.com/FarrelFranqois'),
+          ('github', 'https://github.com/FarrelF'),
+          ('gitlab', 'https://gitlab.com/FarrelF'),
          )
 
 DEFAULT_PAGINATION = 5
