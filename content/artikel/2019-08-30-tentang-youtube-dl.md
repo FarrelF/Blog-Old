@@ -214,13 +214,21 @@ $ aria2c -x16 "https://johnvansickle.com/ffmpeg/$FFMPEG_RELEASE_PATH/$FFMPEG_FIL
 $ wget "https://johnvansickle.com/ffmpeg/$FFMPEG_RELEASE_PATH/$FFMPEG_FILENAME"
 ```
 
-4. Setelah Anda mengunduhnya, buatlah sebuah folder yang bernama `ffmpeg.d` di dalam direktori `/usr/local/bin`, dan ekstrak file yang telah Anda Unduh tersebut kedalam folder yang barusan Anda buat, dengan perintah berikut:
+4. Setelah Anda mengunduhnya, buatlah sebuah folder yang bernama `ffmpeg.d` di dalam direktori `/usr/local/bin`, dan ekstrak berkas yang telah Anda Unduh tersebut kedalam folder yang barusan Anda buat, dengan perintah berikut:
 ```bash
 $ sudo mkdir /usr/local/bin/ffmpeg.d
 $ sudo tar -xvJf "$FFMPEG_FILENAME" --strip-components=1 -C /usr/local/bin/ffmpeg.d; sudo chown -R root:root /usr/local/bin/ffmpeg.d; cd "$_" || return
 ```
 
-5. 
+5. Terakhir, buatlah *Symlink* dari berkas FFmpeg yang berada di dalam `/usr/local/bin` dan `/usr/bin` yang menargetkan FFmpeg yang berada di dalam direktori yang Anda ‘jelajahi’ sekarang, yakni `/usr/local/bin/ffmpeg.d` dengan cara berikut:
+```bash
+$ sudo ln -sf "$PWD"/ffmpeg /usr/local/bin/ffmpeg
+$ sudo ln -sf "$PWD"/ffprobe /usr/local/bin/ffprobe
+```
+
+6. Selesai, deh!
+
+Nah, dengan ini, FFmpeg telah ter-install dengan sangat baik didalam Sistem Operasi GNU/Linux Anda, apapun Distribusi nya. 
 
 ##### **Install Aria2c sebagai Pengunduh Eksternal**
 
@@ -236,5 +244,11 @@ Untuk Meng-install youtube-dl itu sendiri sebenarnya sangat mudah, ada beberapa 
 ##### **Cek Versi yang di gunakan**
 ##### **Menguji `youtube-dl`**
 
-## IV. 
+
+#### **5. Imbauan untuk pengguna Windows**
+Jika Anda adalah bukan pengguna Windows atau tidak ingin meng-install `youtube-dl` di dalam Sistem Operasi Windows, untuk menghemat waktu, sebaik nya Anda lewati saja pembahasan berikutnya, dan langsung masuk ke pembahasan “[**IV. Cara Menggunakan nya**](#iv-cara-menggunakan-nya)” (tanpa kutip).
+
+Karena pembahasan berikut nya adalah meng-install `youtube-dl` beserta ketergantungan nya di dalam sistem operasi Windows, yang mungkin membuang waktu Anda jika tidak menggunakan nya atau tidak ingin meng-installnya.
+
+## IV. Cara Menggunakan nya
 ## V.
