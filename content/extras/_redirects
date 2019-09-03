@@ -1,3 +1,2 @@
 # Mengalihkan semua Artikel Draf ke Laman 403 Kustom
 /drafts/*   /403
-/drafts/    /403
