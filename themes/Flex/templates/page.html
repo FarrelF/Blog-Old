@@ -14,7 +14,9 @@
     {% block page_content %}{{ page.content }}{% endblock %}
     {% block after_content %}
       {% if DISQUS_IN_PAGES %}
-        {% include "partial/disqus.html" %}
+        {% if page.status != 'hidden' %}
+          {% include "partial/disqus.html" %}
+        {% endif %}
       {% endif %}
     {% endblock %}
   </div>
