@@ -245,10 +245,14 @@ Untuk Meng-install youtube-dl itu sendiri sebenarnya sangat mudah, ada beberapa 
 ##### **Menguji `youtube-dl`**
 
 
-#### **5. Imbauan untuk pengguna Windows**
+#### **5. Imbauan untuk yang bukan pengguna Windows**
 Jika Anda adalah bukan pengguna Windows atau tidak ingin meng-install `youtube-dl` di dalam Sistem Operasi Windows, untuk menghemat waktu, sebaik nya Anda lewati saja pembahasan berikutnya, dan langsung masuk ke pembahasan “[**IV. Cara Menggunakan nya**](#iv-cara-menggunakan-nya)” (tanpa kutip).
 
 Karena pembahasan berikut nya adalah meng-install `youtube-dl` beserta ketergantungan nya di dalam sistem operasi Windows, yang mungkin membuang waktu Anda jika tidak menggunakan nya atau tidak ingin meng-installnya.
 
-## IV. Cara Menggunakan nya
-## V.
+
+### **Untuk Windows**
+
+
+## **IV. Cara Menggunakan nya**
+## **V.**
