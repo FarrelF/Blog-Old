@@ -66,6 +66,18 @@ Jika Anda yakin bahwa pekerjaan Anda telah disalin dengan cara yang merupakan pe
 
 Saya berhak untuk mencari semua solusi yang tersedia menurut Hukum dan Keadilan untuk Pelanggaran Syarat Penggunaan ini, termasuk, tetapi tidak terbatas pada, hak untuk memblokir akses dari Alamat Internet tertentu yang di tujukan kepada Blog saya.
 
+
+## Pernyataan Tambahan
+Pernyataan Tambahan ini bisa Anda lihat nanti di dalam Artikel/Laman tertentu, disitu nanti ada Pernyataan tertulis yang sebenarnya adalah Pernyataan Tambahan nya.
+
+
+## Persetujuan dan Perubahan Pernyataan
+Pernyataan ini akan berlaku selama Anda mengunjungi, menjelajahi dan menggunakan Blog ini untuk keperluan apapun.
+
+Jadi, baca/tidak baca, suka/tidak suka atau setuju/tidak setuju, maka Anda harus menyetujui semua pernyataan-pernyataan ini selama Anda mengunjungi blog ini.
+
+Jika Anda tidak menyetujui pernyataan tersebut, maka sebaiknya Anda tidak mengunjungi, menjelajahi dan menggunakan blog ini. Harap maklumi.
+
 ## Penutup
 Baiklah, sekian untuk laman Ketentuan Hukum dan Pernyataan Sanggahan/Penyangkalan kali ini. Semoga Anda memahami dan memaklumi adanya Ketentuan dan Pernyataan seperti ini. Dan, semoga Anda bisa mentaati nya untuk kebaikan bersama dan Anda juga.
 
