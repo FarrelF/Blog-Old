@@ -1,3 +1,4 @@
+---
 Title: Cara saya membuat Blog dengan Pelican, Netlify dan Cloudflare
 Date: 2019-08-30 05:08
 Category: Tutorial, Blogging
@@ -5,11 +6,12 @@ Tag: Pelican, Netlify, Cloudflare
 Slug: cara-membuat-blog-dengan-pelican-netlify-dan-cloudflare
 Authors: Farrel Franqois
 Summary: Saya memposting tentang cara saya membuat blog ini melalui Pelican, yang tentu saja dengan bantuan Netlify sebagai Hosting nya dan juga Cloudflare sebagai DNS nya. Cara membuat nya ini cukup mudah, kok, penasaran? Bisa kamu baca artikel ini lebih lanjut :slightly_smilling_face:
+---
 
-## Daftar Isi
+## **Daftar Isi**
 [TOC]
 
-## I. Pembuka
+## **I. Pembuka**
 Halo, semua! Seperti yang Anda tahu, bahwa blog saya ini merupakan HTML Statis, yang tidak di proses secara dinamis, melainkan ini hanyalah sebuah HTML statis yang di hasilkan dari *Static Site Generator* seperti [Pelican](https://blog.getpelican.com). 
 
 Kamu bisa baca Artikel yang berjudul "[Halo Dunia! (Lagi)](https://farrel.franqois.id/halo-dunia)" mengenai Blog yang saya gunakan, beserta hosting nya dan kenapa saya menggunakan nya, dll.
@@ -19,7 +21,7 @@ Selain menggunakan Netlify sebagai Hosting nya, blog ini juga menggunakan Cloudf
 Setelah Anda tahu alasan saya kenapa fokus menggunakan/memanfaatkan *Static Site Generator* untuk blogging daripada menggunakan WordPress, apakah Anda termotivasi untuk menggunakan nya? Kalo iya, saya akan beritahu cara nya melalui Tutorial ini.
 
 
-## II. Persyaratan
+## **II. Persyaratan**
 Tapi, sebelum Anda melakukan nya, ada syarat-syarat tertentu yang harus Anda turuti/lakukan sebelum Anda membuat sebuah Blog dengan memanfaatkan *Static Site Generator* (bisa di singkat *SSG*) seperti Pelican, yaitu:
 
 **Untuk Membuat Blog dan konfigurasi dasar**:
@@ -50,8 +52,97 @@ Di bawah ini merupakan Persyaratan Tambahan bagi yang ingin meng-konfigurasi Blo
 Dah, gitu aja syarat nya, lagian konfigurasi lebih lanjut gak saya bahas terlalu jauh, saya paling banyak cuma membahas dasar nya disini, selebihnya Anda yang atur.
 
 ## **III. Memenuhi Persyaratan**
-### **1. Install Virtualenv dan Pelican**
-### **2. Install Git**
+### **1. Install Virtualenv dan kenapa menggunakan nya**
+Kita disini akan meng-install 'Virtualenv', aplikasi ini berfungsi untuk membuat sebuah *Lingkungan Virtual* pada Python untuk Proyek Python.
+
+*Lingkungan Virtual* yang saya maksud disini adalah sebuah Lingkungan modul-modul atau Program Python yang terisolasi.
+
+'Terisolasi' disini maksudnya adalah tertutup dan tidak bisa di akses dari luar.
+
+Program Python yang berada di dalam 'Virtualenv' (*Lingkungan Virtual*) akan memiliki modul-modul nya sendiri dan Program dari luar itu tidak bisa mengakses nya sama sekali. Jadi, yang di isolasi disini adalah Modul-modul nya, bukan Proyek nya.
+
+Kenapa kita harus menggunakan *Lingkungan Virtual*? Sebenarnya bisa saja tanpa perlu menggunakan nya, hanya saja, masalahnya adalah:
+
+1. Karena Pelican di Install di dalam Lingkungan Sistem Operasi (Lingkungan Global), maka modul Pelican akan 'bebarengan' dengan modul-modul yang terinstall lain nya, karena di dalam Lingkungan yang sama.
+
+2. Karena bebarengan, maka kita akan kesulitan untuk menentukan paket apa saja yang perlu di Install untuk membuat Blog SSG ini, karena tercampur dengan modul-modul yang sebenarnya tidak perlu kita Install. <br>**Contoh:** Kita install `Django` untuk belajar *Web Framework* dengan Python, `youtube-dl` untuk meng-unduh Video dari YouTube dan `Pelican` untuk keperluan *Static Blogging* yang mana ketiga nya ini di Install di dalam Lingkungan OS (tanpa Virtualenv), dan setelah kita selesai membuat blog, maka sebelum menyebarkan nya ke Internet, kita harus menentukan paket mana saja yang harus di Install untuk membuat sebuah Blog SSG. **Karena Django, 'youtube-dl' dan Pelican ter-install di dalam Lingkungan OS, maka selain Pelican, Django dan 'youtube-dl' juga termasuk paket yang akan terinstall**. <br>Nah, kan lucu, untuk menyebarkan sebuah Blog SSG saja, masa kita harus meng-install Django dan 'youtube-dl' juga di dalam nya?
+
+3. Membuat Proses Deploy pada Netlify berlangsung lama, kenapa? Karena saat dalam Proses Deploy, ia akan meng-install modul-modul yang sebenarnya tidak perlu di Install.
+
+4. Dan, karena bebarengan itu, maka kemungkinan konflik antar modul itu akan sering terjadi, terutama jika Anda sudah meng-install banyak sekali modul di dalam Lingkungan Sistem Operasi.
+
+5. Percayalah, dengan meng-install semua nya ke dalam Lingkungan Sistem Operasi, selain membuat konflik, tidak rapih dan membuat Proyek Anda menjadi kacau, Anda juga membuat Proyek Anda ini di penuhi dengan *bloatware* karena ter-install modul-modul yang seharusnya tidak perlu di-install.
+
+Nah, untuk mengatasi masalah-masalah tersebut, lahirlah 'Virtualenv'. Untuk alasan lain nya, bisa kamu kunjungi Artikel dari PetaniKode [Mengenai 'Virtualenv'](https://www.petanikode.com/python-virtualenv/).
+
+#### **Untuk GNU/Linux, macOS dan Sistem Operasi \*nix lainnya:**
+Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, Anda bisa meng-install 'Virtualenv' dengan cukup mudah dengan memanfaatkan Pip, untuk itu, silahkan Anda eksekusi salah satu dari perintah berikut untuk meng-installnya:
+
+**Catatan:** Pastikan Anda menggunakan Python 3 untuk meng-install nya dengan Pip, bukan versi 2 (Python 2).
+
+```bash
+## Metode 1: Menggunakan Pip3 secara langsung ##
+$ sudo -H pip3 install virtualenv
+
+## Metode 2: Menggunakan Python 3 untuk mengeksekusi Pip ## 
+$ sudo -H python3 -m pip install virtualenv
+
+## Metode 3: Menggunakan Python 3.7 (atau, dengan versi yang lebih spesifik) untuk mengeksekusi Pip ##
+$ sudo -H python3.7 -m pip install virtualenv
+```
+
+#### **Untuk Windows:**
+Sedangkan untuk Windows, jika Anda sudah ter-install Python 3 di dalam nya, maka untuk meng-install 'Virtualenv' dengan Pip, bisa Anda eksekusikan perintah berikut di dalam CMD, PowerShell atau Bash:
+
+**Catatan:** Pastikan Anda membuka CMD, PowerShell atau Bash sebagai Administrator sebelum meng-install 'Virtualenv' dengan Pip, kalau tidak, maka modul tidak akan ter-install dengan baik. Dan, pastikan juga Python yang di gunakan nya adalah Python 3.
+
+```powershell
+## Metode 1: Menggunakan Pip secara langsung ## 
+> pip install virtualenv
+
+## Metode 2: Menggunakan Python 3 untuk mengeksekusi Pip ##
+> python -m pip install virtualenv
+```
+
+### **2. Membuat Virtualenv dan Install Pelican**
+Setelah meng-install 'Virtualenv', sebaik nya Anda buat sebuah Folder Proyek nya terlebih dahulu dan navigasikan ke dalam Folder tersebut setelah nya, dengan perintah berikut:
+
+```bash
+$ mkdir Demo-Blog; cd "$_"
+```
+
+Anda bisa gantikan `Demo-Blog` disini dengan Nama Blog yang Anda inginkan, disini saya menamainya dengan `Demo-Blog`.
+
+Lalu, buatlah sebuah 'Virtualenv' di dalam folder tersebut dengan perintah berikut:
+
+```bash
+$ virtualenv pelican-envs
+```
+
+Anda bisa gantikan `pelican-envs` disini dengan Nama 'Virtualenv' yang Anda inginkan, disini saya menamainya dengan `pelican-envs` biar mudah di ingat.
+
+Setelah di buat, kira-kira Struktur Direktori nya akan seperti ini:
+```text
+Demo-Blog
+└── pelican-envs
+    ├── bin
+    ├── include
+    └── lib
+```
+
+Sedangkan di Windows akan seperti ini:
+```text
+Demo-Blog
+└── pelican-envs
+    ├── Include
+    ├── LICENSE.txt
+    ├── Lib
+    ├── Scripts
+    └── tcl
+
+```
+
+### **3. Install Git**
 
 ## **IV. Membuat Blog SSG dengan Pelican**
 ### **1. Membuat 'Pelican Projects'**
@@ -59,9 +150,11 @@ Dah, gitu aja syarat nya, lagian konfigurasi lebih lanjut gak saya bahas terlalu
 ### **3. Menulis Artikel**
 ### **4. Meng-install Tema Pelican**
 ### **5. Menggantikan Tema**
+### **6. Membuat Berkas Statik 'robots.txt', 'favicon.ico' dan 'CNAME' sebelum deploy**
+
 
 ## **V. Menggunakan Netlify sebagai Hosting**
 ### **1. Membuat berkas yang di perlukan**
-#### **Membuat Berkas 'netlify.toml' dan 'CNAME'**
+#### **Membuat Berkas 'netlify.toml'**
 #### **Membuat Berkas 'requirements.txt' dan 'runtime.txt'**
 ### **2. Menambahkan 'Sites' dan Men-_deploy_ Blog ke Netlify**
