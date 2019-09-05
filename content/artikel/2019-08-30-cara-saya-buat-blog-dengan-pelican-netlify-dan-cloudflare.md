@@ -23,6 +23,7 @@ Setelah Anda tahu alasan saya kenapa fokus menggunakan/memanfaatkan *Static Site
 Tapi, sebelum Anda melakukan nya, ada syarat-syarat tertentu yang harus Anda turuti/lakukan sebelum Anda membuat sebuah Blog dengan memanfaatkan *Static Site Generator* (bisa di singkat *SSG*) seperti Pelican, yaitu:
 
 **Untuk Membuat Blog dan konfigurasi dasar**:
+
 Di bawah ini merupakan Persyaratan bagi yang ingin membuat blog berbasis Pelican, dan juga melakukan konfigurasi dasar nya (Seperti: Menggantikan Tema, membuat robots.txt, mengaktifkan Komentar Disqus, dll), berikut adalah Persyaratan nya:
 
 1. Tahu cara mengelola DNS (Seperti menambahkan Subdomain dengan menambahkan CNAME Record, dll).
@@ -39,6 +40,7 @@ Di bawah ini merupakan Persyaratan bagi yang ingin membuat blog berbasis Pelican
 
 
 **Untuk Konfigurasi Menengah atau Tingkat Lanjut (Opsional)**:
+
 Di bawah ini merupakan Persyaratan Tambahan bagi yang ingin meng-konfigurasi Blog nya, seperti meng-install Plugin, menambahkan Response Header saat publikasi, mengatur Markdown (Contoh: Menambahkan Fitur Emoji, Menambahkan Daftar Isi, dll), sampai memodifikasi/menambahkan fitur pada tema. Syarat nya sebagai berikut:
 
 1. Mempelajari Dasar dari Bahasa Pemrograman Python 3 (Seperti Penggunaan: Variabel, 'List', 'Dictionary', 'Tuple', Tipe Data Primitif (seperti: String, Integer, dan Boolean), Pengkondisian dengan if/elif/else, dan 'Import') atau di atas nya, karena Pelican ini berbasis Python.
@@ -48,11 +50,18 @@ Di bawah ini merupakan Persyaratan Tambahan bagi yang ingin meng-konfigurasi Blo
 Dah, gitu aja syarat nya, lagian konfigurasi lebih lanjut gak saya bahas terlalu jauh, saya paling banyak cuma membahas dasar nya disini, selebihnya Anda yang atur.
 
 ## **III. Memenuhi Persyaratan**
-### **1. Install VirtualEnv dan Pelican**
+### **1. Install Virtualenv dan Pelican**
 ### **2. Install Git**
 
 ## **IV. Membuat Blog SSG dengan Pelican**
+### **1. Membuat 'Pelican Projects'**
+### **2. Konfigurasi Pelican Dasar**
+### **3. Menulis Artikel**
+### **4. Meng-install Tema Pelican**
+### **5. Menggantikan Tema**
 
 ## **V. Menggunakan Netlify sebagai Hosting**
-### **1. Membuat berkas 'netlify.toml'**
-### **2. Menambahkan **Sites** dan Men-*deploy* Blog ke Netlify**
+### **1. Membuat berkas yang di perlukan**
+#### **Membuat Berkas 'netlify.toml' dan 'CNAME'**
+#### **Membuat Berkas 'requirements.txt' dan 'runtime.txt'**
+### **2. Menambahkan 'Sites' dan Men-_deploy_ Blog ke Netlify**
