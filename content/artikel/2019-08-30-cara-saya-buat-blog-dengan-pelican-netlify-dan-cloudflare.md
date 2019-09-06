@@ -139,7 +139,6 @@ Demo-Blog
     ├── Lib
     ├── Scripts
     └── tcl
-
 ```
 
 ### **3. Install Git**
