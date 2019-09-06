@@ -147,6 +147,25 @@
       {% if pages or LINKS %}
       <nav>
         <ul class="list">
+          {% if GOOGLE_SEARCH %}
+          {% if USING_GOOGLE_SEARCHBOX != True %}
+          <div id="search">
+            <form class="navbar-form navbar-right" role="search" name="search" action="{{ SITEURL }}/search">
+              <input type="text" name="q" class="form-control search-query" placeholder="Telusuri Blog ini dengan Google" required />
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
+              </span>
+              <input type="hidden" name="cx" value="{{ GOOGLE_SEARCH }}" />
+              <input type="hidden" name="ie" value="UTF-8" />
+            </form>
+          </div>
+          {% else %}
+          <div>
+              <script async src="https://cse.google.com/cse.js?cx=partner-pub-2432124491852819:4493745682"></script>
+              <div class="gcse-searchbox-only"></div>
+          </div>
+          {% endif %}
+          {% endif %}
           {% if PAGES_SORT_ATTRIBUTE -%}
             {% set pages = pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
           {%- endif %}
