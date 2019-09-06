@@ -1,6 +1,4 @@
 Title: Halo Dunia! (Lagi)
-Date: 2019-08-27 00:38
-Modified: 2019-08-30 04:03:40
 Category: Lainnya
 Slug: halo-dunia
 Status: published
