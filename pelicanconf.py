@@ -137,10 +137,10 @@ CC_LICENSE = {
 TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'id'
-OG_LOCALE = 'id_ID.utf8'
-LOCALE = ('id_ID.utf8')
+OG_LOCALE = 'id_ID'
+LOCALE = ('id_ID.utf8', 'id_ID', 'id_ID.UTF-8')
 DATE_FORMATS = {
-    'id': ('id_ID.utf8', '%A, %d %B %Y'),
+    'id': ('%A, %d %B %Y'),
 }
 
 # Feed generation is usually not desired when developing
