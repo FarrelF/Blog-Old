@@ -1,7 +1,3 @@
 [build]
-  command = "locale-gen id_ID; update-locale LANG=id_ID; locale -a"
-  LC_ALL = "id_ID.UTF-8"
-
-[context.production]
-  command = "make publish"
+  command = "apt install language-pack-id; locale-gen id_ID; update-locale LANG=id_ID; make publish"
   publish = "output"
