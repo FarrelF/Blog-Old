@@ -59,7 +59,7 @@ Oh, ya, untuk sekarang ini, blog saya ini saya "Bebaskan", baik konten nya ataup
 
 Nah, "kebebasan" yang saya maksud/beri disini adalah "kebebasan" untuk menggunakan nya, mempelajari, memodifikasi, menyalinkan dan mendistribusikan ulang terutama kepada Keluarga, Tetangga, Teman atau Rekan, untuk keperluan apapun termasuk keperluan komersial sekalipun, sesuai dengan [filosofi Perangkat Lunak Bebas](https://www.gnu.org/philosophy/free-sw.html.en).
 
-Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan" yang ada di blog ini pada turunan yang Anda buat. Untuk lebih lengkapnya, silahkan baca Laman [Lisensi](https://farrel.franqois.id/lisensi). Kamu juga bisa memperoleh kode sumber nya, caranya bisa kamu kunjungi laman [Kode Sumber](https://farrel.franqois.id/kode-sumber)
+Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan" yang ada di blog ini pada turunan yang Anda buat. Untuk lebih lengkapnya, silahkan baca Laman [Lisensi]({filename}/halaman/lisensi.md). Kamu juga bisa memperoleh kode sumber nya, caranya bisa kamu kunjungi laman [Kode Sumber]({filename}/halaman/kode-sumber.md)
 
 ## Penutup
 Jadi, sudah dulu yah, saya juga mau fokus merombak blog ini terlebih dahulu, dibandingkan dengan menulis artikel. Seperti yang Anda tahu, blog ini sangat 'jauh' sekali dari kata "lengkap", seperti ada halaman yang dalam masih di buat/di draf, dan lain sebagai nya.

@@ -13,7 +13,7 @@ Summary: Saya memposting tentang cara saya membuat blog ini melalui Pelican, yan
 ## **I. Pembuka**
 Halo, semua! Seperti yang Anda tahu, bahwa blog saya ini merupakan HTML Statis, yang tidak di proses secara dinamis, melainkan ini hanyalah sebuah HTML statis yang di hasilkan dari *Static Site Generator* seperti [Pelican](https://blog.getpelican.com). 
 
-Kamu bisa baca Artikel yang berjudul "[Halo Dunia! (Lagi)](https://farrel.franqois.id/halo-dunia)" mengenai Blog yang saya gunakan, beserta hosting nya dan kenapa saya menggunakan nya, dll.
+Kamu bisa baca Artikel yang berjudul "[Halo Dunia! (Lagi)]({filename}/artikel/2019-08-27-halo-dunia.md)" mengenai Blog yang saya gunakan, beserta hosting nya dan kenapa saya menggunakan nya, dll.
 
 Selain menggunakan Netlify sebagai Hosting nya, blog ini juga menggunakan Cloudflare sebagai DNS nya. Tentu saja, semua ini gratis, gak ada biaya yang di keluarkan, kecuali domain.
 
