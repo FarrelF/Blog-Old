@@ -1,3 +1,7 @@
 [build]
+  command = "locale-gen id_ID; update-locale LANG=id_ID"
+  LC_ALL = "id_ID.UTF-8"
+
+[context.production]
   command = "make publish"
   publish = "output"
