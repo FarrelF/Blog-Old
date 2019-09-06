@@ -20,7 +20,7 @@ $ git clone https://github.com/FarrelF/FarrelF-Blog.git
 ```
 Kode Sumber Blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), yang merupakan lisensi *Copyleft*. Jadi, pastikan Anda mendistribusikan nya dengan menggunakan Lisensi yang sama dengan Lisensi dari Kode Sumber Asli nya dan juga mencantumkan Hak Cipta nya juga, yah :slightly_smiling_face:
 
-Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](https://farrel.franqois.id/lisensi).
+Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/halaman/lisensi.md).
 
 
 ## II. Kode Sumber Tema
@@ -38,7 +38,7 @@ $ git clone https://github.com/FarrelF/Modified-Flex.git
 ```
 Kode Sumber Tema ini saya lisensi kan dengan Lisensi MIT, sesuai dengan Tema Asli nya, yang merupakan lisensi *Permissive*. Jadi, pastikan Anda mencantumkan Hak Cipta nya juga, yah :slightly_smiling_face:
 
-Untuk lebih lanjut, silahkan kunjungi laman [Lisensi](https://farrel.franqois.id/lisensi).
+Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/halaman/lisensi.md).
 
 
 ## Pertanyaan dan Jawaban

@@ -28,7 +28,7 @@ Sebagai pembukaan, maka saya akan menjelaskan istilah yang paling dasar dan yang
 Jadi, jika Anda ingin menurunkan, menggunakan, membagikan, memodifikasi, mempelajari dan menyalinkan nya dari salah satu/seluruh konten ataupun kode sumber yang ada di dalam blog ini, untuk keperluan apapun, termasuk keperluan komersial sekalipun, maka Anda harus tunduk kepada persyaratan/kewajiban yang berlaku disini untuk menghindari Tuntutan Pelanggaran Hak Cipta.
 
 ## Perjanjian Lisensi
-Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa (Atau, bahasa Inggris nya: *Attribution-ShareAlike*) Internasional 4.0 (disingkat: CC BY-SA 4.0)
+Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya]({filename}/halaman/ketentuan-hukum-dan-sanggahan.md)) di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa (Atau, bahasa Inggris nya: *Attribution-ShareAlike*) Internasional 4.0 (disingkat: CC BY-SA 4.0)
 
 Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan mengakses Alamat URL Berikut ini:
 
@@ -44,11 +44,11 @@ https://www.gnu.org/licenses/agpl-3.0.html
 Terakhir, untuk kode sumber tema yang saya gunakan dan saya modifikasi, itu saya lisensi kan dengan Lisensi MIT. Untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Modified-Flex).
 
 ## Persetujuan
-Perjanjian Lisensi ini akan berlaku selama Anda mengunjungi, menggunakan atau/dan membuat turunan blog ini (baik kode sumber ataupun konten nya).
+Perjanjian Lisensi ini akan berlaku selama Anda mengunjungi, menggunakan atau/dan membuat turunan blog ini (baik kode sumber ataupun konten nya). Selama Anda melakukan salah satu atau lebih dari ke-tiga itu, maka Anda harus menerima Perjanjian Lisensi yang ada disini.
 
-Jadi, setuju/tidak setuju, baca/tidak baca, maka Anda harus siap untuk menyetujui nya, karena ini berlaku selama Anda masih ingin menggunakan blog ini.
+Jadi, setuju/tidak setuju, baca/tidak baca, maka Anda harus siap untuk menyetujui dan menerima nya, karena ini berlaku selama Anda masih ingin menggunakan blog ini.
 
-Jika Anda tidak menyetujui nya, silahkan jangan buat turunan dari/menggunakan Blog ini, dan kalau bisa, lebih baik juga untuk tidak mengunjungi Blog ini.
+Jika Anda tidak menyetujui atau/dan menerima nya, silahkan jangan buat turunan dari/menggunakan Blog ini, dan kalau bisa, lebih baik juga untuk tidak mengunjungi Blog ini.
 
 ## Penutup
 Baiklah, sekian untuk Halaman Lisensi ini, semoga Anda memahami dan memaklumi adanya Perjanjian seperti ini. Dan, semoga Anda bisa mentaati nya untuk kebaikan bersama dan Anda juga.
