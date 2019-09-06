@@ -70,10 +70,6 @@ EXTRA_PATH_METADATA = {
 THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
-# Pengaturan Waktu
-TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
-DEFAULT_DATE = 'fs'
-
 DISABLE_URL_HASH = True # Menonaktifkan Tanda Pagar pada Link URL setiap ke artikel/halaman
 CHECK_MODIFIED_METHOD = 'sha256'
 
@@ -137,10 +133,15 @@ CC_LICENSE = {
     'distribution-type': 'local'
 } # Implementasi Lisensi dari Creative Commons
 
-# Pengaturan Bahasa dan Lokalisasi
+# Pengaturan Bahasa, Waktu dan Lokalisasi
+TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
+DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'id'
-OG_LOCALE = 'id_ID'
-LOCALE = 'id_ID'
+OG_LOCALE = 'id_ID.utf8'
+LOCALE = ('id_ID.utf8')
+DATE_FORMATS = {
+    'id': ('id_ID.utf8', '%A, %d %B %Y'),
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
