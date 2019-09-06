@@ -13,11 +13,13 @@
     {% block before_content %}{% endblock %}
     {% block page_content %}{{ page.content }}{% endblock %}
     {% block after_content %}
+    {% if DISQUS_SITENAME %}
       {% if DISQUS_IN_PAGES %}
         {% if page.status != 'hidden' %}
           {% include "partial/disqus.html" %}
         {% endif %}
       {% endif %}
+    {% endif %}
     {% endblock %}
   </div>
 </article>
