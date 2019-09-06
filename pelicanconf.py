@@ -29,27 +29,27 @@ PATH = 'content'
 
 # Artikel
 ARTICLE_PATHS = ['artikel']
-ARTICLE_SAVE_AS = '{slug}.html'
-ARTICLE_LANG_SAVE_AS = '{slug}/{lang}.html'
+ARTICLE_SAVE_AS = '{slug}/index.html'
+ARTICLE_LANG_SAVE_AS = '{slug}/{lang}/index.html'
 ARTICLE_URL = '{slug}'
 ARTICLE_LANG_URL = '{slug}/{lang}'
 
 # Penulis
-AUTHOR_SAVE_AS = 'penulis/{slug}.html'
+AUTHOR_SAVE_AS = 'penulis/{slug}/index.html'
 AUTHOR_URL = 'penulis/{slug}'
 
 # Kategori
 CATEGORY_URL = 'kategori/{slug}'
-CATEGORY_SAVE_AS = 'kategori/{slug}.html'
+CATEGORY_SAVE_AS = 'kategori/{slug}/index.html'
 
 #Tag
-TAG_SAVE_AS = 'tag/{slug}.html'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAG_URL = 'tag/{slug}'
 
 # Halaman
 PAGE_PATHS = ['halaman']
-PAGE_SAVE_AS = '{slug}.html'
-PAGE_LANG_SAVE_AS = '{slug}/{lang}.html'
+PAGE_SAVE_AS = '{slug}/index.html'
+PAGE_LANG_SAVE_AS = '{slug}/{lang}/index.html'
 PAGE_URL = '{slug}'
 PAGE_LANG_URL = '{slug}/{lang}'
 
@@ -90,6 +90,10 @@ EXTENDED_SITEMAP_PLUGIN = {
         'others': 'monthly',
     }
 }
+
+# Pengaturan Google CSE (Custom Search Engine)
+GOOGLE_SEARCH = 'partner-pub-2432124491852819:4493745682'
+USING_GOOGLE_SEARCHBOX = False
 
 # Pengaturan Markdown
 PYGMENTS_STYLE = 'friendly' # Tampilan Pygments yang merupakan Syntax Highlighter
