@@ -1,5 +1,5 @@
 [build]
-  command = "locale-gen id_ID; update-locale LANG=id_ID"
+  command = "locale-gen id_ID; update-locale LANG=id_ID; locale -a"
   LC_ALL = "id_ID.UTF-8"
 
 [context.production]
