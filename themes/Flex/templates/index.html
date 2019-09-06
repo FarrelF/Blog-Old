@@ -17,12 +17,15 @@
   <header>
     <h2><a href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ article.title }}</a></h2>
     <p>
-      {{ _('Posted on %(when)s in %(category)s',
-           when=article.locale_date,
-           category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
+      {{ _('Di Posting sejak: %(when)s. Di dalam Kategori:',
+          when=article.locale_date|safe) }}
+      {% for cat in article.categories or [article.category] %}
+          {{ _('%(categories)s',
+          categories='<a href="%s/%s">%s</a>%s'|format(SITEURL, cat.url, cat, ', ' if not loop.last)|safe) }}
+      {% endfor %}
 
       {% if article.tags and not HOME_HIDE_TAGS %}
-          &#8226; {{ _('Tagged with') }}
+          &#8226; {{ _('Di Tag dengan: ') }}
           {% for tag in article.tags %}
               <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
           {% endfor %}
@@ -43,7 +46,7 @@
       {{ article.summary }}
       {% if article.content != article.summary %}
         <br>
-        <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ _('Continue reading') }}</a>
+        <a class="btn" href="{{ SITEURL }}/{{ article.url }}{% if not DISABLE_URL_HASH %}#{{ article.slug }}{% endif %}">{{ _('Lanjutkan Membaca') }}</a>
       {% endif %}
     {% else %}
       {{ article.content }}
