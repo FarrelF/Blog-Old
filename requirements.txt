@@ -4,6 +4,8 @@ blinker==1.4
 cffi==1.12.3
 docutils==0.15.2
 feedgenerator==1.9
+gitdb2==2.0.5
+GitPython==3.0.2
 isort==4.3.21
 Jinja2==2.10.1
 lazy-object-proxy==1.4.2
@@ -20,6 +22,7 @@ python-dateutil==2.8.0
 pytz==2019.2
 six==1.12.0
 smartypants==2.0.1
+smmap2==2.0.5
 soupsieve==1.9.3
 typed-ast==1.4.0
 typogrify==2.0.7
