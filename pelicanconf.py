@@ -26,6 +26,7 @@ USE_GOOGLE_CDN_FOR_FONTS = False
 USE_MINIFIED_FONT_CSS = False
 
 USE_CDN = False
+USE_BOOTSTRAP = False
 
 PATH = 'content'
 
@@ -96,6 +97,12 @@ EXTENDED_SITEMAP_PLUGIN = {
 # Pengaturan Google CSE (Custom Search Engine)
 GOOGLE_SEARCH = 'partner-pub-2432124491852819:4493745682'
 USING_GOOGLE_SEARCHBOX = False
+
+if USING_GOOGLE_SEARCHBOX:
+    GOOGLE_SEARCHBOX = 'gcse-searchresults-only'
+else:
+    GOOGLE_SEARCHBOX = 'gcse-search'
+    
 
 # Pengaturan Markdown
 PYGMENTS_STYLE = 'friendly' # Tampilan Pygments yang merupakan Syntax Highlighter
