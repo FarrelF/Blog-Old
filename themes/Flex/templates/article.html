@@ -19,8 +19,7 @@
     {% endif %}
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
-      {{ _('Di Posting sejak: %(when)s. Di dalam Kategori:',
-            when=article.locale_date|safe) }}
+      Di posting sejak: {{ article.locale_date }}. Di dalam Kategori:
       {% for cat in article.categories or [article.category] %}
           {{ _('%(categories)s',
           categories='<a href="%s/%s">%s</a>%s'|format(SITEURL, cat.url, cat, ', ' if not loop.last)|safe) }}
