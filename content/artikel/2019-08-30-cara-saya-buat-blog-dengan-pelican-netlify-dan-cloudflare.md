@@ -120,7 +120,15 @@ $ virtualenv pelican-envs
 
 Anda bisa gantikan `pelican-envs` disini dengan Nama 'Virtualenv' yang Anda inginkan, disini saya menamainya dengan `pelican-envs` biar mudah di ingat.
 
-Setelah di buat, kira-kira Struktur Direktori nya akan seperti ini:
+Atau, jika Anda ingin membuat nya di dalam lokasi yang berbeda, Anda bisa eksekusi perintah berikut:
+
+```bash
+$ virtualenv /path/to/new/pelican-envs
+```
+
+Ganti `/path/to/new/pelican-envs` dengan lokasi yang Anda inginkan. Tapi, saya sarankan 
+
+Setelah di buat (di dalam Proyek Blog nya), kira-kira Struktur Direktori nya akan seperti ini:
 ```text
 Demo-Blog
 └── pelican-envs
