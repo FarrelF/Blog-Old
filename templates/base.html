@@ -16,6 +16,11 @@
   {% else %}
     <meta name="robots" content="{{ ROBOTS }}" />
   {% endif %}
+  <style>
+    .search-query{
+      border: 1px solid #cccccc;
+    }
+  </style>
 
   {% if USE_GOOGLE_FONTS != False %}
     {% if USE_GOOGLE_CDN_FOR_FONTS %}
@@ -56,6 +61,11 @@
     {% endif %}
   {% endif %}
 
+  {% if USE_BOOTSTRAP %}
+    <script src="https://cdn.statically.io/libs/jquery/3.4.1/jquery.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.statically.io/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/twbs/bootstrap/v4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  {% endif %}
   {% if USE_CDN %}
     <link rel="stylesheet" type="text/css" href="{{ CDN_STATIC_THEME_URL }}/pygments/{{ PYGMENTS_STYLE|default('github') }}.min.css">
     <link rel="stylesheet" type="text/css" href="{{ CDN_STATIC_THEME_URL }}/font-awesome/css/fontawesome.css">
@@ -147,25 +157,6 @@
       {% if pages or LINKS %}
       <nav>
         <ul class="list">
-          {% if GOOGLE_SEARCH %}
-          {% if USING_GOOGLE_SEARCHBOX != True %}
-          <div id="search">
-            <form class="navbar-form navbar-right" role="search" name="search" action="{{ SITEURL }}/search">
-              <input type="text" name="q" class="form-control search-query" placeholder="Telusuri Blog ini dengan Google" required />
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
-              </span>
-              <input type="hidden" name="cx" value="{{ GOOGLE_SEARCH }}" />
-              <input type="hidden" name="ie" value="UTF-8" />
-            </form>
-          </div>
-          {% else %}
-          <div>
-              <script async src="https://cse.google.com/cse.js?cx=partner-pub-2432124491852819:4493745682"></script>
-              <div class="gcse-searchbox-only"></div>
-          </div>
-          {% endif %}
-          {% endif %}
           {% if PAGES_SORT_ATTRIBUTE -%}
             {% set pages = pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
           {%- endif %}
@@ -230,6 +221,23 @@
       {% if FEED_ALL_RSS %}
       <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ _('RSS') }}</a>
       {% endif %}
+    </nav>
+    {% endif %}
+    {% if GOOGLE_SEARCH %}
+    <nav>
+      {% if USING_GOOGLE_SEARCHBOX != True %}
+      <form role="search" name="search" action="{{ SITEURL }}/search">
+        <input type="text" name="q" class="search-query" placeholder="Setelah mengisi ini, tekan 'Enter' untuk menelusuri Blog ini dengan Google" size="75%" required />
+        <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
+        <input type="hidden" name="cx" value="{{ GOOGLE_SEARCH }}" />
+        <input type="hidden" name="ie" value="UTF-8" />
+       </form>
+       {% else %}
+        <div>
+         <script async src="https://cse.google.com/cse.js?cx=partner-pub-2432124491852819:4493745682"></script>
+         <div class="gcse-searchbox-only"></div>
+        </div>
+       {% endif %}
     </nav>
     {% endif %}
 
