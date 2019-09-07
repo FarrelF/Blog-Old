@@ -19,7 +19,7 @@
     {% endif %}
     <h1 id="{{ article.slug }}">{{ article.title }}</h1>
     <p>
-      Di posting sejak: {{ article.locale_date }}. Di dalam Kategori:
+      Di posting sejak: {{ article.date | locale_settings }}. Di dalam Kategori:
       {% for cat in article.categories or [article.category] %}
           {{ _('%(categories)s',
           categories='<a href="%s/%s">%s</a>%s'|format(SITEURL, cat.url, cat, ', ' if not loop.last)|safe) }}
