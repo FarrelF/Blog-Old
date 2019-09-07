@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink
-from datetime import datetime
+from datetime import date, datetime, time
+from babel.dates import format_date, format_datetime, format_time
+from dateutil import parser
 
 AUTHOR = 'Farrel Franqois'
 
@@ -146,6 +148,13 @@ LOCALE = ('id_ID.utf8', 'id_ID', 'id_ID.UTF-8')
 DATE_FORMATS = {
     'id': ('%A, %d %B %Y'),
 }
+
+def locale_settings(d, locale_language='id_ID'):
+    date_time = parser.parse(str(d))
+    date_format = str(format_date(date_time, format='full', locale=locale_language))
+    return date_format
+
+JINJA_FILTERS = {'locale_settings':locale_settings}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
