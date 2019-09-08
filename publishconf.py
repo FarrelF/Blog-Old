@@ -42,7 +42,7 @@ EXTRA_PATH_METADATA['extras/_redirects'] = {'path': '_redirects'}
 THEME = 'themes/Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 
 # Activating Cache
-CACHE_PATH = 'cache'
+CACHE_PATH = '__cache__'
 CACHE_CONTENT = True
 GZIP_CACHE = True
 LOAD_CONTENT_CACHE = True

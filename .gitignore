@@ -15,7 +15,7 @@
 /output-publish/
 __pycache__/
 draf/
-cache/
+__cache__/
 .vscode/
 
 # Local Netlify folder
