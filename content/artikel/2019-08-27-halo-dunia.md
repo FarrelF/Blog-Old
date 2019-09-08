@@ -80,7 +80,7 @@ Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka sa
 
 2. Blog ini juga menggunakan Netlify sebagai Hosting nya. Alasan kenapa saya menggunakan nya sebagai berikut:
 
-    - Karena Gratis, sehingga tidak perlu bayar hosting/server per bulan/tahun nya (Kecuali Domain). Sehingga ini akan sangat menghemat biaya untuk orang seperti saya :slightly_smilling_face:
+    - Karena Gratis, sehingga tidak perlu bayar hosting/server per bulan/tahun nya (Kecuali Domain). Sehingga ini akan sangat menghemat biaya untuk orang seperti saya :slightly_smiling_face:
 
     - Secara Default, Netlify menggunakan CDN (Atau, lebih tepatnya 'ADN' yang merupakan kepanjangan dari 'Application Delivery Network'), sehingga dapat meminimalisir lambatnya akses ketika pertama kali di buka. Gratis pula.
 
