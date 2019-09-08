@@ -67,16 +67,16 @@ Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan"
 Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka saya akan merangkum isi artikel ini menjadi sebuah kesimpulan, dalam format yang mudah dibaca oleh Anda. Berikut rangkuman nya:
 
 1. Blog ini, artikel serta laman nya merupakan Berkas HTML Statis yang di hasilkan menggunakan *Static Site Generator* (atau di singkat "SSG") seperti [Pelican](https://blog.getpelican.com). Iya, jadi saya menggunakan/memanfaatkan SSG untuk menulis dan mengubah artikel/laman di dalam blog ini. Alasan nya:
-   
-   - Saya merasa jauh lebih nyaman dalam menulis artikel dengan memanfaatkan Editor Teks/Kode di bandingkan dengan lewat Web Browser (WYSIWYG).
 
-   - Untuk menulis atau/dan mengubah Artikel/Laman, gak harus terkoneksi dengan Internet (Dalam keadaan Offline). Kecuali, jika menerbitkan Artikel di dalam Blog dan men-_deploy_ nya, itu memerlukan koneksi Internet, hanya saja lebih 'ramah' untuk pengguna Internet seperti saya (Karena penggunaan Git).
+    - Saya merasa jauh lebih nyaman dalam menulis artikel dengan memanfaatkan Editor Teks/Kode di bandingkan dengan lewat Web Browser (WYSIWYG).
 
-   - Langkah-langkah menulis artikel/laman menjadi lebih 'sederhana' dibandingkan dengan menulisnya melalui WordPress, yang cenderung lebih 'merepotkan'. Contohnya: Saya buka Web Browser -> Masuk ke dalam Admin WordPress (`wp-admin`) -> Login dengan menggunakan Akun yang saya punya -> Masuk ke Dasbor -> Klik pada "Pos", dan langkah-langkah lain nya untuk menulis sebuah artikel/laman saja.
+    - Untuk menulis atau/dan mengubah Artikel/Laman, gak harus terkoneksi dengan Internet (Dalam keadaan Offline). Kecuali, jika menerbitkan Artikel di dalam Blog dan men-_deploy_ nya, itu memerlukan koneksi Internet, hanya saja lebih 'ramah' untuk pengguna Internet seperti saya (Karena penggunaan Git).
 
-   - Saat saya menulis artikel/laman dengan WordPress, Komputer/Laptop saya terkadang seringkali mengalami 'pembengkakan' kinerja, terutama pada bagian penggunaan Sumber Daya (seperti: CPU, RAM, dll.) seiring lamanya atau banyaknya kalimat di dalam artikel/laman yang saya tulis di dalam Editor.
+    - Langkah-langkah menulis artikel/laman menjadi lebih 'sederhana' dibandingkan dengan menulisnya melalui WordPress, yang cenderung lebih 'merepotkan'. Contohnya: Saya buka Web Browser -> Masuk ke dalam Admin WordPress (`wp-admin`) -> Login dengan menggunakan Akun yang saya punya -> Masuk ke Dasbor -> Klik pada "Pos", dan langkah-langkah lain nya untuk menulis sebuah artikel/laman saja.
 
-   - Meminimalisir kesalahan 503 (Internal Server Error) karena Server Hosting dan juga segala Gangguan dari Server Hosting saat menulis artikel. Karena saya menulisnya di dalam Editor, gak harus Online juga, hehe :grinning:
+    - Saat saya menulis artikel/laman dengan WordPress, Komputer/Laptop saya terkadang seringkali mengalami 'pembengkakan' kinerja, terutama pada bagian penggunaan Sumber Daya (seperti: CPU, RAM, dll.) seiring lamanya atau banyaknya kalimat di dalam artikel/laman yang saya tulis di dalam Editor.
+
+    - Meminimalisir kesalahan 503 (Internal Server Error) karena Server Hosting dan juga segala Gangguan dari Server Hosting saat menulis artikel. Karena saya menulisnya di dalam Editor, gak harus Online juga, hehe :grinning:
 
 2. Blog ini juga menggunakan Netlify sebagai Hosting nya. Alasan kenapa saya menggunakan nya sebagai berikut:
 
@@ -98,7 +98,7 @@ Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka sa
 
     - Gambar-gambar sudah langsung di optimasi ketika dimuatkan. Sehingga, ini memudahkan saya untuk mengoptimasi gambar tanpa harus menggantungkan kepada pihak lain nya.
 
-    - Penyimpanan Tembolok (Cache) berdasarkan *Branch*, *Tag* atau *Commit* pada Git. Sehingga, ketika saya ingin menggantikan gambar di dalam artikel, saya cukup unggah gambarnya kedalam *Repository* Git, lalu saya ganti *Commit* nya saja, tidak perlu sampai klik *Purge Cache*, bahkan menggantikan nama berkas.
+    - Lamanya Penyimpanan Tembolok (Cache) berdasarkan *Branch*, *Tag* atau *Commit* pada *Repository* Git. Sehingga, ketika saya ingin menggantikan gambar di dalam artikel, saya cukup unggah gambarnya kedalam *Repository* Git, lalu saya ganti *Commit* nya saja, tidak perlu sampai klik *Purge Cache*, bahkan menggantikan nama berkas.
 
 4. Dengan semua alasan ini, maka untuk kedepan nya, saya akan fokus untuk Blogging dengan memanfaatkan SSG dibandingkan dengan menggunakan WordPress. Meski Blog lama [masih ada](https://farrelf.wpinter.com) dan gak akan saya hapus.
 
