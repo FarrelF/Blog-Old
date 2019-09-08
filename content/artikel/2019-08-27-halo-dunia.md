@@ -3,7 +3,7 @@ Category: Lainnya
 Slug: halo-dunia
 Status: published
 Authors: Farrel Franqois
-Summary: Ini adalah Artikel bukan uji-coba yang paling pertama di dalam blog ini. Jadi, yah, kalo mau baca silahkan, kalo gak ya silahkan. Tapi, di dalam artikel ini saya menjelaskan fokus saya kedepan nya untuk blog ini dan juga blog lama saya, jadi saya sarankan untuk di baca, kalo gak ya gak apa-apa, hehe :grinning:
+Summary: Ini adalah Artikel bukan uji-coba yang paling pertama di dalam blog ini. Jadi, kalo mau baca silahkan, kalo gak yah silahkan. Tapi, di dalam artikel ini saya menjelaskan fokus saya kedepan nya untuk blog ini dan juga blog lama saya, jadi saya sarankan untuk di baca, kalo gak ya gak apa-apa, hehe :grinning:
 
 ## Daftar Isi
 [TOC]
@@ -39,7 +39,7 @@ Gede sih batasan nya untuk blog seperti ini, cuma ya kalo bisa di hemat, kenapa 
 
 Dengan ini, (harusnya) *Bandwidth* Netlify tidak terpakai sama sekali/tidak terakumulasi, karena saya menggantungkan Asset Blog ini kepada Statically yang mana menghantarkan sebuah berkas dari dalam Repo GitHub, dan itupun dimuat secara eksternal (diluar blog ini). Jadi, lalu lintas bisa sedikit di perhemat :slightly_smiling_face:
 
-Saya mempunyai Akun BunnyCDN, cuma saya gak implementasikan disini, mengingat mungkin kedepan nya saya akan terus menggunakan CDN Statically daripada BunnyCDN, karena disitu fiturnya lebih lengkap, meski gak ada fitur Custom Domain :slightly_smiling_face:
+Saya mempunyai Akun [BunnyCDN](https://bunnycdn.com), cuma saya gak implementasikan disini, mengingat mungkin kedepan nya saya akan terus menggunakan CDN Statically daripada BunnyCDN, karena saya lebih nyaman disitu, meski gak ada fitur Custom Domain dan kurang lengkap (karena Statically merupakan Layanan *Public CDN*) :slightly_smiling_face:
 
 ## Apa Fokus kedepan nya?
 Karena saya lebih suka penggunaan *Static Site Generator* bila dibandingkan dengan menggunakan WordPress untuk keperluan Blogging, seperti yang saya bilang tadi.
@@ -68,7 +68,7 @@ Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka sa
 
 1. Blog ini, artikel serta laman nya merupakan Berkas HTML Statis yang di hasilkan menggunakan *Static Site Generator* (atau di singkat "SSG") seperti [Pelican](https://blog.getpelican.com). Iya, jadi saya menggunakan/memanfaatkan SSG untuk menulis dan mengubah artikel/laman di dalam blog ini. Alasan nya:
 
-    - Saya merasa jauh lebih nyaman dalam menulis artikel dengan memanfaatkan Editor Teks/Kode di bandingkan dengan lewat Web Browser (WYSIWYG).
+    - Saya merasa jauh lebih nyaman dalam menulis artikel dengan memanfaatkan Editor Teks/Kode di bandingkan dengan lewat Web Browser dengan Editor WYSIWYG (*What You See Is What You Get*) nya.
 
     - Untuk menulis atau/dan mengubah Artikel/Laman, gak harus terkoneksi dengan Internet (Dalam keadaan Offline). Kecuali, jika menerbitkan Artikel di dalam Blog dan men-_deploy_ nya, itu memerlukan koneksi Internet, hanya saja lebih 'ramah' untuk pengguna Internet seperti saya (Karena penggunaan Git).
 
@@ -76,35 +76,35 @@ Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka sa
 
     - Saat saya menulis artikel/laman dengan WordPress, Komputer/Laptop saya terkadang seringkali mengalami 'pembengkakan' kinerja, terutama pada bagian penggunaan Sumber Daya (seperti: CPU, RAM, dll.) seiring lamanya atau banyaknya kalimat di dalam artikel/laman yang saya tulis di dalam Editor.
 
-    - Meminimalisir kesalahan 503 (Internal Server Error) karena Server Hosting dan juga segala Gangguan dari Server Hosting saat menulis artikel. Karena saya menulisnya di dalam Editor, gak harus Online juga, hehe :grinning:
+    - Meminimalisir kesalahan 503 (*Internal Server Error*, baik karena Salah konfigurasi sampai Server Hosting) dan juga segala Gangguan dari Server Hosting saat menulis artikel. Karena saya menulisnya di dalam Editor, gak harus Online juga, hehe :grinning:
 
 2. Blog ini juga menggunakan Netlify sebagai Hosting nya. Alasan kenapa saya menggunakan nya sebagai berikut:
 
-    - Karena Gratis, sehingga tidak perlu bayar hosting/server per bulan/tahun nya.
+    - Karena Gratis, sehingga tidak perlu bayar hosting/server per bulan/tahun nya (Kecuali Domain). Sehingga ini akan sangat menghemat biaya untuk orang seperti saya :slightly_smilling_face:
 
     - Secara Default, Netlify menggunakan CDN (Atau, lebih tepatnya 'ADN' yang merupakan kepanjangan dari 'Application Delivery Network'), sehingga dapat meminimalisir lambatnya akses ketika pertama kali di buka. Gratis pula.
 
-    - Gagal Update Blog karena perbedaan Bandwidth antara Server Hosting dan Server lain nya dapat di minimalisir.
+    - Gagal Update Blog karena perbedaan Koneksi Jaringan Internet antara Server Hosting dan Server lain nya dapat di minimalisir.
 
     - Terintegrasi dengan GitHub, GitLab dan Bitbucket.
 
     - Selain itu semua, alasan saya memilih Netlify sebagai Hosting di bandingkan dengan layanan sejenis, seperti [Zeit](https://zeit.co) itu karena kemudahan nya dalam men-_deploy_ Blog Statis dari [Kode Sumber](https://github.com/FarrelF/FarrelF-Blog).
 
-3. Meskipun Netlify menggunakan CDN pada Jaringan nya, Blog ini juga menggunakan Layanan CDN [Statically](https://statically.io) untuk memuat berkas statis lain nya. Alasan nya:
+3. Meskipun Netlify menggunakan CDN pada Jaringan nya, Blog ini juga masih menggunakan Layanan CDN Umum seperti [Statically](https://statically.io) untuk memuat berkas statis lain nya. Alasan nya:
 
-    - Karena Gratis dan "Unlimited" Bandwidth. Sehingga, ini dapat menghemat Bandwidth Netlify yang di batasi hingga 100 GB/Bulan untuk paket Gratis nya.
+    - Karena Gratis dan memiliki *Bandwidth* yang 'tidak terbatas'. Sehingga, ini dapat menghemat *Bandwidth* Netlify yang di batasi hingga 100 GB/Bulan untuk paket Gratis nya.
 
     - Memiliki Infrastruktur Multi-CDN, yang artinya Statically memiliki 4 CDN di dalam nya. Seperti: BunnyCDN, Cloudflare, CDN77 dan Fastly.
 
-    - Gambar-gambar sudah langsung di optimasi ketika dimuatkan. Sehingga, ini memudahkan saya untuk mengoptimasi gambar tanpa harus menggantungkan kepada pihak lain nya.
+    - Gambar-gambar sudah langsung di optimasi ketika dimuatkan. Sehingga, ini memudahkan saya untuk mengoptimasi gambar tanpa harus terlalu menggantungkan nya kepada pihak ke-3 lain nya.
 
-    - Lamanya Penyimpanan Tembolok (Cache) berdasarkan *Branch*, *Tag* atau *Commit* pada *Repository* Git. Sehingga, ketika saya ingin menggantikan gambar di dalam artikel, saya cukup unggah gambarnya kedalam *Repository* Git, lalu saya ganti *Commit* nya saja, tidak perlu sampai klik *Purge Cache*, bahkan menggantikan nama berkas.
+    - Lamanya Penyimpanan Tembolok (Cache) dan Integritas berkas di dalam Tembolok itu ditentukan berdasarkan *Branch*, *Tag* atau *Commit* yang ada pada *Repository* Git. Sehingga, ketika saya ingin menggantikan gambar di dalam artikel, saya cukup unggah gambarnya kedalam *Repository* Git, lalu saya ganti *Commit* nya saja, tidak perlu sampai menggunakan fitur *Purge Cache*, bahkan menggantikan nama berkas.
 
-4. Dengan semua alasan ini, maka untuk kedepan nya, saya akan fokus untuk Blogging dengan memanfaatkan SSG dibandingkan dengan menggunakan WordPress. Meski Blog lama [masih ada](https://farrelf.wpinter.com) dan gak akan saya hapus.
+4. Dengan semua alasan ini, maka untuk kedepan nya, saya akan fokus untuk Blogging dengan memanfaatkan SSG dibandingkan dengan menggunakan WordPress. Jadi, imbasnya, blog lama udah gak saya urus lagi, meski Blog lama [masih ada](https://farrelf.wpinter.com) dan gak akan saya hapus.
 
 5. Tapi, saya tidak berniat untuk memigrasikan dari Blog lama ke blog baru ini, karena membuang waktu, pikiran dan juga tenaga. Sehingga, saya ingin memulai nya dari awal lagi.
 
-6. Saya memberikan Anda kebebasan untuk menggunakan, mempelajari, menyalinkan, mendistribusi kan ulang, dan juga memodifikasi nya dengan keperluan apapun, termasuk komersial sekalipun, baik untuk konten nya, dan juga [kode sumber nya](https://github.com/FarrelF/FarrelF-Blog). Tapi, jangan lupa untuk sertakan kredit nya. Untuk lebih lanjut, silahkan lihat/baca laman [Lisensi]({filename}/halaman/lisensi.md).
+6. Saya juga memberikan Anda kebebasan untuk menggunakan, mempelajari, menyalinkan, mendistribusi kan ulang, dan juga memodifikasi nya dengan keperluan apapun, termasuk komersial sekalipun, baik untuk konten nya, dan juga [kode sumber nya](https://github.com/FarrelF/FarrelF-Blog). Tapi, jangan lupa untuk sertakan kredit dan atribusi nya serta memberikan 'hak' yang sama dengan yang ada di blog ini. Untuk lebih lanjut, silahkan lihat/baca laman [Lisensi]({filename}/halaman/lisensi.md).
 
 ## Penutup
 Jadi, sudah dulu yah, saya juga mau fokus merombak blog ini terlebih dahulu, dibandingkan dengan menulis artikel. Seperti yang Anda tahu, blog ini sangat 'jauh' sekali dari kata "lengkap", seperti ada halaman yang dalam masih di buat/di draf, dan lain sebagai nya.
