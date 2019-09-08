@@ -118,7 +118,7 @@ Lalu, buatlah sebuah 'Virtualenv' di dalam folder tersebut dengan perintah berik
 $ virtualenv pelican-envs
 ```
 
-Anda bisa gantikan `pelican-envs` disini dengan Nama 'Virtualenv' yang Anda inginkan, disini saya menamainya dengan `pelican-envs` biar mudah di ingat.
+Anda bisa gantikan `pelican-envs` disini dengan Nama 'Virtualenv' yang Anda inginkan, disini saya menamainya dengan `pelican-envs` agar mudah di ingat.
 
 Atau, jika Anda ingin membuat nya di dalam lokasi yang berbeda, Anda bisa eksekusi perintah berikut:
 
@@ -126,7 +126,7 @@ Atau, jika Anda ingin membuat nya di dalam lokasi yang berbeda, Anda bisa ekseku
 $ virtualenv /path/to/new/pelican-envs
 ```
 
-Ganti `/path/to/new/pelican-envs` dengan lokasi yang Anda inginkan. Tapi, saya sarankan 
+Ganti `/path/to/new/pelican-envs` dengan lokasi yang Anda inginkan. Tapi, saya sarankan untuk meletakkan nya di dalam Folder Proyek nya saja, biar mudah dalam mengelola nya. Dan, di tutorial ini, saya akan meletakkan nya di dalam Folder Proyek nya.
 
 Setelah di buat (di dalam Proyek Blog nya), kira-kira Struktur Direktori nya akan seperti ini:
 ```text
@@ -137,7 +137,7 @@ Demo-Blog
     └── lib
 ```
 
-Sedangkan di Windows akan seperti ini:
+Sedangkan di Windows akan menjadi seperti ini:
 ```text
 Demo-Blog
 └── pelican-envs
@@ -147,6 +147,42 @@ Demo-Blog
     ├── Scripts
     └── tcl
 ```
+
+Setelah kita membuatnya tadi, aktifkan Virtualenv yang barusan kita buat tadi. Di dalam GNU/Linux, macOS atau Sistem Operasi berbasis Unix/\*nix lain nya, bisa kamu aktifkan Virtualenv nya dengan perintah berikut:
+
+```bash
+$ source pelican-envs/bin/activate
+```
+
+Atau:
+
+```bash
+$ source /path/to/pelican-envs/bin/activate
+```
+
+Ganti `/path/to/pelican-envs` menjadi Lokasi Virtualenv yang Anda buat tadi, dan itu bagi Anda yang membuatnya di dalam lokasi yang berbeda.
+
+Jika Anda menggunakan Windows, dan karena Windows bisa memiliki *Shell* yang berbeda-beda (Selain CMD, ada juga PowerShell, dan juga Bash), jadi perintah pengaktifannya akan berbeda-beda di setiap *Shell*.
+
+Untuk Pengguna CMD (Command Prompt), bisa Anda eksekusikan perintah berikut ini untuk mengaktifkan Virtualenv melalui CMD:
+
+```console
+> pelican-envs\Scripts\activate
+```
+
+Untuk Pengguna PowerShell (PowerShell 5 atau PowerShell Core), perintah yang di eksekusi sama dengan yang ada di CMD, hanya saja Anda perlu menambahkan tanda titik "." (tanpa kutip) di awal perintah nya. Sehingga, perintah nya akan menjadi seperti di bawah ini:
+
+```powershell
+> . pelican-envs\Scripts\activate
+```
+
+Sedangkan untuk pengguna Bash di Windows (Contoh: Git Bash, Windows Subsystem Linux, dll), sama seperti CMD, hanya saja Anda harus menambahkan perintah `source` di paling awalnya. Sehingga, perintah nya akan menjadi seperti berikut:
+
+```bash
+$ source pelican-envs/Scripts/activate
+```
+
+
 
 ### **3. Install Git**
 
