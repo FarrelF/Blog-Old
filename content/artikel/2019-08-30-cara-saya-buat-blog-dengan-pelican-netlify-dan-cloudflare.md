@@ -182,12 +182,18 @@ Sedangkan untuk pengguna Bash di Windows (Contoh: Git Bash, Windows Subsystem Li
 $ source pelican-envs/Scripts/activate
 ```
 
+Setelah Anda mengaktifkan nya, kemudian Install Pelican beserta ketergantungan nya, dengan perintah berikut: (tanpa memerlukan `sudo` ataupun membuka nya sebagai Admin)
 
+```bash
+$ pip install pelican Markdown
+```
+
+Karena pada tutorial ini akan membahas cara menulis artikel dengan menggunakan Markdown, jadi Markdown harus di Install, kalaupun Anda tidak mau, ya tidak masalah.
 
 ### **3. Install Git**
 
 ## **IV. Membuat Blog SSG dengan Pelican**
-### **1. Membuat 'Pelican Projects'**
+### **1. Membuat 'Pelican Sites'**
 ### **2. Konfigurasi Pelican Dasar**
 ### **3. Menulis Artikel**
 ### **4. Meng-install Tema Pelican**
