@@ -191,6 +191,22 @@ $ pip install pelican Markdown
 Karena pada tutorial ini akan membahas cara menulis artikel dengan menggunakan Markdown, jadi Markdown harus di Install, kalaupun Anda tidak mau, ya tidak masalah.
 
 ### **3. Install Git**
+Karena kita akan membuat blog dan menyebarkan nya melalui internet, kita sangat perlu untuk meng-install Git di dalam Komputer kita.
+
+Untuk meng-install nya, Anda perlu meng-unduh Git nya terlebih dahulu, bisa kunjungi situs web resmi nya untuk meng-unduh Git, yakni: [https://git-scm.com](https://git-scm.com). Lalu, klik pada *Button* "Download bla bla bla". Atau, Anda juga bisa mengunjungi [Halaman Unduhan](https://git-scm.com/downloads) Resmi nya untuk meng-unduh Git.
+
+Pada GNU/Linux atau Sistem Operasi berbasis Unix/Unix-like lain nya (kecuali macOS, meski bisa di Install), biasanya mereka akan memberikan petunjuk cara instalasi Git nya untuk masing-masing Distribusi atau Sistem Operasi nya. Kalau begitu, Anda tinggal ikuti saja petunjuk nya.
+
+Sedangkan untuk Windows, Anda bisa ikuti petunjuk nya berikut.
+
+#### **Cara Install Git di Windows**
+Cara Install Git di Windows sangatlah berbeda daripada Install Git di GNU/Linux, Installer nya menggunakan GUI, sehingga dapat mempermudah kamu selama meng-install Git.
+
+Hanya saja, jika kamu salah langkah, maka yang terjadi adalah Git akan mengalami "kesalahan" (*error*) saat di gunakan, entah itu tidak bisa meng-kloning *Repository* sampai mengurus nya.
+
+Maka dari itu, jika Anda pengguna Windows, maka Anda bisa ikuti cara instalasi nya berikut:
+
+1. 
 
 ## **IV. Membuat Blog SSG dengan Pelican**
 ### **1. Membuat 'Pelican Sites'**
