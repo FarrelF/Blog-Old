@@ -27,9 +27,9 @@ Cara installnya mudah, Anda tinggal ikuti langkah-langkah berikut dengan Bash Sh
 
 ```bash
 $ python3 -m pip install virtualenv
-$ virtualenv pelican-envs
-$ source pelican-envs/bin/activate # Gunakan perintah 'source pelican-envs/Scripts/activate' jika Anda sedang menggunakan Windows
-$ pip install -r requirements.txt
+$ virtualenv pelican-env
+$ source pelican-env/bin/activate # Gunakan perintah 'source pelican-env/Scripts/activate' (tanpa kutip) jika Anda sedang menggunakan Windows
+$ pip install -r requirements.txt # Tambahkan parameter '--upgrade' (tanpa kutip) jika Anda ingin langsung memperbarui nya
 ```
 
 Setelah kamu meng-installnya, kamu bisa coba untuk menghasilkan sebuah berkas HTML Statis ini dengan Pelican, yang kemudian bisa kamu akses dengan Web Browser kamu.
