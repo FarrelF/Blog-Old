@@ -32,22 +32,14 @@ Jika Anda ingin mendonasikan nya, Anda bisa ikuti cara berikut:
 ### LinkAja (Sebelum nya "TCASH")
 Jika Anda ingin menggunakan LinkAja (yang sebelumnya adalah "TCASH") untuk berdonasi, Anda tinggal Pindai *QR Code* berikut di bawah ini:
 
-<span align="center">
-
-[![QR Code LinkAja](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_linkaja.jpg)](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_linkaja.jpg)
-
-</span>
+[![QR Code LinkAja](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_linkaja.jpg#center)](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_linkaja.jpg)
 
 Setelah Anda memindai nya, pastikan kamu mentransfer nya ke akun/rekening tujuan dengan Atas Nama: **OK MOHAMAD EDBERT FARREL FRANQOIS**.
 
 ### GoPay (GOJEK)
 Jika Anda ingin menggunakan GoPay untuk berdonasi, Anda tinggal Pindai *QR Code* berikut di bawah ini:
 
-<span align="center">
-
-[![QR Code LinkAja](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_gopay.jpg?fit=320,320)](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_gopay.jpg)
-
-</span>
+[![QR Code LinkAja](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_gopay.jpg?fit=320,320#center)](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_gopay.jpg)
 
 Setelah Anda memindai nya, pastikan kamu mentransfer nya ke akun/rekening tujuan dengan Atas Nama: **Farrel Franqois**.
 
@@ -69,3 +61,10 @@ Untuk cara lain nya, Anda bisa bertanya, memberikan kritik dan saran, serta berk
 Nah, itulah cara kontribusi nya, jika Anda mempunyai pertanyaan mengenai Berkas ini, silahkan tanyakan itu melalui ["Issue"](https://github.com/FarrelF/FarrelF-Blog/issues) di dalam Repo ini.
 
 Terima kasih :blush:
+
+<style>
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+</style>
