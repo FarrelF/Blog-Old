@@ -50,8 +50,6 @@ Jika Anda ingin menggunakan GoPay untuk berdonasi, Anda tinggal Pindai *QR Code*
     <img style="display: block; margin: 0 auto;" src="https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_gopay.jpg?fit=320,320" alt="QR Code GoPay" width="313" height="320" />
 </a>
 
-[![QR Code LinkAja](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_gopay.jpg?fit=320,320&style=centerme)](https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/283d3aa/content/extras/qrcode_gopay.jpg)
-
 Setelah Anda memindai nya, pastikan kamu mentransfer nya ke akun/rekening tujuan dengan Atas Nama: **Farrel Franqois**.
 
 ### OVO, Paypal, Patreon, dan Liberapay
