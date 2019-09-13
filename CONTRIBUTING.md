@@ -8,12 +8,21 @@ Anda bisa ber-kontribusi terhadap Blog ini menggunakan (salah satu/lebih) cara b
 Jika Anda ingin berkontribusi dengan membantu konfigurasi Blog ini atau ikut serta dalam mengubah Kode Sumber nya. Cara nya cukup mudah, Anda tinggal ikuti langkah di bawah ini:
 
 1. Buatlah sebuah *fork* dari Repo ini.
+
 2. Klon Repo GitHub dari Repo yang Anda buat *fork* nya tadi.
+
 3. Install Virtualenv, buatlah sebuah Virtualenv dan masuk ke dalam nya, lalu Install semua keperluan nya. Anda bisa baca/lihat caranya [disini](https://github.com/FarrelF/FarrelF-Blog#cara-install)
-4. Navigasikan *Shell* yang Anda gunakan ke dalam Folder Kode Sumber yang Anda klon tadi. Lalu, lakukan `git checkout drafts` di dalam Folder tersebut sebelum mengubah kode sumbernya.
-5. Ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
-6. Lakukan *Staging*, buatlah sebuah *Commit* dan pesannya, lalu lakukan *Push*.
-7. Setelah itu, buatlah sebuah *Pull Request* jika Anda benar-benar ingin mengubah Kode Sumber ini.
+
+4. Navigasikan *Shell* yang Anda gunakan ke dalam Folder Kode Sumber yang Anda klon tadi dengan perintah `cd`. 
+
+5. Lalu, ubah *Branch* nya menjadi `drafts` dengan perintah `git checkout drafts` di dalam Folder tersebut sebelum mengubah kode sumbernya.
+
+6. Ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
+
+7. Lakukan *Staging*, buatlah sebuah *Commit* dan pesannya, lalu lakukan *Push*.
+
+8. Setelah itu, buatlah sebuah *Pull Request* jika Anda benar-benar ingin mengubah Kode Sumber ini. Dan, pastikan Anda membuatnya dari *Branch* `drafts` yang ada di dalam Repo *fork* Anda ke tujuan `FarrelF-Blog:drafts`, jangan ke yang lain nya.
+
 
 **Catatan**
 
@@ -30,7 +39,7 @@ Untuk sementara ini, saya hanya menyediakan LinkAja dan GoPay saja, sedangkan me
 
 Jika Anda ingin mendonasikan nya, Anda bisa ikuti cara berikut:
 
-### LinkAja (Sebelum nya "TCASH")
+### LinkAja (Sebelum nya bernama "TCASH")
 Jika Anda ingin menggunakan LinkAja (yang sebelumnya adalah "TCASH") untuk berdonasi, Anda tinggal Pindai *QR Code* berikut di bawah ini:
 
 <p align="center">
