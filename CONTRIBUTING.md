@@ -10,9 +10,10 @@ Jika Anda ingin berkontribusi dengan membantu konfigurasi Blog ini atau ikut ser
 1. Buatlah sebuah *fork* dari Repo ini.
 2. Klon Repo GitHub dari Repo yang Anda buat *fork* nya tadi.
 3. Install Virtualenv, buatlah sebuah Virtualenv dan masuk ke dalam nya, lalu Install semua keperluan nya. Anda bisa baca/lihat caranya [disini](https://github.com/FarrelF/FarrelF-Blog#cara-install)
-4. Ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
-5. Lakukan *Staging*, buatlah sebuah *Commit* dan pesannya, lalu lakukan *Push*.
-6. Setelah itu, buatlah sebuah *Pull Request* jika Anda benar-benar ingin mengubah Kode Sumber ini.
+4. Navigasikan *Shell* yang Anda gunakan ke dalam Folder Kode Sumber yang Anda klon tadi. Lalu, lakukan `git checkout drafts` di dalam Folder tersebut sebelum mengubah kode sumbernya.
+5. Ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
+6. Lakukan *Staging*, buatlah sebuah *Commit* dan pesannya, lalu lakukan *Push*.
+7. Setelah itu, buatlah sebuah *Pull Request* jika Anda benar-benar ingin mengubah Kode Sumber ini.
 
 **Catatan**
 
