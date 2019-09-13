@@ -17,6 +17,8 @@ __pycache__/
 draf/
 __cache__/
 .vscode/
+/pelican-env/
+/pelican-envs/
 
 # Local Netlify folder
 .netlify

@@ -1,9 +1,17 @@
+---
 Title: Halo Dunia! (Lagi)
 Category: Lainnya
 Slug: halo-dunia
 Status: published
 Authors: Farrel Franqois
 Summary: Ini adalah Artikel bukan uji-coba yang paling pertama di dalam blog ini. Jadi, kalo mau baca silahkan, kalo gak yah silahkan. Tapi, di dalam artikel ini saya menjelaskan fokus saya kedepan nya untuk blog ini dan juga blog lama saya, jadi saya sarankan untuk di baca, kalo gak ya gak apa-apa, hehe :grinning:
+---
+
+<style>
+    article.single p {
+        text-align: justify;
+    }
+</style>
 
 ## Daftar Isi
 [TOC]
@@ -29,6 +37,15 @@ Dan, itupun dalam menulis (terutama untuk menyimpan Artikel sebagai konsep/draf)
 Serta, hal ini dapat meminimalisir kesalahan 503 Internal Server Error atau Gangguan Server lain nya saat menulis Artikel/Laman, karena untuk menulis dan menyimpan nya gak harus menggunakan koneksi Internet.
 
 Jadi, itulah kenapa saya lebih memilih untuk menggunakan *Static Site Generator* seperti Pelican ini bila di bandingkan dengan WordPress.
+
+## Kenapa memilih Netlify daripada Layanan Sejenis seperti Zeit?
+Karena di Netlify saya di berikan kemudahan untuk men-_deploy_ Blog dan Konten nya dari Kode Sumber. 
+
+Di tambah, ada beberapa referensi untuk men-_deploy_ Pelican dengan Netlify di Google daripada menggunakan Layanan Sejenis lain nya seperti [Zeit](https://zeit.co) dan (mungkin) [Commons Host](https://commons.host).
+
+Saya kira itu saja alasan nya, atau mungkin saya kurang mempelajari Layanan Sejenis lain nya.
+
+Oh, iya, saya bisa membangun sebuah blog berbasis Pelican dan men-_deploy_ nya menggunakan Netlify, itu berkat referensi dari [sini](https://www.edwinksl.com/blog/set-up-website-with-pelican-google-domains-and-netlify.html).
 
 ## Bagaimana dengan CDN nya?
 Untuk CDN nya, seperti biasa, saya selalu gunakan CDN dari [Statically](https://statically.io), baik untuk memuat berkas Gambar, Emoji, JS dan CSS di dalam Blog saya ini.
