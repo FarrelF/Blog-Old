@@ -1,8 +1,3 @@
-img[src$="centerme"] {
-  display: block;
-  margin: 0 auto;
-}
-
 # Cara Berkontribusi
 Kontribusi bisa di lakukan dengan banyak cara, seperti memberikan Kritik dan Saran, Memberikan Komentar/Pertanyaan yang bermanfaat, Donasi, sampai turut membantu untuk memodifikasi/merubah Kode Sumber atau Artikel yang ada di Blog ini.
 
