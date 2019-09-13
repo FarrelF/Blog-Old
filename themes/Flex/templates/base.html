@@ -18,8 +18,18 @@
   {% endif %}
   <style>
     .search-query{
-      border: 1px solid #cccccc;
+      margin: 0 8% 2%;
     }
+
+    div.google-cse-search-box {
+      margin: 0 8% 2%;
+    }
+
+    form.gsc-search-box, table.gsc-search-box {
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee;
+    }
+    
   </style>
 
   {% if USE_GOOGLE_FONTS != False %}
@@ -226,14 +236,14 @@
     {% if GOOGLE_SEARCH %}
     <nav>
       {% if USING_GOOGLE_SEARCHBOX != True %}
-      <form role="search" name="search" action="{{ SITEURL }}/search">
-        <input type="text" name="q" class="search-query" placeholder="Setelah mengisi ini, tekan 'Enter' untuk menelusuri Blog ini dengan Google" size="75%" required />
+      <form role="search" class="search-query" name="search" action="{{ SITEURL }}/search">
+        <input type="text" name="q" placeholder="Setelah mengisi ini, tekan 'Enter' untuk menelusuri Blog ini dengan Google" size="75%" required />
         <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
         <input type="hidden" name="cx" value="{{ GOOGLE_SEARCH }}" />
         <input type="hidden" name="ie" value="UTF-8" />
        </form>
        {% else %}
-        <div>
+        <div class="google-cse-search-box">
          <script async src="https://cse.google.com/cse.js?cx=partner-pub-2432124491852819:4493745682"></script>
          <div class="gcse-searchbox-only"></div>
         </div>
