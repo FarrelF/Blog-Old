@@ -90,7 +90,11 @@
 
 
   {% if CUSTOM_CSS %}
+    {% if USE_CDN != True %}
     <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
+    {% else %}
+    <link href="{{ CDN_STATIC_BLOG_URL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
+    {% endif %}
   {% endif %}
 
   {% if FEED_ALL_ATOM %}
