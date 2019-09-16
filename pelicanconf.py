@@ -61,15 +61,19 @@ STATIC_PATHS = [
     'img',
     'extras/CNAME',
     'extras/favicon.ico',
-    'extras/robots.txt'
+    'extras/robots.txt',
+    'extras/custom.css'
 ]
 
 EXTRA_PATH_METADATA = {
     'extras/CNAME': {'path': 'CNAME'},
     'extras/favicon.ico': {'path': 'favicon.ico'},
-    'extras/robots.txt': {'path': 'robots.txt'}
+    'extras/robots.txt': {'path': 'robots.txt'},
+    'extras/custom.css': {'path': 'custom.css'}
 }
 
+# Pengaturan Tampilan
+CUSTOM_CSS = 'custom.css' # Menentukan lokasi Berkas CSS yang di buat sendiri
 THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
