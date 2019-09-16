@@ -1,0 +1,7 @@
+article div p {
+    text-align: justify;
+}
+
+article.single p {
+    text-align: justify;
+}
