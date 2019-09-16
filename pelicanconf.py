@@ -141,7 +141,7 @@ MARKDOWN = {
 }
 
 # Hak Cipta
-COPYRIGHT_YEAR = f'{datetime.now().year}'
+COPYRIGHT_YEAR = datetime.now().year
 COPYRIGHT_NAME = 'Farrel Franqois'
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
