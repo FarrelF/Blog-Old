@@ -121,26 +121,42 @@ Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, 
 Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-7.
 
 #### **7. Memilih "Akhir Barisan" untuk Git (_Configuring the line ending conversions_)**
-Selanjutnya, pada langkah **Configuring line endings conversions**, Anda akan memilih "Akhir Barisan" untuk Git, biarkan saja bawaan atau bisa Anda pilih Opsi **Checkout Windows-style, commit Unix-style line endings**.
+Selanjutnya, pada langkah **Configuring line endings conversions**, Anda akan menentukan bagaimana Git akan memperlakukan "Line Ending" (Baris Baru) nantinya. Seperti Cuplikan layar berikut:
 
 [![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png)
 
+Karakter *Line Ending* itu sendiri berbeda-beda, tergantung Sistem Operasi mana yang kamu gunakan, contoh: Pada Windows dan kebanyakan Sistem Operasi yang bukan berbasis Unix lain nya, karakter *Line Ending* yang berlaku adalah `:::text \r\n`, sedangkan GNU/Linux, macOS atau Sistem Operasi berbasis Unix/Unix-like lain nya menggunakan `:::text \n` saja.
+
+Ada beberapa istilah mengenai *Line Ending* ini, salah satu nya adalah: LF, CR dan CRLF. LF merupakan singkatan dari *Line Feed* atau `:::text \n`, sedangkan CR merupakan singkatan dari *Carriage Return* atau `:::text \r`. Dan, CRLF merupakan gabungan dari CR dan LF, atau `:::text \r\n` yang di berlakukan oleh Sistem Operasi Windows dan macOS hingga saat ini.
+
+Untuk mempelajari lebih lanjut mengenai apa itu *Line Ending*, cari sendiri lewat Google, yah :slightly_smiling_face:
+
+Jadi, karena Anda saat ini meng-install Git untuk Windows, maka pilihan yang terbaik untuk Sistem Operasi Windows adalah Opsi Pertama, yaitu **Checkout Windows-style, commit Unix-style line endings**.
+
 Setelah Anda memilih nya, klik pada *Button* 'Next >'.
 
-#### **8. Memilih Terminal Emulator untuk Git Bash**
-Pada langkah ini, Anda akan memilih Terminal Emulator bawaan untuk Git Bash nya, apakah menggunakan Konsol Windows atau MinTTY. Pada tutorial ini, saya memilih menggunakan MinTTY, dengan memilih opsi **Use MinTTY (the default terminal of MSYS2)**. Lalu, klik *Button* 'Next >'.
+#### **8. Memilih Terminal Emulator untuk Git Bash (_Configuring the terminal emulator to use with Git Bash_)**
+Pada langkah ini, Anda akan memilih Terminal Emulator bawaan untuk Git Bash nya, apakah menggunakan Konsol Windows atau MinTTY. Pada tutorial ini, saya memilih menggunakan MinTTY, dengan memilih opsi **Use MinTTY (the default terminal of MSYS2)**. 
    
 [![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png)
+
+Lalu, klik *Button* 'Next >'.
    
-#### **9. Konfigurasi Opsi Tambahan**
-Pada langkah **Configuring extra options**, disitu nanti akan ada tiga opsi, Anda bisa aktifkan semua opsi tersebut dengan mencentang nya. Lalu, klik *Button* 'Next >'.
+#### **9. Konfigurasi Opsi Tambahan (_Configuring extra options_)**
+Pada langkah ini, nanti akan ada tiga opsi, Anda bisa aktifkan semua opsi tersebut dengan mencentang nya.
 
 [![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_8.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_8.png)
 
-#### **10. Konfigurasi Opsi Eksperimental**
-Pada langkah **Configuring experimental options**, disitu nanti akan ada satu opsi yang bisa Anda aktifkan, namun karena sifat nya Eksperimental, maka saya sarankan agar tidak mengaktifkan nya, kecuali jika Anda ingin mencoba nya. Klik pada *Button* 'Next >' untuk melanjutkan. Atau, jika ada *Button* 'Install', klik pada *Button* tersebut untuk meng-install Git.
+Lalu, klik *Button* 'Next >'.
+
+#### **10. Konfigurasi Opsi Eksperimental (_Configuring experimental options_)**
+Pada langkah ini, nanti akan ada satu opsi yang bisa Anda aktifkan, namun karena sifat nya Eksperimental, maka saya sarankan agar tidak mengaktifkan nya, kecuali jika Anda ingin mencoba nya. 
 
 [![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_9.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_9.png)
+
+Pada Git versi 2.23, akan ada opsi seperti cuplikan di atas, namun hal ini mungkin tidak berlaku untuk versi kedepan nya.
+
+Klik pada *Button* 'Next >' untuk melanjutkan. Atau, jika ada *Button* 'Install', klik pada *Button* tersebut untuk meng-install Git.
 
 #### **11. Proses Instalasi sampai Selesai**
 Instalasi Git sedang dalam Proses, harap bersabar hingga selesai dalam beberapa menit kedepan.
