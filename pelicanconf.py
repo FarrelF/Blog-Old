@@ -121,17 +121,17 @@ MARKDOWN = {
     },
     'pymdownx.extra': {},
     'pymdownx.emoji': {
-      'emoji_index': emoji.twemoji,
-      'emoji_generator': emoji.to_svg,
-      'alt': 'short',
-      'options': {
-        "attributes": {
-            "height": "16px",
-            "width": "16px"
+        'emoji_index': emoji.twemoji,
+        'emoji_generator': emoji.to_svg,
+        'alt': 'short',
+        'options': {
+            "attributes": {
+                "height": "16px",
+                "width": "16px"
+            },
+            'classes': 'twemoji_emojis',
+            "image_path": "https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/",
         },
-        'classes': 'twemoji_emojis',
-        "image_path": "https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/",
-      },
     },
     'pymdownx.superfences': {},
     'pymdownx.inlinehilite': {},
@@ -141,6 +141,8 @@ MARKDOWN = {
 }
 
 # Hak Cipta
+
+# Implementasi Lisensi dari Creative Commons
 COPYRIGHT_YEAR = datetime.now().year
 COPYRIGHT_NAME = 'Farrel Franqois'
 CC_LICENSE = {
@@ -148,19 +150,19 @@ CC_LICENSE = {
     'version': '4.0',
     'slug': 'by-sa',
     'distribution-type': 'local'
-} # Implementasi Lisensi dari Creative Commons
+}
 
 # Pengaturan Bahasa, Waktu dan Lokalisasi
 TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'id'
 OG_LOCALE = 'id_ID'
-LOCALE = ('id_ID.utf8', 'id_ID', 'id_ID.UTF-8')
+LOCALE = 'id_ID'
 DATE_FORMATS = {
     'id': ('%A, %d %B %Y'),
 }
 
-def locale_settings(d, locale_language='id_ID'):
+def locale_settings(d, locale_language=LOCALE):
     date_time = parser.parse(str(d))
     date_format = str(format_date(date_time, format='full', locale=locale_language))
     return date_format
