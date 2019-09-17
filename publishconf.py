@@ -69,4 +69,11 @@ DISQUS_SITENAME = "FarrelF-Blog"
 DISQUS_IN_PAGES = True # Mengaktifkan Disqus di dalam Laman
 
 # Google
-#GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS = "UA-97506869-1"
+GOOGLE_ADSENSE = {
+    'ca_id': 'ca-pub-2432124491852819',
+    'page_level_ads': True,
+    'ads': {
+        'article_bottom': '8784344488'
+    }
+}
