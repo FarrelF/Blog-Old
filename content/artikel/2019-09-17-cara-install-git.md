@@ -3,15 +3,22 @@ Category: Tutorial
 Tag: Git
 Slug: cara-install-git
 Authors: Farrel Franqois
-Summary: Artikel ini akan membahas tentang Cara Install Git, baik itu di dalam GNU/Linux dan Windows, tentu saja, tanpa basa-basi terlebih dahulu (alias, langsung saya bahas bagaimana cara meng-install nya). Kalau Anda ingin meng-install Git di dalam Komputer Anda, Silahkan Anda simak lebih lanjut artikel ini, kalau tidak ya tidak apa-apa :slightly_smilling_face:
+Summary: Artikel ini akan membahas tentang Cara Install Git, baik itu di dalam GNU/Linux dan Windows, tentu saja, tanpa basa-basi terlebih dahulu (alias, langsung saya bahas bagaimana cara meng-install nya). Kalau Anda ingin meng-install Git di dalam Komputer Anda, silahkan Anda simak lebih lanjut artikel ini, kalau tidak ya tidak apa-apa :slightly_smilling_face:
+
+<style>
+article.single p img.centered {
+    display: block;
+    margin: 0 auto;
+}
+</style>
 
 ## Daftar Isi
 [TOC]
 
 ## I. Cara Install Git
-Untuk meng-install nya, Anda hanya perlu meng-unduh Git nya terlebih dahulu, bisa kunjungi situs web resmi nya untuk meng-unduh Git, yakni: [https://git-scm.com](https://git-scm.com). Lalu, klik pada *Button* "Download bla bla bla". Atau, Anda juga bisa mengunjungi [Halaman Unduhan](https://git-scm.com/downloads) Resmi nya untuk meng-unduh Git.
+Untuk meng-install nya, Anda hanya perlu meng-unduh Git nya terlebih dahulu, bisa Anda kunjungi situs web resmi nya untuk meng-unduh Git, yakni: [https://git-scm.com](https://git-scm.com). Lalu, klik pada *Button* "Download Git" bla bla bla. Atau, Anda juga bisa mengunjungi [Halaman Unduhan](https://git-scm.com/downloads) Resmi nya untuk meng-unduh Git.
 
-### Cara Install Git di GNU/Linux, macOS dan Sistem Operasi berbasis *nix lain nya
+### **Cara Install Git di GNU/Linux, macOS dan Sistem Operasi berbasis \*nix lain nya**
 Pada GNU/Linux atau Sistem Operasi berbasis Unix/Unix-like lain nya (kecuali macOS, yang tidak di beritahukan cara Install nya disana), biasanya mereka akan memberikan petunjuk cara instalasi Git nya untuk masing-masing Distribusi atau Sistem Operasi nya. Kalau begitu, Anda tinggal ikuti saja [petunjuk nya](https://git-scm.com/download/linux).
 
 Atau, kalo Anda tidak ingin mengunjungi nya, Anda bisa ikuti Petunjuk nya di bawah ini:
@@ -43,7 +50,7 @@ $ sudo nix-env -i git
 $ apk add git
 
 ## Untuk pengguna FreeBSD ##
-\#\ pkg install git
+pkg install git # Harap Eksekusi perintah ini dalam keadaan 'root'
 ```
 
 Untuk pengguna macOS, bisa Anda Unduh dan Install Git nya dari [sini](https://git-scm.com/download/mac). 
@@ -68,37 +75,37 @@ Nanti akan muncul Perjanjian Lisensi (*License Agreement*) setelah membuka berka
 
 **Catatan:** Jika Anda klik *Button* tersebut dan lanjut meng-install nya, ini artinya Anda telah menyetujui Perjanjian tersebut.
 
-#### **2. Pilih Komponen mana yang ingin di Install**
+#### **2. Pilih Komponen mana yang ingin di Install (_Select Components_)**
 Pada langkah ini, silahkan Anda atur Komponen mana yang ingin Anda install dan di aktifkan oleh Anda, seperti: Asosiasi Berkas, Integrasi Windows Explorer, Pintasan di Desktop, dll.
    
 Jika Anda ingin menggunakan TrueType di dalam semua Konsole Windows, centang "Use a TrueType font in all console Windows", seperti cuplikan berikut:
    
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_1.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_1.png)
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_1.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_1.png)
 
-Setelah Anda selesai memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-3.
+Setelah Anda selesai memilah-milih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-3.
 
-#### **3. Pilih Editor mana yang akan di gunakan**
+#### **3. Pilih Editor mana yang akan di gunakan (_Choosing the default editor used by Git_)**
 Pada langkah ini, Anda bisa pilih editor yang akan di gunakan oleh Git nanti nya
 
 Pada tutorial ini, saya akan gunakan 'GNU nano' sebagai editor bawaan untuk Git, berikut cuplikan nya:
 
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_2.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_2.png)
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_2.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_2.png)
 
 Kalo Anda ingin menggunakan Editor Favorit, sedangkan editor nya tidak tersedia disitu, nanti Anda bisa konfigurasi lagi
 
 Karena secara bawaan Git memilih 'nano' sebagai editor nya, maka untuk langkah ini, bisa langsung Anda klik *Button* 'Next >' untuk melanjutkan ke Langkah ke-4.
 
-#### **4. Pilih Cara untuk Eksekusi Git**
+#### **4. Pilih Cara untuk Eksekusi Git (_Adjusting your PATH environment_)**
 Setelah itu, pilih opsi untuk cara eksekusi Git, saya sarankan untuk pilih opsi **Git from the command line and also from 3rd-party software** (atau, membiarkan nya karena sudah terpilih) agar Git bisa di akses atau di eksekusi dari manapun, termasuk dari CMD (Command Prompt). 
    
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_3.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_3.png)
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_3.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_3.png)
 
 Setelah Anda memilih opsinya, klik pada *Button* 'Next >' untuk melanjutkan.
 
-#### **5. Pilih Perangkat Lunak untuk Eksekusi SSH untuk Git**
+#### **5. Pilih Perangkat Lunak untuk Eksekusi SSH untuk Git (_Choosing the SSH executable_)**
 Setelah itu, pilih eksekusi SSH untuk Git, ini akan berguna nanti ketika Anda mengelola *Repository* Git dengan SSH. Agar lebih mudah, pilih "OpenSSH" dengan memilih opsi **Use OpenSSH**, seperti pada cuplikan berikut: 
 
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_4.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_4.png)
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_4.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_4.png)
 
 Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-6.
 
@@ -109,30 +116,31 @@ Saya sarankan untuk menggunakan Pustaka Bawaan dari Windows saja, yakni ['Window
 
 Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, daripada/bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL di dalam Windows), seperti pada cuplikan layar berikut ini:
 
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png)
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png)
 
 Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-7.
 
-#### **7. Memilih "Line Ending" untuk Git**
-Selanjutnya, pada langkah **Configuring line endings conversions**, biarkan saja bawaan atau bisa Anda pilih Opsi **Checkout Windows-style, commit Unix-style line endings**, lalu klik 'Next >'.
-   
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png)
+#### **7. Memilih "Akhir Barisan" untuk Git (_Configuring the line ending conversions_)**
+Selanjutnya, pada langkah **Configuring line endings conversions**, Anda akan memilih "Akhir Barisan" untuk Git, biarkan saja bawaan atau bisa Anda pilih Opsi **Checkout Windows-style, commit Unix-style line endings**.
 
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png)
+
+Setelah Anda memilih nya, klik pada *Button* 'Next >'.
 
 #### **8. Memilih Terminal Emulator untuk Git Bash**
 Pada langkah ini, Anda akan memilih Terminal Emulator bawaan untuk Git Bash nya, apakah menggunakan Konsol Windows atau MinTTY. Pada tutorial ini, saya memilih menggunakan MinTTY, dengan memilih opsi **Use MinTTY (the default terminal of MSYS2)**. Lalu, klik *Button* 'Next >'.
    
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png)
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png)
    
 #### **9. Konfigurasi Opsi Tambahan**
 Pada langkah **Configuring extra options**, disitu nanti akan ada tiga opsi, Anda bisa aktifkan semua opsi tersebut dengan mencentang nya. Lalu, klik *Button* 'Next >'.
 
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_8.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_8.png)
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_8.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_8.png)
 
 #### **10. Konfigurasi Opsi Eksperimental**
 Pada langkah **Configuring experimental options**, disitu nanti akan ada satu opsi yang bisa Anda aktifkan, namun karena sifat nya Eksperimental, maka saya sarankan agar tidak mengaktifkan nya, kecuali jika Anda ingin mencoba nya. Klik pada *Button* 'Next >' untuk melanjutkan. Atau, jika ada *Button* 'Install', klik pada *Button* tersebut untuk meng-install Git.
 
-[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_9.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_9.png)
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_9.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_9.png)
 
 #### **11. Proses Instalasi sampai Selesai**
 Instalasi Git sedang dalam Proses, harap bersabar hingga selesai dalam beberapa menit kedepan.
@@ -140,4 +148,10 @@ Instalasi Git sedang dalam Proses, harap bersabar hingga selesai dalam beberapa 
 Jika Git telah berhasil ter-install, klik pada *Button* 'Finish'. Sebelum itu, Anda juga bisa hapus centang **Launch Git Bash** jika Anda tidak ingin menjalankan 'Git Bash' setelah selesai Install.
 
 ## Penutup
-Sudah? iya, sudah, cuma itu saja yang Anda lakukan. Ini
+Sudah? Iya, sudah, cuma itu saja yang perlu Anda lakukan. Ini merupakan Artikel yang membahas tentang 'Cara Install Git', bukan 'Apa itu Git dan Cara Install nya', jadi saya tidak perlu basa-basi disini.
+
+Yang perlu kamu lakukan setelah Install Git adalah, sebaiknya kamu pelajari mengenai penggunaan Git, banyak di Internet caranya, atau mungkin kamu akan lihat kedepan nya nanti jika Anda membuat/mengembangkan sebuah Perangkat Lunak.
+
+Jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain nya, silahkan kamu berkomentar melalui kolom komentar yang tersedia.
+
+Terima kasih atas perhatian nya :blush:
