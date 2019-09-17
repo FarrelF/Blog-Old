@@ -40,7 +40,7 @@ EXTRA_PATH_METADATA['extras/_headers'] = {'path': '_headers'}
 STATIC_PATHS.append('extras/_redirects')
 EXTRA_PATH_METADATA['extras/_redirects'] = {'path': '_redirects'}
 
-# Agar Berkas 'custom.css' ti buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
+# Agar Berkas 'custom.css' tidak di buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
 if USE_CDN:
     STATIC_PATHS.remove('extras/custom.css')
     del EXTRA_PATH_METADATA['extras/custom.css']
