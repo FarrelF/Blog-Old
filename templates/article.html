@@ -28,6 +28,11 @@
         &#8226; {{ article.stats['read_mins'] }} min read
       {% endif %}
     </p>
+    {% if article.modified %}
+    <p>
+      (Artikel ini di perbarui sejak: {{ article.modified | locale_settings }})
+    </p>
+    {% endif %}
   </header>
   {% if article.featured_image %}
     <img src="{{ article.featured_image }}">
