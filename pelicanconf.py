@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink
+from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink, escapeall
 from datetime import date, datetime, time
 from babel.dates import format_date, format_datetime, format_time
 from dateutil import parser
@@ -120,6 +120,7 @@ MARKDOWN = {
         'guess_lang': True,
     },
     'pymdownx.extra': {},
+    'pymdownx.escapeall': {},
     'pymdownx.emoji': {
         'emoji_index': emoji.twemoji,
         'emoji_generator': emoji.to_svg,
