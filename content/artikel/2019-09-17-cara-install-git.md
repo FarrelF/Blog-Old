@@ -1,0 +1,143 @@
+Title: Cara Install Git di Windows, GNU/Linux dan macOS (tanpa basa-basi!)
+Category: Tutorial
+Tag: Git
+Slug: cara-install-git
+Authors: Farrel Franqois
+Summary: Artikel ini akan membahas tentang Cara Install Git, baik itu di dalam GNU/Linux dan Windows, tentu saja, tanpa basa-basi terlebih dahulu (alias, langsung saya bahas bagaimana cara meng-install nya). Kalau Anda ingin meng-install Git di dalam Komputer Anda, Silahkan Anda simak lebih lanjut artikel ini, kalau tidak ya tidak apa-apa :slightly_smilling_face:
+
+## Daftar Isi
+[TOC]
+
+## I. Cara Install Git
+Untuk meng-install nya, Anda hanya perlu meng-unduh Git nya terlebih dahulu, bisa kunjungi situs web resmi nya untuk meng-unduh Git, yakni: [https://git-scm.com](https://git-scm.com). Lalu, klik pada *Button* "Download bla bla bla". Atau, Anda juga bisa mengunjungi [Halaman Unduhan](https://git-scm.com/downloads) Resmi nya untuk meng-unduh Git.
+
+### Cara Install Git di GNU/Linux, macOS dan Sistem Operasi berbasis *nix lain nya
+Pada GNU/Linux atau Sistem Operasi berbasis Unix/Unix-like lain nya (kecuali macOS, yang tidak di beritahukan cara Install nya disana), biasanya mereka akan memberikan petunjuk cara instalasi Git nya untuk masing-masing Distribusi atau Sistem Operasi nya. Kalau begitu, Anda tinggal ikuti saja [petunjuk nya](https://git-scm.com/download/linux).
+
+Atau, kalo Anda tidak ingin mengunjungi nya, Anda bisa ikuti Petunjuk nya di bawah ini:
+
+```bash
+## Untuk pengguna Distribusi Ubuntu dan Turunan nya ##
+$ sudo add-apt-repository ppa:git-core/ppa; sudo apt update; sudo apt install git
+
+## Untuk pengguna Distribusi Debian dan Turunan nya ##
+$ sudo apt install git
+
+## Untuk pengguna Distribusi Arch Linux, Manjaro dan Turunan nya ##
+$ sudo pacman -S git
+
+## Untuk pengguna Distribusi Fedora ##
+$ sudo yum install git # Untuk Fedora 21 dan di bawah nya
+$ sudo dnf install git # Untuk Fedora 22 dan di atas nya
+
+## Untuk pengguna Distribusi OpenSUSE dan Turunan nya ##
+$ sudo zypper install git
+
+## Untuk pengguna Distribusi Gentoo ##
+$ sudo emerge --ask --verbose dev-vcs/git
+
+## Untuk pengguna NixOS atau yang menggunakan Nix Package Manager ##
+$ sudo nix-env -i git
+
+## Untuk pengguna Alpine ##
+$ apk add git
+
+## Untuk pengguna FreeBSD ##
+\#\ pkg install git
+```
+
+Untuk pengguna macOS, bisa Anda Unduh dan Install Git nya dari [sini](https://git-scm.com/download/mac). 
+
+Sedangkan untuk Windows, Anda bisa ikuti petunjuk nya berikut.
+
+### **Cara Install Git di Windows**
+Cara Install Git di Windows sangatlah berbeda daripada Install Git di GNU/Linux, Installer nya menggunakan GUI, sehingga dapat mempermudah kamu selama meng-install Git.
+
+Hanya saja, jika kamu salah langkah, maka yang terjadi adalah Git akan mengalami "kesalahan" (*error*) saat di gunakan, entah itu tidak bisa meng-kloning *Repository* sampai mengurus nya.
+
+Maka dari itu, jika Anda adalah pengguna Windows, maka Anda bisa ikuti cara instalasi nya berikut:
+
+1. Unduh [Git untuk Windows](https://git-scm.com/download/win/).
+
+2. Setelah di Unduh, buka berkas tersebut. Jika muncul UAC (*User Account Control*), klik pada *Button* 'OK'.
+
+3. Setelah itu, Install Git dengan Langkah-langkah berikut:
+
+#### **1. Perjanjian Lisensi**
+Nanti akan muncul Perjanjian Lisensi (*License Agreement*) setelah membuka berkas tersebut, klik pada *Button* 'Next >' untuk melanjutkan Instalasi. 
+
+**Catatan:** Jika Anda klik *Button* tersebut dan lanjut meng-install nya, ini artinya Anda telah menyetujui Perjanjian tersebut.
+
+#### **2. Pilih Komponen mana yang ingin di Install**
+Pada langkah ini, silahkan Anda atur Komponen mana yang ingin Anda install dan di aktifkan oleh Anda, seperti: Asosiasi Berkas, Integrasi Windows Explorer, Pintasan di Desktop, dll.
+   
+Jika Anda ingin menggunakan TrueType di dalam semua Konsole Windows, centang "Use a TrueType font in all console Windows", seperti cuplikan berikut:
+   
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_1.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_1.png)
+
+Setelah Anda selesai memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-3.
+
+#### **3. Pilih Editor mana yang akan di gunakan**
+Pada langkah ini, Anda bisa pilih editor yang akan di gunakan oleh Git nanti nya
+
+Pada tutorial ini, saya akan gunakan 'GNU nano' sebagai editor bawaan untuk Git, berikut cuplikan nya:
+
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_2.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_2.png)
+
+Kalo Anda ingin menggunakan Editor Favorit, sedangkan editor nya tidak tersedia disitu, nanti Anda bisa konfigurasi lagi
+
+Karena secara bawaan Git memilih 'nano' sebagai editor nya, maka untuk langkah ini, bisa langsung Anda klik *Button* 'Next >' untuk melanjutkan ke Langkah ke-4.
+
+#### **4. Pilih Cara untuk Eksekusi Git**
+Setelah itu, pilih opsi untuk cara eksekusi Git, saya sarankan untuk pilih opsi **Git from the command line and also from 3rd-party software** (atau, membiarkan nya karena sudah terpilih) agar Git bisa di akses atau di eksekusi dari manapun, termasuk dari CMD (Command Prompt). 
+   
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_3.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_3.png)
+
+Setelah Anda memilih opsinya, klik pada *Button* 'Next >' untuk melanjutkan.
+
+#### **5. Pilih Perangkat Lunak untuk Eksekusi SSH untuk Git**
+Setelah itu, pilih eksekusi SSH untuk Git, ini akan berguna nanti ketika Anda mengelola *Repository* Git dengan SSH. Agar lebih mudah, pilih "OpenSSH" dengan memilih opsi **Use OpenSSH**, seperti pada cuplikan berikut: 
+
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_4.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_4.png)
+
+Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-6.
+
+#### **6. Memilih Pustaka untuk HTTPS pada Git (_Choose HTTPS transport backend_)**
+Pada langkah **Choose HTTPS transport backend**, Anda akan memilih *Library*/Pustaka mana yang akan di gunakan untuk 'transportasi' HTTPS pada Git nanti nya. 
+
+Saya sarankan untuk menggunakan Pustaka Bawaan dari Windows saja, yakni ['Windows Secure Channel'](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380123(v=vs.85).aspx) (atau bisa di sebut 'winSSL' atau 'Schannel'), agar Git dapat mengenali CA (Certification Authority) dan Sertifikat SSL lain nya secara langsung di dalam Windows. 
+
+Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, daripada/bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL di dalam Windows), seperti pada cuplikan layar berikut ini:
+
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png)
+
+Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-7.
+
+#### **7. Memilih "Line Ending" untuk Git**
+Selanjutnya, pada langkah **Configuring line endings conversions**, biarkan saja bawaan atau bisa Anda pilih Opsi **Checkout Windows-style, commit Unix-style line endings**, lalu klik 'Next >'.
+   
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png)
+
+
+#### **8. Memilih Terminal Emulator untuk Git Bash**
+Pada langkah ini, Anda akan memilih Terminal Emulator bawaan untuk Git Bash nya, apakah menggunakan Konsol Windows atau MinTTY. Pada tutorial ini, saya memilih menggunakan MinTTY, dengan memilih opsi **Use MinTTY (the default terminal of MSYS2)**. Lalu, klik *Button* 'Next >'.
+   
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png)
+   
+#### **9. Konfigurasi Opsi Tambahan**
+Pada langkah **Configuring extra options**, disitu nanti akan ada tiga opsi, Anda bisa aktifkan semua opsi tersebut dengan mencentang nya. Lalu, klik *Button* 'Next >'.
+
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_8.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_8.png)
+
+#### **10. Konfigurasi Opsi Eksperimental**
+Pada langkah **Configuring experimental options**, disitu nanti akan ada satu opsi yang bisa Anda aktifkan, namun karena sifat nya Eksperimental, maka saya sarankan agar tidak mengaktifkan nya, kecuali jika Anda ingin mencoba nya. Klik pada *Button* 'Next >' untuk melanjutkan. Atau, jika ada *Button* 'Install', klik pada *Button* tersebut untuk meng-install Git.
+
+[![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_9.png)](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_9.png)
+
+#### **11. Proses Instalasi sampai Selesai**
+Instalasi Git sedang dalam Proses, harap bersabar hingga selesai dalam beberapa menit kedepan.
+
+Jika Git telah berhasil ter-install, klik pada *Button* 'Finish'. Sebelum itu, Anda juga bisa hapus centang **Launch Git Bash** jika Anda tidak ingin menjalankan 'Git Bash' setelah selesai Install.
+
+## Penutup
+Sudah? iya, sudah, cuma itu saja yang Anda lakukan. Ini
