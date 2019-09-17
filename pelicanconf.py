@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink
+from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink, escapeall
 from datetime import date, datetime, time
 from babel.dates import format_date, format_datetime, format_time
 from dateutil import parser
@@ -61,15 +61,19 @@ STATIC_PATHS = [
     'img',
     'extras/CNAME',
     'extras/favicon.ico',
-    'extras/robots.txt'
+    'extras/robots.txt',
+    'extras/custom.css'
 ]
 
 EXTRA_PATH_METADATA = {
     'extras/CNAME': {'path': 'CNAME'},
     'extras/favicon.ico': {'path': 'favicon.ico'},
-    'extras/robots.txt': {'path': 'robots.txt'}
+    'extras/robots.txt': {'path': 'robots.txt'},
+    'extras/custom.css': {'path': 'custom.css'}
 }
 
+# Pengaturan Tampilan
+CUSTOM_CSS = 'custom.css' # Menentukan lokasi Berkas CSS yang di buat sendiri
 THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
@@ -96,7 +100,7 @@ EXTENDED_SITEMAP_PLUGIN = {
 
 # Pengaturan Google CSE (Custom Search Engine)
 GOOGLE_SEARCH = 'partner-pub-2432124491852819:4493745682'
-USING_GOOGLE_SEARCHBOX = True
+USING_GOOGLE_SEARCHBOX = False
 
 if USING_GOOGLE_SEARCHBOX:
     GOOGLE_SEARCHBOX = 'gcse-searchresults-only'
@@ -116,18 +120,19 @@ MARKDOWN = {
         'guess_lang': True,
     },
     'pymdownx.extra': {},
+    'pymdownx.escapeall': {},
     'pymdownx.emoji': {
-      'emoji_index': emoji.twemoji,
-      'emoji_generator': emoji.to_svg,
-      'alt': 'short',
-      'options': {
-        "attributes": {
-            "height": "16px",
-            "width": "16px"
+        'emoji_index': emoji.twemoji,
+        'emoji_generator': emoji.to_svg,
+        'alt': 'short',
+        'options': {
+            "attributes": {
+                "height": "16px",
+                "width": "16px"
+            },
+            'classes': 'twemoji_emojis',
+            "image_path": "https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/",
         },
-        'classes': 'twemoji_emojis',
-        "image_path": "https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/",
-      },
     },
     'pymdownx.superfences': {},
     'pymdownx.inlinehilite': {},
@@ -137,26 +142,28 @@ MARKDOWN = {
 }
 
 # Hak Cipta
-COPYRIGHT_YEAR = f'{datetime.now().year}'
+
+# Implementasi Lisensi dari Creative Commons
+COPYRIGHT_YEAR = datetime.now().year
 COPYRIGHT_NAME = 'Farrel Franqois'
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
     'version': '4.0',
     'slug': 'by-sa',
     'distribution-type': 'local'
-} # Implementasi Lisensi dari Creative Commons
+}
 
 # Pengaturan Bahasa, Waktu dan Lokalisasi
 TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'id'
 OG_LOCALE = 'id_ID'
-LOCALE = ('id_ID.utf8', 'id_ID', 'id_ID.UTF-8')
+LOCALE = 'id_ID'
 DATE_FORMATS = {
     'id': ('%A, %d %B %Y'),
 }
 
-def locale_settings(d, locale_language='id_ID'):
+def locale_settings(d, locale_language=LOCALE):
     date_time = parser.parse(str(d))
     date_format = str(format_date(date_time, format='full', locale=locale_language))
     return date_format

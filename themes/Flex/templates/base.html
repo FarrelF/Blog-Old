@@ -16,21 +16,6 @@
   {% else %}
     <meta name="robots" content="{{ ROBOTS }}" />
   {% endif %}
-  <style>
-    .search-query{
-      margin: 0 8% 2%;
-    }
-
-    div.google-cse-search-box {
-      margin: 0 8% 2%;
-    }
-
-    form.gsc-search-box, table.gsc-search-box {
-      border-left: 1px solid #eee;
-      border-right: 1px solid #eee;
-    }
-    
-  </style>
 
   {% if USE_GOOGLE_FONTS != False %}
     {% if USE_GOOGLE_CDN_FOR_FONTS %}
@@ -90,7 +75,11 @@
 
 
   {% if CUSTOM_CSS %}
+    {% if USE_CDN != True %}
     <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
+    {% else %}
+    <link href="{{ CDN_STATIC_BLOG_URL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
+    {% endif %}
   {% endif %}
 
   {% if FEED_ALL_ATOM %}

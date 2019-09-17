@@ -5,7 +5,11 @@
 {% endif %}
 <meta property="og:site_name" content="{{ SITENAME }}"/>
 <meta property="og:title" content="{{ article.title|striptags|escape }}"/>
+{% if article.description %}
+<meta property="og:description" content="{{ article.description|striptags|escape }}"/>
+{% else %}
 <meta property="og:description" content="{{ article.summary|striptags|escape }}"/>
+{% endif %}
 <meta property="og:locale" content="{{ article.metadata.get('og_locale', default_locale) }}"/>
 <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
 <meta property="og:type" content="article"/>

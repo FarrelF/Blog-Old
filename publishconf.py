@@ -16,7 +16,9 @@ SITEURL = 'https://farrel.franqois.id'
 # Penggunaan CDN
 USE_CDN = True
 CDN_THEME_REPO_BRANCH = 'b38b66f'
-CDN_STATIC_THEME_URL = f'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{CDN_THEME_REPO_BRANCH}/static'
+CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(CDN_THEME_REPO_BRANCH)
+CDN_BLOG_BRANCH = '3b27c957'
+CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}/static'.format(CDN_BLOG_BRANCH)
 CC_LICENSE['distribution-type'] = 'cdn'
 
 # Pengaturan Font
@@ -38,7 +40,18 @@ EXTRA_PATH_METADATA['extras/_headers'] = {'path': '_headers'}
 STATIC_PATHS.append('extras/_redirects')
 EXTRA_PATH_METADATA['extras/_redirects'] = {'path': '_redirects'}
 
-# Tema
+# Agar Berkas 'custom.css' tidak di buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
+if USE_CDN:
+    STATIC_PATHS.remove('extras/custom.css')
+    del EXTRA_PATH_METADATA['extras/custom.css']
+
+# Pengaturan Tema
+
+# Mengatur Letak CSS yang di kustom
+if USE_CDN:
+    CUSTOM_CSS = 'content/extras/custom.min.css' 
+else:
+    CUSTOM_CSS = 'custom.min.css'
 THEME = 'themes/Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 
 # Activating Cache
@@ -56,4 +69,11 @@ DISQUS_SITENAME = "FarrelF-Blog"
 DISQUS_IN_PAGES = True # Mengaktifkan Disqus di dalam Laman
 
 # Google
-#GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS = "UA-97506869-1"
+GOOGLE_ADSENSE = {
+    'ca_id': 'ca-pub-2432124491852819',
+    'page_level_ads': True,
+    'ads': {
+        'article_bottom': '8784344488'
+    }
+}

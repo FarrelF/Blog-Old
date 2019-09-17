@@ -2,8 +2,16 @@
 
 {% block meta %}
 <meta name="author" content="{{ article.author.name }}" />
+{% if article.description %}
+<meta name="description" content="{{ article.description|striptags|escape }}" />
+{% else %}
 <meta name="description" content="{{ article.summary|striptags|escape }}" />
+{% endif %}
+{% if article.keywords %}
+<meta name="keywords" content="{{ article.keywords|join(', ')|escape }}">
+{% else %}
 <meta name="keywords" content="{{ article.tags|join(', ')|escape }}">
+{% endif %}
 
 {% include "partial/og_article.html" %}
 {% endblock %}
@@ -28,11 +36,16 @@
         &#8226; {{ article.stats['read_mins'] }} min read
       {% endif %}
     </p>
+    {% if article.modified %}
+    <p>
+      (Artikel ini di perbarui sejak: {{ article.modified | locale_settings }})
+    </p>
+    {% endif %}
   </header>
   {% if article.featured_image %}
-    <img src="{{ article.featured_image }}">
+    <img style="display: block; margin: 0 auto;" src="{{ article.featured_image }}">
   {% elif article.cover %}
-    <img src="{{ article.cover }}" alt="">
+    <img style="display: block; margin: 0 auto;" src="{{ article.cover }}" alt="">
   {% endif %}
   {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.article_top %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

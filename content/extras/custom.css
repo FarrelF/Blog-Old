@@ -1,0 +1,15 @@
+article div p {
+    text-align: justify;
+}
+
+article.single p {
+    text-align: justify;
+}
+
+.search-query {
+    margin: 0 8% 2%;
+}
+
+div.google-cse-search-box {
+    margin: 0 8% 2%;
+}
