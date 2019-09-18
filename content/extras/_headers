@@ -5,7 +5,7 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-UA-Compatible: IE=edge
-  Content-Security-Policy: img-src 'self' https://cdn.statically.io https://*.disquscdn.com https://*.google.com https://www.googleapis.com https://*.disqus.com; font-src 'none' data: https://cdn.statically.io https://fonts.gstatic.com; connect-src 'self'; frame-src 'self' https://disqus.com https://*.disqus.com; object-src 'self'; frame-ancestors 'self'; upgrade-insecure-requests; block-all-mixed-content
+  Content-Security-Policy: img-src 'self' https://cdn.statically.io https://www.google-analytics.com https://pagead2.googlesyndication.com https://*.disquscdn.com https://*.google.com https://www.googleapis.com https://*.disqus.com; font-src data: https://cdn.statically.io https://fonts.gstatic.com; connect-src 'self'; frame-src 'self' https://disqus.com https://*.disqus.com https://googleads.g.doubleclick.net; object-src 'self'; frame-ancestors 'self'; upgrade-insecure-requests; block-all-mixed-content
   Referrer-Policy: strict-origin-when-cross-origin
   Feature-Policy: vibrate 'none'; camera 'none' https://*.disqus.com https://*.disquscdn.com; autoplay 'none'; usb 'none'; unsized-media 'none'
   Expect-CT: max-age=604800, enforce
