@@ -111,18 +111,18 @@ Setelah itu, pilih eksekusi SSH untuk Git, ini akan berguna nanti ketika Anda me
 
 Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-6.
 
-#### **6. Memilih Pustaka untuk HTTPS pada Git (_Choose HTTPS transport backend_)**
-Pada langkah **Choose HTTPS transport backend**, Anda akan memilih *Library*/Pustaka mana yang akan di gunakan untuk 'transportasi' HTTPS pada Git nanti nya. 
+#### **6. Menentukan Pustaka untuk HTTPS pada Git (_Choose HTTPS transport backend_)**
+Pada langkah **Choose HTTPS transport backend**, Anda akan menentukan *Library*/Pustaka mana yang akan di gunakan untuk 'transportasi' HTTPS pada Git nanti nya. 
 
 Saya sarankan untuk menggunakan Pustaka Bawaan dari Windows saja, yakni ['Windows Secure Channel'](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380123(v=vs.85).aspx) (atau bisa di sebut 'winSSL' atau 'Schannel'), agar Git dapat mengenali CA (Certification Authority) dan Sertifikat SSL lain nya secara langsung di dalam Windows. 
 
-Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, daripada/bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL di dalam Windows), seperti pada cuplikan layar berikut ini:
+Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL di dalam Windows), seperti pada cuplikan layar berikut ini:
 
 [![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png)
 
 Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-7.
 
-#### **7. Memilih "Akhir Barisan" untuk Git (_Configuring the line ending conversions_)**
+#### **7. Menentukan "Baris Baru" untuk Git (_Configuring the line ending conversions_)**
 Selanjutnya, pada langkah **Configuring line endings conversions**, Anda akan menentukan bagaimana Git akan memperlakukan "Line Ending" (Baris Baru) nantinya. Seperti Cuplikan layar berikut:
 
 [![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_6.png)
@@ -165,7 +165,7 @@ Instalasi Git sedang dalam Proses, harap bersabar hingga selesai dalam beberapa 
 
 Jika Git telah berhasil ter-install, klik pada *Button* 'Finish'. Sebelum itu, Anda juga bisa hapus centang **Launch Git Bash** jika Anda tidak ingin menjalankan 'Git Bash' setelah selesai Install.
 
-## Penutup
+## II. Akhir kata
 Sudah? Iya, sudah, cuma itu saja yang perlu Anda lakukan. Ini merupakan Artikel yang membahas tentang 'Cara Install Git', bukan 'Apa itu Git dan Cara Install nya', jadi saya tidak perlu basa-basi disini.
 
 Yang perlu kamu lakukan setelah Install Git adalah, sebaiknya kamu pelajari mengenai penggunaan Git, banyak di Internet caranya, atau mungkin kamu akan lihat kedepan nya nanti jika Anda membuat/mengembangkan sebuah Perangkat Lunak.
@@ -173,3 +173,18 @@ Yang perlu kamu lakukan setelah Install Git adalah, sebaiknya kamu pelajari meng
 Jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain nya, silahkan kamu berkomentar melalui kolom komentar yang tersedia.
 
 Terima kasih atas perhatian nya :blush:
+
+## III. Penggunaan Gambar dan Atribusi
+Berkas-berkas Gambar (seperti Cuplikan layar dan Gambar lain nya) yang di gunakan di dalam artikel ini, disediakan di dalam folder `cara-install-git` yang berada di dalam Repository GitLab [`blog-images`](https://gitlab.com/FarrelF/blog-images) milik saya. 
+
+Jika Anda berkenan ingin menjelajahi nya, silahkan kunjungi Alamat URL berikut:
+
+```text
+https://gitlab.com/FarrelF/blog-images/tree/master/cara-install-git
+```
+
+Gambar yang terletak di paling atas dan di bawah judul artikel itu merupakan Logo Git, yang telah di buat oleh [Jason Long](https://twitter.com/jasonlong). 
+
+Logo Git di lisensi kan dengan [Creative Commons Attribution 3.0 Unported (CC-BY 3.0)](https://creativecommons.org/licenses/by/3.0/) oleh pembuatnya, begitupun juga dengan varian logo Git [lain nya](https://git-scm.com/downloads/logos).
+
+Jika Anda ingin meng-unduh lebih banyak, silahkan Anda kunjungi [halaman web resmi nya](https://git-scm.com/downloads/logos).
