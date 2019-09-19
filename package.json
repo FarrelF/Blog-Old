@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build": "pelican content -o output -s publishconf.py && mv output public"
+    }
+}
