@@ -140,7 +140,9 @@ Seperti cuplikan layar berikut:
 Setelah Anda memilih nya, klik pada *Button* 'Next >'.
 
 #### **8. Memilih Terminal Emulator untuk Git Bash (_Configuring the terminal emulator to use with Git Bash_)**
-Pada langkah ini, Anda akan memilih Terminal Emulator bawaan untuk Git Bash nya, apakah menggunakan Konsol Windows atau MinTTY. Pada tutorial ini, saya memilih menggunakan MinTTY, dengan memilih opsi **Use MinTTY (the default terminal of MSYS2)**. 
+Pada langkah ini, Anda akan memilih Terminal Emulator bawaan untuk Git Bash nya, apakah menggunakan Konsol Windows atau MinTTY. 
+
+Mohon maaf, saat ini saya tidak mempunyai cuplikan layar sebagai contoh nya. Namun, pada tutorial ini, saya memilih menggunakan MinTTY dan saya sarankan untuk menggunakan nya daripada menggunakan Konsol Windows, dengan memilih opsi **Use MinTTY (the default terminal of MSYS2)**. 
    
 [![Langkah-langkah Instalasi Git](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png){class="centered"}](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_7.png)
 
