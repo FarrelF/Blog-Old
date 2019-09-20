@@ -10,6 +10,7 @@
   Feature-Policy: camera https://*.disqus.com https://*.disquscdn.com; autoplay 'none'; usb 'none'; unsized-media 'none'
   Expect-CT: max-age=604800, enforce, report-uri="https://farrelf.report-uri.com/r/d/ct/enforce"
   Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://farrelf.report-uri.com/a/d/g"}],"include_subdomains":true}
+  NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true}
 
 /theme/*
   Cache-Control: public, max-age=31536000, s-maxage=31536000
