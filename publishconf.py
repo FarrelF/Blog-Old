@@ -40,6 +40,10 @@ EXTRA_PATH_METADATA['extras/_headers'] = {'path': '_headers'}
 STATIC_PATHS.append('extras/_redirects')
 EXTRA_PATH_METADATA['extras/_redirects'] = {'path': '_redirects'}
 
+# Menambah Berkas 'ads.txt' saat di terbitkan nanti
+STATIC_PATHS.append('extras/ads.txt')
+EXTRA_PATH_METADATA['extras/ads.txt'] = {'path': 'ads.txt'}
+
 # Agar Berkas 'custom.css' tidak di buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
 if USE_CDN:
     STATIC_PATHS.remove('extras/custom.css')
