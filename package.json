@@ -1,5 +1,5 @@
 {
     "scripts": {
-        "build": "git clone https://github.com/FarrelF/FarrelF-Blog.git; cd FarrelF-Blog; python3 -m pip install -r requirements.txt; mkdir public; pelican content -o public -s publishconf.py"
+        "build": "git clone https://github.com/FarrelF/FarrelF-Blog.git; cd FarrelF-Blog; python3 -m pip install -r requirements.txt; pelican content -s publishconf.py; mv output public"
     }
 }
