@@ -1,0 +1,38 @@
+{
+    "routes": [
+        {
+            "src": "/*",
+            "headers": {
+                "Cache-Control": "public, max-age=360, s-maxage=360, must-revalidate",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-XSS-Protection": "1; mode=block; report-uri https://farrelf.report-uri.com/r/d/xss/enforce",
+                "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+                "X-Content-Type-Options": "nosniff",
+                "X-UA-Compatible": "IE=edge",
+                "Content-Security-Policy": "img-src 'self' https://cdn.statically.io https://www.google-analytics.com https://pagead2.googlesyndication.com https://encrypted-tbn2.gstatic.com https://stats.g.doubleclick.net https://*.disquscdn.com https://*.google.com https://www.googleapis.com https://*.disqus.com; font-src data: https://cdn.statically.io https://fonts.gstatic.com; connect-src 'self'; frame-src 'self' https://disqus.com https://*.disqus.com https://googleads.g.doubleclick.net https://cse.google.com; object-src 'self'; frame-ancestors 'self'; upgrade-insecure-requests; block-all-mixed-content; report-uri https://farrelf.report-uri.com/r/d/csp/enforce",
+                "Referrer-Policy": "strict-origin-when-cross-origin",
+                "Feature-Policy": "camera https://*.disqus.com https://*.disquscdn.com; autoplay 'none'; usb 'none'; unsized-media 'none'",
+                "Expect-CT": "max-age=604800, enforce, report-uri=\"https://farrelf.report-uri.com/r/d/ct/enforce\"",
+                "Report-To": "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://farrelf.report-uri.com/a/d/g\"}],\"include_subdomains\":true}",
+                "NEL": "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
+            },
+            "continue": true
+        },
+        {
+            "src": "/theme/*",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
+                "access-control-allow-origin": "*",
+                "timing-allow-origin": "*"
+            }
+        },
+        {
+            "src": "/img/*",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
+                "access-control-allow-origin": "*",
+                "timing-allow-origin": "*"
+            }
+        }
+    ]
+}
