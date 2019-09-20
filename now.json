@@ -1,7 +1,7 @@
 {
     "routes": [
         {
-            "src": "/*",
+            "src": "/.*",
             "headers": {
                 "Cache-Control": "public, max-age=360, s-maxage=360, must-revalidate",
                 "X-Frame-Options": "SAMEORIGIN",
@@ -19,7 +19,7 @@
             "continue": true
         },
         {
-            "src": "/theme/*",
+            "src": "/theme/.*",
             "headers": {
                 "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
                 "access-control-allow-origin": "*",
@@ -27,7 +27,7 @@
             }
         },
         {
-            "src": "/img/*",
+            "src": "/img/.*",
             "headers": {
                 "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
                 "access-control-allow-origin": "*",
