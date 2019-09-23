@@ -2,10 +2,6 @@
     "version": 2,
     "routes": [
         {
-            "src": "/(.*)", 
-            "dest": "/$1"
-        },
-        {
             "src": "/.*",
             "headers": {
                 "Cache-Control": "public, max-age=360, s-maxage=360, must-revalidate",
