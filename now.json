@@ -21,7 +21,6 @@
                 "Report-To": "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://farrelf.report-uri.com/a/d/g\"}],\"include_subdomains\":true}",
                 "NEL": "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
             },
-            "dest": "/$1",
             "continue": true
         },
         {
@@ -30,8 +29,7 @@
                 "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
                 "access-control-allow-origin": "*",
                 "timing-allow-origin": "*"
-            },
-            "dest": "/theme/$1"
+            }
         },
         {
             "src": "/img/.*",
@@ -39,21 +37,20 @@
                 "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
                 "access-control-allow-origin": "*",
                 "timing-allow-origin": "*"
-            },
-            "dest": "/img/$1"
+            }
         },
         {
             "handle": "filesystem"
         },
         {
-            "src": "/.*", 
-            "status": 404, 
-            "dest": "/404"
-        },
-        {
             "src": "/drafts/.*",
             "status": 403,
             "dest": "/403"
+        },
+        {
+            "src": "/.*", 
+            "status": 404, 
+            "dest": "/404"
         }
     ]
 }
