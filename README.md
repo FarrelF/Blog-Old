@@ -66,7 +66,7 @@ Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat UR
 Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman [Dokumentasi nya](https://docs.getpelican.org).
 
 ## Cara Kontribusi
-Untuk Berkontribusi, baca/lihat Berkas [CONTRIBUTING.md](https://github.com/FarrelF/FarrelF-Blog/blob/master/CONTRIBUTING.md) untuk mengetahui cara nya, karena banyak sekali yang bahas disitu.
+Jika Anda ingin Berkontribusi terhadap Blog ini, Anda bisa baca/lihat [Panduan Kontribusi](https://github.com/FarrelF/FarrelF-Blog/blob/master/CONTRIBUTING.md) untuk mengetahui cara nya, karena banyak sekali yang saya bahas disitu.
 
 ## Lisensi
 Kode Sumber ini saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
