@@ -117,7 +117,7 @@ MARKDOWN = {
     'pymdownx.highlight': {
         'css_class': 'highlight',
         'pygments_style': PYGMENTS_STYLE,
-        'guess_lang': True,
+        'guess_lang': False,
     },
     'pymdownx.extra': {},
     'pymdownx.escapeall': {},
@@ -158,12 +158,12 @@ TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'id'
 OG_LOCALE = 'id_ID'
-LOCALE = 'id_ID'
+LOCALE = ('id_ID', 'id_ID.utf8', 'id_ID.UTF-8')
 DATE_FORMATS = {
     'id': ('%A, %d %B %Y'),
 }
 
-def locale_settings(d, locale_language=LOCALE):
+def locale_settings(d, locale_language=LOCALE[0]):
     date_time = parser.parse(str(d))
     date_format = str(format_date(date_time, format='full', locale=locale_language))
     return date_format
