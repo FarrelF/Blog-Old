@@ -51,7 +51,7 @@
             "dest": "/404"
         },
         {
-            "src": "/drafts/(.*)",
+            "src": "/drafts/.*",
             "status": 403,
             "dest": "/403"
         }
