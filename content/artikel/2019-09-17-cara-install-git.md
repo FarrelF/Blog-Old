@@ -27,7 +27,7 @@ Atau, kalo Anda tidak ingin mengunjungi nya, Anda bisa ikuti Petunjuk nya di baw
 
 ```bash
 ## Untuk pengguna Distribusi Ubuntu dan Turunan nya ##
-$ sudo add-apt-repository ppa:git-core/ppa; sudo apt update; sudo apt install git
+$ sudo -- sh -c 'add-apt-repository ppa:git-core/ppa; apt update; apt install git'
 
 ## Untuk pengguna Distribusi Debian dan Turunan nya ##
 $ sudo apt install git
