@@ -78,9 +78,25 @@ GOOGLE_ADSENSE = {
     'ca_id': 'ca-pub-2432124491852819',
     'page_level_ads': True,
     'ads': {
-        'article_top': '6206076082',        # Iklan di Awal Artikel
-        'article_bottom': '5647672882',     # Iklan di Akhir Artikel
-        'aside': '2394022882',              # Iklan di Sidebar
-        'index_top': '1178400983'           # Iklan di atas Artikel, di halaman Awal (Index)
+        'article_top': {                    # Iklan di Awal Artikel
+            'slot_id': '6206076082',
+            'ad_layout': 'in-article',
+            'ad_format': 'fluid'
+        },
+        'article_bottom': {                 # Iklan di Akhir Artikel
+            'slot_id': '5647672882',
+            'ad_layout': 'in-article',
+            'ad_format': 'fluid'
+        },
+        'aside': {                          # Iklan di Sidebar
+            'slot_id': '2394022882',
+            'ad_format': 'auto',
+            'full_width_responsive': True
+        },
+        'index_top': {                      # Iklan di atas Artikel, di halaman Awal (Index)
+            'slot_id': '1178400983',
+            'ad_format': 'fluid',
+            'ad_layout_key': '-e8+58+j-dt+vr'
+        }
     }
 }
