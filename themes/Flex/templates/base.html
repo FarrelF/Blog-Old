@@ -184,26 +184,52 @@
     </div>
 
     {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.aside %}
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle ads-aside"
-           data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
-           data-ad-slot="{{ GOOGLE_ADSENSE.ads.aside }}"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    {% endif %}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle ads-responsive"
+         data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
+         {% if GOOGLE_ADSENSE.ads.aside.ad_layout %}
+         data-ad-layout="{{ GOOGLE_ADSENSE.ads.aside.ad_layout }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.aside.ad_layout_key %}
+         data-ad-layout-key="{{ GOOGLE_ADSENSE.ads.aside.ad_layout_key }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.aside.ad_format %}
+         data-ad-format="{{ GOOGLE_ADSENSE.ads.aside.ad_format }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.aside.full_width_responsive %}
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.aside.full_width_responsive }}"
+         {% endif %}
+         data-ad-slot="{{ GOOGLE_ADSENSE.ads.aside.slot_id }}">   
+    </ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  {% endif %}
 
   </aside>
   <main>
     {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.main_menu %}
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle ads-responsive"
-           data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
-           data-ad-slot="{{ GOOGLE_ADSENSE.ads.main_menu }}"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    {% endif %}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle ads-responsive"
+         data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
+         {% if GOOGLE_ADSENSE.ads.main_menu.ad_layout %}
+         data-ad-layout="{{ GOOGLE_ADSENSE.ads.main_menu.ad_layout }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.main_menu.ad_layout_key %}
+         data-ad-layout-key="{{ GOOGLE_ADSENSE.ads.main_menu.ad_layout_key }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.main_menu.ad_format %}
+         data-ad-format="{{ GOOGLE_ADSENSE.ads.main_menu.ad_format }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.main_menu.full_width_responsive %}
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.main_menu.full_width_responsive }}"
+         {% endif %}
+         data-ad-slot="{{ GOOGLE_ADSENSE.ads.main_menu.slot_id }}">   
+    </ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  {% endif %}
 
     {% if MAIN_MENU %}
     <nav>
