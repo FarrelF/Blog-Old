@@ -51,7 +51,20 @@
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle ads-responsive"
          data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
-         data-ad-slot="{{ GOOGLE_ADSENSE.ads.article_top }}"></ins>
+         {% if GOOGLE_ADSENSE.ads.article_top.ad_layout %}
+         data-ad-layout="{{ GOOGLE_ADSENSE.ads.article_top.ad_layout }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.article_top.ad_layout_key %}
+         data-ad-layout-key="{{ GOOGLE_ADSENSE.ads.article_top.ad_layout_key }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.article_top.ad_format %}
+         data-ad-format="{{ GOOGLE_ADSENSE.ads.article_top.ad_format }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.article_top.full_width_responsive %}
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.article_top.full_width_responsive }}"
+         {% endif %}
+         data-ad-slot="{{ GOOGLE_ADSENSE.ads.article_top.slot_id }}">   
+    </ins>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
@@ -103,7 +116,20 @@
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle ads-responsive"
          data-ad-client="{{ GOOGLE_ADSENSE.ca_id }}"
-         data-ad-slot="{{ GOOGLE_ADSENSE.ads.article_bottom }}"></ins>
+         {% if GOOGLE_ADSENSE.ads.article_bottom.ad_layout %}
+         data-ad-layout="{{ GOOGLE_ADSENSE.ads.article_bottom.ad_layout }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.article_bottom.ad_layout_key %}
+         data-ad-layout-key="{{ GOOGLE_ADSENSE.ads.article_bottom.ad_layout_key }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.article_bottom.ad_format %}
+         data-ad-format="{{ GOOGLE_ADSENSE.ads.article_bottom.ad_format }}"
+         {% endif %}
+         {% if GOOGLE_ADSENSE.ads.article_bottom.full_width_responsive %}
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.article_bottom.full_width_responsive }}"
+         {% endif %}
+         data-ad-slot="{{ GOOGLE_ADSENSE.ads.article_bottom.slot_id }}">
+    </ins>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
