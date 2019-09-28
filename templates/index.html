@@ -16,7 +16,7 @@
          data-ad-format="{{ GOOGLE_ADSENSE.ads.index_top.ad_format }}"
          {% endif %}
          {% if GOOGLE_ADSENSE.ads.index_top.full_width_responsive %}
-         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.index_top.full_width_responsive }}"
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.index_top.full_width_responsive | lower }}"
          {% endif %}
          data-ad-slot="{{ GOOGLE_ADSENSE.ads.index_top.slot_id }}">   
     </ins>
@@ -86,7 +86,7 @@
          data-ad-format="{{ GOOGLE_ADSENSE.ads.index_bottom.ad_format }}"
          {% endif %}
          {% if GOOGLE_ADSENSE.ads.index_bottom.full_width_responsive %}
-         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.index_bottom.full_width_responsive }}"
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.index_bottom.full_width_responsive | lower }}"
          {% endif %}
          data-ad-slot="{{ GOOGLE_ADSENSE.ads.index_bottom.slot_id }}"> 
     </ins>

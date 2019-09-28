@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% if page.status != 'published' %}
+  {% set GOOGLE_ADSENSE = '' %}
+  {% set DISQUS_SITENAME = '' %}
+  {% set DISQUS_IN_PAGES = False %}
+{% endif %}
+
 {% block title %} &ndash; {{ page.title }}{% endblock %}
 
 {% block content %}
@@ -21,9 +27,7 @@
     {% block after_content %}
     {% if DISQUS_SITENAME %}
       {% if DISQUS_IN_PAGES %}
-        {% if page.status != 'hidden' %}
-          {% include "partial/disqus.html" %}
-        {% endif %}
+        {% include "partial/disqus.html" %}
       {% endif %}
     {% endif %}
     {% endblock %}
