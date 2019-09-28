@@ -197,7 +197,7 @@
          data-ad-format="{{ GOOGLE_ADSENSE.ads.aside.ad_format }}"
          {% endif %}
          {% if GOOGLE_ADSENSE.ads.aside.full_width_responsive %}
-         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.aside.full_width_responsive }}"
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.aside.full_width_responsive | lower }}"
          {% endif %}
          data-ad-slot="{{ GOOGLE_ADSENSE.ads.aside.slot_id }}">   
     </ins>
@@ -222,7 +222,7 @@
          data-ad-format="{{ GOOGLE_ADSENSE.ads.main_menu.ad_format }}"
          {% endif %}
          {% if GOOGLE_ADSENSE.ads.main_menu.full_width_responsive %}
-         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.main_menu.full_width_responsive }}"
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.main_menu.full_width_responsive | lower }}"
          {% endif %}
          data-ad-slot="{{ GOOGLE_ADSENSE.ads.main_menu.slot_id }}">   
     </ins>

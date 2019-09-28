@@ -1,4 +1,8 @@
 {% extends "base.html" %}
+{% if article.status != 'published' %}
+  {% set GOOGLE_ADSENSE = '' %}
+  {% set DISQUS_SITENAME = '' %}
+{% endif %}
 
 {% block meta %}
 <meta name="author" content="{{ article.author.name }}" />
@@ -61,7 +65,7 @@
          data-ad-format="{{ GOOGLE_ADSENSE.ads.article_top.ad_format }}"
          {% endif %}
          {% if GOOGLE_ADSENSE.ads.article_top.full_width_responsive %}
-         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.article_top.full_width_responsive }}"
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.article_top.full_width_responsive | lower }}"
          {% endif %}
          data-ad-slot="{{ GOOGLE_ADSENSE.ads.article_top.slot_id }}">   
     </ins>
@@ -126,7 +130,7 @@
          data-ad-format="{{ GOOGLE_ADSENSE.ads.article_bottom.ad_format }}"
          {% endif %}
          {% if GOOGLE_ADSENSE.ads.article_bottom.full_width_responsive %}
-         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.article_bottom.full_width_responsive }}"
+         data-full-width-responsive="{{ GOOGLE_ADSENSE.ads.article_bottom.full_width_responsive | lower }}"
          {% endif %}
          data-ad-slot="{{ GOOGLE_ADSENSE.ads.article_bottom.slot_id }}">
     </ins>
