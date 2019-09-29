@@ -1,6 +1,7 @@
 *~
 ._*
 *.lock
+!yarn.lock
 *.DS_Store
 *.swp
 .sw*
@@ -19,6 +20,7 @@ __cache__/
 .vscode/
 /pelican-env/
 /pelican-envs/
+/node_modules/
 
 # Local Netlify folder
 .netlify
