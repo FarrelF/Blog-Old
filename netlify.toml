@@ -4,3 +4,6 @@
 
 [build.environment]
   TZ = "Asia/Jakarta"
+  LANGUAGE = "id_ID:id"
+  LC_ALL = "id_ID.utf8"
+  LOCALE = "id_ID.utf8"
