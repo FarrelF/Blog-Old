@@ -82,7 +82,7 @@ CHECK_MODIFIED_METHOD = 'sha256'
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories']
+PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories', 'summary']
 EXTENDED_SITEMAP_PLUGIN = {
     'priorities': {
         'index': 1.0,
