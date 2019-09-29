@@ -78,7 +78,7 @@ Oh, ya, untuk sekarang ini, blog saya ini saya "Bebaskan", baik konten nya ataup
 
 Nah, "kebebasan" yang saya maksud/beri disini adalah "kebebasan" untuk menggunakan nya, mempelajari, memodifikasi, menyalinkan dan mendistribusikan ulang terutama kepada Keluarga, Tetangga, Teman atau Rekan, untuk keperluan apapun termasuk keperluan komersial sekalipun, sesuai dengan [filosofi Perangkat Lunak Bebas](https://www.gnu.org/philosophy/free-sw.html.en).
 
-Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan" yang ada di blog ini pada turunan yang Anda buat. Untuk lebih lengkapnya, silahkan baca Laman [Lisensi]({filename}/halaman/lisensi.md). Kamu juga bisa memperoleh kode sumber nya, caranya bisa kamu kunjungi laman [Kode Sumber]({filename}/halaman/kode-sumber.md)
+Dengan syarat, pastikan kamu memberikan "kebebasan" yang sama dengan "kebebasan" yang ada di blog ini pada turunan yang Anda buat. Untuk lebih lengkapnya, silahkan baca Laman [Lisensi]({filename}/pages/lisensi.md). Kamu juga bisa memperoleh kode sumber nya, caranya bisa kamu kunjungi laman [Kode Sumber]({filename}/pages/kode-sumber.md)
 
 ## Rangkuman/Kesimpulan
 Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka saya akan merangkum isi artikel ini menjadi sebuah kesimpulan, dalam format yang mudah dibaca oleh Anda. Berikut rangkuman nya:
@@ -121,7 +121,7 @@ Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka sa
 
 5. Tapi, saya tidak berniat untuk memigrasikan dari Blog lama ke blog baru ini, karena membuang waktu, pikiran dan juga tenaga. Sehingga, saya ingin memulai nya dari awal lagi.
 
-6. Saya juga memberikan Anda kebebasan untuk menggunakan, mempelajari, menyalinkan, mendistribusi kan ulang, dan juga memodifikasi nya dengan keperluan apapun, termasuk komersial sekalipun, baik untuk konten nya, dan juga [kode sumber nya](https://github.com/FarrelF/FarrelF-Blog). Tapi, jangan lupa untuk sertakan kredit dan atribusi nya serta memberikan 'hak' yang sama dengan yang ada di blog ini. Untuk lebih lanjut, silahkan lihat/baca laman [Lisensi]({filename}/halaman/lisensi.md).
+6. Saya juga memberikan Anda kebebasan untuk menggunakan, mempelajari, menyalinkan, mendistribusi kan ulang, dan juga memodifikasi nya dengan keperluan apapun, termasuk komersial sekalipun, baik untuk konten nya, dan juga [kode sumber nya](https://github.com/FarrelF/FarrelF-Blog). Tapi, jangan lupa untuk sertakan kredit dan atribusi nya serta memberikan 'hak' yang sama dengan yang ada di blog ini. Untuk lebih lanjut, silahkan lihat/baca laman [Lisensi]({filename}/pages/lisensi.md).
 
 ## Penutup
 Jadi, sudah dulu yah, saya juga mau fokus merombak blog ini terlebih dahulu, dibandingkan dengan menulis artikel. Seperti yang Anda tahu, blog ini sangat 'jauh' sekali dari kata "lengkap", seperti ada halaman yang dalam masih di buat/di draf, dan lain sebagai nya.
