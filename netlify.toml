@@ -1,5 +1,5 @@
 [build]
-  command = "make publish"
+  command = "invoke publish"
   publish = "output"
 
 [build.environment]
