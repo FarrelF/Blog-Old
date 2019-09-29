@@ -12,7 +12,7 @@ AUTHOR = 'Farrel Franqois'
 SITENAME = 'Farrel Franqois Blog'
 SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = '(Bukan) Sekedar blog pribadi saya'
-SITEURL = 'http://localhost:8000' # Saya isikan dengan 'localhost:8000' agar blog bisa di akses secara Offline
+SITEURL = 'http://localhost:9001' # Saya isikan dengan 'localhost:8000' agar blog bisa di akses secara Offline
 
 IGNORE_FILES = ['.#*'] # Mengabaikan Berkas
 
