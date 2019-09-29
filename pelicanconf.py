@@ -31,7 +31,7 @@ USE_BOOTSTRAP = False
 PATH = 'content'
 
 # Artikel
-ARTICLE_PATHS = ['artikel']
+ARTICLE_PATHS = ['articles']
 ARTICLE_SAVE_AS = '{slug}/index.html'
 ARTICLE_LANG_SAVE_AS = '{slug}/{lang}/index.html'
 ARTICLE_URL = '{slug}'
@@ -50,7 +50,7 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAG_URL = 'tag/{slug}'
 
 # Halaman
-PAGE_PATHS = ['halaman']
+PAGE_PATHS = ['pages']
 PAGE_SAVE_AS = '{slug}/index.html'
 PAGE_LANG_SAVE_AS = '{slug}/{lang}/index.html'
 PAGE_URL = '{slug}'
