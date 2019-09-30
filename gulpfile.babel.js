@@ -10,6 +10,7 @@ const content_404 = fs.readFileSync(
 );
 
 const buildAll = () => exec("invoke build");
+const publishAll = () => exec("invoke publish");
 
 const reload = cb => {
   browserSync.init(
@@ -54,7 +55,27 @@ const watchFiles = () => {
   );
 };
 
-const blog = parallel(watchFiles, reload);
+const watchPublishFiles = () => {
+  watch(
+    [
+      "content/**/*.md",
+      "content/**/*.markdown",
+      "content/**/*.rest",
+      "content/**/*.rst",
+      "pelicanconf.py",
+      "publishconf.py",
+      "themes/Flex/templates/**/*.html",
+      "themes/Flex/static/**/*.css",
+      "themes/Flex/static/**/*.js"
+    ],
+    { ignoreInitial: false },
+    publishAll
+  );
+};
 
-exports.blog = blog;
-exports.default = blog;
+const build = parallel(watchFiles, reload);
+const publish = parallel(watchPublishFiles, reload);
+
+exports.publish = publish
+exports.build = build;
+exports.default = build;
