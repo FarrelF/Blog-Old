@@ -13,10 +13,9 @@
     },
     "config": {
         "commitizen": {
-          "path": "./node_modules/cz-conventional-changelog"
+            "path": "./node_modules/cz-conventional-changelog"
         }
     },
-
     "license": "AGPL-3.0-or-later",
     "repository": {
         "type": "git",
@@ -25,12 +24,10 @@
     "scripts": {
         "build": "python3 -m pip install -r requirements.txt; invoke publish; mv output publish"
     },
-    "dependencies": {
-        "gulp": "^4.0.2"
-    },
+    "dependencies": {},
     "babel": {
         "presets": [
-          "es2015"
+            "es2015"
         ]
     }
 }
