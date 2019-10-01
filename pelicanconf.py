@@ -100,14 +100,19 @@ EXTENDED_SITEMAP_PLUGIN = {
 }
 
 # Pengaturan Google CSE (Custom Search Engine)
-GOOGLE_SEARCH = 'partner-pub-2432124491852819:4493745682'
-USING_GOOGLE_SEARCHBOX = False
+GOOGLE_SEARCH = {
+    'activate': True,
+    'partner_id': 'partner-pub-2432124491852819:4493745682',
+    'options': {
+        'using_google_searchbox': False,
+        'search_style': '' # Nilai ini akan berubah jika Opsi 'using_google_searchbox' berubah, jadi sebaiknya opsi ini tidak usah di isi
+    }
+}
 
-if USING_GOOGLE_SEARCHBOX:
-    GOOGLE_SEARCHBOX = 'gcse-searchresults-only'
+if GOOGLE_SEARCH['options']['using_google_searchbox'] == True:
+    GOOGLE_SEARCH['options']['search_style'] = 'gcse-searchresults-only'
 else:
-    GOOGLE_SEARCHBOX = 'gcse-search'
-    
+    GOOGLE_SEARCH['options']['search_style'] = 'gcse-search'
 
 # Pengaturan Markdown
 PYGMENTS_STYLE = 'friendly' # Tampilan Pygments yang merupakan Syntax Highlighter
@@ -146,7 +151,7 @@ MARKDOWN = {
 
 # Implementasi Lisensi dari Creative Commons
 COPYRIGHT_YEAR = datetime.now().year
-COPYRIGHT_NAME = 'Farrel Franqois'
+COPYRIGHT_NAME = AUTHOR
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
     'version': '4.0',
