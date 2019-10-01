@@ -76,6 +76,12 @@ def reserve(c):
     serve(c)
 
 @task
+def devserver(c):
+    """`regenerate`, then `serve`"""
+    regenerate(c)
+    serve(c)
+
+@task
 def preview(c):
     """Build production version of site"""
     c.run('pelican {content_path} -s {settings_publish} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
