@@ -9,7 +9,7 @@ from dateutil import parser
 AUTHOR = 'Farrel Franqois'
 
 # Mengenai Blog
-PORT = '9001'
+PORT = 9001
 SITENAME = 'Farrel Franqois Blog'
 SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = '(Bukan) Sekedar blog pribadi saya'
