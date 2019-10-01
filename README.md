@@ -30,6 +30,7 @@ $ python3 -m pip install virtualenv
 $ virtualenv pelican-env
 $ source pelican-env/bin/activate # Gunakan perintah 'source pelican-env/Scripts/activate' (tanpa kutip) jika Anda sedang menggunakan Windows
 $ pip install -r requirements.txt # Tambahkan parameter '--upgrade' (tanpa kutip) jika Anda ingin langsung memperbarui nya
+$ yarn install # Gunakan perintah ini jika Anda ingin menggunakan 'Gulp.js'
 ```
 
 Setelah kamu meng-installnya, kamu bisa coba untuk menghasilkan sebuah berkas HTML Statis ini dengan Pelican, yang kemudian bisa kamu akses dengan Web Browser kamu.
@@ -46,6 +47,18 @@ Atau, bisa melalui perintah berikut: (Selamat terinstall [GNU Make](https://www.
 
 ```bash
 $ make devserver
+```
+
+Atau, menggunakan perintah berikut:
+
+```bash
+invoke devserver
+```
+
+Atau, menggunakan perintah berikut (Jika sudah terinstall Node.js, Yarn Package Manager, dan Gulp.js)
+
+```bash
+$ gulp build
 ```
 
 Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu turuti, yaitu:
