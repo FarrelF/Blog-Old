@@ -9,10 +9,11 @@ from dateutil import parser
 AUTHOR = 'Farrel Franqois'
 
 # Mengenai Blog
+PORT = '9001'
 SITENAME = 'Farrel Franqois Blog'
 SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = '(Bukan) Sekedar blog pribadi saya'
-SITEURL = 'http://localhost:9001' # Saya isikan dengan 'localhost:8000' agar blog bisa di akses secara Offline
+SITEURL = 'http://localhost:{0}'.format(PORT) # Saya isikan dengan 'localhost' agar blog bisa di akses secara Offline
 
 IGNORE_FILES = ['.#*'] # Mengabaikan Berkas
 
@@ -126,12 +127,12 @@ MARKDOWN = {
         'emoji_generator': emoji.to_svg,
         'alt': 'short',
         'options': {
-            "attributes": {
-                "height": "16px",
-                "width": "16px"
+            'attributes': {
+                'height': '16px',
+                'width': '16px'
             },
             'classes': 'twemoji_emojis',
-            "image_path": "https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/",
+            'image_path': 'https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/',
         },
     },
     'pymdownx.superfences': {},
