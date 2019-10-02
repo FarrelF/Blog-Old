@@ -1,12 +1,12 @@
 <script>
-    var onSubmit = function(token) {
+    var onKirim = function(token) {
       console.log('{{ GOOGLE_RECAPTCHA.options.success_message }}');
     };
 
     var onloadCallback = function() {
       grecaptcha.render('{{ GOOGLE_RECAPTCHA.options.submit_id }}', {
         'sitekey' : '{{ GOOGLE_RECAPTCHA.site_key }}',
-        'callback' : onSubmit
+        'callback' : onKirim
       });
     };
 </script>
