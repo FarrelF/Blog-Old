@@ -34,7 +34,7 @@ Jika Anda perlu menghubungi saya secara langsung, bisa langsung Anda mengisi For
 Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunakan lampiran dan sebagai nya, bisa Anda langsung kirimkan pesan Anda ke Alamat Surel saya di atas.
 
 ## Form Kontak
-<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
     <fieldset>
         <p class="hidden">
           <label>Jangan Isikan ini jika Anda adalah manusia: </label><br>
@@ -71,9 +71,6 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
         </p>
     </fieldset>
 </form>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-</script>
 
 
 Saya akan hormati Privasi pada pesan yang Anda sampaikan, karena saya paham betapa pentingnya menjaga data pribadi/privasi Anda, maka **jangan sekali-kali** Anda mengirimkan segala Informasi yang bersifat Rahasia atau/dan Pribadi Anda kepada saya, termasuk No. Telepon, Alamat tempat tinggal, dll ke saya tanpa mengenali nya dan tanpa maksud, alasan dan tujuan yang jelas. 
