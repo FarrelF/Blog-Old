@@ -131,6 +131,13 @@
   {% if GOOGLE_TAG_MANAGER %}
     {% include "partial/gtm.html" %}
   {% endif %}
+  {% if GOOGLE_RECAPTCHA.activate == True and GOOGLE_RECAPTCHA.site_key %}
+    {% for page in pages %}
+      {% if page.slug == 'hubungi-saya' %}
+        {% include "partial/recaptcha.html" %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 </head>
 <body>
   {% if GOOGLE_TAG_MANAGER %}
