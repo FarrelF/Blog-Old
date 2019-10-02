@@ -9,10 +9,11 @@ from dateutil import parser
 AUTHOR = 'Farrel Franqois'
 
 # Mengenai Blog
+PORT = 9001
 SITENAME = 'Farrel Franqois Blog'
 SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = '(Bukan) Sekedar blog pribadi saya'
-SITEURL = 'http://localhost:8000' # Saya isikan dengan 'localhost:8000' agar blog bisa di akses secara Offline
+SITEURL = 'http://localhost:{0}'.format(PORT) # Saya isikan dengan 'localhost' agar blog bisa di akses secara Offline
 
 IGNORE_FILES = ['.#*'] # Mengabaikan Berkas
 
@@ -31,7 +32,7 @@ USE_BOOTSTRAP = False
 PATH = 'content'
 
 # Artikel
-ARTICLE_PATHS = ['artikel']
+ARTICLE_PATHS = ['articles']
 ARTICLE_SAVE_AS = '{slug}/index.html'
 ARTICLE_LANG_SAVE_AS = '{slug}/{lang}/index.html'
 ARTICLE_URL = '{slug}'
@@ -50,7 +51,7 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAG_URL = 'tag/{slug}'
 
 # Halaman
-PAGE_PATHS = ['halaman']
+PAGE_PATHS = ['pages']
 PAGE_SAVE_AS = '{slug}/index.html'
 PAGE_LANG_SAVE_AS = '{slug}/{lang}/index.html'
 PAGE_URL = '{slug}'
@@ -82,7 +83,7 @@ CHECK_MODIFIED_METHOD = 'sha256'
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories']
+PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories', 'summary']
 EXTENDED_SITEMAP_PLUGIN = {
     'priorities': {
         'index': 1.0,
@@ -99,14 +100,19 @@ EXTENDED_SITEMAP_PLUGIN = {
 }
 
 # Pengaturan Google CSE (Custom Search Engine)
-GOOGLE_SEARCH = 'partner-pub-2432124491852819:4493745682'
-USING_GOOGLE_SEARCHBOX = False
+GOOGLE_SEARCH = {
+    'activate': True,
+    'partner_id': 'partner-pub-2432124491852819:4493745682',
+    'options': {
+        'using_google_searchbox': False,
+        'search_style': '' # Nilai ini akan berubah jika Opsi 'using_google_searchbox' berubah, jadi sebaiknya opsi ini tidak usah di isi
+    }
+}
 
-if USING_GOOGLE_SEARCHBOX:
-    GOOGLE_SEARCHBOX = 'gcse-searchresults-only'
+if GOOGLE_SEARCH['options']['using_google_searchbox'] == True:
+    GOOGLE_SEARCH['options']['search_style'] = 'gcse-searchresults-only'
 else:
-    GOOGLE_SEARCHBOX = 'gcse-search'
-    
+    GOOGLE_SEARCH['options']['search_style'] = 'gcse-search'
 
 # Pengaturan Markdown
 PYGMENTS_STYLE = 'friendly' # Tampilan Pygments yang merupakan Syntax Highlighter
@@ -126,12 +132,12 @@ MARKDOWN = {
         'emoji_generator': emoji.to_svg,
         'alt': 'short',
         'options': {
-            "attributes": {
-                "height": "16px",
-                "width": "16px"
+            'attributes': {
+                'height': '16px',
+                'width': '16px'
             },
             'classes': 'twemoji_emojis',
-            "image_path": "https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/",
+            'image_path': 'https://cdn.statically.io/gh/twitter/twemoji/v12.1.2/assets/svg/',
         },
     },
     'pymdownx.superfences': {},
@@ -145,7 +151,7 @@ MARKDOWN = {
 
 # Implementasi Lisensi dari Creative Commons
 COPYRIGHT_YEAR = datetime.now().year
-COPYRIGHT_NAME = 'Farrel Franqois'
+COPYRIGHT_NAME = AUTHOR
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
     'version': '4.0',

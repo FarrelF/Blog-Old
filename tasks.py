@@ -11,7 +11,9 @@ from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 
 SETTINGS_FILE_BASE = 'pelicanconf.py'
-SETTINGS = {}
+SETTINGS = {
+    'OUTPUT_PATH': 'output'
+}
 SETTINGS.update(DEFAULT_CONFIG)
 LOCAL_SETTINGS = get_settings_from_file(SETTINGS_FILE_BASE)
 SETTINGS.update(LOCAL_SETTINGS)
@@ -21,11 +23,13 @@ CONFIG = {
     'settings_publish': 'publishconf.py',
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     'deploy_path': SETTINGS['OUTPUT_PATH'],
+    'content_path': 'content',
+    'pelican_opts': '',
     # Github Pages configuration
     'github_pages_branch': 'gh-pages',
     'commit_message': "'Publish site on {}'".format(datetime.date.today().isoformat()),
     # Port for `serve`
-    'port': 8000,
+    'port': 9001,
 }
 
 @task
@@ -38,17 +42,17 @@ def clean(c):
 @task
 def build(c):
     """Build local version of site"""
-    c.run('pelican -s {settings_base}'.format(**CONFIG))
+    c.run('pelican {content_path} -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
 def rebuild(c):
     """`build` with the delete switch"""
-    c.run('pelican -d -s {settings_base}'.format(**CONFIG))
+    c.run('pelican {content_path} -d -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
 def regenerate(c):
     """Automatically regenerate site upon file modification"""
-    c.run('pelican -r -s {settings_base}'.format(**CONFIG))
+    c.run('pelican {content_path} -r -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
 def serve(c):
@@ -67,14 +71,20 @@ def serve(c):
 
 @task
 def reserve(c):
-    """`build`, then `serve`"""
-    build(c)
+    """`rebuild`, then `serve`"""
+    rebuild(c)
+    serve(c)
+
+@task
+def devserver(c):
+    """`regenerate`, then `serve`"""
+    regenerate(c)
     serve(c)
 
 @task
 def preview(c):
     """Build production version of site"""
-    c.run('pelican -s {settings_publish}'.format(**CONFIG))
+    c.run('pelican {content_path} -s {settings_publish} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
 def livereload(c):
@@ -103,12 +113,7 @@ def livereload(c):
 @task
 def publish(c):
     """Publish to production via rsync"""
-    c.run('pelican -s {settings_publish}'.format(**CONFIG))
-    c.run(
-        'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        '{} {production}:{dest_path}'.format(
-            CONFIG['deploy_path'].rstrip('/') + '/',
-            **CONFIG))
+    c.run('pelican {content_path} -s {settings_publish} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
 def gh_pages(c):

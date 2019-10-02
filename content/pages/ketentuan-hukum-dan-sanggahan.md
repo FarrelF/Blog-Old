@@ -17,7 +17,7 @@ Jadi, saya tidak bisa memberikan jaminan, baik itu secara tersurat atau tersirat
 
 Blog ini dan konten nya saya rilis di bawah lisensi berikut:
 
-- Semua konten teks, Gambar, Illustrasi atau/dan Grafis yang telah saya buat, dan terjemahan nya (jika ada), menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda memberikan kredit kepada saya dan mendistribusikan kembali konten di bawah lisensi yang sama atau lisensi yang serupa. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/halaman/lisensi.md)
+- Semua konten teks, Gambar, Illustrasi atau/dan Grafis yang telah saya buat, dan terjemahan nya (jika ada), menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda memberikan kredit kepada saya dan mendistribusikan kembali konten di bawah lisensi yang sama atau lisensi yang serupa. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/pages/lisensi.md)
   
 - Kode Sumber untuk Tema yang saya gunakan, di Lisensikan dengan [Lisensi MIT](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) dan ada beberapa aset statik lain nya yang di lisensikan di bawah lisensi yang berbeda.
 
@@ -60,7 +60,7 @@ Ketika Anda mengakses Situs Web/Blog lain, bahkan Situs Web/Blog yang mungkin me
 ### Pelanggaran Hak Cipta dan Syarat Penggunaan
 Saya tidak bermaksud melanggar Hak Cipta orang lain, dan saya meminta pembaca untuk melakukan hal yang sama dengan apa yang saya lakukan.
 
-Jika Anda yakin bahwa pekerjaan Anda telah disalin dengan cara yang merupakan pelanggaran pada Blog ini, silahkan Hubungi Saya.
+Jika Anda yakin bahwa pekerjaan Anda telah disalin dengan cara yang merupakan pelanggaran pada Blog ini, silahkan [Hubungi Saya]({filename}/pages/hubungi-saya.md).
 
 Saya berhak untuk mencari semua solusi yang tersedia menurut Hukum dan Keadilan untuk Pelanggaran Syarat Penggunaan ini, termasuk, tetapi tidak terbatas pada, hak untuk memblokir akses dari Alamat Internet tertentu yang di tujukan kepada Blog saya.
 

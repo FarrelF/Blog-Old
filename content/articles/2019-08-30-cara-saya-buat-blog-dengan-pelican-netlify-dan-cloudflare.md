@@ -20,7 +20,7 @@ article.single img {
 ## **I. Pembuka**
 Halo, semua! Seperti yang Anda tahu, bahwa blog saya ini merupakan HTML Statis, yang tidak di proses secara dinamis, melainkan ini hanyalah sebuah HTML statis yang di hasilkan dari *Static Site Generator* seperti [Pelican](https://blog.getpelican.com). 
 
-Kamu bisa baca Artikel yang berjudul "[Halo Dunia! (Lagi)]({filename}/artikel/2019-08-27-halo-dunia.md)" mengenai Blog yang saya gunakan, beserta hosting nya dan kenapa saya menggunakan nya, dll.
+Kamu bisa baca Artikel yang berjudul "[Halo Dunia! (Lagi)]({filename}/articles/2019-08-27-halo-dunia.md)" mengenai Blog yang saya gunakan, beserta hosting nya dan kenapa saya menggunakan nya, dll.
 
 Selain menggunakan Netlify sebagai Hosting nya, blog ini juga menggunakan Cloudflare sebagai DNS nya. Tentu saja, semua ini gratis, gak ada biaya yang di keluarkan, kecuali domain.
 
@@ -200,7 +200,7 @@ Karena pada tutorial ini akan membahas cara menulis artikel dengan menggunakan M
 ### **3. Install Git**
 Karena kita akan membuat blog dan menyebarkan nya melalui internet, kita sangat perlu untuk meng-install Git di dalam Komputer kita.
 
-Jika Anda ingin meng-install Git di dalam Komputer Anda, silahkan Anda kunjungi [Artikel tersebut]({filename}/artikel/2019-09-17-cara-install-git.md) untuk mengetahui cara Install nya di dalam masing-masing Sistem Operasi.
+Jika Anda ingin meng-install Git di dalam Komputer Anda, silahkan Anda kunjungi [Artikel tersebut]({filename}/articles/2019-09-17-cara-install-git.md) untuk mengetahui cara Install nya di dalam masing-masing Sistem Operasi.
 
 ## **IV. Membuat Blog SSG dengan Pelican**
 ### **1. Membuat 'Pelican Sites'**
