@@ -25,13 +25,38 @@ Cara installnya mudah, Anda tinggal ikuti langkah-langkah berikut dengan Bash Sh
 
 **Catatan**: Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, kamu bisa gunakan Terminal Bawaan, sedangkan di Windows kamu bisa gunakan "Git Bash".
 
+Ada beberapa cara untuk meng-install dan membuat blog ini, salah satu nya berikut di bawah ini:
+
+### Metode 1: Menggunakan Python Pip secara langsung (Di rekomendasikan)
+
+Metode ini akan meng-install semua ketergantungan nya dengan memanfaatkan Python3 Pip. Tapi, dengan mengikuti cara ini, mungkin Anda tidak akan bisa membangun blog ini dengan menggunakan Gulp.js, yang mana nantinya akan memiliki fitur LiveReload, karena tidak ada Berkas JavaScript yang di eksekusi.
+
+Cara Install nya sebagai berikut:
+
 ```bash
 $ python3 -m pip install virtualenv
-$ virtualenv pelican-env
+$ virtualenv ../pelican-env; cd ..
 $ source pelican-env/bin/activate # Gunakan perintah 'source pelican-env/Scripts/activate' (tanpa kutip) jika Anda sedang menggunakan Windows
 $ pip install -r requirements.txt # Tambahkan parameter '--upgrade' (tanpa kutip) jika Anda ingin langsung memperbarui nya
-$ yarn install # Gunakan perintah ini jika Anda ingin menggunakan 'Gulp.js'
 ```
+
+### Metode 2: Menggunakan Yarn (Belum mendalaminya)
+
+**Catatan**: Cara ini belum saya dalami sepenuhnya, karena saya sendiri masih dalam tahap "baru belajar" tentang NodeJS dan Yarn Package Manager ini, hehe :grinning:. Jika tutorial ini terdapat kesalahan, silahkan Anda bantu kontribusikan kode/perbaikan nya. Untuk caranya, silahkan baca bagian ["Cara Kontribusi"](#cara-kontribusi).
+
+Anda juga bisa meng-install nya dengan menjalankan sebuah skrip yang di buat di dalam berkas `package.json`, dan setelahnya Anda akan meng-install semua ketergantungan JavaScript lain nya. 
+
+Jika Anda menggunakan metode ini, maka Anda bisa menggunakan Gulp.js untuk membangun blog ini, beserta Anda dapat menikmati fitur 'Live Reload' nya (berkat 'BrowserSync' yang ada di dalam Blog ini).
+
+Tapi, Anda mungkin perlu meng-install NodeJS dan Yarn Package Manager terlebih dahulu ke dalam Sistem Operasi Anda sebelum lanjut.
+
+Cara Install nya sebagai berikut:
+
+```bash
+$ yarn run install-nix # Gunakan 'install-win' untuk meng-installnya dari Windows, bukan 'install-nix' yang justru untuk Pengguna Sistem Operasi berbasis Unix/Unix-like
+```
+
+## Setelah Meng-installnya
 
 Setelah kamu meng-installnya, kamu bisa coba untuk menghasilkan sebuah berkas HTML Statis ini dengan Pelican, yang kemudian bisa kamu akses dengan Web Browser kamu.
 
@@ -49,16 +74,10 @@ Atau, bisa melalui perintah berikut: (Selamat terinstall [GNU Make](https://www.
 $ make devserver
 ```
 
-Atau, menggunakan perintah berikut:
-
-```bash
-invoke devserver
-```
-
 Atau, menggunakan perintah berikut (Jika sudah terinstall Node.js, Yarn Package Manager, dan Gulp.js)
 
 ```bash
-$ gulp build
+$ invoke build; gulp
 ```
 
 Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu turuti, yaitu:
@@ -74,7 +93,7 @@ Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu
 > pelican --listen
 ```
 
-Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:8000` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :slightly_smiling_face:
+Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:9001` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :slightly_smiling_face:
 
 Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman [Dokumentasi nya](https://docs.getpelican.org).
 
