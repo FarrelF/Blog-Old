@@ -60,7 +60,7 @@ Ketika Anda mengakses Situs Web/Blog lain, bahkan Situs Web/Blog yang mungkin me
 ### Pelanggaran Hak Cipta dan Syarat Penggunaan
 Saya tidak bermaksud melanggar Hak Cipta orang lain, dan saya meminta pembaca untuk melakukan hal yang sama dengan apa yang saya lakukan.
 
-Jika Anda yakin bahwa pekerjaan Anda telah disalin dengan cara yang merupakan pelanggaran pada Blog ini, silahkan Hubungi Saya.
+Jika Anda yakin bahwa pekerjaan Anda telah disalin dengan cara yang merupakan pelanggaran pada Blog ini, silahkan [Hubungi Saya]({filename}/pages/hubungi-saya.md).
 
 Saya berhak untuk mencari semua solusi yang tersedia menurut Hukum dan Keadilan untuk Pelanggaran Syarat Penggunaan ini, termasuk, tetapi tidak terbatas pada, hak untuk memblokir akses dari Alamat Internet tertentu yang di tujukan kepada Blog saya.
 
