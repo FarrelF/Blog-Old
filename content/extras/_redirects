@@ -1,3 +1,6 @@
 # Di bawah ini adalah laman yang di alihkan ke Laman 403
-/drafts/*   /403    403!
-/403/*      /403    403!
+/drafts/*   /403        403!
+/403/*      /403        403!
+
+# Di bawah ini adalah laman yang di alihkan ke Laman 404
+/404*       /404.html   404!
