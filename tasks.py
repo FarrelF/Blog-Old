@@ -71,8 +71,8 @@ def serve(c):
 
 @task
 def reserve(c):
-    """`build`, then `serve`"""
-    build(c)
+    """`rebuild`, then `serve`"""
+    rebuild(c)
     serve(c)
 
 @task
