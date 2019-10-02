@@ -71,6 +71,10 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
         </p>
     </fieldset>
 </form>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+</script>
+
 
 Saya akan hormati Privasi pada pesan yang Anda sampaikan, karena saya paham betapa pentingnya menjaga data pribadi/privasi Anda, maka **jangan sekali-kali** Anda mengirimkan segala Informasi yang bersifat Rahasia atau/dan Pribadi Anda kepada saya, termasuk No. Telepon, Alamat tempat tinggal, dll ke saya tanpa mengenali nya dan tanpa maksud, alasan dan tujuan yang jelas. 
 
