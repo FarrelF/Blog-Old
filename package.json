@@ -22,7 +22,9 @@
         "url": "git+https://github.com/FarrelF/FarrelF-Blog.git"
     },
     "scripts": {
-        "build": "python3 -m pip install -r requirements.txt; invoke publish; mv output publish"
+        "build": "python3 -m pip install -r requirements.txt; invoke publish; mv output publish",
+        "install-win": "python -m pip install virtualenv; yarn install; virtualenv ../pelican-env; cd ..; source pelican-env/Scripts/activate; pip install -r requirements.txt",
+        "install-nix": "python3 -m pip install virtualenv; yarn install; virtualenv ../pelican-env; cd ..; source pelican-env/bin/activate; pip install -r requirements.txt"
     },
     "dependencies": {},
     "babel": {
