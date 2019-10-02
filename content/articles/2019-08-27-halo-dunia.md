@@ -126,4 +126,6 @@ Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka sa
 ## Penutup
 Jadi, sudah dulu yah, saya juga mau fokus merombak blog ini terlebih dahulu, dibandingkan dengan menulis artikel. Seperti yang Anda tahu, blog ini sangat 'jauh' sekali dari kata "lengkap", seperti ada halaman yang dalam masih di buat/di draf, dan lain sebagai nya.
 
+Kalau Anda mempunyai kritik dan saran atau masukkan lain nya, silahkan Anda berkomentar melalui kolom komentar yang telah di sediakan, atau jika Anda ingin lebih pribadi, silahkan [Hubungi Saya]({filename}/pages/hubungi-saya.md).
+
 Terima kasih atas perhatian nya :blush:

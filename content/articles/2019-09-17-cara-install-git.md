@@ -174,7 +174,7 @@ Sudah? Iya, sudah, cuma itu saja yang perlu Anda lakukan. Ini merupakan Artikel 
 
 Yang perlu kamu lakukan setelah Install Git adalah, sebaiknya kamu pelajari mengenai penggunaan Git, banyak di Internet caranya, atau mungkin kamu akan lihat kedepan nya nanti jika Anda membuat/mengembangkan sebuah Perangkat Lunak.
 
-Jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain nya, silahkan kamu berkomentar melalui kolom komentar yang tersedia.
+Jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain nya, silahkan kamu berkomentar melalui kolom komentar yang tersedia atau bisa kamu [Hubungi Saya]({filename}/pages/hubungi-saya.md).
 
 Terima kasih atas perhatian nya :blush:
 
