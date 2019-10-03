@@ -29,7 +29,7 @@ Cara installnya mudah, Anda tinggal ikuti langkah-langkah berikut dengan Bash Sh
 $ python3 -m pip install virtualenv
 $ virtualenv ../pelican-env; cd ..
 $ source pelican-env/bin/activate; cd - # Gunakan perintah 'source pelican-env/Scripts/activate; cd -' (tanpa kutip) jika Anda sedang menggunakan Windows
-$ pip install -r requirements.txt # Tambahkan parameter '--upgrade' (tanpa kutip) jika Anda ingin langsung memperbarui nya
+$ pip install -r requirements.txt
 $ invoke build_devtheme # Untuk membangun Tema nya
 
 ## Jika Anda ingin menggunakan Gulp.js dan fitur 'Live Reload', silahkan eksekusi perintah berikut dengan terinstall NodeJS dan Yarn Package Manager ##
@@ -55,12 +55,6 @@ Atau, bisa melalui perintah berikut: (Selamat terinstall [GNU Make](https://www.
 $ make devserver
 ```
 
-Atau, menggunakan perintah berikut (Jika sudah terinstall Node.js, Yarn Package Manager, dan Gulp.js)
-
-```bash
-$ invoke build; gulp
-```
-
 Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu turuti, yaitu:
 
 1. Hasilkan Berkas HTML terlebih dahulu dengan Pelican, gunakan Perintah berikut:
@@ -73,6 +67,16 @@ Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu
 ```powershell
 > pelican --listen
 ```
+
+Atau, jika Anda tidak ingin repot-repot melakukan hal di atas pada Windows, serta ingin menikmati fitur 'Live Reload' yakni bisa Memuat Ulang Blog secara otomatis setelah perubahan, Anda bisa gunakan perintah berikut:
+
+**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, Yarn Package Manager, dan Gulp.js, serta sudah melakukan meng-install paket `gulp-cli` dan lain nya dengan Yarn, caranya ada [di atas](#cara-install))
+
+```bash
+$ invoke build; gulp
+```
+
+Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke, NodeJS dan Yarn Package Manager.
 
 Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:9001` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :slightly_smiling_face:
 
