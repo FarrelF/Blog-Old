@@ -120,6 +120,7 @@ def publish(c):
     """Publish to production"""
     theme_sync(c)
     c.run('pelican {content_path} -s {settings_publish} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+    c.run('rm -rf output/drafts')
 
 @task
 def gh_pages(c):
