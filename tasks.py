@@ -23,7 +23,7 @@ CONFIG = {
     'settings_publish': 'publishconf.py',
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     'deploy_path': SETTINGS['OUTPUT_PATH'],
-    'content_path': 'content',
+    'content_path': SETTINGS['PATH'],
     'pelican_opts': '',
     # Github Pages configuration
     'github_pages_branch': 'gh-pages',
@@ -56,7 +56,7 @@ def regenerate(c):
 
 @task
 def serve(c):
-    """Serve site at http://localhost:$PORT/ (default port is 8000)"""
+    """Serve site at http://localhost:$PORT/ (default port is 9001)"""
 
     class AddressReuseTCPServer(RootedHTTPServer):
         allow_reuse_address = True
@@ -78,8 +78,7 @@ def reserve(c):
 @task
 def devserver(c):
     """`regenerate`, then `serve`"""
-    regenerate(c)
-    serve(c)
+    c.run('pelican {content_path} -lr -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
 def preview(c):
@@ -111,8 +110,15 @@ def livereload(c):
 
 
 @task
+def theme_sync(c):
+    """Make a fresh shallow copy of Modified-Flex theme"""
+    c.run("rm -rf themes")
+    c.run("git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/FarrelF/Modified-Flex themes/Flex")
+
+@task
 def publish(c):
-    """Publish to production via rsync"""
+    """Publish to production"""
+    theme_sync(c)
     c.run('pelican {content_path} -s {settings_publish} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
