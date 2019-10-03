@@ -35,13 +35,13 @@ Setelah mengaktifkan nya di dalam Git, pastikan Anda juga sudah mengaktifkan fit
 
 **Catatan**
 
-~~Tema 'Flex' yang saya gunakan itu berada di dalam folder [`themes/Flex`](https://github.com/FarrelF/FarrelF-Blog/tree/master/themes/Flex) dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).
+~~Tema 'Flex' yang saya gunakan itu berada di dalam folder [`themes/Flex`](https://github.com/FarrelF/FarrelF-Blog/tree/master/themes/Flex) dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).~~
 
-Jadi, jika Anda ingin merubah Kode Sumber Tema nya, silahkan ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa mengubah nya dari situ.
+~~Jadi, jika Anda ingin merubah Kode Sumber Tema nya, silahkan ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa mengubah nya dari situ.~~
 
-Sedangkan, jika Anda langsung mengubah kode sumber tema nya langsung melalui Repo ini (dan *fork* nya), silahkan tanggung sendiri resiko nya dan kalo Anda mengirimkan *Pull Request* dengan perubahan seperti ini, maka saya akan pertimbangkan untuk menolak nya secara mentah-mentah atau meng-hapus perubahan tersebut. Jadi, jangan kaget, yah :blush:~~
+~~Sedangkan, jika Anda langsung mengubah kode sumber tema nya langsung melalui Repo ini (dan *fork* nya), silahkan tanggung sendiri resiko nya dan kalo Anda mengirimkan *Pull Request* dengan perubahan seperti ini, maka saya akan pertimbangkan untuk menolak nya secara mentah-mentah atau meng-hapus perubahan tersebut. Jadi, jangan kaget, yah :blush:~~
 
-PEMBARUAN 03 Oktober 2019: Untuk sekarang ini, saya tidak akan menggunakan Git Subtree lagi untuk menyimpan Tema yang saya gunakan, melainkan saya meng-kloning nya dari *Repository* GitHub saat saya men-*deploy* nya dengan Netlify. Hal ini agar saya tidak perlu lagi repot-repot melakukan `git subtree pull` lagi setiap pembaruan pada Tema.
+**PEMBARUAN 03 Oktober 2019:** Untuk sekarang ini, saya tidak akan menggunakan *Git Subtree* lagi untuk menyimpan Tema yang saya gunakan, melainkan saya meng-kloning nya dari *Repository* GitHub saat saya men-*deploy* nya dengan Netlify. Hal ini agar saya tidak perlu lagi repot-repot melakukan `git subtree pull` lagi setiap pembaruan pada Tema.
 
 Tapi, tetap saja, jika Anda ingin memodifikasi tema nya, silahkan Anda ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa memodifikasi nya dari situ.
 
