@@ -25,8 +25,6 @@ Cara installnya mudah, Anda tinggal ikuti langkah-langkah berikut dengan Bash Sh
 
 **Catatan**: Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, kamu bisa gunakan Terminal Bawaan, sedangkan di Windows kamu bisa gunakan "Git Bash".
 
-Cara Install nya sebagai berikut:
-
 ```bash
 $ python3 -m pip install virtualenv
 $ virtualenv ../pelican-env; cd ..
