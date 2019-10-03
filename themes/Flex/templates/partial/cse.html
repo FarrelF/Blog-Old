@@ -1,6 +1,0 @@
-{% if GOOGLE_SEARCH.activate == True and GOOGLE_SEARCH.partner_id %}
-{% if GOOGLE_SEARCH.options.using_google_searchbox != True %}
-<script async src="https://cse.google.com/cse.js?cx={{ GOOGLE_SEARCH.partner_id }}"></script>
-{% endif %}
-<div class="{{ GOOGLE_SEARCH.options.search_style }}"></div>
-{% endif %}

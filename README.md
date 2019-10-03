@@ -25,35 +25,16 @@ Cara installnya mudah, Anda tinggal ikuti langkah-langkah berikut dengan Bash Sh
 
 **Catatan**: Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, kamu bisa gunakan Terminal Bawaan, sedangkan di Windows kamu bisa gunakan "Git Bash".
 
-Ada beberapa cara untuk meng-install dan membuat blog ini, salah satu nya berikut di bawah ini:
-
-### Metode 1: Menggunakan Python Pip secara langsung (Di rekomendasikan)
-
-Metode ini akan meng-install semua ketergantungan nya dengan memanfaatkan Python3 Pip. Tapi, dengan mengikuti cara ini, mungkin Anda tidak akan bisa membangun blog ini dengan menggunakan Gulp.js, yang mana nantinya akan memiliki fitur LiveReload, karena tidak ada Berkas JavaScript yang di eksekusi.
-
-Cara Install nya sebagai berikut:
-
 ```bash
 $ python3 -m pip install virtualenv
 $ virtualenv ../pelican-env; cd ..
-$ source pelican-env/bin/activate # Gunakan perintah 'source pelican-env/Scripts/activate' (tanpa kutip) jika Anda sedang menggunakan Windows
-$ pip install -r requirements.txt # Tambahkan parameter '--upgrade' (tanpa kutip) jika Anda ingin langsung memperbarui nya
-```
+$ source pelican-env/bin/activate; cd - # Gunakan perintah 'source pelican-env/Scripts/activate; cd -' (tanpa kutip) jika Anda sedang menggunakan Windows
+$ pip install -r requirements.txt
+$ invoke build_devtheme # Untuk membangun Tema nya
 
-### Metode 2: Menggunakan Yarn (Belum mendalaminya)
-
-**Catatan**: Cara ini belum saya dalami sepenuhnya, karena saya sendiri masih dalam tahap "baru belajar" tentang NodeJS dan Yarn Package Manager ini, hehe :grinning:. Jika tutorial ini terdapat kesalahan, silahkan Anda bantu kontribusikan kode/perbaikan nya. Untuk caranya, silahkan baca bagian ["Cara Kontribusi"](#cara-kontribusi).
-
-Anda juga bisa meng-install nya dengan menjalankan sebuah skrip yang di buat di dalam berkas `package.json`, dan setelahnya Anda akan meng-install semua ketergantungan JavaScript lain nya. 
-
-Jika Anda menggunakan metode ini, maka Anda bisa menggunakan Gulp.js untuk membangun blog ini, beserta Anda dapat menikmati fitur 'Live Reload' nya (berkat 'BrowserSync' yang ada di dalam Blog ini).
-
-Tapi, Anda mungkin perlu meng-install NodeJS dan Yarn Package Manager terlebih dahulu ke dalam Sistem Operasi Anda sebelum lanjut.
-
-Cara Install nya sebagai berikut:
-
-```bash
-$ yarn run install-nix # Gunakan 'install-win' untuk meng-installnya dari Windows, bukan 'install-nix' yang justru untuk Pengguna Sistem Operasi berbasis Unix/Unix-like
+## Jika Anda ingin menggunakan Gulp.js dan fitur 'Live Reload', silahkan eksekusi perintah berikut dengan terinstall NodeJS dan Yarn Package Manager ##
+$ yarn global add gulp-cli
+$ yarn install
 ```
 
 ## Setelah Meng-installnya
@@ -74,12 +55,6 @@ Atau, bisa melalui perintah berikut: (Selamat terinstall [GNU Make](https://www.
 $ make devserver
 ```
 
-Atau, menggunakan perintah berikut (Jika sudah terinstall Node.js, Yarn Package Manager, dan Gulp.js)
-
-```bash
-$ invoke build; gulp
-```
-
 Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu turuti, yaitu:
 
 1. Hasilkan Berkas HTML terlebih dahulu dengan Pelican, gunakan Perintah berikut:
@@ -92,6 +67,16 @@ Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu
 ```powershell
 > pelican --listen
 ```
+
+Atau, jika Anda tidak ingin repot-repot melakukan hal di atas pada Windows, serta ingin menikmati fitur 'Live Reload' yakni bisa Memuat Ulang Blog secara otomatis setelah perubahan, Anda bisa gunakan perintah berikut:
+
+**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, Yarn Package Manager, dan Gulp.js, serta sudah melakukan meng-install paket `gulp-cli` dan lain nya dengan Yarn, caranya ada [di atas](#cara-install))
+
+```bash
+$ invoke build; gulp
+```
+
+Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke, NodeJS dan Yarn Package Manager.
 
 Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:9001` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :slightly_smiling_face:
 
