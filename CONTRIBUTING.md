@@ -15,13 +15,16 @@ Jika Anda ingin berkontribusi dengan membantu konfigurasi Blog ini atau ikut ser
 
 4. Navigasikan *Shell* yang Anda gunakan ke dalam Folder Kode Sumber yang Anda klon tadi dengan perintah `cd`. 
 
-5. Lalu, ubah *Branch* nya menjadi `drafts` dengan perintah `git checkout drafts` di dalam Folder tersebut sebelum mengubah kode sumbernya.
+5. Lalu, buatlah sebuah *Branch* baru dari Repo yang Anda *fork* tadi, Anda bisa turunkan *Branch* tersebut dari `origin/drafts`.
 
-6. Ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
+6. Setelah Anda membuat *Branch* baru, silahkan alihkan ke *Branch* tersebut. Lalu, ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
 
-7. Lakukan *Staging*, buatlah sebuah *Commit* dan pesannya, lalu lakukan *Push*.
+7. (Opsional, tapi disarankan) Sebelum melakukan *Commit*, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan *Commit Signing* di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. Jika Anda berhasil, biasanya sebelum *Commit* Anda akan di minta untuk memasukkan *Passphrase* pada Kunci GPG nya, dan jika benar-benar berhasil, maka akan muncul 'Verified' pada *Commit* nya. Contoh: Coba Anda lihat log [*Commit*](https://github.com/FarrelF/FarrelF-Blog/commits/drafts) yang saya lakukan, Anda akan melihat kalau di sebelah nya ada tulisan 'Verified'
+Setelah mengaktifkan nya di dalam Git, pastikan Anda juga sudah mengaktifkan fitur *Git Commit Signing* di dalam Editor Teks/Kode Favorit Anda, karena terkadang opsi tersebut tidak di aktifkan secara bawaan (default), contoh: [Visual Studio Code](https://stealthpuppy.com/signing-git-commits-for-sweet-verified-badges/)
 
-8. Setelah itu, buatlah sebuah *Pull Request* jika Anda benar-benar ingin mengubah Kode Sumber ini. Dan, pastikan Anda membuatnya dari *Branch* `drafts` yang ada di dalam Repo *fork* Anda ke tujuan `FarrelF-Blog:drafts`, jangan ke yang lain nya.
+8. Lakukan *Staging*, buatlah sebuah *Commit* dan pesannya, lalu lakukan *Push*.
+
+9. Setelah Anda selesai, buatlah sebuah *Pull Request* jika Anda benar-benar ingin mengubah Kode Sumber ini. Dan, pastikan Anda membuatnya dari *Branch* yang Anda buat tadi di dalam Repo *fork* Anda ke tujuan `FarrelF-Blog:drafts`, jangan ke yang lain nya.
 
 
 **Catatan**
