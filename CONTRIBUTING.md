@@ -19,21 +19,33 @@ Jika Anda ingin berkontribusi dengan membantu konfigurasi Blog ini atau ikut ser
 
 6. Setelah Anda membuat *Branch* baru, silahkan alihkan ke *Branch* tersebut. Lalu, ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
 
-7. (Opsional, tapi disarankan) Sebelum melakukan *Commit*, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan *Commit Signing* di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. Jika Anda berhasil, biasanya sebelum *Commit* Anda akan di minta untuk memasukkan *Passphrase* pada Kunci GPG nya, dan jika benar-benar berhasil, maka akan muncul 'Verified' pada *Commit* nya. Contoh: Coba Anda lihat log [*Commit*](https://github.com/FarrelF/FarrelF-Blog/commits/drafts) yang saya lakukan, Anda akan melihat kalau di sebelah nya ada tulisan 'Verified'
-Setelah mengaktifkan nya di dalam Git, pastikan Anda juga sudah mengaktifkan fitur *Git Commit Signing* di dalam Editor Teks/Kode Favorit Anda, karena terkadang opsi tersebut tidak di aktifkan secara bawaan (default), contoh: [Visual Studio Code](https://stealthpuppy.com/signing-git-commits-for-sweet-verified-badges/)
+7. (Opsional, tapi disarankan) Sebelum melakukan *Commit*, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan *Commit Signing* di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. Untuk lebih lanjut, silahkan lihat sub-bagian di bawah.
 
 8. Lakukan *Staging*, buatlah sebuah *Commit* dan pesannya, lalu lakukan *Push*.
 
 9. Setelah Anda selesai, buatlah sebuah *Pull Request* jika Anda benar-benar ingin mengubah Kode Sumber ini. Dan, pastikan Anda membuatnya dari *Branch* yang Anda buat tadi di dalam Repo *fork* Anda ke tujuan `FarrelF-Blog:drafts`, jangan ke yang lain nya.
 
+### (Opsional, tapi disarankan) Membuat dan Menggunakan Kunci GPG untuk menandai setiap _Commit_ (_Commit Signing_)
+Melanjutkan No. 7. Sebelum melakukan *Commit*, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan *Commit Signing* di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. 
+
+Jika Anda berhasil, biasanya sebelum *Commit*, Anda akan di minta untuk memasukkan *Passphrase* pada Kunci GPG nya, dan jika benar-benar berhasil, maka akan muncul 'Verified' pada setiap *Commit* nya. Contoh nya: Coba Anda lihat log dari [*Commit*](https://github.com/FarrelF/FarrelF-Blog/commits/drafts) yang telah saya lakukan, Anda akan melihat kalau di sebelah nya ada tulisan 'Verified'.
+
+Setelah mengaktifkan nya di dalam Git, pastikan Anda juga sudah mengaktifkan fitur *Git Commit Signing* tersebut di dalam Editor Teks/Kode Favorit Anda, karena terkadang opsi tersebut tidak di aktifkan secara bawaan (default), contoh: [Visual Studio Code/VSCodium](https://stealthpuppy.com/signing-git-commits-for-sweet-verified-badges/) 
+
 
 **Catatan**
 
-Tema 'Flex' yang saya gunakan itu berada di dalam folder [`themes/Flex`](https://github.com/FarrelF/FarrelF-Blog/tree/master/themes/Flex) dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).
+~~Tema 'Flex' yang saya gunakan itu berada di dalam folder [`themes/Flex`](https://github.com/FarrelF/FarrelF-Blog/tree/master/themes/Flex) dan folder tersebut merupakan 'Subtree' dari Repo [`Modified-Repo`](https://github.com/FarrelF/Modified-Flex) yang saya turunkan dari Tema [Asli nya](https://github.com/alexandrevicenzi/Flex).
 
 Jadi, jika Anda ingin merubah Kode Sumber Tema nya, silahkan ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa mengubah nya dari situ.
 
-Sedangkan, jika Anda langsung mengubah kode sumber tema nya langsung melalui Repo ini (dan *fork* nya), silahkan tanggung sendiri resiko nya dan kalo Anda mengirimkan *Pull Request* dengan perubahan seperti ini, maka saya akan pertimbangkan untuk menolak nya secara mentah-mentah atau meng-hapus perubahan tersebut. Jadi, jangan kaget, yah :blush:
+Sedangkan, jika Anda langsung mengubah kode sumber tema nya langsung melalui Repo ini (dan *fork* nya), silahkan tanggung sendiri resiko nya dan kalo Anda mengirimkan *Pull Request* dengan perubahan seperti ini, maka saya akan pertimbangkan untuk menolak nya secara mentah-mentah atau meng-hapus perubahan tersebut. Jadi, jangan kaget, yah :blush:~~
+
+PEMBARUAN 03 Oktober 2019: Untuk sekarang ini, saya tidak akan menggunakan Git Subtree lagi untuk menyimpan Tema yang saya gunakan, melainkan saya meng-kloning nya dari *Repository* GitHub saat saya men-*deploy* nya dengan Netlify. Hal ini agar saya tidak perlu lagi repot-repot melakukan `git subtree pull` lagi setiap pembaruan pada Tema.
+
+Tapi, tetap saja, jika Anda ingin memodifikasi tema nya, silahkan Anda ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa memodifikasi nya dari situ.
+
+Dan, (mungkin) saya juga tidak akan menerima segala penambahan Tema di dalam Repo ini, bahkan jika Anda buat sendiri sekalipun. Jadi, jika Anda ingin membuat Tema, silahkan buat itu di dalam Repo Anda sendiri dan itung-itungan juga Anda berkontribusi terhadap Pelican dan pengguna SSG Pelican lain nya, jika tema yang Anda buat itu memiliki fitur dan tampilan (yang menurut saya) itu menarik, maka akan saya gunakan.
 
 ## Cara 2: Melakukan Donasi
 Anda bisa menyisihkan sedikit uang Anda untuk mendonasikan nya sebagai kontribusi Anda untuk Blog ini. 
