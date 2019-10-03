@@ -4,3 +4,4 @@
 
 # Di bawah ini adalah laman yang di alihkan ke Laman 404
 /404*       /404.html   404!
+/404.*      /404.html   404!
