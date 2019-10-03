@@ -6,10 +6,24 @@ article.single p {
     text-align: justify;
 }
 
-.search-query {
-    margin: 0 8% 2%;
+.search-input {
+    width: 75%;
+    margin: 0;
+    line-height: normal !important;
+}
+
+.btn-search {
+    display: inline-block;
+    margin: 0;
+    line-height: normal !important;
+}
+
+.btn-search::-moz-focus-inner,
+.search-input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
 }
 
 div.google-cse-search-box {
-    margin: 0 8% 2%;
+    margin: 0 2%;
 }
