@@ -34,7 +34,7 @@ Jika Anda perlu menghubungi saya secara langsung, bisa langsung Anda mengisi For
 Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunakan lampiran dan sebagai nya, bisa Anda langsung kirimkan pesan Anda ke Alamat Surel saya di atas.
 
 ## Form Kontak
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<form name="contact" class="contact-form" id="contact-form" method="POST" data-netlify="true" netlify-recaptcha="true" netlify-honeypot="bot-field">
     <fieldset>
         <p class="hidden">
           <label>Jangan Isikan ini jika Anda adalah manusia: </label><br>
@@ -66,8 +66,15 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
           </p>
         </p>
         <p>
-          <button type="submit" id="submit">Kirim</button> 
+          <div class="control">
+            <button class="g-recaptcha" data-sitekey="6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk" data-callback="onSubmit" type="submit" id="submit">Kirim</button> 
+          </div>
           <button type="reset">Set Ulang Form</button>
+        </p>
+        <p>
+          <label style="font-weight: bold;">Catatan:</label> Formulir ini di proteksi oleh Google reCAPTCHA v2, sebelum melanjutkan, silahkan lihat/baca <a class="p__a" href="https://www.google.com/intl/en/policies/privacy/" target="_blank" rel="external">Kebijakan Privasi</a>
+          dan
+          <a class="p__a" href="https://www.google.com/intl/en/policies/terms/" target="_blank" rel="external">Syarat dan Ketentuan nya</a> terlebih dahulu.
         </p>
     </fieldset>
 </form>
