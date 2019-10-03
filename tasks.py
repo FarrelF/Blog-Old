@@ -45,6 +45,12 @@ def build(c):
     c.run('pelican {content_path} -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
+def build_devtheme(c):
+    """Build Development Theme for Development Usage"""
+    c.run('git clone https://github.com/FarrelF/Modified-Flex.git themes/Flex')
+    c.run('pelican-themes -i themes/Flex')
+
+@task
 def rebuild(c):
     """`build` with the delete switch"""
     c.run('pelican {content_path} -d -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
@@ -113,7 +119,7 @@ def livereload(c):
 def theme_sync(c):
     """Make a fresh shallow copy of Modified-Flex theme"""
     c.run("rm -rf themes")
-    c.run("git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/FarrelF/Modified-Flex themes/Flex")
+    c.run("git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/FarrelF/Modified-Flex.git themes/Flex")
 
 @task
 def publish(c):

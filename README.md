@@ -38,6 +38,7 @@ $ python3 -m pip install virtualenv
 $ virtualenv ../pelican-env; cd ..
 $ source pelican-env/bin/activate # Gunakan perintah 'source pelican-env/Scripts/activate' (tanpa kutip) jika Anda sedang menggunakan Windows
 $ pip install -r requirements.txt # Tambahkan parameter '--upgrade' (tanpa kutip) jika Anda ingin langsung memperbarui nya
+$ invoke build_devtheme # Untuk membangun Tema nya
 ```
 
 ### Metode 2: Menggunakan Yarn (Belum mendalaminya)
