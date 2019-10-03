@@ -68,13 +68,11 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
         <p>
           <div class="control">
             <button class="g-recaptcha" data-sitekey="6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk" data-callback="onSubmit" type="submit" id="submit">Kirim</button> 
+            <button type="reset">Set Ulang Form</button>
           </div>
-          <button type="reset">Set Ulang Form</button>
         </p>
         <p>
-          <label style="font-weight: bold;">Catatan:</label> Formulir ini di proteksi oleh Google reCAPTCHA v2, sebelum melanjutkan, silahkan lihat/baca <a class="p__a" href="https://www.google.com/intl/en/policies/privacy/" target="_blank" rel="external">Kebijakan Privasi</a>
-          dan
-          <a class="p__a" href="https://www.google.com/intl/en/policies/terms/" target="_blank" rel="external">Syarat dan Ketentuan nya</a> terlebih dahulu.
+          <label style="font-weight: bold;">Catatan:</label> Formulir ini di proteksi oleh Google reCAPTCHA v2, sebelum melanjutkan, silahkan lihat/baca <a class="p__a" href="https://www.google.com/intl/en/policies/privacy/" target="_blank" rel="external">Kebijakan Privasi</a> dan <a class="p__a" href="https://www.google.com/intl/en/policies/terms/" target="_blank" rel="external">Syarat dan Ketentuan nya</a> terlebih dahulu.
         </p>
     </fieldset>
 </form>
