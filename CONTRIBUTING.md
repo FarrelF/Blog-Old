@@ -45,8 +45,6 @@ Setelah mengaktifkan nya di dalam Git, pastikan Anda juga sudah mengaktifkan fit
 
 Tapi, tetap saja, jika Anda ingin memodifikasi tema nya, silahkan Anda ubah itu melalui Repo [`Modified-Flex`](https://github.com/FarrelF/Modified-Flex) dan Anda bisa memodifikasi nya dari situ.
 
-Dan, (mungkin) saya juga tidak akan menerima segala penambahan Tema di dalam Repo ini, bahkan jika Anda buat sendiri sekalipun. Jadi, jika Anda ingin membuat Tema, silahkan buat itu di dalam Repo Anda sendiri dan itung-itungan juga Anda berkontribusi terhadap Pelican dan pengguna SSG Pelican lain nya, jika tema yang Anda buat itu memiliki fitur dan tampilan (yang menurut saya) itu menarik, maka akan saya gunakan.
-
 ## Cara 2: Melakukan Donasi
 Anda bisa menyisihkan sedikit uang Anda untuk mendonasikan nya sebagai kontribusi Anda untuk Blog ini. 
 
