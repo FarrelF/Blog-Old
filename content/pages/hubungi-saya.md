@@ -67,7 +67,7 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
         </p>
         <p>
           <div class="control">
-            <button class="g-recaptcha" data-sitekey="6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk" data-callback="onSubmit" type="submit" id="submit">Kirim</button> 
+            <button type="submit" id="submit">Kirim</button> 
             <button type="reset">Set Ulang Form</button>
           </div>
         </p>
