@@ -65,7 +65,7 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
             <input type="checkbox" name="morality" value="agree" required> <label>Dengan mencentang dan mengirimkan Informasi ini, maka berarti Anda menyetujui segala aturan yang "tidak tertulis" disini.</label>
           </p>
         </p>
-        <div class="g-recaptcha" data-sitekey="6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk" data-callback="onSubmit">
+        <div class="g-recaptcha" data-sitekey="6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk" data-size="invisible" data-callback="onSubmit">
         </div>
         <p>
           <button type="submit" id="submit">Kirim</button> 
