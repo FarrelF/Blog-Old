@@ -34,15 +34,16 @@ Jika Anda perlu menghubungi saya secara langsung, bisa langsung Anda mengisi For
 Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunakan lampiran dan sebagai nya, bisa Anda langsung kirimkan pesan Anda ke Alamat Surel saya di atas.
 
 ## Form Kontak
-<form name="contact" class="contact-form" id="contact-form" method="POST" data-netlify="true" netlify-recaptcha="true" netlify-honeypot="bot-field">
+
+<form name="contact" class="contact-form" id="contact-form" method="POST" data-netlify="true" netlify-recaptcha="true" netlify-honeypot="required_field">
     <fieldset>
         <p class="hidden">
           <label>Jangan Isikan ini jika Anda adalah manusia: </label><br>
-          <input name="bot-field" />
+          <input name="required_field" />
         </p>
         <p>
           <label>Nama Anda: </label> <label class="guide-text">(wajib)</label><br>
-          <input type="text" style="width: 50%;" name="name" required />
+          <input type="text" name="name" required />
         </p>
         <p>
           <label>Alamat Surel Anda:</label> <label class="guide-text">(wajib)</label><br>
@@ -62,7 +63,7 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
             <input type="checkbox" name="terms" value="agree" required> <label>Dengan mencentang dan mengirimkan Informasi ini, maka berarti Anda menyetujui <a href="https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan">ketentuan yang berlaku disini</a></label>
           </p>
           <p>
-            <input type="checkbox" name="morality" value="agree" required> <label>Dengan mencentang dan mengirimkan Informasi ini, maka berarti Anda menyetujui segala aturan yang "tidak tertulis" disini.</label>
+            <input type="checkbox" name="morality" value="agree" required> <label>Dengan mencentang dan mengirimkan Informasi ini, maka berarti Anda menyetujui segala aturan yang "tidak tertulis" atau tidak saya tulis di blog ini.</label>
           </p>
         </p>
         <div class="g-recaptcha" data-sitekey="6Ldh-TAUAAAAAE468ek0vOM2Mc-BSsKFbA-XkErJ" data-callback="onSubmit">
@@ -72,7 +73,7 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
           <button type="reset">Set Ulang Form</button>
         </p>
         <p>
-          <label style="font-weight: bold;">Catatan:</label> Formulir ini di proteksi oleh Google reCAPTCHA v2, sebelum melanjutkan, silahkan lihat/baca <a class="p__a" href="https://www.google.com/intl/en/policies/privacy/" target="_blank" rel="external">Kebijakan Privasi</a> dan <a class="p__a" href="https://www.google.com/intl/en/policies/terms/" target="_blank" rel="external">Syarat dan Ketentuan nya</a> terlebih dahulu.
+          <label style="font-weight: bold;">Catatan:</label> Formulir ini di proteksi oleh Google reCAPTCHA v2, sebelum melanjutkan, silahkan lihat/baca <a class="p__a" href="https://policies.google.com/privacy" target="_blank" rel="external">Kebijakan Privasi</a> dan <a class="p__a" href="https://policies.google.com/terms" target="_blank" rel="external">Syarat dan Ketentuan nya</a> terlebih dahulu.
         </p>
     </fieldset>
 </form>
