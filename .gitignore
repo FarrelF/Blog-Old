@@ -3,6 +3,7 @@
 *.lock
 *.log
 !yarn.lock
+!pipfile.lock
 *.DS_Store
 *.swp
 .sw*
