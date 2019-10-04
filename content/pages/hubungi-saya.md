@@ -65,11 +65,11 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
             <input type="checkbox" name="morality" value="agree" required> <label>Dengan mencentang dan mengirimkan Informasi ini, maka berarti Anda menyetujui segala aturan yang "tidak tertulis" disini.</label>
           </p>
         </p>
+        <div class="g-recaptcha" data-sitekey="6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk" data-callback="onSubmit">
+        </div>
         <p>
-          <div class="g-recaptcha" data-sitekey="6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk" data-callback="onSubmit">
-            <button type="submit" id="submit">Kirim</button> 
-            <button type="reset">Set Ulang Form</button>
-          </div>
+          <button type="submit" id="submit">Kirim</button> 
+          <button type="reset">Set Ulang Form</button>
         </p>
         <p>
           <label style="font-weight: bold;">Catatan:</label> Formulir ini di proteksi oleh Google reCAPTCHA v2, sebelum melanjutkan, silahkan lihat/baca <a class="p__a" href="https://www.google.com/intl/en/policies/privacy/" target="_blank" rel="external">Kebijakan Privasi</a> dan <a class="p__a" href="https://www.google.com/intl/en/policies/terms/" target="_blank" rel="external">Syarat dan Ketentuan nya</a> terlebih dahulu.
