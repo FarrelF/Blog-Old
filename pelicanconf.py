@@ -185,7 +185,7 @@ AUTHOR_FEED_RSS = None
 
 GOOGLE_RECAPTCHA = {
     'activate': True,
-    'site_key': '6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk',
+    'site_key': '6Ldh-TAUAAAAAE468ek0vOM2Mc-BSsKFbA-XkErJ',
     'forms_id': {
         'hubungi-saya': 'contact-form'
     }

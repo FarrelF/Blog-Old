@@ -3,7 +3,7 @@
   publish = "output"
 
 [build.environment]
-  SITE_RECAPTCHA_KEY = "6Lem_TAUAAAAAPg4MkoXqxCGXkU7DNoCC0Jollvk"
+  SITE_RECAPTCHA_KEY = "6Ldh-TAUAAAAAE468ek0vOM2Mc-BSsKFbA-XkErJ"
   TZ = "Asia/Jakarta"
   LANGUAGE = "id_ID:id"
   LC_ALL = "id_ID.utf8"
