@@ -15,10 +15,19 @@ DEVPUBLISHCONF=$(BASEDIR)/dev_publishconf.py
 
 GITHUB_PAGES_BRANCH=gh-pages
 
+INSTALLER ?= pipenv
+INSTALLOPT=
+WITH_YARN ?= 0
+
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
+endif
+
+REBUILD ?= 0
+ifeq ($(REBUILD), 1)
+	PELICANOPTS += --delete-output-directory
 endif
 
 RELATIVE ?= 0
@@ -35,24 +44,35 @@ ifeq ($(origin SERVER),undefined)
 endif
 
 help:
-	@echo 'Makefile for a pelican Web site                                           '
-	@echo '                                                                          '
-	@echo 'Usage:                                                                    '
-	@echo '   make html                           (re)generate the web site          '
-	@echo '   make clean                          remove the generated files         '
-	@echo '   make regenerate                     regenerate files upon modification '
-	@echo '   make publish                        generate using production settings '
-	@echo '   make preview                        Make/Generate a Preview Website/Blog before you can Publish it'
-	@echo '   make serve [PORT=$(PORT)]              serve site at http://localhost:$(PORT)'
-	@echo '   make serve-global [SERVER=$(SERVER)]  serve (as root) to $(SERVER):80  '
-	@echo '   make devserver [PORT=$(PORT)]          serve and regenerate together      '
-	@echo '   make devtheme                       Build the Theme for Development    '
-	@echo '   make static-files                   make devtheme + make html          '
-	@echo '   make github                         upload the web site via gh-pages   '
-	@echo '                                                                          '
-	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
-	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
-	@echo '                                                                          '
+	@echo 'Makefile for a pelican Web site                                                                                '
+	@echo '                                                                                                               '
+	@echo 'Usage:                                                                                                         '
+	@echo '   make install                                  Install the packages and all of its dependencies (with Pipenv)'
+	@echo '   make html [REBUILD=0]                         (re)generate the web site                                     '
+	@echo '   make clean                                    remove the generated files                                    '
+	@echo '   make regenerate [REBUILD=0]                   regenerate files upon modification                            '
+	@echo '   make publish [REBUILD=0]                      generate using production settings                            '
+	@echo '   make preview [REBUILD=0]                      Make/Generate a Preview Website/Blog before you can Publish it'
+	@echo '   make serve [PORT=$(PORT)]                        serve site at http://localhost:$(PORT)                     '
+	@echo '   make serve-global [SERVER=$(SERVER)]            serve (as root) to $(SERVER):80                             '
+	@echo '   make devserver [REBUILD=0] [PORT=$(PORT)]        serve and regenerate together                              '
+	@echo '   make devtheme                                 Build the Theme for Development                               '
+	@echo '   make static-files [REBUILD=0]                 make devtheme + make html                                     '
+	@echo '   make github                                   upload the web site via gh-pages                              '
+	@echo '                                                                                                               '
+	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html                                        '
+	@echo 'Set the RELATIVE variable to 1 to enable relative urls                                                         '
+	@echo 'Set the REBUILD variable to 1 to Delete Output first before building                                           '
+
+install:
+	@echo 'Installing the Website/Blog packages and its dependencies, please wait....'
+ifeq ($(WITH_YARN), 1)
+	$(INSTALLER) install; $(INSTALLER) shell
+	yarn install
+else
+	$(INSTALLER) install; $(INSTALLER) shell
+endif
+
 
 html:
 	@echo 'Making HTML Files to Output Directory....'
@@ -106,4 +126,4 @@ github: publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 
-.PHONY: html help clean regenerate serve serve-global devserver devtheme static-files publish preview github
+.PHONY: install html help clean regenerate serve serve-global devserver devtheme static-files publish preview github

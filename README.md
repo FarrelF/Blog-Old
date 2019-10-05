@@ -39,7 +39,7 @@ Cara installnya mudah, Anda tinggal navigasikan ke dalam Folder Kode Sumber deng
 
 ```bash
 $ pipenv install; pipenv shell
-$ invoke devtheme # Untuk membangun Tema nya, atau 'invoke static kalo mau langsung membangun Web/Blog nya dan Tema nya juga
+$ invoke devtheme # Untuk membangun Tema nya, atau 'invoke static' kalo mau langsung membangun Web/Blog nya dan Tema nya juga
 $ yarn install # Opsional
 ```
 
@@ -49,6 +49,12 @@ Atau, jika di dalam Sistem Operasi kamu terinstall [GNU Make](https://www.gnu.or
 $ pipenv install; pipenv shell
 $ make devtheme # Untuk membangun Tema nya, atau 'make static-files' kalo mau langsung membangun Web/Blog nya dan Tema nya juga
 $ yarn install # Opsional
+```
+
+Kalau Anda ingin Gulp.js ini bisa di eksekusi di mana saja, selain di dalam Folder Kode Sumber saja, Anda bisa install paket `gulp-cli` ini di dalam Sistem Operasi Anda dengan perintah berikut:
+
+```bash
+$ yarn add global gulp-cli
 ```
 
 ## Setelah Meng-installnya
@@ -84,16 +90,16 @@ Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu
 
 Atau, jika Anda tidak ingin repot-repot melakukan hal di atas pada Windows, serta ingin menikmati fitur 'Live Reload' yakni bisa Memuat Ulang Blog secara otomatis setelah perubahan, Anda bisa gunakan perintah berikut:
 
-**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, dan Yarn Package Manager, serta sudah melakukan instalasi ketergantungan/pustaka JavaScript lain nya (seperti Gulp.js dan `gulp-cli`) dengan Yarn, caranya ada [di atas](#cara-install).
+**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, dan Yarn Package Manager, serta sudah melakukan instalasi ketergantungan/pustaka JavaScript lain nya (seperti Gulp.js) dengan Yarn, caranya ada [di atas](#cara-install).
 
 ```bash
-$ invoke build; gulp
+$ yarn invoke-devserver
 ```
 
 Atau, jika kamu terinstall [GNU Make](https://www.gnu.org/software/make/), maka kamu bisa ikuti perintah berikut:
 
 ```bash
-$ make html; gulp
+$ yarn make-devserver
 ```
 
 Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke atau GNU Make, NodeJS dan Yarn Package Manager.
