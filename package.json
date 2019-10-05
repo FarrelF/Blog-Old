@@ -1,17 +1,13 @@
 {
     "name": "farrelf-blog",
     "dependencies": {
-        "@semantic-release/changelog": "^3.0.4",
-        "@semantic-release/exec": "^3.3.5",
-        "@semantic-release/git": "^7.0.16",
         "babel-core": "^6.26.3",
         "babel-preset-es2015": "^6.24.1",
         "browser-sync": "^2.26.7",
         "cz-conventional-changelog": "^2.1.0",
         "gulp": "^4.0.2",
         "gulp-cli": "^2.2.0",
-        "mem": "^4.0.0",
-        "semantic-release": "^15.13.18"
+        "mem": "^4.0.0"
     },
     "config": {
         "commitizen": {
@@ -24,9 +20,7 @@
         "url": "git+https://github.com/FarrelF/FarrelF-Blog.git"
     },
     "scripts": {
-        "build": "python3 -m pip install -r requirements.txt; invoke publish; mv output publish",
-        "install-win": "python -m pip install virtualenv; yarn install; virtualenv ../pelican-env; cd ..; source pelican-env/Scripts/activate; pip install -r requirements.txt",
-        "install-nix": "python3 -m pip install virtualenv; yarn install; virtualenv ../pelican-env; cd ..; source pelican-env/bin/activate; pip install -r requirements.txt"
+        "build": "pipenv install; invoke publish; mv output publish"
     },
     "babel": {
         "presets": [

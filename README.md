@@ -9,6 +9,16 @@ Kode Sumber ini hanya berguna untuk menghasilkan berkas HTML statis saja, dan in
 
 Untuk menghasilkan konten yang kemudian di sebar melalui Internet, saya men-*deploy* kode sumber ini ke Netlify, lalu mereka lah yang menghasilkan berkas HTML statis di dalam nya, yang kemudian di sebar ke Internet.
 
+## Persyaratan
+Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yakni ter-installnya:
+
+- Python 3.7 atau di atasnya: https://www.python.org/downloads/
+- Pipenv: https://pipenv.readthedocs.io/en/latest/
+- NodeJS: https://nodejs.org/en/download/ (Opsional, tapi disarankan)
+- Yarn Package Manager: https://yarnpkg.com/lang/en/docs/install/ (Opsional, tapi disarankan setelah sudah ter-install NodeJS)
+
+Di dalam Sistem Operasi Anda.
+
 ## Cara Memperoleh nya
 Untuk memperoleh nya, Anda bisa Unduh Kode Sumber nya dengan meng-klik pada *Button* 'Clone & Download', lalu kamu klik 'Download ZIP' untuk mengunduh nya sebagai ZIP.
 
@@ -21,20 +31,14 @@ $ git clone https://github.com/FarrelF/FarrelF-Blog.git
 Setelah Anda meng-kloning nya, terutama dengan perintah di atas, kode sumber akan secara otomatis tersimpan di dalam Folder yang bernama `FarrelF-Blog`.
 
 ## Cara Install
-Cara installnya mudah, Anda tinggal ikuti langkah-langkah berikut dengan Bash Shell:
+Cara installnya mudah, Anda tinggal navigasikan ke dalam Folder Kode Sumber dengan perintah `cd`, lalu ikuti langkah-langkah berikut dengan Bash Shell:
 
 **Catatan**: Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, kamu bisa gunakan Terminal Bawaan, sedangkan di Windows kamu bisa gunakan "Git Bash".
 
 ```bash
-$ python3 -m pip install virtualenv
-$ virtualenv ../pelican-env; cd ..
-$ source pelican-env/bin/activate; cd - # Gunakan perintah 'source pelican-env/Scripts/activate; cd -' (tanpa kutip) jika Anda sedang menggunakan Windows
-$ pip install -r requirements.txt
+$ pipenv install
 $ invoke build_devtheme # Untuk membangun Tema nya
-
-## Jika Anda ingin menggunakan Gulp.js dan fitur 'Live Reload', silahkan eksekusi perintah berikut dengan terinstall NodeJS dan Yarn Package Manager ##
-$ yarn global add gulp-cli
-$ yarn install
+$ yarn install # Opsional
 ```
 
 ## Setelah Meng-installnya
@@ -86,8 +90,8 @@ Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman
 Jika Anda ingin Berkontribusi terhadap Blog ini, Anda bisa baca/lihat [Panduan Kontribusi](https://github.com/FarrelF/FarrelF-Blog/blob/master/CONTRIBUTING.md) untuk mengetahui cara nya, karena banyak sekali yang saya bahas disitu.
 
 ## Lisensi
-Kode Sumber ini saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
+Kode Sumber ini, kecuali untuk sub-folder `article` dan `pages` yang berada di dalam folder `content`, saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
 
-Sedangkan konten yang ada di dalam blog ini, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
+Sedangkan konten yang ada di dalam blog ini dan sisanya, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
 
 Untuk lebih lengkap nya, silahkan kunjungi Laman [Lisensi](https://farrel.franqois.id/lisensi) di dalam Blog Saya :slightly_smiling_face:
