@@ -24,12 +24,14 @@ Blog ini dan konten nya saya rilis di bawah lisensi berikut:
 - Mungkin, untuk Gambar, Illustrasi, Grafis atau/dan referensi lain nya yang telah saya dapatkan dari Situs Web/Blog lain akan menggunakan Lisensi yang berbeda. Oleh karena itu, sebagai kredit (jika di izinkan), saya akan berikan atribusi berupa pencantuman Judul/Nama dari Gambar/Illustrasi/Grafis, Pembuat nya, Sumber Gambar dan juga Lisensi yang di gunakan nya di akhir artikel/laman.
 
 
-### Merek Dagang Netlify, Cloudflare dan lain nya
+### Merek Dagang Google, Cloudflare, Netlify dan lain nya
+Google AdSense&trade;, Google Custom Search&trade;, Google Site Search&trade;, Google Analytics&trade;, serta [produk, layanan atau/dan fitur dari Google lain nya](https://www.google.com/permissions/trademark/trademark-list/) dan Logo Google, serta produk, layanan dan fitur-fitur nya merupakan Merek Dagang, Merek Dagang Terdaftar, atau/dan Pakaian Dagang dari Google, LLC.
+
+Cloudflare&reg;, Cloudflare logo&reg;, 1.1.1.1&trade;, Cloudflare Registrar&trade;, serta [produk dan layanan dari Cloudflare lain nya](https://www.cloudflare.com/trademark/) merupakan Merek Dagang, Merek Dagang Terdaftar, atau/dan Pakaian Dagang dari Cloudflare, Inc. 
+
 Netlify&reg;, Logo, Produk dan Layanan lain nya merupakan Merek Dagang Terdaftar atau/dan Pakaian Dagang dari Netlify, Inc. (Sebelumnya: MakerLoop, Inc.).
 
-Cloudflare&reg;, Cloudflare logo&reg;, 1.1.1.1&trade;, Cloudflare Registrar&trade;, serta [produk dan layanan dari Cloudflare lain nya](https://www.cloudflare.com/trademark/) merupakan Merek Dagang, Merek Dagang Terdaftar, atau/dan Pakaian Dagang dari Cloudflare, Inc. atau/dan afiliasi nya yang berada di Negara Amerika Serikat atau/dan di Negara lain nya.
-
-Semua merek dagang lain yang bukan milik Netlify, Cloudflare atau/dan afiliasi nya yang mungkin muncul di blog ini adalah milik dari pemilik nya masing-masing, baik yang mungkin atau mungkin tidak berafiliasi dengan, terhubung dengan, atau disponsori oleh Netlify, Cloudflare atau/dan afiliasinya.
+Semua merek dagang lain yang bukan milik Google, Cloudflare, Netlify atau/dan afiliasi nya yang mungkin muncul di blog ini adalah milik dari pemilik nya masing-masing, baik yang mungkin atau mungkin tidak berafiliasi dengan, terhubung dengan, atau disponsori oleh Google, Cloudflare, Netlify atau/dan afiliasinya.
 
 
 ## Sanggahan (Peyangkalan)

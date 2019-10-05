@@ -12,10 +12,12 @@ Untuk menghasilkan konten yang kemudian di sebar melalui Internet, saya men-*dep
 ## Persyaratan
 Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yakni ter-installnya:
 
+- Git: https://git-scm.com/downloads (Jelas, wajib!)
 - Python 3.7 atau di atasnya: https://www.python.org/downloads/
 - Pipenv: https://pipenv.readthedocs.io/en/latest/
 - NodeJS: https://nodejs.org/en/download/ (Opsional, tapi disarankan)
 - Yarn Package Manager: https://yarnpkg.com/lang/en/docs/install/ (Opsional, tapi disarankan setelah sudah ter-install NodeJS)
+- GNU Make: https://www.gnu.org/software/make/ (Opsional, tapi di sarankan, meski ada alternatif nya, yakni 'Python Invoke')
 
 Di dalam Sistem Operasi Anda.
 
@@ -36,8 +38,16 @@ Cara installnya mudah, Anda tinggal navigasikan ke dalam Folder Kode Sumber deng
 **Catatan**: Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, kamu bisa gunakan Terminal Bawaan, sedangkan di Windows kamu bisa gunakan "Git Bash".
 
 ```bash
-$ pipenv install
-$ invoke build_devtheme # Untuk membangun Tema nya
+$ pipenv install; pipenv shell
+$ invoke devtheme # Untuk membangun Tema nya, atau 'invoke static kalo mau langsung membangun Web/Blog nya dan Tema nya juga
+$ yarn install # Opsional
+```
+
+Atau, jika di dalam Sistem Operasi kamu terinstall [GNU Make](https://www.gnu.org/software/make/), maka kamu bisa ikuti cara nya berikut:
+
+```bash
+$ pipenv install; pipenv shell
+$ make devtheme # Untuk membangun Tema nya, atau 'make static-files' kalo mau langsung membangun Web/Blog nya dan Tema nya juga
 $ yarn install # Opsional
 ```
 
@@ -53,7 +63,7 @@ Di dalam GNU/Linux atau macOS (Atau, Sistem Operasi berbasis Unix-like/Unix lain
 $ pelican --autoreload --listen
 ```
 
-Atau, bisa melalui perintah berikut: (Selamat terinstall [GNU Make](https://www.gnu.org/software/make/) di dalam Sistem)
+Atau, bisa melalui perintah berikut: (Selama terinstall [GNU Make](https://www.gnu.org/software/make/) di dalam Sistem)
 
 ```bash
 $ make devserver
@@ -74,13 +84,19 @@ Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu
 
 Atau, jika Anda tidak ingin repot-repot melakukan hal di atas pada Windows, serta ingin menikmati fitur 'Live Reload' yakni bisa Memuat Ulang Blog secara otomatis setelah perubahan, Anda bisa gunakan perintah berikut:
 
-**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, Yarn Package Manager, dan Gulp.js, serta sudah melakukan meng-install paket `gulp-cli` dan lain nya dengan Yarn, caranya ada [di atas](#cara-install))
+**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, dan Yarn Package Manager, serta sudah melakukan instalasi ketergantungan/pustaka JavaScript lain nya (seperti Gulp.js dan `gulp-cli`) dengan Yarn, caranya ada [di atas](#cara-install).
 
 ```bash
 $ invoke build; gulp
 ```
 
-Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke, NodeJS dan Yarn Package Manager.
+Atau, jika kamu terinstall [GNU Make](https://www.gnu.org/software/make/), maka kamu bisa ikuti perintah berikut:
+
+```bash
+$ make html; gulp
+```
+
+Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke atau GNU Make, NodeJS dan Yarn Package Manager.
 
 Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:9001` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :slightly_smiling_face:
 
