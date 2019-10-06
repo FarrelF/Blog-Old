@@ -9,6 +9,18 @@ Kode Sumber ini hanya berguna untuk menghasilkan berkas HTML statis saja, dan in
 
 Untuk menghasilkan konten yang kemudian di sebar melalui Internet, saya men-*deploy* kode sumber ini ke Netlify, lalu mereka lah yang menghasilkan berkas HTML statis di dalam nya, yang kemudian di sebar ke Internet.
 
+## Persyaratan
+Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yakni ter-installnya:
+
+- Git: https://git-scm.com/downloads (Jelas, wajib!)
+- Python 3.7 atau di atasnya: https://www.python.org/downloads/
+- Pipenv: https://pipenv.readthedocs.io/en/latest/
+- NodeJS: https://nodejs.org/en/download/ (Opsional, tapi disarankan)
+- Yarn Package Manager: https://yarnpkg.com/lang/en/docs/install/ (Opsional, tapi disarankan setelah sudah ter-install NodeJS)
+- GNU Make: https://www.gnu.org/software/make/ (Opsional, tapi di sarankan, meski ada alternatif nya, yakni 'Python Invoke')
+
+Di dalam Sistem Operasi Anda.
+
 ## Cara Memperoleh nya
 Untuk memperoleh nya, Anda bisa Unduh Kode Sumber nya dengan meng-klik pada *Button* 'Clone & Download', lalu kamu klik 'Download ZIP' untuk mengunduh nya sebagai ZIP.
 
@@ -21,20 +33,28 @@ $ git clone https://github.com/FarrelF/FarrelF-Blog.git
 Setelah Anda meng-kloning nya, terutama dengan perintah di atas, kode sumber akan secara otomatis tersimpan di dalam Folder yang bernama `FarrelF-Blog`.
 
 ## Cara Install
-Cara installnya mudah, Anda tinggal ikuti langkah-langkah berikut dengan Bash Shell:
+Cara installnya mudah, Anda tinggal navigasikan ke dalam Folder Kode Sumber dengan perintah `cd`, lalu ikuti langkah-langkah berikut dengan Bash Shell:
 
 **Catatan**: Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, kamu bisa gunakan Terminal Bawaan, sedangkan di Windows kamu bisa gunakan "Git Bash".
 
 ```bash
-$ python3 -m pip install virtualenv
-$ virtualenv ../pelican-env; cd ..
-$ source pelican-env/bin/activate; cd - # Gunakan perintah 'source pelican-env/Scripts/activate; cd -' (tanpa kutip) jika Anda sedang menggunakan Windows
-$ pip install -r requirements.txt
-$ invoke build_devtheme # Untuk membangun Tema nya
+$ pipenv install; pipenv shell
+$ invoke devtheme # Untuk membangun Tema nya, atau 'invoke static' kalo mau langsung membangun Web/Blog nya dan Tema nya juga
+$ yarn install # Opsional
+```
 
-## Jika Anda ingin menggunakan Gulp.js dan fitur 'Live Reload', silahkan eksekusi perintah berikut dengan terinstall NodeJS dan Yarn Package Manager ##
-$ yarn global add gulp-cli
-$ yarn install
+Atau, jika di dalam Sistem Operasi kamu terinstall [GNU Make](https://www.gnu.org/software/make/), maka kamu bisa ikuti cara nya berikut:
+
+```bash
+$ pipenv install; pipenv shell
+$ make devtheme # Untuk membangun Tema nya, atau 'make static-files' kalo mau langsung membangun Web/Blog nya dan Tema nya juga
+$ yarn install # Opsional
+```
+
+Sebagai tambahan, jika Anda berniat ingin menggunakan Kode Sumber ini untuk tujuan Pengembangan (entah itu Modifikasi, ingin Berkontribusi Kode, dll), setelah Anda meng-install nya dengan salah satu cara di atas, Anda bisa meng-install semua keperluan nya dengan perintah berikut di dalam Kode Sumber nya:
+
+```bash
+$ pipenv install --dev
 ```
 
 ## Setelah Meng-installnya
@@ -49,7 +69,7 @@ Di dalam GNU/Linux atau macOS (Atau, Sistem Operasi berbasis Unix-like/Unix lain
 $ pelican --autoreload --listen
 ```
 
-Atau, bisa melalui perintah berikut: (Selamat terinstall [GNU Make](https://www.gnu.org/software/make/) di dalam Sistem)
+Atau, bisa melalui perintah berikut: (Selama terinstall [GNU Make](https://www.gnu.org/software/make/) di dalam Sistem)
 
 ```bash
 $ make devserver
@@ -70,13 +90,27 @@ Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu
 
 Atau, jika Anda tidak ingin repot-repot melakukan hal di atas pada Windows, serta ingin menikmati fitur 'Live Reload' yakni bisa Memuat Ulang Blog secara otomatis setelah perubahan, Anda bisa gunakan perintah berikut:
 
-**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, Yarn Package Manager, dan Gulp.js, serta sudah melakukan meng-install paket `gulp-cli` dan lain nya dengan Yarn, caranya ada [di atas](#cara-install))
+**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, dan Yarn Package Manager, serta sudah melakukan instalasi ketergantungan/pustaka JavaScript lain nya (seperti Gulp.js) dengan Yarn, caranya ada [di atas](#cara-install).
 
 ```bash
-$ invoke build; gulp
+$ yarn invoke-devserver
 ```
 
-Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke, NodeJS dan Yarn Package Manager.
+Atau, jika kamu terinstall [GNU Make](https://www.gnu.org/software/make/), maka kamu bisa ikuti perintah berikut:
+
+```bash
+$ yarn make-devserver
+```
+
+Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke atau GNU Make, NodeJS dan Yarn Package Manager.
+
+Dan, perintah di atas juga akan menjalankan Gulp.js yang ter-install melalui `yarn install`, hanya saja Gulp.js ini hanya berlaku untuk Kode Sumber ini dan melalui perintah di atas saja.
+
+Kalau Anda ingin Gulp.js bisa di eksekusi di mana saja, selain di dalam Folder Kode Sumber ini saja, Anda bisa install paket `gulp-cli` ini di dalam Sistem Operasi Anda dengan perintah berikut:
+
+```bash
+$ yarn global add gulp-cli
+```
 
 Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:9001` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :slightly_smiling_face:
 
@@ -86,7 +120,7 @@ Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman
 Jika Anda ingin Berkontribusi terhadap Blog ini, Anda bisa baca/lihat [Panduan Kontribusi](https://github.com/FarrelF/FarrelF-Blog/blob/master/CONTRIBUTING.md) untuk mengetahui cara nya, karena banyak sekali yang saya bahas disitu.
 
 ## Lisensi
-Kode Sumber ini saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
+Kode Sumber ini, saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
 
 Sedangkan konten yang ada di dalam blog ini, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
 

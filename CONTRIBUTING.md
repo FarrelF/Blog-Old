@@ -11,7 +11,7 @@ Jika Anda ingin berkontribusi dengan membantu konfigurasi Blog ini atau ikut ser
 
 2. Klon Repo GitHub dari Repo yang Anda buat *fork* nya tadi.
 
-3. Install Virtualenv, buatlah sebuah Virtualenv dan masuk ke dalam nya, lalu Install semua keperluan nya. Anda bisa baca/lihat caranya [disini](https://github.com/FarrelF/FarrelF-Blog#cara-install)
+3. Penuhi terlebih dahulu semua [Persyaratan nya](https://github.com/FarrelF/FarrelF-Blog#persyaratan) (terutama yang wajib), termasuk Install Git, Python 3.7 atau di atasnya dan Pipenv di dalam Sistem Operasi Anda, lalu Install semua keperluan nya. Setelah memenuhi persyaratan, untuk meng-install dan membangun blog ini, Anda bisa baca/lihat caranya [disini](https://github.com/FarrelF/FarrelF-Blog#cara-install)
 
 4. Navigasikan *Shell* yang Anda gunakan ke dalam Folder Kode Sumber yang Anda klon tadi dengan perintah `cd`. 
 

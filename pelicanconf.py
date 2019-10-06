@@ -191,6 +191,8 @@ GOOGLE_RECAPTCHA = {
     }
 }
 
+AVATAR_URL = 'https://cdn.statically.io/img/secure.gravatar.com/avatar/684032413f6a1127d5c018760fb6ca8e?resize=128,128'
+
 # Blogroll
 LINKS = ()
 

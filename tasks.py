@@ -45,7 +45,7 @@ def build(c):
     c.run('pelican {content_path} -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
-def build_devtheme(c):
+def devtheme(c):
     """Build Development Theme for Development Usage"""
     c.run('git clone https://github.com/FarrelF/Modified-Flex.git themes/Flex')
     c.run('pelican-themes -i themes/Flex')
@@ -54,6 +54,12 @@ def build_devtheme(c):
 def rebuild(c):
     """`build` with the delete switch"""
     c.run('pelican {content_path} -d -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+
+@task
+def static(c):
+    """`devtheme` then `(re)build` """
+    devtheme(c)
+    rebuild(c)
 
 @task
 def regenerate(c):

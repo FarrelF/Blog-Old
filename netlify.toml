@@ -1,5 +1,5 @@
 [build]
-  command = "invoke publish"
+  command = "make publish"
   publish = "output"
 
 [build.environment]
@@ -8,3 +8,4 @@
   LANGUAGE = "id_ID:id"
   LC_ALL = "id_ID.utf8"
   LOCALE = "id_ID.utf8"
+  NODE_ENV = "production"
