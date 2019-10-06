@@ -51,10 +51,10 @@ $ make devtheme # Untuk membangun Tema nya, atau 'make static-files' kalo mau la
 $ yarn install # Opsional
 ```
 
-Kalau Anda ingin Gulp.js ini bisa di eksekusi di mana saja, selain di dalam Folder Kode Sumber saja, Anda bisa install paket `gulp-cli` ini di dalam Sistem Operasi Anda dengan perintah berikut:
+Sebagai tambahan, jika Anda berniat ingin menggunakan Kode Sumber ini untuk tujuan Pengembangan (entah itu Modifikasi, ingin Berkontribusi Kode, dll), setelah Anda meng-install nya dengan salah satu cara di atas, Anda bisa meng-install semua keperluan nya dengan perintah berikut di dalam Kode Sumber nya:
 
 ```bash
-$ yarn add global gulp-cli
+$ pipenv install --dev
 ```
 
 ## Setelah Meng-installnya
@@ -104,6 +104,14 @@ $ yarn make-devserver
 
 Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke atau GNU Make, NodeJS dan Yarn Package Manager.
 
+Dan, perintah di atas juga akan menjalankan Gulp.js yang ter-install melalui `yarn install`, hanya saja Gulp.js ini hanya berlaku untuk Kode Sumber ini dan melalui perintah di atas saja.
+
+Kalau Anda ingin Gulp.js bisa di eksekusi di mana saja, selain di dalam Folder Kode Sumber ini saja, Anda bisa install paket `gulp-cli` ini di dalam Sistem Operasi Anda dengan perintah berikut:
+
+```bash
+$ yarn global add gulp-cli
+```
+
 Setelah semua nya selesai dan dinyatakan berhasil, bisa kamu coba buka Alamat URL `http://localhost:9001` di dalam Web Browser kamu, dan kamu akan melihat hasilnya :slightly_smiling_face:
 
 Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman [Dokumentasi nya](https://docs.getpelican.org).
@@ -112,8 +120,8 @@ Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman
 Jika Anda ingin Berkontribusi terhadap Blog ini, Anda bisa baca/lihat [Panduan Kontribusi](https://github.com/FarrelF/FarrelF-Blog/blob/master/CONTRIBUTING.md) untuk mengetahui cara nya, karena banyak sekali yang saya bahas disitu.
 
 ## Lisensi
-Kode Sumber ini, kecuali untuk sub-folder `article` dan `pages` yang berada di dalam folder `content`, saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
+Kode Sumber ini, saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
 
-Sedangkan konten yang ada di dalam blog ini dan sisanya, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
+Sedangkan konten yang ada di dalam blog ini, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
 
 Untuk lebih lengkap nya, silahkan kunjungi Laman [Lisensi](https://farrel.franqois.id/lisensi) di dalam Blog Saya :slightly_smiling_face:
