@@ -12,12 +12,15 @@ Untuk menghasilkan konten yang kemudian di sebar melalui Internet, saya men-*dep
 ## Persyaratan
 Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yakni ter-installnya:
 
-- Git: https://git-scm.com/downloads (Jelas, wajib!)
-- Python 3.7 atau di atasnya: https://www.python.org/downloads/
-- Pipenv: https://pipenv.readthedocs.io/en/latest/
+### Persyaratan Wajib
+- Git: https://git-scm.com/downloads
+- Python 3.7 atau di atasnya: https://www.python.org/downloads/ (Jelas, wajib!)
+- Poetry: https://poetry.eustace.io/docs/
+
+### Persyaratan Opsional
 - NodeJS: https://nodejs.org/en/download/ (Opsional, tapi disarankan)
 - Yarn Package Manager: https://yarnpkg.com/lang/en/docs/install/ (Opsional, tapi disarankan setelah sudah ter-install NodeJS)
-- GNU Make: https://www.gnu.org/software/make/ (Opsional, tapi di sarankan, meski ada alternatif nya, yakni 'Python Invoke')
+- GNU Make: https://www.gnu.org/software/make/ (Opsional, tapi di sarankan, meski ada alternatif nya, yakni 'Invoke' yang merupakan salah satu modul Python)
 
 Di dalam Sistem Operasi Anda.
 
@@ -38,7 +41,7 @@ Cara installnya mudah, Anda tinggal navigasikan ke dalam Folder Kode Sumber deng
 **Catatan**: Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, kamu bisa gunakan Terminal Bawaan, sedangkan di Windows kamu bisa gunakan "Git Bash".
 
 ```bash
-$ pipenv install; pipenv shell
+$ poetry install && poetry shell
 $ invoke devtheme # Untuk membangun Tema nya, atau 'invoke static' kalo mau langsung membangun Web/Blog nya dan Tema nya juga
 $ yarn install # Opsional
 ```
@@ -46,16 +49,34 @@ $ yarn install # Opsional
 Atau, jika di dalam Sistem Operasi kamu terinstall [GNU Make](https://www.gnu.org/software/make/), maka kamu bisa ikuti cara nya berikut:
 
 ```bash
-$ pipenv install; pipenv shell
+$ poetry install && poetry shell
 $ make devtheme # Untuk membangun Tema nya, atau 'make static-files' kalo mau langsung membangun Web/Blog nya dan Tema nya juga
 $ yarn install # Opsional
 ```
 
-Sebagai tambahan, jika Anda berniat ingin menggunakan Kode Sumber ini untuk tujuan Pengembangan (entah itu Modifikasi, ingin Berkontribusi Kode, dll), setelah Anda meng-install nya dengan salah satu cara di atas, Anda bisa meng-install semua keperluan nya dengan perintah berikut di dalam Kode Sumber nya:
+Sebagai tambahan, jika Anda berniat ingin menggunakan Kode Sumber ini untuk tujuan Produksi, Anda bisa meng-install semua paket/pustaka beserta ketergantungan nya dengan menambahkan parameter `--no-dev`, contohnya seperti perintah berikut:
 
 ```bash
-$ pipenv install --dev
+$ poetry install --no-dev
 ```
+
+### Mengenai Berkas `build.sh`
+Sebenarnya, berkas tersebut saya buat agar Netlify bisa meng-install semua keperluan nya dengan baik, termasuk Poetry yang merupakan Pengelola Paket dan Ketergantungan untuk Python, yang sampai saat ini [tidak di dukung secara langsung](https://github.com/netlify/build-image/issues/221) oleh Netlify.
+
+Walaupun sebenarnya Anda bisa meng-install nya secara langsung menggunakan berkas tersebut, tapi sebaik nya Anda jangan meng-install nya dari situ, karena berkas tersebut memiliki perintah dan cara Install yang berbeda daripada yang ada disini. 
+
+Perbedaan nya dengan Cara Install di atas adalah:
+- Poetry akan di Install menggunakan perintah `pip` bukan `pip3`. Biasanya, `pip` di suatu Sistem Operasi, terutama berbasis Unix/Unix-like, itu merujuk kepada Pip untuk Python 2, bukan Python 3. Jadi, jika Anda meng-eksekusi nya, ini artinya Anda meng-install Poetry untuk Python 2, bukan Python 3, kecuali jika Anda berada di dalam Virtualenv atau Pyenv yang menggunakan Python 3, berjalan di dalam Lingkungan "Sandbox" atau di dalam Windows yang hanya terinstall Python 3 saja.
+
+- Di dalam `build.sh`, Poetry sudah di konfigurasi agar tidak membuatkan Virtualenv setelah meng-install semua paket/pustaka lain nya dengan Poetry. Hal ini akan sangat beresiko jika Anda ingin menggunakan/memodifikasi Kode Sumber ini di dalam Komputer Anda, seperti konflik antar paket/pustaka lain nya.
+
+- Poetry tidak akan meng-install semua paket/pustaka yang ada, melainkan hanya meng-install paket/pustaka untuk keperluan produksi saja. Jadi, Anda tidak akan bisa menikmati semua paket/pustaka untuk keperluan pengembangan, karena tidak ter-install, contoh nya: PyLint. Kecuali, jika Anda bisa meng-install nya.
+
+- Akan menggunakan `make publish` untuk membangun Blog ini, yang mana seharus itu di gunakan untuk Produksi.
+
+Selain itu, berkas tersebut akan di eksekusi oleh Netlify saat men-*deploy*, yang memiliki Sistem dan cara kerja yang berbeda daripada Sistem pada Komputer Anda, serta saat men-*deploy*, Sistem mereka berjalan di dalam "Kontainer" yang di buat dengan "Docker".
+
+Sehingga, bisa di katakan, bahwa mereka berjalan di dalam Lingkungan Sistem yang ter-"isolasi" atau di dalam Lingkungan *Sandbox*.
 
 ## Setelah Meng-installnya
 
@@ -120,7 +141,7 @@ Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman
 Jika Anda ingin Berkontribusi terhadap Blog ini, Anda bisa baca/lihat [Panduan Kontribusi](https://github.com/FarrelF/FarrelF-Blog/blob/master/CONTRIBUTING.md) untuk mengetahui cara nya, karena banyak sekali yang saya bahas disitu.
 
 ## Lisensi
-Kode Sumber ini, saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
+Kode Sumber ini, saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) atau di atas nya yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
 
 Sedangkan konten yang ada di dalam blog ini, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
 

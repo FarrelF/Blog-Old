@@ -15,14 +15,20 @@ DEVPUBLISHCONF=$(BASEDIR)/dev_publishconf.py
 
 GITHUB_PAGES_BRANCH=gh-pages
 
-INSTALLER ?= pipenv
+INSTALLER ?= poetry
 INSTALLOPT=
 WITH_YARN ?= 0
-
+YARN_FLAGS=
+PRODUCTION ?= 0
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
+endif
+
+ifeq ($(PRODUCTION), 1)
+	YARN_FLAGS += --production
+	INSTALLOPT += --no-dev
 endif
 
 REBUILD ?= 0
@@ -47,7 +53,7 @@ help:
 	@echo 'Makefile for a pelican Web site                                                                                '
 	@echo '                                                                                                               '
 	@echo 'Usage:                                                                                                         '
-	@echo '   make install                                  Install the packages and all of its dependencies (with Pipenv)'
+	@echo '   make install [PRODUCTION=0]                   Install the packages and all of its dependencies (with Pipenv)'
 	@echo '   make html [REBUILD=0]                         (re)generate the web site                                     '
 	@echo '   make clean                                    remove the generated files                                    '
 	@echo '   make regenerate [REBUILD=0]                   regenerate files upon modification                            '
@@ -63,12 +69,13 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html                                        '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                                                         '
 	@echo 'Set the REBUILD variable to 1 to Delete Output first before building                                           '
+	@echo 'Set the PRODUCTION variable to 1 if you want using a command for production purpose                            '
 
 install:
 	@echo 'Installing the Website/Blog packages and its dependencies, please wait....'
 ifeq ($(WITH_YARN), 1)
-	$(INSTALLER) install; $(INSTALLER) shell
-	yarn install
+	$(INSTALLER) install $(INSTALLOPT); $(INSTALLER) shell
+	yarn install $(YARN_FLAGS)
 else
 	$(INSTALLER) install; $(INSTALLER) shell
 endif
