@@ -1,0 +1,131 @@
+version: 2.1
+
+executor:
+  python:
+    docker:
+      - image: circleci/python:3.7.4-node
+
+aliases:
+  restore_cache: &restore_cache
+    restore_cache:
+      name: Restore Python and NodeJS Cache
+      keys: 
+        - deps9-{{ .Branch }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v3
+  
+  install_node_modules: &install_node_modules
+    run:
+      name: Install NodeJS Dependencies
+      command: yarn install
+  
+  install_locale: &install_locale
+    run:
+      name: Install the System Locale
+      command: |
+          sudo apt install language-pack-id
+          sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
+          sudo sed -i 's/# id_ID\.UTF-8/id_ID\.UTF-8/' /etc/locale.gen
+          sudo update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX
+          DEBIAN_FRONTEND=noninteractive sudo -E dpkg-reconfigure locales
+
+  install_dependencies: &install_dependencies
+    run:
+      name: Install all Dependencies
+      command: |
+          sudo -H pip install --upgrade pip
+          sudo -H pip install poetry
+          poetry install --no-dev
+          yarn install --production=true
+  
+  install_netlify: &install_netlify
+    name: Install Netlify Globally with Yarn
+    command: yarn global add netlify-cli
+  
+  deploy_netlify: &deploy_netlify
+    name: Deploy with Netlify
+    command: netlify deploy --dir=./output -p
+
+  changing_permission: &changing_permission
+    run:
+      name: Changing Permissions for Python Packages
+      command: |
+          [[ ! -d /usr/local/bin ]] || \
+            sudo chown -R circleci:circleci /usr/local/bin
+          [[ ! -d /usr/local/lib/python3.7/site-packages ]] || \
+            sudo chown -R circleci:circleci /usr/local/lib/python3.7/site-packages
+
+  publish_blog: &publish_blog
+    run:
+      name: Publishing the Blog
+      command: make publish
+  
+  build_html: &build_html
+    run:
+      name: Build the Blog HTML
+      command: make static-files
+
+  save_cache: &save_cache
+    save_cache: 
+      name: Save Python and NodeJS Cache
+      key: deps9-{{ .Branch }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v3
+      paths:
+        - ".venv"
+        - "/usr/local/bin"
+        - "/usr/local/lib/python3.7/site-packages"
+        - "./node_modules"
+
+
+jobs:
+  test:
+    executor: python
+    steps:
+      - checkout
+      - <<: *install_locale
+      - <<: *changing_permission
+      - <<: *restore_cache
+      - <<: *install_dependencies
+      - <<: *save_cache
+      - <<: *build_html
+  
+  build:
+    executor: python
+    steps:
+      - checkout
+      - <<: *restore_cache
+      - <<: *install_dependencies
+      - <<: *publish_blog
+      - persist_to_workspace:
+          root: ./
+          paths: 
+            - output
+  
+  deploy:
+    executor: python
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./
+      - <<: *restore_cache
+      - <<: *install_dependencies
+      - <<: *install_netlify
+      - <<: *deploy_netlify
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      
+      - build:
+          requires: 
+            - test
+      
+      - deploy: 
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
