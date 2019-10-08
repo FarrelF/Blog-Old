@@ -6,18 +6,18 @@ executors:
 aliases:
   restore_cache: &restore_cache
     restore_cache:
-      name: "Restore Python and NodeJS Cache"
+      name: Restoring Python Packages Cache
       keys: 
-        - cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
+        - v1-cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
 
   install_node_modules: &install_node_modules
     run:
-      name: Install NodeJS Dependencies
+      name: Installing NodeJS Dependencies
       command: yarn install
   
   install_locale: &install_locale
     run:
-      name: Install the System Locale
+      name: Installing the System Locale
       command: |
           sudo apt install locales locales-all
           sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
@@ -27,13 +27,12 @@ aliases:
 
   install_dependencies: &install_dependencies
     run:
-      name: Install all Dependencies
+      name: Installing All Packages and it's Dependencies
       command: |
           sudo -H python3.7 -m pip install --upgrade pip
           sudo -H python3.7 -m pip install poetry
           poetry config settings.virtualenvs.create false
           poetry install --no-dev
-          yarn install --production=true
   
   install_netlify: &install_netlify
     run:
@@ -42,7 +41,7 @@ aliases:
   
   deploy_netlify: &deploy_netlify
     run:
-      name: Deploy with Netlify
+      name: Deploying with Netlify
       command: netlify deploy --dir=./output -p
 
   changing_permission: &changing_permission
@@ -56,24 +55,37 @@ aliases:
 
   publish_blog: &publish_blog
     run:
-      name: Publishing the Blog
-      command: poetry run make publish
+      name: Publishing the Blog (Production Blog)
+      command: make REBUILD=1 publish
   
   build_html: &build_html
     run:
-      name: Build the Blog HTML
-      command: poetry run make static-files
+      name: Building the Blog HTML (Not an Production Blog)
+      command: make REBUILD=1 static-files
 
   save_cache: &save_cache
     save_cache: 
-      name: Save Python and NodeJS Cache
-      key: cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
+      name: Saving Python Packages Cache
+      key: v1-cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
       paths:
         - ".venv"
         - "/usr/local/bin"
         - "/usr/local/lib/python3.7/site-packages"
-        - "./node_modules"
         - ".cache"
+
+  save_netlify_cache: &save_netlify_cache
+    save_cache:
+      name: Saving Netlify Cache
+      key: netlify-cache-{{ checksum "pyproject.toml" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-v1
+      paths:
+        - ".yarn/bin"
+        - ".config/yarn/global"
+  
+  restore_netlify_cache: &restore_netlify_cache
+    restore_cache:
+      name: Restoring Netlify Cache
+      keys:
+        - netlify-cache-{{ checksum "pyproject.toml" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-v1
 
 version: 2.1
 
@@ -93,6 +105,7 @@ jobs:
     executor: python
     steps:
       - checkout
+      - <<: *install_locale
       - <<: *changing_permission
       - <<: *restore_cache
       - <<: *install_dependencies
@@ -108,9 +121,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: ./
-      - <<: *restore_cache
-      - <<: *install_dependencies
+      - <<: *restore_netlify_cache
       - <<: *install_netlify
+      - <<: *save_netlify_cache
       - <<: *deploy_netlify
 
 workflows:
@@ -120,16 +133,15 @@ workflows:
       - test:
           filters:
             branches:
-              only: "drafts"
-
+              only:
+                - master
+                - drafts
       - build:
           requires: 
             - "test"
-      
       - deploy: 
           requires:
             - "build"
-
           filters:
             branches:
               only: "master"
