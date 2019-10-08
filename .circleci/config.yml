@@ -50,7 +50,7 @@ aliases:
   deploy_netlify_preview: &deploy_netlify_preview
     run:
       name: Deploying with Netlify (Preview Mode)
-      command: netlify deploy --dir=./output
+      command: ls -l $(yarn global bin) && netlify deploy --dir=./output
 
   changing_permission: &changing_permission
     run:
@@ -69,7 +69,7 @@ aliases:
   build_html: &build_html
     run:
       name: Building the Blog HTML (Not an Production Blog)
-      command: make devtheme && make REBUILD=1 preview && yarn global bin && ls -l $(yarn global bin)
+      command: make devtheme && make REBUILD=1 preview && yarn global bin
 
   save_cache: &save_cache
     save_cache: 
