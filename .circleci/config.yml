@@ -30,8 +30,7 @@ aliases:
       name: Installing All Packages and it's Dependencies
       command: |
           sudo -H python3.7 -m pip install --upgrade pip
-          sudo -H python3.7 -m pip install pipx
-          python3.7 -m pipx install poetry
+          sudo -H python3.7 -m pip install poetry
           poetry config settings.virtualenvs.create false
           poetry install --no-dev
   
