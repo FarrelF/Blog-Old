@@ -57,12 +57,12 @@ aliases:
   publish_blog: &publish_blog
     run:
       name: Publishing the Blog (Production Blog)
-      command: make REBUILD=1 publish
+      command: poetry run make REBUILD=1 publish
   
   build_html: &build_html
     run:
       name: Building the Blog HTML (Not an Production Blog)
-      command: make REBUILD=1 static-files
+      command: poetry run make REBUILD=1 static-files
 
   save_cache: &save_cache
     save_cache: 
