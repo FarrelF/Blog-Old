@@ -8,6 +8,7 @@
         "gulp": "^4.0.2",
         "mem": "^5.1.1"
     },
+    "dependencies": {},
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
@@ -19,7 +20,7 @@
         "url": "git+https://github.com/FarrelF/FarrelF-Blog.git"
     },
     "scripts": {
-        "build": "pipenv install; invoke publish; mv output publish",
+        "build": "./build.sh && mv output publish",
         "invoke-devserver": "invoke rebuild && node node_modules/gulp/bin/gulp.js build",
         "make-devserver": "make REBUILD=1 html && node node_modules/gulp/bin/gulp.js build"
     },

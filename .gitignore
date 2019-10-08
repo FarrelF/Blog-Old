@@ -4,6 +4,7 @@
 *.log
 !yarn.lock
 !Pipfile.lock
+!poetry.lock
 *.DS_Store
 *.swp
 .sw*
