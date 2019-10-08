@@ -57,7 +57,7 @@ version = "1.12.3"
 pycparser = "*"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "Universal encoding detector for Python 2 and 3"
 name = "chardet"
 optional = false
@@ -406,7 +406,7 @@ python-versions = "*"
 version = "1.11.2"
 
 [metadata]
-content-hash = "929513adb3a4777d9b9ef2104cc5fa2ea11ac087ec8355435cc7e07f47048ae3"
+content-hash = "d56fb8e8acefb5936f600828eea9f57d60eec64b68966a33ca03477ce415a747"
 python-versions = "^3.7"
 
 [metadata.hashes]
