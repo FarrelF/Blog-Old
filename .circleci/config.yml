@@ -37,12 +37,12 @@ aliases:
   install_netlify: &install_netlify
     run:
       name: Install Netlify Globally with Yarn
-      command: yarn global add netlify-cli && export PATH="$(yarn global bin):$PATH"
+      command: yarn global add netlify-cli
   
   deploy_netlify: &deploy_netlify
     run:
       name: Deploying with Netlify
-      command: netlify deploy --dir=./output -p
+      command: $(yarn global bin)/netlify deploy --dir=./output -p
 
   changing_permission: &changing_permission
     run:
