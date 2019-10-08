@@ -7,7 +7,8 @@ aliases:
   restore_cache: &restore_cache
     restore_cache:
       name: "Restore Python and NodeJS Cache"
-      keys: deps9-{{ .Branch }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v3
+      keys: 
+        - deps9-{{ .Branch }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v3
 
   install_node_modules: &install_node_modules
     run:
@@ -54,12 +55,12 @@ aliases:
   publish_blog: &publish_blog
     run:
       name: Publishing the Blog
-      command: make publish
+      command: poetry run make publish
   
   build_html: &build_html
     run:
       name: Build the Blog HTML
-      command: make static-files
+      command: poetry run make static-files
 
   save_cache: &save_cache
     save_cache: 
@@ -77,7 +78,7 @@ jobs:
   test:
     executor: python
     steps:
-      - 'checkout'
+      - checkout
       - <<: *install_locale
       - <<: *changing_permission
       - <<: *restore_cache
@@ -88,7 +89,7 @@ jobs:
   build:
     executor: python
     steps:
-      - 'checkout'
+      - checkout
       - <<: *restore_cache
       - <<: *install_dependencies
       - <<: *publish_blog
