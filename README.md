@@ -1,4 +1,5 @@
 # Farrel Franqois Blog
+[![CircleCI](https://circleci.com/gh/FarrelF/FarrelF-Blog/tree/master.svg?style=svg)](https://circleci.com/gh/FarrelF/FarrelF-Blog/tree/master)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/farrelf/deploys)
 ![GitHub](https://img.shields.io/github/license/FarrelF/FarrelF-Blog?label=Lisensi&style=flat-square)
 
@@ -61,6 +62,8 @@ $ poetry install --no-dev
 ```
 
 ### Mengenai Berkas `build.sh`
+**Catatan:** Karena sekarang blog ini di bangun dengan bantuan CircleCI dan Netlify hanya men-*deploy* HTML nya saja, maka kemungkinan berkas `build.sh` tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas [`.circleci/config.yml`](https://github.com/FarrelF/FarrelF-Blog/blob/master/.circleci/config.yml).
+
 Sebenarnya, berkas tersebut saya buat agar Netlify bisa meng-install semua keperluan nya dengan baik, termasuk Poetry yang merupakan Pengelola Paket dan Ketergantungan untuk Python, yang sampai saat ini [tidak di dukung secara langsung](https://github.com/netlify/build-image/issues/221) oleh Netlify.
 
 Walaupun sebenarnya Anda bisa meng-install nya secara langsung menggunakan berkas tersebut, tapi sebaik nya Anda jangan meng-install nya dari situ, karena berkas tersebut memiliki perintah dan cara Install yang berbeda daripada yang ada disini. 
