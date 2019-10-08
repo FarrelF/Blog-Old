@@ -46,6 +46,7 @@ aliases:
 
   changing_permission: &changing_permission
     run:
+      name: Changing the Permissions
       command: |
           [[ ! -d /usr/local/bin ]] || \
             sudo chown -R circleci:circleci /usr/local/bin
@@ -71,6 +72,7 @@ aliases:
         - "/usr/local/bin"
         - "/usr/local/lib/python3.7/site-packages"
         - "./node_modules"
+        - ".cache/pypoetry/virtualenvs"
 
 version: 2.1
 
