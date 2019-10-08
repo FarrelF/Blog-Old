@@ -37,17 +37,20 @@ aliases:
   install_netlify: &install_netlify
     run:
       name: Install Netlify Globally with Yarn
-      command: yarn global add netlify-cli
+      command: |
+          echo 'export PATH=$(yarn global bin):$PATH' >> $BASH_ENV
+          source $BASH_ENV
+          yarn global add netlify-cli
   
   deploy_netlify: &deploy_netlify
     run:
       name: Deploying with Netlify
-      command: $(yarn global bin)/netlify deploy --dir=./output -p
+      command: netlify deploy --dir=./output -p
   
-  deploy_netlify_test: &deploy_netlify_test
+  deploy_netlify_preview: &deploy_netlify_preview
     run:
-      name: Deploying with Netlify (Testing Mode)
-      command: $(yarn global bin)/netlify deploy --dir=./output
+      name: Deploying with Netlify (Preview Mode)
+      command: netlify deploy --dir=./output
 
   changing_permission: &changing_permission
     run:
@@ -66,25 +69,26 @@ aliases:
   build_html: &build_html
     run:
       name: Building the Blog HTML (Not an Production Blog)
-      command: make devtheme && make REBUILD=1 preview
+      command: make devtheme && make REBUILD=1 preview && yarn global bin
 
   save_cache: &save_cache
     save_cache: 
       name: Saving Python Packages Cache
       key: v1-cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
       paths:
-        - ".venv"
+        - "~/.venv"
         - "/usr/local/bin"
         - "/usr/local/lib/python3.7/site-packages"
-        - ".cache"
+        - "~/.cache"
 
   save_netlify_cache: &save_netlify_cache
     save_cache:
       name: Saving Netlify Cache
       key: netlify-cache-{{ checksum "pyproject.toml" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-v1
       paths:
-        - ".yarn/bin"
-        - ".config/yarn/global/node_modules"
+        - "~/.yarn/bin"
+        - "~/.config/yarn/global/node_modules"
+        - "~/.cache/yarn"
   
   restore_netlify_cache: &restore_netlify_cache
     restore_cache:
@@ -108,7 +112,7 @@ jobs:
       - <<: *restore_netlify_cache
       - <<: *install_netlify
       - <<: *save_netlify_cache
-      - <<: *deploy_netlify_test
+      - <<: *deploy_netlify_preview
 
   build:
     executor: python
