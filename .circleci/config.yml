@@ -8,7 +8,7 @@ aliases:
     restore_cache:
       name: "Restore Python and NodeJS Cache"
       keys: 
-        - deps9-{{ .Branch }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v3
+        - cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
 
   install_node_modules: &install_node_modules
     run:
@@ -66,7 +66,7 @@ aliases:
   save_cache: &save_cache
     save_cache: 
       name: Save Python and NodeJS Cache
-      key: deps9-{{ .Branch }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v3
+      key: cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
       paths:
         - ".venv"
         - "/usr/local/bin"
