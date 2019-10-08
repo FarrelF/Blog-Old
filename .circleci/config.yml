@@ -31,8 +31,8 @@ aliases:
     run:
       name: Install all Dependencies
       command: |
-          sudo -H pip install --upgrade pip
-          sudo -H pip install poetry
+          sudo -H python3.7 -m pip install --upgrade pip
+          sudo -H python3.7 -m pip install poetry
           poetry install --no-dev
           yarn install --production=true
   
@@ -113,12 +113,6 @@ workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - test:
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-      
       - build:
           requires: 
             - test
