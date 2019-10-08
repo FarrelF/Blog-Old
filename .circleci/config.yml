@@ -30,14 +30,15 @@ aliases:
       name: Installing All Packages and it's Dependencies
       command: |
           sudo -H python3.7 -m pip install --upgrade pip
-          sudo -H python3.7 -m pip install poetry
+          sudo -H python3.7 -m pip install pipx
+          python3.7 -m pipx install poetry
           poetry config settings.virtualenvs.create false
           poetry install --no-dev
   
   install_netlify: &install_netlify
     run:
       name: Install Netlify Globally with Yarn
-      command: yarn global add netlify-cli
+      command: yarn global add netlify-cli && export PATH="$(yarn global bin):$PATH"
   
   deploy_netlify: &deploy_netlify
     run:
