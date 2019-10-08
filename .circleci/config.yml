@@ -92,6 +92,7 @@ jobs:
     executor: python
     steps:
       - checkout
+      - <<: *changing_permission
       - <<: *restore_cache
       - <<: *install_dependencies
       - <<: *publish_blog
