@@ -61,12 +61,12 @@ aliases:
   publish_blog: &publish_blog
     run:
       name: Publishing the Blog (Production Blog)
-      command: poetry run make REBUILD=1 publish
+      command: make REBUILD=1 publish
   
   build_html: &build_html
     run:
       name: Building the Blog HTML (Not an Production Blog)
-      command: poetry run make REBUILD=1 static-files
+      command: make devtheme && make REBUILD=1 preview
 
   save_cache: &save_cache
     save_cache: 
@@ -84,7 +84,7 @@ aliases:
       key: netlify-cache-{{ checksum "pyproject.toml" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-v1
       paths:
         - ".yarn/bin"
-        - ".config/yarn/global"
+        - ".config/yarn/global/node_modules"
   
   restore_netlify_cache: &restore_netlify_cache
     restore_cache:
