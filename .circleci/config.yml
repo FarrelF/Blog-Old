@@ -1,5 +1,3 @@
-version: 2.1
-
 executor:
   python:
     docker:
@@ -73,6 +71,7 @@ aliases:
         - "/usr/local/lib/python3.7/site-packages"
         - "./node_modules"
 
+version: 2.1
 
 jobs:
   test:
