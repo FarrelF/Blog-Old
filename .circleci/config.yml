@@ -35,16 +35,16 @@ aliases:
           yarn install --production=true
   
   install_netlify: &install_netlify
-    name: Install Netlify Globally with Yarn
-    command: yarn global add netlify-cli
+    name: "Install Netlify Globally with Yarn"
+    command: "yarn global add netlify-cli"
   
   deploy_netlify: &deploy_netlify
-    name: Deploy with Netlify
-    command: netlify deploy --dir=./output -p
+    name: "Deploy with Netlify"
+    command: "netlify deploy --dir=./output -p"
 
   changing_permission: &changing_permission
     run:
-      name: Changing Permissions for Python Packages
+      name: "Changing Permissions for Python Packages"
       command: |
           [[ ! -d /usr/local/bin ]] || \
             sudo chown -R circleci:circleci /usr/local/bin
@@ -53,17 +53,17 @@ aliases:
 
   publish_blog: &publish_blog
     run:
-      name: Publishing the Blog
-      command: make publish
+      name: "Publishing the Blog"
+      command: "make publish"
   
   build_html: &build_html
     run:
-      name: Build the Blog HTML
-      command: make static-files
+      name: "Build the Blog HTML"
+      command: "make static-files"
 
   save_cache: &save_cache
     save_cache: 
-      name: Save Python and NodeJS Cache
+      name: "Save Python and NodeJS Cache"
       key: deps9-{{ .Branch }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v3
       paths:
         - ".venv"
@@ -93,9 +93,9 @@ jobs:
       - <<: *install_dependencies
       - <<: *publish_blog
       - persist_to_workspace:
-          root: ./
+          root: "./"
           paths: 
-            - output
+            - "output"
   
   deploy:
     executor: python
@@ -119,6 +119,7 @@ workflows:
       - deploy: 
           requires:
             - build
+
           filters:
             branches:
-              only: master
+              only: "master"
