@@ -15,9 +15,9 @@ aliases:
       name: Installing NodeJS Dependencies
       command: yarn install
   
-  install_locale: &install_locale
+  install_locales: &install_locales
     run:
-      name: Installing the System Locale
+      name: Installing the System Locales
       command: |
           sudo apt install locales locales-all
           sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
@@ -43,6 +43,11 @@ aliases:
     run:
       name: Deploying with Netlify
       command: $(yarn global bin)/netlify deploy --dir=./output -p
+  
+  deploy_netlify_test: &deploy_netlify_test
+    run:
+      name: Deploying with Netlify (Testing Mode)
+      command: $(yarn global bin)/netlify deploy --dir=./output
 
   changing_permission: &changing_permission
     run:
@@ -94,18 +99,22 @@ jobs:
     executor: python
     steps:
       - checkout
-      - <<: *install_locale
+      - <<: *install_locales
       - <<: *changing_permission
       - <<: *restore_cache
       - <<: *install_dependencies
       - <<: *save_cache
       - <<: *build_html
+      - <<: *restore_netlify_cache
+      - <<: *install_netlify
+      - <<: *save_netlify_cache
+      - <<: *deploy_netlify_test
 
   build:
     executor: python
     steps:
       - checkout
-      - <<: *install_locale
+      - <<: *install_locales
       - <<: *changing_permission
       - <<: *restore_cache
       - <<: *install_dependencies
@@ -123,7 +132,6 @@ jobs:
           at: ./
       - <<: *restore_netlify_cache
       - <<: *install_netlify
-      - <<: *save_netlify_cache
       - <<: *deploy_netlify
 
 workflows:
