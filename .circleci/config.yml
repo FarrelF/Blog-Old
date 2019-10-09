@@ -49,14 +49,12 @@ aliases:
   deploy_netlify: &deploy_netlify
     run:
       name: Deploying with Netlify
-      command: 
-        - |
-          netlify deploy --dir=./output -p -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE"
+      command: netlify deploy --dir=./output -p -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE"
   
   deploy_netlify_preview: &deploy_netlify_preview
     run:
       name: Deploying with Netlify (Preview Mode)
-      command: ls -l ~/.config/yarn/global/node_modules && netlify deploy --dir=./output -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE (Preview)"
+      command: ls -l ~/.config/yarn/global/node_modules && netlify deploy --dir=./output -m "CircleCI ($GIT_COMMIT_HASH)":" $GIT_COMMIT_HASH $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE (Preview)"
 
   changing_permission: &changing_permission
     run:
