@@ -2,6 +2,10 @@ executors:
   python:
     docker:
       - image: circleci/python:3.7.4-node
+        environment:
+          GIT_COMMIT_HASH: $(git log --format="%h" -n 1 $CIRCLE_SHA1)
+          GIT_COMMIT_MESSAGE: $(git log --format="%s" -n 1 $CIRCLE_SHA1)
+
 
 aliases:
   restore_cache: &restore_cache
@@ -45,12 +49,14 @@ aliases:
   deploy_netlify: &deploy_netlify
     run:
       name: Deploying with Netlify
-      command: netlify deploy --dir=./output -p
+      command: 
+        - |
+          netlify deploy --dir=./output -p -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE"
   
   deploy_netlify_preview: &deploy_netlify_preview
     run:
       name: Deploying with Netlify (Preview Mode)
-      command: ls -l $(yarn global bin) && ls -l ~/.config/yarn/global/node_modules/.bin/ && netlify deploy --dir=./output
+      command: ls -l ~/.config/yarn/global/node_modules && netlify deploy --dir=./output -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE (Preview)"
 
   changing_permission: &changing_permission
     run:
@@ -86,7 +92,7 @@ aliases:
       key: netlify-cache-{{ checksum "pyproject.toml" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-v1
       paths:
         - "~/.yarn/bin"
-        - "~/.config/yarn/global/node_modules/.bin"
+        - "~/.config/yarn/global/node_modules"
         - "~/.cache/yarn"
   
   save_local_bin_cache: &save_local_bin_cache

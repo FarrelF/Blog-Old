@@ -111,7 +111,7 @@ endif
 
 devtheme:
 	@echo 'Building and Installing the Theme, please wait....'
-	git clone $(THEMEREPO) $(THEMEPATH)
+	git clone --depth 1 $(THEMEREPO) $(THEMEPATH)
 	$(PELICANTHEMES) -i $(THEMEPATH)
 
 static-files: devtheme html
