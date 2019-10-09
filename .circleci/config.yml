@@ -2,10 +2,6 @@ executors:
   python:
     docker:
       - image: circleci/python:3.7.4-node
-        environment:
-          GIT_COMMIT_HASH: $(git log --format="%h" -n 1 $CIRCLE_SHA1)
-          GIT_COMMIT_MESSAGE: $(git log --format="%s" -n 1 $CIRCLE_SHA1)
-
 
 aliases:
   restore_cache: &restore_cache
@@ -43,6 +39,8 @@ aliases:
       name: Install Netlify Globally with Yarn
       command: |
           echo 'export PATH=$(yarn global bin):$PATH' >> $BASH_ENV
+          echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH' >> $BASH_ENV
+          echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE' >> $BASH_ENV
           source $BASH_ENV
           yarn global add netlify-cli
   
