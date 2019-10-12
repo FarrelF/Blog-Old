@@ -25,35 +25,65 @@ Pada GNU/Linux atau Sistem Operasi berbasis Unix/Unix-like lain nya (kecuali mac
 
 Atau, kalo Anda tidak ingin mengunjungi nya, Anda bisa ikuti Petunjuk nya di bawah ini:
 
+#### **Untuk pengguna Distribusi Ubuntu dan Turunan nya**
+Untuk pengguna Distribusi Ubuntu dan turunan nya, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
 ```bash
-## Untuk pengguna Distribusi Ubuntu dan Turunan nya ##
 $ sudo -- sh -c 'add-apt-repository ppa:git-core/ppa; apt update; apt install git'
-
-## Untuk pengguna Distribusi Debian dan Turunan nya ##
-$ sudo apt install git
-
-## Untuk pengguna Distribusi Arch Linux, Manjaro dan Turunan nya ##
-$ sudo pacman -S git
-
-## Untuk pengguna Distribusi Fedora ##
-$ sudo yum install git # Untuk Fedora 21 dan di bawah nya
-$ sudo dnf install git # Untuk Fedora 22 dan di atas nya
-
-## Untuk pengguna Distribusi OpenSUSE dan Turunan nya ##
-$ sudo zypper install git
-
-## Untuk pengguna Distribusi Gentoo ##
-$ sudo emerge --ask --verbose dev-vcs/git
-
-## Untuk pengguna NixOS atau yang menggunakan Nix Package Manager ##
-$ sudo nix-env -i git
-
-## Untuk pengguna Alpine ##
-$ apk add git
-
-## Untuk pengguna FreeBSD ##
-pkg install git # Harap Eksekusi perintah ini dalam keadaan 'root'
 ```
+
+#### **Untuk pengguna Distribusi Debian dan Turunan nya**
+Untuk pengguna Distribusi Debian dan turunan nya, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
+    # apt update && apt install git
+
+#### **Untuk pengguna Distribusi Arch Linux, Manjaro dan Turunan nya**
+Untuk pengguna Distribusi Arch Linux, Manjaro dan turunan nya, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
+```bash
+$ sudo pacman -S git
+```
+
+#### **Untuk pengguna Distribusi Fedora**
+Untuk pengguna Distribusi Fedora dan turunan nya, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
+```bash
+$ sudo yum install git      # Untuk Fedora 21 dan di bawah nya
+$ sudo dnf install git      # Untuk Fedora 22 dan di atas nya
+```
+
+#### **Untuk pengguna Distribusi OpenSUSE dan Turunan nya**
+Untuk pengguna Distribusi OpenSUSE dan turunan nya, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
+```bash
+$ sudo zypper install git
+```
+
+#### **Untuk pengguna Distribusi Gentoo**
+Untuk pengguna Distribusi Gentoo dan turunan nya, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
+```bash
+$ sudo emerge --ask --verbose dev-vcs/git
+```
+
+#### **Untuk pengguna NixOS atau yang menggunakan Nix Package Manager**
+Untuk pengguna Distribusi NixOS atau yang menggunakan Nix Package Manager, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
+```bash
+$ sudo nix-env -i git
+```
+
+#### **Untuk pengguna Alpine**
+Untuk pengguna Alpine, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
+    $ apk add git
+
+#### **Untuk pengguna FreeBSD**
+Untuk pengguna FreeBSD, bisa Anda ikuti perintah berikut di bawah ini untuk meng-install Git:
+
+    # pkg install git
+
+#### **Untuk pengguna macOS**
 
 Untuk pengguna macOS, bisa Anda Unduh dan Install Git nya dari [sini](https://git-scm.com/download/mac). 
 
@@ -179,7 +209,7 @@ Jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain ny
 Terima kasih atas perhatian nya :blush:
 
 ## III. Penggunaan Gambar dan Atribusi
-Berkas-berkas Gambar (seperti Cuplikan layar dan Gambar lain nya) yang di gunakan di dalam artikel ini, disediakan di dalam folder `cara-install-git` yang berada di dalam Repository GitLab [`blog-images`](https://gitlab.com/FarrelF/blog-images) milik saya. 
+Berkas-berkas Gambar (seperti Cuplikan layar dan Gambar lain nya) yang di gunakan di dalam artikel ini, disediakan di dalam folder `:::text cara-install-git` yang berada di dalam Repository GitLab [`blog-images`](https://gitlab.com/FarrelF/blog-images) milik saya. 
 
 Jika Anda ingin menjelajahi nya, silahkan kunjungi Alamat URL berikut:
 

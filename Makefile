@@ -74,10 +74,10 @@ help:
 install:
 	@echo 'Installing the Website/Blog packages and its dependencies, please wait....'
 ifeq ($(WITH_YARN), 1)
-	$(INSTALLER) install $(INSTALLOPT); $(INSTALLER) shell
+	$(INSTALLER) install $(INSTALLOPT) && $(INSTALLER) shell
 	yarn install $(YARN_FLAGS)
 else
-	$(INSTALLER) install; $(INSTALLER) shell
+	$(INSTALLER) install $(INSTALLOPT) && $(INSTALLER) shell
 endif
 
 
