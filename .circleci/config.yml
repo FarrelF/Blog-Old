@@ -1,3 +1,5 @@
+version: 2.1
+
 executors:
   python:
     docker:
@@ -6,13 +8,13 @@ executors:
 aliases:
   restore_python_cache: &restore_python_cache
     restore_cache:
-      name: Restoring Python Packages Cache
+      name: Restoring Python Virtualenv Cache
       keys: 
         - v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
 
   install_node_modules: &install_node_modules
     run:
-      name: Installing NodeJS Dependencies
+      name: Installing NodeJS Packages and it's Dependencies
       command: |
           echo 'export PATH=$(yarn bin):$PATH' >> $BASH_ENV
           echo 'NODE_ENV=production && export NODE_ENV' >> $BASH_ENV
@@ -23,7 +25,7 @@ aliases:
   
   install_locales: &install_locales
     run:
-      name: Installing the System Locales
+      name: Installing and Regenerating the System Locales
       command: |
           sudo apt install locales locales-all
           sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
@@ -33,7 +35,7 @@ aliases:
 
   install_dependencies: &install_dependencies
     run:
-      name: Installing All Packages and it's Dependencies
+      name: Installing All Python Packages and it's Dependencies
       command: |
           poetry install --no-dev
   
@@ -69,19 +71,21 @@ aliases:
   publish_blog: &publish_blog
     run:
       name: Publishing the Blog (Production Blog)
-      command: make REBUILD=1 publish
+      command: poetry run make REBUILD=1 publish
   
   build_html: &build_html
     run:
       name: Building the Blog HTML (Not an Production Blog)
-      command: make devtheme && make REBUILD=1 preview
+      command: |
+          poetry shell
+          make devtheme && make REBUILD=1 preview
 
   save_python_cache: &save_python_cache
     save_cache: 
-      name: Saving Python Packages Cache
+      name: Saving Python Virtualenv Cache
       key: v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
       paths:
-        - ~/.cache/pypoetry/virtualenvs/
+        - ~/.cache/pypoetry/virtualenvs
 
   save_node_modules_cache: &save_node_modules_cache
     save_cache:
@@ -97,8 +101,6 @@ aliases:
       name: Restoring Node Modules Cache
       keys:
         - v2-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
-
-version: 2.1
 
 jobs:
   test:
@@ -139,7 +141,6 @@ jobs:
       - <<: *deploy_netlify
 
 workflows:
-  version: 2
   build_and_deploy:
     jobs:
       - test

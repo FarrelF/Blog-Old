@@ -81,7 +81,7 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
 
 Saya akan hormati Privasi pada pesan yang Anda sampaikan, karena saya paham betapa pentingnya menjaga data pribadi/privasi Anda, maka **jangan sekali-kali** Anda mengirimkan segala Informasi yang bersifat Rahasia atau/dan Pribadi Anda kepada saya, termasuk No. Telepon, Alamat tempat tinggal, dll ke saya tanpa mengenali nya dan tanpa maksud, alasan dan tujuan yang jelas. 
 
-Kalau Anda mengirimkan nya, pesan tidak akan saya balas, atau bahkan mungkin pesan yang Anda kirimkan akan saya hapus kalau perlu. 
+Kalau Anda mengirimkan nya, maka pesan yang Anda kirimkan akan saya hapus. 
 
 Tapi, jika Informasi yang Anda kirimkan nanti di sebarkan oleh 'pihak ke-3', maka saya tidak akan bisa meng-hapus nya, karena itu sudah berada di luar kendali saya. 
 

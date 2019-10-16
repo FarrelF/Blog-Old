@@ -11,13 +11,13 @@ Dengan mengakses, menjelajah dan menggunakan Blog ini, yaitu "Farrel Franqois Bl
 
 ## Ketentuan Hukum
 ### Konten/Isi
-Semua konten yang disediakan/di buat oleh saya (Sebagai Pemilik/Penulis di dalam blog ini) hanya berdasarkan "apa adanya" (*"as-is" basis*). Saya percaya bahwa konten di dalam blog ini benar dan akurat, karena saya telah melakukan 'riset' terlebih dahulu sebelum artikel di terbitkan, saya telah menyediakan nya dengan itikad yang baik, namun mungkin akan mengandung ketidakakuratan teknis atau kesalahan ketik.
+Semua konten yang disediakan/di buat oleh saya (Sebagai Pemilik/Penulis di dalam blog ini) hanya berdasarkan "apa adanya" (*"as-is" basis*). Saya percaya bahwa konten di dalam blog ini 'benar' dan 'akurat', karena saya telah melakukan 'riset' terlebih dahulu sebelum artikel di terbitkan, saya telah menyediakan nya dengan itikad yang baik, namun mungkin akan mengandung ketidakakuratan teknis atau kesalahan ketik.
 
 Jadi, saya tidak bisa memberikan jaminan, baik itu secara tersurat atau tersirat, termasuk tetapi tidak terbatas pada jaminan kesesuaian tersirat untuk tujuan tertentu.
 
 Blog ini dan konten nya saya rilis di bawah lisensi berikut:
 
-- Semua konten teks, Gambar, Illustrasi atau/dan Grafis yang telah saya buat, dan terjemahan nya (jika ada), menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda memberikan kredit kepada saya dan mendistribusikan kembali konten di bawah lisensi yang sama atau lisensi yang serupa. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/pages/lisensi.md)
+- Semua konten teks, Gambar, Illustrasi atau/dan Grafis yang telah saya buat, dan terjemahan nya (jika ada), menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda melakukan beberapa kewajiban sebelum melakukan nya. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/pages/lisensi.md)
   
 - Kode Sumber untuk Tema yang saya gunakan, di Lisensikan dengan [Lisensi MIT](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) dan ada beberapa aset statik lain nya yang di lisensikan di bawah lisensi yang berbeda.
 
@@ -42,9 +42,9 @@ Jadi, segala resiko yang telah Anda timbulkan setelah mengakses, menjelajah, dan
 
 
 ### Kerahasiaan informasi yang dikirim oleh Anda
-Tentu saja, saya tidak ingin menerima Informasi Rahasia dari Anda melalui Blog ini. Setiap Informasi atau Materi yang di kirim ke Blog ini akan dianggap tidak bersifat Rahasia atau bukan suatu Informasi yang di rahasia kan dan itu bisa di publikasikan oleh saya dan juga pengunjung lain nya.
+Tentu saja, saya tidak ingin menerima Informasi Rahasia dari Anda melalui Blog ini. Setiap Informasi atau Materi yang di kirim ke Blog ini akan dianggap tidak bersifat Rahasia atau bukan suatu Informasi yang di rahasia-kan dan itu bisa di publikasikan oleh saya dan juga pengunjung lain nya.
 
-Ini Artinya, Anda mengakui bahwa Anda yang bertanggung jawab penuh atas semua konten atau/dan informasi yang Anda kirimkan kepada saya.
+Ini Artinya, Anda mengakui bahwa Anda yang bertanggung jawab penuh atas semua konten atau/dan informasi yang telah Anda kirimkan kepada saya.
 
 
 ### Akses, perubahan dan ketersediaan konten
