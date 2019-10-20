@@ -17,7 +17,7 @@ SITEURL = 'https://farrel.franqois.id'
 USE_CDN = True
 CDN_THEME_REPO_BRANCH = 'b38b66f'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(CDN_THEME_REPO_BRANCH)
-CDN_BLOG_BRANCH = '8eab989'
+CDN_BLOG_BRANCH = '8a61b9b'
 CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(CDN_BLOG_BRANCH)
 CC_LICENSE['distribution-type'] = 'cdn'
 

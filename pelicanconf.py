@@ -195,7 +195,7 @@ GOOGLE_RECAPTCHA = {
     }
 }
 
-SITELOGO = 'https://cdn.statically.io/img/secure.gravatar.com/avatar/684032413f6a1127d5c018760fb6ca8e?resize=128,128'
+SITELOGO = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/8a61b9b/content/img/profile_avatar.jpg'
 
 # Blogroll
 LINKS = ()
