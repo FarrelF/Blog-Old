@@ -44,18 +44,26 @@ EXTRA_PATH_METADATA['extras/_redirects'] = {'path': '_redirects'}
 STATIC_PATHS.append('extras/ads.txt')
 EXTRA_PATH_METADATA['extras/ads.txt'] = {'path': 'ads.txt'}
 
+# Menambah Berkas 'keybase.txt' saat di terbitkan nanti
+STATIC_PATHS.append('extras/keybase.txt')
+EXTRA_PATH_METADATA['extras/keybase.txt'] = {'path': 'keybase.txt'}
+
 # Agar Berkas 'custom.css' tidak di buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
 if USE_CDN:
     STATIC_PATHS.remove('extras/custom.css')
     del EXTRA_PATH_METADATA['extras/custom.css']
+    STATIC_PATHS.remove('extras/custom.js')
+    del EXTRA_PATH_METADATA['extras/custom.js']
 
 # Pengaturan Tema
 
 # Mengatur Letak CSS yang di kustom
 if USE_CDN:
-    CUSTOM_CSS = 'content/extras/custom.min.css' 
+    CUSTOM_CSS = 'content/extras/custom.min.css'
+    CUSTOM_JS = 'content/extras/custom.min.js' 
 else:
     CUSTOM_CSS = 'custom.min.css'
+    CUSTOM_JS = 'custom.min.js'
 THEME = 'themes/Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 
 # Activating Cache
