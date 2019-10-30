@@ -5,7 +5,7 @@ Slug: cara-install-lamp-stack-di-ubuntu
 Authors: Farrel Franqois
 Status: published
 Description: Apakah Anda ingin mencari Cara Install LAMP Stack dengan benar untuk keperluan Pengembangan di dalam Sistem Ubuntu Anda? Jika iya, maka Anda bisa kunjungi dan baca artikel ini, dan saya langsung membahas nya.
-Summary: Artikel ini akan membahas tentang bagaimana caranya meng-install _LAMP Stack_ di dalam Sistem Operasi GNU/Linux, khususnya untuk pengguna Distribusi Ubuntu dan Turunan nya (seperti Linux Mint) dengan "benar". Penasaran? Silahkan baca artikel ini, kalau tidak, ya tidak apa-apa :slightly_smiling_face: 
+Summary: Artikel ini akan membahas tentang bagaimana caranya meng-install _LAMP Stack_ di dalam Sistem Operasi GNU/Linux, khususnya untuk pengguna Distribusi Ubuntu dan Turunan nya (seperti Linux Mint, KDE neon, pop_OS!, dll) dengan "benar". Penasaran? Silahkan baca artikel ini, kalau tidak, ya tidak apa-apa :slightly_smiling_face: 
 
 <style>
 article.single p img.centered {
@@ -52,7 +52,7 @@ Sebelum Anda meng-install _LAMP Stack_, sebaiknya Anda Perbarui (_Update_) terle
 $ sudo -- sh -c 'apt update; apt full-upgrade'
 ```
 
-Bisa kamu gunakan Aplikasi yang berbasis GUI kalau kamu lebih suka GUI. Sedangkan, kalau kamu menggunakan Mint, maka kamu bisa gunakan “Update Manager”.
+Bisa kamu gunakan Aplikasi yang berbasis GUI kalau kamu lebih suka GUI di bandingkan dengan menggunakan Terminal yang berbasis CLI. Sedangkan, kalau kamu menggunakan Mint, maka kamu bisa gunakan “Update Manager”.
 
 ## II. Install Apache2
 ### Cara Install
@@ -164,14 +164,14 @@ $ sudo chmod -R 775 /path/to/uploaded/file
 Ganti `:::text /path/to/uploaded/file` menjadi lokasi tempat menyimpan berkas yang telah di Unggah.
 
 #### **5. Menguji _Web Server_ dengan membukanya lewat Web Browser**
-Setelah itu, buka Peramban Web (_Web Browser_) Anda, lalu masukkan Alamat URL nya dengan `localhost` atau `127.0.0.1`. Lalu, harusnya tampilan akan seperti di bawah ini jika bekerja dengan baik:
+Setelah itu, buka Peramban Web (_Web Browser_) Anda, lalu masukkan Alamat URL nya dengan `:::text localhost` atau `:::text 127.0.0.1`. Lalu, harusnya tampilan akan seperti di bawah ini jika bekerja dengan baik:
 
 [![Contoh halaman Index Default yang menandakan Apache2 berjalan dengan baik](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_2.png?fit=720,371&quality=80){class="centered" width="720" height="371"}](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_2.png)
 
 Jika tampilan nya muncul “It works!” seperti di atas, maka seharusnya Apache2 sudah siap di gunakan!
 
-#### **6. Menambahkan User ke dalam Group www-data**
-Oh, iya, jika user lain atau Anda ingin di masukkan ke dalam group www-data, maka eksekusi perintah berikut:
+#### **6. Menambahkan User ke dalam Grup `www-data`**
+Oh, iya, jika user lain atau Anda ingin di masukkan ke dalam grup `www-data`, maka eksekusi perintah berikut:
 
 ```bash
 $ sudo adduser nama_pengguna_kamu www-data
@@ -293,9 +293,9 @@ Jika Anda ingin menggunakan MariaDB dengan versi terbaru, maka Anda wajib menamb
     
     Bukti lain nya adalah bahwa paket `:::text software-properties-common` ini tidak ter-install secara default ke dalam Sistem Linux Mint nya. Padahal, paket tersebut harusnya sangat penting, terutama bagi Anda yang sering menambahkan PPA atau Repo lain nya jika Anda menggunakan Distribusi Ubuntu dan Turunan nya (mungkin Debian juga bisa?). 
     
-    Hal ini seolah memberikan ‘tanda’ kepada kita sebagai pengguna nya kalau ada kemungkinan bahwa pihak pengembang Linux Mint sendiri akan menggantikan sepenuh nya dengan paket `:::text mintsources` dan akan menghapus paket `:::text software-properties-common` dari [Repo Resmi](http://packages.linuxmint.com/) untuk kedepan nya.
+    Hal ini seolah memberikan ‘tanda’ kepada kita sebagai pengguna nya kalau ada kemungkinan bahwa pihak pengembang Linux Mint sendiri akan menggantikan sepenuh nya dengan paket `:::text mintsources` dan untuk kedepan nya, mereka akan menghapus paket `:::text software-properties-common` dari [Repo Resmi nya](http://packages.linuxmint.com/).
     
-    Jadi, untuk pengguna Mint 19, Anda tidak perlu lagi meng-install paket tersebut. Tapi, kalau Anda adalah pengguna Mint 18.3 atau di bawah nya, dan merasakan hal yang sama seperti di atas, bisa Anda berikan komentar nya, lalu nanti saya ubah lagi 
+    Jadi, untuk pengguna Mint 19, Anda tidak perlu lagi meng-install paket tersebut. Tapi, kalau Anda adalah pengguna Mint 18.3 atau di bawah nya, dan merasakan hal yang sama seperti di atas, bisa Anda berikan komentar nya, lalu nanti saya ubah lagi :slightly_smiling_face:
 
 #### **1. Menambahkan Repositori MariaDB**
 Setelah Anda memilih _Mirror_ nya, maka Anda akan diberi petunjuk cara menambahkan Repositori nya dari Pihak ke-3. Atau, kalau kamu gak mau repot-repot ke sana, mungkin kamu bisa ikuti cara di bawah ini:
