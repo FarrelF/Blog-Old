@@ -14,7 +14,7 @@
         "mem": "^5.1.1"
     },
     "dependencies": {
-        "netlify-cli": "^2.17.0"
+        "netlify-cli": "^2.20.1"
     },
     "config": {
         "commitizen": {
@@ -23,8 +23,8 @@
     },
     "scripts": {
         "build": "./build.sh && mv output publish",
-        "invoke-devserver": "invoke rebuild && node node_modules/gulp/bin/gulp.js build",
-        "make-devserver": "make REBUILD=1 html && node node_modules/gulp/bin/gulp.js build"
+        "invoke-devserver": "invoke rebuild && node node_modules/gulp/bin/gulp.js invoke_build",
+        "make-devserver": "make REBUILD=1 html && node node_modules/gulp/bin/gulp.js make_html"
     },
     "babel": {
         "presets": [
