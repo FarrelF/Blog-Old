@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink, escapeall
+from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink, escapeall, details
 from datetime import date, datetime, time
 from babel.dates import format_date, format_datetime, format_time
 from dateutil import parser
@@ -63,18 +63,21 @@ STATIC_PATHS = [
     'extras/CNAME',
     'extras/favicon.ico',
     'extras/robots.txt',
-    'extras/custom.css'
+    'extras/custom.css',
+    'extras/custom.js'
 ]
 
 EXTRA_PATH_METADATA = {
     'extras/CNAME': {'path': 'CNAME'},
     'extras/favicon.ico': {'path': 'favicon.ico'},
     'extras/robots.txt': {'path': 'robots.txt'},
-    'extras/custom.css': {'path': 'custom.css'}
+    'extras/custom.css': {'path': 'custom.css'},
+    'extras/custom.js': {'path': 'custom.js'}
 }
 
 # Pengaturan Tampilan
 CUSTOM_CSS = 'custom.css' # Menentukan lokasi Berkas CSS yang di buat sendiri
+CUSTOM_JS = 'custom.js' # Menentukan lokasi Berkas JS yang di buat sendiri
 THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
@@ -143,6 +146,7 @@ MARKDOWN = {
     'pymdownx.superfences': {},
     'pymdownx.inlinehilite': {},
     'pymdownx.magiclink': {},
+    'pymdownx.details': {},
   },
   'output_format': 'html5',
 }
@@ -191,7 +195,7 @@ GOOGLE_RECAPTCHA = {
     }
 }
 
-AVATAR_URL = 'https://cdn.statically.io/img/secure.gravatar.com/avatar/684032413f6a1127d5c018760fb6ca8e?resize=128,128'
+SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
 
 # Blogroll
 LINKS = ()
@@ -202,6 +206,8 @@ SOCIAL = (
           ('twitter', 'https://twitter.com/FarrelFranqois'),
           ('github', 'https://github.com/FarrelF'),
           ('gitlab', 'https://gitlab.com/FarrelF'),
+          ('telegram', 'https://t.me/FarrelF'),
+          ('keybase', 'https://keybase.io/farrelf')
          )
 
 DEFAULT_PAGINATION = 5

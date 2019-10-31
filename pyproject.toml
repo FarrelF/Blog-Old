@@ -32,7 +32,6 @@ six = "*"
 smmap2 = "*"
 soupsieve = "*"
 Unidecode = "*"
-chardet = "*"
 
 [tool.poetry.dev-dependencies]
 astroid = "*"

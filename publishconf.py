@@ -17,7 +17,7 @@ SITEURL = 'https://farrel.franqois.id'
 USE_CDN = True
 CDN_THEME_REPO_BRANCH = 'b38b66f'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(CDN_THEME_REPO_BRANCH)
-CDN_BLOG_BRANCH = '8eab989'
+CDN_BLOG_BRANCH = '8a61b9b'
 CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(CDN_BLOG_BRANCH)
 CC_LICENSE['distribution-type'] = 'cdn'
 
@@ -44,18 +44,31 @@ EXTRA_PATH_METADATA['extras/_redirects'] = {'path': '_redirects'}
 STATIC_PATHS.append('extras/ads.txt')
 EXTRA_PATH_METADATA['extras/ads.txt'] = {'path': 'ads.txt'}
 
+# Menambah Berkas 'keybase.txt' saat di terbitkan nanti
+STATIC_PATHS.append('extras/keybase.txt')
+EXTRA_PATH_METADATA['extras/keybase.txt'] = {'path': 'keybase.txt'}
+
 # Agar Berkas 'custom.css' tidak di buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
 if USE_CDN:
     STATIC_PATHS.remove('extras/custom.css')
     del EXTRA_PATH_METADATA['extras/custom.css']
+    STATIC_PATHS.remove('extras/custom.js')
+    del EXTRA_PATH_METADATA['extras/custom.js']
+
+if USE_CDN:
+    SITELOGO = '{0}/content/img/profile_avatar.jpg'.format(CDN_STATIC_BLOG_URL)
+else:
+    SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
 
 # Pengaturan Tema
 
 # Mengatur Letak CSS yang di kustom
 if USE_CDN:
-    CUSTOM_CSS = 'content/extras/custom.min.css' 
+    CUSTOM_CSS = 'content/extras/custom.min.css'
+    CUSTOM_JS = 'content/extras/custom.min.js' 
 else:
     CUSTOM_CSS = 'custom.min.css'
+    CUSTOM_JS = 'custom.min.js'
 THEME = 'themes/Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 
 # Activating Cache

@@ -11,23 +11,25 @@ Hak Cipta &copy; 2019 Farrel Franqois &lt;farrel(at)franqois(dot)id&gt;
 ## Pembukaan
 Sebagai pembukaan, maka saya akan menjelaskan istilah yang paling dasar dan yang akan saya gunakan di dalam halaman ini, yaitu:
 
-- "Digital" dalam Teknologi merupakan sebuah teknologi elektronik yang menghasilkan, menyimpan, dan memproses data dalam dua kondisi, yakni: Positif dan Non-positif. Paling sering, teknologi digital ini di gunakan oleh media komunikasi atau media jaringan untuk berkomunikasi, seperti Fiber Optic dan Satelit. Selain media komunikasi, teknologi digital juga telah di gunakan dan di manfaatkan oleh seluruh perangkat yang ada sekarang ini, seperti Laptop/Komputer, Telepon Genggam/Pintar, Televisi, dll.
+- "Kode Sumber" (atau bisa di sebut dengan "Kode Program", bahasa Inggris nya: _Source Code_) dalam Ilmu Komputer adalah semua kumpulan kode yang di tuliskan oleh manusia (termasuk komentar nya) melalui bahasa pemrograman yang juga dapat di baca oleh manusia dan di tulis sebagai teks biasa.
 
-- "Karya" adalah sebuah hasil dari pekerjaan, perbuatan atau hasil ciptaan dari seseorang yang membuat nya, yang di sebut dengan "Penulis", "Pembuat" dan "Pekerja". Secara Ciptaan, "Karya" sendiri terdiri dari: "Karya Seni", "Karya Sastra", "Karya Rekam", dan "Karya Cetak". "Karya Digital" termasuk dalam sebuah "Karya", namun itu di bagian 'Teknologi' dalam sebuah Karya.
+- "Perjanjian Lisensi" (atau bisa di sebut "Lisensi" saja, bahasa Inggris nya: *License* atau *License Agreement*) adalah sebuah Perjanjian atau Pemberian Izin yang bersifat 'Tertulis' dari Penulis/Pembuat untuk mengatur izin dari penggunaan, penyalinan, modifikasi, komersial dan mendistribusikan suatu karya ataupun kode sumber dari sebuah perangkat lunak yang nantinya akan di lakukan oleh Pengguna/Konsumen, yang akan menjadi "Penerima Lisensi".
 
-- "Karya Digital" (Bahasa Inggris nya: *Digital Works*) adalah sebuah Karya yang di buat oleh Penulis/Pembuat yang di sebarkan secara digital atau melalui teknologi digital/perangkat digital, seperti melalui Internet adalah salah satu contohnya. Blog ini merupakan salah satu contoh dari "Karya Digital".
+- "Penerima Lisensi" (Bahasa Inggris nya: *Licensee*) adalah seorang atau kelompok atau golongan yang menerima, menyetujui dan mematuhi "Perjanjian Lisensi". "Pengguna" atau "Konsumen" bisa menjadi "Penerima Lisensi", karena di haruskan untuk menerima, menyetujui dan mematuhi "Perjanjian Lisensi" sebelum akhirnya menggunakan suatu Karya untuk keperluan apapun.
 
-- "Penulis" atau "Pembuat" adalah seorang atau kelompok atau golongan yang membuat atau menuliskan suatu/sebuah "Karya". Saya adalah salah satu "Penulis" atau "Pembuat" Karya. Karya yang saya buat adalah Blog ini, yang juga termasuk "Karya Digital".
-
-- "Perjanjian Lisensi" (atau bisa di sebut "Lisensi" saja, bahasa Inggris nya: *License* atau *License Agreement*) dalam "Karya Digital" adalah sebuah Perjanjian atau Pemberian Izin yang bersifat 'Tertulis' dari Penulis/Pembuat untuk mengatur izin dari penggunaan, penyalinan, modifikasi, komersial dan mendistribusikan suatu karya digital ataupun kode sumber nya yang nantinya akan di lakukan oleh Pengguna/Konsumen, yang akan menjadi "Penerima Lisensi".
-
-- "Penerima Lisensi" (Bahasa Inggris nya: *Licensee*) adalah seorang atau kelompok atau golongan yang menerima, menyetujui dan mematuhi "Perjanjian Lisensi". "Pengguna" atau "Konsumen" bisa menjadi "Penerima Lisensi", karena di haruskan untuk menerima, menyetujui dan mematuhi "Perjanjian Lisensi" sebelum akhirnya menggunakan suatu Karya Digital untuk keperluan apapun.
-
-- "Anda" termasuk seorang "Pengguna" atau "Konsumen" yang mengunjungi, ingin menggunakan atau/dan ingin membuat turunan dari suatu Karya Digital. Serta, "Anda" disini adalah seorang yang berhak untuk melakukan hal itu, namun di samping itu, Anda harus menuruti segala kewajiban yang ada disini sebagai ganti nya, untuk menyeimbangkan Hak dan Kewajiban. Jika Anda setuju dan mematuhi nya, maka secara otomatis Anda adalah "Penerima Lisensi".
+- "Anda" termasuk seorang "Pengguna" atau "Konsumen" yang mengunjungi, ingin menggunakan atau/dan ingin membuat turunan dari suatu Karya. Serta, "Anda" disini adalah seorang yang berhak untuk melakukan hal itu, namun di samping itu, Anda harus menuruti segala kewajiban yang ada disini sebagai ganti nya, untuk menyeimbangkan Hak dan Kewajiban. Jika Anda setuju dan mematuhi nya, maka secara otomatis Anda adalah "Penerima Lisensi".
 
 Jadi, jika Anda ingin menurunkan, menggunakan, membagikan, memodifikasi, mempelajari dan menyalinkan nya dari salah satu/seluruh konten ataupun kode sumber yang ada di dalam blog ini, untuk keperluan apapun, termasuk keperluan komersial sekalipun, maka Anda harus tunduk kepada persyaratan/kewajiban yang berlaku disini untuk menghindari Tuntutan Pelanggaran Hak Cipta.
 
-## Perjanjian Lisensi
+## Sanggahan
+Karena pembahasan ini berkaitan dengan "Hukum", maka saya sanggah bahwa saya bukanlah seorang "Pengacara", "Kuasa Hukum", "Ahli Hukum", Asisten atau/dan Rekan nya, serta saya bukanlah seorang yang memiliki profesi yang berkaitan dengan "Hukum".
+
+Karena itulah, saya tidak bisa menjamin bahwa semua pembahasan Lisensi dan Ringkasan nya itu sepenuh nya benar, karena mungkin saja penyampaian yang saya lakukan itu memiliki 'celah'/kesalahan.
+
+Maka, saran saya, silahkan Anda bacakan kemudian pahami terlebih dahulu Teks Penuh dari Lisensi yang sedang saya gunakan, lalu konsultasi lah dengan "Pengacara", "Kuasa Hukum" atau/dan "Ahli Hukum" 'terdekat' Anda untuk masalah ini.
+
+## Lisensi yang di gunakan
+### Untuk semua konten di Blog ini
 Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)) di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa (Atau, bahasa Inggris nya: *Attribution-ShareAlike*) Internasional 4.0 (disingkat: CC BY-SA 4.0)
 
 Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan mengakses Alamat URL Berikut ini:
@@ -36,12 +38,51 @@ Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan meng
 https://creativecommons.org/licenses/by-sa/4.0/
 ```
 
-Sedangkan, untuk kode sumber blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING) di dalam [Kode Sumber nya](https://github.com/FarrelF/FarrelF-Blog). Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
+### Untuk Kode Sumber Blog dan Tema nya
+Sedangkan, untuk kode sumber blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/FarrelF-Blog/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/FarrelF-Blog). Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
 
 ```text
 https://www.gnu.org/licenses/agpl-3.0.html
 ```
+
+Pengecualian berlaku terutama untuk semua berkas yang berada di dalam folder `:::text content` pada Kode Sumber (kecuali jika di nyatakan [sebaliknya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)), yang di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa (Atau, bahasa Inggris nya: *Attribution-ShareAlike*) Internasional 4.0 (disingkat: CC BY-SA 4.0).
+
 Terakhir, untuk kode sumber tema yang saya gunakan dan saya modifikasi, itu saya lisensi kan dengan Lisensi MIT. Untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Modified-Flex).
+
+## Ringkasan Lisensi
+### Untuk Blog ini dan konten nya
+Dari Lisensi yang saya gunakan di atas untuk Blog ini dan seluruh konten yang berada di dalam nya, maka Anda berhak/mempunyai hak untuk melakukan:
+
+- Menggunakan Blog ini atau/dan konten-konten nya dengan bebas.
+
+- Memodifikasikan Blog ini atau/dan konten-konten nya dengan bebas.
+
+- Menyalinkan atau/dan menggandakan Blog ini atau/dan konten-konten nya dengan bebas.
+
+- Mempublikasikan atau/dan Mendistribusikan ulang blog ini atau/dan konten-konten nya, baik itu dalam bentuk salinan atau/dan hasil modifikasi atau/dan membuat turunan dari blog ini atau/dan konten-konten nya.
+
+Anda dapat melakukan semua hal di atas untuk keperluan apapun, termasuk keperluan komersial sekalipun. Serta, semua hal di atas dapat Anda lakukan dengan Tanpa Batas, baik itu Tanpa Batas Waktu, Jumlah, dan tanpa batas maksimum dan minimum, serta batasan hak lain nya.
+
+Namun, dengan syarat, Anda harus memenuhi semua kewajiban nya terlebih dahulu sebelum melakukan nya. Berikut di bawah ini kewajiban yang harus Anda lakukan:
+
+- Memberikan Atribusi dengan mencantumkan Sumber Asli dan Nama Pemilik Hak Cipta yang asli nya.
+
+- Penggunaan jaringan adalah salah satu upaya dari Distribusi.
+
+- Memberikan kebebasan yang sama kepada pengguna lain nya dengan menggunakan Lisensi yang sama atau sama persis atau mirip atau/dan kompatibel dengan yang Lisensi Asli nya pada Kode Sumber atau Blog atau/dan konten-konten nya yang telah Anda distribusikan.
+
+- Harus meng-ungkapkan atau memberitahukan Kode Sumber nya ketika kamu mendistribusi kan hasil modifikasi atau/dan turunan dari Blog ini atau/dan konten-konten nya.
+
+### Untuk Tema Blog ini
+Untuk tema nya, Hak yang Anda dapatkan pada tema sama dengan Hak apa yang Anda dapatkan pada Blog ini atau/dan konten-konten nya, namun dengan tambahan sebagai berikut:
+
+- Men-sublisensikan atau/dan menggabungkan Kode Sumber nya dengan bebas, tanpa batasan hak.
+
+Anda dapat melakukan semua hal di atas untuk keperluan apapun, termasuk keperluan komersial sekalipun. Serta, semua hal di atas dapat Anda lakukan dengan Tanpa Batas, baik itu Tanpa Batas Waktu, Jumlah, dan tanpa batas maksimum dan minimum, serta batasan hak lain nya.
+
+Namun, dengan syarat, Anda harus memenuhi semua kewajiban nya terlebih dahulu sebelum melakukan nya. Berikut di bawah ini kewajiban yang harus Anda lakukan:
+
+- Memberikan Atribusi dengan mencantumkan Sumber Asli dan Nama Pemilik Hak Cipta yang asli nya.
 
 ## Persetujuan
 Perjanjian Lisensi ini akan berlaku selama Anda mengunjungi, menggunakan atau/dan membuat turunan blog ini (baik kode sumber ataupun konten nya). Selama Anda melakukan salah satu atau lebih dari ke-tiga itu, maka Anda harus menerima Perjanjian Lisensi yang ada disini.

@@ -14,7 +14,7 @@ Untuk menghasilkan konten yang kemudian di sebar melalui Internet, saya men-*dep
 Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yakni ter-installnya:
 
 ### Persyaratan Wajib
-- Git: https://git-scm.com/downloads
+- Git: https://git-scm.com/downloads (Untuk mengetahui Cara Install nya, silahkan baca artikel [ini](https://farrel.franqois.id/cara-install-git))
 - Python 3.7 atau di atasnya: https://www.python.org/downloads/ (Jelas, wajib!)
 - Poetry: https://poetry.eustace.io/docs/
 
@@ -82,7 +82,6 @@ Selain itu, berkas tersebut akan di eksekusi oleh Netlify saat men-*deploy*, yan
 Sehingga, bisa di katakan, bahwa mereka berjalan di dalam Lingkungan Sistem yang ter-"isolasi" atau di dalam Lingkungan *Sandbox*.
 
 ## Setelah Meng-installnya
-
 Setelah kamu meng-installnya, kamu bisa coba untuk menghasilkan sebuah berkas HTML Statis ini dengan Pelican, yang kemudian bisa kamu akses dengan Web Browser kamu.
 
 Di dalam GNU/Linux atau macOS (Atau, Sistem Operasi berbasis Unix-like/Unix lain nya), kamu dapat eksekusi perintah berikut agar Pelican dapat menghasilkan Berkas HTML Statis dan juga mengaktifkan fitur Web Server pada Python:
@@ -144,8 +143,11 @@ Untuk cara penggunaan Pelican yang lebih lengkap, silahkan kamu kunjungi Halaman
 Jika Anda ingin Berkontribusi terhadap Blog ini, Anda bisa baca/lihat [Panduan Kontribusi](https://github.com/FarrelF/FarrelF-Blog/blob/master/CONTRIBUTING.md) untuk mengetahui cara nya, karena banyak sekali yang saya bahas disitu.
 
 ## Lisensi
-Kode Sumber ini, saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) atau di atas nya yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [COPYING](https://github.com/FarrelF/FarrelF-Blog/blob/master/COPYING).
+Kode Sumber ini, (Kecuali yang berada di dalam folder `contents`) saya Lisensikan dengan GNU Affero General Public License v3 (GNU AGPLv3) atau di atas nya yang merupakan Lisensi *Copyleft* dan bisa Anda lihat/baca di dalam berkas [LICENSE](https://github.com/FarrelF/FarrelF-Blog/blob/master/LICENSE).
 
-Sedangkan konten yang ada di dalam blog ini, beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
+### Pengecualian Lisensi
+Meski seluruh Kode Sumber ini berlisensi GNU Affero General Public License v3 (GNU AGPLv3) atau di atas nya/lebih baru, bukan berarti ini tanpa pengecualian.
+
+Pengecualian nya adalah bahwa Konten yang ada di dalam blog ini (berupa Artikel, Laman, dan Berkas Gambar yang telah saya buat sendiri, yang terletak di dalam folder `content`), beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
 
 Untuk lebih lengkap nya, silahkan kunjungi Laman [Lisensi](https://farrel.franqois.id/lisensi) di dalam Blog Saya :slightly_smiling_face:

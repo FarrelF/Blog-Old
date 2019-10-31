@@ -1,23 +1,31 @@
+version: 2.1
+
 executors:
   python:
     docker:
-      - image: circleci/python:3.7.4-node
+      - image: circleci/python:3.7.5-buster-node
 
 aliases:
-  restore_cache: &restore_cache
+  restore_python_cache: &restore_python_cache
     restore_cache:
-      name: Restoring Python Packages Cache
+      name: Restoring Python Virtualenv Cache
       keys: 
-        - v1-cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
+        - v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
 
   install_node_modules: &install_node_modules
     run:
-      name: Installing NodeJS Dependencies
-      command: yarn install
+      name: Installing NodeJS Packages and it's Dependencies
+      command: |
+          echo 'export PATH=$(yarn bin):$PATH' >> $BASH_ENV
+          echo 'NODE_ENV=production && export NODE_ENV' >> $BASH_ENV
+          echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH' >> $BASH_ENV
+          echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE' >> $BASH_ENV
+          source $BASH_ENV
+          yarn install --production=true
   
   install_locales: &install_locales
     run:
-      name: Installing the System Locales
+      name: Installing and Regenerating the System Locales
       command: |
           sudo apt install locales locales-all
           sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
@@ -27,22 +35,19 @@ aliases:
 
   install_dependencies: &install_dependencies
     run:
-      name: Installing All Packages and it's Dependencies
+      name: Installing All Python Packages and it's Dependencies
       command: |
-          sudo -H python3.7 -m pip install --upgrade pip
-          sudo -H python3.7 -m pip install poetry
-          poetry config settings.virtualenvs.create false
           poetry install --no-dev
   
   install_netlify: &install_netlify
     run:
-      name: Install Netlify Globally with Yarn
+      name: Install Netlify CLI with Yarn
       command: |
-          echo 'export PATH=$(yarn global bin):$PATH' >> $BASH_ENV
+          echo 'export PATH=$(yarn bin):$PATH' >> $BASH_ENV
           echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH' >> $BASH_ENV
           echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE' >> $BASH_ENV
           source $BASH_ENV
-          yarn global add netlify-cli
+          yarn add netlify-cli
   
   deploy_netlify: &deploy_netlify
     run:
@@ -52,7 +57,7 @@ aliases:
   deploy_netlify_preview: &deploy_netlify_preview
     run:
       name: Deploying with Netlify (Preview Mode)
-      command: ls -l ~/.config/yarn/global/node_modules && netlify deploy --dir=./output -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE (Preview)"
+      command: netlify deploy --dir=./output -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE (Preview)"
 
   changing_permission: &changing_permission
     run:
@@ -66,51 +71,35 @@ aliases:
   publish_blog: &publish_blog
     run:
       name: Publishing the Blog (Production Blog)
-      command: make REBUILD=1 publish
+      command: poetry run make REBUILD=1 publish
   
   build_html: &build_html
     run:
       name: Building the Blog HTML (Not an Production Blog)
-      command: make devtheme && make REBUILD=1 preview
+      command: |
+          poetry run make devtheme && poetry run make REBUILD=1 preview
 
-  save_cache: &save_cache
+  save_python_cache: &save_python_cache
     save_cache: 
-      name: Saving Python Packages Cache
-      key: v1-cache-key-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}
+      name: Saving Python Virtualenv Cache
+      key: v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
       paths:
-        - "~/.venv"
-        - "/usr/local/lib/python3.7/site-packages"
-        - "~/.cache"
+        - ~/.cache/pypoetry/virtualenvs
 
-  save_netlify_cache: &save_netlify_cache
+  save_node_modules_cache: &save_node_modules_cache
     save_cache:
-      name: Saving Netlify Cache
-      key: netlify-cache-{{ checksum "pyproject.toml" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-v1
+      name: Saving Node Modules Cache
+      key: v2-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
       paths:
-        - "~/.yarn/bin"
-        - "~/.config/yarn/global/node_modules"
-        - "~/.cache/yarn"
+        - ./node_modules
+        - ~/.cache/yarn
   
-  save_local_bin_cache: &save_local_bin_cache
-    save_cache:
-      name: Saving /usr/local/bin Cache
-      key: usr-local-bin-cache-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v1
-      paths:
-        - "/usr/local/bin"
   
-  restore_local_bin_cache: &restore_local_bin_cache
+  restore_node_modules_cache: &restore_node_modules_cache
     restore_cache:
-      name: Restoring /usr/local/bin Cache
+      name: Restoring Node Modules Cache
       keys:
-        - usr-local-bin-cache-{{ .Branch }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "poetry.lock" }}-{{ checksum "yarn.lock" }}-v1
-  
-  restore_netlify_cache: &restore_netlify_cache
-    restore_cache:
-      name: Restoring Netlify Cache
-      keys:
-        - netlify-cache-{{ checksum "pyproject.toml" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-v1
-
-version: 2.1
+        - v2-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}
 
 jobs:
   test:
@@ -118,16 +107,13 @@ jobs:
     steps:
       - checkout
       - <<: *install_locales
-      - <<: *changing_permission
-      - <<: *restore_cache
-      - <<: *restore_local_bin_cache
+      - <<: *restore_python_cache
       - <<: *install_dependencies
-      - <<: *save_cache
+      - <<: *save_python_cache
       - <<: *build_html
-      - <<: *restore_netlify_cache
-      - <<: *install_netlify
-      - <<: *save_netlify_cache
-      - <<: *save_local_bin_cache
+      - <<: *restore_node_modules_cache
+      - <<: *install_node_modules
+      - <<: *save_node_modules_cache
       - <<: *deploy_netlify_preview
 
   build:
@@ -135,9 +121,7 @@ jobs:
     steps:
       - checkout
       - <<: *install_locales
-      - <<: *changing_permission
-      - <<: *restore_cache
-      - <<: *restore_local_bin_cache
+      - <<: *restore_python_cache
       - <<: *install_dependencies
       - <<: *publish_blog
       - persist_to_workspace:
@@ -151,22 +135,14 @@ jobs:
       - checkout
       - attach_workspace:
           at: ./
-      - <<: *changing_permission
-      - <<: *restore_netlify_cache
-      - <<: *restore_local_bin_cache
-      - <<: *install_netlify
+      - <<: *restore_node_modules_cache
+      - <<: *install_node_modules
       - <<: *deploy_netlify
 
 workflows:
-  version: 2
   build_and_deploy:
     jobs:
-      - test:
-          filters:
-            branches:
-              only:
-                - master
-                - drafts
+      - test
       - build:
           requires: 
             - "test"
