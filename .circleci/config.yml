@@ -77,7 +77,6 @@ aliases:
     run:
       name: Building the Blog HTML (Not an Production Blog)
       command: |
-          poetry shell
           poetry run make devtheme && poetry run make REBUILD=1 preview
 
   save_python_cache: &save_python_cache
