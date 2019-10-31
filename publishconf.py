@@ -55,6 +55,11 @@ if USE_CDN:
     STATIC_PATHS.remove('extras/custom.js')
     del EXTRA_PATH_METADATA['extras/custom.js']
 
+if USE_CDN:
+    SITELOGO = '{0}/content/img/profile_avatar.jpg'.format(CDN_STATIC_BLOG_URL)
+else:
+    SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
+
 # Pengaturan Tema
 
 # Mengatur Letak CSS yang di kustom

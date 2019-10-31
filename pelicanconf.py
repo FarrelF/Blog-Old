@@ -195,7 +195,7 @@ GOOGLE_RECAPTCHA = {
     }
 }
 
-SITELOGO = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/8a61b9b/content/img/profile_avatar.jpg'
+SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
 
 # Blogroll
 LINKS = ()

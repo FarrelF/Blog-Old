@@ -14,7 +14,7 @@ Untuk menghasilkan konten yang kemudian di sebar melalui Internet, saya men-*dep
 Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yakni ter-installnya:
 
 ### Persyaratan Wajib
-- Git: https://git-scm.com/downloads
+- Git: https://git-scm.com/downloads (Untuk mengetahui Cara Install nya, silahkan baca artikel [ini](https://farrel.franqois.id/cara-install-git))
 - Python 3.7 atau di atasnya: https://www.python.org/downloads/ (Jelas, wajib!)
 - Poetry: https://poetry.eustace.io/docs/
 
@@ -82,7 +82,6 @@ Selain itu, berkas tersebut akan di eksekusi oleh Netlify saat men-*deploy*, yan
 Sehingga, bisa di katakan, bahwa mereka berjalan di dalam Lingkungan Sistem yang ter-"isolasi" atau di dalam Lingkungan *Sandbox*.
 
 ## Setelah Meng-installnya
-
 Setelah kamu meng-installnya, kamu bisa coba untuk menghasilkan sebuah berkas HTML Statis ini dengan Pelican, yang kemudian bisa kamu akses dengan Web Browser kamu.
 
 Di dalam GNU/Linux atau macOS (Atau, Sistem Operasi berbasis Unix-like/Unix lain nya), kamu dapat eksekusi perintah berikut agar Pelican dapat menghasilkan Berkas HTML Statis dan juga mengaktifkan fitur Web Server pada Python:
