@@ -31,6 +31,8 @@ USE_BOOTSTRAP = False
 
 PATH = 'content'
 
+ROBOTS = 'noindex, nofollow, noarchive'
+
 # Artikel
 ARTICLE_PATHS = ['articles']
 ARTICLE_SAVE_AS = '{slug}/index.html'
