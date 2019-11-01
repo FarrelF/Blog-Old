@@ -10,8 +10,8 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 THEMEPATH=$(BASEDIR)/themes/$(THEME)
-PUBLISHCONF=$(BASEDIR)/publishconf.py
-DEVPUBLISHCONF=$(BASEDIR)/dev_publishconf.py
+PUBLISHCONF?=$(BASEDIR)/publishconf.py
+PREVIEWCONF?=$(BASEDIR)/previewconf.py
 
 GITHUB_PAGES_BRANCH=gh-pages
 
@@ -53,7 +53,7 @@ help:
 	@echo 'Makefile for a pelican Web site                                                                                '
 	@echo '                                                                                                               '
 	@echo 'Usage:                                                                                                         '
-	@echo '   make install [PRODUCTION=0]                   Install the packages and all of its dependencies (with Pipenv)'
+	@echo '   make install [PRODUCTION=0]                   Install the packages and all of its dependencies (with Poetry)'
 	@echo '   make html [REBUILD=0]                         (re)generate the web site                                     '
 	@echo '   make clean                                    remove the generated files                                    '
 	@echo '   make regenerate [REBUILD=0]                   regenerate files upon modification                            '
@@ -124,7 +124,7 @@ publish:
 
 preview:
 	@echo 'Making a Preview Website/Blog, please wait....'
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(DEVPUBLISHCONF) $(PELICANOPTS)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PREVIEWCONF) $(PELICANOPTS)
 
 github: publish
 	@echo ''

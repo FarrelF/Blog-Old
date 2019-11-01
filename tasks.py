@@ -21,6 +21,7 @@ SETTINGS.update(LOCAL_SETTINGS)
 CONFIG = {
     'settings_base': SETTINGS_FILE_BASE,
     'settings_publish': 'publishconf.py',
+    'settings_preview': 'previewconf.py',
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     'deploy_path': SETTINGS['OUTPUT_PATH'],
     'content_path': SETTINGS['PATH'],
@@ -94,8 +95,8 @@ def devserver(c):
 
 @task
 def preview(c):
-    """Build production version of site"""
-    c.run('pelican {content_path} -s {settings_publish} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+    """Build preview version of site"""
+    c.run('pelican {content_path} -s {settings_preview} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
 
 @task
 def livereload(c):

@@ -70,6 +70,7 @@ else:
     CUSTOM_CSS = 'custom.min.css'
     CUSTOM_JS = 'custom.min.js'
 THEME = 'themes/Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
+ROBOTS = 'all'
 
 # Activating Cache
 CACHE_PATH = '__cache__'
