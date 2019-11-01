@@ -25,8 +25,14 @@ DEFAULT_METADATA = {
 # Pengaturan Font
 USE_GOOGLE_CDN_FOR_FONTS = False
 USE_MINIFIED_FONT_CSS = False
+USE_MINIFIED_SCRIPTS = False
 
-USE_CDN = False
+if USE_MINIFIED_SCRIPTS == True:
+    CUSTOM_JS_NAME = 'custom.min.js'
+else:
+    CUSTOM_JS_NAME = 'custom.js'
+
+DARK_MODE = True
 USE_BOOTSTRAP = False
 
 PATH = 'content'
@@ -79,7 +85,9 @@ EXTRA_PATH_METADATA = {
 
 # Pengaturan Tampilan
 CUSTOM_CSS = 'custom.css' # Menentukan lokasi Berkas CSS yang di buat sendiri
-CUSTOM_JS = 'custom.js' # Menentukan lokasi Berkas JS yang di buat sendiri
+CUSTOM_JS = CUSTOM_JS_NAME # Menentukan lokasi Berkas JS yang di buat sendiri
+USE_CDN = False
+#USE_LESS = True
 THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
@@ -120,7 +128,7 @@ else:
     GOOGLE_SEARCH['options']['search_style'] = 'gcse-search'
 
 # Pengaturan Markdown
-PYGMENTS_STYLE = 'friendly' # Tampilan Pygments yang merupakan Syntax Highlighter
+PYGMENTS_STYLE = 'monokai' # Tampilan Pygments yang merupakan Syntax Highlighter
 MARKDOWN = {
   'extension_configs': {
     'markdown.extensions.toc': {},

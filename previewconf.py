@@ -15,6 +15,8 @@ SITEURL = 'https://farrel.franqois.id'
 
 # Penggunaan CDN
 USE_CDN = True
+USE_LESS = False
+USE_MINIFIED_SCRIPTS = True
 CDN_THEME_REPO_BRANCH = 'b38b66f'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(CDN_THEME_REPO_BRANCH)
 CDN_BLOG_BRANCH = '8a61b9b'
@@ -65,10 +67,12 @@ else:
 # Mengatur Letak CSS yang di kustom
 if USE_CDN:
     CUSTOM_CSS = 'content/extras/custom.min.css'
-    CUSTOM_JS = 'content/extras/custom.min.js' 
+    CUSTOM_JS = 'content/extras/{0}'.format(CUSTOM_JS_NAME) 
+    
 else:
     CUSTOM_CSS = 'custom.min.css'
-    CUSTOM_JS = 'custom.min.js'
+    CUSTOM_JS = CUSTOM_JS_NAME
+
 THEME = 'Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 
 # Activating Cache
