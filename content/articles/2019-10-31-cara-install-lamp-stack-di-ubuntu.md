@@ -574,7 +574,7 @@ Setelah Anda membuka editor teks nya, coba Anda cari baris yang memiliki opsi `:
 
 Kalo kamu menggunakan editor yang berbasis GUI, kamu bisa menggunakan fitur seperti “Jump to Line”, “Go to Line”, atau apalah, yang penting bisa melompat ke baris tujuan.
 
-Sedangkan, jika kamu menggunakan `nano`, editor teks berbasis CLI, kamu bisa menekan tombol <kbd>CTRL</kbd> + <kbd>_</kbd> (_Underscore_/Garis Bawah) di `nano`, bukan <kbd>CTRL</kbd> + <kbd>-</kbd> (Strip). Bagaimana cara menekan nya? Mudah saja, sembari Anda sedang menekan <kbd>CTRL</kbd>, Anda harus tahu bagaimana caranya kamu memasukkan tanda garis bawah ke dalam layar dari Keyboard. 
+Sedangkan, jika kamu menggunakan `nano`, editor teks berbasis CLI, kamu bisa menekan tombol <kbd>CTRL</kbd> + <kbd>\_</kbd> (_Underscore_/Garis Bawah) di `nano`, bukan <kbd>CTRL</kbd> + <kbd>-</kbd> (Strip). Bagaimana cara menekan nya? Mudah saja, sembari Anda sedang menekan <kbd>CTRL</kbd>, Anda harus tahu bagaimana caranya kamu memasukkan tanda garis bawah ke dalam layar dari Keyboard. 
 
 Kalo saya perlu menekan tombol <kbd>Shift</kbd> + <kbd>\_</kbd> untuk menghasilkan Tanda Garis Bawah. Jadi, untuk mencari/melompat ke baris tujuan di `nano`, maka saya harus menekan <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>\_</kbd>, sampai sini paham?
 
@@ -650,7 +650,7 @@ Catatan : Alasan kenapa di sebut “Blowfish”, padahal sekarang tidak mengguna
 
 Jadi, artinya, opsi `:::text blowfish_secret` ini hanya berperan sebagai Kunci (_Key_) nya saja dalam Enkripsi, yang tidak boleh di beritahukan ke siapapun, kecuali kamu sendiri. Sedangkan kalo kamu tidak mengisinya, maka sama saja dengan tidak mengamankan akun MariaDB kamu dengan meng-enkripsi Kuki (_Cookie_) nya.
 
-Bagaimana cara menyisipkan nya? Coba kamu cari barisan kode atau teks `::php $cfg['blowfish_secret']` dengan menggunakan fitur “Find” atau menekan tombol <kbd>CTRL</kbd> + <kbd>F</kbd>. 
+Bagaimana cara menyisipkan nya? Coba kamu cari barisan kode atau teks `:::php $cfg['blowfish_secret']` dengan menggunakan fitur “Find” atau menekan tombol <kbd>CTRL</kbd> + <kbd>F</kbd>. 
 
 Dan, Anda akan menemukan nya dengan seperti berikut:
 
@@ -788,7 +788,7 @@ Saya akan jelaskan Direktif nya satu-per-satu di bawah ini:
 
 - [`:::text deny`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#deny) - Direktif ini berguna untuk memblokir pengunjung yang berasal dari IP, Domain dan Host tertentu. Karena saya mengisi nya dengan `:::text deny from all`, maka ini akan memblokir semua pengunjung (harusnya ini termasuk dari kita sendiri).
   
-- [`:::text allow`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#allow) - Direktif ini berguna untuk mengizinkan pengunjung yang berasal dari IP, Domain dan Host tertentu. Bisa di bilang, kalo DIrektif ini merupakan pengecualian setelah Direktif `:::text deny from all` di eksekusi. Saya mengaturnya dengan `:::text allow from 127.0.0.1` agar bisa di akses lewat `localhost`.
+- [`:::text allow`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#allow) - Direktif ini berguna untuk mengizinkan pengunjung yang berasal dari IP, Domain dan Host tertentu. Bisa di bilang, kalo DIrektif ini merupakan pengecualian setelah Direktif `:::text deny from all` di eksekusi. Saya mengaturnya dengan `:::text allow from 127.0.0.1` agar bisa di akses lewat `:::text localhost`.
 
 Jika Anda sudah selesai, simpan berkas tersebut. Setelah itu, cobalah untuk mengakses phpMyAdmin di Perangkat Lain, dan pastikan juga perangkat tersebut berada di dalam Jaringan yang sama dengan Komputer/Laptop yang terinstall phpMyAdmin. Kalo berhasil, harusnya muncul galat/kesalahan seperti “Forbidden” saat di akses.
 
@@ -853,7 +853,7 @@ require valid-user
 
 Saya akan jelaskan Direktif nya satu-per-satu di bawah ini:
 
-- [`:::text AuthUserFile`](https://httpd.apache.org/docs/2.4/mod/mod_authn_file.html#authuserfile) - Untuk menentukan di mana letak berkas `:::text .htpasswd` itu berada. Berkas nya sendiri gak harus bernama `:::text .htpasswd` sebenarnya, bisa kamu gunakan nama berkas lain, hanya saja yang menyimpan Nama Pengguna dan Kata Sandi yang sudah di-_hash_ (atau, yang di buat menggunakan perintah `::bash htpasswd` tadi), yang akan di gunakan untuk Autentikasi nanti.
+- [`:::text AuthUserFile`](https://httpd.apache.org/docs/2.4/mod/mod_authn_file.html#authuserfile) - Untuk menentukan di mana letak berkas `:::text .htpasswd` itu berada. Berkas nya sendiri gak harus bernama `:::text .htpasswd` sebenarnya, bisa kamu gunakan nama berkas lain, hanya saja yang menyimpan Nama Pengguna dan Kata Sandi yang sudah di-_hash_ (atau, yang di buat menggunakan perintah `:::bash htpasswd` tadi), yang akan di gunakan untuk Autentikasi nanti.
 
 - [`:::text AuthName`](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html#authname) - Direktif ini berfungsi untuk menentukan Pesan saat Autentikasi nanti. Pada kode diatas, saya isikan dengan "Ini adalah Area Terlarang!".
 
