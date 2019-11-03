@@ -190,6 +190,8 @@ def locale_settings(d, locale_language=LOCALE[0]):
 
 JINJA_FILTERS = {'locale_settings':locale_settings}
 
+LAZYLOAD_IMAGES = True
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

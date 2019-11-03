@@ -17,7 +17,7 @@ SITEURL = 'https://farrel.franqois.id'
 USE_CDN = True
 USE_LESS = False
 USE_MINIFIED_SCRIPTS = True
-CDN_THEME_REPO_BRANCH = 'b38b66f'
+CDN_THEME_REPO_BRANCH = 'bac9f9f'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(CDN_THEME_REPO_BRANCH)
 CDN_BLOG_BRANCH = '8a61b9b'
 CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(CDN_BLOG_BRANCH)
@@ -88,6 +88,7 @@ DELETE_OUTPUT_DIRECTORY = True
 # Disqus
 DISQUS_SITENAME = "FarrelF-Blog"
 DISQUS_IN_PAGES = True # Mengaktifkan Disqus di dalam Laman
+DISQUS_LAZYLOAD = True
 
 # Google
 GOOGLE_ANALYTICS = ""
