@@ -43,8 +43,8 @@ Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/pages/lisensi.m
 
 ## Pertanyaan dan Jawaban
 ### Apakah kedua Kode Sumber di atas merupakan 100% Bebas?
-Tidak bisa di bilang bahwa kedua Kode Sumber di atas itu Bebas Seluruh nya (100% Bebas), terutama untuk Blog nya, karena di dalam blog ini telah terpasang *Google Analytics* dan juga *Google AdSense*, yang merupakan Perangkat Lunak Berpemilik (*Proprietary Software*).
+Tidak bisa di bilang bahwa kedua Kode Sumber di atas itu Bebas Seluruh nya (100% Bebas), terutama untuk Tema Blog nya, karena di dalam blog ini (lebih tepatnya, tema yang saya gunakan sekarang) telah terpasang *Google Analytics* dan juga *Google AdSense*, yang merupakan Perangkat Lunak Berpemilik (*Proprietary Software*).
 
-Selain itu, di mesin pencarian juga saya masih menggantung kan nya pada *Google CSE* ("Custom Search Engine", itupun kalo ada) yang bukan merupakan Perangkat Lunak Bebas.
+Selain itu, di mesin pencarian juga saya masih menggantung kan nya pada *Google CSE* ("Custom Search Engine") yang bukan merupakan Perangkat Lunak Bebas.
 
 Tapi, Anda juga bisa bebas menghapus semua itu dengan memodifikasi nya, sehingga Anda bisa membuat Tema yang sepenuhnya bebas oleh Anda sendiri. Itu terserah Anda, apakah Anda ingin mengutamakan "kebebasan" pada Blog Anda atau mengutamakan fitur pada Blog Anda? Saya rasa, itu juga bukan urusan saya, sih.

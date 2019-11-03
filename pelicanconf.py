@@ -26,6 +26,7 @@ DEFAULT_METADATA = {
 USE_GOOGLE_CDN_FOR_FONTS = False
 USE_MINIFIED_FONT_CSS = False
 USE_MINIFIED_SCRIPTS = False
+LINKS_IN_NEW_TAB = False
 
 if USE_MINIFIED_SCRIPTS == True:
     CUSTOM_JS_NAME = 'custom.min.js'
@@ -87,7 +88,7 @@ EXTRA_PATH_METADATA = {
 CUSTOM_CSS = 'custom.css' # Menentukan lokasi Berkas CSS yang di buat sendiri
 CUSTOM_JS = CUSTOM_JS_NAME # Menentukan lokasi Berkas JS yang di buat sendiri
 USE_CDN = False
-#USE_LESS = True
+USE_LESS = True
 THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
