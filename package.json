@@ -14,7 +14,7 @@
         "mem": "^5.1.1"
     },
     "dependencies": {
-        "netlify-cli": "^2.20.1"
+        "netlify-cli": "^2.20.2"
     },
     "config": {
         "commitizen": {

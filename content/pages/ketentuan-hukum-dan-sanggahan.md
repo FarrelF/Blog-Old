@@ -7,7 +7,7 @@ Authors: Farrel Franqois
 [TOC]
 
 ## Pembuka
-Dengan mengakses, menjelajah dan menggunakan Blog ini, yaitu "Farrel Franqois Blog", maka Anda harus memahami dan menerima ketentuan di dalam halaman ini. Blog ini mencakup `farrel.franqois.id` dan seluruh sub-subdomain nya.
+Dengan mengakses, menjelajah dan menggunakan Blog ini, yaitu "Farrel Franqois Blog", maka Anda harus memahami dan menerima ketentuan di dalam halaman ini. Blog ini mencakup `:::text farrel.franqois.id` dan seluruh sub-subdomain nya.
 
 ## Ketentuan Hukum
 ### Konten/Isi
