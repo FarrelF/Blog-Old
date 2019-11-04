@@ -63,6 +63,10 @@ else:
     SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
 
 # Pengaturan Tema
+if USE_MINIFIED_SCRIPTS == True:
+    CUSTOM_JS_NAME = 'custom.min.js'
+else:
+    CUSTOM_JS_NAME = 'custom.js'
 
 # Mengatur Letak CSS yang di kustom
 if USE_CDN:
