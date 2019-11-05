@@ -88,7 +88,7 @@ EXTRA_PATH_METADATA = {
 CUSTOM_CSS = 'custom.css' # Menentukan lokasi Berkas CSS yang di buat sendiri
 CUSTOM_JS = CUSTOM_JS_NAME # Menentukan lokasi Berkas JS yang di buat sendiri
 USE_CDN = False
-USE_LESS = True
+USE_LESS = False
 THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
@@ -97,7 +97,7 @@ CHECK_MODIFIED_METHOD = 'sha256'
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories', 'summary']
+PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories', 'summary', 'pelican_htmlmin']
 EXTENDED_SITEMAP_PLUGIN = {
     'priorities': {
         'index': 1.0,
@@ -111,6 +111,14 @@ EXTENDED_SITEMAP_PLUGIN = {
         'pages': 'monthly',
         'others': 'monthly',
     }
+}
+
+HTMLMIN_OPTIONS = {
+    'remove_comments': True,
+    'remove_empty_space': True,
+    'remove_optional_attribute_quotes': True,
+    'keep_pre': True,
+    'reduce_boolean_attributes': True
 }
 
 # Pengaturan Google CSE (Custom Search Engine)

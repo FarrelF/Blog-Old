@@ -189,6 +189,7 @@ Tanpa basa-basi lagi, berikut adalah cara instalasi nya:
 2. **CATATAN**: Sebelum mengunduh nya, Anda harus siapkan kuota yang cukup untuk meng-unduhnya, karena besarnya mencapai 35+ MB.
 
 3. Setelah itu, pilih Arsitektur Sistem yang Anda gunakan. Kalo Anda lebih suka menggunakan Terminal untuk mengunduhnya, Anda bisa manfaatkan aria2 atau Wget untuk hal ini, berikut perintah nya (dan langkah-langkahnya):
+
 ```bash
 ## 1. Menentukan Jenis Rilisan FFmpeg ##
 $ FFMPEG_RELEASE_TYPE="release"; export FFMPEG_RELEASE_TYPE
@@ -214,6 +215,7 @@ $ wget "https://johnvansickle.com/ffmpeg/$FFMPEG_RELEASE_PATH/$FFMPEG_FILENAME"
 ```
 
 4. Setelah Anda mengunduhnya, buatlah sebuah folder yang bernama `ffmpeg.d` di dalam direktori `/usr/local/bin`, dan ekstrak berkas yang telah Anda Unduh tersebut kedalam folder yang barusan Anda buat, dengan perintah berikut:
+
 ```bash
 $ sudo mkdir /usr/local/bin/ffmpeg.d
 $ sudo tar -xvJf "$FFMPEG_FILENAME" --strip-components=1 -C /usr/local/bin/ffmpeg.d; sudo chown -R root:root /usr/local/bin/ffmpeg.d; cd "$_" || return
