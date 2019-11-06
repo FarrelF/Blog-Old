@@ -32,7 +32,6 @@ aliases:
           sudo sed -i 's/# id_ID\.UTF-8/id_ID\.UTF-8/' /etc/locale.gen
           sudo update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX
           DEBIAN_FRONTEND=noninteractive sudo -E dpkg-reconfigure locales
-          timedatectl set-timezone Asia/Jakarta
           sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
           echo "TZ='Asia/Jakarta'; export TZ" >> $BASH_ENV
           source $BASH_ENV
