@@ -3,7 +3,7 @@ Slug: kode-sumber
 Status: published
 Authors: Farrel Franqois
 
-Karena saya memberikan kebebasan pada blog ini kepada Anda. Sehingga, bukan hanya Kode Sumber saja yang bisa Anda dapatkan, Anda juga bebas menggunakan, mempelajari, memodifikasi, menyalin dan mendistribusikan ulang kepada Keluarga, Tetangga, Teman atau Rekan kamu untuk keperluan apapun termasuk keperluan komersial sekalipun sesuai dengan [filosofi Perangkat Lunak Bebas](https://www.gnu.org/philosophy/free-sw.html.en).
+Karena saya memberikan kebebasan pada blog ini kepada Anda. Sehingga, bukan hanya Kode Sumber saja yang bisa Anda dapatkan, Anda juga bebas menggunakan, mempelajari, memodifikasi, menyalin dan mendistribusikan ulang kepada Keluarga, Tetangga, Teman atau Rekan kamu untuk keperluan apapun termasuk keperluan komersial sekalipun sesuai dengan [filosofi Perangkat Lunak Bebas](https://www.gnu.org/philosophy/free-sw.html.en) (Meskipun sebenarnya blog ini bukan merupakan "Perangkat Lunak", tapi setidak nya filosofi tersebut masih bisa berlaku untuk blog ini).
 
 Kode Sumber nya ini di bagi menjadi dua, yakni Kode Sumber untuk Blog nya, dan yang satu nya adalah Kode Sumber untuk Tema yang di gunakan nya (yang telah saya modifikasi dari Asli nya). Silahkan Anda peroleh dengan cara berikut:
 
@@ -13,12 +13,16 @@ Kode Sumber untuk Blog ini telah saya simpan di dalam GitHub, untuk melihat/memp
 ```text
 https://github.com/FarrelF/FarrelF-Blog
 ```
+
 Atau, kalau kamu lebih suka meng-*clone* nya secara langsung, maka kamu dapat meng-*clone* nya dengan perintah berikut:
 
 ```bash
 $ git clone https://github.com/FarrelF/FarrelF-Blog.git
 ```
-Kode Sumber Blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), yang merupakan lisensi *Copyleft*. Jadi, pastikan Anda mendistribusikan nya dengan menggunakan Lisensi yang sama dengan Lisensi dari Kode Sumber Asli nya dan juga mencantumkan Hak Cipta nya juga, yah :slightly_smiling_face:
+
+Kode Sumber Blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), kecuali folder `:::text content` (kecuali yang dinyatakan [sebaliknya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)) saya lisensi kan dengan [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), yang kedua nya merupakan lisensi *Copyleft*. 
+
+Jadi, pastikan Anda mendistribusikan nya dengan menggunakan Lisensi yang sama dengan Lisensi dari Kode Sumber Asli nya dan juga mencantumkan Hak Cipta nya juga, yah :slightly_smiling_face:
 
 Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/pages/lisensi.md).
 
@@ -31,11 +35,13 @@ Untuk melihat/memperoleh nya, silahkan kunjungi Alamat URL untuk *Repository* Gi
 ```text
 https://github.com/FarrelF/Modified-Flex
 ```
-Atau, kalau kamu lebih suka meng-*clone* nya secara langsung, maka kamu dapat meng-*clone* nya dengan perintah berikut:
+
+Atau, kalau kamu lebih suka meng-kloning nya secara langsung, maka kamu dapat meng-kloning nya dengan perintah berikut:
 
 ```bash
 $ git clone https://github.com/FarrelF/Modified-Flex.git
 ```
+
 Kode Sumber Tema ini saya lisensi kan dengan Lisensi MIT, sesuai dengan Tema Asli nya, yang merupakan lisensi *Permissive*. Jadi, pastikan Anda mencantumkan Hak Cipta nya juga, yah :slightly_smiling_face:
 
 Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/pages/lisensi.md).
@@ -47,4 +53,4 @@ Tidak bisa di bilang bahwa kedua Kode Sumber di atas itu Bebas Seluruh nya (100%
 
 Selain itu, di mesin pencarian juga saya masih menggantung kan nya pada *Google CSE* ("Custom Search Engine") yang bukan merupakan Perangkat Lunak Bebas.
 
-Tapi, Anda juga bisa bebas menghapus semua itu dengan memodifikasi nya, sehingga Anda bisa membuat Tema yang sepenuhnya bebas oleh Anda sendiri. Itu terserah Anda, apakah Anda ingin mengutamakan "kebebasan" pada Blog Anda atau mengutamakan fitur pada Blog Anda? Saya rasa, itu juga bukan urusan saya, sih.
+Tapi, Anda juga bisa bebas menghapus semua itu dengan memodifikasi nya, sehingga Anda bisa membuat Tema yang sepenuhnya bebas oleh Anda sendiri. Itu terserah Anda, apakah Anda ingin mengutamakan "kebebasan" pada Blog Anda atau mengutamakan fitur pada Blog Anda? Saya rasa, itu juga bukan urusan saya, sih, hehe :grinning:

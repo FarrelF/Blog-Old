@@ -24,9 +24,9 @@ Jadi, jika Anda ingin menurunkan, menggunakan, membagikan, memodifikasi, mempela
 ## Sanggahan
 Karena pembahasan ini berkaitan dengan "Hukum", maka saya sanggah bahwa saya bukanlah seorang "Pengacara", "Kuasa Hukum", "Ahli Hukum", Asisten atau/dan Rekan nya, serta saya bukanlah seorang yang memiliki profesi yang berkaitan dengan "Hukum".
 
-Karena itulah, saya tidak bisa menjamin bahwa semua pembahasan Lisensi dan Ringkasan nya itu sepenuh nya benar, karena mungkin saja penyampaian yang saya lakukan itu memiliki 'celah'/kesalahan.
+Jadi, Lisensi dan segala yang berkaitan di dalam laman ini, hanya saya bahas berdasarkan "apa adanya" (_"as-is" basis_). Sehingga, saya tidak bisa menjamin bahwa semua pembahasan Lisensi dan Ringkasan nya disini itu sepenuh nya benar, karena mungkin saja penyampaian yang saya lakukan itu memiliki 'celah'/kesalahan.
 
-Maka, saran saya, silahkan Anda bacakan kemudian pahami terlebih dahulu Teks Penuh dari Lisensi yang sedang saya gunakan, lalu konsultasi lah dengan "Pengacara", "Kuasa Hukum" atau/dan "Ahli Hukum" 'terdekat' Anda untuk masalah ini.
+Maka dari itu, saran saya, silahkan Anda bacakan kemudian pahami terlebih dahulu Teks Penuh dari Lisensi yang sedang saya gunakan, lalu konsultasi lah dengan "Pengacara", "Kuasa Hukum" "Ahli Hukum" atau/dan Professional lain nya 'terdekat' Anda untuk penjelasan lebih lanjut.
 
 ## Lisensi yang di gunakan
 ### Untuk semua konten di Blog ini
@@ -51,7 +51,7 @@ Terakhir, untuk kode sumber tema yang saya gunakan dan saya modifikasi, itu saya
 
 ## Ringkasan Lisensi
 ### Untuk Blog ini dan konten nya
-Dari Lisensi yang saya gunakan di atas untuk Blog ini dan seluruh konten yang berada di dalam nya, maka Anda berhak/mempunyai hak untuk melakukan:
+Berdasarkan dari Lisensi yang saya gunakan di atas untuk Blog ini dan seluruh konten yang berada di dalam nya, maka Anda berhak/mempunyai hak untuk melakukan:
 
 - Menggunakan Blog ini atau/dan konten-konten nya dengan bebas.
 
@@ -61,7 +61,7 @@ Dari Lisensi yang saya gunakan di atas untuk Blog ini dan seluruh konten yang be
 
 - Mempublikasikan atau/dan Mendistribusikan ulang blog ini atau/dan konten-konten nya, baik itu dalam bentuk salinan atau/dan hasil modifikasi atau/dan membuat turunan dari blog ini atau/dan konten-konten nya.
 
-Anda dapat melakukan semua hal di atas untuk keperluan apapun, termasuk keperluan komersial sekalipun. Serta, semua hal di atas dapat Anda lakukan dengan Tanpa Batas, baik itu Tanpa Batas Waktu, Jumlah, dan tanpa batas maksimum dan minimum, serta batasan hak lain nya.
+Anda dapat melakukan semua hal di atas untuk keperluan apapun, termasuk keperluan komersial sekalipun. Serta, semua hal di atas dapat Anda lakukan dengan Tanpa Batas, baik itu Tanpa Batas Waktu, Jumlah, dan tanpa batas maksimum dan minimum, serta tanpa batasan hak lain nya.
 
 Namun, dengan syarat, Anda harus memenuhi semua kewajiban nya terlebih dahulu sebelum melakukan nya. Berikut di bawah ini kewajiban yang harus Anda lakukan:
 
@@ -71,14 +71,14 @@ Namun, dengan syarat, Anda harus memenuhi semua kewajiban nya terlebih dahulu se
 
 - Memberikan kebebasan yang sama kepada pengguna lain nya dengan menggunakan Lisensi yang sama atau sama persis atau mirip atau/dan kompatibel dengan yang Lisensi Asli nya pada Kode Sumber atau Blog atau/dan konten-konten nya yang telah Anda distribusikan.
 
-- Harus meng-ungkapkan atau memberitahukan Kode Sumber nya ketika kamu mendistribusi kan hasil modifikasi atau/dan turunan dari Blog ini atau/dan konten-konten nya.
+- Anda harus meng-ungkapkan atau memberitahukan Kode Sumber nya ketika kamu mendistribusi kan hasil modifikasi atau/dan turunan Kode Sumber dari Blog ini.
 
 ### Untuk Tema Blog ini
 Untuk tema nya, Hak yang Anda dapatkan pada tema sama dengan Hak apa yang Anda dapatkan pada Blog ini atau/dan konten-konten nya, namun dengan tambahan sebagai berikut:
 
 - Men-sublisensikan atau/dan menggabungkan Kode Sumber nya dengan bebas, tanpa batasan hak.
 
-Anda dapat melakukan semua hal di atas untuk keperluan apapun, termasuk keperluan komersial sekalipun. Serta, semua hal di atas dapat Anda lakukan dengan Tanpa Batas, baik itu Tanpa Batas Waktu, Jumlah, dan tanpa batas maksimum dan minimum, serta batasan hak lain nya.
+Anda dapat melakukan semua hal di atas untuk keperluan apapun, termasuk keperluan komersial sekalipun. Serta, semua hal di atas dapat Anda lakukan dengan Tanpa Batas, baik itu Tanpa Batas Waktu, Jumlah, dan tanpa batas maksimum dan minimum, serta tanpa batasan hak lain nya.
 
 Namun, dengan syarat, Anda harus memenuhi semua kewajiban nya terlebih dahulu sebelum melakukan nya. Berikut di bawah ini kewajiban yang harus Anda lakukan:
 
@@ -89,7 +89,7 @@ Perjanjian Lisensi ini akan berlaku selama Anda mengunjungi, menggunakan atau/da
 
 Jadi, setuju/tidak setuju, baca/tidak baca, maka Anda harus siap untuk menyetujui dan menerima nya, karena ini berlaku selama Anda masih ingin menggunakan blog ini.
 
-Jika Anda tidak menyetujui atau/dan menerima nya, silahkan jangan buat turunan dari/menggunakan Blog ini, dan kalau bisa, lebih baik juga untuk tidak mengunjungi Blog ini.
+Jika Anda tidak menyetujui atau/dan menerima nya, silahkan jangan buat turunan dari/menggunakan Blog ini atau/dan konten-konten nya untuk keperluan Anda, apapun itu, namun Anda masih bisa/diperbolehkan untuk membaca atau mengunjungi Blog ini.
 
 ## Penutup
 Baiklah, sekian untuk Halaman Lisensi ini, semoga Anda memahami dan memaklumi adanya Perjanjian seperti ini. Dan, semoga Anda bisa mentaati nya untuk kebaikan bersama dan Anda juga.

@@ -25,13 +25,16 @@ aliases:
   
   install_locales: &install_locales
     run:
-      name: Installing and Regenerating the System Locales
+      name: Installing and Regenerating the System Locales, then Changing the Timezone
       command: |
           sudo apt install locales locales-all
           sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
           sudo sed -i 's/# id_ID\.UTF-8/id_ID\.UTF-8/' /etc/locale.gen
           sudo update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX
           DEBIAN_FRONTEND=noninteractive sudo -E dpkg-reconfigure locales
+          sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+          echo "TZ='Asia/Jakarta'; export TZ" >> $BASH_ENV
+          source $BASH_ENV
 
   install_dependencies: &install_dependencies
     run:

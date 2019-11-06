@@ -1,6 +1,6 @@
 Title: Cara Install LAMP Stack (Apache2, MariaDB, PHP 7) + phpMyAdmin di Ubuntu dan Turunan nya
 Category: Tutorial
-Tag: Cara Install, LAMP Stack, Apache2, MariaDB, PHP 7, Ubuntu
+Tags: Cara Install, LAMP Stack, Apache2, MariaDB, PHP 7, Ubuntu, GNU/Linux
 Slug: cara-install-lamp-stack-di-ubuntu
 Authors: Farrel Franqois
 Status: published
@@ -426,8 +426,9 @@ Karena kita nanti meng-install phpMyAdmin secara manual, atau jika kita terlanju
 
 Adakah solusi lain nya? Ada, bisa kamu klik pada salah satu tautan (_link_) berikut:
 
-- https://stackoverflow.com/questions/37239970/connect-to-mysql-server-without-sudo
-- https://askubuntu.com/questions/766334/cant-login-as-mysql-user-root-from-normal-user-account-in-ubuntu-16-04
+- [Connect to mysql server without sudo - Stackoverflow](https://stackoverflow.com/questions/37239970/connect-to-mysql-server-without-sudo)
+
+- [can't login as mysql user root from normal user account in ubuntu 16.04 - Ask Ubuntu](https://askubuntu.com/questions/766334/cant-login-as-mysql-user-root-from-normal-user-account-in-ubuntu-16-04)
 
 Mau lebih banyak lagi? Silahkan kamu [Googling](https://www.google.co.id/search?q=Running+mysql+command+without+sudo) saja sendiri, banyak di sana juga.
 

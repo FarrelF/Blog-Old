@@ -17,7 +17,7 @@ SITEURL = 'https://farrel.franqois.id'
 USE_CDN = True
 USE_LESS = False
 USE_MINIFIED_SCRIPTS = True
-CDN_THEME_REPO_BRANCH = '832cc87'
+CDN_THEME_REPO_BRANCH = 'a5cf4eb'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(CDN_THEME_REPO_BRANCH)
 CDN_BLOG_BRANCH = '8a61b9b'
 CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(CDN_BLOG_BRANCH)
@@ -34,21 +34,41 @@ RELATIVE_URLS = False
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
-# Menambahkan Header saat di terbitkan nanti
-STATIC_PATHS.append('extras/_headers')
-EXTRA_PATH_METADATA['extras/_headers'] = {'path': '_headers'}
+# Nama Berkas-berkas tambahan yang akan di tambahkan
+EXTRA_FILES_NAME = [
+    '_headers',
+    '_redirects',
+    'ads.txt',
+    'keybase.txt',
+    'BingSiteAuth.xml'
+]
 
-# Menambah Fitur Pengalihan saat di terbitkan nanti
-STATIC_PATHS.append('extras/_redirects')
-EXTRA_PATH_METADATA['extras/_redirects'] = {'path': '_redirects'}
+EXTRA_FILES_DIR = 'extras' # Menentukan Lokasi Berkas Tambahan
 
-# Menambah Berkas 'ads.txt' saat di terbitkan nanti
-STATIC_PATHS.append('extras/ads.txt')
-EXTRA_PATH_METADATA['extras/ads.txt'] = {'path': 'ads.txt'}
+# Menambahkan Berkas-berkas Tambahan saat di terbitkan nanti.
+if type(EXTRA_FILES_NAME) is str:
+    STATIC_PATHS.append('{0}/{1}'.format(EXTRA_FILES_DIR, EXTRA_FILES_NAME))
+    EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, EXTRA_FILES_NAME)] = {'path': '{0}'.format(EXTRA_FILES_NAME)}
+elif type(EXTRA_FILES_NAME) is list:
+    for values in EXTRA_FILES_NAME:
+        STATIC_PATHS.append('{0}/{1}'.format(EXTRA_FILES_DIR, values))
+        EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, values)] = {'path': '{0}'.format(values)}
 
-# Menambah Berkas 'keybase.txt' saat di terbitkan nanti
-STATIC_PATHS.append('extras/keybase.txt')
-EXTRA_PATH_METADATA['extras/keybase.txt'] = {'path': 'keybase.txt'}
+# Menambah Berkas HTML dari Google untuk Verifikasi saat di terbitkan nanti
+GOOGLE_SITE_VERIFICATION_HTML_FILENAME = [
+    'google71ef861592f6b855',
+    'google0ec7ff3a4f28b0d2'
+]
+
+GOOGLE_SITE_VERIFICATION_HTML_DIR = EXTRA_FILES_DIR
+
+if type(GOOGLE_SITE_VERIFICATION_HTML_FILENAME) is str:
+    STATIC_PATHS.append('{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, GOOGLE_SITE_VERIFICATION_HTML_FILENAME))
+    EXTRA_PATH_METADATA['{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, GOOGLE_SITE_VERIFICATION_HTML_FILENAME)] = {'path': '{0}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_FILENAME)}
+elif type(GOOGLE_SITE_VERIFICATION_HTML_FILENAME) is list:
+    for values in GOOGLE_SITE_VERIFICATION_HTML_FILENAME:
+        STATIC_PATHS.append('{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, values))
+        EXTRA_PATH_METADATA['{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, values)] = {'path': '{0}.html'.format(values)}
 
 # Agar Berkas 'custom.css' tidak di buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
 if USE_CDN:
@@ -58,9 +78,18 @@ if USE_CDN:
     del EXTRA_PATH_METADATA['extras/custom.js']
 
 if USE_CDN:
-    SITELOGO = '{0}/content/img/profile_avatar.jpg'.format(CDN_STATIC_BLOG_URL)
+    SITELOGO = '{0}/content/img/profile_avatar.jpg?fit=140,143'.format(CDN_STATIC_BLOG_URL)
 else:
     SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
+
+SITELOGO_HEIGHT = '140'
+SITELOGO_WIDTH = '143'
+GOOGLE_SITE_VERIFICATION = [
+    'gWpIShFtX8KQbZw1OOHRTXY4QhyanAIVfSfyo6faiw0', 
+    'YHoyl7JPwHm7UBWzprZXnX0sQlLla1DjeULMGRqp6yA'
+]
+
+BING_SITE_VERIFICATION = '0BD80FDF817E3BE4D9E4C4149FF490BD'
 
 # Pengaturan Tema
 if USE_MINIFIED_SCRIPTS == True:
@@ -94,6 +123,7 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "FarrelF-Blog"
 DISQUS_IN_PAGES = True # Mengaktifkan Disqus di dalam Laman
 DISQUS_LAZYLOAD = True
+DISQUS_COMMENT_COUNT = True
 
 # Google
 GOOGLE_ANALYTICS = "UA-97506869-1"

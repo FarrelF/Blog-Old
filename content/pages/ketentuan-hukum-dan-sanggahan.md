@@ -11,7 +11,7 @@ Dengan mengakses, menjelajah dan menggunakan Blog ini, yaitu "Farrel Franqois Bl
 
 ## Ketentuan Hukum
 ### Konten/Isi
-Semua konten yang disediakan/di buat oleh saya (Sebagai Pemilik/Penulis di dalam blog ini) hanya berdasarkan "apa adanya" (*"as-is" basis*). Saya percaya bahwa konten di dalam blog ini 'benar' dan 'akurat', karena saya telah melakukan 'riset' terlebih dahulu sebelum artikel di terbitkan, saya telah menyediakan nya dengan itikad yang baik, namun mungkin akan mengandung ketidakakuratan teknis atau kesalahan ketik.
+Semua konten yang disediakan/di buat oleh saya (Sebagai Pemilik/Penulis di dalam blog ini) hanya berdasarkan "apa adanya" (_"as-is" basis_). Saya percaya bahwa konten di dalam blog ini 'benar' dan 'akurat', karena saya telah melakukan 'riset' terlebih dahulu sebelum artikel di terbitkan, saya telah menyediakan nya dengan itikad yang baik, namun mungkin akan mengandung ketidakakuratan teknis atau kesalahan ketik.
 
 Jadi, saya tidak bisa memberikan jaminan, baik itu secara tersurat atau tersirat, termasuk tetapi tidak terbatas pada jaminan kesesuaian tersirat untuk tujuan tertentu.
 
@@ -36,7 +36,7 @@ Semua merek dagang lain yang bukan milik Google, Cloudflare, Netlify atau/dan af
 
 ## Sanggahan (Peyangkalan)
 ### Tanggung Jawab
-Dalam keadaan apapun, saya tidak bertanggung jawab kepada Anda atau individu atau entitas lain untuk setiap kerugian secara langsung, atau secara tidak langsung, insidental, hukuman, khusus atau konsenkuensial yang terkait dengan penggunaan Blog ini, konten nya atau Situs Web/Blog lain nya, termasuk tetapi tidak terbatas untuk Kerusakan/Kehilangan pada Perangkat Keras, Barang, Program/Perangkat Lunak (*Software*) atau Data lain nya.
+Dalam keadaan apapun, saya tidak bertanggung jawab kepada Anda atau individu atau entitas lain untuk setiap kerugian secara langsung, atau secara tidak langsung, insidental, hukuman, khusus atau konsenkuensial yang terkait dengan penggunaan Blog ini, konten nya atau Situs Web/Blog lain nya, termasuk tetapi tidak terbatas untuk Kerusakan/Kehilangan pada Perangkat Keras, Barang, Program/Perangkat Lunak (*Software*) atau/dan Data lain nya.
 
 Jadi, segala resiko yang telah Anda timbulkan setelah mengakses, menjelajah, dan menggunakan Blog ini dan konten nya, silahkan Anda tanggung sendiri.
 

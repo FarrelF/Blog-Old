@@ -26,15 +26,15 @@ Seperti yang Anda tahu, bahwa Blog ini merupakan sebuah berkas HTML Statis, yang
 Jadi, blog ini di tenagai oleh 'Pelican'. Ehh, tapi bukan oleh [Burung 'Pelican'](https://www.google.com/search?q=burung+pelikan&tbm=isch), yah, hehe :grinning:
 
 ## Hosting yang saya gunakan
-Untuk hosting nya, saya gunakan [Netlify](https://www.netlify.com/) sebagai pengganti dari Web Hosting, agar saya bisa menghemat biaya yang cukup banyak, karena tidak perlu lagi bayar perbulan nya (Saya harap ini bertahan sampai seterusnya). Palingan, saya cuma perlu bayar domain saya saja.
+Untuk hosting nya, saya gunakan [Netlify](https://www.netlify.com/) sebagai pengganti dari _Web Hosting_, agar saya bisa menghemat biaya yang cukup banyak, karena tidak perlu lagi bayar perbulan nya (Saya harap ini bertahan sampai seterusnya). Palingan, saya cuma perlu bayar domain saya saja yang pertahun.
 
-Selain menghemat biaya, dengan memanfaatkan *Static Site Generator* ini, saya hanya perlu menggunakan Editor Teks/Kode untuk menulis Artikel, yang sebelumnya pada WordPress saya harus membuka Web Browser terlebih dahulu.
+Selain menghemat biaya, dengan memanfaatkan *Static Site Generator* ini, saya hanya perlu menggunakan Editor Teks/Kode untuk menulis Artikel, yang sebelumnya pada WordPress saya harus membuka Peramban Web (_Web Browser_) terlebih dahulu.
 
 Belum lagi Web Browser nya yang terus-menerus membuat Kinerja Sumber Daya dalam Komputer saya membengkak saat menulis artikel, apalagi kalo kalimat nya banyak.
 
 Dan, itupun dalam menulis (terutama untuk menyimpan Artikel sebagai konsep/draf), saya harus dalam keadaan Online sedangkan Koneksi Internet di saya tidak selalu memadai disini. Serta, saya juga harus menuruti banyak sekali langkah, yang sekira nya itu cukup 'merepotkan' saya.
 
-Serta, hal ini dapat meminimalisir kesalahan 503 Internal Server Error atau Gangguan Server lain nya saat menulis Artikel/Laman, karena untuk menulis dan menyimpan nya gak harus menggunakan koneksi Internet.
+Serta, hal ini dapat meminimalisir kesalahan 503 (_Internal Server Error_) atau Gangguan Server lain nya saat menulis Artikel/Laman, karena untuk menulis dan menyimpan nya gak harus menggunakan koneksi Internet.
 
 Jadi, itulah kenapa saya lebih memilih untuk menggunakan *Static Site Generator* seperti Pelican ini bila di bandingkan dengan WordPress.
 
@@ -72,7 +72,7 @@ Memang saya memiliki beberapa artikel di dalam blog yang lama. Tapi, sayangnya, 
 
 Alias, saya tidak pernah berniat untuk bermigrasi, karena migrasi dari *Platform* lama itu membuang pikiran, tenaga dan waktu saya. Jadi, saya tidak berpikir untuk melakukan nya, lebih baik seperti ini saja.
 
-Karena semua itu, akhirnya blog ini saya mulai dari awal lagi, ini bukan berarti blog yang lama nya saya hapus, yah, kamu masih bisa mengakses nya [disini](https://farrelf.wpinter.com).
+Karena semua itu, akhirnya blog ini saya mulai dari awal lagi, ini bukan berarti blog yang lama nya saya hapus, yah, kamu mungkin masih bisa mengakses nya [disini](https://farrelf.wpinter.com).
 
 Oh, ya, untuk sekarang ini, blog saya ini saya "Bebaskan", baik konten nya ataupun Kode Sumber nya. Tentu saja "Bebaskan" yang saya maksud itu adalah memberikan Anda "kebebasan".
 
@@ -87,19 +87,19 @@ Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka sa
 
     - Saya merasa jauh lebih nyaman dalam menulis artikel dengan memanfaatkan Editor Teks/Kode di bandingkan dengan lewat Web Browser dengan Editor WYSIWYG (*What You See Is What You Get*) nya.
 
-    - Untuk menulis atau/dan mengubah Artikel/Laman, gak harus terkoneksi dengan Internet (Dalam keadaan Offline). Kecuali, jika menerbitkan Artikel di dalam Blog dan men-_deploy_ nya, itu memerlukan koneksi Internet, hanya saja lebih 'ramah' untuk pengguna Internet seperti saya (Karena penggunaan Git).
+    - Untuk menulis atau/dan mengubah Artikel/Laman, gak harus terkoneksi dengan Internet (Alias, bisa dalam keadaan Luring/_Offline_). Kecuali, jika menerbitkan Artikel di dalam Blog dan men-_deploy_ nya, itu memerlukan koneksi Internet, hanya saja lebih 'ramah' untuk pengguna Internet seperti saya (Karena penggunaan Git).
 
-    - Langkah-langkah menulis artikel/laman menjadi lebih 'sederhana' dibandingkan dengan menulisnya melalui WordPress, yang cenderung lebih 'merepotkan'. Contohnya: Saya buka Web Browser -> Masuk ke dalam Admin WordPress (`wp-admin`) -> Login dengan menggunakan Akun yang saya punya -> Masuk ke Dasbor -> Klik pada "Pos", dan langkah-langkah lain nya untuk menulis sebuah artikel/laman saja.
+    - Langkah-langkah menulis artikel/laman menjadi lebih 'sederhana' dibandingkan dengan menulisnya melalui WordPress, yang cenderung lebih 'merepotkan'. Contohnya: Menulis Artikel di dalam WordPress, saya buka Peramban Web (_Web Browser_) terlebih dahulu -> Masuk ke dalam Admin WordPress (`wp-admin`) -> Login dengan menggunakan Akun yang saya punya -> Masuk ke Dasbor -> Klik pada "Pos", dan langkah-langkah lain nya untuk menulis sebuah artikel/laman saja.
 
-    - Saat saya menulis artikel/laman dengan WordPress, Komputer/Laptop saya terkadang seringkali mengalami 'pembengkakan' kinerja, terutama pada bagian penggunaan Sumber Daya (seperti: CPU, RAM, dll.) seiring lamanya atau banyaknya kalimat di dalam artikel/laman yang saya tulis di dalam Editor.
+    - Saat saya menulis artikel/laman dengan WordPress, Komputer/Laptop saya terkadang seringkali mengalami 'pembengkakan' kinerja, terutama pada bagian penggunaan Sumber Daya (seperti: CPU, RAM, dll) seiring lamanya atau banyaknya kalimat di dalam artikel/laman yang saya tulis di dalam Editor.
 
-    - Meminimalisir kesalahan 503 (*Internal Server Error*, baik karena Salah konfigurasi sampai Server Hosting) dan juga segala Gangguan dari Server Hosting saat menulis artikel. Karena saya menulisnya di dalam Editor, gak harus Online juga, hehe :grinning:
+    - Meminimalisir kesalahan 503 (_Internal Server Error_, baik karena Salah konfigurasi sampai Server Hosting) dan juga segala Gangguan dari Server Hosting saat menulis artikel. Karena saya menulisnya di dalam Editor, gak harus Online juga, hehe :grinning:
 
 2. Blog ini juga menggunakan Netlify sebagai Hosting nya. Alasan kenapa saya menggunakan nya sebagai berikut:
 
-    - Karena Gratis, sehingga tidak perlu bayar hosting/server per bulan/tahun nya (Kecuali Domain). Sehingga ini akan sangat menghemat biaya untuk orang seperti saya :slightly_smiling_face:
+    - Karena Gratis, sehingga tidak perlu bayar hosting/server per bulan/tahun nya (Kecuali Domain, yang bayarnya pertahun). Sehingga ini akan sangat menghemat biaya untuk orang seperti saya :slightly_smiling_face:
 
-    - Secara Default, Netlify menggunakan CDN (Atau, lebih tepatnya 'ADN' yang merupakan kepanjangan dari 'Application Delivery Network'), sehingga dapat meminimalisir lambatnya akses ketika pertama kali di buka. Gratis pula.
+    - Secara Bawaan, Netlify menggunakan CDN (Atau, lebih tepatnya 'ADN' yang merupakan kepanjangan dari '_Application Delivery Network_'), sehingga dapat meminimalisir lambatnya akses ketika pertama kali di buka. Udah gitu, gratis pula.
 
     - Gagal Update Blog karena perbedaan Koneksi Jaringan Internet antara Server Hosting dan Server lain nya dapat di minimalisir.
 
@@ -109,13 +109,13 @@ Jika Anda merasa bahwa artikel ini kepanjangan atau sulit untuk di baca, maka sa
 
 3. Meskipun Netlify menggunakan CDN pada Jaringan nya, Blog ini juga masih menggunakan Layanan CDN Umum seperti [Statically](https://statically.io) untuk memuat berkas statis lain nya. Alasan nya:
 
-    - Karena Gratis dan memiliki *Bandwidth* yang 'tidak terbatas'. Sehingga, ini dapat menghemat *Bandwidth* Netlify yang di batasi hingga 100 GB/Bulan untuk paket Gratis nya.
+    - Karena Gratis dan memiliki _Bandwidth_ yang 'tidak terbatas'. Sehingga, ini dapat menghemat _Bandwidth_ Netlify yang di batasi hingga 100 GB/Bulan untuk paket Gratis nya.
 
     - Memiliki Infrastruktur Multi-CDN, yang artinya Statically memiliki 4 CDN di dalam nya. Seperti: BunnyCDN, Cloudflare, CDN77 dan Fastly.
 
     - Gambar-gambar sudah langsung di optimasi ketika dimuatkan. Sehingga, ini memudahkan saya untuk mengoptimasi gambar tanpa harus terlalu menggantungkan nya kepada pihak ke-3 lain nya.
 
-    - Lamanya Penyimpanan Tembolok (Cache) dan Integritas berkas di dalam Tembolok itu ditentukan berdasarkan *Branch*, *Tag* atau *Commit* yang ada pada *Repository* Git. Sehingga, ketika saya ingin menggantikan gambar di dalam artikel, saya cukup unggah gambarnya kedalam *Repository* Git, lalu saya ganti *Commit* nya saja, tidak perlu sampai menggunakan fitur *Purge Cache*, bahkan menggantikan nama berkas.
+    - Lamanya Penyimpanan Tembolok (_Cache_) dan Integritas berkas di dalam Tembolok itu ditentukan berdasarkan _Branch_, _Tag_ atau _Commit_ yang ada pada _Repository_ Git. Sehingga, ketika saya ingin menggantikan gambar di dalam artikel, saya cukup unggah gambarnya kedalam _Repository_ Git, lalu saya ganti _Commit_ nya saja, tidak perlu sampai menggunakan fitur _Purge Cache_, bahkan menggantikan nama berkas.
 
 4. Dengan semua alasan ini, maka untuk kedepan nya, saya akan fokus untuk Blogging dengan memanfaatkan SSG dibandingkan dengan menggunakan WordPress. Jadi, imbasnya, blog lama udah gak saya urus lagi, meski Blog lama [masih ada](https://farrelf.wpinter.com) dan gak akan saya hapus.
 

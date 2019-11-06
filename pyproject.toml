@@ -32,6 +32,8 @@ six = "*"
 smmap2 = "*"
 soupsieve = "*"
 Unidecode = "*"
+htmlmin = "*"
+pelican-htmlmin = "*"
 
 [tool.poetry.dev-dependencies]
 astroid = "*"
