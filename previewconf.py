@@ -78,12 +78,12 @@ if USE_CDN:
     del EXTRA_PATH_METADATA['extras/custom.js']
 
 if USE_CDN:
-    SITELOGO = '{0}/content/img/profile_avatar.jpg?fit=140,143'.format(CDN_STATIC_BLOG_URL)
+    SITELOGO = '{0}/content/img/profile_avatar.jpg'.format(CDN_STATIC_BLOG_URL)
 else:
     SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
 
-SITELOGO_HEIGHT = '140'
-SITELOGO_WIDTH = '143'
+SITELOGO_WIDTH = '140'
+SITELOGO_HEIGHT = '143'
 GOOGLE_SITE_VERIFICATION = [
     'gWpIShFtX8KQbZw1OOHRTXY4QhyanAIVfSfyo6faiw0', 
     'YHoyl7JPwHm7UBWzprZXnX0sQlLla1DjeULMGRqp6yA'

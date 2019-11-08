@@ -2,9 +2,11 @@ Title: Cara Install LAMP Stack (Apache2, MariaDB, PHP 7) + phpMyAdmin di Ubuntu 
 Category: Tutorial
 Tags: Cara Install, LAMP Stack, Apache2, MariaDB, PHP 7, Ubuntu, GNU/Linux
 Slug: cara-install-lamp-stack-di-ubuntu
-Authors: Farrel Franqois
+Author: Farrel Franqois
 Status: published
 Cover: https://cdn.statically.io/gl/FarrelF/blog-images/397ba33d/cara-install-lamp-stack-di-ubuntu/Cover.png?quality=80
+Cover_Width: 720
+Cover_Height: 260
 Description: Apakah Anda ingin mencari Cara Install LAMP Stack dengan benar untuk keperluan Pengembangan di dalam Sistem Ubuntu Anda? Jika iya, maka Anda bisa kunjungi dan baca artikel ini, dan saya langsung membahas nya.
 Summary: Artikel ini akan membahas tentang bagaimana caranya meng-install _LAMP Stack_ di dalam Sistem Operasi GNU/Linux, khususnya untuk pengguna Distribusi Ubuntu dan Turunan nya (seperti [Mint](https://www.linuxmint.com), [KDE neon](https://neon.kde.org), [Pop_OS!](https://system76.com/pop), dll) dengan "benar". Penasaran? Silahkan baca artikel ini, kalau tidak, ya tidak apa-apa :slightly_smiling_face: 
 

@@ -2,8 +2,10 @@ Title: Cara Install Git di Windows, GNU/Linux dan macOS (tanpa basa-basi!)
 Category: Tutorial
 Tags: Git, Windows, GNU/Linux, macOS
 Slug: cara-install-git
-Authors: Farrel Franqois
+Author: Farrel Franqois
 Cover: https://cdn.statically.io/gl/FarrelF/blog-images/05c28d13/cara-install-git/Git-Logo-2Color-WhiteBackground.png?fit=500,209
+Cover_Width: 500
+Cover_Height: 209
 Status: published
 Summary: Artikel ini akan membahas tentang Cara Install Git, baik itu di dalam GNU/Linux dan Windows, tentu saja, tanpa basa-basi terlebih dahulu (alias, langsung saya bahas bagaimana cara meng-install nya). Kalau Anda ingin meng-install Git di dalam Komputer Anda, silahkan Anda simak lebih lanjut artikel ini, kalau tidak ya tidak apa-apa :slightly_smiling_face:
 
