@@ -428,11 +428,11 @@ Karena kita nanti meng-install phpMyAdmin secara manual, atau jika kita terlanju
 
 Adakah solusi lain nya? Ada, bisa kamu klik pada salah satu tautan (_link_) berikut:
 
-- [Connect to mysql server without sudo - Stackoverflow](https://stackoverflow.com/questions/37239970/connect-to-mysql-server-without-sudo)
+- [Connect to mysql server without sudo - Stackoverflow](stackoverflow_question>37239970/connect-to-mysql-server-without-sudo)
 
-- [can't login as mysql user root from normal user account in ubuntu 16.04 - Ask Ubuntu](https://askubuntu.com/questions/766334/cant-login-as-mysql-user-root-from-normal-user-account-in-ubuntu-16-04)
+- [can't login as mysql user root from normal user account in ubuntu 16.04 - Ask Ubuntu](askubuntu_question>766334/cant-login-as-mysql-user-root-from-normal-user-account-in-ubuntu-16-04)
 
-Mau lebih banyak lagi? Silahkan kamu [Googling](https://www.google.co.id/search?q=Running+mysql+command+without+sudo) saja sendiri, banyak di sana juga.
+Mau lebih banyak lagi? Silahkan kamu [Googling](google>Running+mysql+command+without+sudo) saja sendiri, banyak di sana juga.
 
 Nah, instalasi MariaDB ini telah sepenuhnya selesai, sekarang kita meng-install PHP versi 7.3 di dalam Sistem Ubuntu (dan Turunan nya, seperti Mint) Anda.
 
@@ -663,7 +663,7 @@ $cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
 Yah, terlihat kosong kan? Kalo gitu, maka Anda harus mengisinya terlebih dahulu. Anda bisa mengisinya dengan karakter apapun. Ya, **Apapun**, selama tidak lebih dari 32 karakter.
 
-Kalo kamu mau karakter yang acak, bisa Anda dapatkan dengan memanfaatkan Penghasil Kata Sandi (_Password Generator_) atau Penghasil Karakter Acak (_Random Character Generator_), baik yang beredar di Internet ataupun di dalam Aplikasi Pengelola Kata Sandi yang Anda install. Kalo mau, [Googling](https://www.google.co.id/search?q=password+generator) aja sendiri deh, banyak disana juga :)
+Kalo kamu mau karakter yang acak, bisa Anda dapatkan dengan memanfaatkan Penghasil Kata Sandi (_Password Generator_) atau Penghasil Karakter Acak (_Random Character Generator_), baik yang beredar di Internet ataupun di dalam Aplikasi Pengelola Kata Sandi yang Anda install. Kalo mau, [Googling](google>password+generator) aja sendiri deh, banyak disana juga :)
 
 Atau, kalo kamu mau nya langsung hasilnya, bisa kamu klik [disini](https://phpsolved.com/phpmyadmin-blowfish-secret-generator/).
 
@@ -808,7 +808,7 @@ Tadi saya telah membahas tentang cara mengamankan phpMyAdmin dengan memblokir se
 
 Autentikasi yang saya maksud disini tentu saja Autentikasi HTTP (_HTTP Authentication_), yang mana sebelum di akses oleh Web Browser, ia akan meminta pengakses nya itu memasukkan Nama Pengguna (_Username_) dan Kata Sandi (_Password_). Jika kita salah memasukkan nya beberapa kali, atau kita membatalkan nya, maka secara otomatis akan menimbulkan kesalahan/galat seperti “Authorization Required” atau “Unauthorized”.
 
-Contohnya? [Googling](https://www.google.co.id/search?tbm=isch&q=HTTP+Auth) aja sendiri, ah, cape gue.
+Contohnya? [Googling](google_images>HTTP+Auth) aja sendiri, ah, cape gue.
 
 Jika Anda ingin membuat Autentikasi HTTP pada Webserver Apache2, maka Anda perlu membuatkan berkas `.htpasswd` nya terlebih dahulu.
 

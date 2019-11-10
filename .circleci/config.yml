@@ -8,13 +8,13 @@ executors:
 aliases:
   restore_python_cache: &restore_python_cache
     restore_cache:
-      name: Restoring Python Virtualenv Cache
+      name: Restoring Python Virtualenv/Venv Cache
       keys: 
         - v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
 
   install_node_modules: &install_node_modules
     run:
-      name: Installing NodeJS Packages and it's Dependencies
+      name: Installing NodeJS Packages and it's Dependencies with Yarn
       command: |
           echo 'export PATH=$(yarn bin):$PATH' >> $BASH_ENV
           echo 'NODE_ENV=production && export NODE_ENV' >> $BASH_ENV
@@ -42,16 +42,6 @@ aliases:
       command: |
           poetry install --no-dev
   
-  install_netlify: &install_netlify
-    run:
-      name: Install Netlify CLI with Yarn
-      command: |
-          echo 'export PATH=$(yarn bin):$PATH' >> $BASH_ENV
-          echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH' >> $BASH_ENV
-          echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE' >> $BASH_ENV
-          source $BASH_ENV
-          yarn add netlify-cli
-  
   deploy_netlify: &deploy_netlify
     run:
       name: Deploying with Netlify
@@ -61,15 +51,6 @@ aliases:
     run:
       name: Deploying with Netlify (Preview Mode)
       command: netlify deploy --dir=./output -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE (Preview)"
-
-  changing_permission: &changing_permission
-    run:
-      name: Changing the Permissions
-      command: |
-          [[ ! -d /usr/local/bin ]] || \
-            sudo chown -R circleci:circleci /usr/local/bin
-          [[ ! -d /usr/local/lib/python3.7/site-packages ]] || \
-            sudo chown -R circleci:circleci /usr/local/lib/python3.7/site-packages
 
   publish_blog: &publish_blog
     run:

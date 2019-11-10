@@ -21,6 +21,8 @@ Blog ini dan konten nya saya rilis di bawah lisensi berikut:
   
 - Kode Sumber untuk Tema yang saya gunakan, di Lisensikan dengan [Lisensi MIT](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) dan ada beberapa aset statik lain nya yang di lisensikan di bawah lisensi yang berbeda.
 
+- Saya menggunakan [Twemoji (Twitter Emoji)](https://twemoji.twitter.com/) sebagai Grafis Emoji di blog ini, yang merupakan salah satu Emoji yang di buat oleh Twitter. Di Lisensi kan dengan [Creative Commons Attribution 4.0 Internasional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), begitupun juga dengan tuas Mode Gelap di atas yang menggunakan salah satu Gambar Emoji dari Twemoji.
+
 - Mungkin, untuk Gambar, Illustrasi, Grafis atau/dan referensi lain nya yang telah saya dapatkan dari Situs Web/Blog lain akan menggunakan Lisensi yang berbeda. Oleh karena itu, sebagai kredit (jika di izinkan), saya akan berikan atribusi berupa pencantuman Judul/Nama dari Gambar/Illustrasi/Grafis, Pembuat nya, Sumber Gambar dan juga Lisensi yang di gunakan nya di akhir artikel/laman.
 
 

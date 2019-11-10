@@ -1,7 +1,9 @@
+---
 Title: Hubungi Saya
 Slug: hubungi-saya
 Status: published
 Author: Farrel Franqois
+---
 
 <style>
     article input[type="text"], article input[type="email"], article input[type="url"] {
