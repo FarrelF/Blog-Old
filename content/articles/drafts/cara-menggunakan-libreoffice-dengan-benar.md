@@ -15,3 +15,13 @@ description: Apakah Anda merasa kesulitan saat menggunakan LibreOffice? Terutama
 [TOC]
 
 ## Pembuka
+LibreOffice merupakan sebuah Perangkat Lunak Paket Perkantoran yang merupakan Perangkat Lunak Bebas/FLOSS (Free/Libre Open Source Software) dan juga bisa di peroleh secara gratis. Biasanya Perangkat Lunak ini bisa menjadi alternatif, bahkan menggantikan Microsoft Office itu sendiri. Perangkat Lunak ini di kembangkan oleh sebuah organisasi nirlaba, yakni: [The Document Foundation (TDF)](https://www.documentfoundation.org/) dan sejumlah kontributor lain nya.
+
+Perangkat Lunak ini cukup populer, terutama di kalangan pengguna GNU/Linux. Salah satu alasannya adalah karena Distribusi GNU/Linux yang mereka gunakan itu biasanya sudah ter-install LibreOffice secara bawaan (_default_). Ubuntu, Varian (Seperti: Xubuntu, Lubuntu, Kubuntu, Ubuntu MATE, dll) dan Turunan nya (seperti Mint, Pop_OS!, dll) merupakan salah satu contoh nya.
+
+Namun sayangnya, banyak sekali dari mereka yang mengeluhkan yang seharusnya tidak perlu di keluhkan, apa saja masalah nya? Mungkin, bisa Anda lanjut simak artikel ini.
+
+Oh, iya, sebelum itu ada yang ingin saya sampaikan, yaitu artikel ini akan membahas hal-hal yang sangatlah mendasar untuk menggunakan LibreOffice. Jadi, artikel ini tidak akan membahas penggunaan LibreOffice lebih lanjut. Dan, maksud "Benar" disini berarti benar secara penggunaan, bukan pada keseluruhan isi artikel ini. Silahkan kamu membaca Laman ['Ketentuan Hukum dan Sanggahan']({filename}/pages/ketentuan-hukum-dan-sanggahan.md) untuk lebih lanjut.
+
+## I. Masalah Kompatibilitas saat di buka dengan Microsoft Office
+Ini adalah masalah paling klasik yang paling sering di bicarakan oleh salah satu/kebanyakan anggota dari banyaknya komunitas GNU/Linux di dunia maya (terutama di Indonesia). 

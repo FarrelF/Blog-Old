@@ -1,7 +1,9 @@
+---
 Title: Lisensi
 Slug: lisensi
 Status: published
 Authors: Farrel Franqois
+---
 
 ## Daftar Isi
 [TOC]
