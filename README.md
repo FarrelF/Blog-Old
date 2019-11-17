@@ -148,6 +148,6 @@ Kode Sumber ini, (Kecuali yang berada di dalam folder `contents`) saya Lisensika
 ### Pengecualian Lisensi
 Meski seluruh Kode Sumber ini berlisensi GNU Affero General Public License v3 (GNU AGPLv3) atau di atas nya/lebih baru, bukan berarti ini tanpa pengecualian.
 
-Pengecualian nya adalah bahwa Konten yang ada di dalam blog ini (berupa Artikel, Laman, dan Berkas Gambar yang telah saya buat sendiri, yang terletak di dalam folder `content`), beserta terjemahan nya (kecuali jika di nyatakan [sebaliknya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)) di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
+Pengecualian nya adalah bahwa Konten yang ada di dalam blog ini (berupa Artikel, Laman, dan Berkas Gambar yang telah saya buat sendiri, yang terletak di dalam folder `content`) (tapi tidak [semua berkas di dalam nya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)), beserta terjemahan nya di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
 
 Untuk lebih lengkap nya, silahkan kunjungi Laman [Lisensi](https://farrel.franqois.id/lisensi) di dalam Blog Saya :slightly_smiling_face:

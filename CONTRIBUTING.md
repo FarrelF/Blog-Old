@@ -7,23 +7,23 @@ Anda bisa ber-kontribusi terhadap Blog ini menggunakan (salah satu/lebih) cara b
 
 Jika Anda ingin berkontribusi dengan membantu konfigurasi Blog ini atau ikut serta dalam mengubah Kode Sumber nya. Cara nya cukup mudah, Anda tinggal ikuti langkah di bawah ini:
 
-1. Buatlah sebuah *fork* dari Repo ini.
+1. Buatlah sebuah _fork_ dari Repo ini.
 
-2. Klon Repo GitHub dari Repo yang Anda buat *fork* nya tadi.
+2. Klon Repo GitHub dari Repo yang Anda buat _fork_ nya tadi.
 
-3. Penuhi terlebih dahulu semua [Persyaratan nya](https://github.com/FarrelF/FarrelF-Blog#persyaratan) (terutama yang wajib), termasuk Install Git, Python 3.7 atau di atasnya dan Pipenv di dalam Sistem Operasi Anda, lalu Install semua keperluan nya. Setelah memenuhi persyaratan, untuk meng-install dan membangun blog ini, Anda bisa baca/lihat caranya [disini](https://github.com/FarrelF/FarrelF-Blog#cara-install)
+3. Penuhi terlebih dahulu semua [Persyaratan nya](https://github.com/FarrelF/FarrelF-Blog#persyaratan) (terutama yang wajib), termasuk Install Git, Python 3.7 atau di atasnya dan Poetry di dalam Sistem Operasi Anda, lalu Install semua keperluan nya. Setelah memenuhi persyaratan, untuk meng-install dan membangun blog ini, Anda bisa baca/lihat caranya [disini](https://github.com/FarrelF/FarrelF-Blog#cara-install)
 
-4. Navigasikan *Shell* yang Anda gunakan ke dalam Folder Kode Sumber yang Anda klon tadi dengan perintah `cd`. 
+4. Navigasikan _Shell_ yang Anda gunakan ke dalam Folder Kode Sumber yang Anda klon tadi dengan perintah `cd`. 
 
-5. Lalu, buatlah sebuah *Branch* baru dari Repo yang Anda *fork* tadi, Anda bisa turunkan *Branch* tersebut dari `origin/drafts`.
+5. Lalu, buatlah sebuah _Branch_ baru dari Repo yang Anda _fork_ tadi, Anda bisa turunkan _Branch_ tersebut dari `origin/drafts` atau `origin/master` jika Anda ingin memperbaiki/mengusir kutu (_bug_) atau memperbaiki/menyelesaikan masalah secepat nya.
 
-6. Setelah Anda membuat *Branch* baru, silahkan alihkan ke *Branch* tersebut. Lalu, ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
+6. Setelah Anda membuat _Branch_ baru, silahkan alihkan ke _Branch_ tersebut. Lalu, ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
 
-7. (Opsional, tapi disarankan) Sebelum melakukan *Commit*, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan *Commit Signing* di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. Untuk lebih lanjut, silahkan lihat sub-bagian di bawah.
+7. (Opsional, tapi disarankan) Sebelum melakukan _Commit_, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan _Commit Signing_ di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. Untuk lebih lanjut, silahkan lihat sub-bagian di bawah.
 
-8. Lakukan *Staging*, buatlah sebuah *Commit* dan pesannya, lalu lakukan *Push*.
+8. Lakukan _Staging_, buatlah sebuah _Commit_ dan pesannya, lalu lakukan _Push_.
 
-9. Setelah Anda selesai, buatlah sebuah *Pull Request* jika Anda benar-benar ingin mengubah Kode Sumber ini. Dan, pastikan Anda membuatnya dari *Branch* yang Anda buat tadi di dalam Repo *fork* Anda ke tujuan `FarrelF-Blog:drafts`, jangan ke yang lain nya.
+9. Setelah Anda selesai, buatlah sebuah _Pull Request_ jika Anda benar-benar ingin mengubah Kode Sumber ini. Dan, pastikan Anda membuatnya dari _Branch_ yang Anda buat tadi di dalam Repo _fork_ Anda ke tujuan `FarrelF-Blog:drafts` atau `FarrelF-Blog:master` jika _Branch_ yang Anda buat itu di turunkan dari `origin/master`, jangan ke yang lain nya.
 
 ### (Opsional, tapi disarankan) Membuat dan Menggunakan Kunci GPG untuk menandai setiap _Commit_ (_Commit Signing_)
 Melanjutkan No. 7. Sebelum melakukan *Commit*, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan *Commit Signing* di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. 
