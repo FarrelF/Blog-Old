@@ -11,10 +11,10 @@
         "browser-sync": "^2.26.7",
         "cz-conventional-changelog": "^3.0.2",
         "gulp": "^4.0.2",
-        "mem": "^5.1.1"
+        "mem": "^6.0.0"
     },
     "dependencies": {
-        "netlify-cli": "^2.20.2"
+        "netlify-cli": "^2.21.0"
     },
     "config": {
         "commitizen": {

@@ -131,11 +131,6 @@ GOOGLE_ADSENSE = {
     'ca_id': 'ca-pub-2432124491852819',
     'page_level_ads': True,
     'ads': {
-        'article_top': {                    # Iklan di Awal Artikel
-            'slot_id': '6206076082',
-            'ad_layout': 'in-article',
-            'ad_format': 'fluid'
-        },
         'article_bottom': {                 # Iklan di Akhir Artikel
             'slot_id': '5647672882',
             'ad_layout': 'in-article',
