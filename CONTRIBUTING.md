@@ -15,22 +15,22 @@ Jika Anda ingin berkontribusi dengan membantu konfigurasi Blog ini atau ikut ser
 
 4. Navigasikan _Shell_ yang Anda gunakan ke dalam Folder Kode Sumber yang Anda klon tadi dengan perintah `cd`. 
 
-5. Lalu, buatlah sebuah _Branch_ baru dari Repo yang Anda _fork_ tadi, Anda bisa turunkan _Branch_ tersebut dari `origin/drafts` atau `origin/master` jika Anda ingin memperbaiki/mengusir kutu (_bug_) atau memperbaiki/menyelesaikan masalah secepat nya.
+5. Lalu, buatlah sebuah _Branch_ baru dari Repo yang Anda _fork_ tadi, Anda bisa turunkan _Branch_ tersebut dari `origin/drafts` jika Anda ingin memperbaiki Artikel/Laman atau `origin/master` jika Anda ingin memperbaiki/mengusir kutu (_bug_) atau memperbaiki/menyelesaikan masalah secepat nya.
 
 6. Setelah Anda membuat _Branch_ baru, silahkan alihkan ke _Branch_ tersebut. Lalu, ubah Kode Sumber nya dari situ, bisa melalui Editor Teks/Kode Favorit kamu.
 
-7. (Opsional, tapi disarankan) Sebelum melakukan _Commit_, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan _Commit Signing_ di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. Untuk lebih lanjut, silahkan lihat sub-bagian di bawah.
+7. (Opsional, tapi disarankan) Sebelum melakukan _Commit_, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan _Commit Signing_ di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. Untuk lebih lanjut, silahkan lihat sub-bagian nya [di bawah](#opsional-tapi-disarankan-membuat-dan-menggunakan-kunci-gpg-untuk-menandatangani-setiap-commit-commit-signing).
 
 8. Lakukan _Staging_, buatlah sebuah _Commit_ dan pesannya, lalu lakukan _Push_.
 
 9. Setelah Anda selesai, buatlah sebuah _Pull Request_ jika Anda benar-benar ingin mengubah Kode Sumber ini. Dan, pastikan Anda membuatnya dari _Branch_ yang Anda buat tadi di dalam Repo _fork_ Anda ke tujuan `FarrelF-Blog:drafts` atau `FarrelF-Blog:master` jika _Branch_ yang Anda buat itu di turunkan dari `origin/master`, jangan ke yang lain nya.
 
-### (Opsional, tapi disarankan) Membuat dan Menggunakan Kunci GPG untuk menandai setiap _Commit_ (_Commit Signing_)
-Melanjutkan No. 7. Sebelum melakukan *Commit*, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan *Commit Signing* di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. 
+### (Opsional, tapi disarankan) Membuat dan Menggunakan Kunci GPG untuk 'menandatangani' setiap _Commit_ (_Commit Signing_)
+Melanjutkan No. 7. Sebelum melakukan _Commit_, pastikan Anda sudah menambahkan Kunci GPG di dalam GitHub dan pastikan juga untuk mengaktifkan _Commit Signing_ di dalam Git. Silahkan lihat/baca [Panduan nya](https://help.github.com/en/articles/managing-commit-signature-verification) untuk mengetahui cara menambahkan dan menggunakan Kunci GPG pada GitHub atau layanan Git lain nya. 
 
-Jika Anda berhasil, biasanya sebelum *Commit*, Anda akan di minta untuk memasukkan *Passphrase* pada Kunci GPG nya, dan jika benar-benar berhasil, maka akan muncul 'Verified' pada setiap *Commit* nya. Contoh nya: Coba Anda lihat log dari [*Commit*](https://github.com/FarrelF/FarrelF-Blog/commits/drafts) yang telah saya lakukan, Anda akan melihat kalau di sebelah nya ada tulisan 'Verified'.
+Jika Anda berhasil, biasanya sebelum _Commit_, Anda akan di minta untuk memasukkan _Passphrase_ pada Kunci GPG nya, dan jika benar-benar berhasil, maka akan muncul 'Verified' pada setiap _Commit_ nya. Contoh nya: Coba Anda lihat log dari [_Commit_](https://github.com/FarrelF/FarrelF-Blog/commits/drafts) yang telah saya lakukan, Anda akan melihat kalau di sebelah nya ada tulisan 'Verified'.
 
-Setelah mengaktifkan nya di dalam Git, pastikan Anda juga sudah mengaktifkan fitur *Git Commit Signing* tersebut di dalam Editor Teks/Kode Favorit Anda, karena terkadang opsi tersebut tidak di aktifkan secara bawaan (default), contoh: [Visual Studio Code/VSCodium](https://stealthpuppy.com/signing-git-commits-for-sweet-verified-badges/) 
+Setelah mengaktifkan nya di dalam Git, pastikan Anda juga sudah mengaktifkan fitur _Git Commit Signing_ tersebut di dalam Editor Teks/Kode Favorit Anda, karena terkadang opsi tersebut tidak di aktifkan secara bawaan (default), contoh: [Visual Studio Code/VSCodium](https://stealthpuppy.com/signing-git-commits-for-sweet-verified-badges/) 
 
 
 **Catatan**

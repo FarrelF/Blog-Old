@@ -3,14 +3,60 @@ version: 2.1
 executors:
   python:
     docker:
-      - image: circleci/python:3.7.5-buster-node
+      - image: circleci/python:3.7.5-buster
 
 aliases:
+  save_python_cache: &save_python_cache
+    save_cache: 
+      name: Saving Python Virtualenv Cache
+      key: v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+      paths:
+        - ~/.cache/pypoetry/virtualenvs
+  
   restore_python_cache: &restore_python_cache
     restore_cache:
       name: Restoring Python Virtualenv/Venv Cache
       keys: 
         - v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+  
+  install_node_and_yarn: &install_node_and_yarn
+    run:
+      name: Installing NodeJS and Yarn Package Manager with Version Manager(s)
+      command: |
+          if [ -d "$YVM_DIR" ] && [ -d "$NVM_DIR" ]
+          then
+            echo 'NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" && export NVM_DIR' >> $BASH_ENV
+            echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> $BASH_ENV
+            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR' >> $BASH_ENV
+            echo '[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh' >> $BASH_ENV
+            source $BASH_ENV
+            nvm install
+          else
+            NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION
+            YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION
+            wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/"$NVM_VERSION"/install.sh | bash
+            echo 'NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" && export NVM_DIR' >> $BASH_ENV
+            echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> $BASH_ENV
+            source $BASH_ENV
+            nvm install
+            curl -s https://raw.githubusercontent.com/tophat/yvm/"$YVM_VERSION"/scripts/install.sh | INSTALL_VERSION="$YVM_VERSION" bash
+            source $BASH_ENV
+          fi
+          yvm install
+
+  save_node_yarn_cache: &save_node_yarn_cache
+    save_cache:
+      name: Saving NodeJS and Yarn Installation Cache
+      key: v1-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}-{{ checksum ".circleci/config.yml" }}
+      paths:
+        - ~/.nvm
+        - ~/.yvm
+  
+  restore_node_yarn_cache: &restore_node_yarn_cache
+    restore_cache:
+      name: Restoring NodeJS and Yarn Installation Cache
+      keys: 
+        - v1-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}-{{ checksum ".circleci/config.yml" }}
 
   install_node_modules: &install_node_modules
     run:
@@ -36,7 +82,7 @@ aliases:
           echo "TZ='Asia/Jakarta'; export TZ" >> $BASH_ENV
           source $BASH_ENV
 
-  install_dependencies: &install_dependencies
+  install_python_dependencies: &install_python_dependencies
     run:
       name: Installing All Python Packages and it's Dependencies
       command: |
@@ -64,13 +110,6 @@ aliases:
           poetry run make devtheme
           poetry run make REBUILD=1 preview
 
-  save_python_cache: &save_python_cache
-    save_cache: 
-      name: Saving Python Virtualenv Cache
-      key: v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
-      paths:
-        - ~/.cache/pypoetry/virtualenvs
-
   save_node_modules_cache: &save_node_modules_cache
     save_cache:
       name: Saving Node Modules Cache
@@ -90,13 +129,16 @@ jobs:
     steps:
       - checkout
       - <<: *install_locales
+      - <<: *restore_node_yarn_cache
       - <<: *restore_python_cache
-      - <<: *install_dependencies
+      - <<: *install_node_and_yarn
+      - <<: *install_python_dependencies
       - <<: *save_python_cache
       - <<: *build_html
       - <<: *restore_node_modules_cache
       - <<: *install_node_modules
       - <<: *save_node_modules_cache
+      - <<: *save_node_yarn_cache
       - <<: *deploy_netlify_preview
 
   build:
@@ -105,7 +147,7 @@ jobs:
       - checkout
       - <<: *install_locales
       - <<: *restore_python_cache
-      - <<: *install_dependencies
+      - <<: *install_python_dependencies
       - <<: *publish_blog
       - persist_to_workspace:
           name: Persisting Outputs to Workspace
@@ -120,7 +162,9 @@ jobs:
       - attach_workspace:
           name: Attaching Outputs from Workspace
           at: ./
+      - <<: *restore_node_yarn_cache
       - <<: *restore_node_modules_cache
+      - <<: *install_node_and_yarn
       - <<: *install_node_modules
       - <<: *deploy_netlify
 

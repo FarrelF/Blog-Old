@@ -55,17 +55,17 @@ Jadi, masalah seperti ini sebenarnya tidak perlu di keluhkan, bahkan sama sekali
 
 > ### Kenapa mereka memfokuskan format ODF sebagai format bawaan nya? Dan, kenapa mereka tidak memfokuskan format OOXML saja? Bukan nya OOXML ini termasuk "Open Format"?
 
-Karena Format OOXML itu [bersifat tidak konsisten](https://joinup.ec.europa.eu/collection/open-source-observatory-osor/document/complex-singularity-versus-openness), hal ini terjadi karena spesifikasi dari OOXML itu sendiri dan juga Implementasi nya di Microsoft Office [itu berbeda](https://brattahlid.wordpress.com/2012/05/08/is-docx-really-an-open-standard/). 
+Karena Format OOXML itu bersifat [tidak konsisten](https://joinup.ec.europa.eu/collection/open-source-observatory-osor/document/complex-singularity-versus-openness), hal ini terjadi karena spesifikasi dari OOXML itu sendiri dan juga Implementasi nya di Microsoft Office [itu berbeda](https://brattahlid.wordpress.com/2012/05/08/is-docx-really-an-open-standard/). 
 
 Perlu Anda ketahui, bahwa di dalam Format OOXML itu memiliki 3 versi (atau sub-standar), diantara nya adalah: 
 
-- Versi ECMA-376 (atau di sebut "Versi ECMA")
-- ISO/IEC 29500 Transitional (atau di sebut "Versi Transitional")
-- ISO/IEC 29500 Strict (atau di sebut "Versi Strict")
+- ECMA-376 (atau di sebut versi/sub-standar "ECMA")
+- ISO/IEC 29500 Transitional (atau di sebut versi/sub-standar "Transitional")
+- ISO/IEC 29500 Strict (atau di sebut versi/sub-standar "Strict")
 
 Nah, yang jadi masalah nya adalah, Spesifikasi untuk Sub-Standar 'Transitional' dan 'Strict' itu tertutup dan tidak di publikasikan, serta berdasarkan dari Laman [Wikipedia nya](wikipedia_en>Office_Open_XML), bahwa Microsoft Office hanya mendukung baca/tulis untuk dokumen yang di buat dengan Versi 'Transitional' saja, dan dokumen yang di buat dengan Versi 'Strict' hanya bisa di baca pada Microsoft Office 2010, serta bisa baca/tulis pada Microsoft Office 2013 dan 2016, itupun sebagai ['tambahan'](https://technet.microsoft.com/en-us/library/cc179191%28v=office.15%29.aspx).
 
-Selain itu, dokumen dengan versi ECMA hanya bisa di baca saja. 
+Selain itu, dokumen dengan versi ECMA hanya bisa di baca saja di Microsoft Office 2010, entah apa yang terjadi di atas nya. 
 
 Jadi, ini artinya, ketika Anda menyimpan dokumen dari Microsoft Office (terutama dengan ekstensi yang berformat OOXML), maka Anda menyimpan dokumen nya bukan sebagai "Office Open XML" yang selama ini "di iklankan" sebagai "Format Terbuka".
 
@@ -79,7 +79,7 @@ Masalah-masalah nya seperti:
 
 - Memerlukan penautan/penghubungan ke teknologi atau fitur yang di kendalikan atau/dan hanya bisa di gunakan secara eksklusif oleh Vendor/Perangkat Lunak tertentu (Seperti: SmartArt, PivotTable, dll).
 
-- Jumlah Halaman dari Dokumen Spesifikasi nya sendiri nya mencapai [&pm;6000 halaman](https://www.ecma-international.org/publications/standards/Ecma-376.htm), yang bahkan itu melebihi POSIX/SUSv3 yang cuma sampai [&pm;3700 halaman saja](wikipedia_en>Single_UNIX_Specification). Dan, itupun untuk versi ECMA nya, belum 'Transitional' dan 'Strict' nya. Sehingga, hal itu akan menyulitkan Pengembang Perangkat Lunak lain nya untuk meng-implementasikan format tersebut.
+- Jumlah Halaman dari Dokumen Spesifikasi nya sendiri nya mencapai [&pm;6000 halaman](https://www.ecma-international.org/publications/standards/Ecma-376.htm), yang bahkan itu melebihi POSIX/SUSv3 yang cuma sampai [&pm;3700 halaman saja](https://en.wikipedia.org/wiki/Single_UNIX_Specification). Dan, itupun untuk versi ECMA nya, belum 'Transitional' dan 'Strict' nya. Sehingga, hal itu akan menyulitkan Pengembang Perangkat Lunak lain nya untuk meng-implementasikan format tersebut.
 
 - Format OOXML itu sendiri telah terbebani oleh [Paten](http://noooxml.wikidot.com/patents) [Perangkat Lunak](http://en.swpat.org/wiki/OOXML), sehingga hal itu akan membuat Pengembang Perangkat Lunak perkantoran lain nya menjadi tidak mungkin untuk menyempurnakan dukungan/implementasi format OOXML nya.
 
@@ -96,6 +96,8 @@ Ini artinya, mereka percaya bahwa ODF merupakan format yang paling 'netral' saat
 Jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini termasuk Standar Terbuka (_Open Standard_) atau bebas? Seperti nya belum tentu juga.
 
 Jadi, apakah itu merupakan suatu hal yang wajar jika tampilan atau bahkan dokumen nya menjadi kacau saat dokumen OOXML di buat atau/dan di buka dengan Perangkat Lunak selain Microsoft Office? Wajar, bahkan normal jika itu terjadi, kecuali jika Anda cuma tahu Microsoft Office atau/dan Ekstensi berformat OOXML nya saja. 
+
+Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak perlu, bahkan sama sekali.
 
 Bagaimana kalau dokumen nya tidak menjadi kacau, atau tampilan nya sangat baik, bahkan "sempurna"? Itu artinya, "Anda beruntung!" :slightly_smiling_face:
 
@@ -117,7 +119,7 @@ Mau Referensi lain nya? Silahkan klik salah satu tautan berikut:
 
 Solusinya mudah, tinggalkan dan jangan pernah gunakan format OOXML di dalam LibreOffice untuk membuat dokumen Anda. 
 
-Lalu, bagaimana caranya? Caranya adalah, ketika Anda sudah selesai membuat Dokumen nya, simpanlah dokumen tersebut sebagai Ekstensi yang berformat ODF, seperti .ODT (untuk LibreOffice Writer), .ODS untuk (LibreOffice Calc), dan .ODP (untuk LibreOffice Impress), daripada ekstensi yang berformat OOXML seperti .DOC, .DOCX, .XLS, .XLSX, .PPT, .PPTX dan ekstensi dengan format OOXML lain nya.
+Lalu, bagaimana caranya? Caranya adalah, ketika Anda sudah selesai membuat Dokumen nya, simpanlah dokumen tersebut sebagai Ekstensi yang berformat ODF (OpenDocument Format), seperti .ODT (untuk LibreOffice Writer), .ODS untuk (LibreOffice Calc), dan .ODP (untuk LibreOffice Impress), daripada ekstensi yang berformat OOXML seperti .DOC, .DOCX, .XLS, .XLSX, .PPT, .PPTX dan ekstensi dengan format OOXML lain nya.
 
 Terakhir, jangan pernah mengharapkan kalau LibreOffice bisa membuka dokumen dengan format OOXML sebaik Microsoft Office.
 
@@ -139,22 +141,22 @@ Atau, jika hal tersebut tidak memungkinkan, maka sebaiknya Anda minta saja kepad
 
 > ### Bagaimana jika saya mengirimkan berkas kepada orang lain, entah itu teman, dosen, HRD, dll nya suatu saat nanti?
 
-Tergantung, Apakah mereka hanya ingin membaca dokumenmu saja atau ingin mengubah nya juga atau cuma sekedar menyoroti teks saja? Biasanya (apalagi dosen atau HRD), mereka akan butuh dokumen kamu hanya untuk di baca saja, karena mereka pada dasar nya tidak terlalu perlu untuk mengubah dokumen kamu. (Contoh kasus: Jika kamu mengirimkan CV kepada HRD, Tugas Kuliah ke Dosen, dll).
+Tergantung, apakah mereka hanya ingin membaca dokumenmu saja atau ingin mengubah nya juga atau cuma sekedar mengulas (_review_) dokumen saja? Biasanya (apalagi dosen atau HRD), mereka akan butuh dokumen kamu hanya untuk di baca saja, karena pada dasar nya, mereka tidak terlalu perlu untuk mengubah dokumen kamu. (Contoh kasus: Jika kamu mengirimkan CV kepada HRD, Tugas Kuliah ke Dosen, dll).
 
-Kalau mereka hanya ingin membacanya saja, kirimkan saja berkas nya dengan Format PDF.
+Kalau mereka hanya ingin membacanya saja, ekspor berkas tersebut sebagai PDF ketika Anda sudah selesai mengetik dan kirimkan saja hasil berkas nya.
 
 Tapi, kalau mereka ingin mengubah dokumen mu, maka kalau bisa, kirimkan berkas tersebut kepada mereka dan sarankan kepada mereka baik-baik untuk meng-install LibreOffice jika kamu merasa dekat dengan mereka.
 
-Atau, kalau mereka menginginkan format selain PDF hanya karena ia tidak bisa membuka nya dengan baik, jika kamu dekat dengan mereka, coba kamu bantu untuk memperbaiki nya atau gunakan Web Browser untuk membuka PDF.
+Atau, kalau mereka menginginkan format selain PDF hanya karena ia tidak bisa membuka nya dengan baik, jika kamu dekat dengan mereka, coba kamu bantu untuk memperbaiki nya atau sarankan kepada mereka untuk menggunakan Peramban Web (_Web Browser_) untuk membuka PDF.
 
-Sedangkan, jika kebutuhan nya hanya menyoroti teks di dalam dokumen nya, kamu hanya perlu mengirimkan berkas PDF saja, biasanya Aplikasi Peninjau PDF bisa melakukan nya jika hanya menyoroti teks saja.
+Sedangkan, jika kebutuhan nya hanya mengulas dokumen nya saja (entah itu dengan menyoroti teks nya, memberikan komentar, dll), kamu hanya perlu mengirimkan berkas PDF saja, biasanya Aplikasi Peninjau PDF (Kecuali Peramban Web) bisa melakukan nya jika hanya menyoroti teks atau mengulas dokumen saja.
 
-## II. Tampilan nya jelek dan merasa susah untuk di gunakan
-Tidak bisa di pungkiri lagi, bahwa secara bawaan, LibreOffice memiliki penampilan yang agak 'jelek' dan penggunaan nya yang memang rumit. Sehingga, orang-orang merasa 'pusing' untuk menggunakan Perangkat Lunak satu ini.
+## II. Tampilan nya membuat LibreOffice sulit untuk di gunakan
+Tidak bisa di pungkiri lagi, bahwa secara bawaan, LibreOffice memiliki penampilan yang agak kurang familiar dan penggunaan nya yang memang rumit. Sehingga, orang-orang merasa 'pusing' dan sulit untuk menggunakan Perangkat Lunak satu ini.
 
-Salah satu penyebabnya adalah bahwa kebanyakan orang telah terbiasa dengan Penampilan "Ribbon" yang ada di Microsoft Office sejak versi 2007, begitupun juga versi di atasnya.
+Salah satu penyebabnya adalah bahwa kebanyakan orang telah terbiasa dengan Penampilan "Ribbon" yang ada di Microsoft Office sejak versi 2007, begitupun juga versi di atasnya, sampai sekarang.
 
-Mungkin saja, tampilan itu memang terasa familiar bagi Anda yang sudah pernah menggunakan Microsoft Office 2003 sebelumnya. Tapi, yang menjadi masalah nya adalah bahwa kebanyakan orang yang sudah familiar dengan penampilan "Ribbon" dan mengingatnya, kalaupun sebelumnya ada yang sudah pernah menggunakan Microsoft Office 2003, bukan berarti mereka familiar akan tampilan nya serta tidak semua orang menggunakan nya.
+Mungkin saja, tampilan itu memang terasa familiar bagi Anda yang sudah pernah menggunakan Microsoft Office 2003 sebelumnya. Tapi, yang menjadi masalah nya adalah bahwa kebanyakan orang sudah duluan familiar dengan penampilan "Ribbon" dan mengingatnya, kalaupun sebelumnya ada yang sudah pernah menggunakan Microsoft Office 2003, bukan berarti mereka familiar akan tampilan nya serta tidak semua orang menggunakan nya.
 
 Namun, sejak LibreOffice versi 6.2 dirilis, Anda dapat menikmati penampilan "Ribbon" di LibreOffice dengan mengubah Setelan tampilan nya. Dulu, sebelum versi 6.2, memang sempat ada fitur seperti ini, hanya saja itu masih beta/eksperimental dan masih memerlukan Berkas JAR Eksternal (dari luar).
 
