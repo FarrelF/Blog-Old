@@ -31,7 +31,8 @@ aliases:
             echo '[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh' >> $BASH_ENV
             echo 'NODEJS_VERSION=$(cat .nvmrc) && export NODEJS_VERSION' >> $BASH_ENV
             source $BASH_ENV
-            nvm install $NODEJS_VERSION
+            nvm install "$NODEJS_VERSION"
+            nvm alias default "$NODEJS_VERSION"
           else
             NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION
             YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION
@@ -40,7 +41,8 @@ aliases:
             echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> $BASH_ENV
             echo 'NODEJS_VERSION=$(cat .nvmrc) && export NODEJS_VERSION' >> $BASH_ENV
             source $BASH_ENV
-            nvm install $NODEJS_VERSION
+            nvm install "$NODEJS_VERSION"
+            nvm alias default "$NODEJS_VERSION"
             curl -s https://raw.githubusercontent.com/tophat/yvm/"$YVM_VERSION"/scripts/install.sh | INSTALL_VERSION="$YVM_VERSION" bash
             source $BASH_ENV
           fi
