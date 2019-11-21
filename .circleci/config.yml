@@ -23,7 +23,7 @@ aliases:
     run:
       name: Installing NodeJS and Yarn Package Manager with Version Manager(s)
       command: |
-          if [ -d "$YVM_DIR" ] && [ -d "$NVM_DIR" ]
+          if [ -d "$HOME/.nvm" ] && [ -d "$HOME/.yvm" ]
           then
             echo 'NVM_DIR=$HOME/.nvm && export NVM_DIR' >> $BASH_ENV
             echo 'source $NVM_DIR/nvm.sh' >> $BASH_ENV
@@ -50,7 +50,7 @@ aliases:
   save_node_yarn_cache: &save_node_yarn_cache
     save_cache:
       name: Saving NodeJS and Yarn Installation Cache
-      key: v1-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}-{{ checksum ".circleci/config.yml" }}
+      key: v1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
       paths:
         - ~/.nvm
         - ~/.yvm
@@ -59,7 +59,7 @@ aliases:
     restore_cache:
       name: Restoring NodeJS and Yarn Installation Cache
       keys: 
-        - v1-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}-{{ checksum ".circleci/config.yml" }}
+        - v1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
 
   install_node_modules: &install_node_modules
     run:
