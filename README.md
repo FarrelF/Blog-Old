@@ -62,7 +62,7 @@ $ poetry install --no-dev
 ```
 
 ### Mengenai Berkas `build.sh`
-**Catatan:** Karena sekarang blog ini di bangun dengan bantuan CircleCI dan Netlify hanya men-*deploy* HTML nya saja, maka kemungkinan berkas `build.sh` tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas [`.circleci/config.yml`](https://github.com/FarrelF/FarrelF-Blog/blob/master/.circleci/config.yml).
+**Catatan:** Karena sekarang blog ini di bangun dengan bantuan CircleCI dan Netlify hanya men-*deploy* HTML nya saja, maka kemungkinan berkas `build.sh` tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas [`.circleci/config.yml`](.circleci/config.yml).
 
 Sebenarnya, berkas tersebut saya buat agar Netlify bisa meng-install semua keperluan nya dengan baik, termasuk Poetry yang merupakan Pengelola Paket dan Ketergantungan untuk Python, yang sampai saat ini [tidak di dukung secara langsung](https://github.com/netlify/build-image/issues/221) oleh Netlify.
 

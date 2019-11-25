@@ -10,14 +10,16 @@ Authors: Farrel Franqois
 
 Hak Cipta &copy; 2019 Farrel Franqois &lt;farrel(at)franqois(dot)id&gt;
 
-## Pembukaan
-Sebagai pembukaan, maka saya akan menjelaskan istilah yang paling dasar dan yang akan saya gunakan di dalam halaman ini, yaitu:
+## Pembuka
+Laman ini akan membahas Perjanjian Lisensi/Lisensi apa saja yang di gunakan untuk blog ini. Laman ini akan sangat berguna bagi Anda yang ingin menggunakan suatu materi yang telah di sampaikan di dalam blog ini untuk keperluan apapun. 
+
+Sebelum saya membahasnya, maka ada baiknya untuk mengetahui terlebih dahulu definisi-definisi mengenai hal-hal yang di bahas di dalam laman ini, berikut di bawah ini:
 
 - "Kode Sumber" (atau bisa di sebut dengan "Kode Program", bahasa Inggris nya: _Source Code_) dalam Ilmu Komputer adalah semua kumpulan kode yang di tuliskan oleh manusia (termasuk komentar nya) melalui bahasa pemrograman yang juga dapat di baca oleh manusia dan di tulis sebagai teks biasa.
 
-- "Perjanjian Lisensi" (atau bisa di sebut "Lisensi" saja, bahasa Inggris nya: *License* atau *License Agreement*) adalah sebuah Perjanjian atau Pemberian Izin yang bersifat 'Tertulis' dari Penulis/Pembuat untuk mengatur izin dari penggunaan, penyalinan, modifikasi, komersial dan mendistribusikan suatu karya ataupun kode sumber dari sebuah perangkat lunak yang nantinya akan di lakukan oleh Pengguna/Konsumen, yang akan menjadi "Penerima Lisensi".
+- "Perjanjian Lisensi" (atau bisa di sebut "Lisensi" saja, bahasa Inggris nya: _License_ atau _License Agreement_) yang di maksud disini adalah sebuah Perjanjian atau Pemberian Izin yang bersifat 'Tertulis' dari Penulis/Pembuat untuk mengatur izin dari penggunaan, penyalinan, modifikasi, komersial dan mendistribusikan suatu karya ataupun kode sumber dari sebuah perangkat lunak yang nantinya akan di lakukan oleh Pengguna/Konsumen, yang akan menjadi "Penerima Lisensi".
 
-- "Penerima Lisensi" (Bahasa Inggris nya: *Licensee*) adalah seorang atau kelompok atau golongan yang menerima, menyetujui dan mematuhi "Perjanjian Lisensi". "Pengguna" atau "Konsumen" bisa menjadi "Penerima Lisensi", karena di haruskan untuk menerima, menyetujui dan mematuhi "Perjanjian Lisensi" sebelum akhirnya menggunakan suatu Karya untuk keperluan apapun.
+- "Penerima Lisensi" (Bahasa Inggris nya: _Licensee_) adalah seorang atau kelompok atau golongan yang menerima, menyetujui dan mematuhi "Perjanjian Lisensi". "Pengguna" atau "Konsumen" bisa menjadi "Penerima Lisensi", karena di haruskan untuk menerima, menyetujui dan mematuhi "Perjanjian Lisensi" sebelum akhirnya menggunakan suatu Karya untuk keperluan apapun.
 
 - "Anda" termasuk seorang "Pengguna" atau "Konsumen" yang mengunjungi, ingin menggunakan atau/dan ingin membuat turunan dari suatu Karya. Serta, "Anda" disini adalah seorang yang berhak untuk melakukan hal itu, namun di samping itu, Anda harus menuruti segala kewajiban yang ada disini sebagai ganti nya, untuk menyeimbangkan Hak dan Kewajiban. Jika Anda setuju dan mematuhi nya, maka secara otomatis Anda adalah "Penerima Lisensi".
 
@@ -47,7 +49,7 @@ Sedangkan, untuk kode sumber blog ini saya lisensi kan dengan GNU Affero General
 https://www.gnu.org/licenses/agpl-3.0.html
 ```
 
-Pengecualian berlaku terutama untuk semua berkas yang berada di dalam folder `:::text content` pada Kode Sumber (kecuali jika di nyatakan [sebaliknya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)), yang di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa (Atau, bahasa Inggris nya: *Attribution-ShareAlike*) Internasional 4.0 (disingkat: CC BY-SA 4.0).
+Pengecualian berlaku terutama untuk semua berkas yang berada di dalam folder `:::text content` pada Kode Sumber (tapi tidak semua berkas [di dalam nya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)), yang di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa Internasional (Atau, bahasa Inggris nya: _Attribution-ShareAlike International_) 4.0 (disingkat: CC BY-SA 4.0).
 
 Terakhir, untuk kode sumber tema yang saya gunakan dan saya modifikasi, itu saya lisensi kan dengan Lisensi MIT. Untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Modified-Flex).
 
@@ -86,7 +88,7 @@ Namun, dengan syarat, Anda harus memenuhi semua kewajiban nya terlebih dahulu se
 
 - Memberikan Atribusi dengan mencantumkan Sumber Asli dan Nama Pemilik Hak Cipta yang asli nya.
 
-## Persetujuan
+## Penerimaan dan Persetujuan
 Perjanjian Lisensi ini akan berlaku selama Anda mengunjungi, menggunakan atau/dan membuat turunan blog ini (baik kode sumber ataupun konten nya). Selama Anda melakukan salah satu atau lebih dari ke-tiga itu, maka Anda harus menerima Perjanjian Lisensi yang ada disini.
 
 Jadi, setuju/tidak setuju, baca/tidak baca, maka Anda harus siap untuk menyetujui dan menerima nya, karena ini berlaku selama Anda masih ingin menggunakan blog ini.

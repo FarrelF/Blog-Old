@@ -93,9 +93,15 @@ Selain alasan di atas, Alasan mereka hanya fokus (bahkan [mempromosikan](https:/
 
 Ini artinya, mereka percaya bahwa ODF merupakan format yang paling 'netral' saat ini, bila di bandingkan dengan format OOXML.
 
-Jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini termasuk Standar Terbuka (_Open Standard_) atau bebas? Seperti nya belum tentu juga.
+Lagian, di Indonesia, Format ODF ini sudah memasuki ketentuan Standar Nasional Indonesia (SNI) pada tahun 2010 dengan Nomor [`:::text SNI ISO/IEC 26300:2011`](http://sispk.bsn.go.id/SNI/DetailSNI/8541) melalui surat keputusan dengan Nomor [`:::text 41/KEP/BSN/4/2011`](http://akses-sispk.bsn.go.id/Upload/Dokumen/SK_SNI/7476_SK%20SNI%2041-04-2011.PDF) dari Kepala BSN (Badan Standardisasi Nasional) pada waktu itu. Sampai sekarang, Standar ini masih berlaku di Indonesia.
 
-Jadi, apakah itu merupakan suatu hal yang wajar jika tampilan atau bahkan dokumen nya menjadi kacau saat dokumen OOXML di buat atau/dan di buka dengan Perangkat Lunak selain Microsoft Office? Wajar, bahkan normal jika itu terjadi, kecuali jika Anda cuma tahu Microsoft Office atau/dan Ekstensi berformat OOXML nya saja. 
+Bahkan, format ini telah di akui oleh Pemerintah kita melalui [Kemenkominfo (Kementerian Komunikasi dan Informatika)](https://jdih.kominfo.go.id/produk_hukum/unduh/id/75/t/peraturan+menteri+komunikasi+dan+informatika++nomor+7+tahun+2013+tanggal+5+maret+2013) (Atau, Anda bisa unduh [versi DOCX](https://web.kominfo.go.id/sites/default/files/RPM%20Pedoman%20Penerapan%20Interoperabilitas%20Dokumen%20Perkantoran%20Bagi%20Penyelenggara%20Sistem%20Elektronik%20Untuk%20Pelayanan%20Publik.docx) nya) dan [Kemenkumham (Kementerian Hukum dan Hak Asasi Manusia)](http://ditjenpp.kemenkumham.go.id/arsip/bn/2013/bn474-2013lamp.pdf) pada Tahun 2013 yang lalu.
+
+Selain itu, menurut [artikelnya](https://kominfo.go.id/index.php/content/detail/3434/open+source+di+kominfo+/0/program_prioritas), pihak Kemenkominfo telah menggunakan Perangkat-Perangkat Lunak tersebut di dalam lingkungan nya untuk menunjang keperluan mereka, termasuk LibreOffice dan Format ODF nya. (Ngomong-ngomong, Artikel itu di terbitkan sejak tahun 2014 yang lalu. Entah apa yang terjadi sekarang, apakah mereka masih menggunakan nya? Siapa tahu masih juga, kan?)
+
+Jadi, jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini termasuk Standar Terbuka (_Open Standard_) atau bebas? Seperti nya belum tentu juga.
+
+Apakah itu merupakan suatu hal yang wajar jika tampilan atau bahkan dokumen nya menjadi kacau saat dokumen OOXML di buat atau/dan di buka dengan Perangkat Lunak selain Microsoft Office? Wajar, bahkan normal jika itu terjadi, kecuali jika Anda cuma tahu Microsoft Office atau/dan Ekstensi berformat OOXML nya saja. 
 
 Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak perlu, bahkan sama sekali.
 
@@ -123,7 +129,7 @@ Lalu, bagaimana caranya? Caranya adalah, ketika Anda sudah selesai membuat Dokum
 
 Terakhir, jangan pernah mengharapkan kalau LibreOffice bisa membuka dokumen dengan format OOXML sebaik Microsoft Office.
 
-> ### Bagaimana jika saya berada di Rental Komputer/Warung Internet suatu saat nanti?
+> ### Bagaimana jika saya berada di Rental Komputer/Warung Internet yang rata-rata menggunakan Windows suatu saat nanti?
 
 LibreOffice mendukung Sistem Operasi Windows, jadi ia bisa di install di Sistem Operasi Windows. Jika tidak mungkin bisa di install (Entah itu karena terkendala izin Administrator sampai tidak ada waktu atau terlalu repot), LibreOffice juga telah menyediakan versi Portabel nya agar LibreOffice bisa di jalankan secara langsung di dalam USB tanpa izin terlebih dahulu ke Administrator. 
 
@@ -141,15 +147,15 @@ Atau, jika hal tersebut tidak memungkinkan, maka sebaiknya Anda minta saja kepad
 
 > ### Bagaimana jika saya mengirimkan berkas kepada orang lain, entah itu teman, dosen, HRD, dll nya suatu saat nanti?
 
-Tergantung, apakah mereka hanya ingin membaca dokumenmu saja atau ingin mengubah nya juga atau cuma sekedar mengulas (_review_) dokumen saja? Biasanya (apalagi dosen atau HRD), mereka akan butuh dokumen kamu hanya untuk di baca saja, karena pada dasar nya, mereka tidak terlalu perlu untuk mengubah dokumen kamu. (Contoh kasus: Jika kamu mengirimkan CV kepada HRD, Tugas Kuliah ke Dosen, dll).
+Tergantung, apakah mereka hanya ingin membaca dokumenmu saja atau ingin mengubah nya juga atau cuma sekedar mengulas/meninjau ulang (_review_) dokumen mu saja? Biasanya (apalagi dosen atau HRD), mereka akan butuh dokumen kamu hanya untuk di baca saja, karena pada dasar nya, mereka tidak terlalu perlu untuk mengubah dokumen kamu. (Contoh kasus: Jika kamu mengirimkan CV atau _Resume_ kepada HRD untuk melamar pekerjaan, Tugas Kuliah ke Dosen, dll).
 
-Kalau mereka hanya ingin membacanya saja, ekspor berkas tersebut sebagai PDF ketika Anda sudah selesai mengetik dan kirimkan saja hasil berkas nya.
+Kalau mereka hanya ingin membacanya saja, ekspor berkas tersebut ketika Anda sudah selesai mengetik/membuat dokumen nya dan kirimkan saja hasil nya sebagai Format PDF.
 
-Tapi, kalau mereka ingin mengubah dokumen mu, maka kalau bisa, kirimkan berkas tersebut kepada mereka dan sarankan kepada mereka baik-baik untuk meng-install LibreOffice jika kamu merasa dekat dengan mereka.
+Tapi, kalau mereka ingin mengubah dokumen mu, maka kalau bisa, kirimkan berkas tersebut kepada mereka dan sarankan kepada mereka dengan baik-baik untuk meng-install LibreOffice jika kamu merasa dekat dengan mereka.
 
 Atau, kalau mereka menginginkan format selain PDF hanya karena ia tidak bisa membuka nya dengan baik, jika kamu dekat dengan mereka, coba kamu bantu untuk memperbaiki nya atau sarankan kepada mereka untuk menggunakan Peramban Web (_Web Browser_) untuk membuka PDF.
 
-Sedangkan, jika kebutuhan nya hanya mengulas dokumen nya saja (entah itu dengan menyoroti teks nya, memberikan komentar, dll), kamu hanya perlu mengirimkan berkas PDF saja, biasanya Aplikasi Peninjau PDF (Kecuali Peramban Web) bisa melakukan nya jika hanya menyoroti teks atau mengulas dokumen saja.
+Sedangkan, jika kebutuhan nya hanya mengulas/meninjau ulang dokumen nya saja (entah itu dengan menyoroti teks nya, memberikan komentar, dll), kamu hanya perlu mengirimkan berkas PDF saja, biasanya Aplikasi Peninjau PDF (Kecuali Peramban Web) bisa melakukan nya jika hanya menyoroti teks atau mengulas dokumen saja.
 
 ## II. Tampilan nya membuat LibreOffice sulit untuk di gunakan
 Tidak bisa di pungkiri lagi, bahwa secara bawaan, LibreOffice memiliki penampilan yang agak kurang familiar dan penggunaan nya yang memang rumit. Sehingga, orang-orang merasa 'pusing' dan sulit untuk menggunakan Perangkat Lunak satu ini.
@@ -162,5 +168,12 @@ Namun, sejak LibreOffice versi 6.2 dirilis, Anda dapat menikmati penampilan "Rib
 
 Sekarang, Anda sudah bisa menikmati nya tanpa harus memuat Berkas JAR Eksternal lagi.
 
-> Lalu, bagaimana caranya?
+> ### Lalu, bagaimana caranya?
 
+Caranya mudah, yaitu:
+
+1. Pastikan Aplikasi LibreOffice sudah di buka (Untuk varian nya bisa apa saja, LO Writer, Spreadsheet, Impress atau lain nya)
+
+2. Klik pada Menu "View" -> Lalu, klik "Tabbed" untuk mengaktifkan fitur "Ribbon"
+
+Mudah, bukan?
