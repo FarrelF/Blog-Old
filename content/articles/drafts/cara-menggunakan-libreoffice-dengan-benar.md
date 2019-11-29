@@ -5,8 +5,6 @@ Author: Farrel Franqois
 Tags: Cara menggunakan, LibreOffice, Windows, GNU/Linux
 Slug: cara-menggunakan-libreoffice
 Cover: https://cdn.statically.io/gl/FarrelF/blog-images/35ac221f/cara-menggunakan-libreoffice/LibreOffice-External-Logo.png?fit=437,130&quality=80
-Cover_Width: 437
-Cover_Height: 130
 description: Apakah Anda merasa kesulitan saat menggunakan LibreOffice? Terutama untuk masalah kompatibilitas yang seringkali Anda jumpai? Mau tau cara menggunakan LibreOffice dengan "Benar"? Silahkan baca Artikel ini.
 Summary: Banyak sekali pengguna LibreOffice yang merasa kesulitan dalam menggunakan nya, seperti dokumen nya yang berantakan saat di buka dengan Microsoft Office, masalah kompatibilitas dan masalah lain nya. Artikel ini akan membahas hal-hal dasar yang harus di lakukan ketika Anda menggunakan LibreOffice dengan "Benar", dan saya bahas pada bagian yang paling "dasar" nya saja, yang mana ini tidak banyak di ketahui oleh banyak orang. Penasaran? Silahkan baca artikel ini, kalau tidak, yah tidak apa-apa :slightly_smiling_face:
 ---
@@ -95,9 +93,9 @@ Ini artinya, mereka percaya bahwa ODF merupakan format yang paling 'netral' saat
 
 Lagian, di Indonesia, Format ODF ini sudah memasuki ketentuan Standar Nasional Indonesia (SNI) pada tahun 2010 dengan Nomor [`:::text SNI ISO/IEC 26300:2011`](http://sispk.bsn.go.id/SNI/DetailSNI/8541) melalui surat keputusan dengan Nomor [`:::text 41/KEP/BSN/4/2011`](http://akses-sispk.bsn.go.id/Upload/Dokumen/SK_SNI/7476_SK%20SNI%2041-04-2011.PDF) dari Kepala BSN (Badan Standardisasi Nasional) pada waktu itu. Sampai sekarang, Standar ini masih berlaku di Indonesia.
 
-Bahkan, format ini telah di akui oleh Pemerintah kita melalui [Kemenkominfo (Kementerian Komunikasi dan Informatika)](https://jdih.kominfo.go.id/produk_hukum/unduh/id/75/t/peraturan+menteri+komunikasi+dan+informatika++nomor+7+tahun+2013+tanggal+5+maret+2013) (Atau, Anda bisa unduh [versi DOCX](https://web.kominfo.go.id/sites/default/files/RPM%20Pedoman%20Penerapan%20Interoperabilitas%20Dokumen%20Perkantoran%20Bagi%20Penyelenggara%20Sistem%20Elektronik%20Untuk%20Pelayanan%20Publik.docx) nya) dan [Kemenkumham (Kementerian Hukum dan Hak Asasi Manusia)](http://ditjenpp.kemenkumham.go.id/arsip/bn/2013/bn474-2013lamp.pdf) pada Tahun 2013 yang lalu.
+Bahkan, format ini telah di akui oleh Pemerintah kita melalui [Kemenkominfo (Kementerian Komunikasi dan Informatika)](https://jdih.kominfo.go.id/produk_hukum/unduh/id/75/t/peraturan+menteri+komunikasi+dan+informatika++nomor+7+tahun+2013+tanggal+5+maret+2013) (Atau, Anda bisa unduh [versi DOCX nya](https://web.kominfo.go.id/sites/default/files/RPM%20Pedoman%20Penerapan%20Interoperabilitas%20Dokumen%20Perkantoran%20Bagi%20Penyelenggara%20Sistem%20Elektronik%20Untuk%20Pelayanan%20Publik.docx) nya) dan [Kemenkumham (Kementerian Hukum dan Hak Asasi Manusia)](http://ditjenpp.kemenkumham.go.id/arsip/bn/2013/bn474-2013lamp.pdf) pada Tahun 2013 yang lalu.
 
-Selain itu, menurut [artikelnya](https://kominfo.go.id/index.php/content/detail/3434/open+source+di+kominfo+/0/program_prioritas), pihak Kemenkominfo telah menggunakan Perangkat-Perangkat Lunak tersebut di dalam lingkungan nya untuk menunjang keperluan mereka, termasuk LibreOffice dan Format ODF nya. (Ngomong-ngomong, Artikel itu di terbitkan sejak tahun 2014 yang lalu. Entah apa yang terjadi sekarang, apakah mereka masih menggunakan nya? Siapa tahu masih juga, kan?)
+Selain itu, menurut [artikelnya](https://kominfo.go.id/index.php/content/detail/3434/open+source+di+kominfo+/0/program_prioritas), pihak Kemenkominfo telah menggunakan Perangkat-Perangkat Lunak tersebut di dalam lingkungan nya untuk menunjang keperluan mereka, termasuk LibreOffice dan Format ODF nya. (Ngomong-ngomong, Artikel itu di terbitkan sejak tahun 2014 yang lalu. Entah apa yang terjadi sekarang, apakah mereka masih menggunakan nya? Semoga saja masih menggunakan nya)
 
 Jadi, jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini termasuk Standar Terbuka (_Open Standard_) atau bebas? Seperti nya belum tentu juga.
 
@@ -174,6 +172,10 @@ Caranya mudah, yaitu:
 
 1. Pastikan Aplikasi LibreOffice sudah di buka (Untuk varian nya bisa apa saja, LO Writer, Spreadsheet, Impress atau lain nya)
 
-2. Klik pada Menu "View" -> Lalu, klik "Tabbed" untuk mengaktifkan fitur "Ribbon"
+2. Klik pada Menu "View" -> Lalu, klik pada "User interface" -> Terakhir, kamu klik "Tabbed" untuk mengaktifkan fitur "Ribbon"
+
+Dibawah ini merupakan satu Cuplikan Layar yang akan mempermudah kamu atau memperjelas cara di atas:
+
+
 
 Mudah, bukan?

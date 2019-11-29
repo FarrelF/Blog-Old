@@ -25,29 +25,29 @@ aliases:
       command: |
           if [ -d "${HOME}/.nvm" ] && [ -d "${HOME}/.yvm" ]
           then
-            echo 'NVM_DIR=${HOME}/.nvm && export NVM_DIR' >> $BASH_ENV
-            echo 'source "${NVM_DIR}"/nvm.sh' >> $BASH_ENV
-            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR' >> $BASH_ENV
-            echo 'source "${YVM_DIR}"/yvm.sh' >> $BASH_ENV
-            echo 'NODEJS_VERSION=$(cat ~/project/.nvmrc) && export NODEJS_VERSION' >> $BASH_ENV
-            echo 'YARN_VERSION=$(cat ~/project/.yvmrc) && export YARN_VERSION' >> $BASH_ENV
-            cd .. && source $BASH_ENV && cd ~/project
+            echo 'NVM_DIR=${HOME}/.nvm && export NVM_DIR' >> ${BASH_ENV}
+            echo 'source "${NVM_DIR}"/nvm.sh' >> ${BASH_ENV}
+            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR' >> ${BASH_ENV}
+            echo 'source "${YVM_DIR}"/yvm.sh' >> ${BASH_ENV}
+            echo 'NODEJS_VERSION=$(cat ~/project/.nvmrc) && export NODEJS_VERSION' >> ${BASH_ENV}
+            echo 'YARN_VERSION=$(cat ~/project/.yvmrc) && export YARN_VERSION' >> ${BASH_ENV}
+            cd .. && source ${BASH_ENV} && cd ~/project
             nvm install && nvm alias default ${NODEJS_VERSION}
           else
-            echo 'NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION' >> $BASH_ENV
-            echo 'YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION' >> $BASH_ENV
-            source $BASH_ENV
+            echo 'NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION' >> ${BASH_ENV}
+            echo 'YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION' >> ${BASH_ENV}
+            source ${BASH_ENV}
             wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/"$NVM_VERSION"/install.sh | bash
-            echo 'NODEJS_VERSION=$(cat ~/project/.nvmrc) && export NODEJS_VERSION' >> $BASH_ENV
-            echo 'YARN_VERSION=$(cat ~/project/.yvmrc) && export YARN_VERSION' >> $BASH_ENV
-            echo 'NVM_DIR=${HOME}/.nvm && export NVM_DIR' >> $BASH_ENV
-            echo 'source "${NVM_DIR}"/nvm.sh' >> $BASH_ENV
-            cd .. && source $BASH_ENV && cd ~/project
+            echo 'NODEJS_VERSION=$(cat ~/project/.nvmrc) && export NODEJS_VERSION' >> ${BASH_ENV}
+            echo 'YARN_VERSION=$(cat ~/project/.yvmrc) && export YARN_VERSION' >> ${BASH_ENV}
+            echo 'NVM_DIR=${HOME}/.nvm && export NVM_DIR' >> ${BASH_ENV}
+            echo 'source "${NVM_DIR}"/nvm.sh' >> ${BASH_ENV}
+            cd .. && source ${BASH_ENV} && cd ~/project
             nvm install && nvm alias default ${NODEJS_VERSION}
             curl -s https://raw.githubusercontent.com/tophat/yvm/"$YVM_VERSION"/scripts/install.sh | INSTALL_VERSION="$YVM_VERSION" bash
-            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR' >> $BASH_ENV
-            echo 'source "${YVM_DIR}"/yvm.sh' >> $BASH_ENV
-            cd .. && source $BASH_ENV && cd ~/project
+            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR' >> ${BASH_ENV}
+            echo 'source "${YVM_DIR}"/yvm.sh' >> ${BASH_ENV}
+            cd .. && source ${BASH_ENV} && cd ~/project
           fi
           yvm install && yvm alias default ${YARN_VERSION}
 
@@ -69,11 +69,11 @@ aliases:
     run:
       name: Installing NodeJS Packages and it's Dependencies with Yarn
       command: |
-          echo 'export PATH=$(yarn bin):$PATH' >> $BASH_ENV
-          echo 'NODE_ENV=production && export NODE_ENV' >> $BASH_ENV
-          echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH' >> $BASH_ENV
-          echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE' >> $BASH_ENV
-          source $BASH_ENV
+          echo 'export PATH=$(yarn bin):$PATH' >> ${BASH_ENV}
+          echo 'NODE_ENV=production && export NODE_ENV' >> ${BASH_ENV}
+          echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH' >> ${BASH_ENV}
+          echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE' >> ${BASH_ENV}
+          source ${BASH_ENV}
           yarn install --production=true
   
   install_locales: &install_locales
@@ -86,8 +86,8 @@ aliases:
           sudo update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX
           DEBIAN_FRONTEND=noninteractive sudo -E dpkg-reconfigure locales
           sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-          echo "TZ='Asia/Jakarta' && export TZ" >> $BASH_ENV
-          source $BASH_ENV
+          echo "TZ='Asia/Jakarta' && export TZ" >> ${BASH_ENV}
+          source ${BASH_ENV}
 
   install_python_dependencies: &install_python_dependencies
     run:

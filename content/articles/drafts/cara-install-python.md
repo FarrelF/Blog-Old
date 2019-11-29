@@ -5,8 +5,6 @@ Tags: Cara Install, Python, Python 3, Windows, GNU/Linux
 Slug: cara-install-python
 Author: Farrel Franqois
 Cover: https://cdn.statically.io/gl/FarrelF/blog-images/35ac221f/cara-install-python/python-logo.png?fit=447,151&quality=80
-Cover_Width: 447
-Cover_Height: 151
 Summary: Apakah Anda ingin meng-install Python, tapi gak tahu caranya? Kali ini, saya akan memposting bagaimana caranya meng-install Python di dalam Windows dan juga GNU/Linux, terutama untuk Python 3 yang merupakan versi terbaru nya. Penasaran? Silahkan baca artikel ini, kalau tidak, ya tidak apa-apa :slightly_smiling_face:
 Description: Apakah Anda ingin tahu bagaimana cara install Python (terutama Python 3)? Baik itu di Windows atau GNU/Linux? Jika iya, Anda bisa langsung kunjungi dan baca Artikel ini.
 ---
