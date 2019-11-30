@@ -34,7 +34,7 @@ Maka dari itu, saran saya, silahkan Anda bacakan kemudian pahami terlebih dahulu
 
 ## Lisensi yang di gunakan
 ### Untuk semua konten di Blog ini
-Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)) di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa (Atau, bahasa Inggris nya: *Attribution-ShareAlike*) Internasional 4.0 (disingkat: CC BY-SA 4.0)
+Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)) di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa Internasional 4.0 (Atau, bahasa Inggris nya: _Attribution-ShareAlike International 4.0_) (disingkat: CC BY-SA 4.0)
 
 Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan mengakses Alamat URL Berikut ini:
 
@@ -42,15 +42,21 @@ Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan meng
 https://creativecommons.org/licenses/by-sa/4.0/
 ```
 
-### Untuk Kode Sumber Blog dan Tema nya
+### Untuk Kode Sumber Blog
 Sedangkan, untuk kode sumber blog ini saya lisensi kan dengan GNU Affero General Public License v3 (GNU AGPLv3), untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/FarrelF-Blog/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/FarrelF-Blog). Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
 
 ```text
 https://www.gnu.org/licenses/agpl-3.0.html
 ```
 
-Pengecualian berlaku terutama untuk semua berkas yang berada di dalam folder `:::text content` pada Kode Sumber (tapi tidak semua berkas [di dalam nya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)), yang di lisensi kan dengan Creative Commons Atribusi-BerbagiSerupa Internasional (Atau, bahasa Inggris nya: _Attribution-ShareAlike International_) 4.0 (disingkat: CC BY-SA 4.0).
+#### Pengecualian Lisensi Kode Sumber Blog
+Kode Sumber blog ini di Lisensikan dengan Lisensi GNU AGPLv3, namun bukan berarti tidak ada pengecualian. Pengecualian Lisensi untuk Kode Sumber Blog akan berlaku untuk:
 
+- Semua berkas Markdown yang ada di dalam Folder [`content`](https://github.com/FarrelF/FarrelF-Blog/tree/master/content) di Lisensi kan dengan CC BY-SA 4.0.
+
+- Semua berkas di dalam [`content/extras`](https://github.com/FarrelF/FarrelF-Blog/tree/master/content/extras) di lisensi kan dengan GNU AGPLv3, namun ada berkas-berkas tertentu di dalam sana yang telah mengandung penyebutan atau/dan logo dari sebuah Merek Dagang Terdaftar atau/dan Pakaian Dagang yang di miliki oleh Perusahaan. Jadi, sesuai dengan [ketentuan di blog ini]({filename}/pages/ketentuan-hukum-dan-sanggahan.md), jika Anda ingin menurunkan nya, bahkan sampai-sampai ingin merubah/mengedit yang mengenai logo nya, Anda tetap harus menuruti Aturan dari masing-masing pemilik Merek Dagang tersebut, tapi biasanya di perbolehkan jika hanya "sama-persis".
+
+### Untuk Kode Sumber Tema nya
 Terakhir, untuk kode sumber tema yang saya gunakan dan saya modifikasi, itu saya lisensi kan dengan Lisensi MIT. Untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Modified-Flex).
 
 ## Ringkasan Lisensi

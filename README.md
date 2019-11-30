@@ -61,21 +61,19 @@ Sebagai tambahan, jika Anda berniat ingin menggunakan Kode Sumber ini untuk tuju
 $ poetry install --no-dev
 ```
 
-### Mengenai Berkas `build.sh`
-**Catatan:** Karena sekarang blog ini di bangun dengan bantuan CircleCI dan Netlify hanya men-*deploy* HTML nya saja, maka kemungkinan berkas [`build.sh`](build.sh) tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas [`.circleci/config.yml`](.circleci/config.yml).
+### Mengenai Berkas `NetlifyBuild.sh`
+**Catatan:** Karena sekarang blog ini di bangun dengan bantuan CircleCI dan Netlify hanya men-*deploy* HTML nya saja, maka kemungkinan berkas [`NetlifyBuild.sh`](NetlifyBuild.sh) tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas [`.circleci/config.yml`](.circleci/config.yml).
 
 Sebenarnya, berkas tersebut saya buat agar Netlify bisa meng-install semua keperluan nya dengan baik, termasuk Poetry yang merupakan Pengelola Paket dan Ketergantungan untuk Python, yang sampai saat ini [tidak di dukung secara langsung](https://github.com/netlify/build-image/issues/221) oleh Netlify.
 
 Walaupun sebenarnya Anda bisa meng-install nya secara langsung menggunakan berkas tersebut, tapi sebaik nya Anda jangan meng-install nya dari situ, karena berkas tersebut memiliki perintah dan cara Install yang berbeda daripada yang ada disini. 
 
 Perbedaan nya dengan Cara Install di atas adalah:
-- Poetry akan di Install menggunakan perintah `pip` bukan `pip3`. Biasanya, `pip` di suatu Sistem Operasi, terutama berbasis Unix/Unix-like, itu merujuk kepada Pip untuk Python 2, bukan Python 3. Jadi, jika Anda meng-eksekusi nya, ini artinya Anda meng-install Poetry untuk Python 2, bukan Python 3, kecuali jika Anda berada di dalam Virtualenv atau Pyenv yang menggunakan Python 3, berjalan di dalam Lingkungan "Sandbox" atau di dalam Windows yang hanya terinstall Python 3 saja.
-
-- Di dalam `build.sh`, Poetry sudah di konfigurasi agar tidak membuatkan Virtualenv setelah meng-install semua paket/pustaka lain nya dengan Poetry. Hal ini akan sangat beresiko jika Anda ingin menggunakan/memodifikasi Kode Sumber ini di dalam Komputer Anda, seperti konflik antar paket/pustaka lain nya.
+- Sudah jelas dari Nama Berkas nya, kalau berkas ini memang di tujukan untuk Netlify, bukan untuk lain nya.
 
 - Poetry tidak akan meng-install semua paket/pustaka yang ada, melainkan hanya meng-install paket/pustaka untuk keperluan produksi saja. Jadi, Anda tidak akan bisa menikmati semua paket/pustaka untuk keperluan pengembangan, karena tidak ter-install, contoh nya: PyLint. Kecuali, jika Anda bisa meng-install nya.
 
-- Akan menggunakan `make publish` untuk membangun Blog ini, yang mana seharus itu di gunakan untuk Produksi.
+- Akan menggunakan `poetry run make publish` untuk membangun Blog ini, yang mana seharus itu di gunakan untuk Produksi.
 
 Selain itu, berkas tersebut akan di eksekusi oleh Netlify saat men-*deploy*, yang memiliki Sistem dan cara kerja yang berbeda daripada Sistem pada Komputer Anda, serta saat men-*deploy*, Sistem mereka berjalan di dalam "Kontainer" yang di buat dengan "Docker".
 
@@ -113,7 +111,7 @@ Sedangkan di Windows, ada tiga (yang sebenarnya 'empat') langkah yang harus kamu
 
 Atau, jika Anda tidak ingin repot-repot melakukan hal di atas pada Windows, serta ingin menikmati fitur 'Live Reload' yakni bisa Memuat Ulang Blog secara otomatis setelah perubahan, Anda bisa gunakan perintah berikut:
 
-**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, dan Yarn Package Manager, serta sudah melakukan instalasi ketergantungan/pustaka JavaScript lain nya (seperti Gulp.js) dengan Yarn, caranya ada [di atas](#cara-install).
+**Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, dan Yarn Package Manager, serta sudah melakukan instalasi modul JavaScript lain nya (seperti Gulp.js) dengan Yarn, caranya ada [di atas](#cara-install).
 
 ```bash
 $ yarn invoke-devserver
@@ -148,6 +146,6 @@ Kode Sumber ini, (Kecuali yang berada di dalam folder [`content`](content)) saya
 ### Pengecualian Lisensi
 Meski seluruh Kode Sumber ini berlisensi GNU Affero General Public License v3 (GNU AGPLv3) atau di atas nya/lebih baru, bukan berarti ini tanpa pengecualian.
 
-Pengecualian nya adalah bahwa Konten yang ada di dalam blog ini (berupa Artikel, Laman, dan Berkas Gambar yang telah saya buat sendiri, yang terletak di dalam folder [`content`](content)) (tapi tidak [semua berkas di dalam nya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan)), beserta terjemahan nya di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
+Pengecualian nya adalah bahwa Konten yang ada di dalam blog ini (berupa Artikel, Laman, dan Berkas Gambar yang telah saya buat sendiri, yang terletak di dalam folder [`content`](content)) (tapi tidak [semua berkas di dalam nya](https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan), terutama untuk berkas-berkas yang berada di dalam [`content/extras`](content/extras)), beserta terjemahan nya di lisensi kan dengan [Creative Commons Attribution-ShareAlike Internasional 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, disingkat: CC BY-SA 4.0).
 
 Untuk lebih lengkap nya, silahkan kunjungi Laman [Lisensi](https://farrel.franqois.id/lisensi) di dalam Blog Saya :slightly_smiling_face:

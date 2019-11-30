@@ -121,7 +121,7 @@ Mau Referensi lain nya? Silahkan klik salah satu tautan berikut:
 
 > ### Lalu, apa solusi nya?
 
-Solusinya mudah, tinggalkan dan jangan pernah gunakan format OOXML di dalam LibreOffice untuk membuat dokumen Anda. 
+Solusinya mudah, tinggalkan dan jangan pernah gunakan format OOXML untuk membuat dokumen Anda, apalagi jika Anda sedang menggunakan LibreOffice. 
 
 Lalu, bagaimana caranya? Caranya adalah, ketika Anda sudah selesai membuat Dokumen nya, simpanlah dokumen tersebut sebagai Ekstensi yang berformat ODF (OpenDocument Format), seperti .ODT (untuk LibreOffice Writer), .ODS untuk (LibreOffice Calc), dan .ODP (untuk LibreOffice Impress), daripada ekstensi yang berformat OOXML seperti .DOC, .DOCX, .XLS, .XLSX, .PPT, .PPTX dan ekstensi dengan format OOXML lain nya.
 
@@ -135,13 +135,13 @@ Ini akan sangat membantu Anda yang sedang menggunakan Komputer yang mana Anda ti
 
 > ### Bagaimana jika saya membuka berkas OOXML di LibreOffice?
 
-Sudah saya bilang sebelumnya, bahwa lebih baik Anda tidak terlalu berharap untuk bisa membuka berkas yang berformat OOXML di LibreOffice sebaik Microsoft Office. Namun, Anda bisa saja membuka nya, hanya saja hasilnya nanti tidak sebaik Microsoft Office, karena fitur-fitur yang ada/digunakan pada dokumen tersebut belum tentu dapat di 'render' dengan baik oleh LibreOffice, karena masalah format OOXML itu sendiri.
+Seperti yang sudah saya bilang sebelumnya, bahwa lebih baik Anda tidak terlalu berharap untuk bisa membuka berkas yang berformat OOXML di LibreOffice sebaik Microsoft Office. Namun, Anda bisa saja membuka nya, hanya saja hasilnya nanti tidak sebaik Microsoft Office, karena fitur-fitur yang ada/digunakan pada dokumen tersebut belum tentu dapat di 'render' dengan baik oleh LibreOffice, karena masalah format OOXML itu sendiri.
 
 Meskipun artikel ini menyinggung Microsoft Office dan Format OOXML nya, bukan berarti saya melarang Anda untuk menggunakan kedua nya. 
 
 Anda bisa menggunakan Microsoft Office untuk membuka berkas berformat OOXML, atau jika Anda tidak mempunyai Microsoft Office nya (Entah itu sengaja gak di install atau gak bisa di Install karena sebab lain), Anda bisa menggunakan Perangkat Lunak Perkantoran lain nya selain Microsoft Office, seperti WPS Office, Softmaker FreeOffice, dll.
 
-Atau, jika hal tersebut tidak memungkinkan, maka sebaiknya Anda minta saja kepada pengirimnya untuk mengirimkan ulang berkas sebagai Format PDF jika Anda hanya ingin membacanya saja, atau dengan Format Teks Polos/ODF (Sesuai kebutuhan) jika Anda ingin mengubah nya juga. Jadi, sesuaikan dengan kebutuhan.
+Atau, jika hal tersebut tidak memungkinkan, maka sebaiknya Anda minta saja kepada pengirimnya untuk mengirimkan ulang berkas sebagai Format PDF jika Anda hanya ingin membacanya saja, atau dengan Format Teks Polos/ODF (Sesuai kebutuhan) jika Anda ingin mengubah nya juga. Jadi, sesuaikan saja dengan kebutuhan.
 
 > ### Bagaimana jika saya mengirimkan berkas kepada orang lain, entah itu teman, dosen, HRD, dll nya suatu saat nanti?
 
@@ -160,7 +160,11 @@ Tidak bisa di pungkiri lagi, bahwa secara bawaan, LibreOffice memiliki penampila
 
 Salah satu penyebabnya adalah bahwa kebanyakan orang telah terbiasa dengan Penampilan "Ribbon" yang ada di Microsoft Office sejak versi 2007, begitupun juga versi di atasnya, sampai sekarang.
 
-Mungkin saja, tampilan itu memang terasa familiar bagi Anda yang sudah pernah menggunakan Microsoft Office 2003 sebelumnya. Tapi, yang menjadi masalah nya adalah bahwa kebanyakan orang sudah duluan familiar dengan penampilan "Ribbon" dan mengingatnya, kalaupun sebelumnya ada yang sudah pernah menggunakan Microsoft Office 2003, bukan berarti mereka familiar akan tampilan nya serta tidak semua orang menggunakan nya.
+Tampilan LibreOffice standar kira-kira seperti ini (saya menggunakan Windows 10):
+
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/LibreOffice_Screenshot_in_Windows_10.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="Cuplikan Layar LibreOffice 6.3 di Windows 10">](https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/LibreOffice_Screenshot_in_Windows_10.png)
+
+Mungkin saja, tampilan seperti itu memang terasa familiar bagi Anda yang sudah pernah menggunakan Microsoft Office 2003 sebelumnya. Tapi, yang menjadi masalah nya adalah bahwa kebanyakan orang sudah duluan familiar dengan penampilan "Ribbon" dan mengingatnya, kalaupun sebelumnya ada yang sudah pernah menggunakan Microsoft Office 2003, bukan berarti mereka familiar akan tampilan nya, serta tidak semua orang menggunakan nya.
 
 Namun, sejak LibreOffice versi 6.2 dirilis, Anda dapat menikmati penampilan "Ribbon" di LibreOffice dengan mengubah Setelan tampilan nya. Dulu, sebelum versi 6.2, memang sempat ada fitur seperti ini, hanya saja itu masih beta/eksperimental dan masih memerlukan Berkas JAR Eksternal (dari luar).
 
@@ -176,6 +180,57 @@ Caranya mudah, yaitu:
 
 Dibawah ini merupakan satu Cuplikan Layar yang akan mempermudah kamu atau memperjelas cara di atas:
 
-
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="Cara mengaktifkan Tabbed UI di LibreOffice">](https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png)
 
 Mudah, bukan?
+
+Kira-kira, untuk tampilan nya akan seperti di bawah ini jika sudah di aktifkan "Tabbed UI" nya:
+
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="LibreOffice Tabbed UI di Windows 10">](https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png)
+
+> ### Saya masih kesulitan untuk menggunakan nya, bagaimana caranya agar saya tidak merasa kesulitan?
+
+Solusi nya yah belajarlah untuk menggunakan LibreOffice secara mandiri sampai terbiasa. Karena LibreOffice merupakan Perangkat Lunak Bebas, maka LibreOffice mengajarkan kemandirian dan keberdayaan.
+
+Lalu, bagaimana cara nya agar kita bisa mempelajari nya? Banyak sekali cara mempelajari penggunaan LibreOffice, tapi hal yang terpenting dalam belajar adalah pelan-pelan dan tidak usah terlalu terburu-buru, dan usahakan untuk bersikap tenang. 
+
+Salah satu cara yang bisa Anda lakukan untuk mempelajari nya adalah dengan berikut ini:
+
+#### Cara 1: Buatlah Dokumen yang sama dengan Dokumen yang di kerjakan dengan Microsoft Office
+Pernahkah Anda membuat dokumen dengan Microsoft Office? Pernahkah Anda membuatnya dengan format yang kompleks, minimal seperti dalam bentuk Proposal, Laporan, Dokumentasi, Jurnal atau bahkan sampai Skripsi misal nya?
+
+Kalau pernah, mungkin saat nya Anda membuat dokumen yang sama dengan dokumen yang Anda buat menggunakan Microsoft Office itu dengan LibreOffice, agar supaya Anda bisa mempelajari nya. Lalu, bagaimana caranya?
+
+Bukalah dokumen yang pernah Anda buat dengan Microsoft Office itu dengan Microsoft Office, lalu buatlah dokumen baru dengan LibreOffice. Ya, ini artinya Microsoft Office dan LibreOffice akan di buka secara bersamaan, cuma berbeda peran nya.
+
+Setelah Anda membuka LibreOffice nya, buatlah dokumen baru itu sama persis dengan yang ada di Microsoft Office.
+
+Jadi, yang jelas nya adalah, Dokumen yang di buka dengan Microsoft Office itu peran nya cuma di baca/di lihat saja, sedangkan LibreOffice itu membuat dokumen nya yang sama persis dengan Dokumen yang di buat dengan Microsoft Office.
+
+Hal ini akan melatih Anda untuk mempelajari bagaimana cara menggunakan LibreOffice, dan fitur-fitur yang Anda serta menguasai nya, dan ini juga akan melatih kemandirian Anda. Lakukanlah itu sampai kamu terbiasa untuk menggunakan nya, sesering mungkin. 
+
+Jika Anda sudah selesai membuatnya, jangan lupa, simpanlah dokumen tersebut dengan format ODF, bukan format OOXML.
+
+#### Cara 2: Sering-sering Googling untuk menguasai Fitur-fitur pada LibreOffice
+Ini mungkin berhubungan dengan cara pertama. Meskipun begitu, nyatanya Anda belum menguasai penggunaan LibreOffice saat membuat dokumen nya, yah setidak nya anggap saja begitu. 
+
+Jika Anda merasa bingung, hal yang pertama kali yang harus Anda lakukan adalah sering-seringlah Googling terlebih dahulu untuk menguasai Fitur-fitur LibreOffice beserta cara menggunakan nya. Kalau bisa, gunakan Bahasa Inggris untuk kata kunci nya.
+
+Hal ini di lakukan terutama saat Anda ingin bertanya kepada seseorang melalui apapun juga di Internet, termasuk melalui Forum/Grup yang ada di Internet.
+
+Maka, sebelum bertanya kepada seseorang di Internet, maka ada baiknya untuk Googling terlebih dahulu untuk penguasaan Fitur nya.
+
+#### Cara 3: Baca, Pelajari dan Pahami Panduan nya
+Anda bisa mempelajari Panduan yang tersedia jika suatu Anda bingung bagaimana caranya menggunakan sebuah fitur yang ada.
+
+Cukup Anda tekan tombol <kbd>F1</kbd> untuk membaca panduan nya, nanti setelah Anda menekan nya, maka secara otomatis LibreOffice akan mengeksekusi Peramban Web (_Web Browser_) bawaan di Sistem Operasi yang Anda gunakan.
+
+Panduan tersebut memang berbahasa Inggris, namun Anda bisa menggunakan Bahasa Indonesia nya, jika Anda mengunduh "Helppack" nya. 
+
+Anda bisa mencari materi-materi yang ada di situ kalau mau. Tapi, panduan disitu kurang lengkap untuk menjelaskan nya, panduan tersebut hanyalah sebatas menjelaskan penggunaan fitur-fitur nya saja.
+
+Namun, Alhamdulillah, bapak Sokibi telah membuat sebuah buku dengan judul "Menulis Buku dengan LibreOffice" yang tentu nya di buat dengan Bahasa Indonesia, yang dapat membantu Anda untuk menguasai fitur-fitur yang ada pada LibreOffice (terutama LibreOffice Writer). Buku Digital tersebut bisa Anda unduh secara gratis dengan mengunjungi salah satu artikel [di blog nya](https://imgos-belajarlinux.blogspot.com/2019/10/unduh-buku-digital-gratis.html)
+
+Hanya saja, sayangnya buku tersebut hanya membahas LibreOffice Writer saja, tidak dengan lain nya. Tapi, setidaknya ini lumayan membantu Anda untuk mempelajari LibreOffice, daripada tidak sama sekali.
+
+#### Cara 4: Bertanya kepada seseorang

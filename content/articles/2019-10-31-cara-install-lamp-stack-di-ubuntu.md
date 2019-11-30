@@ -8,13 +8,6 @@ Cover: https://cdn.statically.io/gl/FarrelF/blog-images/397ba33d/cara-install-la
 Description: Apakah Anda ingin mencari Cara Install LAMP Stack dengan benar untuk keperluan Pengembangan di dalam Sistem Ubuntu Anda? Jika iya, maka Anda bisa kunjungi dan baca artikel ini, dan saya langsung membahas nya.
 Summary: Artikel ini akan membahas tentang bagaimana caranya meng-install _LAMP Stack_ di dalam Sistem Operasi GNU/Linux, khususnya untuk pengguna Distribusi Ubuntu dan Turunan nya (seperti [Mint](https://www.linuxmint.com), [KDE neon](https://neon.kde.org), [Pop_OS!](https://system76.com/pop), dll) dengan "benar". Penasaran? Silahkan baca artikel ini, kalau tidak, ya tidak apa-apa :slightly_smiling_face: 
 
-<style>
-article.single p img.centered {
-    display: block;
-    margin: 0 auto;
-}
-</style>
-
 ## Daftar Isi
 
 [TOC]
@@ -93,7 +86,7 @@ Jika Apache2 berjalan dengan baik, harus nya ada `:::text Active: active (runnin
 
 Atau, seperti pada cuplikan layar berikut ini:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_1.png?fit=503,359&quality=80" loading="lazy" class="centered" alt="Setelah Instalasi Apache2">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_1.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_1.png?fit=503,359&quality=80" loading="lazy" class="img-center" alt="Setelah Instalasi Apache2">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_1.png)
 
 Jika status Apache2 tidak seperti di atas, maka bisa di pastikan bahwa Apache2 tidak berjalan dengan baik. Untuk menjalankan nya, eksekusi perintah berikut:
 
@@ -137,29 +130,41 @@ Silahkan ganti `:::text nama_pengguna_kamu` dengan Nama Pengguna (_Username_) ya
 Atau, kalo mau cepet, bisa gunakan perintah berikut:
 
 ```bash
-$ sudo chown $USER:www-data /var/www/html/ -R
+$ sudo chown ${USER}:www-data /var/www/html/ -R
 ```
 
 #### **4. (Opsional) Merubah perizinan pada “Document Root”**
-Bagi Anda yang terlanjur menggunakan chmod 777. Untuk keamanan dan kalo perlu, Anda harus ganti Perizinan pada "Document Root" menjadi 755 atau 644, dengan meng-eksekusi perintah berikut:
-
-**PERINGATAN!** : Kedua Perintah di bawah ini bukan hanya mengubah nilai `chmod` pada folder itu saja, melainkan semua berkas dan folder di dalam nya. Jadi, seluruh berkas dan folder di dalam nya akan ikutan di rubah Perizinan (_Permission_) nya, jika kamu mengeksekusinya. 
-Sehingga, hal ini akan berpengaruh terhadap Aplikasi Web yang kamu buat. Kalo kamu gak mau merubah nilai `chmod` berkas dan folder di dalamnya, hilangkan parameter/opsi -R di dalam perintah tersebut.
+Bagi Anda yang terlanjur menggunakan chmod 777. Untuk keamanan dan kalo perlu, Anda harus ganti Perizinan pada "Document Root" menjadi 755 untuk Folder atau 644 untuk berkas-berkas di dalam nya, dengan meng-eksekusi perintah berikut:
 
 ```bash
-$ sudo chmod -R 755 /var/www/html
+$ sudo chmod 755 /var/www/html
 ```
 
-Atau
+Perintah di atas di eksekusi hanya untuk satu Folder saja, jika Anda ingin semua Folder dan Sub-folder di dalam nya, Anda bisa eksekusi perintah berikut:
 
 ```bash
-$ sudo chmod -R 644 /var/www/html
+$ sudo find /var/www/html -type d -exec chmod 755 {} \;
 ```
 
-(Opsional) Jika Aplikasi Web Anda memiliki fitur 'Unggah' (_Upload_), dan ingin Aplikasi Web tersebut bisa menggunakan fitur itu dengan baik. Ubahlah Perizinan pada Folder Lokasi yang akan di jadikan tempat penyimpanan berkas yang telah di unggah melalui Aplikasi Web menjadi 775 atau 664, dengan perintah berikut:
+Kedua perintah di atas (seperti: `:::bash chmod 755`) memang sebaik nya di eksekusi untuk Folder saja, sedangkan untuk berkas-berkas nya bisa Anda ketik perintah berikut:
 
 ```bash
-$ sudo chmod -R 775 /path/to/uploaded/file
+$ sudo chmod -R 644 /var/www/html/*.php
+```
+
+Perintah di atas merupakan contoh untuk mengubah perizinan untuk semua berkas yang berekstensi .php di dalam nya. Jika Anda ingin mengubah perizinakn untuk ekstensi berkas lain nya, silahkan ganti `:::text *.php` diatas dengan ekstensi lain, seperti `:::text *.jpg` jika Anda ingin mengubah perizinan untuk semua berkas dengan Ekstensi .jpg.
+
+Sedangkan, jika Anda ingin mengubah perizinan untuk semua Berkas (bukan Folder) dengan semua Ekstensi nya yang berada di dalam Folder/Lokasi `:::text /var/www/html` menjadi 644, Anda bisa eksekusi perintah berikut:
+
+```bash
+$ sudo find /var/www/html -type f -exec chmod 644 {} \;
+```
+
+(Opsional) Jika Aplikasi Web Anda memiliki fitur 'Unggah' (_Upload_), dan ingin Aplikasi Web tersebut bisa menggunakan fitur itu dengan baik. Ubahlah Perizinan pada Folder Lokasi yang akan di jadikan tempat penyimpanan berkas yang telah di unggah melalui Aplikasi Web menjadi 775 untuk Folder atau 664 untuk berkas-berkas nya, dengan perintah berikut:
+
+```bash
+$ sudo find /path/to/uploaded/file -type d -exec chmod 775 {} \;
+$ sudo find /path/to/uploaded/file -type f -exec chmod 665 {} \;
 ```
 
 Ganti `:::text /path/to/uploaded/file` menjadi lokasi tempat menyimpan berkas yang telah di Unggah.
@@ -167,7 +172,7 @@ Ganti `:::text /path/to/uploaded/file` menjadi lokasi tempat menyimpan berkas ya
 #### **5. Menguji _Web Server_ dengan membukanya lewat Web Browser**
 Setelah itu, buka Peramban Web (_Web Browser_) Anda, lalu masukkan Alamat URL nya dengan `:::text localhost` atau `:::text 127.0.0.1`. Lalu, harusnya tampilan akan seperti di bawah ini jika bekerja dengan baik:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_2.png?fit=720,371&quality=80" loading="lazy" alt="Contoh halaman Index Default yang menandakan Apache2 berjalan dengan baik" class="centered"/>](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_2.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_2.png?fit=720,371&quality=80" loading="lazy" alt="Contoh halaman Index Default yang menandakan Apache2 berjalan dengan baik" class="img-center"/>](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_2.png)
 
 Jika tampilan nya muncul “It works!” seperti di atas, maka seharusnya Apache2 sudah siap di gunakan!
 
@@ -183,7 +188,7 @@ Silakan ganti `nama_pengguna_kamu` dengan Nama Pengguna (_Username_) yang kamu g
 Atau, kalo mau cepet, gunakan perintah berikut:
 
 ```bash
-$ sudo adduser $USER www-data
+$ sudo adduser ${USER} www-data
 ```
 
 #### **7. Mengaktifkan .htaccess di dalam Apache2**
@@ -214,13 +219,13 @@ $ gedit admin:///etc/apache2/apache2.conf
 Untuk Pengguna KDE Plasma 5 (dengan editor teks ‘KWrite’):
 
 ```bash
-$ pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite /etc/apache2/apache2.conf
+$ pkexec env DISPLAY=${DISPLAY} XAUTHORITY=${XAUTHORITY} KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite /etc/apache2/apache2.conf
 ```
 
 Untuk Pengguna KDE Plasma 5 (dengan editor teks ‘Kate’):
 
 ```bash
-$ pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate /etc/apache2/apache2.conf
+$ pkexec env DISPLAY=${DISPLAY} XAUTHORITY=${XAUTHORITY} KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate /etc/apache2/apache2.conf
 ```
 
 Untuk Pengguna DE LXDE (Leafpad)*:
@@ -292,7 +297,7 @@ Jika Anda ingin menggunakan MariaDB dengan versi terbaru, maka Anda wajib menamb
     
     Lalu, coba kamu tambahkan Repo PPA atau Repo lain nya (apa saja/bebas) dengan memanfaatkan perintah `add-apt-repository` di dalam Terminal GNU/Linux kamu. Setelah itu, coba kamu Update Repository nya, dan harusnya bisa.
     
-    Bukti lain nya adalah bahwa paket `:::text software-properties-common` ini tidak ter-install secara default ke dalam Sistem Mint nya. Padahal, paket tersebut harusnya sangat penting, terutama bagi Anda yang sering menambahkan PPA atau Repo lain nya jika Anda menggunakan Distribusi Ubuntu dan Turunan nya (mungkin Debian juga bisa?). 
+    Bukti lain nya adalah bahwa paket `:::text software-properties-common` ini tidak ter-install secara bawaan ke dalam Sistem Mint nya. Padahal, paket tersebut harusnya sangat penting, terutama bagi Anda yang sering menambahkan PPA atau Repo lain nya jika Anda menggunakan Distribusi Ubuntu dan Turunan nya (mungkin Debian juga bisa?). 
     
     Hal ini seolah memberikan ‘tanda’ kepada kita sebagai pengguna nya kalau ada kemungkinan bahwa pihak pengembang Mint sendiri akan menggantikan sepenuh nya dengan paket `:::text mintsources` dan untuk kedepan nya, mereka akan menghapus paket `:::text software-properties-common` dari [Repo Resmi nya](http://packages.linuxmint.com/).
     
@@ -362,7 +367,7 @@ Jika MariaDB berjalan dengan baik, maka hasil output nya nanti harusnya ada `:::
 
 Atau, seperti pada cuplikan layar berikut:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_MariaDB.png?fit=503,359&quality=80" loading="lazy" class="centered" alt="Status MariaDB di dalam Terminal">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_MariaDB.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_MariaDB.png?fit=503,359&quality=80" loading="lazy" class="img-center" alt="Status MariaDB di dalam Terminal">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_MariaDB.png)
 
 Jika status MariaDB tidak seperti di atas, maka bisa di pastikan bahwa MariaDB tidak berjalan dengan baik. Untuk menjalankan nya, eksekusi perintah berikut:
 
@@ -381,13 +386,13 @@ Sekarang, kita konfigurasi kan MariaDB nya supaya aman.
 
 Ketik perintah `:::bash sudo mysql_secure_installation` untuk melakukan konfigurasi. Lalu, jika di tanya “Enter current password for root” kamu tekan “Enter” saja, setelah itu, masukkan Kata Sandi untuk Akun Root MariaDB yang ingin di buat, seperti cuplikan layar berikut:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?fit=502,359&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=200 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?fit=502,359&quality=80 502w" data-sizes="502px" loading="lazy" class="centered" alt="Konfigurasi MariaDB di dalam Terminal">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?fit=502,359&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=200 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?fit=502,359&quality=80 502w" data-sizes="502px" loading="lazy" class="img-center" alt="Konfigurasi MariaDB di dalam Terminal">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png)
 
 **Catatan:** Jika Anda menginstall MariaDB 10.4 atau di atasnya, dan Anda di tanya “Switch to `unix_socket` authentication \[Y/n\]”, Anda tinggal ketik atau jawab saja “n” (tanpa kutip). Lalu, tekan “Enter”. Hal ini agar Anda tidak mengaktifkan `unix_socket` sebagai metode autentikasi pada akun `root` di MariaDB.
 
 Setelah Anda menentukan Kata Sandi baru untuk Akun root pada MariaDB, Anda tinggal tekan Tombol “Enter” saja, sampai selesai dan muncul tulisan “Thanks for using MariaDB!”. Berikut Cuplikan nya:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?fit=503,347&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=100&quality=80 100w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=200&quality=80 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=500&quality=80 500w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?fit=503,347&quality=80 503w" data-sizes="503px" loading="lazy" class="centered" alt="Konfigurasi MariaDB di dalam Terminal">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?fit=503,347&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=100&quality=80 100w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=200&quality=80 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=500&quality=80 500w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?fit=503,347&quality=80 503w" data-sizes="503px" loading="lazy" class="img-center" alt="Konfigurasi MariaDB di dalam Terminal">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png)
 
 #### **3. Metode Autentikasi di MariaDB**
 
@@ -501,7 +506,7 @@ Lalu, simpan berkas tersebut, kalau Anda menggunakan nano, maka Anda perlu tekan
 
 Setelah itu, coba buka web browser Anda, lalu masukkan URL nya. Karena berkas yang kita buat tadi lokasi nya di `:::text /var/www/html`, maka artinya masukkan URL `:::text localhost/info.php` atau `:::text 127.0.0.1/info.php` kedalam Peramban (_Browser_) mu, lalu tekan “Enter”. Hasilnya akan menjadi seperti ini:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?fit=720,371&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=100&quality=80 100w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=200&quality=80 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=500&quality=80 500w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=600&quality=80 600w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=700&quality=80 700w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?fit=720,371&quality=80 720w" data-sizes="720px" loading="lazy" class="centered" alt="Ini yang di hasilkan dari berkas 'info.php' jika di buka lewat Peramban Web.">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?fit=720,371&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=100&quality=80 100w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=200&quality=80 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=500&quality=80 500w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=600&quality=80 600w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=700&quality=80 700w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?fit=720,371&quality=80 720w" data-sizes="720px" loading="lazy" class="img-center" alt="Ini yang di hasilkan dari berkas 'info.php' jika di buka lewat Peramban Web.">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png)
 
 Lihatlah pada Server API nya, yang masih menggunakan `:::text Apache2 Handler`. Tidak masalah sebenarnya, cuma kita tadi sudah meng-install `:::text php7.3-fpm` nya, yang seharusnya itu bukan Apache2 Handler lagi. Selain itu, mungkin ada beberapa alasan (seperti Kinerja dari PHP nya, dll) agar kita harus mengaktifkan PHP-FPM ini.
 
@@ -514,7 +519,7 @@ $ sudo -- sh -c 'a2dismod php7.3; a2enmod proxy_fcgi setenvif; a2enconf php7.3-f
 
 Setelah itu, coba kamu segarkan (_refresh_) berkas `info.php` yang telah kamu akses lewat Peramban Web tadi, dan harusnya akan menjadi seperti ini:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_FPM.png?fit=720,371&quality=80" loading="lazy" class="centered" alt="Hasil berkas 'info.php' setelah PHP-FPM di aktifkan.">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_FPM.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_FPM.png?fit=720,371&quality=80" loading="lazy" class="img-center" alt="Hasil berkas 'info.php' setelah PHP-FPM di aktifkan.">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_FPM.png)
 
 
 #### **4. (Opsional) Menguji Galat Sintaks PHP (_PHP Syntax Error_)**
@@ -535,36 +540,36 @@ $ sudo nano /etc/php/7.3/fpm/php.ini
 
 Tapi, kalo kamu mau menggunakan editor teks yang berbasis GUI, bisa kamu buka editor teks tersebut sebagai `root` dengan perintah berikut:
 
-Untuk pengguna DE Cinnamon atau Pengguna Mint dengan DE apapun (X-Apps \[Text\] Editor):
+**Untuk pengguna DE Cinnamon atau Pengguna Mint dengan DE apapun (X-Apps \[Text\] Editor)**:
 
 ```bash
 $ xed admin:///etc/php/7.3/fpm/php.ini
 ```
 
-Untuk Pengguna DE GNOME (gedit):
+**Untuk Pengguna DE GNOME (gedit)**:
 
 ```bash
 $ gedit admin:///etc/php/7.3/fpm/php.ini
 ```
 
-Untuk Pengguna KDE Plasma 5 (dengan editor teks ‘KWrite’):
+**Untuk Pengguna KDE Plasma 5 (dengan editor teks ‘KWrite’)**:
 
 ```bash
-$ pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite /etc/php/7.3/fpm/php.ini
+$ pkexec env DISPLAY=${DISPLAY} XAUTHORITY=${XAUTHORITY} KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kwrite /etc/php/7.3/fpm/php.ini
 ```
 
-Untuk Pengguna KDE Plasma 5 (dengan editor teks ‘Kate’):
+**Untuk Pengguna KDE Plasma 5 (dengan editor teks ‘Kate’)**:
 
 ```bash
-$ pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate /etc/php/7.3/fpm/php.ini
+$ pkexec env DISPLAY=${DISPLAY} XAUTHORITY=${XAUTHORITY} KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true kate /etc/php/7.3/fpm/php.ini
 ```
 
-Untuk Pengguna DE LXDE (Leafpad)*:
+**Untuk Pengguna DE LXDE (Leafpad)\***:
 
     $ sudo su
     # leafpad /etc/php/7.3/fpm/php.ini
 
-Untuk Pengguna DE XFCE (Mousepad)*:
+**Untuk Pengguna DE XFCE (Mousepad)\***:
 
     $ sudo su
     # mousepad /etc/php/7.3/fpm/php.ini
@@ -577,11 +582,11 @@ Kalo kamu menggunakan editor yang berbasis GUI, kamu bisa menggunakan fitur sepe
 
 Sedangkan, jika kamu menggunakan `nano`, editor teks berbasis CLI, kamu bisa menekan tombol <kbd>CTRL</kbd> + <kbd>\_</kbd> (_Underscore_/Garis Bawah) di `nano`, bukan <kbd>CTRL</kbd> + <kbd>-</kbd> (Strip). Bagaimana cara menekan nya? Mudah saja, sembari Anda sedang menekan <kbd>CTRL</kbd>, Anda harus tahu bagaimana caranya kamu memasukkan tanda garis bawah ke dalam layar dari Keyboard. 
 
-Kalo saya perlu menekan tombol <kbd>Shift</kbd> + <kbd>\_</kbd> untuk menghasilkan Tanda Garis Bawah. Jadi, untuk mencari/melompat ke baris tujuan di `nano`, maka saya harus menekan <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>\_</kbd>, sampai sini paham?
+Kalo saya perlu menekan tombol <kbd>Shift</kbd> + <kbd>-</kbd> untuk menghasilkan Tanda Garis Bawah. Jadi, untuk mencari/melompat ke baris tujuan di `nano`, maka saya harus menekan <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> untuk menghasilkan <kbd>CTRL</kbd> + <kbd>\_</kbd>, sampai sini paham?
 
 Setelah Anda lompat ke baris tujuan, dan benar bahwa kedua opsi tersebut berada di baris itu, maka ubahlah nilai nya yang semula nya `:::text Off` menjadi `:::text On`. Seperti pada Cuplikan Layar berikut:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Activating_PHP_Display_Error.png?fit=502,408&quality=80" loading="lazy" class="centered" alt="Setelah merubah opsi pada php.ini">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Activating_PHP_Display_Error.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Activating_PHP_Display_Error.png?fit=502,408&quality=80" loading="lazy" class="img-center" alt="Setelah merubah opsi pada php.ini">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Activating_PHP_Display_Error.png)
 
 Setelah itu, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan <kbd>CTRL</kbd> + <kbd>S</kbd>. Sedangkan, kalau Anda menggunakan `nano`, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan “Enter”.
 
@@ -593,7 +598,7 @@ $ sudo systemctl restart apache2 "php7.3*"
 
 Sekarang, coba Anda buka berkas (dengan kode yang bebas) yang telah Anda buat tadi, coba apa yang terjadi? Tampilkan galat nya? Yah, pesan galat nya kira-kira tampil seperti pada Cuplikan di bawah ini:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Activating_PHP_Display_Error.png?fit=720,371&quality=80" loading="lazy" class="centered" alt="Error pada PHP yang tampil di Browser">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Activating_PHP_Display_Error.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Activating_PHP_Display_Error.png?fit=720,371&quality=80" loading="lazy" class="img-center" alt="Error pada PHP yang tampil di Browser">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Activating_PHP_Display_Error.png)
 
 Jika Anda telah selesai sepenuhnya berurusan dengan PHP Info, atau berkas `info.php` tidak terpakai lagi, maka untuk keamanan, sebaiknya berkas `info.php` itu di hapus. Untuk menghapus nya, bisa Anda gunakan perintah berikut:
 
@@ -611,23 +616,21 @@ Terakhir, kita meng-install phpMyAdmin untuk mengelola Database SQL kita. Tapi, 
 
 Alasan saya mengapa lebih memilih metode manual daripada menggunakan Repository, yaitu sebagai berikut:
 
-1. Mendukung hampir semua Web Server, selama Web Server tersebut bisa meng-implementasikan PHP, bukan cuma Apache2 dan Lighttpd doang :
+1. Mendukung hampir semua Sistem Operasi, selama bisa meng-install Web Server dan PHP.
 
-2. Mendukung hampir semua Sistem Operasi, selama bisa meng-install Web Server dan PHP.
+2. Konfigurasi lebih mudah, karena struktur/alur konfigurasi nya yang tidak berubah daripada kita meng-installnya dari Repo. Jadi, cara konfigurasi nya akan menyesuaikan dengan [Dokumentasi phpMyAdmin](https://docs.phpmyadmin.net/en/latest/) nya, sehingga hal itu akan mempermudah kamu untuk melakukan konfigurasi pada phpMyAdmin nantinya.
 
-3. Konfigurasi lebih mudah, karena struktur/alur konfigurasi nya yang tidak berubah daripada kita meng-installnya dari Repo. Jadi, cara konfigurasi nya akan menyesuaikan dengan [Dokumentasi phpMyAdmin](https://docs.phpmyadmin.net/en/latest/) nya, sehingga hal itu akan mempermudah kamu untuk melakukan konfigurasi pada phpMyAdmin nantinya.
+3. Langsung menggunakan versi terbaru dari phpMyAdmin nya saat di install nanti. Anda juga bisa meng-upgrade (update versi) atau men-downgrade nya kalo mau :slightly_smiling_face:
 
-4. Langsung menggunakan versi terbaru dari phpMyAdmin nya saat di install nanti. Anda juga bisa meng-upgrade (update versi) atau men-downgrade nya kalo mau :slightly_smiling_face:
-
-5. Sangat Fleksibel, bila di bandingkan dengan meng-install nya dengan Repo.
+4. Sangat Fleksibel, bila di bandingkan dengan meng-install nya dengan Repo.
 
 Lalu, bagaimana cara kita meng-installnya? Mudah saja, kamu tinggal ikuti perintah berikut: (Copas nya satu-per-satu, yah)
 
 ```bash
-$ PHPMYADMIN_VERSION=$(curl -s https://api.github.com/repos/phpmyadmin/phpmyadmin/releases/latest | grep "\"name\"" | head -1 | cut -d \" -f 4); export PHPMYADMIN_VERSION; echo "$PHPMYADMIN_VERSION"
-$ wget "https://files.phpmyadmin.net/phpMyAdmin/$PHPMYADMIN_VERSION/phpMyAdmin-$PHPMYADMIN_VERSION-all-languages.tar.xz"
-$ tar -xvJf "phpMyAdmin-$PHPMYADMIN_VERSION-all-languages.tar.xz" -C /var/www/html/; cd "$_" || return
-$ mv "phpMyAdmin-$PHPMYADMIN_VERSION-all-languages"/ phpmyadmin/; sudo chown $USER:www-data -R phpmyadmin/; cd "$_" || return
+$ PHPMYADMIN_VERSION=$(curl -s https://api.github.com/repos/phpmyadmin/phpmyadmin/releases/latest | grep "\"name\"" | head -1 | cut -d \" -f 4); export PHPMYADMIN_VERSION; echo "${PHPMYADMIN_VERSION}"
+$ wget "https://files.phpmyadmin.net/phpMyAdmin/${PHPMYADMIN_VERSION}/phpMyAdmin-${PHPMYADMIN_VERSION}-all-languages.tar.xz"
+$ tar -xvJf "phpMyAdmin-${PHPMYADMIN_VERSION}-all-languages.tar.xz" -C /var/www/html/; cd "$_" || return
+$ mv "phpMyAdmin-${PHPMYADMIN_VERSION}-all-languages"/ phpmyadmin/; sudo chown ${USER}:www-data -R phpmyadmin/; cd "$_" || return
 $ mv config.sample.inc.php config.inc.php; mkdir tmp; sudo chown www-data:www-data tmp; sudo chmod 700 tmp
 ```
 
@@ -639,7 +642,7 @@ Untuk melakukan nya, buka Web Browser Anda, lalu masukkan URL: `:::text http://l
 
 Jika Anda sudah berhasil membuka nya, maka harusnya tampilan nya menjadi seperti Cuplikan berikut:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_phpMyAdmin.png?fit=719,433&quality=80" loading="lazy" class="centered" alt="Ketika phpMyAdmin berhasil di buka dengan Web Browser">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_phpMyAdmin.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_phpMyAdmin.png?fit=719,433&quality=80" loading="lazy" class="img-center" alt="Ketika phpMyAdmin berhasil di buka dengan Web Browser">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/After_Install_phpMyAdmin.png)
 
 
 #### **2. Menyisipkan nilai dari opsi `blowfish_secret` di dalam berkas Konfigurasi phpMyAdmin**
@@ -676,7 +679,7 @@ Setelah itu, simpan berkasnya terlebih dahulu, dan jangan di tutup (di _close_).
 #### **3. Login phpMyAdmin**
 Lalu, buka phpMyAdmin nya lewat Browser, dan lakukan login dengan menggunakan akun MariaDB Anda, kali ini, saya gunakan akun `:::text root`. 
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Logging_in_phpMyAdmin.png?fit=719,374&quality=80" loading="lazy" class="centered" alt="Login phpMyAdmin dengan menggunakan akun 'root'.">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Logging_in_phpMyAdmin.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Logging_in_phpMyAdmin.png?fit=719,374&quality=80" loading="lazy" class="img-center" alt="Login phpMyAdmin dengan menggunakan akun 'root'.">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Logging_in_phpMyAdmin.png)
 
 Kalau sudah selesai mengisi Username dan Password nya, maka Anda perlu klik pada _Button_ “Go”.
 
@@ -686,7 +689,7 @@ Di halaman utamanya, coba Anda gulirkan (_scroll_) Mouse Anda ke bawah. Harusnya
 
 Sedangkan, jika Anda menemukan nya, maka Pesan Galat nya kurang lebih seperti berikut di bawah ini:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Error_TempDir_phpMyAdmin.png?fit=719,374&quality=80" loading="lazy" class="centered" alt="Error Cache pada phpMyAdmin">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Error_TempDir_phpMyAdmin.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Error_TempDir_phpMyAdmin.png?fit=719,374&quality=80" loading="lazy" class="img-center" alt="Error Cache pada phpMyAdmin">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Error_TempDir_phpMyAdmin.png)
 
 #### **4. (Opsional) Melakukan Konfigurasi pada phpMyAdmin tambahan (terutama untuk mengatasi masalah tersebut)**
 Maka dari itu, kita lakukan lagi konfigurasi nya, pastikan berkas config.inc.php tadi masih/sudah di buka menggunakan editor teks/kode favorit Anda. Setelah itu, cari teks `:::php /* Server parameters */` di dalam Editor, bisa kamu tekan tombol <kbd>CTRL</kbd> + <kbd>F</kbd> untuk mencari teks nya.
@@ -737,17 +740,15 @@ Dan, kamu klik pada tautan (_link_) yang berteks “Find out why”.
 
 Seperti pada cuplikan berikut:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_1.png?fit=719,374&quality=80" loading="lazy" class="centered" alt="Langkah 1: Klik pada Tautan &ldquo;Find out why&ldquo;">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_1.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_1.png?fit=719,374&quality=80" loading="lazy" class="img-center" alt="Langkah 1: Klik pada Tautan &ldquo;Find out why&ldquo;">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_1.png)
 
 Lalu, klik pada tautan “Create”, untuk membuat Database ‘phpmyadmin’ seperti pada Cuplikan Layar berikut:
 
-
-
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_2.png?fit=719,374&quality=80" loading="lazy" class="centered" alt="Langkah 2: Klik pada Tautan &ldquo;Create&ldquo;">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_2.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_2.png?fit=719,374&quality=80" loading="lazy" class="img-center" alt="Langkah 2: Klik pada Tautan &ldquo;Create&ldquo;">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_2.png)
 
 Jika Anda sudah berhasil membuat basis data nya, maka harusnya status nya dalam “OK” semua, seperti Cuplikan Layar berikut:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_3.png?fit=719,374&quality=80" loading="lazy" class="centered" alt="Langkah 3: Pastikan Status nya &ldquo;OK&ldquo; semua">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_3.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_3.png?fit=719,374&quality=80" loading="lazy" class="img-center" alt="Langkah 3: Pastikan Status nya &ldquo;OK&ldquo; semua">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_3.png)
 
 Selain itu, di sebelah kiri nanti, akan ada basis data yang bernama `:::text phpmyadmin` yang barusan di buat tadi. Ketika Anda ke halaman utamanya, dan Anda _scroll_ ke bawah lagi, harusnya sudah tidak muncul Pesan Peringatan ataupun Pesan Galat lagi, karena sudah kita konfigurasikan sebelumnya.
 
@@ -870,7 +871,7 @@ Jika tidak di masukkan dengan benar, maka akan muncul pesan kesalahan/galat sepe
 
 Nah, dengan ini, maka phpMyAdmin sudah siap Anda gunakan sepenuhnya untuk mengelola Basis Data (_Database_) MariaDB Anda.
 
-## VI. Penutup
+## Penutup
 Instalasi LAMP Stack pun akhirnya selesai, dan Anda sudah bisa mengetes/menguji Aplikasi Web Anda, kapanpun yang Anda mau. 
 
 Terima kasih yang telah membaca dokumen ini dan mengikuti tutorial nya. Pada dasarnya, tutorial ini di tujukan bagi yang ingin mempelajari bagaimana cara meng-install LAMP Stack dengan praktik yang lebih baik dan benar serta melakukan konfigurasi pada Perangkat Lunak tertentu.
