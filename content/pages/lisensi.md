@@ -54,7 +54,9 @@ Kode Sumber blog ini di Lisensikan dengan Lisensi GNU AGPLv3, namun bukan berart
 
 - Semua berkas Markdown yang ada di dalam Folder [`content`](https://github.com/FarrelF/FarrelF-Blog/tree/master/content) di Lisensi kan dengan CC BY-SA 4.0.
 
-- Semua berkas di dalam [`content/extras`](https://github.com/FarrelF/FarrelF-Blog/tree/master/content/extras) di lisensi kan dengan GNU AGPLv3, namun ada berkas-berkas tertentu di dalam sana yang telah mengandung penyebutan atau/dan logo dari sebuah Merek Dagang Terdaftar atau/dan Pakaian Dagang yang di miliki oleh Perusahaan. Jadi, sesuai dengan [ketentuan di blog ini]({filename}/pages/ketentuan-hukum-dan-sanggahan.md), jika Anda ingin menurunkan nya, bahkan sampai-sampai ingin merubah/mengedit yang mengenai logo nya, Anda tetap harus menuruti Aturan dari masing-masing pemilik Merek Dagang tersebut, tapi biasanya di perbolehkan jika hanya "sama-persis".
+- Semua berkas di dalam [`content/extras`](https://github.com/FarrelF/FarrelF-Blog/tree/master/content/extras) di lisensi kan dengan GNU AGPLv3.
+
+- Di dalam folder `:::text content` nanti, akan ada berkas-berkas tertentu yang di dalam nya telah mengandung penyebutan atau/dan logo dari sebuah Merek Dagang Terdaftar atau/dan Pakaian Dagang yang di miliki oleh Perusahaan. Jadi, sesuai dengan [ketentuan di blog ini]({filename}/pages/ketentuan-hukum-dan-sanggahan.md), jika Anda ingin menurunkan nya, bahkan sampai-sampai ingin merubah/mengedit yang mengenai logo nya, Anda tetap harus menuruti Aturan dari masing-masing pemilik Merek Dagang tersebut, tapi biasanya di perbolehkan jika hanya "sama-persis"/menggantikan nya atau menghapuskan nya.
 
 ### Untuk Kode Sumber Tema nya
 Terakhir, untuk kode sumber tema yang saya gunakan dan saya modifikasi, itu saya lisensi kan dengan Lisensi MIT. Untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Modified-Flex).

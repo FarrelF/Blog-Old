@@ -75,7 +75,7 @@ Sehingga, ini akan membuat Pengembang Perangkat Lunak Bebas/FLOSS seperti LibreO
 
 Masalah-masalah nya seperti:
 
-- Memerlukan penautan/penghubungan ke teknologi atau fitur yang di kendalikan atau/dan hanya bisa di gunakan secara eksklusif oleh Vendor/Perangkat Lunak tertentu (Seperti: SmartArt, PivotTable, dll).
+- Memerlukan penautan/penghubungan ke teknologi atau fitur yang di kendalikan atau/dan hanya bisa di gunakan secara eksklusif oleh Vendor/Perangkat Lunak tertentu.
 
 - Jumlah Halaman dari Dokumen Spesifikasi nya sendiri nya mencapai [&pm;6000 halaman](https://www.ecma-international.org/publications/standards/Ecma-376.htm), yang bahkan itu melebihi POSIX/SUSv3 yang cuma sampai [&pm;3700 halaman saja](https://en.wikipedia.org/wiki/Single_UNIX_Specification). Dan, itupun untuk versi ECMA nya, belum 'Transitional' dan 'Strict' nya. Sehingga, hal itu akan menyulitkan Pengembang Perangkat Lunak lain nya untuk meng-implementasikan format tersebut.
 
@@ -127,11 +127,13 @@ Lalu, bagaimana caranya? Caranya adalah, ketika Anda sudah selesai membuat Dokum
 
 Terakhir, jangan pernah mengharapkan kalau LibreOffice bisa membuka dokumen dengan format OOXML sebaik Microsoft Office.
 
-> ### Bagaimana jika saya berada di Rental Komputer/Warung Internet yang rata-rata menggunakan Windows suatu saat nanti?
+> ### Bagaimana jika saya berada di Rental Komputer/Warung Internet, atau di komputer lain yang rata-rata menggunakan Windows suatu saat nanti?
 
-LibreOffice mendukung Sistem Operasi Windows, jadi ia bisa di install di Sistem Operasi Windows. Jika tidak mungkin bisa di install (Entah itu karena terkendala izin Administrator sampai tidak ada waktu atau terlalu repot), LibreOffice juga telah menyediakan versi Portabel nya agar LibreOffice bisa di jalankan secara langsung di dalam USB tanpa izin terlebih dahulu ke Administrator. 
+LibreOffice mendukung Sistem Operasi Windows, jadi ia bisa di install di dalam Sistem Operasi Windows. Jika tidak mungkin bisa di install (Entah itu karena terkendala izin Administrator sampai tidak ada waktu atau terlalu repot), LibreOffice juga telah menyediakan versi Portabel nya agar LibreOffice bisa di jalankan secara langsung di dalam USB tanpa izin terlebih dahulu ke Administrator. 
 
 Ini akan sangat membantu Anda yang sedang menggunakan Komputer yang mana Anda tidak dapat menggunakan Izin Administrator atau bagi Anda yang tidak ingin repot-repot atau membuang-buang waktu serta tenaga untuk meng-install LibreOffice di Komputer lain, seperti di Warnet, Rental Komputer, Komputer Lab Sekolah/Kampus, Komputer Kantor, dll nya.
+
+Untuk meng-unduh nya, silahkan Anda kunjungi [Halaman Web Resmi nya](https://www.libreoffice.org/download/portable-versions/), meng-ingat ini sangat penting bagi Anda yang sering menggunakan komputer lain nya.
 
 > ### Bagaimana jika saya membuka berkas OOXML di LibreOffice?
 
@@ -139,13 +141,13 @@ Seperti yang sudah saya bilang sebelumnya, bahwa lebih baik Anda tidak terlalu b
 
 Meskipun artikel ini menyinggung Microsoft Office dan Format OOXML nya, bukan berarti saya melarang Anda untuk menggunakan kedua nya. 
 
-Anda bisa menggunakan Microsoft Office untuk membuka berkas berformat OOXML, atau jika Anda tidak mempunyai Microsoft Office nya (Entah itu sengaja gak di install atau gak bisa di Install karena sebab lain), Anda bisa menggunakan Perangkat Lunak Perkantoran lain nya selain Microsoft Office, seperti WPS Office, Softmaker FreeOffice, dll.
+Anda bisa menggunakan Microsoft Office untuk membuka berkas berformat OOXML, atau jika Anda tidak mempunyai Microsoft Office nya (Entah itu sengaja gak di install atau gak bisa di Install karena sebab lain), Anda bisa menggunakan Perangkat Lunak Perkantoran lain nya selain Microsoft Office yang di tujukan untuk memenuhi standar Microsoft Office, seperti WPS Office, Softmaker FreeOffice, dll.
 
 Atau, jika hal tersebut tidak memungkinkan, maka sebaiknya Anda minta saja kepada pengirimnya untuk mengirimkan ulang berkas sebagai Format PDF jika Anda hanya ingin membacanya saja, atau dengan Format Teks Polos/ODF (Sesuai kebutuhan) jika Anda ingin mengubah nya juga. Jadi, sesuaikan saja dengan kebutuhan.
 
 > ### Bagaimana jika saya mengirimkan berkas kepada orang lain, entah itu teman, dosen, HRD, dll nya suatu saat nanti?
 
-Tergantung, apakah mereka hanya ingin membaca dokumenmu saja atau ingin mengubah nya juga atau cuma sekedar mengulas/meninjau ulang (_review_) dokumen mu saja? Biasanya (apalagi dosen atau HRD), mereka akan butuh dokumen kamu hanya untuk di baca saja, karena pada dasar nya, mereka tidak terlalu perlu untuk mengubah dokumen kamu. (Contoh kasus: Jika kamu mengirimkan CV atau _Resume_ kepada HRD untuk melamar pekerjaan, Tugas Kuliah ke Dosen, dll).
+Tergantung, apakah mereka hanya ingin membaca dokumenmu saja atau ingin mengubah nya juga atau cuma sekedar mengulas/meninjau ulang (_review_) dokumen mu saja? Biasanya (apalagi dosen atau HRD), mereka akan butuh dokumen kamu hanya untuk di baca saja, karena pada dasar nya, mereka tidak terlalu perlu untuk mengubah dokumen kamu. (Contoh kasus: Jika kamu mengirimkan CV atau _Resume_ kepada HRD untuk melamar pekerjaan, Tugas Kuliah ke Dosen berupa dokumen, dll).
 
 Kalau mereka hanya ingin membacanya saja, ekspor berkas tersebut ketika Anda sudah selesai mengetik/membuat dokumen nya dan kirimkan saja hasil nya sebagai Format PDF.
 
@@ -197,31 +199,31 @@ Lalu, bagaimana cara nya agar kita bisa mempelajari nya? Banyak sekali cara memp
 Salah satu cara yang bisa Anda lakukan untuk mempelajari nya adalah dengan berikut ini:
 
 #### Cara 1: Buatlah Dokumen yang sama dengan Dokumen yang di kerjakan dengan Microsoft Office
-Pernahkah Anda membuat dokumen dengan Microsoft Office? Pernahkah Anda membuatnya dengan format yang kompleks, minimal seperti dalam bentuk Proposal, Laporan, Dokumentasi, Jurnal atau bahkan sampai Skripsi misal nya?
+Pernahkah Anda membuat dokumen dengan Microsoft Office? Pernahkah Anda membuatnya dengan format yang kompleks, minimal seperti dalam bentuk Proposal, Laporan, Dokumentasi, Makalah, Jurnal atau bahkan sampai Skripsi misal nya?
 
-Kalau pernah, mungkin saat nya Anda membuat dokumen yang sama dengan dokumen yang Anda buat menggunakan Microsoft Office itu dengan LibreOffice, agar supaya Anda bisa mempelajari nya. Lalu, bagaimana caranya?
+Kalau pernah, mungkin saat nya Anda membuat dokumen yang sama dengan dokumen yang Anda buat menggunakan Microsoft Office sebelumnya itu dengan LibreOffice, agar supaya Anda bisa mempelajari nya. Lalu, bagaimana caranya?
 
-Bukalah dokumen yang pernah Anda buat dengan Microsoft Office itu dengan Microsoft Office, lalu buatlah dokumen baru dengan LibreOffice. Ya, ini artinya Microsoft Office dan LibreOffice akan di buka secara bersamaan, cuma berbeda peran nya.
+Bukalah dokumen yang pernah Anda buat dengan Microsoft Office itu dengan Microsoft Office, lalu buatlah dokumen baru dengan LibreOffice. Ya, ini artinya Microsoft Office dan LibreOffice akan di buka secara bersamaan, cuma beda peran nya.
 
-Setelah Anda membuka LibreOffice nya, buatlah dokumen baru itu sama persis dengan yang ada di Microsoft Office.
+Setelah Anda membuka LibreOffice nya, buatlah dokumen baru itu menjadi sama persis dengan yang ada di Microsoft Office.
 
 Jadi, yang jelas nya adalah, Dokumen yang di buka dengan Microsoft Office itu peran nya cuma di baca/di lihat saja, sedangkan LibreOffice itu membuat dokumen nya yang sama persis dengan Dokumen yang di buat dengan Microsoft Office.
 
-Hal ini akan melatih Anda untuk mempelajari bagaimana cara menggunakan LibreOffice, dan fitur-fitur yang Anda serta menguasai nya, dan ini juga akan melatih kemandirian Anda. Lakukanlah itu sampai kamu terbiasa untuk menggunakan nya, sesering mungkin. 
+Hal ini akan melatih Anda untuk mempelajari bagaimana cara menggunakan LibreOffice, dan fitur-fitur yang ada serta menguasai nya, dan ini juga akan melatih kemandirian Anda. Lakukanlah itu sampai kamu terbiasa untuk menggunakan nya, sesering mungkin. 
 
 Jika Anda sudah selesai membuatnya, jangan lupa, simpanlah dokumen tersebut dengan format ODF, bukan format OOXML.
 
 #### Cara 2: Sering-sering Googling untuk menguasai Fitur-fitur pada LibreOffice
 Ini mungkin berhubungan dengan cara pertama. Meskipun begitu, nyatanya Anda belum menguasai penggunaan LibreOffice saat membuat dokumen nya, yah setidak nya anggap saja begitu. 
 
-Jika Anda merasa bingung, hal yang pertama kali yang harus Anda lakukan adalah sering-seringlah Googling terlebih dahulu untuk menguasai Fitur-fitur LibreOffice beserta cara menggunakan nya. Kalau bisa, gunakan Bahasa Inggris untuk kata kunci nya.
+Jika Anda merasa bingung, hal yang pertama kali yang harus Anda lakukan adalah sering-seringlah Googling terlebih dahulu untuk menguasai Fitur-fitur LibreOffice beserta cara menggunakan nya. Kalau bisa, gunakan Bahasa Inggris untuk kata kunci nya supaya hasilnya lebih lengkap.
 
-Hal ini di lakukan terutama saat Anda ingin bertanya kepada seseorang melalui apapun juga di Internet, termasuk melalui Forum/Grup yang ada di Internet.
+Hal ini harus di lakukan terutama sebelum Anda bertanya kepada seseorang melalui apapun juga di Internet, termasuk melalui Forum/Grup yang ada di Internet.
 
-Maka, sebelum bertanya kepada seseorang di Internet, maka ada baiknya untuk Googling terlebih dahulu untuk penguasaan Fitur nya.
+Maka, sebelum bertanya kepada seseorang di Internet, ada baiknya untuk Googling terlebih dahulu untuk penguasaan Fitur nya.
 
 #### Cara 3: Baca, Pelajari dan Pahami Panduan nya
-Anda bisa mempelajari Panduan yang tersedia jika suatu Anda bingung bagaimana caranya menggunakan sebuah fitur yang ada.
+Anda bisa mempelajari Panduan yang tersedia jika suatu saat Anda bingung bagaimana caranya menggunakan sebuah fitur yang ada.
 
 Cukup Anda tekan tombol <kbd>F1</kbd> untuk membaca panduan nya, nanti setelah Anda menekan nya, maka secara otomatis LibreOffice akan mengeksekusi Peramban Web (_Web Browser_) bawaan di Sistem Operasi yang Anda gunakan.
 
@@ -231,6 +233,22 @@ Anda bisa mencari materi-materi yang ada di situ kalau mau. Tapi, panduan disitu
 
 Namun, Alhamdulillah, bapak Sokibi telah membuat sebuah buku dengan judul "Menulis Buku dengan LibreOffice" yang tentu nya di buat dengan Bahasa Indonesia, yang dapat membantu Anda untuk menguasai fitur-fitur yang ada pada LibreOffice (terutama LibreOffice Writer). Buku Digital tersebut bisa Anda unduh secara gratis dengan mengunjungi salah satu artikel [di blog nya](https://imgos-belajarlinux.blogspot.com/2019/10/unduh-buku-digital-gratis.html)
 
-Hanya saja, sayangnya buku tersebut hanya membahas LibreOffice Writer saja, tidak dengan lain nya. Tapi, setidaknya ini lumayan membantu Anda untuk mempelajari LibreOffice, daripada tidak sama sekali.
+Sayangnya, buku tersebut hanya membahas LibreOffice Writer saja, tidak dengan lain nya. Tapi, setidaknya ini lumayan membantu Anda untuk mempelajari LibreOffice, daripada tidak sama sekali.
 
-#### Cara 4: Bertanya kepada seseorang
+#### Cara 4: Bertanya kepada seseorang/orang lain
+Jika Anda sudah mempelajari cara menggunakan LibreOffice dan fitur-fitur nya dengan cara di atas, namun Anda mengalami kesulitan saat menggunakan nya (Contoh: Masalah yang di alami itu tidak di temukan solusi nya di Internet, dll)
+
+Anda bisa bertanya kepada seseorang atau orang lain, baik itu melalui Forum, Grup atau Komunitas yang berada di dunia maya atau dunia nyata. Di Indonesia, ada salah satu Grup Telegram yang mana itu di tujukan untuk mempelajari LibreOffice, sesuai dengan namanya, yakni "[Belajar LibreOffice Indonesia](https://t.me/BelajarLibreOfficeIndonesia)" (atau di singkat dengan "BLOI")
+
+Sebelum bertanya (apalagi di dunia maya), tolong pahami bahwa tidak semua orang dapat membantu Anda/menjawab pertanyaan Anda, karena waktu yang mereka miliki, situasi dan kondisi dari setiap orang itu sangatlah berbeda daripada Anda. Atau, mungkin saja ada yang tidak mampu untuk menjawab pertanyaan Anda/mengatasi masalah yang Anda alami.
+
+Terlebih lagi, mereka membantu Anda itu secara gratis/tanpa bayaran, yang artinya, mereka lakukan itu secara sukarela.
+
+Jadi, tolonglah untuk berempati pada orang lain dan hargailah situasi dan kondisi mereka dengan bersabar, dan jangan memaksakan orang lain untuk menjawab/mengatasi masalah kamu mentang-mentang komunikasi yang kamu lakukan itu tanpa tatap muka. 
+
+Serta, jangan merasa paling 'berhak' untuk mendapatkan jawaban, kecuali kalau kamu membayarnya.
+
+Untuk lebih lanjut, Anda juga dapat membaca tulisan yang bagus sekali, dan cocok untuk Anda yang ingin bertanya. Tulisan tersebut membahas tentang "[Cara bertanya yang baik](https://www.dropbox.com/s/csnoh0cpp9xz2sl/cara%20bertanya%20yang%20baik.txt)" yang di tulis oleh Bapak [Harry Sufehmi](https://harry.sufehmi.com/).
+
+## III. Font nya yang tidak di kenali saat di buka di komputer lain
+

@@ -11,7 +11,7 @@ aliases:
       name: Saving Python Virtualenv Cache
       key: v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
       paths:
-        - ~/.cache/pypoetry/virtualenvs
+        - ${HOME}/.cache/pypoetry/virtualenvs
   
   restore_python_cache: &restore_python_cache
     restore_cache:
@@ -25,39 +25,70 @@ aliases:
       command: |
           if [ -d "${HOME}/.nvm" ] && [ -d "${HOME}/.yvm" ]
           then
-            echo 'NVM_DIR=${HOME}/.nvm && export NVM_DIR' >> ${BASH_ENV}
-            echo 'source "${NVM_DIR}"/nvm.sh' >> ${BASH_ENV}
-            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR' >> ${BASH_ENV}
-            echo 'source "${YVM_DIR}"/yvm.sh' >> ${BASH_ENV}
-            echo 'NODEJS_VERSION=$(cat ~/project/.nvmrc) && export NODEJS_VERSION' >> ${BASH_ENV}
-            echo 'YARN_VERSION=$(cat ~/project/.yvmrc) && export YARN_VERSION' >> ${BASH_ENV}
-            cd .. && source ${BASH_ENV} && cd ~/project
-            nvm install && nvm alias default ${NODEJS_VERSION}
+           {
+            echo 'NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" && export NVM_DIR'
+            echo '. "${NVM_DIR}"/nvm.sh'
+            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR'
+            echo '. "${YVM_DIR}"/yvm.sh'
+            echo 'NODEJS_VERSION=$(cat "${HOME}/project/.nvmrc") && export NODEJS_VERSION'
+            echo 'YARN_VERSION=$(cat "${HOME}/project/.yvmrc") && export YARN_VERSION'
+           } >> ${BASH_ENV}
+
+           cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
+           nvm install && nvm alias default "${NODEJS_VERSION}"
           else
-            echo 'NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION' >> ${BASH_ENV}
-            echo 'YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION' >> ${BASH_ENV}
-            source ${BASH_ENV}
-            wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/"${NVM_VERSION}"/install.sh | bash
-            echo 'NODEJS_VERSION=$(cat ~/project/.nvmrc) && export NODEJS_VERSION' >> ${BASH_ENV}
-            echo 'YARN_VERSION=$(cat ~/project/.yvmrc) && export YARN_VERSION' >> ${BASH_ENV}
-            echo 'NVM_DIR=${HOME}/.nvm && export NVM_DIR' >> ${BASH_ENV}
-            echo 'source "${NVM_DIR}"/nvm.sh' >> ${BASH_ENV}
-            cd .. && source ${BASH_ENV} && cd ~/project
-            nvm install && nvm alias default ${NODEJS_VERSION}
-            curl -s https://raw.githubusercontent.com/tophat/yvm/"${YVM_VERSION}"/scripts/install.sh | INSTALL_VERSION="${YVM_VERSION}" bash
-            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR' >> ${BASH_ENV}
-            echo 'source "${YVM_DIR}"/yvm.sh' >> ${BASH_ENV}
-            cd .. && source ${BASH_ENV} && cd ~/project
-          fi
-          yvm install && yvm alias default ${YARN_VERSION}
+           if [ -f "${HOME}"/project/.yvm-ver ] && [ -f "${HOME}"/project/.nvm-ver ]
+           then
+            {
+             echo 'NVM_VERSION=$(cat "${HOME}/project/.nvm-ver") && export NVM_VERSION'
+             echo 'YVM_VERSION=$(cat "${HOME}/project/.yvm-ver") && export YVM_VERSION'
+            } >> ${BASH_ENV}
+           elif [ ! -f "${HOME}"/project/.yvm-ver ] && [ -f "${HOME}"/project/.nvm-ver ]
+           then
+            {
+             echo 'NVM_VERSION=$(cat "${HOME}/project/.nvm-ver") && export NVM_VERSION'
+             echo 'YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION'
+            } >> ${BASH_ENV}
+           elif [ -f "${HOME}"/project/.yvm-ver ] && [ ! -f "${HOME}"/project/.nvm-ver ]
+           then
+            {
+             echo 'YVM_VERSION=$(cat "${HOME}/project/.yvm-ver") && export YVM_VERSION'
+             echo 'NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION'
+            } >> ${BASH_ENV}
+           else
+            {
+             echo 'NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION'
+             echo 'YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION'
+            } >> ${BASH_ENV}
+           fi
+           . ${BASH_ENV}
+           wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/"${NVM_VERSION}"/install.sh | bash
+           {
+            echo 'NODEJS_VERSION=$(cat "${HOME}/project/.nvmrc") && export NODEJS_VERSION'
+            echo 'YARN_VERSION=$(cat "${HOME}/project/.yvmrc") && export YARN_VERSION'
+            echo 'NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" && export NVM_DIR'
+            echo '. "${NVM_DIR}"/nvm.sh'
+           } >> ${BASH_ENV}
+
+           cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
+           nvm install && nvm alias default "${NODEJS_VERSION}"
+           curl -s https://raw.githubusercontent.com/tophat/yvm/"${YVM_VERSION}"/scripts/install.sh | INSTALL_VERSION="${YVM_VERSION}" bash
+           {
+            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR'
+            echo '. "${YVM_DIR}"/yvm.sh'
+           } >> ${BASH_ENV}
+
+           cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
+           fi
+           yvm install && yvm alias default "${YARN_VERSION}"
 
   save_node_yarn_cache: &save_node_yarn_cache
     save_cache:
       name: Saving NodeJS and Yarn Installation Cache
       key: v1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
       paths:
-        - ~/.nvm
-        - ~/.yvm
+        - ${HOME}/.nvm
+        - ${HOME}/.yvm
   
   restore_node_yarn_cache: &restore_node_yarn_cache
     restore_cache:
@@ -69,11 +100,13 @@ aliases:
     run:
       name: Installing NodeJS Packages and it's Dependencies with Yarn
       command: |
-          echo 'export PATH=$(yarn bin):$PATH' >> ${BASH_ENV}
-          echo 'NODE_ENV=production && export NODE_ENV' >> ${BASH_ENV}
-          echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH' >> ${BASH_ENV}
-          echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE' >> ${BASH_ENV}
-          source ${BASH_ENV}
+          {
+           echo 'PATH=$(yarn bin):${PATH} && export PATH'
+           echo 'NODE_ENV=production && export NODE_ENV'
+           echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH'
+           echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE'
+          } >> ${BASH_ENV}
+          . ${BASH_ENV}
           yarn install --production=true
   
   install_locales: &install_locales
@@ -87,7 +120,7 @@ aliases:
           DEBIAN_FRONTEND=noninteractive sudo -E dpkg-reconfigure locales
           sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
           echo "TZ='Asia/Jakarta' && export TZ" >> ${BASH_ENV}
-          source ${BASH_ENV}
+          . ${BASH_ENV}
 
   install_python_dependencies: &install_python_dependencies
     run:
@@ -123,7 +156,7 @@ aliases:
       key: v3-1-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}
       paths:
         - ./node_modules
-        - ~/.cache/yarn
+        - ${HOME}/.cache/yarn
 
   restore_node_modules_cache: &restore_node_modules_cache
     restore_cache:
