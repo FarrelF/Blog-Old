@@ -111,7 +111,7 @@ aliases:
   
   install_locales: &install_locales
     run:
-      name: Installing and Regenerating the System Locales, then Changing the Timezone
+      name: Installing, Regenerating the System Locales, and Changing the Timezone
       command: |
           sudo apt install locales locales-all
           sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias

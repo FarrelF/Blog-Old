@@ -1,5 +1,5 @@
 ---
-Title: Cara menggunakan LibreOffice dengan "Benar"
+Title: Masalah klasik Pengguna LibreOffice dan Cara menggunakan LibreOffice dengan "Benar"
 Category: Tutorial, Opini
 Author: Farrel Franqois
 Tags: Cara menggunakan, LibreOffice, Windows, GNU/Linux
@@ -63,7 +63,7 @@ Perlu Anda ketahui, bahwa di dalam Format OOXML itu memiliki 3 versi (atau sub-s
 
 Nah, yang jadi masalah nya adalah, Spesifikasi untuk Sub-Standar 'Transitional' dan 'Strict' itu tertutup dan tidak di publikasikan, serta berdasarkan dari Laman [Wikipedia nya](wikipedia_en>Office_Open_XML), bahwa Microsoft Office hanya mendukung baca/tulis untuk dokumen yang di buat dengan Versi 'Transitional' saja, dan dokumen yang di buat dengan Versi 'Strict' hanya bisa di baca pada Microsoft Office 2010, serta bisa baca/tulis pada Microsoft Office 2013 dan 2016, itupun sebagai ['tambahan'](https://technet.microsoft.com/en-us/library/cc179191%28v=office.15%29.aspx).
 
-Selain itu, dokumen dengan versi ECMA hanya bisa di baca saja di Microsoft Office 2010, entah apa yang terjadi di atas nya. 
+Selain itu, dokumen dengan versi ECMA hanya bisa di baca saja di Microsoft Office 2010, entah apa yang terjadi dengan versi di atas nya. 
 
 Jadi, ini artinya, ketika Anda menyimpan dokumen dari Microsoft Office (terutama dengan ekstensi yang berformat OOXML), maka Anda menyimpan dokumen nya bukan sebagai "Office Open XML" yang selama ini "di iklankan" sebagai "Format Terbuka".
 
@@ -97,11 +97,11 @@ Bahkan, format ini telah di akui oleh Pemerintah kita melalui [Kemenkominfo (Kem
 
 Selain itu, menurut [artikelnya](https://kominfo.go.id/index.php/content/detail/3434/open+source+di+kominfo+/0/program_prioritas), pihak Kemenkominfo telah menggunakan Perangkat-Perangkat Lunak tersebut di dalam lingkungan nya untuk menunjang keperluan mereka, termasuk LibreOffice dan Format ODF nya. (Ngomong-ngomong, Artikel itu di terbitkan sejak tahun 2014 yang lalu. Entah apa yang terjadi sekarang, apakah mereka masih menggunakan nya? Semoga saja masih menggunakan nya)
 
-Jadi, jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini termasuk Standar Terbuka (_Open Standard_) atau bebas? Seperti nya belum tentu juga.
+Jadi, jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini termasuk Standar Terbuka (_Open Standard_) atau bebas? Seperti nya belum tentu juga. 
 
 Apakah itu merupakan suatu hal yang wajar jika tampilan atau bahkan dokumen nya menjadi kacau saat dokumen OOXML di buat atau/dan di buka dengan Perangkat Lunak selain Microsoft Office? Wajar, bahkan normal jika itu terjadi, kecuali jika Anda cuma tahu Microsoft Office atau/dan Ekstensi berformat OOXML nya saja. 
 
-Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak perlu, bahkan sama sekali.
+Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak perlu, bahkan sama sekali. Lagian juga, LibreOffice ini di buat untuk membantu Anda bekerja dengan dokumen di dalam komputer Anda, bukan untuk memenuhi Standar dari Microsoft Office.
 
 Bagaimana kalau dokumen nya tidak menjadi kacau, atau tampilan nya sangat baik, bahkan "sempurna"? Itu artinya, "Anda beruntung!" :slightly_smiling_face:
 
@@ -131,7 +131,7 @@ Terakhir, jangan pernah mengharapkan kalau LibreOffice bisa membuka dokumen deng
 
 LibreOffice mendukung Sistem Operasi Windows, jadi ia bisa di install di dalam Sistem Operasi Windows. Jika tidak mungkin bisa di install (Entah itu karena terkendala izin Administrator sampai tidak ada waktu atau terlalu repot), LibreOffice juga telah menyediakan versi Portabel nya agar LibreOffice bisa di jalankan secara langsung di dalam USB tanpa izin terlebih dahulu ke Administrator. 
 
-Ini akan sangat membantu Anda yang sedang menggunakan Komputer yang mana Anda tidak dapat menggunakan Izin Administrator atau bagi Anda yang tidak ingin repot-repot atau membuang-buang waktu serta tenaga untuk meng-install LibreOffice di Komputer lain, seperti di Warnet, Rental Komputer, Komputer Lab Sekolah/Kampus, Komputer Kantor, dll nya.
+Ini akan sangat membantu Anda yang sedang menggunakan Komputer, yang mana Anda tidak dapat menggunakan Izin Administrator atau bagi Anda yang tidak ingin repot-repot atau membuang-buang waktu serta tenaga untuk meng-install LibreOffice di Komputer lain, seperti di Warnet, Rental Komputer, Komputer Lab Sekolah/Kampus, Komputer Kantor, dll nya.
 
 Untuk meng-unduh nya, silahkan Anda kunjungi [Halaman Web Resmi nya](https://www.libreoffice.org/download/portable-versions/), meng-ingat ini sangat penting bagi Anda yang sering menggunakan komputer lain nya.
 
@@ -192,7 +192,7 @@ Kira-kira, untuk tampilan nya akan seperti di bawah ini jika sudah di aktifkan "
 
 > ### Saya masih kesulitan untuk menggunakan nya, bagaimana caranya agar saya tidak merasa kesulitan?
 
-Solusi nya yah belajarlah untuk menggunakan LibreOffice secara mandiri sampai terbiasa. Karena LibreOffice merupakan Perangkat Lunak Bebas, maka LibreOffice mengajarkan kemandirian dan keberdayaan.
+Solusi nya yah belajarlah untuk menggunakan LibreOffice secara mandiri sampai terbiasa.
 
 Lalu, bagaimana cara nya agar kita bisa mempelajari nya? Banyak sekali cara mempelajari penggunaan LibreOffice, tapi hal yang terpenting dalam belajar adalah pelan-pelan dan tidak usah terlalu terburu-buru, dan usahakan untuk bersikap tenang. 
 
@@ -231,14 +231,18 @@ Panduan tersebut memang berbahasa Inggris, namun Anda bisa menggunakan Bahasa In
 
 Anda bisa mencari materi-materi yang ada di situ kalau mau. Tapi, panduan disitu kurang lengkap untuk menjelaskan nya, panduan tersebut hanyalah sebatas menjelaskan penggunaan fitur-fitur nya saja.
 
-Namun, Alhamdulillah, bapak Sokibi telah membuat sebuah buku dengan judul "Menulis Buku dengan LibreOffice" yang tentu nya di buat dengan Bahasa Indonesia, yang dapat membantu Anda untuk menguasai fitur-fitur yang ada pada LibreOffice (terutama LibreOffice Writer). Buku Digital tersebut bisa Anda unduh secara gratis dengan mengunjungi salah satu artikel [di blog nya](https://imgos-belajarlinux.blogspot.com/2019/10/unduh-buku-digital-gratis.html)
+Namun, Alhamdulillah, bapak Sokibi telah membuat sebuah buku dengan judul "Menulis Buku dengan LibreOffice" yang tentu nya di buat dengan Bahasa Indonesia, yang dapat membantu Anda untuk menguasai fitur-fitur yang ada pada LibreOffice (terutama LibreOffice Writer). Buku Digital tersebut bisa Anda unduh secara gratis dengan mengunjungi salah satu artikel [di blog nya](https://imgos-belajarlinux.blogspot.com/2019/10/unduh-buku-digital-gratis.html).
 
-Sayangnya, buku tersebut hanya membahas LibreOffice Writer saja, tidak dengan lain nya. Tapi, setidaknya ini lumayan membantu Anda untuk mempelajari LibreOffice, daripada tidak sama sekali.
+Sayangnya, buku tersebut hanya membahas LibreOffice Writer saja, tidak membahas lain nya. 
+
+Atau, mungkin Anda dapat mengunduh salah satu Buku Digital dari Komunitas "Belajar LibreOffice Indonesia" yang tersedia dari [Halaman Web Resmi nya](https://belajarlibreofficeid.web.id/buku-digital/) atau [membeli buku fisik nya](https://belajarlibreofficeid.web.id/buku-fisik-cetak/). Tapi, sayangnya juga, kedua buku tersebut hanya membahas tentang penggunaan LibreOffice Writer dan Calc saja, tidak membahas lain nya.
+
+Walaupun begitu, setidaknya ini lumayan membantu Anda untuk mempelajari LibreOffice, daripada tidak sama sekali.
 
 #### Cara 4: Bertanya kepada seseorang/orang lain
 Jika Anda sudah mempelajari cara menggunakan LibreOffice dan fitur-fitur nya dengan cara di atas, namun Anda mengalami kesulitan saat menggunakan nya (Contoh: Masalah yang di alami itu tidak di temukan solusi nya di Internet, dll)
 
-Anda bisa bertanya kepada seseorang atau orang lain, baik itu melalui Forum, Grup atau Komunitas yang berada di dunia maya atau dunia nyata. Di Indonesia, ada salah satu Grup Telegram yang mana itu di tujukan untuk mempelajari LibreOffice, sesuai dengan namanya, yakni "[Belajar LibreOffice Indonesia](https://t.me/BelajarLibreOfficeIndonesia)" (atau di singkat dengan "BLOI")
+Anda bisa bertanya kepada seseorang atau orang lain, baik itu melalui Forum, Grup atau Komunitas yang berada di dunia maya atau dunia nyata. Di Indonesia, ada salah satu komunitas (yang juga mempunyai Grup Telegram), yang mana itu di tujukan untuk mempelajari LibreOffice, sesuai dengan namanya, yakni "[Belajar LibreOffice Indonesia](https://t.me/BelajarLibreOfficeIndonesia)" (atau di singkat dengan "BLOI")
 
 Sebelum bertanya (apalagi di dunia maya), tolong pahami bahwa tidak semua orang dapat membantu Anda/menjawab pertanyaan Anda, karena waktu yang mereka miliki, situasi dan kondisi dari setiap orang itu sangatlah berbeda daripada Anda. Atau, mungkin saja ada yang tidak mampu untuk menjawab pertanyaan Anda/mengatasi masalah yang Anda alami.
 
@@ -250,5 +254,17 @@ Serta, jangan merasa paling 'berhak' untuk mendapatkan jawaban, kecuali kalau ka
 
 Untuk lebih lanjut, Anda juga dapat membaca tulisan yang bagus sekali, dan cocok untuk Anda yang ingin bertanya. Tulisan tersebut membahas tentang "[Cara bertanya yang baik](https://www.dropbox.com/s/csnoh0cpp9xz2sl/cara%20bertanya%20yang%20baik.txt)" yang di tulis oleh Bapak [Harry Sufehmi](https://harry.sufehmi.com/).
 
-## III. Font nya yang tidak di kenali saat di buka di komputer lain
+> ### Apakah masalah seperti ini pantas untuk di keluhkan?
+
+Anda yang membaca artikel ini, terutama dari awal artikel juga pasti hafal bukan jawaban nya? Yap, menurut saya, itu masih tidak perlu di keluhkan.
+
+Tapi, mungkin saja Anda berpikir bahwa mempelajari LibreOffice itu seperti 2 kali kerja, karena Anda telah mempelajari Microsoft Office sebelumnya (yang mungkin) sejak lama, tapi sekarang malah di tambah dengan mempelajari LibreOffice yang akan membuang waktu dan tenaga mu. Apa benar begitu, bukan?
+
+Iya, memang seperti itu, dan itu merupakan suatu hal yang wajar, karena seperti yang saya bilang sebelumnya, bahwa LibreOffice itu di buat untuk membantu kalian membuat dokumen, bukan untuk memenuhi Standar dari Microsoft Office. 
+
+Walaupun itu semua cukup berat bagi Anda, bukan berarti semua nya menjadi tidak mungkin, bukan? Tapi setidak nya, LibreOffice ini termasuk Perangkat Lunak Bebas, yang mana Anda bisa bebas untuk mendistribusikan, memodifikasi, mempelajari dan menggunakan nya untuk keperluan apapun, termasuk komersial sekalipun, tidak seperti Microsoft Office yang bukan Perangkat Lunak Bebas.
+
+Jadi, jika Anda menggunakan LibreOffice, maka Anda juga harus mempelajari nya, mau-tidak mau :slightly_smiling_face:
+
+## Penutup
 

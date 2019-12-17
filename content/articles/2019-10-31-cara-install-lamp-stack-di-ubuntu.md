@@ -66,7 +66,7 @@ $ systemctl status apache2
 
 Jika Apache2 berjalan dengan baik, harus nya ada `:::text Active: active (running)` dan `:::text Loaded: loaded` seperti berikut di bawah ini:
 
-```ba
+```text
 ● apache2.service - The Apache HTTP Server
    Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
   Drop-In: /lib/systemd/system/apache2.service.d
@@ -109,7 +109,7 @@ $ apache2 -v
 
 Dan, outputnya (di saya) sebagai berikut:
 
-```bash
+```text
 Server version: Apache/2.4.29 (Ubuntu)
 Server built:   2019-04-03T13:22:37
 ```
@@ -117,7 +117,7 @@ Server built:   2019-04-03T13:22:37
 #### **3. Mengubah Pemilik “Document Root”**
 Secara default, “Document Root” (atau bisa kamu sebut “Web Root”) dimiliki oleh user `:::text root`.
 
-Jadi, kamu sebagai pengguna biasa tidak akan bisa melakukan aktivitas ‘penulisan’ (seperti membuat, mengubah dan menghapus berkas/folder) di dalam nya, kecuali jika menggunakan `sudo` atau kamu membuka Aplikasi Manipulasi Berkas/Folder (Seperti Pengelola Berkas, Editor Teks, dll) sebagai `:::text root`. 
+Jadi, kamu sebagai pengguna biasa tidak akan bisa melakukan aktivitas ‘penulisan’ (seperti membuat, mengubah dan menghapus berkas/folder) di dalam nya, kecuali jika menggunakan `:::text sudo` atau kamu membuka Aplikasi Manipulasi Berkas/Folder (Seperti Pengelola Berkas, Editor Teks, dll) sebagai `:::text root`. 
 
 Kalo kamu mau bisa melakukan nya, maka kamu harus mengubah kepemilikan nya terlebih dahulu menjadi milik kamu, dengan perintah berikut:
 
@@ -140,7 +140,7 @@ Bagi Anda yang terlanjur menggunakan chmod 777. Untuk keamanan dan kalo perlu, A
 $ sudo chmod 755 /var/www/html
 ```
 
-Perintah di atas di eksekusi hanya untuk satu Folder saja, jika Anda ingin semua Folder dan Sub-folder di dalam nya, Anda bisa eksekusi perintah berikut:
+Perintah di atas di eksekusi hanya untuk satu Folder saja, jika Anda ingin semua Folder dan Sub-folder di dalam nya (bukan berkas-berkas nya), Anda bisa eksekusi perintah berikut:
 
 ```bash
 $ sudo find /var/www/html -type d -exec chmod 755 {} \;
@@ -152,7 +152,7 @@ Kedua perintah di atas (seperti: `:::bash chmod 755`) memang sebaik nya di eksek
 $ sudo chmod -R 644 /var/www/html/*.php
 ```
 
-Perintah di atas merupakan contoh untuk mengubah perizinan untuk semua berkas yang berekstensi .php di dalam nya. Jika Anda ingin mengubah perizinakn untuk ekstensi berkas lain nya, silahkan ganti `:::text *.php` diatas dengan ekstensi lain, seperti `:::text *.jpg` jika Anda ingin mengubah perizinan untuk semua berkas dengan Ekstensi .jpg.
+Perintah di atas merupakan contoh untuk mengubah perizinan untuk semua berkas yang berekstensi .php di dalam nya. Jika Anda ingin mengubah perizinan untuk ekstensi berkas lain nya, silahkan ganti `:::text *.php` diatas dengan ekstensi lain, seperti `:::text *.jpg` jika Anda ingin mengubah perizinan untuk semua berkas dengan Ekstensi .jpg.
 
 Sedangkan, jika Anda ingin mengubah perizinan untuk semua Berkas (bukan Folder) dengan semua Ekstensi nya yang berada di dalam Folder/Lokasi `:::text /var/www/html` menjadi 644, Anda bisa eksekusi perintah berikut:
 
@@ -163,7 +163,7 @@ $ sudo find /var/www/html -type f -exec chmod 644 {} \;
 (Opsional) Jika Aplikasi Web Anda memiliki fitur 'Unggah' (_Upload_), dan ingin Aplikasi Web tersebut bisa menggunakan fitur itu dengan baik. Ubahlah Perizinan pada Folder Lokasi yang akan di jadikan tempat penyimpanan berkas yang telah di unggah melalui Aplikasi Web menjadi 775 untuk Folder atau 664 untuk berkas-berkas nya, dengan perintah berikut:
 
 ```bash
-$ sudo find /path/to/uploaded/file -type d -exec chmod 775 {} \;
+$ sudo find /path/to/uploaded/file -type d -exec chmod 775 {} \; 
 $ sudo find /path/to/uploaded/file -type f -exec chmod 665 {} \;
 ```
 
@@ -264,7 +264,7 @@ Jika sudah di rubah, maka akan menjadi seperti berikut:
 </Directory>
 ```
 
-Kalau kamu sudah selesai, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan <kbd>CTRL</kbd> + <kbd>S</kbd>. Sedangkan, kalau Anda menggunakan `:::text nano`, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan “Enter”.
+Kalau kamu sudah selesai, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan <kbd>CTRL</kbd> + <kbd>S</kbd>. Sedangkan, kalau Anda menggunakan `:::text nano`, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan <kbd>Enter</kbd>.
 
 Setelah di simpan, restart Apache2 nya dengan perintah berikut:
 
@@ -311,7 +311,7 @@ Untuk Pengguna Distribusi Ubuntu 18.04 dan Turunan nya (termasuk Mint 19, dan ti
 ```bash
 $ sudo apt install software-properties-common # Untuk pengguna Mint 19 atau di atasnya sepertinya sudah tidak perlu meng-install ini lagi. Harap baca lagi catatan nya !
 $ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
-$ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://download.nus.edu.sg/mirror/mariadb/repo/10.4/ubuntu bionic main'
+$ sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://mirror.b-cdn.net/pub/mirror/mariadb/repo/10.4/ubuntu bionic main'
 ```
 
 **Catatan:** Cara di atas sudah tidak berlaku untuk pengguna Ubuntu 18.04 dan Semua Turunan nya dengan Arsitektur 32-bit, jadi hanya berlaku untuk 64-bit saja. Mungkin, MariaDB sendiri telah menghapus dukungan nya untuk Arsitektur i386 sejak Ubuntu sendiri sudah tidak lagi menyediakan berkas ISO untuk Arsitektur i386 atau x86 (32-bit).
@@ -321,7 +321,7 @@ Untuk Pengguna Distribusi Ubuntu 16.04 dan Turunan nya (termasuk Mint 18):
 ```bash
 $ sudo apt install software-properties-common
 $ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
-$ sudo add-apt-repository 'deb [arch=amd64,i386,ppc64el] https://download.nus.edu.sg/mirror/mariadb/repo/10.4/ubuntu xenial main'
+$ sudo add-apt-repository 'deb [arch=amd64,i386,ppc64el] https://mirror.b-cdn.net/pub/mirror/mariadb/repo/10.4/ubuntu xenial main'
 ```
 
 #### **2. Memperbarui Repositori setelah menambahkan nya**
@@ -384,13 +384,13 @@ $ sudo systemctl enable mariadb
 #### **2. Konfigurasi MariaDB dan akun `root` nya**
 Sekarang, kita konfigurasi kan MariaDB nya supaya aman.
 
-Ketik perintah `:::bash sudo mysql_secure_installation` untuk melakukan konfigurasi. Lalu, jika di tanya “Enter current password for root” kamu tekan “Enter” saja, setelah itu, masukkan Kata Sandi untuk Akun Root MariaDB yang ingin di buat, seperti cuplikan layar berikut:
+Ketik perintah `:::bash sudo mysql_secure_installation` untuk melakukan konfigurasi. Lalu, jika di tanya “Enter current password for root” kamu tekan <kbd>Enter</kbd> saja, setelah itu, masukkan Kata Sandi untuk Akun Root MariaDB yang ingin di buat, seperti cuplikan layar berikut:
 
 [<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?fit=502,359&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=200 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png?fit=502,359&quality=80 502w" data-sizes="502px" loading="lazy" class="img-center" alt="Konfigurasi MariaDB di dalam Terminal">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png)
 
-**Catatan:** Jika Anda menginstall MariaDB 10.4 atau di atasnya, dan Anda di tanya “Switch to `unix_socket` authentication \[Y/n\]”, Anda tinggal ketik atau jawab saja “n” (tanpa kutip). Lalu, tekan “Enter”. Hal ini agar Anda tidak mengaktifkan `unix_socket` sebagai metode autentikasi pada akun `root` di MariaDB.
+**Catatan:** Jika Anda menginstall MariaDB 10.4 atau di atasnya, dan Anda di tanya “Switch to `unix_socket` authentication \[Y/n\]”, Anda tinggal ketik atau jawab saja “n” (tanpa kutip). Lalu, tekan <kbd>Enter</kbd>. Hal ini agar Anda tidak mengaktifkan `unix_socket` sebagai metode autentikasi pada akun `root` di MariaDB.
 
-Setelah Anda menentukan Kata Sandi baru untuk Akun root pada MariaDB, Anda tinggal tekan Tombol “Enter” saja, sampai selesai dan muncul tulisan “Thanks for using MariaDB!”. Berikut Cuplikan nya:
+Setelah Anda menentukan Kata Sandi baru untuk Akun root pada MariaDB, Anda tinggal tekan Tombol <kbd>Enter</kbd> saja, sampai selesai dan muncul tulisan “Thanks for using MariaDB!”. Berikut Cuplikan nya:
 
 [<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?fit=503,347&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=100&quality=80 100w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=200&quality=80 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?w=500&quality=80 500w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png?fit=503,347&quality=80 503w" data-sizes="503px" loading="lazy" class="img-center" alt="Konfigurasi MariaDB di dalam Terminal">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png)
 
@@ -502,9 +502,9 @@ Salin dan tempelkan (_Copy_ dan _Paste_ kan) barisan kode berikut ini ke dalam b
 <?php phpinfo(); ?>
 ```
 
-Lalu, simpan berkas tersebut, kalau Anda menggunakan nano, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan “Enter”.
+Lalu, simpan berkas tersebut, kalau Anda menggunakan nano, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan <kbd>Enter</kbd>.
 
-Setelah itu, coba buka web browser Anda, lalu masukkan URL nya. Karena berkas yang kita buat tadi lokasi nya di `:::text /var/www/html`, maka artinya masukkan URL `:::text localhost/info.php` atau `:::text 127.0.0.1/info.php` kedalam Peramban (_Browser_) mu, lalu tekan “Enter”. Hasilnya akan menjadi seperti ini:
+Setelah itu, coba buka web browser Anda, lalu masukkan URL nya. Karena berkas yang kita buat tadi lokasi nya di `:::text /var/www/html`, maka artinya masukkan URL `:::text localhost/info.php` atau `:::text 127.0.0.1/info.php` kedalam Peramban (_Browser_) mu, lalu tekan <kbd>Enter</kbd>. Hasilnya akan menjadi seperti ini:
 
 [<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?fit=720,371&quality=80" data-srcset="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=100&quality=80 100w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=200&quality=80 200w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=300&quality=80 300w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=400&quality=80 400w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=500&quality=80 500w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=600&quality=80 600w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?w=700&quality=80 700w, https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png?fit=720,371&quality=80 720w" data-sizes="720px" loading="lazy" class="img-center" alt="Ini yang di hasilkan dari berkas 'info.php' jika di buka lewat Peramban Web.">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png)
 
@@ -588,7 +588,7 @@ Setelah Anda lompat ke baris tujuan, dan benar bahwa kedua opsi tersebut berada 
 
 [<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Activating_PHP_Display_Error.png?fit=502,408&quality=80" loading="lazy" class="img-center" alt="Setelah merubah opsi pada php.ini">](https://cdn.statically.io/gl/FarrelF/blog-images/37fa32c0/cara-install-lamp-stack-di-ubuntu/Activating_PHP_Display_Error.png)
 
-Setelah itu, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan <kbd>CTRL</kbd> + <kbd>S</kbd>. Sedangkan, kalau Anda menggunakan `nano`, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan “Enter”.
+Setelah itu, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan <kbd>CTRL</kbd> + <kbd>S</kbd>. Sedangkan, kalau Anda menggunakan `nano`, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan <kbd>Enter</kbd>.
 
 Setelah Anda menyimpan nya, coba mulai ulang terlebih dahulu Apache2 dan PHP 7.3 nya dengan perintah berikut:
 
@@ -636,9 +636,9 @@ $ mv config.sample.inc.php config.inc.php; mkdir tmp; sudo chown www-data:www-da
 
 ### Setelah Instalasi
 #### **1. Menguji phpMyAdmin**
-Setelah instalasi phpMyAdmin, memang nanti kita akan meng-konfigurasikan phpMyAdmin nya. Tapi, sebelum itu, kita harus memastikan terlebih dahulu kalau phpMyAdmin bisa di buka dengan baik lewat Web Browser terlebih dahulu.
+Setelah instalasi phpMyAdmin, memang nanti kita akan meng-konfigurasikan phpMyAdmin nya. Tapi, sebelum itu, kita harus memastikan terlebih dahulu kalau phpMyAdmin bisa di buka dengan baik lewat Peramban Web (_Web Browser_).
 
-Untuk melakukan nya, buka Web Browser Anda, lalu masukkan URL: `:::text http://localhost/phpmyadmin` pada Web Browser Anda, lalu tekan “Enter”.
+Untuk melakukan nya, buka Web Browser Anda, lalu masukkan URL: `:::text http://localhost/phpmyadmin` pada Web Browser Anda, lalu tekan <kbd>Enter<kbd>.
 
 Jika Anda sudah berhasil membuka nya, maka harusnya tampilan nya menjadi seperti Cuplikan berikut:
 
@@ -652,7 +652,7 @@ Di dalam konfigurasi nya nanti, maka kita akan menyisipkan nilai dari Opsi [`:::
 
 **Catatan :** Alasan kenapa di sebut “Blowfish”, padahal sekarang tidak menggunakan nya, karena phpMyAdmin sendiri pernah dulunya menggunakan “Blowfish” sebagai Algoritma Enkripsi nya.
 
-Jadi, artinya, opsi `:::text blowfish_secret` ini hanya berperan sebagai Kunci (_Key_) nya saja dalam Enkripsi, yang tidak boleh di beritahukan ke siapapun, kecuali kamu sendiri. Sedangkan kalo kamu tidak mengisinya, maka sama saja dengan tidak mengamankan akun MariaDB kamu dengan meng-enkripsi Kuki (_Cookie_) nya.
+Jadi artinya, opsi `:::text blowfish_secret` ini hanya berperan sebagai Kunci (_Key_) nya saja dalam Enkripsi, yang tidak boleh di beritahukan ke siapapun, kecuali kamu sendiri. Sedangkan kalo kamu tidak mengisinya, maka sama saja dengan tidak mengamankan akun MariaDB kamu dengan meng-enkripsi Kuki (_Cookie_) nya.
 
 Bagaimana cara menyisipkan nya? Coba kamu cari barisan kode atau teks `:::php $cfg['blowfish_secret']` dengan menggunakan fitur “Find” atau menekan tombol <kbd>CTRL</kbd> + <kbd>F</kbd>. 
 
@@ -805,7 +805,7 @@ $ sudo systemctl restart apache2
 ##### B. Memberikan Autentikasi HTTP pada phpMyAdmin
 Tadi saya telah membahas tentang cara mengamankan phpMyAdmin dengan memblokir segala akses dari luar. Sekarang, saya membahas mengamankan phpMyAdmin dengan memberikan Autentikasi.
 
-Autentikasi yang saya maksud disini tentu saja Autentikasi HTTP (_HTTP Authentication_), yang mana sebelum di akses oleh Web Browser, ia akan meminta pengakses nya itu memasukkan Nama Pengguna (_Username_) dan Kata Sandi (_Password_). Jika kita salah memasukkan nya beberapa kali, atau kita membatalkan nya, maka secara otomatis akan menimbulkan kesalahan/galat seperti “Authorization Required” atau “Unauthorized”.
+Autentikasi yang saya maksud disini tentu saja Autentikasi HTTP (_HTTP Authentication_), yang mana sebelum di akses oleh Peramban Web, ia akan meminta pengakses nya itu memasukkan Nama Pengguna (_Username_) dan Kata Sandi (_Password_). Jika kita salah memasukkan nya beberapa kali, atau kita membatalkan nya, maka secara otomatis akan menimbulkan kesalahan/galat seperti “Authorization Required” atau “Unauthorized”.
 
 Contohnya? [Googling](google_images>HTTP+Auth) aja sendiri, ah, cape gue.
 
