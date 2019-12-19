@@ -103,8 +103,8 @@ aliases:
           {
            echo 'PATH=$(yarn bin):${PATH} && export PATH'
            echo 'NODE_ENV=production && export NODE_ENV'
-           echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_HASH'
-           echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 $CIRCLE_SHA1) && export GIT_COMMIT_MESSAGE'
+           echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 ${CIRCLE_SHA1}) && export GIT_COMMIT_HASH'
+           echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 ${CIRCLE_SHA1}) && export GIT_COMMIT_MESSAGE'
           } >> ${BASH_ENV}
           . ${BASH_ENV}
           yarn install --production=true
