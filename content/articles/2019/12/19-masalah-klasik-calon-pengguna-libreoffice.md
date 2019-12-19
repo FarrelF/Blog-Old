@@ -288,14 +288,16 @@ Jadi, jika Anda menggunakan LibreOffice, maka Anda juga harus mempelajari nya, m
 ## Penutup
 Jika Anda ingin menggunakan LibreOffice, maka Anda harus bisa menggunakan nya dengan "Benar". Jangan pernah mengharapkan untuk menggunakan Format OOXML di dalam LibreOffice.
 
-Jadi, mau-tidak mau, Anda harus belajar lagi untuk menggunakan LibreOffice. Namun, kalo kamu tidak mau belajar, ya itu terserah kamu, saya tidak bisa memaksa kamu untuk melakukan nya, tidak seperti salah satu anggota di salah satu Grup Facebook yang menjadi "sales" dadakan dengan embel-embel "Share Ilmu".
+Jadi, mau-tidak mau, Anda harus belajar lagi untuk menggunakan LibreOffice. Namun, keputusan mengenai kamu mau belajar atau tidak nya itu semua kembali pada diri Anda, saya tidak bisa memaksa kamu untuk melakukan nya, tidak seperti salah satu anggota di salah satu Grup Facebook yang menjadi "sales" dadakan dengan embel-embel "Share Ilmu".
 
-Tapi setidak nya, LibreOffice dan Format Asli nya, yakni ODF (OpenDocument Format) itu merupakan Perangkat Lunak dan Format Bebas, tidak seperti Microsoft Office dan OOXML nya.
+Tapi setidak nya, LibreOffice dan Format Asli nya, yakni ODF (OpenDocument Format) itu merupakan Perangkat Lunak dan Format Bebas, tidak seperti Microsoft Office dan Format OOXML nya.
 
 Saya membuat artikel seperti ini karena saya sendiri melihat kalau kebanyakan anggota Komunitas/Grup, terutama di Grup Pengguna GNU/Linux, menganggap LibreOffice itu bermasalah, sehingga tidak di sarankan oleh mereka. Tapi kenyataan nya, kebanyakan dari mereka yang menganggap seperti itu karena Masalah Kompatibilitas terhadap Format OOXML itu sendiri yang seharusnya tidak perlu di permasalahkan.
 
-Sehingga, orang lain (terutama "Pemula") menjadi seperti tidak ada harapan untuk mengurusi dokumen digital, apalagi di dalam Sistem Operasi yang berbeda, seperti GNU/Linux.
+Jadi, mereka itu berpikir bahwa Format OOXML adalah satu-satu nya format berbasis XML yang mempresentasikan berbagai dokumen perkantoran di dunia ini (seperti Dokumen Lembar Kerja, Pengolah Kata, Presentasi, dan lain nya), tidak ada format yang lain selain dia.
 
-Saya kira, pembahasan nya sudah cukup sampai disini saja. Mohon maaf jika adanya kesalahan pada artikel ini, jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain nya, silahkan kamu berkomentar melalui kolom komentar yang tersedia atau bisa kamu [Hubungi Saya]({filename}/pages/hubungi-saya.md) jika kamu memilih lewat "Jalur Pribadi".
+Sehingga, orang lain (terutama "Pemula") menjadi seperti tidak ada harapan untuk mengurusi dokumen tersebut (seperti membuat/mengubah/memodifikasi nya), apalagi di dalam Sistem Operasi yang berbeda, seperti GNU/Linux misalnya.
+
+Saya kira, pembahasan nya sudah cukup sampai disini saja. Mohon maaf jika adanya kesalahan pada artikel ini, atau jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain nya, silahkan kamu berkomentar atau kamu bisa berdiskusi dengan saya melalui kolom komentar yang tersedia atau bisa kamu [Hubungi Saya]({filename}/pages/hubungi-saya.md) jika kamu lebih suka lewat "Jalur Pribadi".
 
 Terima kasih atas perhatian nya :blush:
