@@ -16,9 +16,7 @@
 /pelican.pid
 /srv.pid
 /output/
-/output-publish/
 __pycache__/
-draf/
 __cache__/
 .vscode/
 /pelican-env/

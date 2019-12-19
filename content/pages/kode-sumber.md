@@ -1,7 +1,9 @@
+---
 Title: Kode Sumber
 Slug: kode-sumber
 Status: published
 Authors: Farrel Franqois
+---
 
 Karena saya memberikan kebebasan pada blog ini kepada Anda. Sehingga, bukan hanya Kode Sumber saja yang bisa Anda dapatkan, Anda juga bebas menggunakan, mempelajari, memodifikasi, menyalin dan mendistribusikan ulang kepada Keluarga, Tetangga, Teman atau Rekan kamu untuk keperluan apapun termasuk keperluan komersial sekalipun sesuai dengan [filosofi Perangkat Lunak Bebas](https://www.gnu.org/philosophy/free-sw.html.en) (Meskipun sebenarnya blog ini bukan merupakan "Perangkat Lunak", tapi setidak nya filosofi tersebut masih bisa berlaku untuk blog ini).
 

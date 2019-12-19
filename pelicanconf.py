@@ -19,7 +19,7 @@ IGNORE_FILES = ['.#*'] # Mengabaikan Berkas
 
 DEFAULT_METADATA = {
     'status': 'draft',
-    'author': 'Farrel Franqois'
+    'author': AUTHOR
 }
 
 # Pengaturan Font
@@ -97,7 +97,7 @@ CHECK_MODIFIED_METHOD = 'sha256'
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories', 'summary', 'pelican_htmlmin']
+PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories', 'summary', 'pelican_htmlmin', 'interlinks']
 EXTENDED_SITEMAP_PLUGIN = {
     'priorities': {
         'index': 1.0,
@@ -119,6 +119,20 @@ HTMLMIN_OPTIONS = {
     'remove_optional_attribute_quotes': True,
     'keep_pre': True,
     'reduce_boolean_attributes': True
+}
+
+INTERLINKS = {
+    'wikipedia_en': 'https://en.wikipedia.org/wiki/',
+    'wikipedia_id': 'https://id.wikipedia.org/wiki/',
+    'ddg': 'https://duckduckgo.com/search?q=',
+    'google': 'https://www.google.com/search?q=',
+    'google_images': 'https://www.google.com/search?tbm=isch&q=',
+    'google_id': 'https://www.google.co.id/search?q=',
+    'google_images_id': 'https://www.google.co.id/search?tbm=isch&q=',
+    'stackoverflow_answer': 'https://stackoverflow.com/a/',
+    'stackoverflow_question': 'https://stackoverflow.com/questions/',
+    'askubuntu_answer': 'https://askubuntu.com/a/',
+    'askubuntu_question': 'https://askubuntu.com/questions/'
 }
 
 # Pengaturan Google CSE (Custom Search Engine)

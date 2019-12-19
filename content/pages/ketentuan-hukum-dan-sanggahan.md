@@ -1,7 +1,9 @@
+---
 Title: Ketentuan Hukum dan Sanggahan
 Slug: ketentuan-hukum-dan-sanggahan
 Status: published
 Authors: Farrel Franqois
+---
 
 ## Daftar Isi
 [TOC]
@@ -17,9 +19,11 @@ Jadi, saya tidak bisa memberikan jaminan, baik itu secara tersurat atau tersirat
 
 Blog ini dan konten nya saya rilis di bawah lisensi berikut:
 
-- Semua konten teks, Gambar, Illustrasi atau/dan Grafis yang telah saya buat, dan terjemahan nya (jika ada), menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/LICENSE). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda melakukan beberapa kewajiban sebelum melakukan nya. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/pages/lisensi.md)
+- Semua konten teks, Gambar, Illustrasi atau/dan Grafis yang telah saya buat, menggunakan Lisensi: [Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), sedangkan Kode Sumber nya di Lisensi kan dengan [GNU Affero General Public License v3 (GNU AGPLv3)](https://github.com/FarrelF/FarrelF-Blog/blob/master/LICENSE). Ini artinya saya memegang hak cipta, tapi memberikan beberapa hak kepada Anda, seperti mempelajari, memodifikasi, menyalinkan, mendistribusikan kembali untuk keperluan apapun, termasuk keperluan Komersial sekalipun, selama Anda melakukan beberapa kewajiban sebelum melakukan nya. Untuk lebih lanjut, silahkan kunjungi laman [Lisensi]({filename}/pages/lisensi.md)
   
 - Kode Sumber untuk Tema yang saya gunakan, di Lisensikan dengan [Lisensi MIT](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) dan ada beberapa aset statik lain nya yang di lisensikan di bawah lisensi yang berbeda.
+
+- Blog ini menggunakan [Twemoji (Twitter Emoji)](https://twemoji.twitter.com/) yang merupakan salah satu Emoji yang di buat oleh Twitter sebagai Emoji Bawaan nya, begitupun juga dengan tuas Mode Gelap di atas yang menggunakan salah satu Gambar Emoji dari Twemoji. Di Lisensi kan dengan [Creative Commons Attribution 4.0 Internasional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) untuk Grafik Emoji nya dan [Lisensi MIT](https://github.com/twitter/twemoji/blob/master/LICENSE) untuk [Kode Sumber nya](https://github.com/twitter/twemoji).
 
 - Mungkin, untuk Gambar, Illustrasi, Grafis atau/dan referensi lain nya yang telah saya dapatkan dari Situs Web/Blog lain akan menggunakan Lisensi yang berbeda. Oleh karena itu, sebagai kredit (jika di izinkan), saya akan berikan atribusi berupa pencantuman Judul/Nama dari Gambar/Illustrasi/Grafis, Pembuat nya, Sumber Gambar dan juga Lisensi yang di gunakan nya di akhir artikel/laman.
 
@@ -42,7 +46,7 @@ Jadi, segala resiko yang telah Anda timbulkan setelah mengakses, menjelajah, dan
 
 
 ### Kerahasiaan informasi yang dikirim oleh Anda
-Tentu saja, saya tidak ingin menerima Informasi Rahasia dari Anda melalui Blog ini. Setiap Informasi atau Materi yang di kirim ke Blog ini akan dianggap tidak bersifat Rahasia atau bukan suatu Informasi yang di rahasia-kan dan itu bisa di publikasikan oleh saya dan juga pengunjung lain nya.
+Tentu saja, saya tidak ingin menerima Informasi Rahasia dari Anda melalui Blog ini. Setiap Informasi atau Materi yang di kirim ke Blog ini akan dianggap tidak bersifat Rahasia atau bukan suatu Informasi yang di rahasia-kan dan itu bisa di publikasikan oleh saya dan juga pengunjung lain nya, bahkan oleh pihak ketiga lain nya.
 
 Ini Artinya, Anda mengakui bahwa Anda yang bertanggung jawab penuh atas semua konten atau/dan informasi yang telah Anda kirimkan kepada saya.
 
