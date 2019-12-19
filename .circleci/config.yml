@@ -9,15 +9,15 @@ aliases:
   save_python_cache: &save_python_cache
     save_cache: 
       name: Saving Python Virtualenv Cache
-      key: v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+      key: v2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
       paths:
-        - ${HOME}/.cache/pypoetry/virtualenvs
+        - ~/.cache/pypoetry/virtualenvs
   
   restore_python_cache: &restore_python_cache
     restore_cache:
       name: Restoring Python Virtualenv/Venv Cache
       keys: 
-        - v2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+        - v2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
   
   install_node_and_yarn: &install_node_and_yarn
     run:
@@ -85,16 +85,16 @@ aliases:
   save_node_yarn_cache: &save_node_yarn_cache
     save_cache:
       name: Saving NodeJS and Yarn Installation Cache
-      key: v1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
+      key: v1-1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
       paths:
-        - ${HOME}/.nvm
-        - ${HOME}/.yvm
+        - ~/.nvm
+        - ~/.yvm
   
   restore_node_yarn_cache: &restore_node_yarn_cache
     restore_cache:
       name: Restoring NodeJS and Yarn Installation Cache
       keys: 
-        - v1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
+        - v1-1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
 
   install_node_modules: &install_node_modules
     run:
@@ -153,17 +153,17 @@ aliases:
   save_node_modules_cache: &save_node_modules_cache
     save_cache:
       name: Saving Node Modules Cache
-      key: v3-1-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}
+      key: v3-2-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}
       paths:
         - ./node_modules
-        - ${HOME}/.cache/yarn
+        - ~/.cache/yarn
 
   restore_node_modules_cache: &restore_node_modules_cache
     restore_cache:
       name: Restoring Node Modules Cache
       keys:
-        - v3-1-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}
-        - v3-1-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-
+        - v3-2-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}
+        - v3-2-node-cache-key-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-
 
 jobs:
   test:
