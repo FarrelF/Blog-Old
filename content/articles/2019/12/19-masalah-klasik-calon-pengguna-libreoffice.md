@@ -2,11 +2,11 @@
 Title: Masalah Klasik (Calon) Pengguna LibreOffice dan Cara mengatasi nya
 Category: Tutorial, Opini
 Author: Farrel Franqois
-Tags: Cara menggunakan, LibreOffice, Windows, GNU/Linux
+Tags: Cara mengatasi, Kompatibilitas, LibreOffice, Windows, GNU/Linux
 Slug: masalah-klasik-pengguna-libreoffice
 Cover: https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/LibreOffice-External-Logo.png?fit=437,130&quality=80
 Status: published
-description: Apakah Anda merasa kesulitan saat menggunakan LibreOffice? Terutama untuk masalah kompatibilitas yang seringkali Anda jumpai? Mau tau cara menggunakan LibreOffice dengan "Benar"? Silahkan baca Artikel ini.
+description: Apakah Anda merasa kesulitan saat menggunakan LibreOffice? Terutama untuk masalah kompatibilitas yang seringkali Anda jumpai? Mau tau cara mengatasi nya? Silahkan baca Artikel ini.
 Summary: Banyak sekali pengguna LibreOffice yang merasa kesulitan dalam menggunakan nya, seperti dokumen nya yang berantakan saat di buka dengan Microsoft Office, masalah kompatibilitas dan masalah lain nya. Artikel ini akan membahas hal-hal dasar yang harus di lakukan ketika Anda menggunakan LibreOffice dengan "Benar", dan saya bahas pada bagian yang paling "dasar" nya saja, yang mana ini tidak banyak di ketahui oleh banyak orang. Penasaran? Silahkan baca artikel ini, kalau tidak, yah tidak apa-apa :slightly_smiling_face:
 ---
 
