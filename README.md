@@ -16,12 +16,12 @@ Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yak
 ### Persyaratan Wajib
 - Git: https://git-scm.com/downloads (Untuk mengetahui Cara Install nya, silahkan baca artikel [ini](https://farrel.franqois.id/cara-install-git))
 - Python 3.7 atau di atasnya: https://www.python.org/downloads/ (Jelas, wajib!)
-- Poetry: https://poetry.eustace.io/docs/
+- Poetry: https://python-poetry.org/docs/
 
 ### Persyaratan Opsional
 - NodeJS: https://nodejs.org/en/download/ (Opsional, tapi disarankan)
 - Yarn Package Manager: https://yarnpkg.com/lang/en/docs/install/ (Opsional, tapi disarankan setelah sudah ter-install NodeJS)
-- GNU Make: https://www.gnu.org/software/make/ (Opsional, tapi di sarankan, meski ada alternatif nya, yakni 'Invoke' yang merupakan salah satu modul Python)
+- GNU Make: https://www.gnu.org/software/make/ (Opsional, tapi di sarankan, meski ada alternatif nya, yakni 'Invoke' yang merupakan salah satu modul Python bisa langsung terinstall secara bawaan oleh Poetry)
 
 Di dalam Sistem Operasi Anda.
 
@@ -37,7 +37,7 @@ $ git clone https://github.com/FarrelF/FarrelF-Blog.git
 Setelah Anda meng-kloning nya, terutama dengan perintah di atas, kode sumber akan secara otomatis tersimpan di dalam Folder yang bernama `FarrelF-Blog`.
 
 ## Cara Install
-Cara installnya mudah, Anda tinggal navigasikan ke dalam Folder Kode Sumber dengan perintah `cd`, lalu ikuti langkah-langkah berikut dengan Bash Shell:
+Cara installnya mudah, Anda tinggal navigasikan ke dalam Folder Kode Sumber dengan perintah `cd`, lalu ikuti langkah-langkah berikut dengan Terminal:
 
 **Catatan**: Di dalam Sistem Operasi GNU/Linux, macOS dan Sistem Operasi berbasis Unix/Unix-like lain nya, kamu bisa gunakan Terminal Bawaan, sedangkan di Windows kamu bisa gunakan "Git Bash".
 
@@ -55,7 +55,7 @@ $ make devtheme # Untuk membangun Tema nya, atau 'make static-files' kalo mau la
 $ yarn install # Opsional
 ```
 
-Sebagai tambahan, jika Anda berniat ingin menggunakan Kode Sumber ini untuk tujuan Produksi, Anda bisa meng-install semua paket/pustaka beserta ketergantungan nya dengan menambahkan parameter `--no-dev`, contohnya seperti perintah berikut:
+Sebagai tambahan, jika Anda berniat ingin menggunakan Kode Sumber ini untuk tujuan Produksi, Anda bisa meng-install semua modul Python beserta ketergantungan nya dengan menambahkan parameter `--no-dev`, contohnya seperti perintah berikut:
 
 ```bash
 $ poetry install --no-dev
@@ -71,7 +71,7 @@ Walaupun sebenarnya Anda bisa meng-install nya secara langsung menggunakan berka
 Perbedaan nya dengan Cara Install di atas adalah:
 - Sudah jelas dari Nama Berkas nya, kalau berkas ini memang di tujukan untuk Netlify, bukan untuk lain nya.
 
-- Poetry tidak akan meng-install semua paket/pustaka yang ada, melainkan hanya meng-install paket/pustaka untuk keperluan produksi saja. Jadi, Anda tidak akan bisa menikmati semua paket/pustaka untuk keperluan pengembangan, karena tidak ter-install, contoh nya: PyLint. Kecuali, jika Anda bisa meng-install nya.
+- Poetry tidak akan meng-install semua modul yang ada, melainkan hanya meng-install modul untuk keperluan produksi saja. Jadi, Anda tidak akan bisa menikmati semua modul untuk keperluan pengembangan, karena tidak ter-install, contoh nya: PyLint. Kecuali, jika Anda bisa meng-install nya.
 
 - Akan menggunakan `poetry run make publish` untuk membangun Blog ini, yang mana seharus itu di gunakan untuk Produksi.
 

@@ -874,12 +874,12 @@ Nah, dengan ini, maka phpMyAdmin sudah siap Anda gunakan sepenuhnya untuk mengel
 ## Penutup
 Instalasi LAMP Stack pun akhirnya selesai, dan Anda sudah bisa mengetes/menguji Aplikasi Web Anda, kapanpun yang Anda mau. 
 
-Terima kasih yang telah membaca dokumen ini dan mengikuti tutorial nya. Pada dasarnya, tutorial ini di tujukan bagi yang ingin mempelajari bagaimana cara meng-install LAMP Stack dengan praktik yang lebih baik dan benar serta melakukan konfigurasi pada Perangkat Lunak tertentu.
+Terima kasih yang telah membaca artikel ini dan mengikuti tutorial nya. Pada dasarnya, tutorial ini di tujukan bagi yang ingin mempelajari bagaimana cara meng-install LAMP Stack dengan praktik yang lebih baik dan benar serta melakukan konfigurasi pada Perangkat Lunak tertentu.
 
-Meski begitu, bukan berarti dokumen ini tidak ada kesalahan dan kekeliruan sama sekali, seperti yang saya bilang di bagian “Sanggahan”.
+Meski begitu, bukan berarti artikel ini tidak ada kesalahan dan kekeliruan sama sekali, seperti yang saya bilang di bagian “Sanggahan”.
 
-Mohon maaf, jika dokumen ini memiliki kekeliruan dan kesalahan, baik dari ada yang salah ngetik, terlalu panjang, bertele-tele, dll. Dan, saya juga tidak bermaksud untuk menyinggung siapapun disini, saya cuma mau membagikan tutorial ini saja. Serta, saya harap juga pembaca sekalian dapat memahami dan mempelajari Tutorial yang saya sampaikan disini.
+Mohon maaf, jika artikel ini memiliki kekeliruan dan kesalahan, baik dari ada yang salah ngetik, terlalu panjang, bertele-tele, dll. Dan, saya juga tidak bermaksud untuk menyinggung siapapun disini, saya cuma mau membagikan tutorial ini saja. Serta, saya harap juga pembaca sekalian dapat memahami dan mempelajari Tutorial yang saya sampaikan disini.
 
-Jika adanya kesalahan dan kekeliruan, atau kalo Anda memiliki pertanyaan lain nya, bisa Anda berikan masukkan melalui kolom komentar yang tersedia. Masukkan dari Anda akan sangat berarti bagi saya dan dokumen ini untuk kedepan nya nanti.
+Jika adanya kesalahan dan kekeliruan, atau kalo Anda memiliki pertanyaan lain nya, bisa Anda berikan masukkan melalui kolom komentar yang tersedia. Masukkan dari Anda akan sangat berarti bagi saya dan artikel ini untuk kedepan nya nanti.
 
 Terima kasih :blush:

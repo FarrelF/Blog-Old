@@ -1,10 +1,11 @@
 ---
-Title: Masalah klasik Pengguna LibreOffice dan Cara menggunakan LibreOffice dengan "Benar"
+Title: Masalah Klasik Pengguna LibreOffice dan Cara mengatasi nya
 Category: Tutorial, Opini
 Author: Farrel Franqois
 Tags: Cara menggunakan, LibreOffice, Windows, GNU/Linux
-Slug: cara-menggunakan-libreoffice
-Cover: https://cdn.statically.io/gl/FarrelF/blog-images/35ac221f/cara-menggunakan-libreoffice/LibreOffice-External-Logo.png?fit=437,130&quality=80
+Slug: masalah-klasik-pengguna-libreoffice
+Cover: https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/LibreOffice-External-Logo.png?fit=437,130&quality=80
+Status: published
 description: Apakah Anda merasa kesulitan saat menggunakan LibreOffice? Terutama untuk masalah kompatibilitas yang seringkali Anda jumpai? Mau tau cara menggunakan LibreOffice dengan "Benar"? Silahkan baca Artikel ini.
 Summary: Banyak sekali pengguna LibreOffice yang merasa kesulitan dalam menggunakan nya, seperti dokumen nya yang berantakan saat di buka dengan Microsoft Office, masalah kompatibilitas dan masalah lain nya. Artikel ini akan membahas hal-hal dasar yang harus di lakukan ketika Anda menggunakan LibreOffice dengan "Benar", dan saya bahas pada bagian yang paling "dasar" nya saja, yang mana ini tidak banyak di ketahui oleh banyak orang. Penasaran? Silahkan baca artikel ini, kalau tidak, yah tidak apa-apa :slightly_smiling_face:
 ---
@@ -12,6 +13,11 @@ Summary: Banyak sekali pengguna LibreOffice yang merasa kesulitan dalam mengguna
 <style>
 main article blockquote, main article h3 {
     font-size: 1.17em;
+}
+
+main article details.info {
+    border: 1px solid;
+    padding: 1em;
 }
 </style>
 
@@ -26,9 +32,7 @@ Perangkat Lunak ini cukup populer, terutama di kalangan pengguna GNU/Linux. Sala
 Namun sayangnya, banyak sekali dari mereka yang mengeluhkan yang seharusnya tidak perlu di keluhkan, apa saja masalah nya? Mungkin, bisa Anda lanjut simak artikel ini.
 
 ## Sanggahan
-Tapi sebelum itu, ada yang ingin saya sampaikan, bahwa Artikel ini akan membahas hal-hal yang sangatlah mendasar untuk menggunakan LibreOffice. 
-
-Jadi, artikel ini tidak akan membahas penggunaan LibreOffice lebih lanjut. Dan, maksud "Benar" disini berarti benar secara penggunaan, bukan pada keseluruhan isi artikel ini. 
+Tapi sebelum itu, ada yang ingin saya sampaikan, bahwa Artikel ini akan membahas hal-hal yang sangatlah mendasar untuk menggunakan LibreOffice. Jadi, artikel ini tidak akan membahas penggunaan LibreOffice lebih lanjut.
 
 Perlu saya ingatkan juga, bahwa kemungkinan Artikel ini akan menyinggung salah satu Produk dari Microsoft dan format nya, saya tidak bermaksud dan tidak ada perasaan untuk membenci terhadap Microsoft dan segala produk-produk nya, serta saya juga bukanlah seorang yang meng-Anti kan nya. 
 
@@ -53,21 +57,21 @@ Jadi, masalah seperti ini sebenarnya tidak perlu di keluhkan, bahkan sama sekali
 
 > ### Kenapa mereka memfokuskan format ODF sebagai format bawaan nya? Dan, kenapa mereka tidak memfokuskan format OOXML saja? Bukan nya OOXML ini termasuk "Open Format"?
 
-Karena Format OOXML itu bersifat [tidak konsisten](https://joinup.ec.europa.eu/collection/open-source-observatory-osor/document/complex-singularity-versus-openness), hal ini terjadi karena spesifikasi dari OOXML itu sendiri dan juga Implementasi nya di Microsoft Office [itu berbeda](https://brattahlid.wordpress.com/2012/05/08/is-docx-really-an-open-standard/). 
+Karena Format OOXML itu bersifat [tidak konsisten](https://joinup.ec.europa.eu/collection/open-source-observatory-osor/document/complex-singularity-versus-openness), hal ini terjadi karena spesifikasi dari OOXML itu sendiri dan juga Implementasi nya di Microsoft Office itu seringkali [berbeda](https://brattahlid.wordpress.com/2012/05/08/is-docx-really-an-open-standard/). 
 
-Perlu Anda ketahui, bahwa di dalam Format OOXML itu memiliki 3 versi (atau sub-standar), diantara nya adalah: 
+Perlu Anda ketahui, bahwa di dalam Format OOXML itu di pecah menjadi 3 versi (atau sub-standar), diantara nya adalah: 
 
 - ECMA-376 (atau di sebut versi/sub-standar "ECMA")
 - ISO/IEC 29500 Transitional (atau di sebut versi/sub-standar "Transitional")
 - ISO/IEC 29500 Strict (atau di sebut versi/sub-standar "Strict")
 
-Nah, yang jadi masalah nya adalah, Spesifikasi untuk Sub-Standar 'Transitional' dan 'Strict' itu tertutup dan tidak di publikasikan, serta berdasarkan dari Laman [Wikipedia nya](wikipedia_en>Office_Open_XML), bahwa Microsoft Office hanya mendukung baca/tulis untuk dokumen yang di buat dengan Versi 'Transitional' saja, dan dokumen yang di buat dengan Versi 'Strict' hanya bisa di baca pada Microsoft Office 2010, serta bisa baca/tulis pada Microsoft Office 2013 dan 2016, itupun sebagai ['tambahan'](https://technet.microsoft.com/en-us/library/cc179191%28v=office.15%29.aspx).
+Berdasarkan dari Laman [Wikipedia nya](wikipedia_en>Office_Open_XML), bahwa Microsoft Office hanya mendukung baca/tulis untuk dokumen yang di buat dengan Versi 'Transitional' saja, dan dokumen yang di buat dengan Versi 'Strict' hanya bisa di baca pada Microsoft Office 2010, serta bisa baca/tulis pada Microsoft Office 2013 dan di atasnya, itupun bukan sebagai ['bawaan'](https://technet.microsoft.com/en-us/library/cc179191%28v=office.15%29.aspx).
 
 Selain itu, dokumen dengan versi ECMA hanya bisa di baca saja di Microsoft Office 2010, entah apa yang terjadi dengan versi di atas nya. 
 
-Jadi, ini artinya, ketika Anda menyimpan dokumen dari Microsoft Office (terutama dengan ekstensi yang berformat OOXML), maka Anda menyimpan dokumen nya bukan sebagai "Office Open XML" yang selama ini "di iklankan" sebagai "Format Terbuka".
+Namun, yang menjadi masalahnya adalah, sejak Microsoft Office itu adalah Perangkat Lunak Berpemilik (Proprietary Software), apakah format di dalam Microsoft Office itu 'sepenuhnya' mematuhi/mengikuti 3 versi dari standar di atas?
 
-Sedangkan, kebanyakan Perangkat Lunak Perkantoran lain nya hanya mampu meng-implementasi Versi ECMA dari Format OOXML nya saja (itupun belum tentu sepenuhnya), yang artinya, jika Anda menyimpan nya sebagai ekstensi dengan format OOXML di Perangkat Lunak Perkantoran selain Microsoft Office, maka yang Anda simpan itu adalah versi ECMA dari OOXML nya.
+Jadi, mungkin saja ketika Anda menyimpan dokumen dari Microsoft Office (terutama dengan ekstensi yang berformat OOXML), maka Anda menyimpan dokumen nya bukan sebagai "Office Open XML" yang selama ini "di iklankan" sebagai "Format Terbuka".
 
 Selain itu, format ini memiliki beberapa masalah ketika di implementasikan oleh Perangkat Lunak Perkantoran selain Microsoft Office.
 
@@ -77,11 +81,13 @@ Masalah-masalah nya seperti:
 
 - Memerlukan penautan/penghubungan ke teknologi atau fitur yang di kendalikan atau/dan hanya bisa di gunakan secara eksklusif oleh Vendor/Perangkat Lunak tertentu.
 
-- Jumlah Halaman dari Dokumen Spesifikasi nya sendiri nya mencapai [&pm;6000 halaman](https://www.ecma-international.org/publications/standards/Ecma-376.htm), yang bahkan itu melebihi POSIX/SUSv3 yang cuma sampai [&pm;3700 halaman saja](https://en.wikipedia.org/wiki/Single_UNIX_Specification). Dan, itupun untuk versi ECMA nya, belum 'Transitional' dan 'Strict' nya. Sehingga, hal itu akan menyulitkan Pengembang Perangkat Lunak lain nya untuk meng-implementasikan format tersebut.
+- Jumlah Halaman dari Dokumen Spesifikasi nya sendiri nya mencapai [&pm;6000 halaman](https://www.ecma-international.org/publications/standards/Ecma-376.htm)*, yang bahkan itu melebihi POSIX/SUSv3 yang (katanya) cuma sampai [&pm;3700 halaman saja](https://en.wikipedia.org/wiki/Single_UNIX_Specification). Dan, itupun untuk versi ECMA nya, belum 'Transitional' dan 'Strict' nya. Sehingga, hal itu akan menyulitkan Pengembang Perangkat Lunak lain nya untuk meng-implementasikan format tersebut.
 
-- Format OOXML itu sendiri telah terbebani oleh [Paten](http://noooxml.wikidot.com/patents) [Perangkat Lunak](http://en.swpat.org/wiki/OOXML), sehingga hal itu akan membuat Pengembang Perangkat Lunak perkantoran lain nya menjadi tidak mungkin untuk menyempurnakan dukungan/implementasi format OOXML nya.
+- Ada beberapa bagian di dalam Format OOXML itu sendiri telah terbebani oleh [Paten](http://noooxml.wikidot.com/patents) [Perangkat Lunak](http://en.swpat.org/wiki/OOXML), sehingga hal itu akan membuat Pengembang Perangkat Lunak perkantoran lain nya menjadi tidak mungkin untuk menyempurnakan dukungan/implementasi format OOXML nya.
 
 - Dan, masalah lain nya.
+
+**\*Catatan**: Kalau kamu mau membaca Spesifikasi dari Format OOXML versi ECMA nya, silahkan kunjungi [halaman web resmi nya](https://www.ecma-international.org/publications/standards/Ecma-376.htm).
 
 Masalah-masalah di atas bukan hanya mempengaruhi pengembang Perangkat Lunak saja, tapi itu akan mempengaruhi pengguna nya secara keseluruhan, terutama jika pengguna tersebut membuka atau membuat dokumen ber-format OOXML dengan Perangkat Lunak Perkantoran selain Microsoft Office.
 
@@ -91,17 +97,21 @@ Selain alasan di atas, Alasan mereka hanya fokus (bahkan [mempromosikan](https:/
 
 Ini artinya, mereka percaya bahwa ODF merupakan format yang paling 'netral' saat ini, bila di bandingkan dengan format OOXML.
 
-Lagian, di Indonesia, Format ODF ini sudah memasuki ketentuan Standar Nasional Indonesia (SNI) pada tahun 2010 dengan Nomor [`:::text SNI ISO/IEC 26300:2011`](http://sispk.bsn.go.id/SNI/DetailSNI/8541) melalui surat keputusan dengan Nomor [`:::text 41/KEP/BSN/4/2011`](http://akses-sispk.bsn.go.id/Upload/Dokumen/SK_SNI/7476_SK%20SNI%2041-04-2011.PDF) dari Kepala BSN (Badan Standardisasi Nasional) pada waktu itu. Sampai sekarang, Standar ini masih berlaku di Indonesia.
+Lagian, di Indonesia, Format ODF ini sudah memasuki ketentuan Standar Nasional Indonesia (SNI) pada tahun 2010 dengan Nomor [**SNI ISO/IEC 26300:2011**](http://sispk.bsn.go.id/SNI/DetailSNI/8541)* melalui surat keputusan dengan Nomor [**41/KEP/BSN/4/2011**](http://akses-sispk.bsn.go.id/Upload/Dokumen/SK_SNI/7476_SK%20SNI%2041-04-2011.PDF)* dari Kepala BSN (Badan Standardisasi Nasional) pada waktu itu. Sampai sekarang, Standar ini masih berlaku di Indonesia.
 
-Bahkan, format ini telah di akui oleh Pemerintah kita melalui [Kemenkominfo (Kementerian Komunikasi dan Informatika)](https://jdih.kominfo.go.id/produk_hukum/unduh/id/75/t/peraturan+menteri+komunikasi+dan+informatika++nomor+7+tahun+2013+tanggal+5+maret+2013) (Atau, Anda bisa unduh [versi DOCX nya](https://web.kominfo.go.id/sites/default/files/RPM%20Pedoman%20Penerapan%20Interoperabilitas%20Dokumen%20Perkantoran%20Bagi%20Penyelenggara%20Sistem%20Elektronik%20Untuk%20Pelayanan%20Publik.docx) nya) dan [Kemenkumham (Kementerian Hukum dan Hak Asasi Manusia)](http://ditjenpp.kemenkumham.go.id/arsip/bn/2013/bn474-2013lamp.pdf) pada Tahun 2013 yang lalu.
+**\*Catatan**: Akses tautan tersebut melalui protokol HTTP, bukan HTTPS. Dan, nonaktifkan terlebih dahulu Ekstensi "HTTPS Everywhere" pada Peramban Web kamu, kalo ada. Jika kamu mengakses nya dengan protokol HTTPS, maka yang kamu dapatkan hanyalah laman Login nya saja/User Portal. Aneh memang situs web pemerintah satu ini.
+
+Bahkan, format ini telah di akui oleh Pemerintah kita melalui [Kemenkominfo (Kementerian Komunikasi dan Informatika)](https://jdih.kominfo.go.id/produk_hukum/unduh/id/75/t/peraturan+menteri+komunikasi+dan+informatika++nomor+7+tahun+2013+tanggal+5+maret+2013) (Atau, Anda bisa unduh [versi lain nya](https://web.kominfo.go.id/sites/default/files/RPM%20Pedoman%20Penerapan%20Interoperabilitas%20Dokumen%20Perkantoran%20Bagi%20Penyelenggara%20Sistem%20Elektronik%20Untuk%20Pelayanan%20Publik.docx) nya) dan [Kemenkumham (Kementerian Hukum dan Hak Asasi Manusia)](http://ditjenpp.kemenkumham.go.id/arsip/bn/2013/bn474-2013lamp.pdf) pada Tahun 2013 yang lalu.
 
 Selain itu, menurut [artikelnya](https://kominfo.go.id/index.php/content/detail/3434/open+source+di+kominfo+/0/program_prioritas), pihak Kemenkominfo telah menggunakan Perangkat-Perangkat Lunak tersebut di dalam lingkungan nya untuk menunjang keperluan mereka, termasuk LibreOffice dan Format ODF nya. (Ngomong-ngomong, Artikel itu di terbitkan sejak tahun 2014 yang lalu. Entah apa yang terjadi sekarang, apakah mereka masih menggunakan nya? Semoga saja masih menggunakan nya)
 
-Jadi, jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini termasuk Standar Terbuka (_Open Standard_) atau bebas? Seperti nya belum tentu juga. 
+Jadi, jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini termasuk Standar yang bebas? Seperti nya belum tentu juga. 
 
 Apakah itu merupakan suatu hal yang wajar jika tampilan atau bahkan dokumen nya menjadi kacau saat dokumen OOXML di buat atau/dan di buka dengan Perangkat Lunak selain Microsoft Office? Wajar, bahkan normal jika itu terjadi, kecuali jika Anda cuma tahu Microsoft Office atau/dan Ekstensi berformat OOXML nya saja. 
 
-Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak perlu, bahkan sama sekali. Lagian juga, LibreOffice ini di buat untuk membantu Anda bekerja dengan dokumen di dalam komputer Anda, bukan untuk memenuhi Standar dari Microsoft Office.
+Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak perlu, bahkan sama sekali. Lagian juga, LibreOffice ini di buat untuk membantu Anda bekerja dengan dokumen di dalam komputer Anda tanpa harus mengorbankan [4 kebebasan utama dalam perangkat lunak](https://www.gnu.org/philosophy/free-sw.html), bukan untuk memenuhi Standar dari Microsoft Office*.
+
+**\*Catatan**: "bukan untuk memenuhi Standar dari Microsoft Office" bukan berarti bahwa mereka sama sekali tidak mendukung/meng-implementasikan Format OOXML, yah :slightly_smiling_face: 
 
 Bagaimana kalau dokumen nya tidak menjadi kacau, atau tampilan nya sangat baik, bahkan "sempurna"? Itu artinya, "Anda beruntung!" :slightly_smiling_face:
 
@@ -164,7 +174,7 @@ Salah satu penyebabnya adalah bahwa kebanyakan orang telah terbiasa dengan Penam
 
 Tampilan LibreOffice standar kira-kira seperti ini (saya menggunakan Windows 10):
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/LibreOffice_Screenshot_in_Windows_10.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="Cuplikan Layar LibreOffice 6.3 di Windows 10">](https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/LibreOffice_Screenshot_in_Windows_10.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="Cuplikan Layar LibreOffice 6.3 di Windows 10">](https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png)
 
 Mungkin saja, tampilan seperti itu memang terasa familiar bagi Anda yang sudah pernah menggunakan Microsoft Office 2003 sebelumnya. Tapi, yang menjadi masalah nya adalah bahwa kebanyakan orang sudah duluan familiar dengan penampilan "Ribbon" dan mengingatnya, kalaupun sebelumnya ada yang sudah pernah menggunakan Microsoft Office 2003, bukan berarti mereka familiar akan tampilan nya, serta tidak semua orang menggunakan nya.
 
@@ -182,13 +192,13 @@ Caranya mudah, yaitu:
 
 Dibawah ini merupakan satu Cuplikan Layar yang akan mempermudah kamu atau memperjelas cara di atas:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="Cara mengaktifkan Tabbed UI di LibreOffice">](https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="Cara mengaktifkan Tabbed UI di LibreOffice">](https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png)
 
 Mudah, bukan?
 
 Kira-kira, untuk tampilan nya akan seperti di bawah ini jika sudah di aktifkan "Tabbed UI" nya:
 
-[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="LibreOffice Tabbed UI di Windows 10">](https://cdn.statically.io/gl/FarrelF/blog-images/dcd855e2/cara-menggunakan-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png)
+[<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png?fit=503,318&quality=80" loading="lazy" class="img-center" alt="LibreOffice Tabbed UI di Windows 10">](https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png)
 
 > ### Saya masih kesulitan untuk menggunakan nya, bagaimana caranya agar saya tidak merasa kesulitan?
 
@@ -199,6 +209,10 @@ Lalu, bagaimana cara nya agar kita bisa mempelajari nya? Banyak sekali cara memp
 Salah satu cara yang bisa Anda lakukan untuk mempelajari nya adalah dengan berikut ini:
 
 #### Cara 1: Buatlah Dokumen yang sama dengan Dokumen yang di kerjakan dengan Microsoft Office
+
+??? info "tl;dr"
+    Buatlah 'versi ODF' dari Dokumen yang pernah Anda buat sebelumnya dengan Microsoft Office itu dengan Perangkat Lunak Perkantoran FLOSS seperti LibreOffice.
+
 Pernahkah Anda membuat dokumen dengan Microsoft Office? Pernahkah Anda membuatnya dengan format yang kompleks, minimal seperti dalam bentuk Proposal, Laporan, Dokumentasi, Makalah, Jurnal atau bahkan sampai Skripsi misal nya?
 
 Kalau pernah, mungkin saat nya Anda membuat dokumen yang sama dengan dokumen yang Anda buat menggunakan Microsoft Office sebelumnya itu dengan LibreOffice, agar supaya Anda bisa mempelajari nya. Lalu, bagaimana caranya?
@@ -207,7 +221,9 @@ Bukalah dokumen yang pernah Anda buat dengan Microsoft Office itu dengan Microso
 
 Setelah Anda membuka LibreOffice nya, buatlah dokumen baru itu menjadi sama persis dengan yang ada di Microsoft Office.
 
-Jadi, yang jelas nya adalah, Dokumen yang di buka dengan Microsoft Office itu peran nya cuma di baca/di lihat saja, sedangkan LibreOffice itu membuat dokumen nya yang sama persis dengan Dokumen yang di buat dengan Microsoft Office.
+Jadi, yang jelas nya adalah, Dokumen yang di buka dengan Microsoft Office itu peran nya cuma di baca/di lihat saja, sedangkan LibreOffice itu membuat dokumen nya yang sama persis dengan Dokumen yang di buat dengan Microsoft Office. 
+
+Atau, yang lebih jelas nya adalah, Anda buat "versi ODF" dari dokumen yang Anda buat dengan Microsoft Office.
 
 Hal ini akan melatih Anda untuk mempelajari bagaimana cara menggunakan LibreOffice, dan fitur-fitur yang ada serta menguasai nya, dan ini juga akan melatih kemandirian Anda. Lakukanlah itu sampai kamu terbiasa untuk menggunakan nya, sesering mungkin. 
 
@@ -260,11 +276,23 @@ Anda yang membaca artikel ini, terutama dari awal artikel juga pasti hafal bukan
 
 Tapi, mungkin saja Anda berpikir bahwa mempelajari LibreOffice itu seperti 2 kali kerja, karena Anda telah mempelajari Microsoft Office sebelumnya (yang mungkin) sejak lama, tapi sekarang malah di tambah dengan mempelajari LibreOffice yang akan membuang waktu dan tenaga mu. Apa benar begitu, bukan?
 
-Iya, memang seperti itu, dan itu merupakan suatu hal yang wajar, karena seperti yang saya bilang sebelumnya, bahwa LibreOffice itu di buat untuk membantu kalian membuat dokumen, bukan untuk memenuhi Standar dari Microsoft Office. 
+Iya, memang seperti itu, dan itu merupakan suatu hal yang wajar, karena seperti yang saya bilang sebelumnya, bahwa LibreOffice itu di buat untuk membantu kalian membuat dokumen tanpa harus mengorbankan 4 kebebasan utama dalam perangkat lunak, bukan untuk memenuhi Standar dari Microsoft Office. 
 
-Walaupun itu semua cukup berat bagi Anda, bukan berarti semua nya menjadi tidak mungkin, bukan? Tapi setidak nya, LibreOffice ini termasuk Perangkat Lunak Bebas, yang mana Anda bisa bebas untuk mendistribusikan, memodifikasi, mempelajari dan menggunakan nya untuk keperluan apapun, termasuk komersial sekalipun, tidak seperti Microsoft Office yang bukan Perangkat Lunak Bebas.
+Walaupun itu semua cukup berat bagi Anda, bukan berarti menjadi tidak mungkin, kan? Tapi setidak nya, LibreOffice ini termasuk Perangkat Lunak Bebas, yang mana Anda bisa bebas untuk mendistribusikan, memodifikasi, mempelajari dan menggunakan nya untuk keperluan apapun, termasuk komersial sekalipun, tidak seperti Microsoft Office yang bukan Perangkat Lunak Bebas.
 
 Jadi, jika Anda menggunakan LibreOffice, maka Anda juga harus mempelajari nya, mau-tidak mau :slightly_smiling_face:
 
 ## Penutup
+Jika Anda ingin menggunakan LibreOffice, maka Anda harus bisa menggunakan nya dengan "Benar". Jangan pernah mengharapkan untuk menggunakan Format OOXML di dalam LibreOffice.
 
+Jadi, mau-tidak mau, Anda harus belajar lagi untuk menggunakan LibreOffice. Namun, kalo kamu tidak mau belajar, ya itu terserah kamu, kamu punya hak untuk itu, saya tidak bisa memaksa kamu untuk melakukan nya, tidak seperti salah satu anggota di salah satu Grup Facebook yang menjadi "sales" dadakan dengan embel-embel "Share Ilmu".
+
+Tapi setidak nya, LibreOffice dan Format Asli nya, yakni ODF (OpenDocument Format) itu merupakan Perangkat Lunak dan Format Bebas, tidak seperti Microsoft Office dan OOXML nya.
+
+Saya membuat artikel seperti ini karena saya sendiri melihat kalau kebanyakan anggota Komunitas/Grup, terutama di Grup Pengguna GNU/Linux, menganggap LibreOffice itu bermasalah, sehingga tidak di sarankan oleh mereka. Tapi kenyataan nya, kebanyakan dari mereka yang menganggap seperti itu karena Masalah Kompatibilitas terhadap Format OOXML itu sendiri yang seharusnya tidak perlu di permasalahkan.
+
+Sehingga, orang lain (terutama "Pemula") menjadi seperti tidak ada harapan untuk mengurusi dokumen digital, apalagi di dalam Sistem Operasi yang berbeda, seperti GNU/Linux.
+
+Saya kira, pembahasan nya sudah cukup sampai disini saja. Mohon maaf jika adanya kesalahan pada artikel ini, jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain nya, silahkan kamu berkomentar melalui kolom komentar yang tersedia atau bisa kamu [Hubungi Saya]({filename}/pages/hubungi-saya.md) jika kamu memilih lewat "Jalur Pribadi".
+
+Terima kasih atas perhatian nya :blush:
