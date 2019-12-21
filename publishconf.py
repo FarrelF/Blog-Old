@@ -45,14 +45,13 @@ EXTRA_FILES_NAME = [
 
 ADD_THIS = {
     'activate': True,
-    'id': "ra-5943d2a0cfebfb52",
+    'id': "ra-5943d2f5e8135da1",
     'options': {
         'scripts_position': {
             'EntireWeb': False
         },
         'inline_share_toolbox': {
-            'activate': True,
-            'id': "7mdw"
+            'id': "ppft"
         }
     }
 }
