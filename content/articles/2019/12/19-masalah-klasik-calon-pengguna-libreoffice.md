@@ -29,7 +29,7 @@ LibreOffice merupakan sebuah Perangkat Lunak Paket Perkantoran yang merupakan Pe
 
 Perangkat Lunak ini cukup populer, terutama di kalangan pengguna GNU/Linux. Salah satu alasannya adalah karena Distribusi GNU/Linux yang mereka gunakan itu biasanya sudah ter-install LibreOffice secara bawaan (_default_). Ubuntu, Varian (Seperti: Xubuntu, Lubuntu, Kubuntu, Ubuntu MATE, dll) dan Turunan nya (seperti Mint, Pop_OS!, dll) merupakan salah satu contoh nya.
 
-Namun sayangnya, banyak sekali dari mereka yang mengeluhkan, yang mana itu seharusnya tidak perlu di keluhkan, apa saja masalah nya? Mungkin, bisa Anda lanjut simak artikel ini.
+Namun sayangnya, banyak sekali dari mereka yang mengeluhkan sebuah masalah yang klasik, yang mana itu seharusnya tidak perlu di keluhkan/di permasalahkan, apa saja masalah nya? Mungkin, bisa Anda lanjut simak artikel ini.
 
 ## Sanggahan
 Tapi sebelum itu, ada yang ingin saya sampaikan, bahwa Artikel ini akan membahas hal-hal yang sangatlah mendasar untuk menggunakan LibreOffice. Jadi, artikel ini tidak akan membahas penggunaan LibreOffice lebih lanjut.
@@ -43,7 +43,7 @@ Pernyataan di atas merupakan pernyataan tambahan dari yang [sebenarnya]({filenam
 ## I. Masalah Kompatibilitas saat di buka dengan Microsoft Office (begitupun juga sebaliknya)
 Ini adalah masalah paling klasik yang paling sering di bicarakan oleh kebanyakan pengguna GNU/Linux di Indonesia, berdasarkan dari banyaknya komunitas GNU/Linux di dunia maya (terutama di Indonesia). 
 
-Hal ini terjadi ketika pengguna menyelesaikan pembuatan Dokumen (entah itu sekedar Dokumen biasa, Lembar Kerja (_Spreadsheet_), Presentasi, dll), setelah itu ia simpan dokumen nya menggunakan Format OOXML (Office Open XML Format), ini artinya mereka menyimpan nya dengan ekstensi DOCX atau DOC, XLSX atau XLS, PPTX atau PPT, dan Ekstensi dengan format OOXML lain nya.
+Hal ini terjadi ketika pengguna menyelesaikan pembuatan Dokumen (entah itu sekedar Dokumen hasil Pengolah Kata (_Word Processor_), Lembar Kerja (_Spreadsheet_), Presentasi (_Presentation_), dll), setelah itu ia simpan dokumen nya menggunakan Format OOXML (Office Open XML Format), ini artinya mereka menyimpan nya dengan ekstensi DOCX atau DOC, XLSX atau XLS, PPTX atau PPT, dan Ekstensi dengan format OOXML lain nya.
 
 Ketika mereka ingin membuka Dokumen nya dengan Microsoft Office, tentunya dengan ekspektasi bahwa dokumen tersebut harusnya bisa di 'render' dengan baik, yang artinya, dokumen tersebut harusnya tampil dengan tampilan yang 'seharusnya'. Namun ternyata, dokumen yang di tampilkan malah berantakan, dan tentu saja itu jauh (bahkan 'sangat jauh') dari ekspektasi si pengguna tersebut.
 

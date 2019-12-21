@@ -85,6 +85,8 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
     </fieldset>
 </form>
 
+Ada yang perlu di perhatikan, bahwa setelah Anda mengirimkan pesan Anda nanti melalui Form Kontak di atas, maka Pesan Anda akan di kirim melalui perantara dari pihak ke-3, seperti Netlify. Jadi, harap perhatikan terlebih dahulu [Kebijakan Privasi nya](https://www.netlify.com/privacy/) serta [komitmen mereka terhadap GDPR](https://www.netlify.com/gdpr).
+
 Saya akan hormati Privasi pada pesan yang Anda sampaikan, karena saya paham betapa pentingnya menjaga data pribadi/privasi Anda, maka **jangan sekali-kali** Anda mengirimkan segala Informasi yang bersifat Rahasia atau/dan Pribadi Anda kepada saya, termasuk No. Telepon, Alamat tempat tinggal, dll ke saya tanpa mengenali nya dan tanpa maksud, alasan dan tujuan yang jelas. 
 
 Kalau Anda mengirimkan nya, maka pesan yang Anda kirimkan akan saya hapus. 
