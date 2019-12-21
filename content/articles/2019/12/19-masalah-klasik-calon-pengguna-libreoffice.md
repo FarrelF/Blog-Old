@@ -164,7 +164,7 @@ Atau, jika hal tersebut tidak memungkinkan, maka sebaiknya Anda minta saja kepad
 
 Tergantung, apakah mereka hanya ingin membaca dokumenmu saja atau ingin mengubah nya juga atau cuma sekedar mengulas/meninjau ulang (_review_) dokumen mu saja? Biasanya (apalagi dosen atau HRD), mereka akan butuh dokumen kamu hanya untuk di baca saja, karena pada dasar nya, mereka tidak terlalu perlu untuk mengubah dokumen kamu. (Contoh kasus: Jika kamu mengirimkan CV atau _Resume_ kepada HRD untuk melamar pekerjaan, Tugas Kuliah ke Dosen berupa dokumen, dll).
 
-Kalau mereka hanya ingin membacanya saja, ekspor berkas tersebut ketika Anda sudah selesai mengetik/membuat dokumen nya dan kirimkan saja hasil nya sebagai Format PDF.
+Kalau mereka hanya ingin membacanya saja, ekspor berkas tersebut ketika Anda sudah selesai mengetik/membuat dokumen nya sebagai Format PDF dan kirimkan saja hasil nya.
 
 Tapi, kalau mereka ingin mengubah dokumen mu, maka kalau bisa, kirimkan berkas tersebut kepada mereka dan sarankan kepada mereka dengan baik-baik untuk meng-install LibreOffice jika kamu merasa dekat dengan mereka.
 
@@ -191,9 +191,11 @@ Sekarang, Anda sudah bisa menikmati nya tanpa harus memuat Berkas JAR Eksternal 
 
 Caranya mudah, yaitu:
 
-1. Pastikan Aplikasi LibreOffice sudah di buka (Untuk varian nya bisa apa saja, LO Writer, Spreadsheet, Impress atau lain nya)
+1. Pastikan LibreOffice versi 6.2 atau di atasnya sudah terinstall di dalam Komputer Anda.
 
-2. Klik pada Menu "View" -> Lalu, klik pada "User interface" -> Terakhir, kamu klik "Tabbed" untuk mengaktifkan fitur "Ribbon"
+2. Pastikan juga kalau Aplikasi LibreOffice dan salah satu varian nya sudah di buka (Untuk varian nya bisa apa saja, seperti: LibreOffice Writer, Spreadsheet, Impress atau lain nya)
+
+3. Klik pada Menu "View" -> Lalu, klik pada "User interface" -> Terakhir, kamu klik "Tabbed" untuk mengaktifkan fitur "Ribbon"
 
 Dibawah ini merupakan satu Cuplikan Layar yang akan mempermudah kamu atau memperjelas cara di atas:
 
@@ -228,20 +230,20 @@ Setelah Anda membuka LibreOffice nya, buatlah dokumen baru itu menjadi sama pers
 
 Jadi, yang jelas nya adalah, Dokumen yang di buka dengan Microsoft Office itu peran nya cuma di baca/di lihat saja, sedangkan LibreOffice itu membuat dokumen nya yang sama persis dengan Dokumen yang di buat dengan Microsoft Office. 
 
-Atau, yang lebih jelas nya adalah, Anda buat "versi ODF" dari dokumen yang Anda buat dengan Microsoft Office.
+Atau, yang lebih jelas nya adalah, Anda buat "versi ODF" dari dokumen yang Anda buat dengan Microsoft Office itu.
 
 Hal ini akan melatih Anda untuk mempelajari bagaimana cara menggunakan LibreOffice, dan fitur-fitur yang ada serta menguasai nya, dan ini juga akan melatih kemandirian Anda. Lakukanlah itu sampai kamu terbiasa untuk menggunakan nya, sesering mungkin. 
 
 Jika Anda sudah selesai membuatnya, jangan lupa, simpanlah dokumen tersebut dengan format ODF, bukan format OOXML.
 
 #### Cara 2: Sering-sering Googling untuk menguasai Fitur-fitur pada LibreOffice
-Ini mungkin berhubungan dengan cara pertama. Meskipun begitu, nyatanya Anda belum menguasai penggunaan LibreOffice saat membuat dokumen nya, yah setidak nya anggap saja begitu. 
+Ini mungkin berhubungan dengan cara pertama. Meskipun begitu, mungkin saja Anda masih bingung dalam menggunakan fitur-fitur pada LibreOffice saat membuat dokumen nya, yah setidak nya anggap saja begitu. 
 
-Jika Anda merasa bingung, hal yang pertama kali yang harus Anda lakukan adalah sering-seringlah Googling terlebih dahulu untuk menguasai Fitur-fitur LibreOffice beserta cara menggunakan nya. Kalau bisa, gunakan Bahasa Inggris untuk kata kunci nya supaya hasilnya lebih lengkap.
+Jika Anda merasa bingung, hal yang pertama kali yang harus Anda lakukan adalah sering-seringlah Googling terlebih dahulu untuk menguasai Fitur-fitur LibreOffice beserta cara menggunakan nya. Kalau bisa, gunakan Bahasa Inggris untuk kata kunci nya supaya hasilnya lebih lengkap, atau bisa dengan Bahasa Indonesia kalau kamu ingin hasilnya lebih "akurat".
 
 Hal ini harus di lakukan terutama sebelum Anda bertanya kepada seseorang melalui apapun juga di Internet, termasuk melalui Forum/Grup yang ada di Internet.
 
-Maka, sebelum bertanya kepada seseorang di Internet, ada baiknya untuk Googling terlebih dahulu untuk penguasaan Fitur nya.
+Jadi, sebelum bertanya kepada seseorang di Internet, ada baiknya untuk Googling terlebih dahulu untuk penguasaan Fitur nya.
 
 #### Cara 3: Baca, Pelajari dan Pahami Panduan nya
 Anda bisa mempelajari Panduan yang tersedia jika suatu saat Anda bingung bagaimana caranya menggunakan sebuah fitur yang ada.
@@ -252,7 +254,7 @@ Panduan tersebut memang berbahasa Inggris, namun Anda bisa menggunakan Bahasa In
 
 Anda bisa mencari materi-materi yang ada di situ kalau mau. Tapi, panduan disitu kurang lengkap untuk menjelaskan nya, panduan tersebut hanyalah sebatas menjelaskan penggunaan fitur-fitur nya saja.
 
-Namun, Alhamdulillah, bapak Sokibi telah membuat sebuah buku dengan judul "Menulis Buku dengan LibreOffice" yang tentu nya di buat dengan Bahasa Indonesia, yang dapat membantu Anda untuk menguasai fitur-fitur yang ada pada LibreOffice (terutama LibreOffice Writer). Buku Digital tersebut bisa Anda unduh secara gratis dengan mengunjungi salah satu artikel [di blog nya](https://imgos-belajarlinux.blogspot.com/2019/10/unduh-buku-digital-gratis.html).
+Namun Alhamdulillah, bapak Sokibi telah membuat sebuah buku dengan judul "Menulis Buku dengan LibreOffice" yang tentu nya di buat dengan Bahasa Indonesia, yang dapat membantu Anda untuk menguasai fitur-fitur yang ada pada LibreOffice (terutama LibreOffice Writer). Buku Digital tersebut bisa Anda unduh secara gratis dengan mengunjungi salah satu artikel [di blog nya](https://imgos-belajarlinux.blogspot.com/2019/10/unduh-buku-digital-gratis.html).
 
 Sayangnya, buku tersebut hanya membahas LibreOffice Writer saja, tidak membahas lain nya. 
 
@@ -288,18 +290,18 @@ Walaupun itu semua cukup berat bagi Anda, bukan berarti menjadi tidak mungkin, k
 Jadi, jika Anda menggunakan LibreOffice, maka Anda juga harus mempelajari nya, mau-tidak mau :slightly_smiling_face:
 
 ## Penutup
-Jika Anda ingin menggunakan LibreOffice, maka Anda harus bisa menggunakan nya dengan "Benar". Jangan pernah mengharapkan untuk menggunakan Format OOXML di dalam LibreOffice.
+Jika Anda ingin menggunakan LibreOffice, maka Anda harus bisa menggunakan nya dengan "Benar". Jangan pernah berharap untuk menggunakan Format OOXML di dalam LibreOffice.
 
-Jadi, mau-tidak mau, Anda harus belajar lagi untuk menggunakan LibreOffice. Namun, keputusan mengenai kamu mau belajar atau tidak nya itu semua kembali pada diri Anda, saya tidak bisa memaksa kamu untuk melakukan nya, tidak seperti salah satu anggota di salah satu Grup Facebook yang menjadi "sales" dadakan dengan embel-embel "Share Ilmu".
+Jadi, mau-tidak mau, Anda harus belajar lagi untuk menggunakan LibreOffice. Namun, keputusan mengenai kamu mau belajar atau tidak nya, itu semua kembali pada diri Anda, saya tidak bisa memaksa kamu untuk melakukan nya, tidak seperti salah satu anggota di salah satu Grup Facebook yang menjadi "sales" dadakan dengan embel-embel "Share Ilmu" yang jawaban nya seringkali gak nyambung saat di tanya.
 
 Tapi setidak nya, LibreOffice dan Format Asli nya, yakni ODF (OpenDocument Format) itu merupakan Perangkat Lunak dan Format Bebas, tidak seperti Microsoft Office dan Format OOXML nya.
 
 Saya membuat artikel seperti ini karena saya sendiri melihat kalau kebanyakan anggota Komunitas/Grup, terutama di Grup Pengguna GNU/Linux, menganggap LibreOffice itu bermasalah, sehingga tidak di sarankan oleh mereka. Tapi kenyataan nya, kebanyakan dari mereka yang menganggap seperti itu karena Masalah Kompatibilitas terhadap Format OOXML itu sendiri yang seharusnya tidak perlu di permasalahkan.
 
-Jadi, mereka itu berpikir bahwa Format OOXML adalah satu-satu nya format berbasis XML yang mempresentasikan berbagai dokumen perkantoran di dunia ini (seperti Dokumen Lembar Kerja, Pengolah Kata, Presentasi, dan lain nya), tidak ada format yang lain selain dia.
+Jadi, mereka berpikir bahwa Format OOXML adalah satu-satu nya format berbasis XML yang mempresentasikan berbagai dokumen perkantoran di dunia ini (seperti Dokumen Lembar Kerja, Pengolah Kata, Presentasi, dan lain nya), tidak ada format yang lain selain dia.
 
 Sehingga, orang lain (terutama "Pemula") menjadi seperti tidak ada harapan untuk mengurusi dokumen tersebut (seperti membuat/mengubah/memodifikasi nya), apalagi di dalam Sistem Operasi yang berbeda, seperti GNU/Linux misalnya.
 
-Saya kira, pembahasan nya sudah cukup sampai disini saja. Mohon maaf jika adanya kesalahan pada artikel ini, atau jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain nya, silahkan kamu berkomentar atau kamu bisa berdiskusi dengan saya melalui kolom komentar yang tersedia atau bisa kamu [Hubungi Saya]({filename}/pages/hubungi-saya.md) jika kamu lebih suka lewat "Jalur Pribadi".
+Saya kira, pembahasan nya sudah cukup sampai disini saja. Mohon maaf jika adanya kesalahan pada artikel ini, atau jika kamu mempunyai pertanyaan, kritik dan saran, komentar, pendapat/opini kamu atau masukkan lain nya, silahkan kamu berkomentar atau kamu bisa berdiskusi dengan saya melalui kolom komentar yang tersedia atau bisa kamu [Hubungi Saya]({filename}/pages/hubungi-saya.md) jika kamu lebih suka lewat "Jalur Pribadi".
 
 Terima kasih atas perhatian nya :blush:
