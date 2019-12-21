@@ -45,7 +45,7 @@ Ini adalah masalah paling klasik yang paling sering di bicarakan oleh kebanyakan
 
 Hal ini terjadi ketika pengguna menyelesaikan pembuatan Dokumen (entah itu sekedar Dokumen hasil Pengolah Kata (_Word Processor_), Lembar Kerja (_Spreadsheet_), Presentasi (_Presentation_), dll), setelah itu ia simpan dokumen nya menggunakan Format OOXML (Office Open XML Format), ini artinya mereka menyimpan nya dengan ekstensi DOCX atau DOC, XLSX atau XLS, PPTX atau PPT, dan Ekstensi dengan format OOXML lain nya.
 
-Ketika mereka ingin membuka Dokumen nya dengan Microsoft Office, tentunya dengan ekspektasi bahwa dokumen tersebut harusnya bisa di 'render' dengan baik, yang artinya, dokumen tersebut harusnya tampil dengan tampilan yang 'seharusnya'. Namun ternyata, dokumen yang di tampilkan malah berantakan, dan tentu saja itu jauh (bahkan 'sangat jauh') dari ekspektasi si pengguna tersebut.
+Ketika mereka ingin membuka Dokumen nya dengan Microsoft Office, tentunya dengan ekspektasi bahwa dokumen tersebut harusnya bisa di 'render' dengan baik, yang artinya, dokumen tersebut harusnya tampil dengan tampilan yang 'seharusnya'. Tapi ternyata, dokumen yang di tampilkan malah berantakan, dan tentu saja itu jauh (bahkan 'sangat jauh') dari ekspektasi si pengguna tersebut.
 
 Masalah di atas merupakan salah satu contoh dari Masalah Kompatibilitas saat dokumen di buka dengan Microsoft Office, dan ini bisa terjadi sebaliknya (Dokumen di buat dengan Microsoft Office, dan di buka dengan LibreOffice). Masih ada sebenarnya yang mirip dengan ini, cuma lebih baik saya bahas satu ini saja.
 
@@ -53,7 +53,7 @@ Masalah di atas merupakan salah satu contoh dari Masalah Kompatibilitas saat dok
 
 Alasan nya sederhana, karena LibreOffice sendiri memfokuskan penggunaan format ODF (OpenDocument Format) daripada OOXML (Office Open XML) sebagai format Dokumen bawaan dan format asli (_native_) nya.
 
-Jadi, masalah seperti ini sebenarnya tidak perlu di keluhkan, bahkan sama sekali.
+Jadi, masalah seperti ini sebenarnya tidak perlu di keluhkan/di permasalahkan, bahkan sama sekali.
 
 > ### Kenapa mereka memfokuskan format ODF sebagai format bawaan nya? Dan, kenapa mereka tidak memfokuskan format OOXML saja? Bukan nya OOXML ini termasuk "Open Format"?
 
@@ -116,7 +116,7 @@ Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak per
 
 **\*Catatan**: "bukan untuk memenuhi Standar dari Microsoft Office" bukan berarti bahwa mereka sama sekali tidak mendukung/meng-implementasikan Format OOXML, yah :slightly_smiling_face: 
 
-Bagaimana kalau dokumen nya tidak menjadi kacau, atau tampilan nya sangat baik, bahkan "sempurna"? Itu artinya, "Anda beruntung!" :slightly_smiling_face:
+Bagaimana kalau dokumen nya tidak menjadi kacau, atau tampilan nya sangat baik, bahkan "sempurna"? Yah, itu artinya kamu sedang "beruntung" atau mungkin saja ada faktor lain nya yang membuat dokumen tidak tampil berantakan, seperti dokumen nya tidak terlalu kompleks misalnya :slightly_smiling_face:
 
 Mau Referensi lain nya? Silahkan klik salah satu tautan berikut:
 
@@ -144,7 +144,7 @@ Terakhir, jangan pernah mengharapkan kalau LibreOffice bisa membuka dokumen deng
 
 LibreOffice mendukung Sistem Operasi Windows, jadi ia bisa di install di dalam Sistem Operasi Windows. Jika tidak mungkin bisa di install (Entah itu karena terkendala izin Administrator sampai tidak ada waktu atau terlalu repot), LibreOffice juga telah menyediakan versi Portabel nya agar LibreOffice bisa di jalankan secara langsung di dalam USB tanpa izin terlebih dahulu ke Administrator. 
 
-Ini akan sangat membantu Anda yang sedang menggunakan Komputer, yang mana Anda tidak dapat menggunakan Izin Administrator atau bagi Anda yang tidak ingin repot-repot atau membuang-buang waktu serta tenaga untuk meng-install LibreOffice di Komputer lain, seperti di Warnet, Rental Komputer, Komputer Lab Sekolah/Kampus, Komputer Kantor, dll nya.
+Ini akan sangat membantu Anda yang sedang menggunakan Komputer lain, yang mana Anda tidak dapat menggunakan Izin Administrator atau bagi Anda yang tidak ingin repot-repot atau membuang-buang waktu serta tenaga untuk meng-install LibreOffice di Komputer lain, seperti di Warnet, Rental Komputer, Komputer Lab Sekolah/Kampus, Komputer Kantor, dll nya.
 
 Untuk meng-unduh nya, silahkan Anda kunjungi [Halaman Web Resmi nya](https://www.libreoffice.org/download/portable-versions/), meng-ingat ini sangat penting bagi Anda yang sering menggunakan komputer lain nya.
 
