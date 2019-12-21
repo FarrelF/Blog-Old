@@ -51,7 +51,8 @@ ADD_THIS = {
             'EntireWeb': False
         },
         'inline_share_toolbox': {
-            'id': "ppft"
+            'activate': True,
+            'id': "7mdw"
         }
     }
 }
