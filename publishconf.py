@@ -43,6 +43,19 @@ EXTRA_FILES_NAME = [
     'BingSiteAuth.xml'
 ]
 
+ADD_THIS = {
+    'activate': True,
+    'id': "ra-5943d2f5e8135da1",
+    'options': {
+        'scripts_position': {
+            'EntireWeb': False
+        },
+        'inline_share_toolbox': {
+            'id': "ppft"
+        }
+    }
+}
+
 EXTRA_FILES_DIR = 'extras' # Menentukan Lokasi Berkas Tambahan
 
 # Menambahkan Berkas-berkas Tambahan saat di terbitkan nanti.
