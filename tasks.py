@@ -33,6 +33,7 @@ CONFIG = {
     'port': SETTINGS['PORT'],
 }
 
+
 @task
 def clean(c):
     """Remove generated files"""
@@ -40,10 +41,13 @@ def clean(c):
         shutil.rmtree(CONFIG['deploy_path'])
         os.makedirs(CONFIG['deploy_path'])
 
+
 @task
 def build(c):
     """Build local version of site"""
-    c.run('pelican {content_path} -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+    c.run(
+        'pelican {content_path} -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+
 
 @task
 def devtheme(c):
@@ -51,10 +55,13 @@ def devtheme(c):
     c.run('git clone https://github.com/FarrelF/Modified-Flex.git themes/Flex')
     c.run('pelican-themes -i themes/Flex')
 
+
 @task
 def rebuild(c):
     """`build` with the delete switch"""
-    c.run('pelican {content_path} -d -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+    c.run(
+        'pelican {content_path} -d -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+
 
 @task
 def static(c):
@@ -62,10 +69,13 @@ def static(c):
     devtheme(c)
     rebuild(c)
 
+
 @task
 def regenerate(c):
     """Automatically regenerate site upon file modification"""
-    c.run('pelican {content_path} -r -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+    c.run(
+        'pelican {content_path} -r -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+
 
 @task
 def serve(c):
@@ -82,21 +92,27 @@ def serve(c):
     sys.stderr.write('Serving on port {port} ...\n'.format(**CONFIG))
     server.serve_forever()
 
+
 @task
 def reserve(c):
     """`rebuild`, then `serve`"""
     rebuild(c)
     serve(c)
 
+
 @task
 def devserver(c):
     """`regenerate`, then `serve`"""
-    c.run('pelican {content_path} -lr -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+    c.run(
+        'pelican {content_path} -lr -s {settings_base} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+
 
 @task
 def preview(c):
     """Build preview version of site"""
-    c.run('pelican {content_path} -s {settings_preview} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+    c.run(
+        'pelican {content_path} -s {settings_preview} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+
 
 @task
 def livereload(c):
@@ -128,12 +144,15 @@ def theme_sync(c):
     c.run("rm -rf themes")
     c.run("git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/FarrelF/Modified-Flex.git themes/Flex")
 
+
 @task
 def publish(c):
     """Publish to production"""
     theme_sync(c)
-    c.run('pelican {content_path} -s {settings_publish} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
+    c.run(
+        'pelican {content_path} -s {settings_publish} -o {deploy_path} {pelican_opts}'.format(**CONFIG))
     c.run('rm -rf output/drafts')
+
 
 @task
 def gh_pages(c):
