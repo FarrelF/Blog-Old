@@ -5,10 +5,10 @@ from __future__ import unicode_literals
 # This file is only used if you use `make publish` or
 # explicitly specify it as your config file.
 
-from pelicanconf import *
 import os
 import sys
 sys.path.append(os.curdir)
+from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://farrel.franqois.id'
@@ -17,12 +17,16 @@ SITEURL = 'https://farrel.franqois.id'
 USE_CDN = True
 USE_LESS = False
 USE_MINIFIED_SCRIPTS = True
-CDN_THEME_REPO_BRANCH = '3a547f1'
+CDN_THEME_REPO_COMMIT = '3a547f1'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(
-    CDN_THEME_REPO_BRANCH)
-CDN_BLOG_BRANCH = '8a61b9b'
+    CDN_THEME_REPO_COMMIT
+)
+
+CDN_BLOG_COMMIT = '8a61b9b'
 CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(
-    CDN_BLOG_BRANCH)
+    CDN_BLOG_COMMIT
+)
+
 CC_LICENSE['distribution-type'] = 'cdn'
 
 # Pengaturan Font
@@ -51,12 +55,15 @@ EXTRA_FILES_DIR = 'extras'  # Menentukan Lokasi Berkas Tambahan
 if type(EXTRA_FILES_NAME) is str:
     STATIC_PATHS.append('{0}/{1}'.format(EXTRA_FILES_DIR, EXTRA_FILES_NAME))
     EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, EXTRA_FILES_NAME)] = {
-        'path': '{0}'.format(EXTRA_FILES_NAME)}
-elif type(EXTRA_FILES_NAME) is list:
-    for values in EXTRA_FILES_NAME:
-        STATIC_PATHS.append('{0}/{1}'.format(EXTRA_FILES_DIR, values))
-        EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, values)] = {
-            'path': '{0}'.format(values)}
+        'path': '{0}'.format(EXTRA_FILES_NAME)
+    }
+
+elif type(EXTRA_FILES_NAME) is list or tuple:
+    for filenames in EXTRA_FILES_NAME:
+        STATIC_PATHS.append('{0}/{1}'.format(EXTRA_FILES_DIR, filenames))
+        EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, filenames)] = {
+            'path': '{0}'.format(filenames)
+        }
 
 # Menambah Berkas HTML dari Google untuk Verifikasi saat di terbitkan nanti
 GOOGLE_SITE_VERIFICATION_HTML_FILENAME = [
@@ -67,16 +74,39 @@ GOOGLE_SITE_VERIFICATION_HTML_FILENAME = [
 GOOGLE_SITE_VERIFICATION_HTML_DIR = EXTRA_FILES_DIR
 
 if type(GOOGLE_SITE_VERIFICATION_HTML_FILENAME) is str:
-    STATIC_PATHS.append('{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR,
-                                              GOOGLE_SITE_VERIFICATION_HTML_FILENAME))
-    EXTRA_PATH_METADATA['{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, GOOGLE_SITE_VERIFICATION_HTML_FILENAME)] = {
-        'path': '{0}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_FILENAME)}
-elif type(GOOGLE_SITE_VERIFICATION_HTML_FILENAME) is list:
+    STATIC_PATHS.append(
+        '{0}/{1}.html'.format(
+            GOOGLE_SITE_VERIFICATION_HTML_DIR,
+            GOOGLE_SITE_VERIFICATION_HTML_FILENAME
+        )
+    )
+
+    EXTRA_PATH_METADATA[
+        '{0}/{1}.html'.format(
+            GOOGLE_SITE_VERIFICATION_HTML_DIR, 
+            GOOGLE_SITE_VERIFICATION_HTML_FILENAME
+        )
+    ] = {
+        'path': '{0}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_FILENAME)
+    }
+
+elif type(GOOGLE_SITE_VERIFICATION_HTML_FILENAME) is list or tuple:
     for values in GOOGLE_SITE_VERIFICATION_HTML_FILENAME:
         STATIC_PATHS.append(
-            '{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, values))
-        EXTRA_PATH_METADATA['{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, values)] = {
-            'path': '{0}.html'.format(values)}
+            '{0}/{1}.html'.format(
+                GOOGLE_SITE_VERIFICATION_HTML_DIR, 
+                values
+            )
+        )
+        
+        EXTRA_PATH_METADATA[
+            '{0}/{1}.html'.format(
+                GOOGLE_SITE_VERIFICATION_HTML_DIR, 
+                values
+            )
+        ] = {
+            'path': '{0}.html'.format(values)
+        }
 
 # Agar Berkas 'custom.css' tidak di buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
 if USE_CDN:
@@ -102,6 +132,7 @@ BING_SITE_VERIFICATION = '0BD80FDF817E3BE4D9E4C4149FF490BD'
 # Pengaturan Tema
 if USE_MINIFIED_SCRIPTS == True:
     CUSTOM_JS_NAME = 'custom.min.js'
+
 else:
     CUSTOM_JS_NAME = 'custom.js'
 

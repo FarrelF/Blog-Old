@@ -64,3 +64,8 @@ details.no-details:not([open]) > * {
 details.no-details:not([open]) summary {
     display: block;
 }
+
+main article details.info {
+    border: 1px solid;
+    padding: 1em;
+}

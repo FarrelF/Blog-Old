@@ -1,5 +1,5 @@
 # Farrel Franqois Blog
-[![CircleCI](https://circleci.com/gh/FarrelF/FarrelF-Blog/tree/master.svg?style=svg)](https://circleci.com/gh/FarrelF/FarrelF-Blog/tree/master)
+[![GitHub Actions](https://github.com/FarrelF/FarrelF-Blog/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/FarrelF/FarrelF-Blog/actions)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/farrelf/deploys)
 ![GitHub](https://img.shields.io/github/license/FarrelF/FarrelF-Blog?label=Lisensi&style=flat-square)
 

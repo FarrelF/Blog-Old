@@ -16,11 +16,6 @@ Summary: Banyak sekali pengguna LibreOffice yang merasa kesulitan dalam mengguna
 main article blockquote, main article h3 {
     font-size: 1.17em;
 }
-
-main article details.info {
-    border: 1px solid;
-    padding: 1em;
-}
 </style>
 
 ## Daftar Isi
