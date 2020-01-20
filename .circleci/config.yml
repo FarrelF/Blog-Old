@@ -74,7 +74,7 @@ aliases:
          echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 ${CIRCLE_SHA1}) && export GIT_COMMIT_MESSAGE'
         } >> ${BASH_ENV}
         . ${BASH_ENV}
-        yarn install --production=true
+        yarn install --production=true --pure-lockfile
 
   install_locales: &install_locales
     run:

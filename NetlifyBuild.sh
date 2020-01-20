@@ -8,7 +8,7 @@ restore_cwd_cache '.venv' 'python virtualenv'
 pip3 install -q poetry
 
 ## Konfigurasi Poetry ##
-poetry config settings.virtualenvs.in-project true
+poetry config virtualenvs.in-project true
 
 ## Meng-install paket-paket dan ketergantungan dengan Poetry ##
 poetry install --no-dev

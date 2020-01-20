@@ -9,8 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     env:
       TZ: Asia/Jakarta
-      BASE_BRANCH: ${{ github.base_ref }}
-      HEAD_BRANCH: ${{ github.head_ref }}
+      BRANCH_NAME: ${{ github.ref }}
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       NODE_ENV: production
@@ -88,4 +87,4 @@ jobs:
     
     - name: Deploying with Netlify
       run: |
-        netlify deploy --dir=./output -m "GitHub Actions (${GIT_COMMIT_HASH})":" ${HEAD_BRANCH} - ${GIT_COMMIT_MESSAGE}"
+        netlify deploy --dir=./output -m "GitHub Actions (${GIT_COMMIT_HASH})":" ${BRANCH_NAME} - ${GIT_COMMIT_MESSAGE}"
