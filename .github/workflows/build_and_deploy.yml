@@ -87,4 +87,4 @@ jobs:
     
     - name: Deploying with Netlify
       run: |
-        netlify deploy --dir=./output -m "GitHub Actions (${GIT_COMMIT_HASH})":" ${BRANCH_NAME} - ${GIT_COMMIT_MESSAGE}"
+        netlify deploy --dir=./output -p -m "GitHub Actions (${GIT_COMMIT_HASH})":" ${BRANCH_NAME} - ${GIT_COMMIT_MESSAGE}"
