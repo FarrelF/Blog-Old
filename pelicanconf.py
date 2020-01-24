@@ -101,8 +101,15 @@ CHECK_MODIFIED_METHOD = 'sha256'
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extended_sitemap', 'filetime_from_git',
-           'more_categories', 'summary', 'pelican_htmlmin', 'interlinks']
+PLUGINS = [
+    'extended_sitemap', 
+    'filetime_from_git',
+    'more_categories', 
+    'summary', 
+    'pelican_htmlmin', 
+    'interlinks'
+]
+
 EXTENDED_SITEMAP_PLUGIN = {
     'priorities': {
         'index': 1.0,

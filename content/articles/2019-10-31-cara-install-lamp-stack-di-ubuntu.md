@@ -638,7 +638,7 @@ $ mv config.sample.inc.php config.inc.php; mkdir tmp; sudo chown www-data:www-da
 #### **1. Menguji phpMyAdmin**
 Setelah instalasi phpMyAdmin, memang nanti kita akan meng-konfigurasikan phpMyAdmin nya. Tapi, sebelum itu, kita harus memastikan terlebih dahulu kalau phpMyAdmin bisa di buka dengan baik lewat Peramban Web (_Web Browser_).
 
-Untuk melakukan nya, buka Web Browser Anda, lalu masukkan URL: `:::text http://localhost/phpmyadmin` pada Web Browser Anda, lalu tekan <kbd>Enter<kbd>.
+Untuk melakukan nya, buka Web Browser Anda, lalu masukkan URL: `:::text http://localhost/phpmyadmin` pada Peramban Web Anda, lalu tekan <kbd>Enter<kbd>.
 
 Jika Anda sudah berhasil membuka nya, maka harusnya tampilan nya menjadi seperti Cuplikan berikut:
 

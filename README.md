@@ -3,12 +3,16 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/farrelf/deploys)
 ![GitHub](https://img.shields.io/github/license/FarrelF/FarrelF-Blog?label=Lisensi&style=flat-square)
 
-*Repository* GitHub ini merupakan Kode Sumber dari Blog saya. Blog ini saya buat menggunakan Pelican, yang berbasis Python.
+_Repository_ GitHub ini merupakan Kode Sumber dari Blog saya. Blog ini saya buat menggunakan Pelican, yang berbasis Python.
 
 ## Cara Kerja
-Kode Sumber ini hanya berguna untuk menghasilkan berkas HTML statis saja, dan ini tidak bisa di eksekusi secara langsung, seperti hal nya Blog yang di buat dengan WordPress. (Karena sesuai dengan peruntukan nya, yakni: *Static Site Generator*)
+Kode Sumber ini hanya berguna sebagai konfigurasi dan menyimpan konten nya saja. Konfigurasi ini akan di gunakan ketika kita membuat Web/Blog Statis yang mana itu akan di hasilkan sebagai Berkas HTML, dan ini tidak bisa di eksekusi secara langsung, seperti hal nya Blog yang di buat dengan WordPress. (Karena sesuai dengan peruntukan nya, yakni: _Static Site Generator_)
 
-Untuk menghasilkan konten yang kemudian di sebar melalui Internet, saya men-*deploy* kode sumber ini ke Netlify, lalu mereka lah yang menghasilkan berkas HTML statis di dalam nya, yang kemudian di sebar ke Internet.
+Untuk menghasilkan konten yang kemudian di sebar melalui Internet, Layanan Platform Pengembangan CI/CD (_Continuous Integration and Delivery_) seperti [GitHub Actions](https://github.com/features/actions) akan membangun sebuah Web/Blog Statis yang tentu nya akan memanfaatkan Kode Sumber ini sebagai konfigurasi dan konten nya. Setelah membangun sebuah web/blog statis, mereka (GitHub Actions) akan menyebarkan hasil keluaran (_output_) nya ke Netlify melalui `netlify-cli`. 
+
+Untuk proses pembangunan nya atau ingin melihat log nya, Anda bisa lihat log nya [disini](https://github.com/FarrelF/FarrelF-Blog/actions).
+
+Jadi, Peran Netlify disini tidak membangun sebuah Web/Blog melalui kode sumber, melainkan cuma meng-_hosting_-kan hasil (_output_) nya saja, yakni berkas HTML yang di hasilkan oleh GitHub Actions tadi. 
 
 ## Persyaratan
 Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yakni ter-installnya:
@@ -19,11 +23,13 @@ Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yak
 - Poetry: https://python-poetry.org/docs/
 
 ### Persyaratan Opsional
-- NodeJS: https://nodejs.org/en/download/ (Opsional, tapi disarankan)
-- Yarn Package Manager: https://yarnpkg.com/lang/en/docs/install/ (Opsional, tapi disarankan setelah sudah ter-install NodeJS)
+- NodeJS: https://nodejs.org/en/download/ (Opsional, tapi disarankan)*
+- Yarn Package Manager: https://yarnpkg.com/lang/en/docs/install/ (Opsional, tapi disarankan setelah sudah ter-install NodeJS)*
 - GNU Make: https://www.gnu.org/software/make/ (Opsional, tapi di sarankan, meski ada alternatif nya, yakni 'Invoke' yang merupakan salah satu modul Python bisa langsung terinstall secara bawaan oleh Poetry)
 
 Di dalam Sistem Operasi Anda.
+
+**\*Catatan**: NodeJS bisa di Install melalui [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm) untuk pengguna Sistem Operasi berbasis *nix atau [`nvm-windows`](https://github.com/coreybutler/nvm-windows) untuk pengguna Windows. Sedangkan, "Yarn Package Manager" bisa di Install melalui [YVM (Yarn Version Manager)](https://yvm.js.org/docs/overview) setelah kamu meng-install NodeJS nya.
 
 ## Cara Memperoleh nya
 Untuk memperoleh nya, Anda bisa Unduh Kode Sumber nya dengan meng-klik pada *Button* 'Clone & Download', lalu kamu klik 'Download ZIP' untuk mengunduh nya sebagai ZIP.
