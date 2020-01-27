@@ -48,6 +48,7 @@ jobs:
         curl -sSL https://cdn.statically.io/gh/python-poetry/poetry/master/get-poetry.py | python
         source ${HOME}/.poetry/env
         poetry config virtualenvs.in-project true
+        echo "::add-path::${HOME}/.poetry/bin"
 
     - name: Getting Yarn Cache Directory
       id: yarn-cache
@@ -74,11 +75,10 @@ jobs:
     
     - name: Install Python and NodeJS Modules
       run: |
-        source ${HOME}/.poetry/env
         poetry install --no-dev
         yarn install --production=true --pure-lockfile
-        echo ::set-env name=GIT_COMMIT_HASH::$(git log --format="%h" -n 1 ${GITHUB_SHA})
-        echo ::set-env name=GIT_COMMIT_MESSAGE::$(git log --format="%s" -n 1 ${GITHUB_SHA})
+        echo "::set-env name=GIT_COMMIT_HASH::$(git log --format="%h" -n 1 ${GITHUB_SHA})"
+        echo "::set-env name=GIT_COMMIT_MESSAGE::$(git log --format="%s" -n 1 ${GITHUB_SHA})"
         echo "::add-path::$(yarn bin)"
 
     - name: Building the Blog HTML

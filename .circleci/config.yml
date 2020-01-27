@@ -8,16 +8,16 @@ executors:
 aliases:
   save_python_cache: &save_python_cache
     save_cache:
-      name: Saving Python Virtualenv Cache
-      key: v2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+      name: Saving Python Modules Cache
+      key: v2-2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
       paths:
-        - ~/.cache/pypoetry/virtualenvs
+        - .venv
 
   restore_python_cache: &restore_python_cache
     restore_cache:
-      name: Restoring Python Virtualenv/Venv Cache
+      name: Restoring Python Modules Cache
       keys:
-        - v2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+        - v2-2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
 
   install_node_and_yarn: &install_node_and_yarn
     run:
@@ -39,7 +39,7 @@ aliases:
 
         cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
         nvm install && nvm alias default "${NODEJS_VERSION}"
-        curl -s https://raw.githubusercontent.com/tophat/yvm/"${YVM_VERSION}"/scripts/install.sh | INSTALL_VERSION="${YVM_VERSION}" bash
+        curl -s https://raw.githubusercontent.com/tophat/yvm/"${YVM_VERSION}"/scripts/install.sh | bash
         {
          echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR'
          echo '. "${YVM_DIR}"/yvm.sh'
@@ -65,7 +65,7 @@ aliases:
 
   install_node_modules: &install_node_modules
     run:
-      name: Installing NodeJS Packages and it's Dependencies with Yarn
+      name: Installing NodeJS Modules with Yarn
       command: |
         {
          echo 'PATH=$(yarn bin):${PATH} && export PATH'
@@ -78,7 +78,7 @@ aliases:
 
   install_locales: &install_locales
     run:
-      name: Installing, Regenerating the System Locales, and Changing the Timezone
+      name: Installing and Set Up Locales
       command: |
         sudo apt install locales locales-all
         sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
@@ -91,9 +91,10 @@ aliases:
 
   install_python_dependencies: &install_python_dependencies
     run:
-      name: Installing All Python Packages and it's Dependencies
+      name: Installing All Python Modules and Configuring Poetry
       command: |
         poetry install --no-dev
+        poetry config virtualenvs.in-project true
 
   deploy_netlify: &deploy_netlify
     run:
