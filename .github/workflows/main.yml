@@ -6,6 +6,7 @@ on:
 
   pull_request:
     branches:
+      - drafts
       - master
 
 jobs:
@@ -34,7 +35,7 @@ jobs:
     - name: Set up Python ${{ env.PYTHON_VERSION }}
       uses: actions/setup-python@v1
       with:
-        python-version: ${{ env.PYTHON_VERSION }}
+        python-version: "${{ env.PYTHON_VERSION }}"
 
     - name: Specify NodeJS and Yarn Version
       run: |
@@ -82,7 +83,7 @@ jobs:
         poetry install --no-dev
         yarn install --production=true --pure-lockfile
         echo ::set-env name=GIT_COMMIT_HASH::$(git log --format="%h" -n 1 ${GITHUB_SHA})
-        echo ::set-env name-GIT_COMMIT_MESSAGE::$(git log --format="%s" -n 1 ${GITHUB_SHA})
+        echo ::set-env name=GIT_COMMIT_MESSAGE::$(git log --format="%s" -n 1 ${GITHUB_SHA})
         echo "::add-path::$(yarn bin)"
 
     - name: Building the Blog HTML (Not an Production Blog)

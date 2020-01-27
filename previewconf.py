@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from publishconf import *
 
-THEME = "Flex"
+THEME = "Flex"  # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan
 
 # Google
 GOOGLE_ANALYTICS = ""

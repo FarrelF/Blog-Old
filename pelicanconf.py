@@ -14,8 +14,7 @@ SITENAME = 'Farrel Franqois Blog'
 SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = '(Bukan) Sekedar blog pribadi saya'
 SITEDESCRIPTION = 'Ini adalah Blog saya, walaupun begitu, ini bukan berarti sekedar Blog Pribadi saja!'
-# Saya isikan dengan 'localhost' agar blog bisa di akses secara Offline
-SITEURL = 'http://localhost:{0}'.format(PORT)
+SITEURL = 'http://localhost:{0}'.format(PORT)  # Saya isikan dengan 'localhost' agar blog bisa di akses secara Offline
 FB_APP_ID = '1696840170451603'
 
 IGNORE_FILES = ['.#*']  # Mengabaikan Berkas
@@ -221,8 +220,11 @@ DATE_FORMATS = {
 
 def locale_settings(d, locale_language=LOCALE[0]):
     date_time = parser.parse(str(d))
-    date_format = str(format_date(
-        date_time, format='full', locale=locale_language))
+    date_format = str(
+        format_date(
+            date_time, format='full', locale=locale_language
+        )
+    )
     return date_format
 
 

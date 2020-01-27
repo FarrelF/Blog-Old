@@ -29,7 +29,7 @@ Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yak
 
 Di dalam Sistem Operasi Anda.
 
-**\*Catatan**: NodeJS bisa di Install melalui [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm) untuk pengguna Sistem Operasi berbasis *nix atau [`nvm-windows`](https://github.com/coreybutler/nvm-windows) untuk pengguna Windows. Sedangkan, "Yarn Package Manager" bisa di Install melalui [YVM (Yarn Version Manager)](https://yvm.js.org/docs/overview) setelah kamu meng-install NodeJS nya.
+**\*Catatan**: NodeJS bisa di Install melalui [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm) untuk pengguna Sistem Operasi berbasis \*nix atau [`nvm-windows`](https://github.com/coreybutler/nvm-windows) untuk pengguna Windows. Sedangkan, "Yarn Package Manager" bisa di Install melalui [YVM (Yarn Version Manager)](https://yvm.js.org/docs/overview) setelah kamu meng-install NodeJS nya.
 
 ## Cara Memperoleh nya
 Untuk memperoleh nya, Anda bisa Unduh Kode Sumber nya dengan meng-klik pada *Button* 'Clone & Download', lalu kamu klik 'Download ZIP' untuk mengunduh nya sebagai ZIP.
