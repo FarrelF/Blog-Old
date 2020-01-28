@@ -1,9 +1,5 @@
 name: Testing Site
 on: 
-  push:
-    branches:
-      - master
-
   pull_request:
     branches:
       - drafts
