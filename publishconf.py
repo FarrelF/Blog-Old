@@ -146,21 +146,22 @@ BING_SITE_VERIFICATION = '0BD80FDF817E3BE4D9E4C4149FF490BD'
 # Pengaturan Tema
 if USE_MINIFIED_SCRIPTS == True:
     CUSTOM_JS_NAME = 'custom.min.js'
+    CUSTOM_CSS_NAME = 'custom.min.css'
 
 else:
     CUSTOM_JS_NAME = 'custom.js'
+    CUSTOM_CSS_NAME = 'custom.css'
 
 # Mengatur Letak CSS yang di kustom
 if USE_CDN:
-    CUSTOM_CSS = 'content/extras/custom.min.css'
+    CUSTOM_CSS = 'content/extras/{0}'.format(CUSTOM_CSS_NAME)
     CUSTOM_JS = 'content/extras/{0}'.format(CUSTOM_JS_NAME)
 
 else:
-    CUSTOM_CSS = 'custom.min.css'
+    CUSTOM_CSS = CUSTOM_CSS_NAME
     CUSTOM_JS = CUSTOM_JS_NAME
 
-# Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
-THEME = 'themes/Flex'
+THEME = 'themes/Flex'  # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 ROBOTS = 'all'
 
 # Activating Cache
