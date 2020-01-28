@@ -76,6 +76,7 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: site-outputs
+        path: ./output
 
     - name: Specify NodeJS and Yarn Version
       run: |
