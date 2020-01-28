@@ -17,10 +17,16 @@ SITEURL = 'https://farrel.franqois.id'
 USE_CDN = True
 USE_LESS = False
 USE_MINIFIED_SCRIPTS = True
-CDN_THEME_REPO_BRANCH = '3a547f1'
-CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(CDN_THEME_REPO_BRANCH)
-CDN_BLOG_BRANCH = '8a61b9b'
-CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(CDN_BLOG_BRANCH)
+CDN_THEME_REPO_COMMIT = '3a547f1'
+CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(
+    CDN_THEME_REPO_COMMIT
+)
+
+CDN_BLOG_COMMIT = '455ce47'
+CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(
+    CDN_BLOG_COMMIT
+)
+
 CC_LICENSE['distribution-type'] = 'cdn'
 
 # Pengaturan Font
@@ -56,16 +62,22 @@ ADD_THIS = {
     }
 }
 
-EXTRA_FILES_DIR = 'extras' # Menentukan Lokasi Berkas Tambahan
+EXTRA_FILES_DIR = 'extras'  # Menentukan Lokasi Berkas Tambahan
 
 # Menambahkan Berkas-berkas Tambahan saat di terbitkan nanti.
 if type(EXTRA_FILES_NAME) is str:
     STATIC_PATHS.append('{0}/{1}'.format(EXTRA_FILES_DIR, EXTRA_FILES_NAME))
-    EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, EXTRA_FILES_NAME)] = {'path': '{0}'.format(EXTRA_FILES_NAME)}
-elif type(EXTRA_FILES_NAME) is list:
-    for values in EXTRA_FILES_NAME:
-        STATIC_PATHS.append('{0}/{1}'.format(EXTRA_FILES_DIR, values))
-        EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, values)] = {'path': '{0}'.format(values)}
+    EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, EXTRA_FILES_NAME)] = {
+        'path': '{0}'.format(EXTRA_FILES_NAME)
+    }
+
+elif type(EXTRA_FILES_NAME) is list or tuple:
+    for filenames in EXTRA_FILES_NAME:
+        STATIC_PATHS.append('{0}/{1}'.format(EXTRA_FILES_DIR, filenames))
+        EXTRA_PATH_METADATA['{0}/{1}'.format(EXTRA_FILES_DIR, filenames)] = {
+            'path': '{0}'.format(filenames)
+        }
+
 
 # Menambah Berkas HTML dari Google untuk Verifikasi saat di terbitkan nanti
 GOOGLE_SITE_VERIFICATION_HTML_FILENAME = [
@@ -76,12 +88,39 @@ GOOGLE_SITE_VERIFICATION_HTML_FILENAME = [
 GOOGLE_SITE_VERIFICATION_HTML_DIR = EXTRA_FILES_DIR
 
 if type(GOOGLE_SITE_VERIFICATION_HTML_FILENAME) is str:
-    STATIC_PATHS.append('{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, GOOGLE_SITE_VERIFICATION_HTML_FILENAME))
-    EXTRA_PATH_METADATA['{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, GOOGLE_SITE_VERIFICATION_HTML_FILENAME)] = {'path': '{0}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_FILENAME)}
-elif type(GOOGLE_SITE_VERIFICATION_HTML_FILENAME) is list:
-    for values in GOOGLE_SITE_VERIFICATION_HTML_FILENAME:
-        STATIC_PATHS.append('{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, values))
-        EXTRA_PATH_METADATA['{0}/{1}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_DIR, values)] = {'path': '{0}.html'.format(values)}
+    STATIC_PATHS.append(
+        '{0}/{1}.html'.format(
+            GOOGLE_SITE_VERIFICATION_HTML_DIR,
+            GOOGLE_SITE_VERIFICATION_HTML_FILENAME
+        )
+    )
+
+    EXTRA_PATH_METADATA[
+        '{0}/{1}.html'.format(
+            GOOGLE_SITE_VERIFICATION_HTML_DIR, 
+            GOOGLE_SITE_VERIFICATION_HTML_FILENAME
+        )
+    ] = {
+        'path': '{0}.html'.format(GOOGLE_SITE_VERIFICATION_HTML_FILENAME)
+    }
+
+elif type(GOOGLE_SITE_VERIFICATION_HTML_FILENAME) is list or tuple:
+    for filenames in GOOGLE_SITE_VERIFICATION_HTML_FILENAME:
+        STATIC_PATHS.append(
+            '{0}/{1}.html'.format(
+                GOOGLE_SITE_VERIFICATION_HTML_DIR, 
+                filenames
+            )
+        )
+        
+        EXTRA_PATH_METADATA[
+            '{0}/{1}.html'.format(
+                GOOGLE_SITE_VERIFICATION_HTML_DIR, 
+                filenames
+            )
+        ] = {
+            'path': '{0}.html'.format(filenames)
+        }
 
 # Agar Berkas 'custom.css' tidak di buat di dalam folder 'output' saat di terbitkan nanti, jika menggunakan CDN
 if USE_CDN:
@@ -98,7 +137,7 @@ else:
 SITELOGO_WIDTH = '140'
 SITELOGO_HEIGHT = '143'
 GOOGLE_SITE_VERIFICATION = [
-    'gWpIShFtX8KQbZw1OOHRTXY4QhyanAIVfSfyo6faiw0', 
+    'gWpIShFtX8KQbZw1OOHRTXY4QhyanAIVfSfyo6faiw0',
     'YHoyl7JPwHm7UBWzprZXnX0sQlLla1DjeULMGRqp6yA'
 ]
 
@@ -107,19 +146,22 @@ BING_SITE_VERIFICATION = '0BD80FDF817E3BE4D9E4C4149FF490BD'
 # Pengaturan Tema
 if USE_MINIFIED_SCRIPTS == True:
     CUSTOM_JS_NAME = 'custom.min.js'
+    CUSTOM_CSS_NAME = 'custom.min.css'
+
 else:
     CUSTOM_JS_NAME = 'custom.js'
+    CUSTOM_CSS_NAME = 'custom.css'
 
 # Mengatur Letak CSS yang di kustom
 if USE_CDN:
-    CUSTOM_CSS = 'content/extras/custom.min.css'
-    CUSTOM_JS = 'content/extras/{0}'.format(CUSTOM_JS_NAME) 
-    
+    CUSTOM_CSS = 'content/extras/{0}'.format(CUSTOM_CSS_NAME)
+    CUSTOM_JS = 'content/extras/{0}'.format(CUSTOM_JS_NAME)
+
 else:
-    CUSTOM_CSS = 'custom.min.css'
+    CUSTOM_CSS = CUSTOM_CSS_NAME
     CUSTOM_JS = CUSTOM_JS_NAME
 
-THEME = 'themes/Flex' # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
+THEME = 'themes/Flex'  # Nama dan lokasi Tema yang di gunakan, ini akan di gunakan untuk penerbitan/produksi
 ROBOTS = 'all'
 
 # Activating Cache
@@ -134,7 +176,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Disqus
 DISQUS_SITENAME = "FarrelF-Blog"
-DISQUS_IN_PAGES = True # Mengaktifkan Disqus di dalam Laman
+DISQUS_IN_PAGES = True  # Mengaktifkan Disqus di dalam Laman
 DISQUS_LAZYLOAD = True
 DISQUS_COMMENT_COUNT = True
 

@@ -3,136 +3,104 @@ version: 2.1
 executors:
   python:
     docker:
-      - image: circleci/python:3.7.5-buster
+      - image: circleci/python:3.7.6-buster
 
 aliases:
   save_python_cache: &save_python_cache
-    save_cache: 
-      name: Saving Python Virtualenv Cache
-      key: v2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+    save_cache:
+      name: Saving Python Modules Cache
+      key: v2-2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
       paths:
-        - ~/.cache/pypoetry/virtualenvs
-  
+        - .venv
+
   restore_python_cache: &restore_python_cache
     restore_cache:
-      name: Restoring Python Virtualenv/Venv Cache
-      keys: 
-        - v2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
-  
+      name: Restoring Python Modules Cache
+      keys:
+        - v2-2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+
   install_node_and_yarn: &install_node_and_yarn
     run:
       name: Installing NodeJS and Yarn Package Manager with Version Manager(s) (NVM and YVM)
       command: |
-          if [ -d "${HOME}/.nvm" ] && [ -d "${HOME}/.yvm" ]
-          then
-           {
-            echo 'NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" && export NVM_DIR'
-            echo '. "${NVM_DIR}"/nvm.sh'
-            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR'
-            echo '. "${YVM_DIR}"/yvm.sh'
-            echo 'NODEJS_VERSION=$(cat "${HOME}/project/.nvmrc") && export NODEJS_VERSION'
-            echo 'YARN_VERSION=$(cat "${HOME}/project/.yvmrc") && export YARN_VERSION'
-           } >> ${BASH_ENV}
+        {
+          echo 'NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION'
+          echo 'YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION'
+        } >> ${BASH_ENV}
+        . ${BASH_ENV}
 
-           cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
-           nvm install && nvm alias default "${NODEJS_VERSION}"
-          else
-           if [ -f "${HOME}"/project/.yvm-ver ] && [ -f "${HOME}"/project/.nvm-ver ]
-           then
-            {
-             echo 'NVM_VERSION=$(cat "${HOME}/project/.nvm-ver") && export NVM_VERSION'
-             echo 'YVM_VERSION=$(cat "${HOME}/project/.yvm-ver") && export YVM_VERSION'
-            } >> ${BASH_ENV}
-           elif [ ! -f "${HOME}"/project/.yvm-ver ] && [ -f "${HOME}"/project/.nvm-ver ]
-           then
-            {
-             echo 'NVM_VERSION=$(cat "${HOME}/project/.nvm-ver") && export NVM_VERSION'
-             echo 'YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION'
-            } >> ${BASH_ENV}
-           elif [ -f "${HOME}"/project/.yvm-ver ] && [ ! -f "${HOME}"/project/.nvm-ver ]
-           then
-            {
-             echo 'YVM_VERSION=$(cat "${HOME}/project/.yvm-ver") && export YVM_VERSION'
-             echo 'NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION'
-            } >> ${BASH_ENV}
-           else
-            {
-             echo 'NVM_VERSION=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export NVM_VERSION'
-             echo 'YVM_VERSION=$(curl -s https://api.github.com/repos/tophat/yvm/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export YVM_VERSION'
-            } >> ${BASH_ENV}
-           fi
-           . ${BASH_ENV}
-           wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/"${NVM_VERSION}"/install.sh | bash
-           {
-            echo 'NODEJS_VERSION=$(cat "${HOME}/project/.nvmrc") && export NODEJS_VERSION'
-            echo 'YARN_VERSION=$(cat "${HOME}/project/.yvmrc") && export YARN_VERSION'
-            echo 'NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" && export NVM_DIR'
-            echo '. "${NVM_DIR}"/nvm.sh'
-           } >> ${BASH_ENV}
+        wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/"${NVM_VERSION}"/install.sh | bash
+        {
+          echo 'NODEJS_VERSION=$(cat "${HOME}/project/.nvmrc") && export NODEJS_VERSION'
+          echo 'YARN_VERSION=$(cat "${HOME}/project/.yvmrc") && export YARN_VERSION'
+          echo 'NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" && export NVM_DIR'
+          echo '. "${NVM_DIR}"/nvm.sh'
+        } >> ${BASH_ENV}
 
-           cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
-           nvm install && nvm alias default "${NODEJS_VERSION}"
-           curl -s https://raw.githubusercontent.com/tophat/yvm/"${YVM_VERSION}"/scripts/install.sh | INSTALL_VERSION="${YVM_VERSION}" bash
-           {
-            echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR'
-            echo '. "${YVM_DIR}"/yvm.sh'
-           } >> ${BASH_ENV}
+        cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
+        nvm install && nvm alias default "${NODEJS_VERSION}"
+        curl -s https://raw.githubusercontent.com/tophat/yvm/"${YVM_VERSION}"/scripts/install.sh | bash
+        {
+         echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR'
+         echo '. "${YVM_DIR}"/yvm.sh'
+        } >> ${BASH_ENV}
 
-           cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
-           fi
-           yvm install && yvm alias default "${YARN_VERSION}"
+        cd .. && . ${BASH_ENV} && cd "${HOME}"/project || exit
+        yvm install && yvm alias default "${YARN_VERSION}"
 
   save_node_yarn_cache: &save_node_yarn_cache
     save_cache:
       name: Saving NodeJS and Yarn Installation Cache
-      key: v1-1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
+      key: v2-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
       paths:
-        - ~/.nvm
-        - ~/.yvm
-  
+        - ~/.nvm/cache
+        - ~/.nvm/versions
+        - ~/.yvm/versions
+
   restore_node_yarn_cache: &restore_node_yarn_cache
     restore_cache:
       name: Restoring NodeJS and Yarn Installation Cache
-      keys: 
-        - v1-1-{{ checksum ".nvm-ver" }}-{{ checksum ".yvm-ver" }}-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
+      keys:
+        - v2-{{ checksum ".nvmrc" }}-{{ checksum ".yvmrc" }}
 
   install_node_modules: &install_node_modules
     run:
-      name: Installing NodeJS Packages and it's Dependencies with Yarn
+      name: Installing NodeJS Modules with Yarn
       command: |
-          {
-           echo 'PATH=$(yarn bin):${PATH} && export PATH'
-           echo 'NODE_ENV=production && export NODE_ENV'
-           echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 ${CIRCLE_SHA1}) && export GIT_COMMIT_HASH'
-           echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 ${CIRCLE_SHA1}) && export GIT_COMMIT_MESSAGE'
-          } >> ${BASH_ENV}
-          . ${BASH_ENV}
-          yarn install --production=true
-  
+        {
+         echo 'PATH=$(yarn bin):${PATH} && export PATH'
+         echo 'NODE_ENV=production && export NODE_ENV'
+         echo 'GIT_COMMIT_HASH=$(git log --format="%h" -n 1 ${CIRCLE_SHA1}) && export GIT_COMMIT_HASH'
+         echo 'GIT_COMMIT_MESSAGE=$(git log --format="%s" -n 1 ${CIRCLE_SHA1}) && export GIT_COMMIT_MESSAGE'
+        } >> ${BASH_ENV}
+        . ${BASH_ENV}
+        yarn install --production=true --pure-lockfile
+
   install_locales: &install_locales
     run:
-      name: Installing, Regenerating the System Locales, and Changing the Timezone
+      name: Installing and Set Up Locales
       command: |
-          sudo apt install locales locales-all
-          sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
-          sudo sed -i 's/# id_ID\.UTF-8/id_ID\.UTF-8/' /etc/locale.gen
-          sudo update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX
-          DEBIAN_FRONTEND=noninteractive sudo -E dpkg-reconfigure locales
-          sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-          echo "TZ='Asia/Jakarta' && export TZ" >> ${BASH_ENV}
-          . ${BASH_ENV}
+        sudo apt install locales locales-all
+        sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
+        sudo sed -i 's/# id_ID\.UTF-8/id_ID\.UTF-8/' /etc/locale.gen
+        sudo update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX
+        DEBIAN_FRONTEND=noninteractive sudo -E dpkg-reconfigure locales
+        sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+        echo "TZ='Asia/Jakarta' && export TZ" >> ${BASH_ENV}
+        . ${BASH_ENV}
 
   install_python_dependencies: &install_python_dependencies
     run:
-      name: Installing All Python Packages and it's Dependencies
+      name: Installing All Python Modules and Configuring Poetry
       command: |
-          poetry install --no-dev
-  
+        poetry config virtualenvs.in-project true
+        poetry install --no-dev
+
   deploy_netlify: &deploy_netlify
     run:
       name: Deploying with Netlify
       command: netlify deploy --dir=./output -p -m "CircleCI ($GIT_COMMIT_HASH)":" $CIRCLE_BRANCH - $GIT_COMMIT_MESSAGE"
-  
+
   deploy_netlify_preview: &deploy_netlify_preview
     run:
       name: Deploying with Netlify (Preview Mode)
@@ -142,13 +110,13 @@ aliases:
     run:
       name: Publishing the Blog (Production Blog)
       command: poetry run make REBUILD=1 publish
-  
+
   build_html: &build_html
     run:
       name: Building the Blog HTML (Not an Production Blog)
       command: |
-          poetry run make devtheme
-          poetry run make REBUILD=1 preview
+        poetry run make devtheme
+        poetry run make REBUILD=1 preview
 
   save_node_modules_cache: &save_node_modules_cache
     save_cache:
@@ -194,7 +162,7 @@ jobs:
       - persist_to_workspace:
           name: Persisting Outputs to Workspace
           root: "./"
-          paths: 
+          paths:
             - "output"
 
   deploy:
@@ -215,9 +183,9 @@ workflows:
     jobs:
       - test
       - build:
-          requires: 
+          requires:
             - "test"
-      - deploy: 
+      - deploy:
           requires:
             - "build"
           filters:

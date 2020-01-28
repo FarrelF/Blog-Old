@@ -24,7 +24,7 @@ pylint = "*"
 livereload = "*"
 typogrify = "*"
 doc8 = "*"
-flake8 = "*"
+autopep8 = "*"
 
 [build-system]
 requires = ["poetry>=0.12"]

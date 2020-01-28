@@ -72,7 +72,7 @@ help:
 	@echo 'Set the PRODUCTION variable to 1 if you want using a command for production purpose                            '
 
 install:
-	@echo 'Installing the Website/Blog packages and its dependencies, please wait....'
+	@echo 'Installing the Website/Blog modules and its dependencies, please wait....'
 ifeq ($(WITH_YARN), 1)
 	$(INSTALLER) install $(INSTALLOPT) && $(INSTALLER) shell
 	yarn install $(YARN_FLAGS)

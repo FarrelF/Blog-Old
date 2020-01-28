@@ -1,9 +1,8 @@
-import fs from "fs";
-import path from "path";
-import { watch, parallel } from "gulp";
-import { exec } from "child_process";
-import { create as browserSyncCreate } from "browser-sync";
-const browserSync = browserSyncCreate();
+var { watch, parallel } = require("gulp");
+var { exec } = require("child_process");
+var browserSync = require('browser-sync').create();
+var fs = require("fs");
+var path = require("path");
 
 const content_404 = fs.readFileSync(
   path.join(__dirname, "output/404.html")
@@ -106,7 +105,9 @@ const invoke_build = parallel(watchInvokeFiles, reload);
 const make_html = parallel(watchMakeFiles, reload);
 const publish = parallel(watchPublishFiles, reload);
 
-exports.publish = publish
-exports.invoke_build = invoke_build;
-exports.make_html = make_html;
-exports.default = invoke_build;
+const _publish = publish;
+const _invoke_build = invoke_build;
+const _make_html = make_html;
+const _default = invoke_build;
+exports.publish = _publish, exports.invoke_build = _invoke_build, exports.make_html = _make_html, exports.default = _default;
+

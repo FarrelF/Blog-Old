@@ -14,10 +14,10 @@ SITENAME = 'Farrel Franqois Blog'
 SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = '(Bukan) Sekedar blog pribadi saya'
 SITEDESCRIPTION = 'Ini adalah Blog saya, walaupun begitu, ini bukan berarti sekedar Blog Pribadi saja!'
-SITEURL = 'http://localhost:{0}'.format(PORT) # Saya isikan dengan 'localhost' agar blog bisa di akses secara Offline
+SITEURL = 'http://localhost:{0}'.format(PORT)  # Saya isikan dengan 'localhost' agar blog bisa di akses secara Offline
 FB_APP_ID = '1696840170451603'
 
-IGNORE_FILES = ['.#*'] # Mengabaikan Berkas
+IGNORE_FILES = ['.#*']  # Mengabaikan Berkas
 
 DEFAULT_METADATA = {
     'status': 'draft',
@@ -57,7 +57,7 @@ AUTHOR_URL = 'penulis/{slug}'
 CATEGORY_URL = 'kategori/{slug}'
 CATEGORY_SAVE_AS = 'kategori/{slug}/index.html'
 
-#Tag
+# Tag
 TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAG_URL = 'tag/{slug}'
 
@@ -87,19 +87,28 @@ EXTRA_PATH_METADATA = {
 }
 
 # Pengaturan Tampilan
-CUSTOM_CSS = 'custom.css' # Menentukan lokasi Berkas CSS yang di buat sendiri
-CUSTOM_JS = CUSTOM_JS_NAME # Menentukan lokasi Berkas JS yang di buat sendiri
+CUSTOM_CSS = 'custom.css'  # Menentukan lokasi Berkas CSS yang di buat sendiri
+CUSTOM_JS = CUSTOM_JS_NAME  # Menentukan lokasi Berkas JS yang di buat sendiri
 USE_CDN = False
 USE_LESS = False
-THEME = 'Flex' # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
+THEME = 'Flex'  # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
-DISABLE_URL_HASH = True # Menonaktifkan Tanda Pagar pada Link URL setiap ke artikel/halaman
+# Menonaktifkan Tanda Pagar pada Link URL setiap ke artikel/halaman
+DISABLE_URL_HASH = True
 CHECK_MODIFIED_METHOD = 'sha256'
 
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['extended_sitemap', 'filetime_from_git', 'more_categories', 'summary', 'pelican_htmlmin', 'interlinks']
+PLUGINS = [
+    'extended_sitemap', 
+    'filetime_from_git',
+    'more_categories', 
+    'summary', 
+    'pelican_htmlmin', 
+    'interlinks'
+]
+
 EXTENDED_SITEMAP_PLUGIN = {
     'priorities': {
         'index': 1.0,
@@ -143,7 +152,7 @@ GOOGLE_SEARCH = {
     'partner_id': 'partner-pub-2432124491852819:4493745682',
     'options': {
         'using_google_searchbox': False,
-        'search_style': '' # Nilai ini akan berubah jika Opsi 'using_google_searchbox' berubah, jadi sebaiknya opsi ini tidak usah di isi
+        'search_style': ''  # Nilai ini akan berubah jika Opsi 'using_google_searchbox' berubah, jadi sebaiknya opsi ini tidak usah di isi
     }
 }
 
@@ -153,37 +162,37 @@ else:
     GOOGLE_SEARCH['options']['search_style'] = 'gcse-search'
 
 # Pengaturan Markdown
-PYGMENTS_STYLE = 'monokai' # Tampilan Pygments yang merupakan Syntax Highlighter
+PYGMENTS_STYLE = 'monokai'  # Tampilan Pygments yang merupakan Syntax Highlighter
 MARKDOWN = {
-  'extension_configs': {
-    'markdown.extensions.toc': {},
-    'markdown.extensions.meta': {},
-    'pymdownx.highlight': {
-        'css_class': 'highlight',
-        'pygments_style': PYGMENTS_STYLE,
-        'guess_lang': False,
-    },
-    'pymdownx.extra': {},
-    'pymdownx.escapeall': {},
-    'pymdownx.emoji': {
-        'emoji_index': emoji.twemoji,
-        'emoji_generator': emoji.to_svg,
-        'alt': 'short',
-        'options': {
-            'attributes': {
-                'height': '16px',
-                'width': '16px'
-            },
-            'classes': 'twemoji_emojis',
-            'image_path': 'https://cdn.statically.io/gh/twitter/twemoji/v12.1.3/assets/svg/',
+    'extension_configs': {
+        'markdown.extensions.toc': {},
+        'markdown.extensions.meta': {},
+        'pymdownx.highlight': {
+            'css_class': 'highlight',
+            'pygments_style': PYGMENTS_STYLE,
+            'guess_lang': False,
         },
+        'pymdownx.extra': {},
+        'pymdownx.escapeall': {},
+        'pymdownx.emoji': {
+            'emoji_index': emoji.twemoji,
+            'emoji_generator': emoji.to_svg,
+            'alt': 'short',
+            'options': {
+                'attributes': {
+                    'height': '16px',
+                    'width': '16px'
+                },
+                'classes': 'twemoji_emojis',
+                'image_path': 'https://cdn.statically.io/gh/twitter/twemoji/v12.1.3/assets/svg/',
+            },
+        },
+        'pymdownx.superfences': {},
+        'pymdownx.inlinehilite': {},
+        'pymdownx.magiclink': {},
+        'pymdownx.details': {},
     },
-    'pymdownx.superfences': {},
-    'pymdownx.inlinehilite': {},
-    'pymdownx.magiclink': {},
-    'pymdownx.details': {},
-  },
-  'output_format': 'html5',
+    'output_format': 'html5',
 }
 
 # Hak Cipta
@@ -199,7 +208,7 @@ CC_LICENSE = {
 }
 
 # Pengaturan Bahasa, Waktu dan Lokalisasi
-TIMEZONE = 'Asia/Jakarta' # Zona Waktu yang di gunakan
+TIMEZONE = 'Asia/Jakarta'  # Zona Waktu yang di gunakan
 DEFAULT_DATE = 'fs'
 DEFAULT_LANG = 'id'
 OG_LOCALE = 'id_ID'
@@ -208,12 +217,18 @@ DATE_FORMATS = {
     'id': ('%A, %d %B %Y'),
 }
 
+
 def locale_settings(d, locale_language=LOCALE[0]):
     date_time = parser.parse(str(d))
-    date_format = str(format_date(date_time, format='full', locale=locale_language))
+    date_format = str(
+        format_date(
+            date_time, format='full', locale=locale_language
+        )
+    )
     return date_format
 
-JINJA_FILTERS = {'locale_settings':locale_settings}
+
+JINJA_FILTERS = {'locale_settings': locale_settings}
 
 LAZYLOAD_IMAGES = True
 
@@ -239,13 +254,13 @@ LINKS = ()
 
 # Social widget
 SOCIAL = (
-          ('facebook', 'https://www.facebook.com/FarrelFranqois'),
-          ('twitter', 'https://twitter.com/FarrelFranqois'),
-          ('github', 'https://github.com/FarrelF'),
-          ('gitlab', 'https://gitlab.com/FarrelF'),
-          ('telegram', 'https://t.me/FarrelF'),
-          ('keybase', 'https://keybase.io/farrelf')
-         )
+    ('facebook', 'https://www.facebook.com/FarrelFranqois'),
+    ('twitter', 'https://twitter.com/FarrelFranqois'),
+    ('github', 'https://github.com/FarrelF'),
+    ('gitlab', 'https://gitlab.com/FarrelF'),
+    ('telegram', 'https://t.me/FarrelF'),
+    ('keybase', 'https://keybase.io/farrelf')
+)
 
 DEFAULT_PAGINATION = 5
 

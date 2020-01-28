@@ -85,7 +85,7 @@ Untuk pengguna macOS, bisa Anda Unduh dan Install Git nya dari [sini](https://gi
 Sedangkan untuk Windows, Anda bisa ikuti petunjuk nya berikut.
 
 ### **Cara Install Git di Windows**
-Cara Install Git di Windows sangatlah berbeda daripada Install Git di GNU/Linux, Installer nya menggunakan GUI, sehingga dapat mempermudah kamu selama meng-install Git.
+Cara Install Git di Windows sangatlah berbeda daripada Install Git di Sistem Operasi berbasis Unix/Unix-like (\*nix). Installer nya menggunakan GUI, sehingga dapat mempermudah kamu selama meng-install Git.
 
 Hanya saja, jika kamu salah langkah, maka yang terjadi adalah Git akan mengalami "kesalahan" (_error_) saat di gunakan, entah itu tidak bisa meng-kloning _Repository_ sampai mengurus nya.
 
@@ -141,7 +141,7 @@ Pada langkah **Choose HTTPS transport backend**, Anda akan menentukan *Library*/
 
 Saya sarankan untuk menggunakan Pustaka Bawaan dari Windows saja, yakni ['Windows Secure Channel'](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380123(v=vs.85).aspx) (atau bisa di sebut 'winSSL' atau 'Schannel'), agar Git dapat mengenali CA (Certification Authority) dan Sertifikat SSL lain nya secara langsung di dalam Windows. 
 
-Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL dan mempunyai berkas `:::text ca-bundle.crt` di dalam Windows), seperti pada cuplikan layar berikut ini:
+Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL dan mempunyai berkas `:::text ca-bundle.crt` di dalam Windows dan itupun belum saya tes), seperti pada cuplikan layar berikut ini:
 
 [<img data-src="https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png?quality=80" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://cdn.statically.io/gl/FarrelF/blog-images/0e1e98da/cara-install-git/Install_Git_5.png)
 

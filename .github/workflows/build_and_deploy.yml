@@ -1,0 +1,88 @@
+name: Build and Deploy
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  Publish:
+    runs-on: ubuntu-18.04
+    env:
+      TZ: Asia/Jakarta
+      BRANCH_NAME: ${{ github.ref }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      NODE_ENV: production
+      PYTHON_VERSION: 3.7
+    steps:
+    - name: Checkout the Code
+      uses: actions/checkout@v1
+
+    - name: Install and Set up Locales
+      run: |
+        sudo apt install locales locales-all
+        sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
+        sudo sed -i 's/# id_ID\.UTF-8/id_ID\.UTF-8/' /etc/locale.gen
+        sudo update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX
+        DEBIAN_FRONTEND=noninteractive sudo -E dpkg-reconfigure locales
+        sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+
+    - name: Set up Python ${{ env.PYTHON_VERSION }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: "${{ env.PYTHON_VERSION }}"
+
+    - name: Specify NodeJS and Yarn Version
+      run: |
+        echo "::set-output name=NVMRC::$(cat .nvmrc)"
+        echo "::set-output name=YVMRC::$(cat .yvmrc)"
+      id: vm
+    
+    - name: Set up NodeJS and Yarn
+      uses: actions/setup-node@v1
+      with:
+        node-version: "${{ steps.vm.outputs.NVMRC }}"
+    
+    - name: Install and Set up Poetry
+      run: |
+        curl -sSL https://cdn.statically.io/gh/python-poetry/poetry/master/get-poetry.py | python
+        source ${HOME}/.poetry/env
+        poetry config virtualenvs.in-project true
+        echo "::add-path::${HOME}/.poetry/bin"
+
+    - name: Getting Yarn Cache Directory
+      id: yarn-cache
+      run: |
+        echo "::set-output name=dir::$(yarn cache dir)"
+    
+    - name: Set up Python Modules Cache
+      uses: actions/cache@v1
+      with:
+        path: .venv
+        key: v1-python-${{ hashFiles('**/poetry.lock') }}-${{ hashFiles('**/pyproject.toml') }}
+        restore-keys: | 
+          v1-python-${{ hashFiles('**/poetry.lock') }}-
+    
+    - name: Set up NodeJS Modules Cache
+      uses: actions/cache@v1
+      with:
+        path: ${{ steps.yarn-cache.outputs.dir }}
+        key: v1-nodejs-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**/package.json') }}
+        restore-keys: |
+          v1-nodejs-${{ hashFiles('**/yarn.lock') }}-
+    
+    - name: Install Python and NodeJS Modules
+      run: |
+        poetry install --no-dev
+        yarn install --production=true --pure-lockfile
+        echo "::set-env name=GIT_COMMIT_HASH::$(git log --format="%h" -n 1 ${GITHUB_SHA})"
+        echo "::set-env name=GIT_COMMIT_MESSAGE::$(git log --format="%s" -n 1 ${GITHUB_SHA})"
+        echo "::add-path::$(yarn bin)"
+
+    - name: Building the Blog HTML
+      run: |
+        poetry run make publish
+    
+    - name: Deploying with Netlify
+      run: |
+        netlify deploy --dir=./output -p -m "GitHub Actions (${GIT_COMMIT_HASH})":" ${BRANCH_NAME} - ${GIT_COMMIT_MESSAGE}"

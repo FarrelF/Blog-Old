@@ -19,10 +19,9 @@
 __pycache__/
 __cache__/
 .vscode/
-/pelican-env/
-/pelican-envs/
 /themes/
 /node_modules/
+.venv/
 
 # Local Netlify folder
 .netlify
