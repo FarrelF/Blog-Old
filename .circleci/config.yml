@@ -9,7 +9,7 @@ aliases:
   save_python_cache: &save_python_cache
     save_cache:
       name: Saving Python Modules Cache
-      key: v2-2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+      key: v2-2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
       paths:
         - .venv
 
@@ -17,7 +17,7 @@ aliases:
     restore_cache:
       name: Restoring Python Modules Cache
       keys:
-        - v2-2-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
+        - v2-2-1-python-cache-key-{{ checksum "pyproject.toml" }}-{{ checksum "poetry.lock" }}
 
   install_node_and_yarn: &install_node_and_yarn
     run:
@@ -93,8 +93,8 @@ aliases:
     run:
       name: Installing All Python Modules and Configuring Poetry
       command: |
-        poetry install --no-dev
         poetry config virtualenvs.in-project true
+        poetry install --no-dev
 
   deploy_netlify: &deploy_netlify
     run:
