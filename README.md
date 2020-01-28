@@ -1,5 +1,5 @@
 # Farrel Franqois Blog
-[![GitHub Actions](https://github.com/FarrelF/FarrelF-Blog/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/FarrelF/FarrelF-Blog/actions)
+[![GitHub Actions](https://github.com/FarrelF/FarrelF-Blog/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/FarrelF/FarrelF-Blog/actions?query=workflow%3A%22Build+and+Deploy%22)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/farrelf/deploys)
 ![GitHub](https://img.shields.io/github/license/FarrelF/FarrelF-Blog?label=Lisensi&style=flat-square)
 
@@ -10,7 +10,7 @@ Kode Sumber ini hanya berguna sebagai konfigurasi dan menyimpan konten nya saja.
 
 Untuk menghasilkan konten yang kemudian di sebar melalui Internet, Layanan Platform Pengembangan CI/CD (_Continuous Integration and Delivery_) seperti [GitHub Actions](https://github.com/features/actions) akan membangun sebuah Web/Blog Statis yang tentu nya akan memanfaatkan Kode Sumber ini sebagai konfigurasi dan konten nya. Setelah membangun sebuah web/blog statis, mereka (GitHub Actions) akan menyebarkan hasil keluaran (_output_) nya ke Netlify melalui `netlify-cli`. 
 
-Untuk proses pembangunan nya atau ingin melihat log nya, Anda bisa lihat log nya [disini](https://github.com/FarrelF/FarrelF-Blog/actions).
+Untuk proses pembangunan nya atau ingin melihat log nya, Anda bisa lihat log nya [disini](https://github.com/FarrelF/FarrelF-Blog/actions). (Selama kamu login ke GitHub menggunakan Akun kamu, kalau tidak, maka kamu tidak bisa mengakses nya)
 
 Jadi, Peran Netlify disini tidak membangun sebuah Web/Blog melalui kode sumber, melainkan cuma meng-_hosting_-kan hasil (_output_) nya saja, yakni berkas HTML yang di hasilkan oleh GitHub Actions tadi. 
 
@@ -68,7 +68,7 @@ $ poetry install --no-dev
 ```
 
 ### Mengenai Berkas `NetlifyBuild.sh`
-**Catatan:** Karena sekarang blog ini di bangun dengan bantuan CircleCI dan Netlify hanya men-*deploy* HTML nya saja, maka kemungkinan berkas [`NetlifyBuild.sh`](NetlifyBuild.sh) tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas [`.circleci/config.yml`](.circleci/config.yml).
+**Catatan:** Karena sekarang blog ini di bangun dengan bantuan GitHub Actions dan Netlify hanya men-*hosting*-kan berkas HTML nya saja, maka kemungkinan berkas [`NetlifyBuild.sh`](NetlifyBuild.sh) tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas konfigurasi nya di dalam folder [`.github/workflows`](.github/workflows).
 
 Sebenarnya, berkas tersebut saya buat agar Netlify bisa meng-install semua keperluan nya dengan baik, termasuk Poetry yang merupakan Pengelola Paket dan Ketergantungan untuk Python, yang sampai saat ini [tidak di dukung secara langsung](https://github.com/netlify/build-image/issues/221) oleh Netlify.
 

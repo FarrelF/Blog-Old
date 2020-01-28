@@ -78,7 +78,7 @@ jobs:
         name: site-outputs
         path: ./output
 
-    - name: Specify NodeJS and Yarn Version
+    - name: Getting NodeJS and Yarn Version
       run: |
         echo "::set-output name=NVMRC::$(cat .nvmrc)"
         echo "::set-output name=YVMRC::$(cat .yvmrc)"
