@@ -64,7 +64,7 @@ jobs:
     name: Deploy (Preview)
     needs: build
     runs-on: ubuntu-18.04
-    envs:
+    env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       NODE_ENV: production
