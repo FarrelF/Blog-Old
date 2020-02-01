@@ -2,9 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink, escapeall, details
-from datetime import date, datetime, time
+from datetime import *
 from babel.dates import format_date, format_datetime, format_time
 from dateutil import parser
+import git
+import time
 
 AUTHOR = 'Farrel Franqois'
 
@@ -23,6 +25,40 @@ DEFAULT_METADATA = {
     'status': 'draft',
     'author': AUTHOR
 }
+
+# Pengaturan Bahasa, Waktu dan Lokalisasi
+TIMEZONE = 'Asia/Jakarta'  # Zona Waktu yang di gunakan
+DEFAULT_DATE = 'fs'
+DEFAULT_LANG = 'id'
+OG_LOCALE = 'id_ID'
+LOCALE = ('id_ID', 'id_ID.utf8', 'id_ID.UTF-8')
+DATE_FORMATS = {
+    'id': ('%A, %d %B %Y'),
+}
+
+
+def locale_date(d, locale_language=LOCALE[0]):
+    date_time = parser.parse(str(d))
+    date_format = str(
+        format_date(
+            date_time, format='full', locale=locale_language
+        )
+    )
+    return date_format
+
+
+def locale_datetime(d, locale_language=LOCALE[0]):
+    date_time = parser.parse(str(d))
+    time_zone = str(datetime.now(timezone(timedelta(0))).astimezone().tzinfo)
+    date_format = str(
+        format_datetime(
+            date_time, "EEEE, dd LLLL yyyy, 'pukul' HH:mm:ss '{0}'".format(time_zone), locale=locale_language
+        )
+    )
+    return date_format
+
+
+JINJA_FILTERS = {'locale_date': locale_date}
 
 # Pengaturan Font
 USE_GOOGLE_CDN_FOR_FONTS = False
@@ -207,28 +243,11 @@ CC_LICENSE = {
     'distribution-type': 'local'
 }
 
-# Pengaturan Bahasa, Waktu dan Lokalisasi
-TIMEZONE = 'Asia/Jakarta'  # Zona Waktu yang di gunakan
-DEFAULT_DATE = 'fs'
-DEFAULT_LANG = 'id'
-OG_LOCALE = 'id_ID'
-LOCALE = ('id_ID', 'id_ID.utf8', 'id_ID.UTF-8')
-DATE_FORMATS = {
-    'id': ('%A, %d %B %Y'),
-}
-
-
-def locale_settings(d, locale_language=LOCALE[0]):
-    date_time = parser.parse(str(d))
-    date_format = str(
-        format_date(
-            date_time, format='full', locale=locale_language
-        )
-    )
-    return date_format
-
-
-JINJA_FILTERS = {'locale_settings': locale_settings}
+# Pengaturan Penampilan Commit Git di Akhir Blog
+SHOW_LAST_COMMIT = True
+COMMIT = str(git.Repo().head.commit)
+SHORT_COMMIT = COMMIT[0:7]
+COMMIT_DATETIME = locale_datetime(git.Repo().head.commit.authored_datetime)
 
 LAZYLOAD_IMAGES = True
 
