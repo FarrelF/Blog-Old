@@ -6,7 +6,6 @@ from datetime import *
 from babel.dates import format_date, format_datetime, format_time
 from dateutil import parser
 import git
-import time
 
 AUTHOR = 'Farrel Franqois'
 
@@ -191,6 +190,7 @@ GOOGLE_SEARCH = {
         'search_style': ''  # Nilai ini akan berubah jika Opsi 'using_google_searchbox' berubah, jadi sebaiknya opsi ini tidak usah di isi
     }
 }
+SEARCHBOX_ON_SIDEBAR = True
 
 if GOOGLE_SEARCH['options']['using_google_searchbox'] == True:
     GOOGLE_SEARCH['options']['search_style'] = 'gcse-searchresults-only'
@@ -220,7 +220,7 @@ MARKDOWN = {
                     'width': '16px'
                 },
                 'classes': 'twemoji_emojis',
-                'image_path': 'https://cdn.statically.io/gh/twitter/twemoji/v12.1.3/assets/svg/',
+                'image_path': 'https://cdn.statically.io/gh/twitter/twemoji/v12.1.5/assets/svg/',
             },
         },
         'pymdownx.superfences': {},
@@ -248,6 +248,7 @@ SHOW_LAST_COMMIT = True
 COMMIT = str(git.Repo().head.commit)
 SHORT_COMMIT = COMMIT[0:7]
 COMMIT_DATETIME = locale_datetime(git.Repo().head.commit.authored_datetime)
+REPO_URL = "https://github.com/FarrelF/FarrelF-Blog"
 
 LAZYLOAD_IMAGES = True
 

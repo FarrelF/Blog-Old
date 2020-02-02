@@ -17,7 +17,7 @@ SITEURL = 'https://farrel.franqois.id'
 USE_CDN = True
 USE_LESS = False
 USE_MINIFIED_SCRIPTS = True
-CDN_THEME_REPO_COMMIT = '3a547f1'
+CDN_THEME_REPO_COMMIT = '602caad'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(
     CDN_THEME_REPO_COMMIT
 )
@@ -130,7 +130,7 @@ if USE_CDN:
     del EXTRA_PATH_METADATA['extras/custom.js']
 
 if USE_CDN:
-    SITELOGO = '{0}/content/img/profile_avatar.jpg'.format(CDN_STATIC_BLOG_URL)
+    SITELOGO = 'https://cdn.statically.io/img/farrel.franqois.id/img/profile_avatar.jpg'
 else:
     SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
 
