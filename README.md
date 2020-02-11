@@ -1,7 +1,7 @@
 # Farrel Franqois Blog
 [![GitHub Actions](https://github.com/FarrelF/FarrelF-Blog/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/FarrelF/FarrelF-Blog/actions?query=workflow%3A%22Build+and+Deploy%22)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/farrelf/deploys)
-![GitHub](https://img.shields.io/github/license/FarrelF/FarrelF-Blog?label=Lisensi&style=flat-square)
+[![Lisensi](https://img.shields.io/github/license/FarrelF/FarrelF-Blog?label=Lisensi&style=flat-square)](LICENSE)
 
 _Repository_ GitHub ini merupakan Kode Sumber dari Blog saya. Blog ini saya buat menggunakan Pelican, yang berbasis Python.
 
@@ -120,13 +120,13 @@ Atau, jika Anda tidak ingin repot-repot melakukan hal di atas pada Windows, sert
 **Catatan**: Hal ini bisa di lakukan jika di dalam Sistem Operasi Anda sudah terinstall Node.js, dan Yarn Package Manager, serta sudah melakukan instalasi modul JavaScript lain nya (seperti Gulp.js) dengan Yarn, caranya ada [di atas](#cara-install).
 
 ```bash
-$ yarn invoke-devserver
+$ yarn invoke:devserver
 ```
 
 Atau, jika kamu terinstall [GNU Make](https://www.gnu.org/software/make/), maka kamu bisa ikuti perintah berikut:
 
 ```bash
-$ yarn make-devserver
+$ yarn make:devserver
 ```
 
 Perintah di atas juga bisa dilakukan oleh hampir semua Sistem Operasi (termasuk GNU/Linux dan macOS) selama bisa terinstall dan menggunakan Python Invoke atau GNU Make, NodeJS dan Yarn Package Manager.

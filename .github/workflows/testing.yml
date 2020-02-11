@@ -14,7 +14,9 @@ jobs:
       PYTHON_VERSION: 3.7
     steps:
     - name: Checkout the Code
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
 
     - name: Install and Set up Locales
       run: |
@@ -67,9 +69,6 @@ jobs:
     env:
       NODE_ENV: production
     steps:
-    - name: Checkout the Code
-      uses: actions/checkout@v2
-
     - name: Download Outputs from Artifact
       uses: actions/download-artifact@v1
       with:
@@ -77,38 +76,39 @@ jobs:
         path: ./output
 
     - name: Getting NodeJS and Yarn Version
+      shell: bash -l -eo pipefail {0}
       run: |
         echo "::set-output name=NVMRC::$(cat .nvmrc)"
         echo "::set-output name=YVMRC::$(cat .yvmrc)"
       id: vm
     
-    - name: Set up NodeJS and Yarn
+    - name: Set up NodeJS
       uses: actions/setup-node@v1
       with:
         node-version: "${{ steps.vm.outputs.NVMRC }}"
+
+    - name: Installing Yarn with YVM
+      shell: bash -l -eo pipefail {0}
+      run: | 
+        curl -s https://raw.githubusercontent.com/tophat/yvm/master/scripts/install.js | node
+        {
+         echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR'
+         echo '. "${YVM_DIR}"/yvm.sh'
+        } >> ${HOME}/.bash_profile
+        source ${HOME}/.bash_profile
+        yvm install "${{ steps.vm.outputs.YVMRC }}" && yvm set-default "${{ steps.vm.outputs.YVMRC }}"
       
-    - name: Getting Yarn Cache Directory
-      id: yarn-cache
+    - name: Installing Netlify CLI with Yarn
+      shell: bash -l -eo pipefail {0}
       run: |
-        echo "::set-output name=dir::$(yarn cache dir)"
-      
-    - name: Set up NodeJS Modules Cache
-      uses: actions/cache@v1
-      with:
-        path: ${{ steps.yarn-cache.outputs.dir }}
-        key: v1-nodejs-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**/package.json') }}
-        restore-keys: |
-          v1-nodejs-${{ hashFiles('**/yarn.lock') }}-
-      
-    - name: Install NodeJS Modules
-      run: |
-        yarn install --production=true --pure-lockfile
+        yarn global add netlify-cli
         echo "::set-env name=GIT_COMMIT_HASH::$(git log --format="%h" -n 1 ${GITHUB_SHA})"
         echo "::set-env name=GIT_COMMIT_MESSAGE::$(git log --format="%s" -n 1 ${GITHUB_SHA})"
         echo "::set-env name=BRANCH_NAME::$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//_/g')"
-        echo "::add-path::$(yarn bin)"
+        echo "::add-path::$(yarn global bin)"
       
     - name: Deploying with Netlify (Preview Mode)
+      shell: bash -l -eo pipefail {0}
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

@@ -47,6 +47,7 @@ EXTRA_FILES_NAME = [
     'ads.txt',
     'keybase.txt',
     'BingSiteAuth.xml'
+    'copyrighted-d8d7be3e6f3ee7ab.html'
 ]
 
 ADD_THIS = {
@@ -142,6 +143,8 @@ GOOGLE_SITE_VERIFICATION = [
 ]
 
 BING_SITE_VERIFICATION = '0BD80FDF817E3BE4D9E4C4149FF490BD'
+
+COPYRIGHTED_SITE_VERIFICATION = 'd8d7be3e6f3ee7ab'
 
 # Pengaturan Tema
 if USE_MINIFIED_SCRIPTS == True:

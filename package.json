@@ -9,12 +9,23 @@
         "browser-sync": "^2.26.7",
         "gulp": "^4.0.2"
     },
-    "dependencies": {
-        "netlify-cli": "^2.30.0"
-    },
     "scripts": {
         "build": "./build.sh && mv output publish",
-        "invoke-devserver": "invoke rebuild && node node_modules/gulp/bin/gulp.js invoke_build",
-        "make-devserver": "make REBUILD=1 html && node node_modules/gulp/bin/gulp.js make_html"
+        "make": "make help",
+        "make:publish": "make publish",
+        "make:html": "make html",
+        "make:preview": "make preview",
+        "make:serve": "make serve",
+        "make:devtheme": "make devtheme",
+        "make:github": "make github",
+        "make:clean": "make clean",
+        "make:devserver": "make REBUILD=1 html && node node_modules/gulp/bin/gulp.js make_html",
+        "invoke": "invoke help",
+        "invoke:clean": "invoke clean",
+        "invoke:regenerate": "invoke regenerate",
+        "invoke:publish": "invoke:publish",
+        "invoke:build": "invoke build",
+        "invoke:rebuild": "invoke rebuild",
+        "invoke:devserver": "invoke rebuild && node node_modules/gulp/bin/gulp.js invoke_build"
     }
 }
