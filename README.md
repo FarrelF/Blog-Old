@@ -1,7 +1,7 @@
 # Farrel Franqois Blog
-[![GitHub Actions](https://github.com/FarrelF/FarrelF-Blog/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/FarrelF/FarrelF-Blog/actions?query=workflow%3A%22Build+and+Deploy%22)
+[![GitHub Actions](https://github.com/FarrelF/Blog/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/FarrelF/Blog/actions?query=workflow%3A%22Build+and+Deploy%22)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/edc59a5f-e63a-426c-ae65-cffe9153fa04/deploy-status)](https://app.netlify.com/sites/farrelf/deploys)
-[![Lisensi](https://img.shields.io/github/license/FarrelF/FarrelF-Blog?label=Lisensi&style=flat-square)](LICENSE)
+[![Lisensi](https://img.shields.io/github/license/FarrelF/Blog?label=Lisensi&style=flat-square)](LICENSE)
 
 _Repository_ GitHub ini merupakan Kode Sumber dari Blog saya. Blog ini saya buat menggunakan Pelican, yang berbasis Python.
 
@@ -10,7 +10,7 @@ Kode Sumber ini hanya berguna sebagai konfigurasi dan menyimpan konten nya saja.
 
 Untuk menghasilkan konten yang kemudian di sebar melalui Internet, Layanan Platform Pengembangan CI/CD (_Continuous Integration and Delivery_) seperti [GitHub Actions](https://github.com/features/actions) akan membangun sebuah Web/Blog Statis yang tentu nya akan memanfaatkan Kode Sumber ini sebagai konfigurasi dan konten nya. Setelah membangun sebuah web/blog statis, mereka (GitHub Actions) akan menyebarkan hasil keluaran (_output_) nya ke Netlify melalui `netlify-cli`. 
 
-Untuk proses pembangunan nya atau ingin melihat log nya, Anda bisa lihat log nya [disini](https://github.com/FarrelF/FarrelF-Blog/actions). (Selama kamu login ke GitHub menggunakan Akun kamu, kalau tidak, maka kamu tidak bisa mengakses nya)
+Untuk proses pembangunan nya atau ingin melihat log nya, Anda bisa lihat log nya [disini](https://github.com/FarrelF/Blog/actions). (Selama kamu login ke GitHub menggunakan Akun kamu, kalau tidak, maka kamu tidak bisa mengakses nya)
 
 Jadi, Peran Netlify disini tidak membangun sebuah Web/Blog melalui kode sumber, melainkan cuma meng-_hosting_-kan hasil (_output_) nya saja, yakni berkas HTML yang di hasilkan oleh GitHub Actions tadi. 
 
@@ -37,7 +37,7 @@ Untuk memperoleh nya, Anda bisa Unduh Kode Sumber nya dengan meng-klik pada *But
 Namun, jika Anda lebih suka meng-*clone* atau meng-kloning nya dengan Git, Anda bisa eksekusi perintah berikut untuk meng-kloning nya:
 
 ```bash
-$ git clone https://github.com/FarrelF/FarrelF-Blog.git
+$ git clone https://github.com/FarrelF/Blog.git FarrelF-Blog
 ```
 
 Setelah Anda meng-kloning nya, terutama dengan perintah di atas, kode sumber akan secara otomatis tersimpan di dalam Folder yang bernama `FarrelF-Blog`.

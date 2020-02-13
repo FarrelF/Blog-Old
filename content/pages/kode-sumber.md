@@ -13,13 +13,13 @@ Kode Sumber nya ini di bagi menjadi dua, yakni Kode Sumber untuk Blog nya, dan y
 Kode Sumber untuk Blog ini telah saya simpan di dalam GitHub, untuk melihat/memperoleh nya, silahkan kunjungi Alamat URL untuk _Repository_ Git nya di bawah ini:
 
 ```text
-https://github.com/FarrelF/FarrelF-Blog
+https://github.com/FarrelF/Blog
 ```
 
 Atau, kalau kamu lebih suka meng-_clone_ nya secara langsung, maka kamu dapat meng-_clone_ nya dengan perintah berikut:
 
 ```bash
-$ git clone https://github.com/FarrelF/FarrelF-Blog.git
+$ git clone https://github.com/FarrelF/Blog.git FarrelF-Blog
 ```
 
 Kode Sumber Blog ini saya lisensi kan di bawah lisensi "GNU Affero General Public License v3" (GNU AGPLv3), kecuali untuk folder `:::text content` (yang itupun [tidak semua berkas]({filename}/pages/ketentuan-hukum-dan-sanggahan.md) di dalam nya) saya lisensi kan di bawah lisensi ["Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)"](https://creativecommons.org/licenses/by-sa/4.0/), yang kedua nya merupakan lisensi _Copyleft_. 

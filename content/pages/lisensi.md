@@ -43,7 +43,7 @@ https://creativecommons.org/licenses/by-sa/4.0/
 ```
 
 ### Untuk Kode Sumber Blog
-Sedangkan, untuk kode sumber blog ini saya lisensi kan di bawah lisensi "GNU Affero General Public License v3" (GNU AGPLv3), untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/FarrelF-Blog/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/FarrelF-Blog). Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
+Sedangkan, untuk kode sumber blog ini saya lisensi kan di bawah lisensi "GNU Affero General Public License v3" (GNU AGPLv3), untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Blog/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Blog). Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
 
 ```text
 https://www.gnu.org/licenses/agpl-3.0.html
@@ -52,9 +52,9 @@ https://www.gnu.org/licenses/agpl-3.0.html
 #### Pengecualian Lisensi Kode Sumber Blog
 Kode Sumber blog ini di Lisensikan dengan Lisensi GNU AGPLv3, namun bukan berarti tidak ada pengecualian. Pengecualian Lisensi untuk Kode Sumber Blog akan berlaku untuk:
 
-- Semua berkas Markdown yang ada di dalam Folder [`:::text content`](https://github.com/FarrelF/FarrelF-Blog/tree/master/content) di Lisensi kan dengan CC BY-SA 4.0.
+- Semua berkas Markdown yang ada di dalam Folder [`:::text content`](https://github.com/FarrelF/Blog/tree/master/content) di Lisensi kan dengan CC BY-SA 4.0.
 
-- Semua berkas di dalam [`:::text content/extras`](https://github.com/FarrelF/FarrelF-Blog/tree/master/content/extras) di lisensi kan dengan GNU AGPLv3.
+- Semua berkas di dalam [`:::text content/extras`](https://github.com/FarrelF/Blog/tree/master/content/extras) di lisensi kan dengan GNU AGPLv3.
 
 - Di dalam folder `:::text content` nanti, akan ada berkas-berkas tertentu yang di dalam nya telah mengandung penyebutan atau/dan logo dari sebuah Merek Dagang Terdaftar atau/dan Pakaian Dagang yang di miliki oleh Perusahaan. Jadi, sesuai dengan [ketentuan di blog ini]({filename}/pages/ketentuan-hukum-dan-sanggahan.md), jika Anda ingin menurunkan nya, bahkan sampai-sampai ingin merubah/mengedit yang mengenai logo nya, Anda tetap harus menuruti Aturan dari masing-masing pemilik Merek Dagang tersebut, tapi biasanya di perbolehkan jika hanya "sama-persis"/menggantikan nya atau menghapuskan nya.
 
