@@ -248,7 +248,7 @@ SHOW_LAST_COMMIT = True
 COMMIT = str(git.Repo().head.commit)
 SHORT_COMMIT = COMMIT[0:7]
 COMMIT_DATETIME = locale_datetime(git.Repo().head.commit.authored_datetime)
-REPO_URL = "https://github.com/FarrelF/FarrelF-Blog"
+REPO_URL = "https://github.com/FarrelF/Blog"
 
 LAZYLOAD_IMAGES = True
 

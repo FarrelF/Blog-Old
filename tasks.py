@@ -161,3 +161,36 @@ def gh_pages(c):
     c.run('ghp-import -b {github_pages_branch} '
           '-m {commit_message} '
           '{deploy_path} -p'.format(**CONFIG))
+
+@task
+def help(c):
+    """Displaying Help Options"""
+
+    text = """
+An Invoke file 'tasks.py' for Pelican Web site
+
+There is an available options:
+
+-------------------------------------------------------------------------------------------------
+|           Options             |                            Usage                              | 
+-------------------------------------------------------------------------------------------------
+| invoke build                  | Build HTML Files                                              |
+| invoke rebuild                | (Re)build HTML Files                                          |
+| invoke regenerate             | Perform automatically regenerate site upon file modification  |
+| invoke clean                  | Clean/Remove all Generated HTML Files                         |
+| invoke serve                  | Serve your HTML Files                                         |
+| invoke livereload             | Serve your HTML Files with LiveReload Feature                 |
+| invoke preview                | Build preview version of site                                 |
+| invoke publish                | Build publish version of site                                 |
+| invoke gh_pages               | Deploy a site to GitHub Pages (using ghp-import module)       |
+| invoke devserver*             | Build HTML, Serve it and Regenerate together                  |
+| invoke theme_sync             | Clones the Current Theme                                      |
+| invoke devtheme               | Build Development Theme for Development Usage                 |
+| invoke static                 | Build an Static Site including with Theme                     |
+| invoke help                   | Displays available options and usages                         |
+-------------------------------------------------------------------------------------------------
+
+*Note: Some commands are available only for *nix based Operating Systems
+    """
+
+    print(text)
