@@ -46,7 +46,7 @@ EXTRA_FILES_NAME = [
     '_redirects',
     'ads.txt',
     'keybase.txt',
-    'BingSiteAuth.xml'
+    'BingSiteAuth.xml',
     'copyrighted-d8d7be3e6f3ee7ab.html'
 ]
 
