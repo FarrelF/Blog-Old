@@ -123,10 +123,9 @@ jobs:
     - name: "Deleting Artifacts"
       shell: bash -l -eo pipefail {0}
       run: |
-        jq --version
         REPO=https://api.github.com/repos/${{ github.repository }}
-        GITHUB_USER=${{ github.actor }}
-        GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        GITHUB_USER=FarrelF
+        GITHUB_TOKEN=${{ secrets.GITHUB_PERSONAL_TOKEN }}
 
         # Number of most recent versions to keep for each artifact:
         # KEEP=5
@@ -155,10 +154,10 @@ jobs:
             COUNT=$(( $(jq <<<$JSON -r '.artifacts | length') ))
 
             # Loop on all artifacts on this page.
-            for ((i=0; $i < $COUNT; i++)); do
-
-                # Get name of artifact and count instances of this name.
-                name=$(jq <<<$JSON -r ".artifacts[$i].name?")
+                ARTCOUNT[$name]=$(( $(( ${ARTCOUNT[$name]} )) + 1))
+                ARTCOUNT[$name]=$(( $(( ${ARTCOUNT[$name]} )) + 1))
+                ARTCOUNT[$name]=$(( $(( ${ARTCOUNT[$name]} )) + 1))
+                ARTCOUNT[$name]=$(( $(( ${ARTCOUNT[$name]} )) + 1))
                 ARTCOUNT[$name]=$(( $(( ${ARTCOUNT[$name]} )) + 1))
 
                 # Check if we must delete this one.

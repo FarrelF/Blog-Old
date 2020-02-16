@@ -125,10 +125,9 @@ jobs:
     - name: "Deleting Artifacts"
       shell: bash -l -eo pipefail {0}
       run: |
-        jq --version
         REPO=https://api.github.com/repos/${{ github.repository }}
-        GITHUB_USER=${{ github.actor }}
-        GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        GITHUB_USER=FarrelF
+        GITHUB_TOKEN=${{ secrets.GITHUB_PERSONAL_TOKEN }}
 
         # Number of most recent versions to keep for each artifact:
         # KEEP=5
