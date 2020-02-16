@@ -121,5 +121,5 @@ jobs:
     - name: "Deleting Artifacts"
       shell: bash -l -eo pipefail {0}
       run: |
-        curl -H "Authorization: Bearer ${{secrets.GITHUB.TOKEN}}" "https://api.github.com/repos/${{github.repository}}/actions/runs/${{github.run_id}}/artifacts" | jq ".artifacts | .[] | .id" | tee artifacts
-        cat artifacts | xargs -n1 -i curl -H "Authorization: Bearer ${{secrets.GITHUB_TOKEN}}" -X DELETE "https://api.github.com/repos/${{github.repository}}/actions/artifacts/{}"
+        curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" | jq ".artifacts | .[] | .id" | tee artifacts
+        cat artifacts | xargs -n1 -i curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -X DELETE "https://api.github.com/repos/${{ github.repository }}/actions/artifacts/{}"
