@@ -124,6 +124,7 @@ jobs:
 
     delete:
       name: Delete Artifacts
+      needs: deploy
       runs-on: ubuntu-18.04
       steps:
         - name: "Deleting Artifacts"
