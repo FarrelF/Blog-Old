@@ -122,10 +122,14 @@ jobs:
       run: |
         netlify deploy --dir=./output -m "GitHub Actions (${GIT_COMMIT_HASH})":" ${BRANCH_NAME} - ${GIT_COMMIT_MESSAGE} (Preview)"
 
-    - name: "Deleting Artifacts"
-      shell: bash -l -eo pipefail {0}
-      run: |
-        REPO=https://api.github.com/repos/${{ github.repository }}
-        GITHUB_USER=FarrelF
-        curl --user ${GITHUB_USER}:${{ secrets.GITHUB_PERSONAL_TOKEN }} --url "${REPO}/actions/runs/${{ github.run_id }}/artifacts" | jq ".artifacts | .[] | .id" | tee artifacts
-        cat artifacts | xargs -n1 -i curl --user ${GITHUB_USER}:${{ secrets.GITHUB_PERSONAL_TOKEN }} -X DELETE "${REPO}/actions/artifacts/{}" -IL
+    delete:
+      name: Delete Artifacts
+      runs-on: ubuntu-18.04
+      steps:
+        - name: "Deleting Artifacts"
+          shell: bash -l -eo pipefail {0}
+          run: |
+            REPO=https://api.github.com/repos/${{ github.repository }}
+            GITHUB_USER=FarrelF
+            curl --user ${GITHUB_USER}:${{ secrets.GITHUB_PERSONAL_TOKEN }} --url "${REPO}/actions/runs/${{ github.run_id }}/artifacts" | jq ".artifacts | .[] | .id" | tee artifacts
+            cat artifacts | xargs -n1 -i curl --user ${GITHUB_USER}:${{ secrets.GITHUB_PERSONAL_TOKEN }} -X DELETE "${REPO}/actions/artifacts/{}" -IL
