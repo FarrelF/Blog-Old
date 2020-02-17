@@ -90,19 +90,17 @@ jobs:
       with:
         node-version: "${{ steps.vm.outputs.NVMRC }}"
 
-    - name: Installing Yarn with YVM and Jq
+    - name: Installing Yarn with YVM
       shell: bash -l -eo pipefail {0}
       run: | 
         curl -s https://cdn.statically.io/gh/tophat/yvm/master/scripts/install.js | node
         {
          echo 'YVM_DIR=${HOME}/.yvm && export YVM_DIR'
          echo '. "${YVM_DIR}"/yvm.sh'
-         echo 'JQ_LATEST=$(curl -s https://api.github.com/repos/stedolan/jq/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export JQ_LATEST'
-         echo 'JQ_DOWNLOAD_URL=https://github.com/stedolan/jq/releases/download/${JQ_LATEST}/jq-linux64 && export JQ_DOWNLOAD_URL'
+         echo '# JQ_LATEST=$(curl -s https://api.github.com/repos/stedolan/jq/releases/latest | grep "tag_name" | head -1 | cut -d \" -f 4) && export JQ_LATEST'
+         echo '# JQ_DOWNLOAD_URL=https://github.com/stedolan/jq/releases/download/${JQ_LATEST}/jq-linux64 && export JQ_DOWNLOAD_URL'
         } >> ${HOME}/.bash_profile
         source ${HOME}/.bash_profile
-        sudo wget ${JQ_DOWNLOAD_URL} -O /usr/local/bin/jq
-        sudo chmod +x /usr/local/bin/jq
         yvm install "${{ steps.vm.outputs.YVMRC }}" && yvm set-default "${{ steps.vm.outputs.YVMRC }}"
       
     - name: Installing Netlify CLI with Yarn
@@ -121,16 +119,3 @@ jobs:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       run: |
         netlify deploy --dir=./output -m "GitHub Actions (${GIT_COMMIT_HASH})":" ${BRANCH_NAME} - ${GIT_COMMIT_MESSAGE} (Preview)"
-
-    delete:
-      name: Delete Artifacts
-      needs: deploy
-      runs-on: ubuntu-18.04
-      steps:
-        - name: "Deleting Artifacts"
-          shell: bash -l -eo pipefail {0}
-          run: |
-            REPO=https://api.github.com/repos/${{ github.repository }}
-            GITHUB_USER=FarrelF
-            curl --user ${GITHUB_USER}:${{ secrets.GITHUB_PERSONAL_TOKEN }} --url "${REPO}/actions/runs/${{ github.run_id }}/artifacts" | jq ".artifacts | .[] | .id" | tee artifacts
-            cat artifacts | xargs -n1 -i curl --user ${GITHUB_USER}:${{ secrets.GITHUB_PERSONAL_TOKEN }} -X DELETE "${REPO}/actions/artifacts/{}" -IL
