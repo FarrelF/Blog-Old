@@ -1,6 +1,6 @@
 ---
-Title: Ketentuan Hukum dan Sanggahan
-Slug: ketentuan-hukum-dan-sanggahan
+Title: Ketentuan Hukum, Komentar dan Sanggahan
+Slug: ketentuan-hukum-komentar-dan-sanggahan
 Status: published
 Authors: Farrel Franqois
 ---
@@ -71,6 +71,37 @@ Jika Anda yakin bahwa pekerjaan Anda telah disalin dengan cara yang merupakan pe
 Saya berhak untuk mencari semua solusi yang tersedia menurut Hukum dan Keadilan untuk Pelanggaran Syarat Penggunaan ini, termasuk, tetapi tidak terbatas pada, hak untuk memblokir akses dari Alamat Internet tertentu yang di tujukan kepada Blog saya.
 
 
+## Ketentuan/Kebijakan Komentar
+### Penggunaan Pihak ke-3 dan Kebijakan Privasi nya
+Saya menggunakan [Disqus](https://disqus.com) sebagai Sistem Komentar di dalam Blog saya. Disqus merupakan Layanan Sistem Komentar pihak ke-3/pihak luar, yang mana mereka memiliki Kebijakan Privasi nya sendiri.
+
+Jadi, karena mereka memiliki Kebijakan Privasi nya sendiri, maka saya tidak bisa 'benar-benar' mengendalikan data/aliran data Anda. Karena saya tidak bisa 'benar-benar' mengendalikan data Anda, dan jika Anda berkomentar di dalam blog ini, ini artinya Anda telah menyetujui dan mematuhi [Kebijakan Privasi dari Disqus](https://help.disqus.com/en/articles/1717103-disqus-privacy-policy).
+
+Namun, Anda bisa mengatur bagaimana Disqus akan menggunakan/membagikan Data yang ada pada akun Disqus Anda. Anda bisa mengatur nya [disini](https://disqus.com/data-sharing-settings/).
+
+Jadi, harap maklum.
+
+### Lisensi Komentar
+Sesuai dengan yang ada pada laman [Lisensi]({filename}/pages/lisensi.md), setiap Anda komentar di blog ini, maka komentar Anda akan di Lisensi kan di bawah lisensi CC BY-SA 4.0 secara bawaan.
+
+Sedangkan untuk Komentar yang bersifat Testimonial, maka komentar Anda akan di Lisensi di bawah lisensi CC BY-ND 4.0 secara bawaan.
+
+Meskipun begitu, pemilik hak cipta dari komentar Anda adalah Anda sendiri yang sebagai komentator. Jadi, jika Anda ingin menggunakan Lisensi lain atau Anda ingin menggunakan Lisensi dari Anda sendiri, silahkan tentukan sendiri Lisensi yang akan Anda gunakan di dalam kolom komentar.
+
+Saya tidak bertanggung jawab jika ada orang lain yang ternyata bebas menggunakan komentar Anda berdasarkan Aturan Lisensi yang telah saya berlakukan, namun Anda malah tidak meng-hendaki nya. 
+
+### Spam, Promosi dan Iklan
+Segala Spam dalam bentuk atau/dan alasan apapun di dalam kolom komentar itu dilarang, bahkan dengan alasan 'berbagi ilmu' sekalipun. Promosi/Iklan disini juga tidak di perbolehkan.
+
+Testimoni pada Produk/Layanan memang adalah salah satu bentuk dari Promosi/Iklan. Tapi, untuk Testimoni ini ada pengecualian nya, pengecualian ini hanya berlaku jika saya sendiri meminta testimoni atau ulasan pada suatu hal (seperti: Pada Produk, Layanan, Web/Blog, Tentang Orang, dll) di dalam Artikel saya dari kalian.
+
+Jika Anda meng-iklankan suatu Produk, mungkin saya akan hapus komentar Anda terlebih dahulu, dan kalau kurang kapok/berkali-kali, saya ban. Namun, jika Anda melakukan Spamming + Iklan, maka Anda akan saya ban permanen. 
+
+Terakhir, jika Anda ingin mempromosikan Web/Blog Anda, lebih baik jangan di kolom komentar, cukup Anda masukkan Alamat URL di dalam Profil Disqus Anda, maka secara otomatis orang lain akan melihat profil Anda dan mungkin orang lain akan mengunjungi Web/Blog Anda.
+
+Jadi, mohon untuk berkomentar dengan sewajar nya.
+
+
 ## Pernyataan Tambahan
 Pernyataan Tambahan ini bisa Anda lihat nanti di dalam Artikel/Laman tertentu, disitu nanti ada Pernyataan tertulis yang sebenarnya adalah Pernyataan Tambahan nya.
 
@@ -81,6 +112,8 @@ Pernyataan ini akan berlaku selama Anda mengunjungi, menjelajahi dan menggunakan
 Jadi, baca/tidak baca, suka/tidak suka atau setuju/tidak setuju, maka Anda harus menyetujui semua pernyataan-pernyataan ini selama Anda mengunjungi blog ini.
 
 Jika Anda tidak menyetujui pernyataan tersebut, maka sebaiknya Anda tidak mengunjungi, menjelajahi dan menggunakan blog ini. Harap maklumi.
+
+Serta semua Pernyataan yang ada di laman ini akan di rubah kapanpun dan dimanapun oleh saya sendiri, tanpa pemberitahuan terlebih dahulu, dengan alasan apapun.
 
 ## Penutup
 Baiklah, sekian untuk laman Ketentuan Hukum dan Pernyataan Sanggahan/Penyangkalan kali ini. Semoga Anda memahami dan memaklumi adanya Ketentuan dan Pernyataan seperti ini. Dan, semoga Anda bisa mentaati nya untuk kebaikan bersama dan Anda juga.
