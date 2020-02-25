@@ -140,5 +140,9 @@ github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
+delete-output-theme:
+	@echo ''
+	@echo 'Deleting Theme in Output Directory....'
+	[ ! -d $(OUTPUTDIR)/theme ] || rm -rf $(OUTPUTDIR)/theme
 
 .PHONY: install html help clean regenerate serve serve-global devserver devtheme static-files publish preview github

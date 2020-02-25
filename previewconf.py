@@ -11,7 +11,7 @@ sys.path.append(os.curdir)
 from publishconf import *
 
 THEME = "Flex"  # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan
-ROBOTS = 'noindex, nofollow, noarchive'
+ROBOTS = 'noindex, nofollow, noarchive, nosnippets'
 
 # Meng-hapus berkas yang tidak terpakai
 STATIC_PATHS.remove('extras/robots.txt')

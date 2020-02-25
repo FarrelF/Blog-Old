@@ -22,7 +22,7 @@ Atau, kalau kamu lebih suka meng-_clone_ nya secara langsung, maka kamu dapat me
 $ git clone https://github.com/FarrelF/Blog.git FarrelF-Blog
 ```
 
-Kode Sumber Blog ini saya lisensi kan di bawah lisensi "GNU Affero General Public License v3" (GNU AGPLv3), kecuali untuk folder `:::text content` (yang itupun [tidak semua berkas]({filename}/pages/ketentuan-hukum-dan-sanggahan.md) di dalam nya) saya lisensi kan di bawah lisensi ["Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)"](https://creativecommons.org/licenses/by-sa/4.0/), yang kedua nya merupakan lisensi _Copyleft_. 
+Kode Sumber Blog ini saya lisensi kan di bawah lisensi "GNU Affero General Public License v3" (GNU AGPLv3), kecuali untuk folder `:::text content` (yang itupun [tidak semua berkas]({filename}/pages/ketentuan-dan-kebijakan-blog.md) di dalam nya) saya lisensi kan di bawah lisensi ["Creative Commons Attribution Share-Alike 4.0 Internasional (CC BY-SA 4.0)"](https://creativecommons.org/licenses/by-sa/4.0/), yang kedua nya merupakan lisensi _Copyleft_. 
 
 Jadi, pastikan Anda mendistribusikan nya dengan menggunakan Lisensi yang sama dengan Lisensi dari Kode Sumber Asli nya dan juga mencantumkan Hak Cipta nya juga, yah :slightly_smiling_face:
 

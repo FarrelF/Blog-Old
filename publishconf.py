@@ -23,7 +23,8 @@ CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/s
 )
 
 CDN_BLOG_COMMIT = 'fce8460'
-CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(
+CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/{0}/{1}'.format(
+    REPO_SHORT,
     CDN_BLOG_COMMIT
 )
 

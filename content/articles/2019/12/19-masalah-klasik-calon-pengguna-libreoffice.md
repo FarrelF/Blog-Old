@@ -35,7 +35,7 @@ Perlu saya ingatkan juga, bahwa kemungkinan Artikel ini akan menyinggung salah s
 
 Tapi, yang saya bahas ini merupakan penjelasan dan kenyataan nya saja, yang berdasarkan dari pengalaman seseorang/saya, dan referensi-referensi yang telah saya ambil dari beberapa situs web, baik dari luar Situs Web Microsoft, bahkan dari Situs Microsoft itu sendiri.
 
-Pernyataan di atas merupakan pernyataan tambahan dari yang [sebenarnya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md).
+Pernyataan di atas merupakan pernyataan tambahan dari yang [sebenarnya]({filename}/pages/ketentuan-dan-kebijakan-blog.md#sanggahan).
 
 ## I. Masalah Kompatibilitas saat di buka dengan Microsoft Office (begitupun juga sebaliknya)
 Ini adalah masalah paling klasik yang paling sering di bicarakan oleh kebanyakan pengguna GNU/Linux di Indonesia, berdasarkan dari banyaknya komunitas GNU/Linux di dunia maya (terutama di Indonesia). 
@@ -109,7 +109,7 @@ Jadi, jika OOXML di nyatakan sebagai "Open Format", apakah artinya OOXML ini ter
 
 Apakah itu merupakan suatu hal yang wajar jika tampilan atau bahkan dokumen nya menjadi kacau saat dokumen OOXML di buat atau/dan di buka dengan Perangkat Lunak selain Microsoft Office? Wajar, bahkan normal jika itu terjadi, kecuali jika Anda cuma tahu Microsoft Office atau/dan Ekstensi berformat OOXML nya saja. 
 
-Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak perlu, bahkan sama sekali. Lagian juga, LibreOffice ini di buat untuk membantu Anda bekerja dengan dokumen di dalam komputer Anda tanpa harus mengorbankan [4 kebebasan utama dalam perangkat lunak](https://www.gnu.org/philosophy/free-sw.html), bukan untuk memenuhi Standar dari Microsoft Office*.
+Dan, apakah masalah seperti ini perlu di keluhkan? Kalau menurut saya, tidak perlu, bahkan sama sekali. Lagian juga, LibreOffice ini di buat untuk membantu Anda bekerja dengan dokumen di dalam komputer Anda tanpa harus mengorbankan [4 kebebasan utama dalam perangkat lunak](https://www.gnu.org/philosophy/free-sw.html), bukan cuma untuk memenuhi Standar dari Microsoft Office saja*.
 
 **\*Catatan**: "bukan untuk memenuhi Standar dari Microsoft Office" bukan berarti bahwa mereka sama sekali tidak mendukung/meng-implementasikan Format OOXML, yah :slightly_smiling_face: 
 
@@ -174,7 +174,7 @@ Salah satu penyebabnya adalah bahwa kebanyakan orang telah terbiasa dengan Penam
 
 Tampilan LibreOffice standar kira-kira seperti ini (saya menggunakan Windows 10):
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png?fit=503,318&quality=80&ssl=1" loading="lazy" class="img-center" alt="Cuplikan Layar LibreOffice 6.3 di Windows 10">](https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png?fit=503,318&quality=80&ssl=1" loading="lazy" class="img-center" alt="Cuplikan Layar LibreOffice 6.3 di Windows 10">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png)
 
 Mungkin saja, tampilan seperti itu memang terasa familiar bagi Anda yang sudah pernah menggunakan Microsoft Office 2003 sebelumnya. Tapi, yang menjadi masalah nya adalah bahwa kebanyakan orang sudah duluan familiar dengan penampilan "Ribbon" dan mengingatnya, kalaupun sebelumnya ada yang sudah pernah menggunakan Microsoft Office 2003, bukan berarti mereka familiar akan tampilan nya, serta tidak semua orang menggunakan nya.
 
@@ -194,13 +194,13 @@ Caranya mudah, yaitu:
 
 Dibawah ini merupakan satu Cuplikan Layar yang akan mempermudah kamu atau memperjelas cara di atas:
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png?fit=503,318&quality=80&ssl=1" loading="lazy" class="img-center" alt="Cara mengaktifkan Tabbed UI di LibreOffice">](https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png?fit=503,318&quality=80&ssl=1" loading="lazy" class="img-center" alt="Cara mengaktifkan Tabbed UI di LibreOffice">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png)
 
 Mudah, bukan?
 
 Kira-kira, untuk tampilan nya akan seperti di bawah ini jika sudah di aktifkan "Tabbed UI" nya:
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png?fit=503,318&quality=80&ssl=1" loading="lazy" class="img-center" alt="LibreOffice Tabbed UI di Windows 10">](https://cdn.statically.io/gl/FarrelF/blog-images/19fbda59/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png?fit=503,318&quality=80&ssl=1" loading="lazy" class="img-center" alt="LibreOffice Tabbed UI di Windows 10">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png)
 
 > ### Saya masih kesulitan untuk menggunakan nya, bagaimana caranya agar saya tidak merasa kesulitan?
 

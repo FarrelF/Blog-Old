@@ -1,6 +1,6 @@
 ---
-Title: Ketentuan Hukum, Komentar dan Sanggahan
-Slug: ketentuan-hukum-komentar-dan-sanggahan
+Title: Ketentuan dan Kebijakan Blog
+Slug: ketentuan-dan-kebijakan-blog
 Status: published
 Authors: Farrel Franqois
 ---
@@ -88,7 +88,12 @@ Sedangkan untuk Komentar yang bersifat Testimonial, maka komentar Anda akan di L
 
 Meskipun begitu, pemilik hak cipta dari komentar Anda adalah Anda sendiri yang sebagai komentator. Jadi, jika Anda ingin menggunakan Lisensi lain atau Anda ingin menggunakan Lisensi dari Anda sendiri, silahkan tentukan sendiri Lisensi yang akan Anda gunakan di dalam kolom komentar.
 
-Saya tidak bertanggung jawab jika ada orang lain yang ternyata bebas menggunakan komentar Anda berdasarkan Aturan Lisensi yang telah saya berlakukan, namun Anda malah tidak meng-hendaki nya. 
+Saya tidak bertanggung jawab jika ada orang lain yang ternyata bebas menggunakan komentar Anda berdasarkan Aturan Lisensi yang telah saya berlakukan, namun Anda malah tidak meng-hendaki nya.
+
+### Hak Cipta atau Hak Kekayaan Intelektual (HAKI)
+Segala bentuk pelanggaran Hak Cipta atau Hak Kekayaan Intelektual (HAKI) itu tidak di perbolehkan di dalam Kolom Komentar. Apabila itu terjadi, maka saya harus menghapus komentar Anda, dan jika itu terjadi berulang kali oleh pengguna yang sama, maka Anda saya ban.
+
+Hal ini saya lakukan untuk kebaikan akun Anda dan juga blog ini. Harap maklum.
 
 ### Spam, Promosi dan Iklan
 Segala Spam dalam bentuk atau/dan alasan apapun di dalam kolom komentar itu dilarang, bahkan dengan alasan 'berbagi ilmu' sekalipun. Promosi/Iklan disini juga tidak di perbolehkan.
@@ -99,7 +104,9 @@ Jika Anda meng-iklankan suatu Produk, mungkin saya akan hapus komentar Anda terl
 
 Terakhir, jika Anda ingin mempromosikan Web/Blog Anda, lebih baik jangan di kolom komentar, cukup Anda masukkan Alamat URL di dalam Profil Disqus Anda, maka secara otomatis orang lain akan melihat profil Anda dan mungkin orang lain akan mengunjungi Web/Blog Anda.
 
-Jadi, mohon untuk berkomentar dengan sewajar nya.
+Jadi, mohon untuk berkomentar dengan sewajar nya saja.
+
+### Moralitas dan SARA
 
 
 ## Pernyataan Tambahan

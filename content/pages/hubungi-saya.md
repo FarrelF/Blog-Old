@@ -67,7 +67,7 @@ Namun, jika Anda ingin lebih leluasa dalam mengirimkan pesan, seperti menggunaka
         <p>
           <label>Persetujuan: </label>
           <p>
-            <input type="checkbox" name="terms" value="agree" required> <label>Dengan mencentang dan mengirimkan Informasi ini, maka berarti Anda menyetujui <a href="https://farrel.franqois.id/ketentuan-hukum-dan-sanggahan">ketentuan yang berlaku disini</a></label>
+            <input type="checkbox" name="terms" value="agree" required> <label>Dengan mencentang dan mengirimkan Informasi ini, maka berarti Anda menyetujui <a href="https://farrel.franqois.id/ketentuan-dan-kebijakan-blog">ketentuan yang berlaku disini</a></label>
           </p>
           <p>
             <input type="checkbox" name="morality" value="agree" required> <label>Dengan mencentang dan mengirimkan Informasi ini, maka berarti Anda menyetujui segala aturan yang "tidak tertulis" atau tidak saya tulis di blog ini.</label>
@@ -93,7 +93,7 @@ Kalau Anda mengirimkan nya, maka pesan yang Anda kirimkan akan saya hapus.
 
 Tapi, jika Informasi yang Anda kirimkan nanti di sebarkan oleh 'pihak ke-3', maka saya tidak akan bisa meng-hapus nya, karena itu sudah berada di luar kendali saya. 
 
-Karena hal itu, sesuai dengan [ketentuan yang berlaku]({filename}/pages/ketentuan-hukum-dan-sanggahan.md) disini, maka saya **tidak akan bertanggung jawab** atas Informasi yang Anda kirimkan kepada saya, jadi apapun Informasi yang telah yang Anda kirimkan ke saya, itu sepenuhnya **tanggung jawab Anda**.
+Karena hal itu, sesuai dengan [ketentuan yang berlaku]({filename}/pages/ketentuan-dan-kebijakan-blog.md) disini, maka saya **tidak akan bertanggung jawab** atas Informasi yang Anda kirimkan kepada saya, jadi apapun Informasi yang telah yang Anda kirimkan ke saya, itu sepenuhnya **tanggung jawab Anda**.
 
 Kecuali jika Anda meng-enkripsi seluruh pesan nya, maka mungkin saja pihak ke-3 tidak dapat melihat/membaca isi pesan yang sebenarnya, sampai ia tahu bagaimana cara men-dekripsi-kan nya.
 

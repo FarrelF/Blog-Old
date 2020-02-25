@@ -19,7 +19,7 @@ Sebelum memulai, adakala nya untuk memenuhi Persyaratan nya terlebih dahulu, yak
 
 ### Persyaratan Wajib
 - Git: https://git-scm.com/downloads (Untuk mengetahui Cara Install nya, silahkan baca artikel [ini](https://farrel.franqois.id/cara-install-git))
-- Python 3.7 atau di atasnya: https://www.python.org/downloads/ (Jelas, wajib!)
+- Python 3.6 atau di atasnya: https://www.python.org/downloads/ (Jelas, wajib!)
 - Poetry: https://python-poetry.org/docs/
 
 ### Persyaratan Opsional
@@ -68,7 +68,7 @@ $ poetry install --no-dev
 ```
 
 ### Mengenai Berkas `NetlifyBuild.sh`
-**Catatan:** Karena sekarang blog ini di bangun dengan bantuan GitHub Actions dan Netlify hanya men-*hosting*-kan berkas HTML nya saja, maka kemungkinan berkas [`NetlifyBuild.sh`](NetlifyBuild.sh) tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas konfigurasi nya di dalam folder [`.github/workflows`](.github/workflows).
+**Catatan:** Karena sekarang blog ini di bangun dengan bantuan GitHub Actions dan Netlify hanya men-_hosting_-kan berkas HTML nya saja, maka kemungkinan berkas [`NetlifyBuild.sh`](NetlifyBuild.sh) tidak akan saya gunakan. Untuk melihat konfigurasi nya, silahkan lihat berkas konfigurasi nya di dalam folder [`.github/workflows`](.github/workflows).
 
 Sebenarnya, berkas tersebut saya buat agar Netlify bisa meng-install semua keperluan nya dengan baik, termasuk Poetry yang merupakan Pengelola Paket dan Ketergantungan untuk Python, yang sampai saat ini [tidak di dukung secara langsung](https://github.com/netlify/build-image/issues/221) oleh Netlify.
 
