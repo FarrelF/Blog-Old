@@ -131,13 +131,15 @@ if USE_CDN:
     STATIC_PATHS.remove('extras/custom.js')
     del EXTRA_PATH_METADATA['extras/custom.js']
 
+AVATAR_WIDTH = '143'
+AVATAR_HEIGHT = '146'
+
 if USE_CDN:
-    SITELOGO = 'https://cdn.statically.io/img/farrel.franqois.id/img/profile_avatar.jpg'
+    AVATAR_URL = 'https://cdn.statically.io/img/farrel.franqois.id/w={0},h={1},ssl=1/img/profile_avatar.jpg'.format(AVATAR_WIDTH, AVATAR_HEIGHT)
+    SITELOGO = 'https://cdn.statically.io/img/farrel.franqois.id/q=95,ssl=1/img/profile_avatar.jpg'
 else:
     SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
 
-SITELOGO_WIDTH = '140'
-SITELOGO_HEIGHT = '143'
 GOOGLE_SITE_VERIFICATION = [
     'gWpIShFtX8KQbZw1OOHRTXY4QhyanAIVfSfyo6faiw0',
     'YHoyl7JPwHm7UBWzprZXnX0sQlLla1DjeULMGRqp6yA'

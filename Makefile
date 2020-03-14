@@ -145,4 +145,4 @@ delete-output-theme:
 	@echo 'Deleting Theme in Output Directory....'
 	[ ! -d $(OUTPUTDIR)/theme ] || rm -rf $(OUTPUTDIR)/theme
 
-.PHONY: install html help clean regenerate serve serve-global devserver devtheme static-files publish preview github
+.PHONY: install html help clean regenerate serve serve-global devserver devtheme static-files publish preview github delete-output-theme
