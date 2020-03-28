@@ -4,7 +4,6 @@ Kontribusi bisa di lakukan dengan banyak cara, seperti memberikan Kritik dan Sar
 Anda bisa ber-kontribusi terhadap Blog ini menggunakan (salah satu/lebih) cara berikut ini:
 
 ## Cara 1: Mengubah Kode Sumber
-
 Jika Anda ingin berkontribusi dengan membantu konfigurasi Blog ini atau ikut serta dalam mengubah Kode Sumber nya. Cara nya cukup mudah, Anda tinggal ikuti langkah di bawah ini:
 
 1. Buatlah sebuah _fork_ dari Repo ini.
@@ -48,7 +47,7 @@ Tapi, tetap saja, jika Anda ingin memodifikasi tema nya, silahkan Anda ubah itu 
 ## Cara 2: Melakukan Donasi
 Anda bisa menyisihkan sedikit uang Anda untuk mendonasikan nya sebagai kontribusi Anda untuk Blog ini. 
 
-Untuk sementara ini, saya hanya menyediakan LinkAja dan GoPay saja, sedangkan metode lain nya seperti OVO, PayPal, Patreon dan juga Liberapay akan segera hadir jika memungkinkan dan ATM tidak akan saya hadirkan disini, karena saya tidak menggunakan ATM.
+Untuk sementara ini, saya hanya menyediakan LinkAja, GoPay dan PayPal saja, sedangkan metode lain nya seperti OVO, Dana, dan juga SocialBuzz akan segera hadir jika memungkinkan dan ATM tidak akan saya hadirkan disini, karena saya tidak menggunakan ATM.
 
 Jika Anda ingin mendonasikan nya, Anda bisa ikuti cara berikut:
 
@@ -57,28 +56,45 @@ Jika Anda ingin menggunakan LinkAja (yang sebelumnya adalah "TCASH") untuk berdo
 
 <p align="center">
     <a href="https://cdn.statically.io/gh/FarrelF/Blog/283d3aa/content/extras/qrcode_linkaja.jpg" rel="dns-prefetch">
-        <img style="display: block; margin: 0 auto;" src="https://cdn.statically.io/gh/FarrelF/Blog/283d3aa/content/extras/qrcode_linkaja.jpg" alt="QR Code LinkAja" width="320" height="320" />
+        <img style="display: block; margin: 0 auto;" src="https://cdn.statically.io/img/farrelf.imfast.io/w=320,ssl=1/content/extras/qrcode_linkaja.jpg" alt="QR Code LinkAja" width="320" height="320" />
     </a>
 </p>
 
 Setelah Anda memindai nya, pastikan kamu mentransfer nya ke akun/rekening tujuan dengan Atas Nama: **OK MOHAMAD EDBERT FARREL FRANQOIS**.
+
+Jika Anda ingin menggunakan ATM/Akun Perbankan untuk melakukan Transaksi ke LinkAja, dan karena saya tidak bisa memberikan nomor akun nya secara langsung disini. Silahkan Anda [Hubungi Saya](https://farrel.franqois.id/hubungi-saya) terlebih dahulu, jelaskan bank apa yang ingin kamu gunakan dan via apa transaksi nya (apakah lewat ATM, Mobile Banking, atau Internet Banking), nanti akan saya instruksikan caranya dan memberikan Nomor nya untuk keperluan Transaksi.
+
+Sekedar Informasi Tambahan, jika Anda melakukan transaksi ke Akun LinkAja menggunakan Bank yang termasuk dalam Himbara (Himpunan Bank Milik Negara), seperti: Bank Mandiri, BNI, BRI, dan BTN, Anda tidak akan di kenakan Biaya Admin.
 
 ### GoPay (GOJEK)
 Jika Anda ingin menggunakan GoPay untuk berdonasi, Anda tinggal Pindai *QR Code* berikut di bawah ini:
 
 <p align="center">
     <a href="https://cdn.statically.io/gh/FarrelF/Blog/283d3aa/content/extras/qrcode_gopay.jpg" rel="dns-prefetch">
-        <img style="display: block; margin: 0 auto;" src="https://cdn.statically.io/gh/FarrelF/Blog/283d3aa/content/extras/qrcode_gopay.jpg?fit=320,320" alt="QR Code GoPay" width="313" height="320" />
+        <img style="display: block; margin: 0 auto;" src="https://cdn.statically.io/img/farrelf.imfast.io/w=313,ssl=1/content/extras/qrcode_gopay.jpg" alt="QR Code GoPay" width="313" height="320" />
     </a>
 </p>
 
 Setelah Anda memindai nya, pastikan kamu mentransfer nya ke akun/rekening tujuan dengan Atas Nama: **Farrel Franqois**.
 
-### OVO, Paypal, Patreon, dan Liberapay
+Jika Anda ingin menggunakan ATM/Akun Perbankan untuk melakukan Transaksi ke GoPay, dan karena saya tidak bisa memberikan nomor akun nya secara langsung disini. Silahkan Anda [Hubungi Saya](https://farrel.franqois.id/hubungi-saya) terlebih dahulu, jelaskan bank apa yang ingin kamu gunakan dan via apa transaksi nya (apakah lewat ATM, Mobile Banking, atau Internet Banking), nanti akan saya instruksikan caranya dan memberikan Nomor nya untuk keperluan Transaksi.
 
-Untuk sementara ini, ke empat metode pembayaran tersebut belum di sediakan. 
+### PayPal
 
-Ke-empat metode pembayaran tersebut akan segera hadir jika situasi dan kondisi nya yang memungkinkan :slightly_smiling_face:
+<p align="center">
+    <a href="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" rel="dns-prefetch">
+        <img style="display: block; margin: 0 auto;" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="Logo PayPal" width="200" height="51" />
+    </a>
+</p>
+
+Jika Anda ingin menggunakan PayPal (baik menggunakan Saldo PayPal yang Anda punya, atau menggunakan Kartu Kredit sebagai pembayaran nya) untuk berdonasi, Anda tinggal klik pada Alamat URL berikut.
+
+Alamat URL PayPal: [https://paypal.me/FarrelF](https://paypal.me/FarrelF)
+
+### OVO, Dana dan SocialBuzz
+Untuk sementara ini, ke tiga metode pembayaran tersebut belum di sediakan. 
+
+Ke-tiga metode pembayaran tersebut akan segera hadir jika situasi dan kondisi nya yang memungkinkan :slightly_smiling_face:
 
 ## Cara 3: Lain nya
 Untuk cara lain nya, Anda bisa bertanya, memberikan kritik dan saran, serta berkomentar di dalam blog ini.

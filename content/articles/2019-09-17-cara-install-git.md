@@ -107,7 +107,7 @@ Pada langkah ini, silahkan Anda atur Komponen mana yang ingin Anda install dan d
    
 Jika Anda ingin menggunakan TrueType di dalam semua Konsol Windows, centang "Use a TrueType font in all console Windows", seperti cuplikan berikut:
    
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_1.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_1.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_1.png" loading="lazy" class="img-center" alt="Langkah ke-2 Instalasi Git&#58; Pilih Komponen mana yang ingin di Install (Select Components)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_1.png){class="luminous-image-gallery"}
 
 Setelah Anda selesai memilah-milih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-3.
 
@@ -116,7 +116,7 @@ Pada langkah ini, Anda bisa pilih editor yang akan di gunakan oleh Git nanti nya
 
 Pada tutorial ini, saya akan gunakan 'GNU nano' sebagai editor bawaan untuk Git, berikut cuplikan nya:
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_2.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_2.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_2.png" loading="lazy" class="img-center" alt="Langkah ke-3 Instalasi Git&#58; Pilih Editor mana yang akan di gunakan (Choosing the default editor used by Git)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_2.png){class="luminous-image-gallery"}
 
 Kalo Anda ingin menggunakan Editor Favorit, sedangkan editor nya tidak tersedia disitu, nanti Anda bisa konfigurasi lagi
 
@@ -125,14 +125,14 @@ Karena secara bawaan Git memilih 'nano' sebagai editor nya, maka untuk langkah i
 #### **4. Pilih Cara untuk Eksekusi Git (_Adjusting your PATH environment_)**
 Setelah itu, pilih opsi untuk cara eksekusi Git, saya sarankan untuk pilih opsi **Git from the command line and also from 3rd-party software** (atau, membiarkan nya karena sudah terpilih) agar Git bisa di akses atau di eksekusi dari manapun, termasuk dari CMD (Command Prompt). 
    
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_3.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_3.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_3.png" loading="lazy" class="img-center" alt="Langkah ke-4 Instalasi Git&#58; Pilih Cara untuk Eksekusi Git (Adjusting your PATH environment)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_3.png){class="luminous-image-gallery"}
 
 Setelah Anda memilih opsinya, klik pada *Button* 'Next >' untuk melanjutkan.
 
 #### **5. Pilih Perangkat Lunak untuk Eksekusi SSH untuk Git (_Choosing the SSH executable_)**
 Setelah itu, pilih eksekusi SSH untuk Git, ini akan berguna nanti ketika Anda mengelola *Repository* Git dengan SSH. Agar lebih mudah, pilih "OpenSSH" dengan memilih opsi **Use OpenSSH**, seperti pada cuplikan berikut: 
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_4.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_4.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_4.png" loading="lazy" class="img-center" alt="Langkah ke-5 Instalasi Git&#58; Pilih Perangkat Lunak untuk Eksekusi SSH untuk Git (Choosing the SSH executable)"">](https://images.farrel.franqois.id/cara-install-git/Install_Git_4.png){class="luminous-image-gallery"}
 
 Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-6.
 
@@ -143,7 +143,7 @@ Saya sarankan untuk menggunakan Pustaka Bawaan dari Windows saja, yakni ['Window
 
 Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL dan mempunyai berkas `:::text ca-bundle.crt` di dalam Windows dan itupun belum saya tes), seperti pada cuplikan layar berikut ini:
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_5.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_5.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_5.png" loading="lazy" class="img-center" alt="Langkah ke-6 Instalasi Git&#58; Menentukan Pustaka untuk HTTPS pada Git (Choose HTTPS transport backend)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_5.png){class="luminous-image-gallery"}
 
 Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langkah ke-7.
 
@@ -160,7 +160,7 @@ Jadi, karena Anda saat ini meng-install Git untuk Windows, maka pilihan yang ter
 
 Seperti cuplikan layar berikut:
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_6.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_6.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_6.png" loading="lazy" class="img-center" alt="Langkah ke-7 Instalasi Git&#58; Menentukan "Baris Baru" untuk Git (Configuring the line ending conversions)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_6.png){class="luminous-image-gallery"}
 
 Setelah Anda memilih nya, klik pada *Button* 'Next >'.
 
@@ -169,21 +169,21 @@ Pada langkah ini, Anda akan memilih Terminal Emulator bawaan untuk Git Bash nya,
 
 Mohon maaf, saat ini saya tidak mempunyai cuplikan layar sebagai contoh nya. Namun, pada tutorial ini, saya memilih menggunakan MinTTY dan saya sarankan untuk menggunakan nya daripada menggunakan Konsol Windows, dengan memilih opsi **Use MinTTY (the default terminal of MSYS2)**. 
    
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_7.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_7.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_7.png" loading="lazy" class="img-center" alt="Langkah ke-8 Instalasi Git&#58; Memilih Terminal Emulator untuk Git Bash (Configuring the terminal emulator to use with Git Bash)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_7.png){class="luminous-image-gallery"}
 
 Lalu, klik *Button* 'Next >'.
    
 #### **9. Konfigurasi Opsi Tambahan (_Configuring extra options_)**
 Pada langkah ini, nanti akan ada tiga opsi, Anda bisa aktifkan semua opsi tersebut dengan mencentang nya.
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_8.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_8.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_8.png" loading="lazy" class="img-center" alt="Langkah ke-9 Instalasi Git&#58; Konfigurasi Opsi Tambahan (Configuring extra options)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_8.png){class="luminous-image-gallery"}
 
 Lalu, klik *Button* 'Next >'.
 
 #### **10. Konfigurasi Opsi Eksperimental (_Configuring experimental options_)**
 Pada langkah ini, nanti akan ada satu opsi yang bisa Anda aktifkan, namun karena sifat nya Eksperimental, maka saya sarankan agar tidak mengaktifkan nya, kecuali jika Anda ingin mencoba nya. 
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_9.png" loading="lazy" class="img-center" alt="Langkah-langkah Instalasi Git">](https://images.farrel.franqois.id/cara-install-git/Install_Git_9.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_9.png" loading="lazy" class="img-center" alt="Langkah ke-10 Instalasi Git&#58; Konfigurasi Opsi Eksperimental (Configuring experimental options)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_9.png){class="luminous-image-gallery"}
 
 Pada Git versi 2.23, akan ada opsi seperti cuplikan di atas, namun hal ini mungkin tidak berlaku untuk versi kedepan nya.
 

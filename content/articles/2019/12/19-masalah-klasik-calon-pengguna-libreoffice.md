@@ -174,7 +174,7 @@ Salah satu penyebabnya adalah bahwa kebanyakan orang telah terbiasa dengan Penam
 
 Tampilan LibreOffice standar kira-kira seperti ini (saya menggunakan Windows 10):
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=503,q=80,ssl=1/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png" loading="lazy" class="img-center" alt="Cuplikan Layar LibreOffice 6.3 di Windows 10">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=503,q=80,ssl=1/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png" loading="lazy" class="img-center" alt="Cuplikan Layar LibreOffice 6.3 di Windows 10">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Screenshot_in_Windows_10.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
 Mungkin saja, tampilan seperti itu memang terasa familiar bagi Anda yang sudah pernah menggunakan Microsoft Office 2003 sebelumnya. Tapi, yang menjadi masalah nya adalah bahwa kebanyakan orang sudah duluan familiar dengan penampilan "Ribbon" dan mengingatnya, kalaupun sebelumnya ada yang sudah pernah menggunakan Microsoft Office 2003, bukan berarti mereka familiar akan tampilan nya, serta tidak semua orang menggunakan nya.
 
@@ -194,13 +194,13 @@ Caranya mudah, yaitu:
 
 Dibawah ini merupakan satu Cuplikan Layar yang akan mempermudah kamu atau memperjelas cara di atas:
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=503,q=80,ssl=1/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png" loading="lazy" class="img-center" alt="Cara mengaktifkan Tabbed UI di LibreOffice">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=503,q=80,ssl=1/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png" loading="lazy" class="img-center" alt="Cara mengaktifkan Tabbed UI di LibreOffice">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/Activate_Tabbed_UI_in_LibreOffice.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
 Mudah, bukan?
 
 Kira-kira, untuk tampilan nya akan seperti di bawah ini jika sudah di aktifkan "Tabbed UI" nya:
 
-[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=503,q=80,ssl=1/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png" loading="lazy" class="img-center" alt="LibreOffice Tabbed UI di Windows 10">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png)
+[<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=503,q=80,ssl=1/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png" loading="lazy" class="img-center" alt="LibreOffice Tabbed UI di Windows 10">](https://images.farrel.franqois.id/masalah-klasik-pengguna-libreoffice/LibreOffice_Tabbed_Screenshot_in_Windows_10.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
 > ### Saya masih kesulitan untuk menggunakan nya, bagaimana caranya agar saya tidak merasa kesulitan?
 

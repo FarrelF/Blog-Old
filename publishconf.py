@@ -15,9 +15,11 @@ SITEURL = 'https://farrel.franqois.id'
 
 # Penggunaan CDN
 USE_CDN = True
-USE_LESS = False
+LESS = {
+    'use_less': False
+}
 USE_MINIFIED_SCRIPTS = True
-CDN_THEME_REPO_COMMIT = '602caad'
+CDN_THEME_REPO_COMMIT = '3007b4a'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(
     CDN_THEME_REPO_COMMIT
 )
@@ -28,7 +30,8 @@ CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/{0}/{1}'.format(
     CDN_BLOG_COMMIT
 )
 
-CC_LICENSE['distribution-type'] = 'cdn'
+CC_LICENSE['distribution-type'] = 'custom'
+CC_LICENSE['custom-url'] = 'https://cdn.statically.io/img/images.farrel.franqois.id/q=90,ssl=1/misc/cc'
 
 # Pengaturan Font
 USE_GOOGLE_CDN_FOR_FONTS = False

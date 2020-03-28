@@ -133,6 +133,7 @@ publish:
 preview:
 	@echo 'Making a Preview Website/Blog, please wait....'
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PREVIEWCONF) $(PELICANOPTS)
+	mv $(BASEDIR)/robots.txt $(OUTPUTDIR)/robots.txt
 
 github: publish
 	@echo ''
@@ -142,7 +143,7 @@ github: publish
 
 delete-output-theme:
 	@echo ''
-	@echo 'Deleting Theme in Output Directory....'
+	@echo 'Deleting Theme Folder in Output Directory....'
 	[ ! -d $(OUTPUTDIR)/theme ] || rm -rf $(OUTPUTDIR)/theme
 
 .PHONY: install html help clean regenerate serve serve-global devserver devtheme static-files publish preview github delete-output-theme

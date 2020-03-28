@@ -19,6 +19,12 @@ del EXTRA_PATH_METADATA['extras/robots.txt']
 STATIC_PATHS.remove('extras/ads.txt')
 del EXTRA_PATH_METADATA['extras/ads.txt']
 
+# Membuat berkas 'robots.txt' lagi, agar para robot tidak meng-'crawl' Blog Pratinjau
+f = open("robots.txt","w+")
+f.write("User-Agent: *\r\n")
+f.write("Disallow: /\r\n")
+f.close()
+
 # Google
 GOOGLE_ANALYTICS = ""
 GOOGLE_ADSENSE = ''

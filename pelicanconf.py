@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink, escapeall, details
-from datetime import *
+from datetime import datetime, timezone, timedelta
 from babel.dates import format_date, format_datetime, format_time
 from dateutil import parser
 import git
@@ -125,7 +125,12 @@ EXTRA_PATH_METADATA = {
 CUSTOM_CSS = 'custom.css'  # Menentukan lokasi Berkas CSS yang di buat sendiri
 CUSTOM_JS = CUSTOM_JS_NAME  # Menentukan lokasi Berkas JS yang di buat sendiri
 USE_CDN = False
-USE_LESS = False
+LESS = {
+    'use_less': True,
+    'version': 'v3.11.1',
+    'integrity_hash': 'sha256-KCxucWs2gUeLEgTy4loHeYPssoGZkc8XQo7KQGG16h8= sha384-TdzAi2gOpsVeVksJYStNkCNf8IoHUV8UxcIbT1psLelW9c13NSNTQf26SuL/+aNQ sha512-h7WSomHPKAh1xrFenQWhrjfYs1aBxFPEU80lPzLQ3dmC10Wn3UjuoslY+BrOpcMu0W9uiu8xgG3/SpGgqMxztQ=='
+}
+
 THEME = 'Flex'  # Menentukan Nama tema yang terinstall melalui pelican-themes, untuk keperluan pengembangan/Development
 MAIN_MENU = True
 
@@ -280,10 +285,34 @@ SOCIAL = (
     ('github', 'https://github.com/FarrelF'),
     ('gitlab', 'https://gitlab.com/FarrelF'),
     ('telegram', 'https://t.me/FarrelF'),
-    ('keybase', 'https://keybase.io/farrelf')
+    ('keybase', 'https://keybase.io/farrelf'),
+    ('paypal', 'https://paypal.me/FarrelF')
 )
 
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Using Imgix Luminous and Drift
+LUMINOUS = {
+    'activate': True,
+    'version': 'v2.3.2',
+    'script': {
+        'integrity_hash': 'sha256-JtowJgZIxtr4WObMQMDqCojFv0TMRb438K2bLmjYS8Q= sha384-fycZFb7rivGKtu0pBXNMrvngmHPp+HqL5Sq+f7MzM0FfF9+Y2CD0o5tEksQlKVco sha512-m4kT2yNAKoSDZ6+orVQhqgrIMwAng5X/wBEiNeegedjIRhZRnlgyGzYqkzJ1HR1wn0aidznu8O4Yzz7bKTSrFQ=='
+    },
+    'style': {
+        'integrity_hash': 'sha256-tPW9wLkspLEhKo1rCAUlqiMvw30PPoyOatV5gL8a+/M= sha384-3OHcGxAb4Xo6Ww7Dkrx9HUXO+FsWOI3pjdto83LFYUSpkwLlNeYZHSknlQHvpver sha512-qvPeSLkXsYxwQBnNswZ6Fri9TbDR2wOKSXzBFnuSFlOGbWob7KY8qrHU6F4YukwN6FmcdDWR1jYCbgWjf3nVkQ=='
+    }
+}
+
+DRIFT = {
+    'activate': False,
+    'version': 'v1.4.0',
+    'script': {
+        'integrity_hash': 'sha256-aFEn7VlBa8PmHn8vQoltD9oX8Tkv124tmWKPvAuiHJo= sha384-5egwFCf6lmPdG3pnKadFiJi2Zt+bHNb2eC0jwPXTtWLyCNZXA8MezB5IxHeDv4a5 sha512-I3Ntq1EyOaSknyeFTaiXsNMIqDBLTIlCPWXyKMA+XdXvs0MAk3WlONybS7Iyn8TYn3jTGMhCikUdWT5ktEO3dw=='
+    },
+    'style': {
+        'integrity_hash': 'sha256-0eMzyq5C4rYJJNmSv07Lvef7ceiOzf9MNVUrA9hiq+M= sha384-hT7xn1tOkpXuQj5+3w61i8ChdD1BhRxUf9Z3RZKDdggYEj/STnZ8ch8otrAp4TUg sha512-vtTM05wauWgmgm7bPHD1J1yJC9RLSn45zRazmqO4iAeoKe3GeSWCIVr8M+jqbRhtvBnhHJEJSYuSN05dB4xK8Q=='
+    }
+}
