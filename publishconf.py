@@ -15,19 +15,23 @@ SITEURL = 'https://farrel.franqois.id'
 
 # Penggunaan CDN
 USE_CDN = True
-USE_LESS = False
+LESS = {
+    'use_less': False
+}
 USE_MINIFIED_SCRIPTS = True
-CDN_THEME_REPO_COMMIT = '602caad'
+CDN_THEME_REPO_COMMIT = '3007b4a'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(
     CDN_THEME_REPO_COMMIT
 )
 
 CDN_BLOG_COMMIT = 'fce8460'
-CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/FarrelF/FarrelF-Blog/{0}'.format(
+CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/{0}/{1}'.format(
+    REPO_SHORT,
     CDN_BLOG_COMMIT
 )
 
-CC_LICENSE['distribution-type'] = 'cdn'
+CC_LICENSE['distribution-type'] = 'custom'
+CC_LICENSE['custom-url'] = 'https://cdn.statically.io/img/images.farrel.franqois.id/q=90,ssl=1/misc/cc'
 
 # Pengaturan Font
 USE_GOOGLE_CDN_FOR_FONTS = False
@@ -130,19 +134,23 @@ if USE_CDN:
     STATIC_PATHS.remove('extras/custom.js')
     del EXTRA_PATH_METADATA['extras/custom.js']
 
+AVATAR_WIDTH = '143'
+AVATAR_HEIGHT = '146'
+
 if USE_CDN:
-    SITELOGO = 'https://cdn.statically.io/img/farrel.franqois.id/img/profile_avatar.jpg'
+    AVATAR_URL = 'https://cdn.statically.io/img/farrel.franqois.id/w={0},h={1},ssl=1/img/profile_avatar.jpg'.format(AVATAR_WIDTH, AVATAR_HEIGHT)
+    SITELOGO = 'https://cdn.statically.io/img/farrel.franqois.id/q=95,ssl=1/img/profile_avatar.jpg'
 else:
     SITELOGO = '{0}/img/profile_avatar.jpg'.format(SITEURL)
 
-SITELOGO_WIDTH = '140'
-SITELOGO_HEIGHT = '143'
 GOOGLE_SITE_VERIFICATION = [
     'gWpIShFtX8KQbZw1OOHRTXY4QhyanAIVfSfyo6faiw0',
     'YHoyl7JPwHm7UBWzprZXnX0sQlLla1DjeULMGRqp6yA'
 ]
 
 BING_SITE_VERIFICATION = '0BD80FDF817E3BE4D9E4C4149FF490BD'
+
+FB_APP_ID = '1696840170451603'
 
 COPYRIGHTED_SITE_VERIFICATION = 'd8d7be3e6f3ee7ab'
 

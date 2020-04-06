@@ -162,6 +162,15 @@ def gh_pages(c):
           '-m {commit_message} '
           '{deploy_path} -p'.format(**CONFIG))
 
+
+@task
+def delete_output_theme(c):
+    """Deleting Theme in Output Directory"""
+    c.run(
+        'rm -rf {deploy_path}/theme'.format(**CONFIG)
+    )
+
+
 @task
 def help(c):
     """Displaying Help Options"""

@@ -55,6 +55,11 @@ jobs:
       run: |
         poetry run make devtheme
         poetry run make REBUILD=1 preview
+        USE_CDN=$(poetry run python -c "from previewconf import *; print(USE_CDN)")
+        if [ ${USE_CDN} = 'True' ]
+        then
+          make delete-output-theme
+        fi
 
     - name: Upload Outputs to Artifact
       uses: actions/upload-artifact@v1

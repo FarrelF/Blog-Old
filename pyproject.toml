@@ -6,11 +6,9 @@ authors = ["Farrel Franqois <farrel@franqois.id>"]
 license = "AGPL-3.0-or-later"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
 Babel = "*"
 beautifulsoup4 = "*"
-cffi = "*"
-colorama = "*"
 GitPython = "*"
 invoke = "*"
 Markdown = "*"

@@ -34,7 +34,7 @@ Maka dari itu, saran saya, silahkan Anda bacakan kemudian pahami terlebih dahulu
 
 ## Lisensi yang di gunakan
 ### Untuk semua konten di Blog ini
-Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya]({filename}/pages/ketentuan-hukum-dan-sanggahan.md)) di lisensi kan di bawah lisensi "Creative Commons Atribusi-BerbagiSerupa Internasional 4.0" (Atau, bahasa Inggris nya: _Attribution-ShareAlike International 4.0_) (disingkat: CC BY-SA 4.0)
+Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nyatakan [sebaliknya]({filename}/pages/ketentuan-dan-kebijakan-blog.md)) di lisensi kan di bawah lisensi "Creative Commons Atribusi-BerbagiSerupa Internasional 4.0" (Atau, bahasa Inggris nya: _Attribution-ShareAlike 4.0 International_) (disingkat: CC BY-SA 4.0)
 
 Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan mengakses Alamat URL Berikut ini:
 
@@ -42,8 +42,17 @@ Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan meng
 https://creativecommons.org/licenses/by-sa/4.0/
 ```
 
+### Untuk semua komentar di Blog ini
+Semua komentar yang ada di dalam blog ini secara bawaan akan di lisensi kan di bawah lisensi berikut:
+
+- ["Creative Commons Atribusi-BerbagiSerupa Internasional 4.0"](https://creativecommons.org/licenses/by-sa/4.0/) (Atau, bahasa Inggris nya: _Attribution-ShareAlike 4.0 International_) (disingkat: CC BY-SA 4.0) untuk Komentar Umum.
+
+- ["Cretive Commons Atribusi-TanpaTurunan Internasional 4.0"](https://creativecommons.org/licenses/by-nd/4.0/) (Atau, bahasa Inggris nya: _Attribution-NoDerivatives 4.0 International_) (disingkat: CC BY-ND 4.0) untuk Komentar yang bersifat Statistikal (Atau, segala komentar yang mengandung data Statistik).
+
+Penggunaan Lisensi di atas hanya berlaku jika Komentator tidak menyatakan/menyertakan Lisensi nya di dalam Komentar nya. Jika komentator menyertakan Lisensi nya di dalam komentar nya, maka Lisensi di atas bisa tidak berlaku, sesuai dengan [Ketentuan Komentar]({filename}/pages/ketentuan-dan-kebijakan-blog.md#lisensi-komentar) yang berlaku.
+
 ### Untuk Kode Sumber Blog
-Sedangkan, untuk kode sumber blog ini saya lisensi kan di bawah lisensi "GNU Affero General Public License v3" (GNU AGPLv3), untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Blog/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Blog). Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
+Sedangkan, untuk kode sumber blog ini saya lisensi kan di bawah lisensi "GNU Affero General Public License v3" (GNU AGPLv3) atau yang lebih baru, untuk mengetahui isi Lisensi nya, Anda bisa lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Blog/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Blog). Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
 
 ```text
 https://www.gnu.org/licenses/agpl-3.0.html
@@ -56,7 +65,7 @@ Kode Sumber blog ini di Lisensikan dengan Lisensi GNU AGPLv3, namun bukan berart
 
 - Semua berkas di dalam [`:::text content/extras`](https://github.com/FarrelF/Blog/tree/master/content/extras) di lisensi kan dengan GNU AGPLv3.
 
-- Di dalam folder `:::text content` nanti, akan ada berkas-berkas tertentu yang di dalam nya telah mengandung penyebutan atau/dan logo dari sebuah Merek Dagang Terdaftar atau/dan Pakaian Dagang yang di miliki oleh Perusahaan. Jadi, sesuai dengan [ketentuan di blog ini]({filename}/pages/ketentuan-hukum-dan-sanggahan.md), jika Anda ingin menurunkan nya, bahkan sampai-sampai ingin merubah/mengedit yang mengenai logo nya, Anda tetap harus menuruti Aturan dari masing-masing pemilik Merek Dagang tersebut, tapi biasanya di perbolehkan jika hanya "sama-persis"/menggantikan nya atau menghapuskan nya.
+- Di dalam folder `:::text content` nanti, akan ada berkas-berkas tertentu yang di dalam nya telah mengandung penyebutan atau/dan logo dari sebuah Merek Dagang Terdaftar atau/dan Pakaian Dagang yang di miliki oleh Perusahaan. Jadi, sesuai dengan [ketentuan di blog ini]({filename}/pages/ketentuan-dan-kebijakan-blog.md), jika Anda ingin menurunkan nya, bahkan sampai-sampai ingin merubah/mengedit yang mengenai logo nya, Anda tetap harus menuruti Aturan dari masing-masing pemilik Merek Dagang tersebut, tapi biasanya di perbolehkan jika hanya dalam bentuk "sama-persis"/menggantikan nya atau menghapuskan nya.
 
 ### Untuk Kode Sumber Tema nya
 Terakhir, untuk kode sumber tema yang saya gunakan dan saya modifikasi, itu saya lisensi kan di bawah Lisensi MIT. Untuk mengetahui isi Lisensi nya, bisa Anda lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Modified-Flex/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Modified-Flex).

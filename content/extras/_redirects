@@ -1,3 +1,7 @@
+# Di bawah ini adalah pengalihan domain
+http://farrelf.netlify.com/* https://farrel.franqois.id/:splat 301!
+https://farrelf.netlify.com/* https://farrel.franqois.id/:splat 301!
+
 # Di bawah ini adalah laman yang di alihkan ke Laman 403
 /drafts/*   /403        403!
 /403/*      /403        403!
