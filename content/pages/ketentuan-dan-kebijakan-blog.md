@@ -91,11 +91,13 @@ Meskipun begitu, pemilik hak cipta dari komentar Anda adalah Anda sendiri yang s
 
 Saya tidak bertanggung jawab jika ada orang lain yang ternyata bebas menggunakan komentar Anda berdasarkan Aturan Lisensi yang telah saya berlakukan, namun Anda malah tidak meng-hendaki nya.
 
+Jika sewaktu-waktu Lisensi Komentar ini berubah, maka perubahan tersebut akan berlaku untuk komentar yang telah ada setelah perubahan tersebut di berlakukan, dan ini tidak akan berefek untuk komentar yang telah ada sejak lama/sebelum perubahan tersebut di berlakukan.
+
 
 ### Hak Cipta atau Hak Kekayaan Intelektual (HAKI)
-Jika Anda menyertakan/menyantumkan segala properti hak cipta atau HAKI di dalam Komentar, maka sebaik nya Anda izin terlebih dahulu kepada pemilik hak cipta nya atau/dan menyantumkan atribusi nya dengan benar. Jika ada perjanjian tertulis dari pemilik Hak Cipta, harap Anda patuhi perjanjian tersebut jika Anda ingin menggunakan nya.
+Jika Anda menyertakan/menyantumkan segala properti hak cipta atau HAKI milik orang lain di dalam Komentar, maka sebaik nya Anda izin terlebih dahulu kepada pemilik hak cipta nya atau/dan menyantumkan atribusi nya dengan benar. Jika ada perjanjian tertulis dari pemilik Hak Cipta, harap Anda patuhi perjanjian tersebut jika Anda ingin menggunakan nya.
 
-Jika Anda tidak menyantumkan nya dengan benar, tidak melakukan izin terlebih dahulu kepada pemilik hak cipta, atau/dan tidak mematuhi perjanjian nya, maka komentar Anda bisa saja di nyatakan melanggar hak cipta.
+Jika Anda tidak menyantumkan nya dengan benar, seperti tidak melakukan izin terlebih dahulu kepada pemilik hak cipta, atau/dan tidak mematuhi perjanjian nya, maka komentar Anda bisa saja di nyatakan melanggar hak cipta.
 
 Begitupula dengan hak paten, Anda pun tidak bisa langsung menggunakan nya tanpa se-izin dari Pemegang Hak Paten nya, jika Anda melakukan hal tersebut di dalam kolom komentar, maka komentar Anda bisa saja di nyatakan melanggar Hak Paten.
 
@@ -130,7 +132,16 @@ Terakhir, jika Anda ingin mempromosikan Web/Blog Anda, lebih baik jangan di kolo
 Jadi, mohon untuk berkomentar dengan sewajar nya saja.
 
 
-### Moral, Sosial, Budaya dan SARA
+### Diskriminasi dan Penghinaan terhadap Seseorang/Kelompok
+Segala bentuk diskriminasi/penghinaan terhadap Suku, Agama, Ras dan Antargolongan serta Warna Kulit, Bentuk Fisik, Keyakinan, dll, di dalam kolom komentar, dengan alasan apapun, itu sangat tidak di perbolehkan.
+
+Dan, segala bentuk penyerangan personal/pribadi serta melakukan penghinaan terhadap seseorang di dalam kolom komentar, dengan alasan apapun, itu dilarang di dalam kolom komentar.
+
+Penghinaan seseorang itu bisa dalam bentuk Ujaran Kebencian/Provokasi, Penyerangan Pribadi Seseorang/Kelompok, baik itu nama baik ataupun bentuk fisik nya, dll.
+
+Apabila kedua hal tersebut terjadi, maka saya harus menghapus komentar Anda, dan jika itu terjadi berulang kali oleh pengguna yang sama, maka Anda akan saya ban.
+
+Jadi, mohon bijaksanalah dan hati-hati dalam berkomentar.
 
 
 ### Kepatuhan terhadap Aturan Hukum
@@ -153,6 +164,11 @@ Jadi, baca/tidak baca, suka/tidak suka atau setuju/tidak setuju, maka Anda harus
 Jika Anda tidak menyetujui pernyataan tersebut, maka sebaiknya Anda tidak mengunjungi, menjelajahi dan menggunakan blog ini. Harap maklumi.
 
 Serta semua Pernyataan yang ada di laman ini akan di rubah kapanpun dan dimanapun oleh saya sendiri, tanpa pemberitahuan terlebih dahulu, dengan alasan apapun.
+
+Ketentuan dan Kebijakan Blog ini:
+- Di perbarui/di ubah pada Hari/Tanggal: **Selasa, 07 April 2020**
+- Di berlakukan pada Hari/Tanggal: **Selasa, 07 April 2020**
+
 
 ## Penutup
 Baiklah, sekian untuk laman Ketentuan dan Kebijakan Blog kali ini. Semoga Anda memahami dan memaklumi adanya Ketentuan dan Pernyataan seperti ini. Dan, semoga Anda bisa mentaati nya untuk kebaikan bersama dan Anda juga.

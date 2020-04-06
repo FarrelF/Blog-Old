@@ -47,7 +47,7 @@ Tapi, tetap saja, jika Anda ingin memodifikasi tema nya, silahkan Anda ubah itu 
 ## Cara 2: Melakukan Donasi
 Anda bisa menyisihkan sedikit uang Anda untuk mendonasikan nya sebagai kontribusi Anda untuk Blog ini. 
 
-Untuk sementara ini, saya hanya menyediakan LinkAja, GoPay dan PayPal saja, sedangkan metode lain nya seperti OVO, Dana, dan juga SocialBuzz akan segera hadir jika memungkinkan dan ATM tidak akan saya hadirkan disini, karena saya tidak menggunakan ATM.
+Untuk sementara ini, saya hanya menyediakan LinkAja, GoPay dan PayPal saja, sedangkan metode lain nya seperti OVO, Dana, ATM Bank dan juga SocialBuzz akan segera hadir jika memungkinkan.
 
 Jika Anda ingin mendonasikan nya, Anda bisa ikuti cara berikut:
 
@@ -91,7 +91,7 @@ Jika Anda ingin menggunakan PayPal (baik menggunakan Saldo PayPal yang Anda puny
 
 Alamat URL PayPal: [https://paypal.me/FarrelF](https://paypal.me/FarrelF)
 
-### OVO, Dana dan SocialBuzz
+### OVO, Dana, ATM Bank dan SocialBuzz
 Untuk sementara ini, ke tiga metode pembayaran tersebut belum di sediakan. 
 
 Ke-tiga metode pembayaran tersebut akan segera hadir jika situasi dan kondisi nya yang memungkinkan :slightly_smiling_face:

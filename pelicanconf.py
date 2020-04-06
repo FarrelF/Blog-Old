@@ -16,7 +16,6 @@ SITETITLE = 'Farrel Franqois Blog'
 SITESUBTITLE = '(Bukan) Sekedar blog pribadi saya'
 SITEDESCRIPTION = 'Ini adalah Blog saya, walaupun begitu, ini bukan berarti sekedar Blog Pribadi saja!'
 SITEURL = 'http://localhost:{0}'.format(PORT)  # Saya isikan dengan 'localhost' agar blog bisa di akses secara Offline
-FB_APP_ID = '1696840170451603'
 
 IGNORE_FILES = ['.#*']  # Mengabaikan Berkas
 
