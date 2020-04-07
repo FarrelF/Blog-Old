@@ -20,17 +20,16 @@ jobs:
     - name: Install and Set up Locales
       run: |
         case "$(curl -s --max-time 3 -I http://azure.archive.ubuntu.com | sed 's/^[^ ]*  *\([0-9]\).*/\1/; 1q')" in
-          [23]) echo "HTTP connectivity is up";;
+          [23]) echo "HTTP connectivity is up"
+                if nc -zw3 azure.archive.ubuntu.com 80; then
+                  echo "The Mirror Network has been connected successfully"
+                else
+                  sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
+                  sudo apt update
+                fi;;
           *) sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
              sudo apt update;;
         esac
-
-        if nc -zw3 azure.archive.ubuntu.com 80; then
-          echo "The Mirror Network has been connected successfully"
-        else
-          sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
-          sudo apt update
-        fi
 
         sudo apt install locales locales-all
         sudo sed -i 's/id_ID\s.*$/id_ID id_ID.utf8/g' /usr/share/locale/locale.alias
