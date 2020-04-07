@@ -32,6 +32,10 @@ CDN_STATIC_BLOG_URL = 'https://cdn.statically.io/gh/{0}/{1}'.format(
 
 CC_LICENSE['distribution-type'] = 'custom'
 CC_LICENSE['custom-url'] = 'https://cdn.statically.io/img/images.farrel.franqois.id/q=90,ssl=1/misc/cc'
+CC_LICENSE['otherwise-noted-url'] = '{0}/ketentuan-dan-kebijakan-blog'.format(SITEURL)
+
+REPO_INFO['source_code']['page_url'] = '{0}/kode-sumber'.format(SITEURL)
+REPO_INFO['license']['page_url'] = '{0}/lisensi'.format(SITEURL)
 
 # Pengaturan Font
 USE_GOOGLE_CDN_FOR_FONTS = False
