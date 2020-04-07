@@ -244,7 +244,8 @@ CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike (CC BY-SA)',
     'version': '4.0',
     'slug': 'by-sa',
-    'distribution-type': 'local'
+    'distribution-type': 'local',
+    'otherwise-noted-url': '{0}/ketentuan-dan-kebijakan-blog'.format(SITEURL)
 }
 
 # Pengaturan Penampilan Commit Git di Akhir Blog
@@ -254,6 +255,24 @@ SHORT_COMMIT = COMMIT[0:7]
 COMMIT_DATETIME = locale_datetime(git.Repo().head.commit.authored_datetime)
 REPO_SHORT = "FarrelF/Blog"
 REPO_URL = "https://github.com/{0}".format(REPO_SHORT)
+
+REPO_INFO = {
+    'is_source_available': True,
+    'is_open_source': True,
+    'source_code': {
+        'page_url': '{0}/kode-sumber'.format(SITEURL),
+        'page_name': 'Kode Sumber',
+        'repo_url': REPO_URL,
+        'repo_short': REPO_SHORT
+    },
+    'license': {
+        'url': '{0}/blob/master/LICENSE'.format(REPO_URL),
+        'page_url': '{0}/lisensi'.format(SITEURL),
+        'page_name': 'Lisensi',
+        'name': 'GNU Affero General Public License v3',
+        'short_name': 'AGPLv3'
+    }
+}
 
 LAZYLOAD_IMAGES = True
 
