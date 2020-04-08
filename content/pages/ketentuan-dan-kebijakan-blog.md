@@ -166,6 +166,7 @@ Jika Anda tidak menyetujui pernyataan tersebut, maka sebaiknya Anda tidak mengun
 Serta semua Pernyataan yang ada di laman ini akan di rubah kapanpun dan dimanapun oleh saya sendiri, tanpa pemberitahuan terlebih dahulu, dengan alasan apapun.
 
 Ketentuan dan Kebijakan Blog ini:
+
 - Di perbarui/di ubah pada Hari/Tanggal: **Selasa, 07 April 2020**
 - Di berlakukan pada Hari/Tanggal: **Selasa, 07 April 2020**
 
