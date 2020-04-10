@@ -38,7 +38,7 @@ Semua konten yang ada di dalam blog ini, dan terjemahan nya (kecuali jika di nya
 
 Persyaratan nya bisa Anda lihat/baca laman mengenai Lisensi tersebut dengan mengakses Alamat URL Berikut ini:
 
-```text
+```plaintext
 https://creativecommons.org/licenses/by-sa/4.0/
 ```
 
@@ -54,7 +54,7 @@ Penggunaan Lisensi di atas hanya berlaku jika Komentator tidak menyatakan/menyer
 ### Untuk Kode Sumber Blog
 Sedangkan, untuk kode sumber blog ini saya lisensi kan di bawah lisensi "GNU Affero General Public License v3" (GNU AGPLv3) atau yang lebih baru, untuk mengetahui isi Lisensi nya, Anda bisa lihat/baca berkas yang bernama [LICENSE](https://github.com/FarrelF/Blog/blob/master/LICENSE) di dalam [Kode Sumber nya](https://github.com/FarrelF/Blog). Atau, kalau Anda lebih suka membaca nya melalui Situs Web Resmi nya langsung, bisa Anda kunjungi Alamat URL nya berikut di bawah ini:
 
-```text
+```plaintext
 https://www.gnu.org/licenses/agpl-3.0.html
 ```
 

@@ -12,7 +12,7 @@ Kode Sumber nya ini di bagi menjadi dua, yakni Kode Sumber untuk Blog nya, dan y
 ## I. Kode Sumber Blog
 Kode Sumber untuk Blog ini telah saya simpan di dalam GitHub, untuk melihat/memperoleh nya, silahkan kunjungi Alamat URL untuk _Repository_ Git nya di bawah ini:
 
-```text
+```plaintext
 https://github.com/FarrelF/Blog
 ```
 
@@ -34,7 +34,7 @@ Kode Sumber untuk Tema Blog ini telah saya simpan di dalam GitHub. Sebenarnya, k
 
 Untuk melihat/memperoleh nya, silahkan kunjungi Alamat URL untuk _Repository_ Git nya di bawah ini:
 
-```text
+```plaintext
 https://github.com/FarrelF/Modified-Flex
 ```
 

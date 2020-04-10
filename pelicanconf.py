@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink, escapeall, details
+from pymdownx import emoji, twemoji_db, highlight, inlinehilite, superfences, extra, magiclink, escapeall, details, keys
 from datetime import datetime, timezone, timedelta
 from babel.dates import format_date, format_datetime, format_time
 from dateutil import parser
@@ -74,7 +74,7 @@ USE_BOOTSTRAP = False
 
 PATH = 'content'
 
-ROBOTS = 'noindex, nofollow, noarchive'
+ROBOTS = 'noindex, nofollow, noarchive, nosnippets'
 
 # Artikel
 ARTICLE_PATHS = ['articles']
@@ -125,7 +125,7 @@ CUSTOM_CSS = 'custom.css'  # Menentukan lokasi Berkas CSS yang di buat sendiri
 CUSTOM_JS = CUSTOM_JS_NAME  # Menentukan lokasi Berkas JS yang di buat sendiri
 USE_CDN = False
 LESS = {
-    'use_less': True,
+    'use_less': False,
     'version': 'v3.11.1',
     'integrity_hash': 'sha256-KCxucWs2gUeLEgTy4loHeYPssoGZkc8XQo7KQGG16h8= sha384-TdzAi2gOpsVeVksJYStNkCNf8IoHUV8UxcIbT1psLelW9c13NSNTQf26SuL/+aNQ sha512-h7WSomHPKAh1xrFenQWhrjfYs1aBxFPEU80lPzLQ3dmC10Wn3UjuoslY+BrOpcMu0W9uiu8xgG3/SpGgqMxztQ=='
 }
@@ -140,11 +140,11 @@ CHECK_MODIFIED_METHOD = 'sha256'
 # Plugin dan Konfigurasi nya
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
-    'extended_sitemap', 
+    'extended_sitemap',
     'filetime_from_git',
     'more_categories', 
-    'summary', 
-    'pelican_htmlmin', 
+    'summary',
+    'pelican_htmlmin',
     'interlinks'
 ]
 
@@ -202,15 +202,51 @@ else:
     GOOGLE_SEARCH['options']['search_style'] = 'gcse-search'
 
 # Pengaturan Markdown
-PYGMENTS_STYLE = 'monokai'  # Tampilan Pygments yang merupakan Syntax Highlighter
+# PYGMENTS_STYLE = 'stata-dark'  # Tampilan Pygments yang merupakan Syntax Highlighter
+USE_PYGMENTS = False
+HIGHLIGHTJS = {
+    'use_highlightjs': True,
+    'version': '9.18.1',
+    'integrity_hash': '',
+    'styles': {
+        'dark_mode': {
+            'name': 'atom-one-dark',
+            'integrity_hash': ''
+        },
+        'light_mode': {
+            'name': 'atom-one-light',
+            'integrity_hash': ''
+        }
+    },
+    'linenums': False,
+    'linenums_config': {
+        'version': 'v2.7.0'
+    }
+}
+
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.toc': {},
         'markdown.extensions.meta': {},
+        "pymdownx.magiclink": {
+            "repo_url_shortener": True,
+            "repo_url_shorthand": True,
+            "provider": "github",
+            "user": "FarrelF",
+            "repo": "Blog"
+        },
+        "pymdownx.tilde": {
+            "subscript": True
+        },
+        'pymdownx.keys': {
+            "camel_case": True
+        },
         'pymdownx.highlight': {
             'css_class': 'highlight',
-            'pygments_style': PYGMENTS_STYLE,
-            'guess_lang': False,
+            'use_pygments': False,
+            'linenums': False,
+            'linenums_style': 'inline',
+            'guess_lang': False
         },
         'pymdownx.extra': {},
         'pymdownx.escapeall': {},
@@ -228,8 +264,9 @@ MARKDOWN = {
             },
         },
         'pymdownx.superfences': {},
-        'pymdownx.inlinehilite': {},
-        'pymdownx.magiclink': {},
+        'pymdownx.inlinehilite': {
+            'css_class': 'hljs'
+        },
         'pymdownx.details': {},
     },
     'output_format': 'html5',
@@ -321,7 +358,9 @@ LUMINOUS = {
     },
     'style': {
         'integrity_hash': 'sha256-tPW9wLkspLEhKo1rCAUlqiMvw30PPoyOatV5gL8a+/M= sha384-3OHcGxAb4Xo6Ww7Dkrx9HUXO+FsWOI3pjdto83LFYUSpkwLlNeYZHSknlQHvpver sha512-qvPeSLkXsYxwQBnNswZ6Fri9TbDR2wOKSXzBFnuSFlOGbWob7KY8qrHU6F4YukwN6FmcdDWR1jYCbgWjf3nVkQ=='
-    }
+    },
+    'caption': True,
+    'content_selector': '.luminous-image-gallery' 
 }
 
 DRIFT = {
