@@ -19,7 +19,7 @@ LESS = {
     'use_less': False
 }
 USE_MINIFIED_SCRIPTS = True
-CDN_THEME_REPO_COMMIT = '64091af'
+CDN_THEME_REPO_COMMIT = '531c6ff'
 CDN_STATIC_THEME_URL = 'https://cdn.statically.io/gh/FarrelF/Modified-Flex/{0}/static'.format(
     CDN_THEME_REPO_COMMIT
 )

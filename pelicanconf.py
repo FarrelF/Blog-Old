@@ -19,9 +19,16 @@ SITEURL = 'http://localhost:{0}'.format(PORT)  # Saya isikan dengan 'localhost' 
 
 IGNORE_FILES = ['.#*']  # Mengabaikan Berkas
 
+TWITTER = {
+    'using_twitter_meta': True,
+    'creator_username': '@FarrelFranqois',
+    'default_card_type': 'summary'
+}
+
 DEFAULT_METADATA = {
     'status': 'draft',
-    'author': AUTHOR
+    'author': AUTHOR,
+    'twitter_username': TWITTER['creator_username']
 }
 
 # Pengaturan Bahasa, Waktu dan Lokalisasi

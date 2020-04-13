@@ -8,7 +8,7 @@ Cover: https://cdn.statically.io/img/images.farrel.franqois.id/w=672,q=80,ssl=1/
 Cover_Width: 672
 Cover_Height: 200
 Status: published
-description: Apakah Anda merasa kesulitan saat menggunakan LibreOffice? Terutama untuk masalah kompatibilitas yang seringkali Anda jumpai? Mau tau cara mengatasi nya? Silahkan baca Artikel ini.
+description: Apakah Anda merasa kesulitan saat menggunakan LibreOffice pertama kali dan ingin mengatasi nya? Silahkan baca Artikel ini!
 Summary: Banyak sekali pengguna LibreOffice yang merasa kesulitan dalam menggunakan nya, seperti dokumen nya yang berantakan saat di buka dengan Microsoft Office, masalah kompatibilitas dan masalah lain nya. Artikel ini akan membahas hal-hal dasar yang harus di lakukan ketika Anda menggunakan LibreOffice dengan "Benar", dan saya bahas pada bagian yang paling "dasar" nya saja, yang mana ini tidak banyak di ketahui oleh banyak orang. Penasaran? Silahkan baca artikel ini, kalau tidak, yah tidak apa-apa :slightly_smiling_face:
 ---
 
@@ -54,7 +54,7 @@ Jadi, masalah seperti ini sebenarnya tidak perlu di keluhkan/di permasalahkan, b
 
 > ### Kenapa mereka memfokuskan format ODF sebagai format bawaan nya? Dan, kenapa mereka tidak memfokuskan format OOXML saja? Bukan nya OOXML ini termasuk "Open Format"?
 
-Karena Format OOXML itu bersifat [tidak konsisten](https://joinup.ec.europa.eu/collection/open-source-observatory-osor/document/complex-singularity-versus-openness), hal ini terjadi karena spesifikasi dari OOXML itu sendiri dan juga Implementasi nya di Microsoft Office itu seringkali [berbeda](https://brattahlid.wordpress.com/2012/05/08/is-docx-really-an-open-standard/). 
+Karena Format OOXML itu bersifat [tidak konsisten](https://joinup.ec.europa.eu/collection/open-source-observatory-osor/document/complex-singularity-versus-openness), hal ini terjadi karena spesifikasi dari OOXML itu sendiri dan juga Implementasi nya di Microsoft Office itu seringkali [berbeda](https://brattahlid.wordpress.com/2012/05/08/is-docx-really-an-open-standard/){rel="nofollow noopener"}. 
 
 Perlu Anda ketahui, bahwa di dalam Format OOXML itu di pecah menjadi 3 versi (atau sub-standar), diantara nya adalah: 
 
@@ -97,11 +97,11 @@ Selain alasan di atas, Alasan mereka hanya fokus (bahkan [mempromosikan](https:/
 
 Ini artinya, mereka percaya bahwa ODF merupakan format yang paling 'netral' saat ini, bila di bandingkan dengan format OOXML.
 
-Lagian, di Indonesia, Format ODF ini sudah memasuki ketentuan Standar Nasional Indonesia (SNI) pada tahun 2010 dengan Nomor [**SNI ISO/IEC 26300:2011**](http://sispk.bsn.go.id/SNI/DetailSNI/8541)* melalui surat keputusan dengan Nomor [**41/KEP/BSN/4/2011**](http://akses-sispk.bsn.go.id/Upload/Dokumen/SK_SNI/7476_SK%20SNI%2041-04-2011.PDF)* dari Kepala BSN (Badan Standardisasi Nasional) pada waktu itu. Sampai sekarang, Standar ini masih berlaku di Indonesia.
+Lagian, di Indonesia, Format ODF ini sudah memasuki ketentuan Standar Nasional Indonesia (SNI) pada tahun 2010 dengan Nomor [**SNI ISO/IEC 26300:2011**](http://sispk.bsn.go.id/SNI/DetailSNI/8541)* melalui surat keputusan dengan Nomor [**41/KEP/BSN/4/2011**](http://akses-sispk.bsn.go.id/Upload/Dokumen/SK_SNI/7476_SK%20SNI%2041-04-2011.PDF){rel="nofollow noopener"}* dari Kepala BSN (Badan Standardisasi Nasional) pada waktu itu. Sampai sekarang, Standar ini masih berlaku di Indonesia.
 
 **\*Catatan**: Akses tautan tersebut melalui protokol HTTP, bukan HTTPS. Dan, nonaktifkan terlebih dahulu Ekstensi "HTTPS Everywhere" pada Peramban Web kamu, kalo ada. Jika kamu mengakses nya dengan protokol HTTPS, maka yang kamu dapatkan hanyalah laman Login nya saja/User Portal. Aneh memang situs web pemerintah satu ini.
 
-Bahkan, format ini telah di akui oleh Pemerintah kita melalui [Kemenkominfo (Kementerian Komunikasi dan Informatika)](https://jdih.kominfo.go.id/produk_hukum/unduh/id/75/t/peraturan+menteri+komunikasi+dan+informatika++nomor+7+tahun+2013+tanggal+5+maret+2013) (Atau, Anda bisa unduh [versi lain nya](https://web.kominfo.go.id/sites/default/files/RPM%20Pedoman%20Penerapan%20Interoperabilitas%20Dokumen%20Perkantoran%20Bagi%20Penyelenggara%20Sistem%20Elektronik%20Untuk%20Pelayanan%20Publik.docx)) dan [Kemenkumham (Kementerian Hukum dan Hak Asasi Manusia)](http://ditjenpp.kemenkumham.go.id/arsip/bn/2013/bn474-2013lamp.pdf) pada Tahun 2013 yang lalu.
+Bahkan, format ini telah di akui oleh Pemerintah kita melalui [Kemenkominfo (Kementerian Komunikasi dan Informatika)](https://jdih.kominfo.go.id/produk_hukum/unduh/id/75/t/peraturan+menteri+komunikasi+dan+informatika++nomor+7+tahun+2013+tanggal+5+maret+2013){rel="nofollow noopener"} (Atau, Anda bisa unduh [versi lain nya](https://web.kominfo.go.id/sites/default/files/RPM%20Pedoman%20Penerapan%20Interoperabilitas%20Dokumen%20Perkantoran%20Bagi%20Penyelenggara%20Sistem%20Elektronik%20Untuk%20Pelayanan%20Publik.docx){rel="nofollow noopener"}) dan [Kemenkumham (Kementerian Hukum dan Hak Asasi Manusia)](http://ditjenpp.kemenkumham.go.id/arsip/bn/2013/bn474-2013lamp.pdf){rel="nofollow noopener"} pada Tahun 2013 yang lalu.
 
 Selain itu, menurut [artikelnya](https://kominfo.go.id/index.php/content/detail/3434/open+source+di+kominfo+/0/program_prioritas), pihak Kemenkominfo telah menggunakan Perangkat-Perangkat Lunak tersebut di dalam lingkungan nya untuk menunjang keperluan mereka, termasuk LibreOffice dan Format ODF nya. (Ngomong-ngomong, Artikel itu di terbitkan sejak tahun 2014 yang lalu. Entah apa yang terjadi sekarang, apakah mereka masih menggunakan nya? Semoga saja masih menggunakan nya)
 
@@ -143,7 +143,7 @@ LibreOffice mendukung Sistem Operasi Windows, jadi ia bisa di install di dalam S
 
 Ini akan sangat membantu Anda yang sedang menggunakan Komputer lain, yang mana Anda tidak dapat menggunakan Izin Administrator atau bagi Anda yang tidak ingin repot-repot atau membuang-buang waktu serta tenaga untuk meng-install LibreOffice di Komputer lain, seperti di Warnet, Rental Komputer, Komputer Lab Sekolah/Kampus, Komputer Kantor, dll nya.
 
-Untuk meng-unduh nya, silahkan Anda kunjungi [Halaman Web Resmi nya](https://www.libreoffice.org/download/portable-versions/), meng-ingat ini sangat penting bagi Anda yang sering menggunakan komputer lain nya.
+Untuk meng-unduh nya, silahkan Anda kunjungi [Halaman Web Resmi nya](https://www.libreoffice.org/download/portable-versions/){rel="nofollow noopener"}, meng-ingat ini sangat penting bagi Anda yang sering menggunakan komputer lain nya.
 
 > ### Bagaimana jika saya membuka berkas OOXML di LibreOffice?
 
@@ -249,18 +249,18 @@ Panduan tersebut memang berbahasa Inggris, namun Anda bisa menggunakan Bahasa In
 
 Anda bisa mencari materi-materi yang ada di situ kalau mau. Tapi, panduan disitu kurang lengkap untuk menjelaskan nya, panduan tersebut hanyalah sebatas menjelaskan penggunaan fitur-fitur nya saja.
 
-Namun Alhamdulillah, bapak Sokibi telah membuat sebuah buku dengan judul "Menulis Buku dengan LibreOffice" yang tentu nya di buat dengan Bahasa Indonesia, yang dapat membantu Anda untuk menguasai fitur-fitur yang ada pada LibreOffice (terutama LibreOffice Writer). Buku Digital tersebut bisa Anda unduh secara gratis dengan mengunjungi salah satu artikel [di blog nya](https://imgos-belajarlinux.blogspot.com/2019/10/unduh-buku-digital-gratis.html).
+Namun Alhamdulillah, bapak Sokibi telah membuat sebuah buku dengan judul "Menulis Buku dengan LibreOffice" yang tentu nya di buat dengan Bahasa Indonesia, yang dapat membantu Anda untuk menguasai fitur-fitur yang ada pada LibreOffice (terutama LibreOffice Writer). Buku Digital tersebut bisa Anda unduh secara gratis dengan mengunjungi salah satu artikel [di blog nya](https://imgos-belajarlinux.blogspot.com/2019/10/unduh-buku-digital-gratis.html){rel="nofollow noopener"}.
 
 Sayangnya, buku tersebut hanya membahas LibreOffice Writer saja, tidak membahas lain nya. 
 
-Atau, mungkin Anda dapat mengunduh salah satu Buku Digital dari Komunitas "Belajar LibreOffice Indonesia" yang tersedia dari [Halaman Web Resmi nya](https://belajarlibreofficeid.web.id/buku-digital/) atau [membeli buku fisik nya](https://belajarlibreofficeid.web.id/buku-fisik-cetak/). Tapi, sayangnya juga, kedua buku tersebut hanya membahas tentang penggunaan LibreOffice Writer dan Calc saja, tidak membahas lain nya.
+Atau, mungkin Anda dapat mengunduh salah satu Buku Digital dari Komunitas "Belajar LibreOffice Indonesia" yang tersedia dari [Halaman Web Resmi nya](https://belajarlibreofficeid.web.id/buku-digital/){rel="nofollow noopener"} atau [membeli buku fisik nya](https://belajarlibreofficeid.web.id/buku-fisik-cetak/){rel="nofollow noopener"}. Tapi, sayangnya juga, kedua buku tersebut hanya membahas tentang penggunaan LibreOffice Writer dan Calc saja, tidak membahas lain nya.
 
 Walaupun begitu, setidaknya ini lumayan membantu Anda untuk mempelajari LibreOffice, daripada tidak sama sekali.
 
 #### Cara 4: Bertanya kepada seseorang/orang lain
 Jika Anda sudah mempelajari cara menggunakan LibreOffice dan fitur-fitur nya dengan cara di atas, namun Anda mengalami kesulitan saat menggunakan nya (Contoh: Masalah yang di alami itu tidak di temukan solusi nya di Internet, dll)
 
-Anda bisa bertanya kepada seseorang atau orang lain, baik itu melalui Forum, Grup atau Komunitas yang berada di dunia maya atau dunia nyata. Di Indonesia, ada salah satu komunitas (yang juga mempunyai Grup Telegram), yang mana itu di tujukan untuk mempelajari LibreOffice, sesuai dengan namanya, yakni "[Belajar LibreOffice Indonesia](https://t.me/BelajarLibreOfficeIndonesia)" (atau di singkat dengan "BLOI")
+Anda bisa bertanya kepada seseorang atau orang lain, baik itu melalui Forum, Grup atau Komunitas yang berada di dunia maya atau dunia nyata. Di Indonesia, ada salah satu komunitas (yang juga mempunyai Grup Telegram), yang mana itu di tujukan untuk mempelajari LibreOffice, sesuai dengan namanya, yakni "[Belajar LibreOffice Indonesia](https://t.me/BelajarLibreOfficeIndonesia){rel="nofollow noopener"}" (atau di singkat dengan "BLOI")
 
 Sebelum bertanya (apalagi di dunia maya), tolong pahami bahwa tidak semua orang dapat membantu Anda/menjawab pertanyaan Anda, karena waktu yang mereka miliki, situasi dan kondisi dari setiap orang itu sangatlah berbeda daripada Anda. Atau, mungkin saja ada yang tidak mampu untuk menjawab pertanyaan Anda/mengatasi masalah yang Anda alami.
 
@@ -300,3 +300,24 @@ Sehingga, orang lain (terutama "Pemula") menjadi seperti tidak ada harapan untuk
 Saya kira, pembahasan nya sudah cukup sampai disini saja. Mohon maaf jika adanya kesalahan pada artikel ini, atau jika kamu mempunyai pertanyaan, kritik dan saran, komentar, pendapat/opini kamu atau masukkan lain nya, silahkan kamu berkomentar atau kamu bisa berdiskusi dengan saya melalui kolom komentar yang tersedia atau bisa kamu [Hubungi Saya]({filename}/pages/hubungi-saya.md) jika kamu lebih suka lewat "Jalur Pribadi".
 
 Terima kasih atas perhatian nya :blush:
+
+## Penggunaan Gambar dan Atribusi
+Berkas-berkas Gambar (seperti Cuplikan layar dan Gambar lain nya) yang di gunakan di dalam artikel ini, disediakan di dalam folder `:::plaintext masalah-klasik-pengguna-libreoffice` yang berada di dalam Repository GitLab [`blog-images`](https://gitlab.com/FarrelF/blog-images) milik saya. 
+
+Jika Anda ingin menjelajahi nya, silahkan kunjungi Alamat URL berikut:
+
+```plaintext
+https://gitlab.com/FarrelF/blog-images/tree/master/masalah-klasik-pengguna-libreoffice
+```
+
+Logo LibreOffice (yang saya gunakan sebagai sampul artikel ini) di buat oleh ['The Document Foundation'](https://www.documentfoundation.org/) dan (mungkin) kontributor nya, serta di lisensikan dengan sebagai berikut: 
+
+- [Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/).
+
+- [GNU Lesser General Public License versi 3 atau lebih baru (LGPL 3+)](http://www.gnu.org/licenses/lgpl.html).
+
+- [Mozilla Public License versi 1.1 (MPL 1.1)](http://www.mozilla.org/MPL/MPL-1.1.html).
+
+Logo tersebut juga merupakan Merek Dagang/Pakaian Dagang terdaftar dari 'The Document Foundation'. Jadi, logo-logo tersebut tetap milik mereka yang memiliki merek/pakaian dagang. Jika Anda ingin menggunakan logo-logo tersebut, silahkan kunjungi [Panduan mengenai Penggunaan Logo/Branding LibreOffice](https://wiki.documentfoundation.org/Marketing/Branding).
+
+Jika Anda ingin meng-unduh lebih banyak, silahkan Anda kunjungi [halaman web resmi nya](https://wiki.documentfoundation.org/Gallery_Logos).

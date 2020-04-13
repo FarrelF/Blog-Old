@@ -5,7 +5,7 @@ Slug: cara-install-lamp-stack-di-ubuntu
 Author: Farrel Franqois
 Status: published
 Cover: https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/Cover.png
-Description: Apakah Anda ingin mencari Cara Install LAMP Stack dengan benar untuk keperluan Pengembangan di dalam Sistem Ubuntu Anda? Jika iya, maka Anda bisa kunjungi dan baca artikel ini, dan saya langsung membahas nya.
+Description: Apakah Anda ingin mencari Cara Install LAMP Stack di dalam Sistem Ubuntu Anda? Jika iya, maka Anda bisa baca artikel ini!
 Summary: Artikel ini akan membahas tentang bagaimana caranya meng-install _LAMP Stack_ di dalam Sistem Operasi GNU/Linux, khususnya untuk pengguna Distribusi Ubuntu dan Turunan nya (seperti [Mint](https://www.linuxmint.com), [KDE neon](https://neon.kde.org), [Pop_OS!](https://system76.com/pop), dll) dengan "benar". Penasaran? Silahkan baca artikel ini, kalau tidak, ya tidak apa-apa :slightly_smiling_face: 
 
 ## Daftar Isi
@@ -882,4 +882,15 @@ Mohon maaf, jika artikel ini memiliki kekeliruan dan kesalahan, baik dari ada ya
 
 Jika adanya kesalahan dan kekeliruan, atau kalo Anda memiliki pertanyaan lain nya, bisa Anda berikan masukkan melalui kolom komentar yang tersedia. Masukkan dari Anda akan sangat berarti bagi saya dan artikel ini untuk kedepan nya nanti.
 
-Terima kasih :blush:
+Terima kasih atas perhatian nya :blush:
+
+## Penggunaan Gambar dan Atribusi
+Berkas-berkas Gambar (seperti Cuplikan layar dan Gambar lain nya) yang di gunakan di dalam artikel ini, disediakan di dalam folder `:::plaintext cara-install-lamp-stack-di-ubuntu` yang berada di dalam Repository GitLab [`blog-images`](https://gitlab.com/FarrelF/blog-images) milik saya. 
+
+Jika Anda ingin menjelajahi nya, silahkan kunjungi Alamat URL berikut:
+
+```plaintext
+https://gitlab.com/FarrelF/blog-images/tree/master/cara-install-lamp-stack-di-ubuntu
+```
+
+Semua Gambar yang berada di situ di lisensi kan dengan [Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).

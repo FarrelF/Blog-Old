@@ -7,6 +7,7 @@ Cover: https://cdn.statically.io/img/images.farrel.franqois.id/w=500,ssl=1/cara-
 Cover_Width: 500
 Cover_Height: 208
 Status: published
+Description: Apakah Anda ingin meng-install Git di dalam Komputer Anda? Kalau iya, silahkan Anda baca artikel ini!
 Summary: Artikel ini akan membahas tentang Cara Install Git, baik itu di dalam GNU/Linux dan Windows, tentu saja, tanpa basa-basi terlebih dahulu (alias, langsung saya bahas bagaimana cara meng-install nya). Kalau Anda ingin meng-install Git di dalam Komputer Anda, silahkan Anda simak lebih lanjut artikel ini, kalau tidak ya tidak apa-apa :slightly_smiling_face:
 
 ## Daftar Isi
@@ -141,7 +142,7 @@ Pada langkah **Choose HTTPS transport backend**, Anda akan menentukan *Library*/
 
 Saya sarankan untuk menggunakan Pustaka Bawaan dari Windows saja, yakni ['Windows Secure Channel'](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380123(v=vs.85).aspx) (atau bisa di sebut 'winSSL' atau 'Schannel'), agar Git dapat mengenali CA (Certification Authority) dan Sertifikat SSL lain nya secara langsung di dalam Windows. 
 
-Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL dan mempunyai berkas `:::text ca-bundle.crt` di dalam Windows dan itupun belum saya tes), seperti pada cuplikan layar berikut ini:
+Maka dari itu, pilihlah opsi **Use the native Windows Secure Channel library**, bukan **Use OpenSSL** (Kecuali jika Anda meng-install OpenSSL dan mempunyai berkas `:::plaintext ca-bundle.crt` di dalam Windows dan itupun belum saya tes), seperti pada cuplikan layar berikut ini:
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-git/Install_Git_5.png" loading="lazy" class="img-center" alt="Langkah ke-6 Instalasi Git&#58; Menentukan Pustaka untuk HTTPS pada Git (Choose HTTPS transport backend)">](https://images.farrel.franqois.id/cara-install-git/Install_Git_5.png){class="luminous-image-gallery"}
 
@@ -150,9 +151,9 @@ Setelah Anda memilih nya, klik pada *Button* 'Next >' untuk melanjutkan ke Langk
 #### **7. Menentukan "Baris Baru" untuk Git (_Configuring the line ending conversions_)**
 Selanjutnya, pada langkah **Configuring line endings conversions**, Anda akan menentukan bagaimana Git akan memperlakukan "Line Ending" (Baris Baru) nantinya.
 
-Karakter *Line Ending* itu sendiri berbeda-beda, tergantung Sistem Operasi mana yang kamu gunakan, contoh: Pada Windows dan kebanyakan Sistem Operasi yang bukan berbasis Unix lain nya, karakter *Line Ending* yang berlaku adalah `:::text \r\n`, sedangkan GNU/Linux, macOS atau Sistem Operasi berbasis Unix/Unix-like lain nya menggunakan `:::text \n` saja.
+Karakter *Line Ending* itu sendiri berbeda-beda, tergantung Sistem Operasi mana yang kamu gunakan, contoh: Pada Windows dan kebanyakan Sistem Operasi yang bukan berbasis Unix lain nya, karakter *Line Ending* yang berlaku adalah `:::plaintext \r\n`, sedangkan GNU/Linux, macOS atau Sistem Operasi berbasis Unix/Unix-like lain nya menggunakan `:::plaintext \n` saja.
 
-Ada beberapa istilah mengenai *Line Ending* ini, salah satu nya adalah: LF, CR dan CRLF. LF merupakan singkatan dari *Line Feed* atau `:::text \n`, sedangkan CR merupakan singkatan dari *Carriage Return* atau `:::text \r`. Dan, CRLF merupakan gabungan dari CR dan LF, atau `:::text \r\n` yang di berlakukan oleh Sistem Operasi Windows dan macOS hingga saat ini.
+Ada beberapa istilah mengenai *Line Ending* ini, salah satu nya adalah: LF, CR dan CRLF. LF merupakan singkatan dari *Line Feed* atau `:::plaintext \n`, sedangkan CR merupakan singkatan dari *Carriage Return* atau `:::plaintext \r`. Dan, CRLF merupakan gabungan dari CR dan LF, atau `:::plaintext \r\n` yang di berlakukan oleh Sistem Operasi Windows dan macOS hingga saat ini.
 
 Untuk mempelajari lebih lanjut mengenai apa itu *Line Ending*, cari sendiri lewat Google, yah :slightly_smiling_face:
 
@@ -204,11 +205,11 @@ Jika kamu mempunyai pertanyaan, kritik dan saran, komentar atau masukkan lain ny
 Terima kasih atas perhatian nya :blush:
 
 ## III. Penggunaan Gambar dan Atribusi
-Berkas-berkas Gambar (seperti Cuplikan layar dan Gambar lain nya) yang di gunakan di dalam artikel ini, disediakan di dalam folder `:::text cara-install-git` yang berada di dalam Repository GitLab [`blog-images`](https://gitlab.com/FarrelF/blog-images) milik saya. 
+Berkas-berkas Gambar (seperti Cuplikan layar dan Gambar lain nya) yang di gunakan di dalam artikel ini, disediakan di dalam folder `:::plaintext cara-install-git` yang berada di dalam Repository GitLab [`blog-images`](https://gitlab.com/FarrelF/blog-images) milik saya. 
 
 Jika Anda ingin menjelajahi nya, silahkan kunjungi Alamat URL berikut:
 
-```text
+```plaintext
 https://gitlab.com/FarrelF/blog-images/tree/master/cara-install-git
 ```
 
