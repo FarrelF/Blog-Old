@@ -100,9 +100,9 @@ jobs:
         path: ./output
 
     - name: Getting NodeJS and Yarn Version
-      shell: bash -l -eo pipefail {0}
       run: |
-        nvm install
+        unset ${NVM_DIR}
+        sed -i "/^export NVM_DIR=/d" ~/.bash_profile
         echo "::set-output name=NVMRC::$(cat .nvmrc)"
         echo "::set-output name=YVMRC::$(cat .yvmrc)"
       id: vm
