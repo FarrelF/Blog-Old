@@ -61,6 +61,8 @@ $ make devtheme # Untuk membangun Tema nya, atau 'make static-files' kalo mau la
 $ yarn install # Opsional
 ```
 
+Lokasi Venv nya nanti berada di dalam folder `.venv`, yang tentu saja itu berada di dalam Folder Proyek nya.
+
 Sebagai tambahan, jika Anda berniat ingin menggunakan Kode Sumber ini untuk tujuan Produksi, Anda bisa meng-install semua modul Python beserta ketergantungan nya dengan menambahkan parameter `--no-dev`, contohnya seperti perintah berikut:
 
 ```bash
