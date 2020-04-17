@@ -5,7 +5,7 @@ Slug: cara-install-lamp-stack-di-ubuntu
 Author: Farrel Franqois
 Status: published
 Cover: https://cdn.statically.io/img/images.farrel.franqois.id/q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/Cover.png
-Description: Apakah Anda ingin mencari Cara Install LAMP Stack dengan benar untuk keperluan Pengembangan di dalam Sistem Ubuntu Anda? Jika iya, maka Anda bisa kunjungi dan baca artikel ini, dan saya langsung membahas nya.
+Description: Apakah Anda ingin mencari Cara Install LAMP Stack di dalam Sistem Ubuntu Anda? Jika iya, maka Anda bisa baca artikel ini!
 Summary: Artikel ini akan membahas tentang bagaimana caranya meng-install _LAMP Stack_ di dalam Sistem Operasi GNU/Linux, khususnya untuk pengguna Distribusi Ubuntu dan Turunan nya (seperti [Mint](https://www.linuxmint.com), [KDE neon](https://neon.kde.org), [Pop_OS!](https://system76.com/pop), dll) dengan "benar". Penasaran? Silahkan baca artikel ini, kalau tidak, ya tidak apa-apa :slightly_smiling_face: 
 
 ## Daftar Isi
@@ -19,7 +19,7 @@ Namun, masih ada yang bingung tentang bagaimana cara meng-install Aplikasi yang 
 
 Dan, sayangnya, banyak sekali praktik yang salah mengenai ini, contoh nya, masih ada pengguna yang meng-install nya dengan XAMPP, yang akan mengakibatkan Apache2, PHP dan MariaDB/MySQL tidak terinstall sama sekali ke dalam Sistem Operasi.
 
-Atau, bahkan yang lebih parahnya adalah ada yang menggunakan 'chmod 777' pada “Document Root” nya (seperti `:::text /var/www/html/`) yang akan menimbulkan celah keamanan yang fatal, salah kepemilikan _Document Root_ yang mengakibatkan tidak bisa membuat/mengedit atau menghapus berkas/folder di dalam _Document Root_, menginstall phpMyAdmin melalui Repo, dsb. 
+Atau, bahkan yang lebih parahnya adalah ada yang menggunakan 'chmod 777' pada “Document Root” nya (seperti `:::plaintext /var/www/html/`) yang akan menimbulkan celah keamanan yang fatal, salah kepemilikan _Document Root_ yang mengakibatkan tidak bisa membuat/mengedit atau menghapus berkas/folder di dalam _Document Root_, menginstall phpMyAdmin melalui Repo, dsb. 
 
 Lalu, bagaimana caranya agar kita bisa meng-install _Web Stack_ ke dalam sistem operasi dengan "benar"? Anda bisa baca tutorial nya di dalam artikel ini, tapi sebelumnya Anda harus membaca Sanggahan Tambahan nya terlebih dahulu agar Anda bisa paham.
 
@@ -64,9 +64,9 @@ Setelah instalasi Apache2, sebaiknya Anda periksa/pastikan terlebih dahulu jika 
 $ systemctl status apache2
 ```
 
-Jika Apache2 berjalan dengan baik, harus nya ada `:::text Active: active (running)` dan `:::text Loaded: loaded` seperti berikut di bawah ini:
+Jika Apache2 berjalan dengan baik, harus nya ada `:::plaintext Active: active (running)` dan `:::plaintext Loaded: loaded` seperti berikut di bawah ini:
 
-```text
+```plaintext
 ● apache2.service - The Apache HTTP Server
    Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
   Drop-In: /lib/systemd/system/apache2.service.d
@@ -109,15 +109,15 @@ $ apache2 -v
 
 Dan, outputnya (di saya) sebagai berikut:
 
-```text
+```plaintext
 Server version: Apache/2.4.29 (Ubuntu)
 Server built:   2019-04-03T13:22:37
 ```
 
 #### **3. Mengubah Pemilik “Document Root”**
-Secara default, “Document Root” (atau bisa kamu sebut “Web Root”) dimiliki oleh user `:::text root`.
+Secara default, “Document Root” (atau bisa kamu sebut “Web Root”) dimiliki oleh user `:::plaintext root`.
 
-Jadi, kamu sebagai pengguna biasa tidak akan bisa melakukan aktivitas ‘penulisan’ (seperti membuat, mengubah dan menghapus berkas/folder) di dalam nya, kecuali jika menggunakan `:::text sudo` atau kamu membuka Aplikasi Manipulasi Berkas/Folder (Seperti Pengelola Berkas, Editor Teks, dll) sebagai `:::text root`. 
+Jadi, kamu sebagai pengguna biasa tidak akan bisa melakukan aktivitas ‘penulisan’ (seperti membuat, mengubah dan menghapus berkas/folder) di dalam nya, kecuali jika menggunakan `:::plaintext sudo` atau kamu membuka Aplikasi Manipulasi Berkas/Folder (Seperti Pengelola Berkas, Editor Teks, dll) sebagai `:::plaintext root`. 
 
 Kalo kamu mau bisa melakukan nya, maka kamu harus mengubah kepemilikan nya terlebih dahulu menjadi milik kamu, dengan perintah berikut:
 
@@ -125,7 +125,7 @@ Kalo kamu mau bisa melakukan nya, maka kamu harus mengubah kepemilikan nya terle
 $ sudo chown nama_pengguna_kamu:www-data /var/www/html/ -R
 ```
 
-Silahkan ganti `:::text nama_pengguna_kamu` dengan Nama Pengguna (_Username_) yang kamu gunakan pada Sistem Ubuntu (dan Turunan nya) yang Anda gunakan saat ini.
+Silahkan ganti `:::plaintext nama_pengguna_kamu` dengan Nama Pengguna (_Username_) yang kamu gunakan pada Sistem Ubuntu (dan Turunan nya) yang Anda gunakan saat ini.
 
 Atau, kalo mau cepet, bisa gunakan perintah berikut:
 
@@ -152,9 +152,9 @@ Kedua perintah di atas (seperti: `:::bash chmod 755`) memang sebaik nya di eksek
 $ sudo chmod -R 644 /var/www/html/*.php
 ```
 
-Perintah di atas merupakan contoh untuk mengubah perizinan untuk semua berkas yang berekstensi .php di dalam nya. Jika Anda ingin mengubah perizinan untuk ekstensi berkas lain nya, silahkan ganti `:::text *.php` diatas dengan ekstensi lain, seperti `:::text *.jpg` jika Anda ingin mengubah perizinan untuk semua berkas dengan Ekstensi .jpg.
+Perintah di atas merupakan contoh untuk mengubah perizinan untuk semua berkas yang berekstensi .php di dalam nya. Jika Anda ingin mengubah perizinan untuk ekstensi berkas lain nya, silahkan ganti `:::plaintext *.php` diatas dengan ekstensi lain, seperti `:::plaintext *.jpg` jika Anda ingin mengubah perizinan untuk semua berkas dengan Ekstensi .jpg.
 
-Sedangkan, jika Anda ingin mengubah perizinan untuk semua Berkas (bukan Folder) dengan semua Ekstensi nya yang berada di dalam Folder/Lokasi `:::text /var/www/html` menjadi 644, Anda bisa eksekusi perintah berikut:
+Sedangkan, jika Anda ingin mengubah perizinan untuk semua Berkas (bukan Folder) dengan semua Ekstensi nya yang berada di dalam Folder/Lokasi `:::plaintext /var/www/html` menjadi 644, Anda bisa eksekusi perintah berikut:
 
 ```bash
 $ sudo find /var/www/html -type f -exec chmod 644 {} \;
@@ -167,23 +167,23 @@ $ sudo find /path/to/uploaded/file -type d -exec chmod 775 {} \;
 $ sudo find /path/to/uploaded/file -type f -exec chmod 665 {} \;
 ```
 
-Ganti `:::text /path/to/uploaded/file` menjadi lokasi tempat menyimpan berkas yang telah di Unggah.
+Ganti `:::plaintext /path/to/uploaded/file` menjadi lokasi tempat menyimpan berkas yang telah di Unggah.
 
 #### **5. Menguji _Web Server_ dengan membukanya lewat Web Browser**
-Setelah itu, buka Peramban Web (_Web Browser_) Anda, lalu masukkan Alamat URL nya dengan `:::text localhost` atau `:::text 127.0.0.1`. Lalu, harusnya tampilan akan seperti di bawah ini jika bekerja dengan baik:
+Setelah itu, buka Peramban Web (_Web Browser_) Anda, lalu masukkan Alamat URL nya dengan `:::plaintext localhost` atau `:::plaintext 127.0.0.1`. Lalu, harusnya tampilan akan seperti di bawah ini jika bekerja dengan baik:
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=720,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_2.png" loading="lazy" alt="Contoh halaman Index Default yang menandakan Apache2 berjalan dengan baik" class="img-center"/>](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/After_Install_Apache2_2.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
 Jika tampilan nya muncul “It works!” seperti di atas, maka seharusnya Apache2 sudah siap di gunakan!
 
-#### **6. Menambahkan User ke dalam Grup `www-data`**
-Oh, iya, jika user lain atau Anda ingin di masukkan ke dalam grup `www-data`, maka eksekusi perintah berikut:
+#### **6. Menambahkan User ke dalam Grup `:::plaintext www-data`**
+Oh, iya, jika user lain atau Anda ingin di masukkan ke dalam grup `:::plaintext www-data`, maka eksekusi perintah berikut:
 
 ```bash
 $ sudo adduser nama_pengguna_kamu www-data
 ```
 
-Silakan ganti `nama_pengguna_kamu` dengan Nama Pengguna (_Username_) yang kamu gunakan pada Sistem Ubuntu (dan Turunan nya) yang Anda gunakan saat ini. Atau, Nama Pengguna lain nya yang ada di dalam sistem kamu. Setelah itu, coba kamu log out, lalu login lagi.
+Silakan ganti `:::plaintext nama_pengguna_kamu` dengan Nama Pengguna (_Username_) yang kamu gunakan pada Sistem Ubuntu (dan Turunan nya) yang Anda gunakan saat ini. Atau, Nama Pengguna lain nya yang ada di dalam sistem kamu. Setelah itu, coba kamu log out, lalu login lagi.
 
 Atau, kalo mau cepet, gunakan perintah berikut:
 
@@ -192,17 +192,17 @@ $ sudo adduser ${USER} www-data
 ```
 
 #### **7. Mengaktifkan .htaccess di dalam Apache2**
-_Web Server_ Apache2 secara bawaan tidak memproses berkas `.htaccess`. Sehingga, berkas tersebut tidak akan bisa di gunakan pada "Web Server", sampai Anda bisa mengaktifkan nya.
+_Web Server_ Apache2 secara bawaan tidak memproses berkas `:::plaintext .htaccess`. Sehingga, berkas tersebut tidak akan bisa di gunakan pada "Web Server", sampai Anda bisa mengaktifkan nya.
 
-Agar _Web Server_ Apache2 dapat memproses berkas `.htaccess`, maka ubahlah berkas `:::text /etc/apache2/apache2.conf` dengan editor teks/kode favorit kamu sebagai `:::text root`. Mungkin, bisa kamu ikuti caranya berikut:
+Agar _Web Server_ Apache2 dapat memproses berkas `:::plaintext .htaccess`, maka ubahlah berkas `:::plaintext /etc/apache2/apache2.conf` dengan editor teks/kode favorit kamu sebagai `:::plaintext root`. Mungkin, bisa kamu ikuti caranya berikut:
 
-Kalo kamu mau menggunakan `nano` yang berbasis CLI, bisa kamu gunakan perintah berikut:
+Kalo kamu mau menggunakan `:::plaintext nano` yang berbasis CLI, bisa kamu gunakan perintah berikut:
 
 ```bash
 $ sudo nano /etc/apache2/apache2.conf
 ```
 
-Tapi, kalo kamu mau menggunakan editor teks yang berbasis GUI, bisa kamu buka editor teks tersebut sebagai `:::text root` dengan perintah berikut:
+Tapi, kalo kamu mau menggunakan editor teks yang berbasis GUI, bisa kamu buka editor teks tersebut sebagai `:::plaintext root` dengan perintah berikut:
 
 Untuk pengguna DE Cinnamon atau Pengguna Mint dengan DE apapun (X-Apps \[Text\] Editor):
 
@@ -240,11 +240,11 @@ Untuk Pengguna DE XFCE (Mousepad)*:
 
 **\*Catatan**: Kedua DE tersebut belum pernah saya gunakan, jadi apabila perintah di atas salah, maka mohon beri saran dari Anda agar bisa saya ubah perintah di atas. Tapi, khusus DE XFCE memang saya sedang menggunakan nya, yang distronya adalah Mint (di dalam VirtualBox), itupun menggunakan 'X-Apps \[Text\] Editor' (xed) sebagai editor bawaan nya. Jika kamu mau menambahkan, yah, silahkan saja.
 
-Setelah itu, kamu carikan sebuah teks `:::text <Directory /var/www/>` yang ada di dalam berkas tersebut dengan memanfaatkan fitur dari Editor Teks/Kode yang Anda gunakan sekarang. Untuk mencari nya, tekan <kbd>CTRL</kbd> + <kbd>F</kbd>, atau <kbd>CTRL</kbd> + <kbd>W</kbd> jika Anda menggunakan `:::text nano` sebagai editor nya, lalu masukkan teks.
+Setelah itu, kamu carikan sebuah teks `:::plaintext <Directory /var/www/>` yang ada di dalam berkas tersebut dengan memanfaatkan fitur dari Editor Teks/Kode yang Anda gunakan sekarang. Untuk mencari nya, tekan ++ctrl+f++, atau ++ctrl+w++ jika Anda menggunakan `:::plaintext nano` sebagai editor nya, lalu masukkan teks.
 
 Kemudian, kalo ketemu, akan ada barisan kode seperti di bawah ini:
 
-```text
+```plaintext
 <Directory /var/www/>
         Options Indexes FollowSymLinks
         AllowOverride None
@@ -252,11 +252,11 @@ Kemudian, kalo ketemu, akan ada barisan kode seperti di bawah ini:
 </Directory>
 ```
 
-Ada yang salah dengan kode di atas? Ya, Direktif `:::text AllowOverride` nya bernilai `:::text None`. Kalo Anda ingin mengaktifkan `:::text .htaccess`, maka Anda harus merubah nilai dari Direktif `:::text AllowOverride` ini menjadi `:::text All`.
+Ada yang salah dengan kode di atas? Ya, Direktif `:::plaintext AllowOverride` nya bernilai `:::plaintext None`. Kalo Anda ingin mengaktifkan `:::plaintext .htaccess`, maka Anda harus merubah nilai dari Direktif `:::plaintext AllowOverride` ini menjadi `:::plaintext All`.
 
 Jika sudah di rubah, maka akan menjadi seperti berikut:
 
-```text
+```plaintext
 <Directory /var/www/>
         Options Indexes FollowSymLinks
         AllowOverride All
@@ -264,7 +264,7 @@ Jika sudah di rubah, maka akan menjadi seperti berikut:
 </Directory>
 ```
 
-Kalau kamu sudah selesai, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan <kbd>CTRL</kbd> + <kbd>S</kbd>. Sedangkan, kalau Anda menggunakan `:::text nano`, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan <kbd>Enter</kbd>.
+Kalau kamu sudah selesai, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan ++ctrl+s++. Sedangkan, kalau Anda menggunakan `:::plaintext nano`, maka Anda perlu tekan ++ctrl+o++ terlebih dahulu, lalu tekan ++enter++.
 
 Setelah di simpan, restart Apache2 nya dengan perintah berikut:
 
@@ -281,25 +281,25 @@ Anda memang bisa saja meng-install nya secara langsung, dan melewati langkah ini
 Jika Anda ingin menggunakan MariaDB dengan versi terbaru, maka Anda wajib menambahkan Repo nya. Cara menambahkan Repo nya terbilang cukup mudah, Anda tinggal klik [disini](https://downloads.mariadb.org/mariadb/repositories/) untuk menuju langsung ke cara konfigurasi nya. Anda tinggal pilih Distribusi mana yang Anda gunakan saat ini, setelah itu Anda pilih versi MariaDB nya dan _Mirror_ nya. 
 
 ??? info "Untuk Pengguna Mint 19 dan di atas nya"
-    **Catatan untuk Pengguna Mint 19 dan di atas nya, mengenai `:::text software-properties-common`**
+    **Catatan untuk Pengguna Mint 19 dan di atas nya, mengenai `:::plaintext software-properties-common`**
 
-    Berdasarkan Petunjuk menambahkan Repo MariaDB dari Halaman Web Resmi nya, disana kita di ‘sarankan’ untuk meng-install paket `:::text software-properties-common`. Nah, bagi pengguna Mint 19 atau di atasnya, Anda tidak perlu lagi meng-install paket `:::text software-properties-common` ke dalam Sistem kamu. 
+    Berdasarkan Petunjuk menambahkan Repo MariaDB dari Halaman Web Resmi nya, disana kita di ‘sarankan’ untuk meng-install paket `:::plaintext software-properties-common`. Nah, bagi pengguna Mint 19 atau di atasnya, Anda tidak perlu lagi meng-install paket `:::plaintext software-properties-common` ke dalam Sistem kamu. 
 
-    Kenapa? Karena `:::text software-properties-common` sudah di nyatakan ‘deprecated’ oleh pihak pengembang Mint dan sudah di gantikan dengan paket `mintsources` untuk menangani hal-hal seperti itu di dalam Sistem Mint nya.
+    Kenapa? Karena `:::plaintext software-properties-common` sudah di nyatakan ‘deprecated’ oleh pihak pengembang Mint dan sudah di gantikan dengan paket `:::plaintext mintsources` untuk menangani hal-hal seperti itu di dalam Sistem Mint nya.
 
     Bisa saja Anda meng-install nya, hanya saja paket tersebut kemungkinan sudah tidak berpengaruh apa-apa atau tidak akan berefek apapun. Jadi, bisa di bilang, bahwa mungkin paket tersebut sudah tidak berguna lagi.
 
-    Lagian, kalopun kamu tidak meng-installnya, kamu masih bisa menambahkan, menggunakan dan menghapus PPA kamu, atau menggunakan perintah `:::text add-apt-repository` untuk tujuan lain nya. Kok bisa? Lha, kan ada `mintsources` yang nangani itu.
+    Lagian, kalopun kamu tidak meng-installnya, kamu masih bisa menambahkan, menggunakan dan menghapus PPA kamu, atau menggunakan perintah `:::plaintext add-apt-repository` untuk tujuan lain nya. Kok bisa? Lha, kan ada `:::plaintext mintsources` yang nangani itu.
 
-    Referensi nya? Bisa kamu cek sendiri dengan perintah `:::bash apt show software-properties-common` (gak perlu akses `:::text root`) di dalam Terminal GNU/Linux kamu.
+    Referensi nya? Bisa kamu cek sendiri dengan perintah `:::bash apt show software-properties-common` (gak perlu akses `:::plaintext root`) di dalam Terminal GNU/Linux kamu.
     
-    Bukti nya? Silahkan kamu uninstall paket `:::text software-properties-common`, saat menghapusnya, harusnya paket lain nya tidak ada yang ikutan terhapus, ataupun malah jadi tidak berguna, karena harusnya paket yang ter-uninstall tersebut tidak berpengaruh apa-apa terhadap paket lain nya. (Sudah saya ujicobakan melalui Mesin Virtual atau VM)
+    Bukti nya? Silahkan kamu uninstall paket `:::plaintext software-properties-common`, saat menghapusnya, harusnya paket lain nya tidak ada yang ikutan terhapus, ataupun malah jadi tidak berguna, karena harusnya paket yang ter-uninstall tersebut tidak berpengaruh apa-apa terhadap paket lain nya. (Sudah saya ujicobakan melalui Mesin Virtual atau VM)
     
-    Lalu, coba kamu tambahkan Repo PPA atau Repo lain nya (apa saja/bebas) dengan memanfaatkan perintah `add-apt-repository` di dalam Terminal GNU/Linux kamu. Setelah itu, coba kamu Update Repository nya, dan harusnya bisa.
+    Lalu, coba kamu tambahkan Repo PPA atau Repo lain nya (apa saja/bebas) dengan memanfaatkan perintah `:::plaintext add-apt-repository` di dalam Terminal GNU/Linux kamu. Setelah itu, coba kamu Update Repository nya, dan harusnya bisa.
     
-    Bukti lain nya adalah bahwa paket `:::text software-properties-common` ini tidak ter-install secara bawaan ke dalam Sistem Mint nya. Padahal, paket tersebut harusnya sangat penting, terutama bagi Anda yang sering menambahkan PPA atau Repo lain nya jika Anda menggunakan Distribusi Ubuntu dan Turunan nya (mungkin Debian juga bisa?). 
+    Bukti lain nya adalah bahwa paket `:::plaintext software-properties-common` ini tidak ter-install secara bawaan ke dalam Sistem Mint nya. Padahal, paket tersebut harusnya sangat penting, terutama bagi Anda yang sering menambahkan PPA atau Repo lain nya jika Anda menggunakan Distribusi Ubuntu dan Turunan nya (mungkin Debian juga bisa?). 
     
-    Hal ini seolah memberikan ‘tanda’ kepada kita sebagai pengguna nya kalau ada kemungkinan bahwa pihak pengembang Mint sendiri akan menggantikan sepenuh nya dengan paket `:::text mintsources` dan untuk kedepan nya, mereka akan menghapus paket `:::text software-properties-common` dari [Repo Resmi nya](http://packages.linuxmint.com/).
+    Hal ini seolah memberikan ‘tanda’ kepada kita sebagai pengguna nya kalau ada kemungkinan bahwa pihak pengembang Mint sendiri akan menggantikan sepenuh nya dengan paket `:::plaintext mintsources` dan untuk kedepan nya, mereka akan menghapus paket `:::plaintext software-properties-common` dari [Repo Resmi nya](http://packages.linuxmint.com/).
     
     Jadi, untuk pengguna Mint 19, Anda tidak perlu lagi meng-install paket tersebut. Tapi, kalau Anda adalah pengguna Mint 18.3 atau di bawah nya, dan merasakan hal yang sama seperti di atas, bisa Anda berikan komentar nya, lalu nanti saya ubah lagi :slightly_smiling_face:
 
@@ -348,9 +348,9 @@ Setelah instalasi MariaDB, sebaiknya Anda periksa/pastikan terlebih dahulu jika 
 $ systemctl status mariadb
 ```
 
-Jika MariaDB berjalan dengan baik, maka hasil output nya nanti harusnya ada `:::text Active: active (running)` dan `:::text Loaded: loaded` seperti berikut di bawah ini:
+Jika MariaDB berjalan dengan baik, maka hasil output nya nanti harusnya ada `:::plaintext Active: active (running)` dan `:::plaintext Loaded: loaded` seperti berikut di bawah ini:
 
-```text
+```plaintext
 ● mariadb.service - MariaDB 10.3.18 database server
    Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: enabled)
   Drop-In: /etc/systemd/system/mariadb.service.d
@@ -381,24 +381,24 @@ Kalau Anda ingin MariaDB nya dapat di jalankan saat Startup atau setelah booting
 $ sudo systemctl enable mariadb
 ```
 
-#### **2. Konfigurasi MariaDB dan akun `root` nya**
+#### **2. Konfigurasi MariaDB dan akun `:::plaintext root` nya**
 Sekarang, kita konfigurasi kan MariaDB nya supaya aman.
 
-Ketik perintah `:::bash sudo mysql_secure_installation` untuk melakukan konfigurasi. Lalu, jika di tanya “Enter current password for root” kamu tekan <kbd>Enter</kbd> saja, setelah itu, masukkan Kata Sandi untuk Akun Root MariaDB yang ingin di buat, seperti cuplikan layar berikut:
+Ketik perintah `:::bash sudo mysql_secure_installation` untuk melakukan konfigurasi. Lalu, jika di tanya “Enter current password for root” kamu tekan ++enter++ saja, setelah itu, masukkan Kata Sandi untuk Akun Root MariaDB yang ingin di buat, seperti cuplikan layar berikut:
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=502,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png" loading="lazy" class="img-center" alt="Konfigurasi MariaDB di dalam Terminal">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_1.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
-**Catatan:** Jika Anda menginstall MariaDB 10.4 atau di atasnya, dan Anda di tanya “Switch to `unix_socket` authentication \[Y/n\]”, Anda tinggal ketik atau jawab saja “n” (tanpa kutip). Lalu, tekan <kbd>Enter</kbd>. Hal ini agar Anda tidak mengaktifkan `unix_socket` sebagai metode autentikasi pada akun `root` di MariaDB.
+**Catatan:** Jika Anda menginstall MariaDB 10.4 atau di atasnya, dan Anda di tanya “Switch to `:::plaintext unix_socket` authentication \[Y/n\]”, Anda tinggal ketik atau jawab saja “n” (tanpa kutip). Lalu, tekan ++enter++. Hal ini agar Anda tidak mengaktifkan `:::plaintext unix_socket` sebagai metode autentikasi pada akun `:::plaintext root` di MariaDB.
 
-Setelah Anda menentukan Kata Sandi baru untuk Akun root pada MariaDB, Anda tinggal tekan Tombol <kbd>Enter</kbd> saja, sampai selesai dan muncul tulisan “Thanks for using MariaDB!”. Berikut Cuplikan nya:
+Setelah Anda menentukan Kata Sandi baru untuk Akun root pada MariaDB, Anda tinggal tekan Tombol ++enter++ saja, sampai selesai dan muncul tulisan “Thanks for using MariaDB!”. Berikut Cuplikan nya:
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=503,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png" loading="lazy" class="img-center" alt="Konfigurasi MariaDB di dalam Terminal">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/Configuring_MariaDB_2.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
 #### **3. Metode Autentikasi di MariaDB**
 
-Secara bawaan, Akun `root` di dalam MariaDB pada pemaketan Ubuntu (dan Turunan nya) menggunakan metode `unix_socket`. Sehingga, hal ini mengakibatkan Anda harus menggunakan perintah `sudo` jika Anda ingin login sebagai akun `root` di dalam MariaDB, dan tentu hal ini tidak bisa di lakukan oleh Pengguna dengan Hak Akses biasa.
+Secara bawaan, Akun `:::plaintext root` di dalam MariaDB pada pemaketan Ubuntu (dan Turunan nya) menggunakan metode `:::plaintext unix_socket`. Sehingga, hal ini mengakibatkan Anda harus menggunakan perintah `:::plaintext sudo` jika Anda ingin login sebagai akun `:::plaintext root` di dalam MariaDB, dan tentu hal ini tidak bisa di lakukan oleh Pengguna dengan Hak Akses biasa.
 
-Jadi, untuk mengakses MariaDB dengan tujuan mengontrol Basis Data (_Database_) SQL yang ada di dalam nya melalui Terminal dan menggunakan akun `root` dengan mode `unix_socket`, bisa Anda gunakan perintah berikut:
+Jadi, untuk mengakses MariaDB dengan tujuan mengontrol Basis Data (_Database_) SQL yang ada di dalam nya melalui Terminal dan menggunakan akun `:::plaintext root` dengan mode `:::plaintext unix_socket`, bisa Anda gunakan perintah berikut:
 
 ```bash
 $ sudo mysql -u root
@@ -410,20 +410,20 @@ Atau:
 $ sudo mariadb -u root
 ```
 
-**Catatan:** Jika Anda eksekusi perintah di atas, maka berarti Anda tidak perlu untuk memasukkan Kata Sandi untuk Akun `root` pada MariaDB lagi. Ini bukan berarti akun `root` tidak ada Kata Sandi nya, yah. Tapi, Anda masih perlu memasukkan kata sandi ketika Anda telah eksekusi perintah `sudo`, seperti biasanya, kecuali jika Anda sudah pernah menggunakan perintah `sudo` sebelumnya.
+**Catatan:** Jika Anda eksekusi perintah di atas, maka berarti Anda tidak perlu untuk memasukkan Kata Sandi untuk Akun `:::plaintext root` pada MariaDB lagi. Ini bukan berarti akun `:::plaintext root` tidak ada Kata Sandi nya, yah. Tapi, Anda masih perlu memasukkan kata sandi ketika Anda telah eksekusi perintah `:::plaintext sudo`, seperti biasanya, kecuali jika Anda sudah pernah menggunakan perintah `:::plaintext sudo` sebelumnya.
 
-Tapi, `unix_socket` juga bisa di non-aktifkan secara bawaan jika Anda menggunakan MariaDB 10.4 atau di atasnya, saat Anda jawab “n” tadi. Sehingga, perintah di atas seharusnya tidak di gunakan.
+Tapi, `:::plaintext unix_socket` juga bisa di non-aktifkan secara bawaan jika Anda menggunakan MariaDB 10.4 atau di atasnya, saat Anda jawab “n” tadi. Sehingga, perintah di atas seharusnya tidak di gunakan.
 
-Keuntungan menggunakan metode tersebut adalah bahwa Anda bisa saja tidak perlu memasukkan Kata Sandi lagi untuk login ke MariaDB sebagai `root` ketika Anda sudah mengeksekusi nya dengan perintah di atas, karena metode tersebut langsung terhubung dengan Sistem Anda. 
+Keuntungan menggunakan metode tersebut adalah bahwa Anda bisa saja tidak perlu memasukkan Kata Sandi lagi untuk login ke MariaDB sebagai `:::plaintext root` ketika Anda sudah mengeksekusi nya dengan perintah di atas, karena metode tersebut langsung terhubung dengan Sistem Anda. 
 
-Tapi, kekurangan nya adalah untuk mengaksesnya harus menggunakan `sudo` terlebih dahulu untuk memasukki ke MariaDB, terutama jika login menggunakan akun `root`. 
+Tapi, kekurangan nya adalah untuk mengaksesnya harus menggunakan `:::plaintext sudo` terlebih dahulu untuk memasukki ke MariaDB, terutama jika login menggunakan akun `:::plaintext root`. 
 
-Biasanya, sebagian orang login ke MySQL/MariaDB tanpa harus menggunakan perintah `sudo`, tapi ini kenapa malah harus? Terlebih, kita tidak bisa login dengan akun `root` dengan menggunakan phpMyAdmin. Lha, kenapa? Karena phpMyAdmin pada dasarnya kan merupakan Aplikasi Web, dan tidak selalu terhubung dengan sistem.
+Biasanya, sebagian orang login ke MySQL/MariaDB tanpa harus menggunakan perintah `:::plaintext sudo`, tapi ini kenapa malah harus? Terlebih, kita tidak bisa login dengan akun `:::plaintext root` dengan menggunakan phpMyAdmin. Lha, kenapa? Karena phpMyAdmin pada dasarnya kan merupakan Aplikasi Web, dan tidak selalu terhubung dengan sistem.
 
-#### **4. Menggantikan metode Autentikasi dari `unix_socket` menjadi `mysql_native_password`**
-Karena kita nanti meng-install phpMyAdmin secara manual, atau jika kita terlanjur mengaktifkan `unix_socket`, maka kita harus/wajib merubah metode dari `unix_socket` menjadi `mysql_native_password` terlebih dahulu, dengan cara: Login ke MariaDB sebagai `root` dengan menggunakan cara di atas -> Lalu, eksekusi perintah di bawah ini:
+#### **4. Menggantikan metode Autentikasi dari `:::plaintext unix_socket` menjadi `:::plaintext mysql_native_password`**
+Karena kita nanti meng-install phpMyAdmin secara manual, atau jika kita terlanjur mengaktifkan `:::plaintext unix_socket`, maka kita harus/wajib merubah metode dari `:::plaintext unix_socket` menjadi `:::plaintext mysql_native_password` terlebih dahulu, dengan cara: Login ke MariaDB sebagai `:::plaintext root` dengan menggunakan cara di atas -> Lalu, eksekusi perintah di bawah ini:
 
-```mysql
+```sql
 > UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root' AND plugin = 'unix_socket';
 > FLUSH PRIVILEGES;
 > exit
@@ -486,7 +486,7 @@ Zend Engine v3.3.6, Copyright (c) 1998-2018 Zend Technologies
 ```
 
 #### **2. Menguji PHP dengan membuat PHP Info**
-Nah, untuk mengetes nya ke dalam _Web Server_, buatlah sebuah berkas bernama `info.php` di dalam "Document Root". Tapi, di tutorial ini, saya akan membuatnya lewat `nano` ketimbang menggunakan berbasis GUI, kalau Anda ingin lewat GUI, yah itu tidak masalah.
+Nah, untuk mengetes nya ke dalam _Web Server_, buatlah sebuah berkas bernama `:::plaintext info.php` di dalam "Document Root". Tapi, di tutorial ini, saya akan membuatnya lewat `:::plaintext nano` ketimbang menggunakan berbasis GUI, kalau Anda ingin lewat GUI, yah itu tidak masalah.
 
 Buatlah berkas tersebut via nano dengan perintah:
 
@@ -494,21 +494,21 @@ Buatlah berkas tersebut via nano dengan perintah:
 $ nano /var/www/html/info.php
 ```
 
-Ingat, perintah tersebut di lakukan tanpa menggunakan `sudo`!
+Ingat, perintah tersebut di lakukan tanpa menggunakan `:::plaintext sudo`!
 
-Salin dan tempelkan (_Copy_ dan _Paste_ kan) barisan kode berikut ini ke dalam berkas `info.php` melalui `nano` atau editor teks favorit Anda:
+Salin dan tempelkan (_Copy_ dan _Paste_ kan) barisan kode berikut ini ke dalam berkas `:::plaintext info.php` melalui `:::plaintext nano` atau editor teks favorit Anda:
 
 ```php
 <?php phpinfo(); ?>
 ```
 
-Lalu, simpan berkas tersebut, kalau Anda menggunakan nano, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan <kbd>Enter</kbd>.
+Lalu, simpan berkas tersebut, kalau Anda menggunakan nano, maka Anda perlu tekan ++ctrl+o++ terlebih dahulu, lalu tekan ++enter++.
 
-Setelah itu, coba buka web browser Anda, lalu masukkan URL nya. Karena berkas yang kita buat tadi lokasi nya di `:::text /var/www/html`, maka artinya masukkan URL `:::text localhost/info.php` atau `:::text 127.0.0.1/info.php` kedalam Peramban (_Browser_) mu, lalu tekan <kbd>Enter</kbd>. Hasilnya akan menjadi seperti ini:
+Setelah itu, coba buka web browser Anda, lalu masukkan URL nya. Karena berkas yang kita buat tadi lokasi nya di `:::plaintext /var/www/html`, maka artinya masukkan URL `:::plaintext localhost/info.php` atau `:::plaintext 127.0.0.1/info.php` kedalam Peramban (_Browser_) mu, lalu tekan ++enter++. Hasilnya akan menjadi seperti ini:
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=720,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png" loading="lazy" class="img-center" alt="Ini yang di hasilkan dari berkas 'info.php' jika di buka lewat Peramban Web.">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/PHP7_with_Apache2_Handler.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
-Lihatlah pada Server API nya, yang masih menggunakan `:::text Apache2 Handler`. Tidak masalah sebenarnya, cuma kita tadi sudah meng-install `:::text php7.3-fpm` nya, yang seharusnya itu bukan Apache2 Handler lagi. Selain itu, mungkin ada beberapa alasan (seperti Kinerja dari PHP nya, dll) agar kita harus mengaktifkan PHP-FPM ini.
+Lihatlah pada Server API nya, yang masih menggunakan `:::plaintext Apache2 Handler`. Tidak masalah sebenarnya, cuma kita tadi sudah meng-install `:::plaintext php7.3-fpm` nya, yang seharusnya itu bukan Apache2 Handler lagi. Selain itu, mungkin ada beberapa alasan (seperti Kinerja dari PHP nya, dll) agar kita harus mengaktifkan PHP-FPM ini.
 
 #### **3. (Opsional) Mengaktifkan dan Menggunakan Intepreter FPM pada PHP 7.3 daripada Apache2 Handler**
 Maka dari itu, kita bisa menggantikan nya menjadi PHP-FPM, dengan perintah berikut:
@@ -517,7 +517,7 @@ Maka dari itu, kita bisa menggantikan nya menjadi PHP-FPM, dengan perintah berik
 $ sudo -- sh -c 'a2dismod php7.3; a2enmod proxy_fcgi setenvif; a2enconf php7.3-fpm; systemctl restart apache2'
 ```
 
-Setelah itu, coba kamu segarkan (_refresh_) berkas `info.php` yang telah kamu akses lewat Peramban Web tadi, dan harusnya akan menjadi seperti ini:
+Setelah itu, coba kamu segarkan (_refresh_) berkas `:::plaintext info.php` yang telah kamu akses lewat Peramban Web tadi, dan harusnya akan menjadi seperti ini:
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=720,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/PHP7_with_FPM.png" loading="lazy" class="img-center" alt="Hasil berkas 'info.php' setelah PHP-FPM di aktifkan.">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/PHP7_with_FPM.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
@@ -528,17 +528,17 @@ Sekarang, coba kamu buat sebuah berkas PHP, apapun itu, yang menimbulkan galat/k
 Kira-kira apa yang terjadi? Ya, galat nya tidak tampil di layar sama sekali, padahal pada XAMPP, biasanya tampil galat nya kalau ada kesalahan sintaks pada PHP. 
 
 #### **5. (Opsional) Melakukan Konfigurasi agar PHP bisa menampilkan pesan Galat (_Error_) secara langsung**
-Selanjutnya, kita akan melakukan konfigurasi pada PHP nya, agar Galat (_Error_) tersebut bisa tampil di layar. Maka dari itu, kita perlu membuka terlebih dahulu berkas konfigurasi nya, kira-kira kamu paham dimana letaknya? Ya, kalo Anda melihat `:::text Loaded Configuration file` tadi, itulah letak berkas konfigurasi nya, yakni: `:::text /etc/php/7.3/fpm/php.ini`
+Selanjutnya, kita akan melakukan konfigurasi pada PHP nya, agar Galat (_Error_) tersebut bisa tampil di layar. Maka dari itu, kita perlu membuka terlebih dahulu berkas konfigurasi nya, kira-kira kamu paham dimana letaknya? Ya, kalo Anda melihat `:::plaintext Loaded Configuration file` tadi, itulah letak berkas konfigurasi nya, yakni: `:::plaintext /etc/php/7.3/fpm/php.ini`
 
-Nah, kita buka berkas tersebut dengan editor teks favorit kamu, tapi pastikan kamu membuka nya sebagai `root`, agar berkas tersebut bisa di edit. Berikut caranya:
+Nah, kita buka berkas tersebut dengan editor teks favorit kamu, tapi pastikan kamu membuka nya sebagai `:::plaintext root`, agar berkas tersebut bisa di edit. Berikut caranya:
 
-Kalo kamu mau menggunakan `nano` yang berbasis CLI, bisa kamu gunakan perintah berikut:
+Kalo kamu mau menggunakan `:::plaintext nano` yang berbasis CLI, bisa kamu gunakan perintah berikut:
 
 ```bash
 $ sudo nano /etc/php/7.3/fpm/php.ini
 ```
 
-Tapi, kalo kamu mau menggunakan editor teks yang berbasis GUI, bisa kamu buka editor teks tersebut sebagai `root` dengan perintah berikut:
+Tapi, kalo kamu mau menggunakan editor teks yang berbasis GUI, bisa kamu buka editor teks tersebut sebagai `:::plaintext root` dengan perintah berikut:
 
 **Untuk pengguna DE Cinnamon atau Pengguna Mint dengan DE apapun (X-Apps \[Text\] Editor)**:
 
@@ -576,19 +576,19 @@ $ pkexec env DISPLAY=${DISPLAY} XAUTHORITY=${XAUTHORITY} KDE_SESSION_VERSION=5 K
 
 **\*Catatan:** Kedua DE tersebut belum pernah saya gunakan, jadi apabila perintah di atas salah, maka mohon beri saran dari Anda agar bisa saya ubah perintah di atas. Tapi, khusus DE XFCE memang saya sedang menggunakan nya, namun distronya adalah Mint (di dalam VirtualBox), yang mana ia menggunakan "X-Apps \[Text\] Editor" (xed) sebagai editor bawaan nya untuk semua DE nya. Jika kamu mau menambahkan, yah, silahkan saja.
 
-Setelah Anda membuka editor teks nya, coba Anda cari baris yang memiliki opsi `:::text display_errors` dan `:::text display_startup_errors`. Biasanya, kedua opsi tersebut terdapat di baris ke-479 dan baris ke-490.
+Setelah Anda membuka editor teks nya, coba Anda cari baris yang memiliki opsi `:::plaintext display_errors` dan `:::plaintext display_startup_errors`. Biasanya, kedua opsi tersebut terdapat di baris ke-479 dan baris ke-490.
 
 Kalo kamu menggunakan editor yang berbasis GUI, kamu bisa menggunakan fitur seperti “Jump to Line”, “Go to Line”, atau apalah, yang penting bisa melompat ke baris tujuan.
 
-Sedangkan, jika kamu menggunakan `nano`, editor teks berbasis CLI, kamu bisa menekan tombol <kbd>CTRL</kbd> + <kbd>\_</kbd> (_Underscore_/Garis Bawah) di `nano`, bukan <kbd>CTRL</kbd> + <kbd>-</kbd> (Strip). Bagaimana cara menekan nya? Mudah saja, sembari Anda sedang menekan <kbd>CTRL</kbd>, Anda harus tahu bagaimana caranya kamu memasukkan tanda garis bawah ke dalam layar dari Keyboard. 
+Sedangkan, jika kamu menggunakan `:::plaintext nano`, editor teks berbasis CLI, kamu bisa menekan tombol ++ctrl+underscore++ (_Underscore_/Garis Bawah) di `:::plaintext nano`, bukan ++ctrl+minus++ (Strip). Bagaimana cara menekan nya? Mudah saja, sembari Anda sedang menekan ++ctrl++, Anda harus tahu bagaimana caranya kamu memasukkan tanda garis bawah ke dalam layar dari Keyboard. 
 
-Kalo saya perlu menekan tombol <kbd>Shift</kbd> + <kbd>-</kbd> untuk menghasilkan Tanda Garis Bawah. Jadi, untuk mencari/melompat ke baris tujuan di `nano`, maka saya harus menekan <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> untuk menghasilkan <kbd>CTRL</kbd> + <kbd>\_</kbd>, sampai sini paham?
+Kalo saya perlu menekan tombol ++shift+minus++ untuk menghasilkan Tanda Garis Bawah. Jadi, untuk mencari/melompat ke baris tujuan di `:::plaintext nano`, maka saya harus menekan ++ctrl+shift+minus++ untuk menghasilkan ++ctrl+underscore++, sampai sini paham?
 
-Setelah Anda lompat ke baris tujuan, dan benar bahwa kedua opsi tersebut berada di baris itu, maka ubahlah nilai nya yang semula nya `:::text Off` menjadi `:::text On`. Seperti pada Cuplikan Layar berikut:
+Setelah Anda lompat ke baris tujuan, dan benar bahwa kedua opsi tersebut berada di baris itu, maka ubahlah nilai nya yang semula nya `:::plaintext Off` menjadi `:::plaintext On`. Seperti pada Cuplikan Layar berikut:
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=502,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/Activating_PHP_Display_Error.png" loading="lazy" class="img-center" alt="Setelah merubah opsi pada php.ini">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/Activating_PHP_Display_Error.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
-Setelah itu, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan <kbd>CTRL</kbd> + <kbd>S</kbd>. Sedangkan, kalau Anda menggunakan `nano`, maka Anda perlu tekan <kbd>CTRL</kbd> + <kbd>O</kbd> terlebih dahulu, lalu tekan <kbd>Enter</kbd>.
+Setelah itu, simpan berkas nya. Jika Anda menggunakan Teks Editor berbasis GUI, Anda bisa simpan berkas tersebut dengan menekan ++ctrl+s++. Sedangkan, kalau Anda menggunakan `:::plaintext nano`, maka Anda perlu tekan ++ctrl+o++ terlebih dahulu, lalu tekan ++enter++.
 
 Setelah Anda menyimpan nya, coba mulai ulang terlebih dahulu Apache2 dan PHP 7.3 nya dengan perintah berikut:
 
@@ -600,7 +600,7 @@ Sekarang, coba Anda buka berkas (dengan kode yang bebas) yang telah Anda buat ta
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=720,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/After_Activating_PHP_Display_Error.png" loading="lazy" class="img-center" alt="Error pada PHP yang tampil di Browser">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/After_Activating_PHP_Display_Error.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
-Jika Anda telah selesai sepenuhnya berurusan dengan PHP Info, atau berkas `info.php` tidak terpakai lagi, maka untuk keamanan, sebaiknya berkas `info.php` itu di hapus. Untuk menghapus nya, bisa Anda gunakan perintah berikut:
+Jika Anda telah selesai sepenuhnya berurusan dengan PHP Info, atau berkas `:::plaintext info.php` tidak terpakai lagi, maka untuk keamanan, sebaiknya berkas `:::plaintext info.php` itu di hapus. Untuk menghapus nya, bisa Anda gunakan perintah berikut:
 
 ```bash
 $ rm /var/www/html/info.php
@@ -638,23 +638,23 @@ $ mv config.sample.inc.php config.inc.php; mkdir tmp; sudo chown www-data:www-da
 #### **1. Menguji phpMyAdmin**
 Setelah instalasi phpMyAdmin, memang nanti kita akan meng-konfigurasikan phpMyAdmin nya. Tapi, sebelum itu, kita harus memastikan terlebih dahulu kalau phpMyAdmin bisa di buka dengan baik lewat Peramban Web (_Web Browser_).
 
-Untuk melakukan nya, buka Web Browser Anda, lalu masukkan URL: `:::text http://localhost/phpmyadmin` pada Peramban Web Anda, lalu tekan <kbd>Enter<kbd>.
+Untuk melakukan nya, buka Web Browser Anda, lalu masukkan URL: `:::plaintext http://localhost/phpmyadmin` pada Peramban Web Anda, lalu tekan ++enter++.
 
 Jika Anda sudah berhasil membuka nya, maka harusnya tampilan nya menjadi seperti Cuplikan berikut:
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=719,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/After_Install_phpMyAdmin.png" loading="lazy" class="img-center" alt="Ketika phpMyAdmin berhasil di buka dengan Web Browser">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/After_Install_phpMyAdmin.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
 
-#### **2. Menyisipkan nilai dari opsi `blowfish_secret` di dalam berkas Konfigurasi phpMyAdmin**
-Setelah itu, kita akan melakukan konfigurasi terhadap phpMyAdmin. Untuk melakukan konfigurasi, bukalah berkas `:::text config.inc.php` pada phpMyAdmin dengan editor teks/kode favorit Anda.
+#### **2. Menyisipkan nilai dari opsi `:::plaintext blowfish_secret` di dalam berkas Konfigurasi phpMyAdmin**
+Setelah itu, kita akan melakukan konfigurasi terhadap phpMyAdmin. Untuk melakukan konfigurasi, bukalah berkas `:::plaintext config.inc.php` pada phpMyAdmin dengan editor teks/kode favorit Anda.
 
-Di dalam konfigurasi nya nanti, maka kita akan menyisipkan nilai dari Opsi [`:::text blowfish_secret`](https://docs.phpmyadmin.net/en/latest/config.html?highlight=blowfish_secret#cfg_blowfish_secret). Kenapa opsi tersebut wajib di isi? Dengan mengisi opsi tersebut, ini artinya Anda telah mengamankan Akun MariaDB Anda dengan meng-enkripsi Cookie menggunakan Algoritma AES, agar tidak di intip oleh orang luar.
+Di dalam konfigurasi nya nanti, maka kita akan menyisipkan nilai dari Opsi [`:::plaintext blowfish_secret`](https://docs.phpmyadmin.net/en/latest/config.html?highlight=blowfish_secret#cfg_blowfish_secret). Kenapa opsi tersebut wajib di isi? Dengan mengisi opsi tersebut, ini artinya Anda telah mengamankan Akun MariaDB Anda dengan meng-enkripsi Cookie menggunakan Algoritma AES, agar tidak di intip oleh orang luar.
 
 **Catatan :** Alasan kenapa di sebut “Blowfish”, padahal sekarang tidak menggunakan nya, karena phpMyAdmin sendiri pernah dulunya menggunakan “Blowfish” sebagai Algoritma Enkripsi nya.
 
-Jadi artinya, opsi `:::text blowfish_secret` ini hanya berperan sebagai Kunci (_Key_) nya saja dalam Enkripsi, yang tidak boleh di beritahukan ke siapapun, kecuali kamu sendiri. Sedangkan kalo kamu tidak mengisinya, maka sama saja dengan tidak mengamankan akun MariaDB kamu dengan meng-enkripsi Kuki (_Cookie_) nya.
+Jadi artinya, opsi `:::plaintext blowfish_secret` ini hanya berperan sebagai Kunci (_Key_) nya saja dalam Enkripsi, yang tidak boleh di beritahukan ke siapapun, kecuali kamu sendiri. Sedangkan kalo kamu tidak mengisinya, maka sama saja dengan tidak mengamankan akun MariaDB kamu dengan meng-enkripsi Kuki (_Cookie_) nya.
 
-Bagaimana cara menyisipkan nya? Coba kamu cari barisan kode atau teks `:::php $cfg['blowfish_secret']` dengan menggunakan fitur “Find” atau menekan tombol <kbd>CTRL</kbd> + <kbd>F</kbd>. 
+Bagaimana cara menyisipkan nya? Coba kamu cari barisan kode atau teks `:::php $cfg['blowfish_secret']` dengan menggunakan fitur “Find” atau menekan tombol ++ctrl+f++. 
 
 Dan, Anda akan menemukan nya dengan seperti berikut:
 
@@ -677,7 +677,7 @@ $cfg['blowfish_secret'] = '^uz&5vD+F-CNjafr@@x4M3CMAB^v+LL$'; /* YOU MUST FILL I
 Setelah itu, simpan berkasnya terlebih dahulu, dan jangan di tutup (di _close_).
 
 #### **3. Login phpMyAdmin**
-Lalu, buka phpMyAdmin nya lewat Browser, dan lakukan login dengan menggunakan akun MariaDB Anda, kali ini, saya gunakan akun `:::text root`. 
+Lalu, buka phpMyAdmin nya lewat Browser, dan lakukan login dengan menggunakan akun MariaDB Anda, kali ini, saya gunakan akun `:::plaintext root`. 
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=719,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/Logging_in_phpMyAdmin.png" loading="lazy" class="img-center" alt="Login phpMyAdmin dengan menggunakan akun 'root'.">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/Logging_in_phpMyAdmin.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
@@ -692,7 +692,7 @@ Sedangkan, jika Anda menemukan nya, maka Pesan Galat nya kurang lebih seperti be
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=719,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/Error_TempDir_phpMyAdmin.png" loading="lazy" class="img-center" alt="Error Cache pada phpMyAdmin">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/Error_TempDir_phpMyAdmin.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
 #### **4. (Opsional) Melakukan Konfigurasi pada phpMyAdmin tambahan (terutama untuk mengatasi masalah tersebut)**
-Maka dari itu, kita lakukan lagi konfigurasi nya, pastikan berkas config.inc.php tadi masih/sudah di buka menggunakan editor teks/kode favorit Anda. Setelah itu, cari teks `:::php /* Server parameters */` di dalam Editor, bisa kamu tekan tombol <kbd>CTRL</kbd> + <kbd>F</kbd> untuk mencari teks nya.
+Maka dari itu, kita lakukan lagi konfigurasi nya, pastikan berkas config.inc.php tadi masih/sudah di buka menggunakan editor teks/kode favorit Anda. Setelah itu, cari teks `:::php /* Server parameters */` di dalam Editor, bisa kamu tekan tombol ++ctrl+f++ untuk mencari teks nya.
 
 Nah, kode di bawah `:::php /* Server parameters */` beberapanya ada yang harus di ubah dan di tambahkan, yang semula nya berikut di bawah ini:
 
@@ -713,15 +713,15 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true; # Meng-izinkan phpMyAdmin untuk l
 $cfg['TempDir'] = '/tmp'; # Mengubah Lokasi untuk menampun berkas Sementara dari phpMyAdmin
 ```
 
-Apa saja yang di ubah? Saya mengubah nilai dari opsi [`:::php AllowNoPassword`](https://docs.phpmyadmin.net/en/latest/config.html?highlight=AllowNoPassword#cfg_Servers_AllowNoPassword) menjadi `:::text true`, hal ini agar kamu dapat menggunakan akun MariaDB yang kata sandi nya kosong, alias tanpa kata sandi sama sekali.
+Apa saja yang di ubah? Saya mengubah nilai dari opsi [`:::php AllowNoPassword`](https://docs.phpmyadmin.net/en/latest/config.html?highlight=AllowNoPassword#cfg_Servers_AllowNoPassword) menjadi `:::plaintext true`, hal ini agar kamu dapat menggunakan akun MariaDB yang kata sandi nya kosong, alias tanpa kata sandi sama sekali.
 
 Dan, saya menambahkan [`:::php $cfg['TempDir'] = '/tmp';`](https://docs.phpmyadmin.net/en/latest/config.html?highlight=TempDir#cfg_TempDir), variabel tersebut berguna untuk menentukan lokasi dari Folder yang menyimpan berkas dan Folder dengan Sementara (_Temporary Folder_). 
 
 **Catatan :** Jika Anda tidak mengalami Galat (_Error_) pada phpMyAdmin karena Tembolok (_Cache_), maka Anda bisa menonaktifkan Opsi `:::php TempDir` tersebut dengan menjadikan nya sebagai komentar.
 
-Karena variabel nya di set dengan `:::text /tmp`, maka phpMyAdmin akan menyimpan berkas tembolok nya di dalam folder `:::text /tmp`, harusnya Anda sangat mengenali folder tersebut jika Anda menggunakan Sistem Operasi GNU/Linux. Hal ini dilakukan agar phpMyAdmin dapat menyimpan berkas tembolok nya dan mengatasi Galat tersebut.
+Karena variabel nya di set dengan `:::plaintext /tmp`, maka phpMyAdmin akan menyimpan berkas tembolok nya di dalam folder `:::plaintext /tmp`, harusnya Anda sangat mengenali folder tersebut jika Anda menggunakan Sistem Operasi GNU/Linux. Hal ini dilakukan agar phpMyAdmin dapat menyimpan berkas tembolok nya dan mengatasi Galat tersebut.
 
-Simpan berkas tersebut, lalu coba kamu buka dan login lagi phpMyAdmin nya, kali ini, Anda harus menggunakan akun `:::text root`, karena Anda akan melakukan suatu hal lagi. 
+Simpan berkas tersebut, lalu coba kamu buka dan login lagi phpMyAdmin nya, kali ini, Anda harus menggunakan akun `:::plaintext root`, karena Anda akan melakukan suatu hal lagi. 
 
 Setelah Anda berhasil login dan di alihkan ke halaman utama. Harusnya, galat tersebut sudah hilang/tidak muncul lagi.
 
@@ -730,7 +730,7 @@ Kenapa harus membuat Basis Data 'phpmyadmin' dan apa gunanya? Gunanya agar phpMy
 
 Karena itu, kita wajib membuat nya, agar phpMyAdmin dapat di gunakan dengan sangat baik. Lalu, bagaimana caranya?
 
-Caranya, kamu harus login ke phpMyAdmin dengan menggunakan akun `:::text root` kamu terlebih dahulu, setelah nya nanti akan di alihkan ke Halaman Utama, lalu saat kamu di Halaman Utama nya, kamu _Scroll_ lagi ke bawah. 
+Caranya, kamu harus login ke phpMyAdmin dengan menggunakan akun `:::plaintext root` kamu terlebih dahulu, setelah nya nanti akan di alihkan ke Halaman Utama, lalu saat kamu di Halaman Utama nya, kamu _Scroll_ lagi ke bawah. 
 
 Setelah kamu _scroll_ ke bawah, nanti akan ada pesan:
 
@@ -750,7 +750,7 @@ Jika Anda sudah berhasil membuat basis data nya, maka harusnya status nya dalam 
 
 [<img data-src="https://cdn.statically.io/img/images.farrel.franqois.id/w=719,q=80,ssl=1/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_3.png" loading="lazy" class="img-center" alt="Langkah 3: Pastikan Status nya &ldquo;OK&ldquo; semua">](https://images.farrel.franqois.id/cara-install-lamp-stack-di-ubuntu/Configuring_phpMyAdmin_Storage_3.png){class="luminous-image-gallery" rel="dns-prefetch"}
 
-Selain itu, di sebelah kiri nanti, akan ada basis data yang bernama `:::text phpmyadmin` yang barusan di buat tadi. Ketika Anda ke halaman utamanya, dan Anda _scroll_ ke bawah lagi, harusnya sudah tidak muncul Pesan Peringatan ataupun Pesan Galat lagi, karena sudah kita konfigurasikan sebelumnya.
+Selain itu, di sebelah kiri nanti, akan ada basis data yang bernama `:::plaintext phpmyadmin` yang barusan di buat tadi. Ketika Anda ke halaman utamanya, dan Anda _scroll_ ke bawah lagi, harusnya sudah tidak muncul Pesan Peringatan ataupun Pesan Galat lagi, karena sudah kita konfigurasikan sebelumnya.
 
 Setelah itu, ada satu hal lagi yang harus di selesaikan. Lha, apa lagi itu? Yaitu......
 
@@ -768,19 +768,19 @@ Kalopun Kata Sandi yang kamu gunakan itu rumit atau ‘kuat’, tapi tidak ada s
 Cara mengamankan phpMyAdmin ini ada dua, yang satu adalah Memblokir segala akses dari luar dan satunya adalah memberikan Autentikasi. Berikut di bawah ini adalah cara-cara nya (Pilih salah satu).
 
 ##### A. Memblokir segala akses dari ‘luar’ atau dari komputer/perangkat lain nya
-Metode ini akan memblokir segala akses dari komputer/perangkat lain, jadi perangkat lain tidak akan bisa mengakses phpMyAdmin Anda, kecuali jika berada di akses dengan `localhost` atau `127.0.0.1`.
+Metode ini akan memblokir segala akses dari komputer/perangkat lain, jadi perangkat lain tidak akan bisa mengakses phpMyAdmin Anda, kecuali jika berada di akses dengan `:::plaintext localhost` atau `:::plaintext 127.0.0.1`.
 
 Cara nya cukup sederhana, Anda tinggal membuat berkas .htaccess di dalam folder phpMyAdmin nya. Tapi, sebelum itu, Anda harus mengaktifkan .htaccess nya terlebih dahulu (Baca juga pembahasan: “[**7. Mengaktifkan .htaccess di dalam Apache2**](#7-mengaktifkan-htaccess-di-dalam-apache2)” untuk mengaktifkan .htaccess).
 
-Setelah Anda mengaktifkan nya, Anda bisa membuat dan meng-edit berkas .htaccess dengan `nano`, berikut perintah nya:
+Setelah Anda mengaktifkan nya, Anda bisa membuat dan meng-edit berkas .htaccess dengan `:::plaintext nano`, berikut perintah nya:
 
 ```bash
 $ nano /var/www/html/phpmyadmin/.htaccess
 ```
 
-Setelah Anda berhasil membuka nya, tambahkan dengan menyalinkan (_copy_) barisan kode, kemudian menempelkan nya (_paste_) (Alias, copas) dengan menekan tombol <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> pada Keyboard, berikut di bawah ini ke dalam editor `nano`:
+Setelah Anda berhasil membuka nya, tambahkan dengan menyalinkan (_copy_) barisan kode, kemudian menempelkan nya (_paste_) (Alias, copas) dengan menekan tombol ++ctrl+shift+v++ pada Keyboard, berikut di bawah ini ke dalam editor `:::plaintext nano`:
 
-```text
+```plaintext
 order deny,allow
 deny from all
 allow from 127.0.0.1
@@ -788,11 +788,11 @@ allow from 127.0.0.1
 
 Saya akan jelaskan Direktif nya satu-per-satu di bawah ini:
 
-- [`:::text order`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) - Direktif ini menentukan direktif mana yang akan di evaluasi/eksekusi, `:::text Deny` atau `:::text Allow`. Saya mengisinya dengan `:::text deny,allow` agar Direktif `:::text Deny` di eksekusi terlebih dahulu. Tapi, jika ada kondisi yang “tidak cocok”, maka Direktif `:::text Allow` yang akan di eksekusi.
+- [`:::plaintext order`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) - Direktif ini menentukan direktif mana yang akan di evaluasi/eksekusi, `:::plaintext Deny` atau `:::plaintext Allow`. Saya mengisinya dengan `:::plaintext deny,allow` agar Direktif `:::plaintext Deny` di eksekusi terlebih dahulu. Tapi, jika ada kondisi yang “tidak cocok”, maka Direktif `:::plaintext Allow` yang akan di eksekusi.
 
-- [`:::text deny`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#deny) - Direktif ini berguna untuk memblokir pengunjung yang berasal dari IP, Domain dan Host tertentu. Karena saya mengisi nya dengan `:::text deny from all`, maka ini akan memblokir semua pengunjung (harusnya ini termasuk dari kita sendiri).
+- [`:::plaintext deny`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#deny) - Direktif ini berguna untuk memblokir pengunjung yang berasal dari IP, Domain dan Host tertentu. Karena saya mengisi nya dengan `:::plaintext deny from all`, maka ini akan memblokir semua pengunjung (harusnya ini termasuk dari kita sendiri).
   
-- [`:::text allow`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#allow) - Direktif ini berguna untuk mengizinkan pengunjung yang berasal dari IP, Domain dan Host tertentu. Bisa di bilang, kalo DIrektif ini merupakan pengecualian setelah Direktif `:::text deny from all` di eksekusi. Saya mengaturnya dengan `:::text allow from 127.0.0.1` agar bisa di akses lewat `:::text localhost`.
+- [`:::plaintext allow`](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#allow) - Direktif ini berguna untuk mengizinkan pengunjung yang berasal dari IP, Domain dan Host tertentu. Bisa di bilang, kalo DIrektif ini merupakan pengecualian setelah Direktif `:::plaintext deny from all` di eksekusi. Saya mengaturnya dengan `:::plaintext allow from 127.0.0.1` agar bisa di akses lewat `:::plaintext localhost`.
 
 Jika Anda sudah selesai, simpan berkas tersebut. Setelah itu, cobalah untuk mengakses phpMyAdmin di Perangkat Lain, dan pastikan juga perangkat tersebut berada di dalam Jaringan yang sama dengan Komputer/Laptop yang terinstall phpMyAdmin. Kalo berhasil, harusnya muncul galat/kesalahan seperti “Forbidden” saat di akses.
 
@@ -809,7 +809,7 @@ Autentikasi yang saya maksud disini tentu saja Autentikasi HTTP (_HTTP Authentic
 
 Contohnya? [Googling](google_images>HTTP+Auth) aja sendiri, ah, cape gue.
 
-Jika Anda ingin membuat Autentikasi HTTP pada Webserver Apache2, maka Anda perlu membuatkan berkas `.htpasswd` nya terlebih dahulu.
+Jika Anda ingin membuat Autentikasi HTTP pada Webserver Apache2, maka Anda perlu membuatkan berkas `:::plaintext .htpasswd` nya terlebih dahulu.
 
 Bagaimana caranya? Mudah, kamu tinggal gunakan perintah berikut untuk membuat .htpasswd:
 
@@ -817,17 +817,17 @@ Bagaimana caranya? Mudah, kamu tinggal gunakan perintah berikut untuk membuat .h
 $ htpasswd -c /path/to/.htpasswd nama_pengguna_kamu
 ```
 
-Ganti `:::text /path/to/.htapasswd` dengan lokasi berkas itu di buat nantinya dan di namakan sebagai apa berkasnya. Oh, iya, untuk membuat berkas `htpasswd` nya itu gak harus menggunakan nama berkas `:::text .htpasswd`, bisa apa saja/bebas.
+Ganti `:::plaintext /path/to/.htapasswd` dengan lokasi berkas itu di buat nantinya dan di namakan sebagai apa berkasnya. Oh, iya, untuk membuat berkas `:::plaintext htpasswd` nya itu gak harus menggunakan nama berkas `:::plaintext .htpasswd`, bisa apa saja/bebas.
 
-Dan, kamu bisa ganti `:::text nama_pengguna_kamu` dengan Nama Pengguna (_Username_) yang kamu inginkan.
+Dan, kamu bisa ganti `:::plaintext nama_pengguna_kamu` dengan Nama Pengguna (_Username_) yang kamu inginkan.
 
-Kalo kamu mau meletakannya di dalam folder `phpMyAdmin` nya, dan berkas tersebut mau kamu namakan dengan `:::text .htpasswd`, serta ingin menggunakan Nama Pengguna `test123`, maka akan menjadi seperti ini perintah nya:
+Kalo kamu mau meletakannya di dalam folder `:::plaintext phpMyAdmin` nya, dan berkas tersebut mau kamu namakan dengan `:::plaintext .htpasswd`, serta ingin menggunakan Nama Pengguna `:::plaintext test123`, maka akan menjadi seperti ini perintah nya:
 
 ```bash
 $ htpasswd -c /var/www/html/phpmyadmin/.htpasswd test123
 ```
 
-Untuk praktik keamanan yang lebih baik, harusnya `:::text .htpasswd` di buat di dalam lokasi yang berbeda dan tidak di dalam folder Aplikasi Web nya.
+Untuk praktik keamanan yang lebih baik, harusnya `:::plaintext .htpasswd` di buat di dalam lokasi yang berbeda dan tidak di dalam folder Aplikasi Web nya.
 
 Setelah itu, isikan Kata Sandi baru kamu yang nantinya akan di gunakan untuk membuka Aplikasi Web tersebut nantinya.
 
@@ -837,18 +837,18 @@ Nah, berkas .htpasswd sudah di buat. Setelah di buat, edit/buat berkas .htaccess
 $ nano /var/www/html/phpmyadmin/.htaccess
 ```
 
-Setelah Anda berhasil membuka nya, tambahkan dengan menyalinkan (_copy_) barisan kode, kemudian menempelkan nya (_paste_) (Alias, copas) dengan menekan tombol <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> pada Keyboard, berikut di bawah ini ke dalam editor `nano`:
+Setelah Anda berhasil membuka nya, tambahkan dengan menyalinkan (_copy_) barisan kode, kemudian menempelkan nya (_paste_) (Alias, copas) dengan menekan tombol ++ctrl+shift+v++ pada Keyboard, berikut di bawah ini ke dalam editor `:::plaintext nano`:
 
-```text
+```plaintext
 AuthUserFile /path/to/.htpasswd
 AuthName "Ini adalah Area Terlarang!"
 AuthType Basic
 require valid-user
 ```
 
-Ganti `/path/to/.htpasswd` dengan lokasi .htpasswd yang tadi Anda buat. Misal, kalo Anda buat nya di dalam `:::text /var/www/html/phpmyadmin`, maka Anda bisa mengganti nya dengan `:::text /var/www/html/phpmyadmin/.htpasswd`. Menjadi seperti berikut:
+Ganti `:::plaintext /path/to/.htpasswd` dengan lokasi .htpasswd yang tadi Anda buat. Misal, kalo Anda buat nya di dalam `:::plaintext /var/www/html/phpmyadmin`, maka Anda bisa mengganti nya dengan `:::plaintext /var/www/html/phpmyadmin/.htpasswd`. Menjadi seperti berikut:
 
-```text
+```plaintext
 AuthUserFile /var/www/html/phpmyadmin/.htpasswd
 AuthName "Ini adalah Area Terlarang!"
 AuthType Basic
@@ -857,13 +857,13 @@ require valid-user
 
 Saya akan jelaskan Direktif nya satu-per-satu di bawah ini:
 
-- [`:::text AuthUserFile`](https://httpd.apache.org/docs/2.4/mod/mod_authn_file.html#authuserfile) - Untuk menentukan di mana letak berkas `:::text .htpasswd` itu berada. Berkas nya sendiri gak harus bernama `:::text .htpasswd` sebenarnya, bisa kamu gunakan nama berkas lain, hanya saja yang menyimpan Nama Pengguna dan Kata Sandi yang sudah di-_hash_ (atau, yang di buat menggunakan perintah `:::bash htpasswd` tadi), yang akan di gunakan untuk Autentikasi nanti.
+- [`:::plaintext AuthUserFile`](https://httpd.apache.org/docs/2.4/mod/mod_authn_file.html#authuserfile) - Untuk menentukan di mana letak berkas `:::plaintext .htpasswd` itu berada. Berkas nya sendiri gak harus bernama `:::plaintext .htpasswd` sebenarnya, bisa kamu gunakan nama berkas lain, hanya saja yang menyimpan Nama Pengguna dan Kata Sandi yang sudah di-_hash_ (atau, yang di buat menggunakan perintah `:::bash htpasswd` tadi), yang akan di gunakan untuk Autentikasi nanti.
 
-- [`:::text AuthName`](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html#authname) - Direktif ini berfungsi untuk menentukan Pesan saat Autentikasi nanti. Pada kode diatas, saya isikan dengan "Ini adalah Area Terlarang!".
+- [`:::plaintext AuthName`](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html#authname) - Direktif ini berfungsi untuk menentukan Pesan saat Autentikasi nanti. Pada kode diatas, saya isikan dengan "Ini adalah Area Terlarang!".
 
-- [`:::text AuthType`](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html#authtype) - Direktif ini yang menentukan metode Autentikasi nya nanti, ada beberapa metode Autentikasi yang bisa Anda gunakan, seperti `:::text Basic`, [`:::text Digest`](https://httpd.apache.org/docs/2.4/mod/mod_auth_digest.html), dan [`:::text Form`](https://httpd.apache.org/docs/2.4/mod/mod_auth_form.html). Saya gak bahas lebih lanjut disini, tapi kali ini saya gunakan `:::text Basic` saja agar lebih mudah.
+- [`:::plaintext AuthType`](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html#authtype) - Direktif ini yang menentukan metode Autentikasi nya nanti, ada beberapa metode Autentikasi yang bisa Anda gunakan, seperti `:::plaintext Basic`, [`:::plaintext Digest`](https://httpd.apache.org/docs/2.4/mod/mod_auth_digest.html), dan [`:::plaintext Form`](https://httpd.apache.org/docs/2.4/mod/mod_auth_form.html). Saya gak bahas lebih lanjut disini, tapi kali ini saya gunakan `:::plaintext Basic` saja agar lebih mudah.
 
-- [`:::text require`](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html#require) - Direktif ini menentukan Pengguna mana yang dapat mengakses Aplikasi Web tersebut. Karena saya mengisinya dengan `:::text valid-user`, maka berarti Aplikasi Web tersebut hanya dapat di akses oleh pengguna yang valid atau pengguna yang tercantum di dalam berkas `:::text .htpasswd` saja.
+- [`:::plaintext require`](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html#require) - Direktif ini menentukan Pengguna mana yang dapat mengakses Aplikasi Web tersebut. Karena saya mengisinya dengan `:::plaintext valid-user`, maka berarti Aplikasi Web tersebut hanya dapat di akses oleh pengguna yang valid atau pengguna yang tercantum di dalam berkas `:::plaintext .htpasswd` saja.
 
 Jika Anda sudah selesai, simpan berkas tersebut. Setelah itu, cobalah untuk mengakses phpMyAdmin di dalam Perangkat Anda/di Perangkat Lain. Kalo berhasil, harusnya muncul autentikasi yang mengharuskan untuk memasukkan Nama Pengguna dan Kata Sandi nya terlebih dahulu.
 
@@ -882,4 +882,15 @@ Mohon maaf, jika artikel ini memiliki kekeliruan dan kesalahan, baik dari ada ya
 
 Jika adanya kesalahan dan kekeliruan, atau kalo Anda memiliki pertanyaan lain nya, bisa Anda berikan masukkan melalui kolom komentar yang tersedia. Masukkan dari Anda akan sangat berarti bagi saya dan artikel ini untuk kedepan nya nanti.
 
-Terima kasih :blush:
+Terima kasih atas perhatian nya :blush:
+
+## Penggunaan Gambar dan Atribusi
+Berkas-berkas Gambar (seperti Cuplikan layar dan Gambar lain nya) yang di gunakan di dalam artikel ini, disediakan di dalam folder `:::plaintext cara-install-lamp-stack-di-ubuntu` yang berada di dalam Repository GitLab [`blog-images`](https://gitlab.com/FarrelF/blog-images) milik saya. 
+
+Jika Anda ingin menjelajahi nya, silahkan kunjungi Alamat URL berikut:
+
+```plaintext
+https://gitlab.com/FarrelF/blog-images/tree/master/cara-install-lamp-stack-di-ubuntu
+```
+
+Semua Gambar yang berada di situ di lisensi kan dengan [Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).

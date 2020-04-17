@@ -14,8 +14,12 @@ THEME = "Flex"  # Menentukan Nama tema yang terinstall melalui pelican-themes, u
 ROBOTS = 'noindex, nofollow, noarchive, nosnippets'
 
 # Meng-hapus berkas yang tidak terpakai
-STATIC_PATHS.remove('extras/robots.txt')
-del EXTRA_PATH_METADATA['extras/robots.txt']
+STATIC_PATHS.remove('extras/robots_for_origin.txt')
+del EXTRA_PATH_METADATA['extras/robots_for_origin.txt']
+STATIC_PATHS.remove('extras/robots_for_cdn.txt')
+del EXTRA_PATH_METADATA['extras/robots_for_cdn.txt']
+STATIC_PATHS.remove('extras/robots_for_images.txt')
+del EXTRA_PATH_METADATA['extras/robots_for_images.txt']
 STATIC_PATHS.remove('extras/ads.txt')
 del EXTRA_PATH_METADATA['extras/ads.txt']
 

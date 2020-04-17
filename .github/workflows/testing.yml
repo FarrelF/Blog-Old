@@ -21,14 +21,20 @@ jobs:
     - name: Install and Set up Locales
       run: |
         case "$(curl -s --max-time 3 -I http://azure.archive.ubuntu.com | sed 's/^[^ ]*  *\([0-9]\).*/\1/; 1q')" in
-          [23]) echo "HTTP connectivity is up"
+          [23]) echo "The Repository HTTP Server is up"
                 if nc -zw3 azure.archive.ubuntu.com 80; then
-                  echo "The Mirror Network has been connected successfully"
+                  echo "The Repository Server has been connected successfully"
                 else
-                  sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
+                  echo "The Repository server is down, changing the Repository Server. Please wait....."
+                  sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu/|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
+                  sudo sed -i 's|http://security.ubuntu.com/ubuntu|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
+                  sudo sed -i 's|http://ppa.launchpad.net|https://mirrorppa.b-cdn.net|g' /etc/apt/sources.list.d/*.list
                   sudo apt update
                 fi;;
-          *) sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
+          *) echo "The Repository HTTP Server is down, changing the Repository Server. Please wait....."
+             sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu/|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
+             sudo sed -i 's|http://security.ubuntu.com/ubuntu|https://mirror.b-cdn.net/ubuntu/|g' /etc/apt/sources.list
+             sudo sed -i 's|http://ppa.launchpad.net|https://mirrorppa.b-cdn.net|g' /etc/apt/sources.list.d/*.list
              sudo apt update;;
         esac
 
@@ -96,8 +102,9 @@ jobs:
         path: ./output
 
     - name: Getting NodeJS and Yarn Version
-      shell: bash -l -eo pipefail {0}
       run: |
+        unset ${NVM_DIR}
+        sed -i "/^export NVM_DIR=/d" ~/.bash_profile
         echo "::set-output name=NVMRC::$(cat .nvmrc)"
         echo "::set-output name=YVMRC::$(cat .yvmrc)"
       id: vm
