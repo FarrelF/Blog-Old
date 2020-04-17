@@ -114,7 +114,9 @@ STATIC_PATHS = [
     'img',
     'extras/CNAME',
     'extras/favicon.ico',
-    'extras/robots.txt',
+    'extras/robots_for_origin.txt',
+    'extras/robots_for_cdn.txt',
+    'extras/robots_for_images.txt',
     'extras/custom.css',
     'extras/custom.js'
 ]
@@ -122,7 +124,9 @@ STATIC_PATHS = [
 EXTRA_PATH_METADATA = {
     'extras/CNAME': {'path': 'CNAME'},
     'extras/favicon.ico': {'path': 'favicon.ico'},
-    'extras/robots.txt': {'path': 'robots.txt'},
+    'extras/robots_for_origin.txt': {'path': 'robots.txt'},
+    'extras/robots_for_cdn.txt': {'path': 'robots_for_cdn.txt'},
+    'extras/robots_for_images.txt': {'path': 'robots_for_images.txt'},
     'extras/custom.css': {'path': 'custom.css'},
     'extras/custom.js': {'path': 'custom.js'}
 }
