@@ -102,7 +102,6 @@ jobs:
         path: ./output
 
     - name: Getting NodeJS and Yarn Version
-      shell: bash -l -eo pipefail {0}
       run: |
         unset ${NVM_DIR}
         sed -i "/^export NVM_DIR=/d" ~/.bash_profile
